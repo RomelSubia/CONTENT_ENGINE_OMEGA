@@ -4,6 +4,7 @@ $ErrorActionPreference = "Stop"
 $root = "D:\CONTENT_ENGINE_OMEGA"
 $expected = [System.IO.Path]::GetFullPath($root)
 $current = [System.IO.Path]::GetFullPath((Get-Location).Path)
+$gitSafeArgs = @("-c", "safe.directory=D:/CONTENT_ENGINE_OMEGA")
 
 if ($current -ne $expected) {
     Write-Output "BLOCKED: root validation failed"
@@ -16,7 +17,7 @@ if (-not (Test-Path -LiteralPath $gitDir -PathType Container)) {
     exit 1
 }
 
-$statusShortBefore = git status --short 2>&1
+$statusShortBefore = & git @gitSafeArgs status --short 2>&1
 if ($LASTEXITCODE -ne 0) {
     $statusShortBefore | ForEach-Object { Write-Output $_ }
     Write-Output "BLOCKED: git status --short failed"
@@ -29,26 +30,26 @@ if ($statusShortBefore) {
     exit 1
 }
 
-$remoteOrigin = git remote get-url origin 2>&1
+$remoteOrigin = & git @gitSafeArgs remote get-url origin 2>&1
 if ($LASTEXITCODE -ne 0) {
     Write-Output "REVIEW_REQUIRED: remote origin is not configured"
     exit 1
 }
 
-$fetchOutput = git fetch origin 2>&1
+$fetchOutput = & git @gitSafeArgs fetch origin 2>&1
 if ($LASTEXITCODE -ne 0) {
     $fetchOutput | ForEach-Object { Write-Output $_ }
     Write-Output "BLOCKED: git fetch failed"
     exit 1
 }
 
-$localHead = (git rev-parse HEAD 2>&1).Trim()
+$localHead = (& git @gitSafeArgs rev-parse HEAD 2>&1).Trim()
 if ($LASTEXITCODE -ne 0) {
     Write-Output "BLOCKED: failed to resolve local HEAD"
     exit 1
 }
 
-$upstreamHead = (git rev-parse "@{u}" 2>&1).Trim()
+$upstreamHead = (& git @gitSafeArgs rev-parse "@{u}" 2>&1).Trim()
 if ($LASTEXITCODE -ne 0) {
     Write-Output "BLOCKED: upstream for current branch is not configured"
     exit 1
