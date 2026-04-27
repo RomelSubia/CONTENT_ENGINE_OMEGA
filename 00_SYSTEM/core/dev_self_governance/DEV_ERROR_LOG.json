@@ -1,0 +1,11 @@
+[
+  {
+    "auto_fix_allowed": false,
+    "error_type": "VALIDATION_FAIL",
+    "message": "?? 00_SYSTEM/core/dev_self_governance/\n?? 04_SCRIPTS/powershell/Run-DevSelfGovernance.ps1\n?? 04_SCRIPTS/powershell/Validate-PhaseC5.ps1\n?? 04_SCRIPTS/python/core/dev_self_governance.py\n?? 04_SCRIPTS/python/core/validate_phase_c5.py\nBLOCKED: git status --short is not clean before closure",
+    "severity": "HIGH",
+    "source": "powershell -ExecutionPolicy Bypass -File 04_SCRIPTS\\powershell\\Check-RepoSync.ps1",
+    "target": "repo",
+    "timestamp": "2026-04-27T09:36:00Z"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "phase": "C.5",
+  "version": "v3",
+  "mode": "SAFE_FIX_ONLY",
+  "root": "D:\\CONTENT_ENGINE_OMEGA",
+  "allow_delete": false,
+  "allow_git_clean": false,
+  "allow_reset_hard": false,
+  "allow_force_push": false,
+  "allow_outside_root": false,
+  "allow_argos_scope": false,
+  "allow_safe_directory_fix": true,
+  "allow_bom_fix": true,
+  "allow_orphan_lock_fix": false,
+  "allow_replay_validation": true,
+  "allow_safe_commit_if_validated": true,
+  "require_validation_after_fix": true,
+  "require_audit_report": true,
+  "fail_closed": true,
+  "max_repair_cycles": 2,
+  "completion_score_required": 85
+}

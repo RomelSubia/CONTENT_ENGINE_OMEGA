@@ -1,0 +1,15 @@
+{
+  "blocked_reasons": [],
+  "completion_score": 0,
+  "fixes_applied": [],
+  "last_error": null,
+  "last_fix": null,
+  "last_update": "2026-04-27T09:36:00Z",
+  "last_validation": null,
+  "mode": "SAFE_FIX_ONLY",
+  "phase": "C.5",
+  "review_required": [],
+  "state": "RUNNING",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "version": "v3"
+}
