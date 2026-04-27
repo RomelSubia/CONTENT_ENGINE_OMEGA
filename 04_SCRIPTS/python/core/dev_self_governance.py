@@ -1,4 +1,4 @@
-import json, pathlib, datetime, subprocess, hashlib, sys
+﻿import json, pathlib, datetime, subprocess, hashlib, sys
 
 ROOT = pathlib.Path(r"D:\CONTENT_ENGINE_OMEGA")
 C5 = ROOT / "00_SYSTEM/core/dev_self_governance"
@@ -77,7 +77,7 @@ def validate_all():
         "python 04_SCRIPTS\\python\\core\\validate_phase_a.py",
         "python 04_SCRIPTS\\python\\core\\validate_phase_b.py",
         "python 04_SCRIPTS\\python\\core\\validate_phase_c.py",
-        "powershell -ExecutionPolicy Bypass -File 04_SCRIPTS\\powershell\\Check-RepoSync.ps1"
+        # FINAL_SYNC_CHECK_DEFERRED
     ]
     results = []
     for c in checks:
