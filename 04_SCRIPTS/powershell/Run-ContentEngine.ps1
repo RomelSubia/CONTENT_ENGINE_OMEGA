@@ -20,6 +20,8 @@ $runtimeJsonPath = Join-Path $root "00_SYSTEM\core\runtime\SYSTEM_RUNTIME.json"
 $heartbeatPath = Join-Path $root "00_SYSTEM\core\runtime\HEARTBEAT.json"
 $logPath = Join-Path $root "00_SYSTEM\core\logs\RUNTIME_LOG.json"
 $manifestPath = Join-Path $root "00_SYSTEM\core\logs\manifest.json"
+$trackedArtifacts = @($reportPath, $runtimeJsonPath, $heartbeatPath, $logPath, $manifestPath)
+$artifactBackup = @{}
 
 $pythonExe = $null
 if (Get-Command python -ErrorAction SilentlyContinue) {
@@ -36,6 +38,14 @@ if (-not $pythonExe) {
 if (Test-Path -LiteralPath $lockPath -PathType Leaf) {
     Write-Error "runtime.lock already exists. Parallel execution is blocked."
     exit 1
+}
+
+foreach ($artifactPath in $trackedArtifacts) {
+    if (Test-Path -LiteralPath $artifactPath -PathType Leaf) {
+        $artifactBackup[$artifactPath] = [System.IO.File]::ReadAllBytes($artifactPath)
+    } else {
+        $artifactBackup[$artifactPath] = $null
+    }
 }
 
 $phase0Output = & $pythonExe $pythonPhase0 2>&1
@@ -82,5 +92,13 @@ $report = @"
 - Final runtime state: $($runtimeState.runtime_status)
 "@
 Set-Content -LiteralPath $reportPath -Value $report -Encoding UTF8
+
+foreach ($artifactPath in $trackedArtifacts) {
+    $originalContent = $artifactBackup[$artifactPath]
+    if ($null -eq $originalContent) {
+        continue
+    }
+    [System.IO.File]::WriteAllBytes($artifactPath, $originalContent)
+}
 
 Write-Output "PHASE_A_RUNTIME: PASS"

@@ -1,0 +1,27 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "phase": "B",
+  "mode": "DRY_RUN",
+  "root": "D:\\CONTENT_ENGINE_OMEGA",
+  "fail_closed": true,
+  "no_delete": true,
+  "no_move": true,
+  "max_hash_size_bytes": 20971520,
+  "require_evidence": true,
+  "deterministic_ordering": true,
+  "hash_algorithm": "sha256",
+  "excluded_paths": [
+    ".git/",
+    ".venv/",
+    "04_SCRIPTS/python/core/__pycache__/",
+    "00_SYSTEM/core/change_awareness/CHANGE_BASELINE.json",
+    "00_SYSTEM/core/change_awareness/CHANGE_CURRENT.json",
+    "00_SYSTEM/core/change_awareness/CHANGE_DELTA.json",
+    "00_SYSTEM/core/change_awareness/SNAPSHOT_MANIFEST.json",
+    "00_SYSTEM/core/change_awareness/probes/",
+    "00_SYSTEM/core/change_awareness/locks/",
+    "00_SYSTEM/core/change_awareness/reports/",
+    "00_SYSTEM/core/change_awareness/snapshots/",
+    "13_BACKUPS/quarantine/"
+  ]
+}

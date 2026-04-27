@@ -1,0 +1,232 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "phase": "B",
+  "mode": "DRY_RUN",
+  "snapshot_role": "CURRENT",
+  "snapshot_status": "COMPLETE",
+  "snapshot_id": "84e066b81b04ca59",
+  "snapshot_hash": "84e066b81b04ca5952a27cb95373ce05f559fc833d8afce4f2f92966b4994f31",
+  "root": "D:\\CONTENT_ENGINE_OMEGA",
+  "total_files": 34,
+  "total_bytes": 62477,
+  "excluded_paths": [
+    ".git/",
+    ".venv/",
+    "04_SCRIPTS/python/core/__pycache__/",
+    "00_SYSTEM/core/change_awareness/CHANGE_BASELINE.json",
+    "00_SYSTEM/core/change_awareness/CHANGE_CURRENT.json",
+    "00_SYSTEM/core/change_awareness/CHANGE_DELTA.json",
+    "00_SYSTEM/core/change_awareness/SNAPSHOT_MANIFEST.json",
+    "00_SYSTEM/core/change_awareness/probes/",
+    "00_SYSTEM/core/change_awareness/locks/",
+    "00_SYSTEM/core/change_awareness/reports/",
+    "00_SYSTEM/core/change_awareness/snapshots/",
+    "13_BACKUPS/quarantine/"
+  ],
+  "entries": [
+    {
+      "path": ".gitignore",
+      "size": 275,
+      "hash_status": "HASHED",
+      "sha256": "ea817c63763c8a6ef69517df290a500a3fbfe186f93fc47d04229bff594b9625"
+    },
+    {
+      "path": "00_SYSTEM/core/ACTION_LOG.json",
+      "size": 72,
+      "hash_status": "HASHED",
+      "sha256": "9cb7ec2549db50be8d04035fafbcb11cf53cac1f37c0dd925ad6c838d46ff42a"
+    },
+    {
+      "path": "00_SYSTEM/core/ACTION_POLICY.json",
+      "size": 904,
+      "hash_status": "HASHED",
+      "sha256": "cf3daa666b363d02b4d8f21de127a8ed763cabe863eb7d30d695447c4d194772"
+    },
+    {
+      "path": "00_SYSTEM/core/ERROR_SEVERITY_MODEL.json",
+      "size": 599,
+      "hash_status": "HASHED",
+      "sha256": "d0b970db07fc78ae0eade185cae90404405a9ee80c5d10efc6cc428e9c19ffa5"
+    },
+    {
+      "path": "00_SYSTEM/core/EVIDENCE_SCHEMA.json",
+      "size": 429,
+      "hash_status": "HASHED",
+      "sha256": "eafaae6fcd42470c8cd66d481fec934e67c4fca9dd0a17418c583d371bc15bf6"
+    },
+    {
+      "path": "00_SYSTEM/core/GOVERNANCE_RULES.json",
+      "size": 469,
+      "hash_status": "HASHED",
+      "sha256": "1e7ff3e43c30b5f0e99b9d401a6eb282b0e8d97e927e168132d8c246eee0416a"
+    },
+    {
+      "path": "00_SYSTEM/core/PHASE_0_CONTRACT.md",
+      "size": 1206,
+      "hash_status": "HASHED",
+      "sha256": "12619c193e62b4ecb12843d08bee27e0780cd36ef680487a6e0ce55571940e61"
+    },
+    {
+      "path": "00_SYSTEM/core/QUARANTINE_LOG.json",
+      "size": 72,
+      "hash_status": "HASHED",
+      "sha256": "9cb7ec2549db50be8d04035fafbcb11cf53cac1f37c0dd925ad6c838d46ff42a"
+    },
+    {
+      "path": "00_SYSTEM/core/STATE_TRANSITIONS.json",
+      "size": 1667,
+      "hash_status": "HASHED",
+      "sha256": "637737797b706addbca6b2762be5e041669a191644340610e284b6a3a0858b93"
+    },
+    {
+      "path": "00_SYSTEM/core/SYSTEM_STATE.json",
+      "size": 258,
+      "hash_status": "HASHED",
+      "sha256": "34fea12713c1ed14f809dcaba4ee1dcba9d9c48b386e63fe07e27477442f6d95"
+    },
+    {
+      "path": "00_SYSTEM/core/change_awareness/CHANGE_RULES.json",
+      "size": 859,
+      "hash_status": "HASHED",
+      "sha256": "d0fb9dc477979df37beff804d4ba0204a33cb66d6c87ff46694f8f120405dd46"
+    },
+    {
+      "path": "00_SYSTEM/core/logs/RUNTIME_LOG.json",
+      "size": 3394,
+      "hash_status": "HASHED",
+      "sha256": "0ba25ce3d3af6ac043d025ad84241ac4650f4f6ee2e3d45f8d92f346d7f07b0d"
+    },
+    {
+      "path": "00_SYSTEM/core/logs/manifest.json",
+      "size": 51,
+      "hash_status": "HASHED",
+      "sha256": "ab64a3d1dad7a43ae3f40ac7e94ab766a2778c0c20df5cef2a892c887a41f6ca"
+    },
+    {
+      "path": "00_SYSTEM/core/reports/PHASE_0_AUDIT_REPORT.md",
+      "size": 157,
+      "hash_status": "HASHED",
+      "sha256": "c6075c4faa91389fc63ae91c30567277c2f908c10763c39cbd7476830770dce7"
+    },
+    {
+      "path": "00_SYSTEM/core/reports/PHASE_A_AUDIT_REPORT.md",
+      "size": 350,
+      "hash_status": "HASHED",
+      "sha256": "03ed0f2d79dd702354959b3bcd478d79512ec3542413cc5b0f670c1841f262ba"
+    },
+    {
+      "path": "00_SYSTEM/core/runtime/EXECUTION_CONTEXT.json",
+      "size": 388,
+      "hash_status": "HASHED",
+      "sha256": "59c655420811ab417fee5eaafeece78badaed33c7b8d8ad3b09017b521591edf"
+    },
+    {
+      "path": "00_SYSTEM/core/runtime/HEARTBEAT.json",
+      "size": 146,
+      "hash_status": "HASHED",
+      "sha256": "42bc6e6d415e5b1568011c711e69388d1540f55bd50082861e2f60f4d30e0b54"
+    },
+    {
+      "path": "00_SYSTEM/core/runtime/SYSTEM_RUNTIME.json",
+      "size": 427,
+      "hash_status": "HASHED",
+      "sha256": "15e803cec57faead74579ad84730bb437c2c893e2de51f398af0d1e888b6af26"
+    },
+    {
+      "path": "00_SYSTEM/core/runtime/self_test_probe.json",
+      "size": 85,
+      "hash_status": "HASHED",
+      "sha256": "c32f42dfba674e6506e514899e2422f04b1a880787a22e52697f95079030e2bc"
+    },
+    {
+      "path": "04_SCRIPTS/powershell/Check-RepoSync.ps1",
+      "size": 1784,
+      "hash_status": "HASHED",
+      "sha256": "9129d6121f0d44b958229e1af394f18e152b43c9290fbdc53031843cb2e87517"
+    },
+    {
+      "path": "04_SCRIPTS/powershell/Run-ChangeAwareness.ps1",
+      "size": 5575,
+      "hash_status": "HASHED",
+      "sha256": "e862b0749d8933c9bba9f44f89e4437aa9f2f5e0485c0d9877cdb7e506a67df1"
+    },
+    {
+      "path": "04_SCRIPTS/powershell/Run-ContentEngine.ps1",
+      "size": 3744,
+      "hash_status": "HASHED",
+      "sha256": "b568ae7399b5ae03bb605213eb70479794f5ea40061588bc02bae4b347e7de9e"
+    },
+    {
+      "path": "04_SCRIPTS/powershell/Validate-Phase0.ps1",
+      "size": 1482,
+      "hash_status": "HASHED",
+      "sha256": "f9fe4a4ff95575490892356b8da254c973fc54468dfbd334275529ea3d53efcf"
+    },
+    {
+      "path": "04_SCRIPTS/powershell/Validate-PhaseA.ps1",
+      "size": 1164,
+      "hash_status": "HASHED",
+      "sha256": "f1917880c36760ea349006d79efb0447b8d0b5727504c606b0672e261dc22b5a"
+    },
+    {
+      "path": "04_SCRIPTS/powershell/Validate-PhaseB.ps1",
+      "size": 1164,
+      "hash_status": "HASHED",
+      "sha256": "7cac2ba27f48a51ec1d76800fc82a69f35aec162c5bffcedc63cd37e882faeaf"
+    },
+    {
+      "path": "04_SCRIPTS/python/core/change_detector.py",
+      "size": 4763,
+      "hash_status": "HASHED",
+      "sha256": "d7ccde6be9747e9f0154c69cfcfd67ddf3b61145cd9021958de5a4a755434712"
+    },
+    {
+      "path": "04_SCRIPTS/python/core/change_snapshot.py",
+      "size": 9624,
+      "hash_status": "HASHED",
+      "sha256": "dea427eab0b0fa6eb7526edc83bac4b5c3675af3a814d1e95725dc8660550a97"
+    },
+    {
+      "path": "04_SCRIPTS/python/core/logger_engine.py",
+      "size": 2368,
+      "hash_status": "HASHED",
+      "sha256": "e96e9fdc6bcd2cee0ddced149da8bbf1e9520f8780352fa0030cc1e801dcf48f"
+    },
+    {
+      "path": "04_SCRIPTS/python/core/runtime_engine.py",
+      "size": 7953,
+      "hash_status": "HASHED",
+      "sha256": "eab2bf61beec6d93326b8d5e790b2b6093ce4a82bf96944ff0d34741df59b6cd"
+    },
+    {
+      "path": "04_SCRIPTS/python/core/state_manager.py",
+      "size": 1087,
+      "hash_status": "HASHED",
+      "sha256": "e3d6afc7dc7177ac3f16008971a5bcd9fc1d9c9f67fcdbfa952e669a9a65f165"
+    },
+    {
+      "path": "04_SCRIPTS/python/core/validate_phase0.py",
+      "size": 3406,
+      "hash_status": "HASHED",
+      "sha256": "c12941625486c6cb204570120654e5a2937117bce523b4a4f83a31dde5082210"
+    },
+    {
+      "path": "04_SCRIPTS/python/core/validate_phase_a.py",
+      "size": 3019,
+      "hash_status": "HASHED",
+      "sha256": "acc9ed45d33fbe0194fd1906f15826460468ca8731b5a7f30e6c2592eb238d48"
+    },
+    {
+      "path": "04_SCRIPTS/python/core/validate_phase_b.py",
+      "size": 3431,
+      "hash_status": "HASHED",
+      "sha256": "145057253b6da555406e8961beb0d8b71ac812d5a32a3089daf6a4fdc13f0ad5"
+    },
+    {
+      "path": "python.cmd",
+      "size": 105,
+      "hash_status": "HASHED",
+      "sha256": "5d15de94190536b1693254f5217e7c1932815ecee43d23db731d7dd71b848302"
+    }
+  ]
+}
