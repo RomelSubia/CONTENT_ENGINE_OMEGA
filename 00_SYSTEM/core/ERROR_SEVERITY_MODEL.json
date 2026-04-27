@@ -1,0 +1,32 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "severities": [
+    {
+      "level": "INFO",
+      "rank": 0,
+      "blocks_execution": false
+    },
+    {
+      "level": "WARNING",
+      "rank": 1,
+      "blocks_execution": false
+    },
+    {
+      "level": "REVIEW_REQUIRED",
+      "rank": 2,
+      "blocks_execution": true
+    },
+    {
+      "level": "BLOCKED",
+      "rank": 3,
+      "blocks_execution": true
+    },
+    {
+      "level": "CRITICAL",
+      "rank": 4,
+      "blocks_execution": true
+    }
+  ],
+  "default_for_missing_remote": "REVIEW_REQUIRED",
+  "default_for_root_violation": "CRITICAL"
+}

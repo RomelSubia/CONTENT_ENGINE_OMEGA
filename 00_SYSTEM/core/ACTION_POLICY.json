@@ -1,0 +1,41 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "phase": "0",
+  "engines": [
+    "Governance Contract Engine",
+    "System State Engine",
+    "State Transition Engine",
+    "Dry Run Enforcement Engine",
+    "Evidence Engine",
+    "Error Severity Engine",
+    "Idempotency Guard",
+    "Root Scope Guard",
+    "ARGOS Isolation Guard",
+    "Action Enforcement Engine",
+    "Quarantine Enforcement Engine",
+    "Phase Validator Engine",
+    "Audit Engine"
+  ],
+  "allowed_actions": [
+    "READ",
+    "SCAN",
+    "CLASSIFY",
+    "REPORT",
+    "LOG",
+    "CREATE_GOVERNANCE_FILE"
+  ],
+  "prohibited_actions": [
+    "DELETE",
+    "FORCE_REMOVE",
+    "OVERWRITE_CRITICAL",
+    "TOUCH_ARGOS",
+    "MODIFY_OUTSIDE_ROOT",
+    "AUTO_COMMIT_WITHOUT_APPROVAL"
+  ],
+  "enforcement": {
+    "dry_run_required": true,
+    "quarantine_only_for_removals": true,
+    "block_direct_delete": true,
+    "block_argos_access": true
+  }
+}

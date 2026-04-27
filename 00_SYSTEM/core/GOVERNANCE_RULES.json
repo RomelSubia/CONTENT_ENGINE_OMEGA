@@ -1,0 +1,17 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "root": "D:\\CONTENT_ENGINE_OMEGA",
+  "mode": "DRY_RUN",
+  "fail_closed": true,
+  "no_delete": true,
+  "dry_run_first": true,
+  "require_evidence": true,
+  "allow_phase_skip": false,
+  "allow_destructive_actions": false,
+  "allow_direct_delete": false,
+  "allow_quarantine_only": true,
+  "argos_isolation": true,
+  "require_root_scope_validation": true,
+  "require_idempotency": true,
+  "auto_commit_without_validation": false
+}

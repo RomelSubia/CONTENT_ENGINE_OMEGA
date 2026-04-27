@@ -1,0 +1,13 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "state": "IDLE",
+  "mode": "DRY_RUN",
+  "current_phase": "0",
+  "last_valid_phase": null,
+  "last_action": null,
+  "last_error": null,
+  "errors": [],
+  "warnings": [],
+  "review_required": [],
+  "last_update": null
+}

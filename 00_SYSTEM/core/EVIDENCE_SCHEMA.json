@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "required_fields": [
+    "evidence_id",
+    "phase",
+    "action",
+    "timestamp_utc",
+    "actor",
+    "summary",
+    "artifacts",
+    "validation_status"
+  ],
+  "artifact_types": [
+    "json",
+    "markdown",
+    "log",
+    "stdout",
+    "screenshot",
+    "quarantine_record"
+  ],
+  "validation_status_values": [
+    "PENDING",
+    "PASS",
+    "FAIL"
+  ]
+}

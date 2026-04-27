@@ -1,0 +1,92 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "allowed_states": [
+    "IDLE",
+    "DRY_RUN",
+    "VALID",
+    "WARNING",
+    "REVIEW_REQUIRED",
+    "BLOCKED",
+    "CRITICAL",
+    "RECOVERY"
+  ],
+  "allowed_transitions": [
+    {
+      "from": "IDLE",
+      "to": "DRY_RUN"
+    },
+    {
+      "from": "DRY_RUN",
+      "to": "VALID"
+    },
+    {
+      "from": "DRY_RUN",
+      "to": "WARNING"
+    },
+    {
+      "from": "DRY_RUN",
+      "to": "REVIEW_REQUIRED"
+    },
+    {
+      "from": "WARNING",
+      "to": "VALID"
+    },
+    {
+      "from": "WARNING",
+      "to": "REVIEW_REQUIRED"
+    },
+    {
+      "from": "REVIEW_REQUIRED",
+      "to": "VALID",
+      "requires_evidence": true
+    },
+    {
+      "from": "REVIEW_REQUIRED",
+      "to": "BLOCKED"
+    },
+    {
+      "from": "BLOCKED",
+      "to": "RECOVERY"
+    },
+    {
+      "from": "RECOVERY",
+      "to": "DRY_RUN"
+    },
+    {
+      "from": "CRITICAL",
+      "to": "RECOVERY"
+    },
+    {
+      "from": "VALID",
+      "to": "DRY_RUN"
+    }
+  ],
+  "forbidden_transitions": [
+    {
+      "from": "BLOCKED",
+      "to": "VALID",
+      "reason": "Direct recovery bypass is forbidden"
+    },
+    {
+      "from": "CRITICAL",
+      "to": "VALID",
+      "reason": "Critical state requires recovery first"
+    },
+    {
+      "from": "IDLE",
+      "to": "VALID",
+      "reason": "Dry run is mandatory before validation"
+    },
+    {
+      "from": "REVIEW_REQUIRED",
+      "to": "VALID",
+      "reason": "Evidence is required before approval",
+      "unless": "evidence_attached"
+    },
+    {
+      "from": "DRY_RUN",
+      "to": "DESTRUCTIVE_ACTION",
+      "reason": "Dry run cannot execute destructive actions"
+    }
+  ]
+}
