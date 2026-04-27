@@ -10,6 +10,7 @@
   "require_evidence": true,
   "deterministic_ordering": true,
   "hash_algorithm": "sha256",
+  "debug_mode": false,
   "excluded_paths": [
     ".git/",
     ".venv/",

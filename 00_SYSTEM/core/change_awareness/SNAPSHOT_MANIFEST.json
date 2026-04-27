@@ -2,11 +2,54 @@
   "system": "CONTENT_ENGINE_OMEGA",
   "phase": "B",
   "mode": "DRY_RUN",
-  "baseline_snapshot_id": "808e91d5e28db98d",
-  "current_snapshot_id": "808e91d5e28db98d",
-  "snapshot_hash": "808e91d5e28db98dfc8a76d719a38d4178469d1de6bd2926e71bacaabf1d01e8",
-  "snapshot_file": "00_SYSTEM/core/change_awareness/snapshots/808e91d5e28db98d.json",
+  "baseline_snapshot_id": "5450d3564caba6cf",
+  "current_snapshot_id": "5450d3564caba6cf",
+  "snapshot_hash": "5450d3564caba6cf6e46218f056cd39afb16cfe232ec6122af779fe819a583ca",
+  "snapshot_file": "00_SYSTEM/core/change_awareness/snapshots/5450d3564caba6cf.json",
   "deterministic_hash_confirmed": true,
   "last_delta_status": "NO_CHANGES",
-  "archived_snapshots": []
+  "archived_snapshots": [
+    {
+      "snapshot_id": "808e91d5e28db98d",
+      "json_file": "00_SYSTEM/core/change_awareness/snapshots/808e91d5e28db98d.json",
+      "zip_file": "00_SYSTEM/core/change_awareness/snapshots/archive/808e91d5e28db98d.zip",
+      "zip_validated": true,
+      "original_preserved": true
+    },
+    {
+      "snapshot_id": "8492c3527e7e4924",
+      "json_file": "00_SYSTEM/core/change_awareness/snapshots/8492c3527e7e4924.json",
+      "zip_file": "00_SYSTEM/core/change_awareness/snapshots/archive/8492c3527e7e4924.zip",
+      "zip_validated": true,
+      "original_preserved": true
+    },
+    {
+      "snapshot_id": "84e066b81b04ca59",
+      "json_file": "00_SYSTEM/core/change_awareness/snapshots/84e066b81b04ca59.json",
+      "zip_file": "00_SYSTEM/core/change_awareness/snapshots/archive/84e066b81b04ca59.zip",
+      "zip_validated": true,
+      "original_preserved": true
+    },
+    {
+      "snapshot_id": "858c216a9eb6dcec",
+      "json_file": "00_SYSTEM/core/change_awareness/snapshots/858c216a9eb6dcec.json",
+      "zip_file": "00_SYSTEM/core/change_awareness/snapshots/archive/858c216a9eb6dcec.zip",
+      "zip_validated": true,
+      "original_preserved": true
+    },
+    {
+      "snapshot_id": "cbab167e853f2b19",
+      "json_file": "00_SYSTEM/core/change_awareness/snapshots/cbab167e853f2b19.json",
+      "zip_file": "00_SYSTEM/core/change_awareness/snapshots/archive/cbab167e853f2b19.zip",
+      "zip_validated": true,
+      "original_preserved": true
+    },
+    {
+      "snapshot_id": "f5609a6553752ff0",
+      "json_file": "00_SYSTEM/core/change_awareness/snapshots/f5609a6553752ff0.json",
+      "zip_file": "00_SYSTEM/core/change_awareness/snapshots/archive/f5609a6553752ff0.zip",
+      "zip_validated": true,
+      "original_preserved": true
+    }
+  ]
 }

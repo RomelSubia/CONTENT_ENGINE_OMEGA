@@ -2,16 +2,16 @@
   "system": "CONTENT_ENGINE_OMEGA",
   "phase": "B",
   "mode": "DRY_RUN",
-  "snapshot_role": "BASELINE",
+  "snapshot_role": "CURRENT",
   "snapshot_status": "COMPLETE",
-  "snapshot_id": "5450d3564caba6cf",
-  "snapshot_hash": "5450d3564caba6cf6e46218f056cd39afb16cfe232ec6122af779fe819a583ca",
+  "snapshot_id": "f5609a6553752ff0",
+  "snapshot_hash": "f5609a6553752ff052d5381967044c74a272a0cab6b2037f9d06a9fffaa1715f",
   "root": "D:\\CONTENT_ENGINE_OMEGA",
   "total_files": 34,
-  "total_bytes": 70307,
+  "total_bytes": 70095,
   "hash_metrics": {
-    "hashed_files": 6,
-    "reused_hashes": 28,
+    "hashed_files": 34,
+    "reused_hashes": 0,
     "skipped_oversize": 0
   },
   "excluded_paths": [
@@ -33,90 +33,90 @@
       "path": ".gitignore",
       "size": 275,
       "modified_time": 1777274556000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "ea817c63763c8a6ef69517df290a500a3fbfe186f93fc47d04229bff594b9625"
     },
     {
       "path": "00_SYSTEM/core/ACTION_LOG.json",
       "size": 72,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "9cb7ec2549db50be8d04035fafbcb11cf53cac1f37c0dd925ad6c838d46ff42a"
     },
     {
       "path": "00_SYSTEM/core/ACTION_POLICY.json",
       "size": 904,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "cf3daa666b363d02b4d8f21de127a8ed763cabe863eb7d30d695447c4d194772"
     },
     {
       "path": "00_SYSTEM/core/ERROR_SEVERITY_MODEL.json",
       "size": 599,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "d0b970db07fc78ae0eade185cae90404405a9ee80c5d10efc6cc428e9c19ffa5"
     },
     {
       "path": "00_SYSTEM/core/EVIDENCE_SCHEMA.json",
       "size": 429,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "eafaae6fcd42470c8cd66d481fec934e67c4fca9dd0a17418c583d371bc15bf6"
     },
     {
       "path": "00_SYSTEM/core/GOVERNANCE_RULES.json",
       "size": 469,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "1e7ff3e43c30b5f0e99b9d401a6eb282b0e8d97e927e168132d8c246eee0416a"
     },
     {
       "path": "00_SYSTEM/core/PHASE_0_CONTRACT.md",
       "size": 1206,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "12619c193e62b4ecb12843d08bee27e0780cd36ef680487a6e0ce55571940e61"
     },
     {
       "path": "00_SYSTEM/core/QUARANTINE_LOG.json",
       "size": 72,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "9cb7ec2549db50be8d04035fafbcb11cf53cac1f37c0dd925ad6c838d46ff42a"
     },
     {
       "path": "00_SYSTEM/core/STATE_TRANSITIONS.json",
       "size": 1667,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "637737797b706addbca6b2762be5e041669a191644340610e284b6a3a0858b93"
     },
     {
       "path": "00_SYSTEM/core/SYSTEM_STATE.json",
       "size": 258,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "34fea12713c1ed14f809dcaba4ee1dcba9d9c48b386e63fe07e27477442f6d95"
     },
     {
       "path": "00_SYSTEM/core/change_awareness/CHANGE_RULES.json",
       "size": 882,
       "modified_time": 1777275742000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "4d117ff6294867a2f971f970ba1268483a3ae35db833763f1c011bbec0f2bafa"
     },
     {
       "path": "00_SYSTEM/core/logs/RUNTIME_LOG.json",
       "size": 3511,
-      "modified_time": 1777275848000000000,
+      "modified_time": 1777275756000000000,
       "hash_status": "HASHED",
       "sha256": "07d60cde50264d3ef52625933b5fe628819b56473e8667e83aea4c1ba084ceec"
     },
     {
       "path": "00_SYSTEM/core/logs/manifest.json",
       "size": 49,
-      "modified_time": 1777275848000000000,
+      "modified_time": 1777275756000000000,
       "hash_status": "HASHED",
       "sha256": "d7677bb615a90fc7aa2486a84cfaa60a7f3d72ceba3ef9d6f695a2abd7c2a761"
     },
@@ -124,13 +124,13 @@
       "path": "00_SYSTEM/core/reports/PHASE_0_AUDIT_REPORT.md",
       "size": 157,
       "modified_time": 1777274132000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "c6075c4faa91389fc63ae91c30567277c2f908c10763c39cbd7476830770dce7"
     },
     {
       "path": "00_SYSTEM/core/reports/PHASE_A_AUDIT_REPORT.md",
       "size": 350,
-      "modified_time": 1777275848000000000,
+      "modified_time": 1777275756000000000,
       "hash_status": "HASHED",
       "sha256": "03ed0f2d79dd702354959b3bcd478d79512ec3542413cc5b0f670c1841f262ba"
     },
@@ -138,20 +138,20 @@
       "path": "00_SYSTEM/core/runtime/EXECUTION_CONTEXT.json",
       "size": 388,
       "modified_time": 1777272014000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "59c655420811ab417fee5eaafeece78badaed33c7b8d8ad3b09017b521591edf"
     },
     {
       "path": "00_SYSTEM/core/runtime/HEARTBEAT.json",
       "size": 147,
-      "modified_time": 1777275848000000000,
+      "modified_time": 1777275756000000000,
       "hash_status": "HASHED",
       "sha256": "a1ce863f466f61dab1b36fda199e81c947d3df83bf4fa94dcfdcafaaec629a56"
     },
     {
       "path": "00_SYSTEM/core/runtime/SYSTEM_RUNTIME.json",
       "size": 437,
-      "modified_time": 1777275848000000000,
+      "modified_time": 1777275756000000000,
       "hash_status": "HASHED",
       "sha256": "d2f5dbea71751c8072d9a703480d4077d399b2d1e1747e5cd6facd4814cb9b42"
     },
@@ -159,112 +159,112 @@
       "path": "00_SYSTEM/core/runtime/self_test_probe.json",
       "size": 85,
       "modified_time": 1777272038000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "c32f42dfba674e6506e514899e2422f04b1a880787a22e52697f95079030e2bc"
     },
     {
       "path": "04_SCRIPTS/powershell/Check-RepoSync.ps1",
       "size": 1784,
       "modified_time": 1777269836000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "9129d6121f0d44b958229e1af394f18e152b43c9290fbdc53031843cb2e87517"
     },
     {
       "path": "04_SCRIPTS/powershell/Run-ChangeAwareness.ps1",
-      "size": 6720,
-      "modified_time": 1777275836000000000,
+      "size": 6717,
+      "modified_time": 1777275742000000000,
       "hash_status": "HASHED",
-      "sha256": "adc96c54de2128211e61555bc3d11087c4c1c39d4c0fd0510a38e6d5583f677b"
+      "sha256": "2c1909d4e7c1ac4777d712445707e6c66c774b33e95e3edd637a99c710808c8d"
     },
     {
       "path": "04_SCRIPTS/powershell/Run-ContentEngine.ps1",
       "size": 3733,
       "modified_time": 1777274654000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "6b1ac09adac1fc685782d4ff1161634a5804df69eb917b70b4336d3cc2e9aa29"
     },
     {
       "path": "04_SCRIPTS/powershell/Validate-Phase0.ps1",
       "size": 1482,
       "modified_time": 1777271908000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "f9fe4a4ff95575490892356b8da254c973fc54468dfbd334275529ea3d53efcf"
     },
     {
       "path": "04_SCRIPTS/powershell/Validate-PhaseA.ps1",
       "size": 1164,
       "modified_time": 1777272014000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "f1917880c36760ea349006d79efb0447b8d0b5727504c606b0672e261dc22b5a"
     },
     {
       "path": "04_SCRIPTS/powershell/Validate-PhaseB.ps1",
       "size": 1164,
       "modified_time": 1777274558000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "7cac2ba27f48a51ec1d76800fc82a69f35aec162c5bffcedc63cd37e882faeaf"
     },
     {
       "path": "04_SCRIPTS/python/core/change_detector.py",
-      "size": 6206,
-      "modified_time": 1777275818000000000,
-      "hash_status": "REUSED",
-      "sha256": "4b42a4ce68fd871f1abeed60c0886492eedfaa1f0693867d99e376502f398baa"
+      "size": 6255,
+      "modified_time": 1777275742000000000,
+      "hash_status": "HASHED",
+      "sha256": "4a733c26ec5a0f615a229b42803d1fd67a4f715a8fe3243c0a4f1e578dc50038"
     },
     {
       "path": "04_SCRIPTS/python/core/change_snapshot.py",
-      "size": 13556,
-      "modified_time": 1777275786000000000,
-      "hash_status": "REUSED",
-      "sha256": "60777b3cb022b428003d1fa9d6fa80e175377e41059c11f9c661d19ab647746a"
+      "size": 13298,
+      "modified_time": 1777275742000000000,
+      "hash_status": "HASHED",
+      "sha256": "2897f8a3cef6471ea28c7016cad6e6d13e0f72a652ea13131a97a18583de6e31"
     },
     {
       "path": "04_SCRIPTS/python/core/logger_engine.py",
       "size": 2368,
       "modified_time": 1777272014000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "e96e9fdc6bcd2cee0ddced149da8bbf1e9520f8780352fa0030cc1e801dcf48f"
     },
     {
       "path": "04_SCRIPTS/python/core/runtime_engine.py",
       "size": 7953,
       "modified_time": 1777272092000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "eab2bf61beec6d93326b8d5e790b2b6093ce4a82bf96944ff0d34741df59b6cd"
     },
     {
       "path": "04_SCRIPTS/python/core/state_manager.py",
       "size": 1087,
       "modified_time": 1777272014000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "e3d6afc7dc7177ac3f16008971a5bcd9fc1d9c9f67fcdbfa952e669a9a65f165"
     },
     {
       "path": "04_SCRIPTS/python/core/validate_phase0.py",
       "size": 3406,
       "modified_time": 1777268002000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "c12941625486c6cb204570120654e5a2937117bce523b4a4f83a31dde5082210"
     },
     {
       "path": "04_SCRIPTS/python/core/validate_phase_a.py",
       "size": 3019,
       "modified_time": 1777272014000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "acc9ed45d33fbe0194fd1906f15826460468ca8731b5a7f30e6c2592eb238d48"
     },
     {
       "path": "04_SCRIPTS/python/core/validate_phase_b.py",
       "size": 4603,
       "modified_time": 1777275742000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "1edd8c57b5971bf74a0d24fa957444d46f10cb13b740261f839495d865aa82fc"
     },
     {
       "path": "python.cmd",
       "size": 105,
       "modified_time": 1777268044000000000,
-      "hash_status": "REUSED",
+      "hash_status": "HASHED",
       "sha256": "5d15de94190536b1693254f5217e7c1932815ecee43d23db731d7dd71b848302"
     }
   ]

@@ -20,6 +20,7 @@ $reportPath = Join-Path $changeDir "reports\PHASE_B_AUDIT_REPORT.md"
 $partialProbePath = Join-Path $changeDir "probes\PARTIAL_SNAPSHOT.json"
 $partialDeltaProbePath = Join-Path $changeDir "probes\PARTIAL_DELTA.json"
 $probeSandboxPath = Join-Path $changeDir "probes\EXCLUSION_PROBE.txt"
+$archiveDir = Join-Path $changeDir "snapshots\archive"
 
 $pythonExe = $null
 if (Get-Command python -ErrorAction SilentlyContinue) {
@@ -137,6 +138,30 @@ if ($probePresent) {
     exit 1
 }
 
+$reusedHashes = $currentSnapshot2.hash_metrics.reused_hashes
+if ($reusedHashes -lt 1) {
+    Write-Error "Incremental hash reuse check failed"
+    exit 1
+}
+
+$zipArchives = @()
+if (Test-Path -LiteralPath $archiveDir) {
+    $zipArchives = Get-ChildItem -LiteralPath $archiveDir -Filter *.zip | Sort-Object Name
+}
+if ($zipArchives.Count -lt 1) {
+    Write-Error "Snapshot archive compression check failed"
+    exit 1
+}
+
+if (-not $delta.PSObject.Properties.Name.Contains('folder_index')) {
+    Write-Error "Folder index is missing from delta"
+    exit 1
+}
+if (-not $delta.PSObject.Properties.Name.Contains('risk_score')) {
+    Write-Error "Risk score is missing from delta"
+    exit 1
+}
+
 $report = @"
 # PHASE B AUDIT REPORT
 
@@ -146,6 +171,11 @@ $report = @"
 - Delta generated: $($delta.delta_status)
 - Manifest updated: $($manifest.snapshot_hash)
 - Determinism: PASS
+- Incremental hashing: reused=$reusedHashes hashed=$($currentSnapshot2.hash_metrics.hashed_files)
+- Snapshot archive compression: $($zipArchives.Count) zip file(s) validated
+- Folder index entries: $(@($delta.folder_index.PSObject.Properties).Count)
+- Risk score: $($delta.risk_score)
+- Debug mode: $((Get-Content -LiteralPath (Join-Path $changeDir 'CHANGE_RULES.json') -Raw | ConvertFrom-Json).debug_mode)
 - Lock test: $($lockTest -join '; ')
 - Partial snapshot blocked: PASS
 - Probe sandbox excluded: PASS

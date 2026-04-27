@@ -35,7 +35,7 @@ def normalize_entries(entries: list[dict[str, Any]]) -> dict[str, dict[str, Any]
     for entry in entries:
         normalized[str(entry["path"])] = {
             "size": int(entry["size"]),
-            "hash_status": entry["hash_status"],
+            "modified_time": int(entry.get("modified_time", 0)),
             "sha256": entry.get("sha256"),
         }
     return normalized
@@ -53,6 +53,35 @@ def get_git_status() -> list[str]:
         fail("git status --short failed")
     lines = [line.strip() for line in result.stdout.splitlines() if line.strip()]
     return sorted(lines)
+
+
+def build_folder_index(new_paths: list[str], modified_paths: list[str], deleted_paths: list[str]) -> dict[str, dict[str, int]]:
+    folder_index: dict[str, dict[str, int]] = {}
+
+    def increment(paths: list[str], key: str) -> None:
+        for item in paths:
+            folder = str(Path(item).parent).replace("\\", "/")
+            if folder == ".":
+                folder = "."
+            folder_index.setdefault(folder, {"new": 0, "modified": 0, "deleted": 0})
+            folder_index[folder][key] += 1
+
+    increment(new_paths, "new")
+    increment(modified_paths, "modified")
+    increment(deleted_paths, "deleted")
+    return dict(sorted(folder_index.items(), key=lambda item: item[0]))
+
+
+def calculate_risk_score(paths: list[str]) -> str:
+    if any("ARGOS" in path.upper() for path in paths):
+        return "CRITICAL"
+    if any(path.startswith("00_SYSTEM/core/") for path in paths):
+        return "HIGH"
+    if any(path.startswith("04_SCRIPTS/") for path in paths):
+        return "MEDIUM"
+    if any("/logs/" in path or "/reports/" in path or path.startswith("00_SYSTEM/core/logs/") or path.startswith("00_SYSTEM/core/reports/") for path in paths):
+        return "LOW"
+    return "LOW"
 
 
 def build_delta(baseline: dict[str, Any], current: dict[str, Any]) -> dict[str, Any]:
@@ -86,6 +115,8 @@ def build_delta(baseline: dict[str, Any], current: dict[str, Any]) -> dict[str, 
     else:
         delta_status = "NO_CHANGES"
 
+    changed_paths = sorted(set(new_paths + modified_paths + deleted_paths))
+
     return {
         "system": "CONTENT_ENGINE_OMEGA",
         "phase": "B",
@@ -99,6 +130,8 @@ def build_delta(baseline: dict[str, Any], current: dict[str, Any]) -> dict[str, 
             "deleted": len(deleted_paths),
             "git_conflicts": len(git_conflicts),
         },
+        "folder_index": build_folder_index(new_paths, modified_paths, deleted_paths),
+        "risk_score": calculate_risk_score(changed_paths),
         "new_paths": new_paths,
         "modified_paths": modified_paths,
         "deleted_paths": deleted_paths,

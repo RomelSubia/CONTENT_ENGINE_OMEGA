@@ -2,16 +2,16 @@
   "system": "CONTENT_ENGINE_OMEGA",
   "phase": "B",
   "mode": "DRY_RUN",
-  "snapshot_role": "BASELINE",
+  "snapshot_role": "CURRENT",
   "snapshot_status": "COMPLETE",
-  "snapshot_id": "5450d3564caba6cf",
-  "snapshot_hash": "5450d3564caba6cf6e46218f056cd39afb16cfe232ec6122af779fe819a583ca",
+  "snapshot_id": "858c216a9eb6dcec",
+  "snapshot_hash": "858c216a9eb6dcec7840e886306c936f241155b444f130f68c81793053c02d6f",
   "root": "D:\\CONTENT_ENGINE_OMEGA",
   "total_files": 34,
-  "total_bytes": 70307,
+  "total_bytes": 70304,
   "hash_metrics": {
-    "hashed_files": 6,
-    "reused_hashes": 28,
+    "hashed_files": 0,
+    "reused_hashes": 34,
     "skipped_oversize": 0
   },
   "excluded_paths": [
@@ -109,15 +109,15 @@
     {
       "path": "00_SYSTEM/core/logs/RUNTIME_LOG.json",
       "size": 3511,
-      "modified_time": 1777275848000000000,
-      "hash_status": "HASHED",
+      "modified_time": 1777275828000000000,
+      "hash_status": "REUSED",
       "sha256": "07d60cde50264d3ef52625933b5fe628819b56473e8667e83aea4c1ba084ceec"
     },
     {
       "path": "00_SYSTEM/core/logs/manifest.json",
       "size": 49,
-      "modified_time": 1777275848000000000,
-      "hash_status": "HASHED",
+      "modified_time": 1777275828000000000,
+      "hash_status": "REUSED",
       "sha256": "d7677bb615a90fc7aa2486a84cfaa60a7f3d72ceba3ef9d6f695a2abd7c2a761"
     },
     {
@@ -130,8 +130,8 @@
     {
       "path": "00_SYSTEM/core/reports/PHASE_A_AUDIT_REPORT.md",
       "size": 350,
-      "modified_time": 1777275848000000000,
-      "hash_status": "HASHED",
+      "modified_time": 1777275828000000000,
+      "hash_status": "REUSED",
       "sha256": "03ed0f2d79dd702354959b3bcd478d79512ec3542413cc5b0f670c1841f262ba"
     },
     {
@@ -144,15 +144,15 @@
     {
       "path": "00_SYSTEM/core/runtime/HEARTBEAT.json",
       "size": 147,
-      "modified_time": 1777275848000000000,
-      "hash_status": "HASHED",
+      "modified_time": 1777275828000000000,
+      "hash_status": "REUSED",
       "sha256": "a1ce863f466f61dab1b36fda199e81c947d3df83bf4fa94dcfdcafaaec629a56"
     },
     {
       "path": "00_SYSTEM/core/runtime/SYSTEM_RUNTIME.json",
       "size": 437,
-      "modified_time": 1777275848000000000,
-      "hash_status": "HASHED",
+      "modified_time": 1777275828000000000,
+      "hash_status": "REUSED",
       "sha256": "d2f5dbea71751c8072d9a703480d4077d399b2d1e1747e5cd6facd4814cb9b42"
     },
     {
@@ -171,10 +171,10 @@
     },
     {
       "path": "04_SCRIPTS/powershell/Run-ChangeAwareness.ps1",
-      "size": 6720,
-      "modified_time": 1777275836000000000,
-      "hash_status": "HASHED",
-      "sha256": "adc96c54de2128211e61555bc3d11087c4c1c39d4c0fd0510a38e6d5583f677b"
+      "size": 6717,
+      "modified_time": 1777275742000000000,
+      "hash_status": "REUSED",
+      "sha256": "2c1909d4e7c1ac4777d712445707e6c66c774b33e95e3edd637a99c710808c8d"
     },
     {
       "path": "04_SCRIPTS/powershell/Run-ContentEngine.ps1",
