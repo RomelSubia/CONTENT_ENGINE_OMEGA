@@ -1,0 +1,21 @@
+{
+  "system":"CONTENT_ENGINE_OMEGA",
+  "phase":"C",
+  "version":"v3",
+  "mode":"DRY_RUN",
+  "root":"D:\\CONTENT_ENGINE_OMEGA",
+  "allow_delete":false,
+  "allow_move":false,
+  "allow_quarantine":false,
+  "allow_cleanup":false,
+  "allow_auto_fix":false,
+  "require_evidence":true,
+  "require_confidence":true,
+  "classification_is_non_destructive":true,
+  "deterministic_classification":true,
+  "classification_hash_required":true,
+  "multi_pass_stabilization":true,
+  "cross_run_consistency_required":true,
+  "max_artifacts_per_run":5000
+}
+

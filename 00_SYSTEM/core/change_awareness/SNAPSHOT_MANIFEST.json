@@ -2,13 +2,20 @@
   "system": "CONTENT_ENGINE_OMEGA",
   "phase": "B",
   "mode": "DRY_RUN",
-  "baseline_snapshot_id": "5450d3564caba6cf",
-  "current_snapshot_id": "5450d3564caba6cf",
-  "snapshot_hash": "5450d3564caba6cf6e46218f056cd39afb16cfe232ec6122af779fe819a583ca",
-  "snapshot_file": "00_SYSTEM/core/change_awareness/snapshots/5450d3564caba6cf.json",
-  "deterministic_hash_confirmed": true,
+  "baseline_snapshot_id": "87e092cdd9103f58",
+  "current_snapshot_id": "87e092cdd9103f58",
+  "snapshot_hash": "87e092cdd9103f58fa9f5e579945802a740308939ff905b460b38f86e65e7bc0",
+  "snapshot_file": "00_SYSTEM/core/change_awareness/snapshots/87e092cdd9103f58.json",
+  "deterministic_hash_confirmed": false,
   "last_delta_status": "NO_CHANGES",
   "archived_snapshots": [
+    {
+      "snapshot_id": "5450d3564caba6cf",
+      "json_file": "00_SYSTEM/core/change_awareness/snapshots/5450d3564caba6cf.json",
+      "zip_file": "00_SYSTEM/core/change_awareness/snapshots/archive/5450d3564caba6cf.zip",
+      "zip_validated": true,
+      "original_preserved": true
+    },
     {
       "snapshot_id": "808e91d5e28db98d",
       "json_file": "00_SYSTEM/core/change_awareness/snapshots/808e91d5e28db98d.json",

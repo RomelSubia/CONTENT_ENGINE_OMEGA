@@ -1,0 +1,8 @@
+{
+  "system":"CONTENT_ENGINE_OMEGA",
+  "phase":"C",
+  "version":"v3",
+  "weights":{"path":0.45,"extension":0.2,"name":0.1,"hash":0.15,"git_status":0.05,"phase_context":0.05},
+  "duplicate_weights":{"same_hash":0.6,"same_size":0.15,"normalized_name_similarity":0.15,"path_role_similarity":0.1}
+}
+

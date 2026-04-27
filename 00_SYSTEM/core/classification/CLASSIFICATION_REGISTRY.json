@@ -1,0 +1,23 @@
+{
+  "phase": "C",
+  "runs": [
+    {
+      "classification_hash": "3b3a89198892601710982d7e2cb3c81a386f707962fa6b779dd06fc41c77a4df",
+      "classification_run_id": "3b3a891988926017",
+      "items": [],
+      "source_snapshot_id": "87e092cdd9103f58",
+      "timestamp": "2026-04-27T08:50:53.148065Z",
+      "total_items": 0
+    },
+    {
+      "classification_hash": "3b3a89198892601710982d7e2cb3c81a386f707962fa6b779dd06fc41c77a4df",
+      "classification_run_id": "3b3a891988926017",
+      "items": [],
+      "source_snapshot_id": "87e092cdd9103f58",
+      "timestamp": "2026-04-27T08:51:24.972527Z",
+      "total_items": 0
+    }
+  ],
+  "system": "CONTENT_ENGINE_OMEGA",
+  "version": "v3"
+}
