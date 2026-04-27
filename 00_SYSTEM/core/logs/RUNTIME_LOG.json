@@ -1,0 +1,123 @@
+[
+  {
+    "timestamp": "2026-04-27T06:40:37Z",
+    "type": "STATE_TRANSITION",
+    "phase": "A",
+    "message": "Runtime engine acquired the lock",
+    "state_before": "IDLE",
+    "state_after": "STARTING",
+    "evidence": {
+      "lock_path": "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\core\\runtime\\runtime.lock",
+      "mode": "DRY_RUN"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:40:37Z",
+    "type": "STATE_TRANSITION",
+    "phase": "A",
+    "message": "Runtime engine started validation",
+    "state_before": "STARTING",
+    "state_after": "VALIDATING",
+    "evidence": {
+      "execution_mode": "DRY_RUN",
+      "requires_evidence": true
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:40:37Z",
+    "type": "SELF_TEST",
+    "phase": "A",
+    "message": "Self-test wrote and validated runtime probe",
+    "state_before": "VALIDATING",
+    "state_after": "VALIDATING",
+    "evidence": {
+      "probe_path": "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\core\\runtime\\self_test_probe.json",
+      "heartbeat_sequence": 1
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:40:37Z",
+    "type": "STATE_TRANSITION",
+    "phase": "A",
+    "message": "Runtime engine entered DRY_RUN execution",
+    "state_before": "VALIDATING",
+    "state_after": "RUNNING",
+    "evidence": {
+      "max_runtime_seconds": 60,
+      "active_task": "PHASE_A_SELF_TEST"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:40:37Z",
+    "type": "STATE_TRANSITION",
+    "phase": "A",
+    "message": "Runtime engine finished DRY_RUN execution",
+    "state_before": "RUNNING",
+    "state_after": "STOPPED",
+    "evidence": {
+      "result": "PASS",
+      "sequence": 2
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:41:51Z",
+    "type": "STATE_TRANSITION",
+    "phase": "A",
+    "message": "Runtime engine acquired the lock",
+    "state_before": "STOPPED",
+    "state_after": "STARTING",
+    "evidence": {
+      "lock_path": "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\core\\runtime\\runtime.lock",
+      "mode": "DRY_RUN"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:41:51Z",
+    "type": "STATE_TRANSITION",
+    "phase": "A",
+    "message": "Runtime engine started validation",
+    "state_before": "STARTING",
+    "state_after": "VALIDATING",
+    "evidence": {
+      "execution_mode": "DRY_RUN",
+      "requires_evidence": true
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:41:51Z",
+    "type": "SELF_TEST",
+    "phase": "A",
+    "message": "Self-test validated atomic JSON writes, logger, and heartbeat",
+    "state_before": "VALIDATING",
+    "state_after": "VALIDATING",
+    "evidence": {
+      "runtime_path": "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\core\\runtime\\SYSTEM_RUNTIME.json",
+      "heartbeat_path": "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\core\\runtime\\HEARTBEAT.json",
+      "heartbeat_sequence": 4
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:41:51Z",
+    "type": "STATE_TRANSITION",
+    "phase": "A",
+    "message": "Runtime engine entered DRY_RUN execution",
+    "state_before": "VALIDATING",
+    "state_after": "RUNNING",
+    "evidence": {
+      "max_runtime_seconds": 60,
+      "active_task": "PHASE_A_SELF_TEST"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T06:41:51Z",
+    "type": "STATE_TRANSITION",
+    "phase": "A",
+    "message": "Runtime engine finished DRY_RUN execution",
+    "state_before": "RUNNING",
+    "state_after": "STOPPED",
+    "evidence": {
+      "result": "PASS",
+      "sequence": 5
+    }
+  }
+]

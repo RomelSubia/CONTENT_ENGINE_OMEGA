@@ -11,7 +11,7 @@ if ($current -ne $expected) {
     exit 1
 }
 
-$pythonScript = Join-Path $root "04_SCRIPTS\python\core\validate_phase0.py"
+$pythonScript = Join-Path $root "04_SCRIPTS\python\core\validate_phase_a.py"
 if (-not (Test-Path -LiteralPath $pythonScript -PathType Leaf)) {
     Write-Error "Missing validator: $pythonScript"
     exit 1
@@ -30,22 +30,10 @@ if (-not $pythonExe) {
 }
 
 $pythonOutput = & $pythonExe $pythonScript 2>&1
-$pythonExit = $LASTEXITCODE
-if ($pythonExit -ne 0) {
+if ($LASTEXITCODE -ne 0) {
     $pythonOutput | ForEach-Object { Write-Output $_ }
-    Write-Error "Python validation failed"
+    Write-Error "Phase A python validation failed"
     exit 1
 }
 
-$reportPath = Join-Path $root "00_SYSTEM\core\reports\PHASE_0_AUDIT_REPORT.md"
-$report = @"
-# PHASE 0 AUDIT REPORT
-
-- Root: $root
-- Python Validator: PASS
-- Python Output: $($pythonOutput -join '; ')
-- Result: PHASE 0 AUDIT: PASS
-"@
-Set-Content -LiteralPath $reportPath -Value $report -Encoding UTF8
-
-Write-Output "PHASE 0 AUDIT: PASS"
+Write-Output "PHASE A AUDIT: PASS"

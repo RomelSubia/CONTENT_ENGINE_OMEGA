@@ -1,0 +1,16 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "root": "D:\\CONTENT_ENGINE_OMEGA",
+  "execution_mode": "DRY_RUN",
+  "actor": "system",
+  "entrypoint": "Run-ContentEngine.ps1",
+  "allowed_scope": "D:\\CONTENT_ENGINE_OMEGA",
+  "blocked_scopes": [
+    "D:\\ARGOS_BACKCUP",
+    "D:\\ARGOS_CLEAN",
+    "D:\\ARGOS"
+  ],
+  "last_command": null,
+  "last_validation": null,
+  "requires_evidence": true
+}

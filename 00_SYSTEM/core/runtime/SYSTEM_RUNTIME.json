@@ -1,0 +1,16 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "runtime_status": "STOPPED",
+  "mode": "DRY_RUN",
+  "current_phase": "A",
+  "previous_phase": "0",
+  "last_transition": "2026-04-27T06:41:51Z",
+  "last_start": "2026-04-27T06:41:51Z",
+  "last_stop": "2026-04-27T06:41:51Z",
+  "last_heartbeat": "2026-04-27T06:41:51Z",
+  "active_task": null,
+  "last_result": "PASS",
+  "error_count": 0,
+  "warning_count": 0,
+  "lock_active": false
+}

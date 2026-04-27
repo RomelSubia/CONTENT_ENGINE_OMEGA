@@ -1,0 +1,4 @@
+04_SCRIPTS/python/core/__pycache__/
+04_SCRIPTS/python/core/*.pyc
+00_SYSTEM/core/runtime/self_test_probe.json
+00_SYSTEM/core/runtime/runtime.lock
