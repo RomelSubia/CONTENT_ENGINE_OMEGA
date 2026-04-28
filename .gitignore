@@ -5,3 +5,5 @@
 00_SYSTEM/core/change_awareness/probes/
 00_SYSTEM/core/change_awareness/locks/
 00_SYSTEM/core/change_awareness/snapshots/archive/
+
+.venv/
