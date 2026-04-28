@@ -7,3 +7,7 @@
 00_SYSTEM/core/change_awareness/snapshots/archive/
 
 .venv/
+
+__pycache__/
+*.pyc
+.venv/
