@@ -1,30 +1,27 @@
-﻿CONTENT ENGINE Ω — G-G v1.3 FINAL MAXIMUM PRODUCTION AUDIT
+﻿CONTENT ENGINE Ω — G-G v1.3 FINAL MAXIMUM PRODUCTION AUDIT — FIXED
 
 Status:
-VALIDATED_REAL
+VALIDATED_REAL_AFTER_FIX
+
+Correction:
+- Fixed false positive in command_guard.
+- Runtime word no longer triggers forbidden command token.
+- Real command tokens still blocked.
+- Previous failed pytest state corrected.
 
 Validation:
-- Input Contract Validator: PASS
-- Plan Integrity Validator: PASS
-- Final Approval Validator: PASS
-- Snapshot Guard: PASS
-- Drift Guard: PASS
-- Repo State Guard: PASS
-- Emergency Stop Guard: PASS
-- Zero Command Guarantee: PASS
-- Execution Permission Separation: PASS
-- Reason Registry: PASS
-- Hash Audit: PASS
-- Determinism Contract: PASS
 - py_compile: PASS
 - pytest: PASS
+- Direct valid gate flow: PASS
+- Determinism: PASS
+- Execution permission remains false: PASS
+- Zero command guarantee: PASS
+- Fail closed restored: PASS
 
 Security:
 - READY_FOR_FINAL_EXECUTION_REVIEW != EXECUTION_PERMISSION: PASS
-- execution_permission false: PASS
-- no execution commands: PASS
+- G-G does not execute: PASS
 - G-H handoff only: PASS
-- Fail closed: PASS
 
 Final Decision:
-G-G v1.3 ready for commit/sync.
+G-G v1.3 fixed and ready for commit/sync.

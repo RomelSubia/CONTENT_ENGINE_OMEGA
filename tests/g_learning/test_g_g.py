@@ -157,3 +157,12 @@ def test_deterministic_output():
     b = run_g_g(data, app, snap, repo, now_iso="2026-04-28T01:00:00Z")
     assert a["output_hash"] == b["output_hash"]
     assert a["gate_hash"] == b["gate_hash"]
+
+def test_command_guard_does_not_block_runtime_word():
+    from core.g_learning.g_g.command_guard import contains_command_token
+    assert contains_command_token({"description": "No file, code, or runtime modification is allowed."}) is False
+
+
+def test_command_guard_blocks_real_command_token():
+    from core.g_learning.g_g.command_guard import contains_command_token
+    assert contains_command_token({"description": "run this command"}) is True
