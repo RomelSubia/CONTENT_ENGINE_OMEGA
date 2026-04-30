@@ -1,0 +1,11 @@
+﻿{
+  "brain_version": "G-J.x v2.2",
+  "brain_layer": "CAPA_0",
+  "brain_status": "BRAIN_PREPARED",
+  "lifecycle_state": "BOOTING",
+  "manual_connection_allowed": false,
+  "physical_mutation_allowed": false,
+  "autonomy_level": "LEVEL_2_DRY_RUN_ALLOWED",
+  "next_required_layer": "CAPA_1_SELF_AUDIT_STATE_AWARENESS",
+  "deterministic": true
+}

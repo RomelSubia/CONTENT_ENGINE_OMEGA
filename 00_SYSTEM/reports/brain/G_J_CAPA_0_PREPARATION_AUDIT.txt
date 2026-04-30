@@ -1,0 +1,26 @@
+﻿CONTENT ENGINE Ω — G-J.x v2.2 CAPA 0 PREPARATION AUDIT
+
+Status:
+CAPA_0_PREPARED
+
+Created:
+- 00_SYSTEM/brain
+- 00_SYSTEM/brain/state
+- 00_SYSTEM/brain/policies
+- 00_SYSTEM/brain/runtime
+- 00_SYSTEM/brain/evidence
+- 00_SYSTEM/brain/recovery
+- 00_SYSTEM/brain/contracts
+- 00_SYSTEM/brain/integrity
+- 00_SYSTEM/brain/watchdog
+- 00_SYSTEM/brain/orchestrator
+- 00_SYSTEM/reports/brain
+- tests/brain
+
+Safety:
+- Manual connection: BLOCKED
+- Physical mutation: BLOCKED
+- Autonomy escalation: BLOCKED
+
+Next:
+CAPA 1 — Self-Audit + State Awareness

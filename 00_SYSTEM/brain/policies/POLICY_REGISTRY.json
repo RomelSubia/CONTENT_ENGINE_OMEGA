@@ -1,0 +1,36 @@
+﻿{
+  "policy_registry_version": "v1",
+  "brain_version": "G-J.x v2.2",
+  "policies": [
+    {
+      "policy_id": "NO_MANUAL_CONNECTION_BEFORE_BRAIN_READY",
+      "severity": "BLOCK",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "policy_id": "NO_EXECUTION_WITHOUT_VALIDATION",
+      "severity": "BLOCK",
+      "priority": 95,
+      "enabled": true
+    },
+    {
+      "policy_id": "NO_MUTATION_WITHOUT_APPROVAL",
+      "severity": "BLOCK",
+      "priority": 90,
+      "enabled": true
+    },
+    {
+      "policy_id": "NO_COMMIT_WITHOUT_AUDIT",
+      "severity": "BLOCK",
+      "priority": 85,
+      "enabled": true
+    },
+    {
+      "policy_id": "NO_CHANGE_AFTER_FREEZE",
+      "severity": "LOCK",
+      "priority": 100,
+      "enabled": true
+    }
+  ]
+}
