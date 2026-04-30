@@ -7,14 +7,30 @@
     $MemFile = Join-Path $RootPath "00_SYSTEM\brain\memory\MEMORY_STORE.json"
 
     if (!(Test-Path $MemFile)) {
-        return @{ context = "EMPTY" }
+        return @{
+            context = "EMPTY"
+            entries = 0
+            last_request = $RequestType
+        }
     }
 
-    $Data = Get-Content $MemFile -Raw | ConvertFrom-Json
+    try {
+        $Raw = Get-Content $MemFile -Raw
+        if ([string]::IsNullOrWhiteSpace($Raw)) { $Raw = "{}" }
 
-    return @{
-        context = "AVAILABLE"
-        entries = $Data.PSObject.Properties.Count
-        last_request = $RequestType
+        $Data = $Raw | ConvertFrom-Json
+        $Props = @($Data.PSObject.Properties)
+
+        return @{
+            context = "AVAILABLE"
+            entries = $Props.Length
+            last_request = $RequestType
+        }
+    }
+    catch {
+        return @{
+            context = "BLOCK"
+            reason = "CONTEXT_READ_FAILED"
+        }
     }
 }
