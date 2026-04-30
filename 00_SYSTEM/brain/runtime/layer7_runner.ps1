@@ -1,4 +1,4 @@
-﻿. "$PSScriptRoot\layer6_runner.ps1"
+. "$PSScriptRoot\layer6_runner.ps1"
 . "$PSScriptRoot\memory_engine.ps1"
 . "$PSScriptRoot\context_engine.ps1"
 . "$PSScriptRoot\learning_engine.ps1"
