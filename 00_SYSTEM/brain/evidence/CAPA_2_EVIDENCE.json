@@ -1,0 +1,25 @@
+{
+    "brain_layer":  "CAPA_2",
+    "deterministic":  true,
+    "status":  "EVIDENCE_INTEGRITY_VALID",
+    "integrity":  {
+                      "files":  [
+                                    {
+                                        "status":  "OK",
+                                        "file":  "00_SYSTEM\\brain\\state\\BRAIN_STATE.json",
+                                        "hash":  "aa36de62d2276ecc08809aed689019bd7ae3334b2529f12ea3d6f5b64735f5cd"
+                                    },
+                                    {
+                                        "status":  "OK",
+                                        "file":  "00_SYSTEM\\brain\\policies\\POLICY_REGISTRY.json",
+                                        "hash":  "a87db4b28b2766b3838202ca0b602236d84fc00910c6a63d97da83fa38f6b599"
+                                    },
+                                    {
+                                        "status":  "OK",
+                                        "file":  "00_SYSTEM\\reports\\brain\\G_J_CAPA_1_OFFICIAL_SEAL.txt",
+                                        "hash":  "b39091536b0ef456c955bad363914a6f992024acdad8d7dc776da8103c6b5277"
+                                    }
+                                ],
+                      "integrity_status":  "PASS"
+                  }
+}
