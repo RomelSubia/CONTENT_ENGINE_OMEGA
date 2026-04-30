@@ -50,14 +50,14 @@
         $_.enabled -ne $true -and $_.severity -in @("BLOCK","LOCK")
     })
 
-    if ($DisabledCritical.Count -gt 0) {
+    if ($DisabledCritical.Length -gt 0) {
         return @{
             policy_result = "POLICY_LOCK"
             violated_policies = @("CRITICAL_POLICY_DISABLED")
         }
     }
 
-    if ($Violations.Count -gt 0) {
+    if ($Violations.Length -gt 0) {
         return @{
             policy_result = "POLICY_BLOCK"
             violated_policies = $Violations

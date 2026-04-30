@@ -3,8 +3,9 @@
 
     $Anomalies = @()
 
-    function Add-Anomaly($code, $severity, $detail) {
-        $script:Anomalies += @{
+    function Add-AnomalyLocal {
+        param($code, $severity, $detail)
+        return @{
             code = $code
             severity = $severity
             detail = $detail
@@ -13,13 +14,13 @@
 
     $gitStatus = git status --short
     if ($gitStatus) {
-        Add-Anomaly "REPO_DIRTY" "BLOCKING" "Repository has uncommitted changes."
+        $Anomalies += Add-AnomalyLocal "REPO_DIRTY" "BLOCKING" "Repository has uncommitted changes."
     }
 
     $local = git rev-parse HEAD
     $remote = git rev-parse "@{u}"
     if ($local -ne $remote) {
-        Add-Anomaly "HEAD_MISMATCH" "BLOCKING" "Local HEAD differs from upstream."
+        $Anomalies += Add-AnomalyLocal "HEAD_MISMATCH" "BLOCKING" "Local HEAD differs from upstream."
     }
 
     $Required = @(
@@ -33,40 +34,40 @@
     foreach ($File in $Required) {
         $Full = Join-Path $RootPath $File
         if (!(Test-Path $Full)) {
-            Add-Anomaly "MISSING_REQUIRED_FILE" "BLOCKING" $File
+            $Anomalies += Add-AnomalyLocal "MISSING_REQUIRED_FILE" "BLOCKING" $File
         }
         elseif ((Get-Item $Full).Length -le 0) {
-            Add-Anomaly "EMPTY_REQUIRED_FILE" "BLOCKING" $File
+            $Anomalies += Add-AnomalyLocal "EMPTY_REQUIRED_FILE" "BLOCKING" $File
         }
     }
 
-    $StagingResidue = Get-ChildItem "$RootPath\00_SYSTEM\brain" -Recurse -Force -ErrorAction SilentlyContinue |
-        Where-Object { $_.Name -match "\.tmp$|\.staging" }
+    $StagingResidue = @(Get-ChildItem "$RootPath\00_SYSTEM\brain" -Recurse -Force -ErrorAction SilentlyContinue |
+        Where-Object { $_.Name -match "\.tmp$|\.staging" })
 
-    if ($StagingResidue) {
-        Add-Anomaly "STAGING_RESIDUE" "BLOCKING" "Temporary/staging residue detected."
+    if ($StagingResidue.Length -gt 0) {
+        $Anomalies += Add-AnomalyLocal "STAGING_RESIDUE" "BLOCKING" "Temporary/staging residue detected."
     }
 
-    $LockResidue = Get-ChildItem "$RootPath\00_SYSTEM\brain" -Recurse -Force -ErrorAction SilentlyContinue |
-        Where-Object { $_.Name -match "\.lock$" }
+    $LockResidue = @(Get-ChildItem "$RootPath\00_SYSTEM\brain" -Recurse -Force -ErrorAction SilentlyContinue |
+        Where-Object { $_.Name -match "\.lock$" })
 
-    if ($LockResidue) {
-        Add-Anomaly "LOCK_RESIDUE" "BLOCKING" "Lock residue detected."
+    if ($LockResidue.Length -gt 0) {
+        $Anomalies += Add-AnomalyLocal "LOCK_RESIDUE" "BLOCKING" "Lock residue detected."
     }
 
-    $Critical = $Anomalies | Where-Object { $_.severity -eq "CRITICAL" }
-    $Blocking = $Anomalies | Where-Object { $_.severity -eq "BLOCKING" }
-    $Warning = $Anomalies | Where-Object { $_.severity -eq "WARNING" }
+    $Critical = @($Anomalies | Where-Object { $_.severity -eq "CRITICAL" })
+    $Blocking = @($Anomalies | Where-Object { $_.severity -eq "BLOCKING" })
+    $Warning = @($Anomalies | Where-Object { $_.severity -eq "WARNING" })
 
-    if ($Critical.Count -gt 0) {
+    if ($Critical.Length -gt 0) {
         return @{ anomaly_status = "CRITICAL_ANOMALY"; anomalies = $Anomalies }
     }
 
-    if ($Blocking.Count -gt 0) {
+    if ($Blocking.Length -gt 0) {
         return @{ anomaly_status = "BLOCKING_ANOMALY"; anomalies = $Anomalies }
     }
 
-    if ($Warning.Count -gt 0) {
+    if ($Warning.Length -gt 0) {
         return @{ anomaly_status = "WARNING_ANOMALY"; anomalies = $Anomalies }
     }
 
