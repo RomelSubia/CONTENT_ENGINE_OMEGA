@@ -1,0 +1,34 @@
+﻿CONTENT ENGINE Ω — G-I v1.4.1 FINAL UNLOCK PROTOCOL AUDIT
+
+Status:
+VALIDATED_REAL_UNLOCK_PROTOCOL
+
+Validation:
+- G-I v1.3 dry-run evidence: PASS
+- evidence_hash: PASS
+- commit_hash: PASS
+- pytest_count 84: PASS
+- no mutation proof: PASS
+- controlled_run_locked: PASS
+- unlock approval: PASS
+- no-reuse guard: PASS
+- unlock window: PASS
+- capability lock: PASS
+- repo state: PASS
+- risk gate: PASS
+- controlled_run_unlocked invariant false: PASS
+- physical_mutation_allowed invariant false: PASS
+- reason registry: PASS
+- determinism: PASS
+- py_compile: PASS
+- pytest: PASS
+- direct verification: PASS
+
+Security:
+- G-I v1.4.1 does not unlock execution: PASS
+- G-I v1.4.1 does not allow physical mutation: PASS
+- G-I v1.5 required for future limited controlled run: PASS
+
+Final Decision:
+G-I v1.4.1 unlock protocol validated.
+CONTROLLED_RUN remains locked.
