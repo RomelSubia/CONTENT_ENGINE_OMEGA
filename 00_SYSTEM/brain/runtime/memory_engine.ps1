@@ -1,4 +1,20 @@
-﻿function Invoke-MemoryEngine {
+﻿function ConvertTo-HashtableSafe {
+    param($Object)
+
+    $Hash = @{}
+
+    if ($null -eq $Object) {
+        return $Hash
+    }
+
+    foreach ($Prop in @($Object.PSObject.Properties)) {
+        $Hash[$Prop.Name] = $Prop.Value
+    }
+
+    return $Hash
+}
+
+function Invoke-MemoryEngine {
     param(
         [string]$RootPath,
         [string]$Key,
@@ -13,13 +29,20 @@
     }
 
     if (!(Test-Path $MemFile)) {
-        @{} | ConvertTo-Json -Depth 10 | Set-Content $MemFile -Encoding UTF8
+        "{}" | Set-Content $MemFile -Encoding UTF8
     }
 
-    $Data = Get-Content $MemFile -Raw | ConvertFrom-Json
-
-    if ($null -eq $Data) {
-        $Data = @{}
+    try {
+        $Raw = Get-Content $MemFile -Raw
+        if ([string]::IsNullOrWhiteSpace($Raw)) { $Raw = "{}" }
+        $JsonObject = $Raw | ConvertFrom-Json
+        $Data = ConvertTo-HashtableSafe $JsonObject
+    }
+    catch {
+        return @{
+            memory_status = "BLOCK"
+            reason = "MEMORY_JSON_CORRUPTED"
+        }
     }
 
     $Data[$Key] = $Value
