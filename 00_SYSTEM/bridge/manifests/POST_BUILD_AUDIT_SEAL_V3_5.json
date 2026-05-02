@@ -1,0 +1,1 @@
+{"seal_id":"POST_BUILD_AUDIT_SEAL_V3_5","manifest_path":"00_SYSTEM/bridge/manifests/POST_BUILD_AUDIT_MANIFEST_V3_5.json","manifest_hash_sha256":"454fc090fd4dca856921029d12c6c9df29d523c6a3a40b53b24d94c1881400a1","sealed_by":"POST_BUILD_AUDIT_V3_5_CONTROLLED_ACTION_HANDOFF_QUEUE","status":"VALID","final_status":"PASS_WITH_WARNINGS"}
