@@ -1,4 +1,4 @@
-# CONTENT ENGINE Ω — MANUAL ↔ CEREBRO BRIDGE v1.1
+# CONTENT ENGINE Ω — MANUAL ↔ CEREBRO BRIDGE v1.2.1 CORREGIDO FINAL
 
 STATUS: FOUNDATION BUILT
 
@@ -14,13 +14,17 @@ Scope:
 - Traceability report created
 - Build readiness report created
 - Artifact manifest created
+- Manifest seal created
 
 Safety:
 - Brain mutation: BLOCKED BY POLICY
+- Brain files: NOT MODIFIED
+- Manual current: NOT MODIFIED
 - CAPA 9: BLOCKED
 - External execution: DISABLED
 - Auto action: FALSE
 - Fail-closed: ENFORCED
+- Terminal close: DISABLED
 
 Important:
 - This is FOUNDATION_ONLY.
