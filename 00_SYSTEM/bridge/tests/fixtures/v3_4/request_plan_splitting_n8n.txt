@@ -1,0 +1,1 @@
+crear plantilla n8n y luego ejecutar el flujo
