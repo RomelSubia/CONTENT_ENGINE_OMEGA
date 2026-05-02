@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "packet_id",
+    "packet_version",
+    "packet_type",
+    "source_layer",
+    "status",
+    "global_decision",
+    "requires_human_approval",
+    "approval_processing_supported",
+    "approved_by_human",
+    "execution_permission",
+    "queue_type",
+    "queue_operational",
+    "queue_executable",
+    "queue_runtime_binding",
+    "permission_matrix",
+    "warning_state",
+    "revocation_expiration"
+  ]
+}

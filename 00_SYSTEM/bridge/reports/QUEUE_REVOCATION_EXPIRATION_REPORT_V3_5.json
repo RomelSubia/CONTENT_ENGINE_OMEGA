@@ -1,0 +1,1 @@
+{"status":"PASS","reason":"QUEUE_LIFECYCLE_CONTRACT_PASS","revocable":true,"revoked":false,"expires_required":true,"expiration_mode":"NEXT_LAYER_REVIEW_ONLY","expires_at":null,"ttl_minutes":null,"permanent_queue_allowed":false}

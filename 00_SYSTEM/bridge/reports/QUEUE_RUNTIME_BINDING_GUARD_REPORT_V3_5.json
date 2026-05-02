@@ -1,0 +1,1 @@
+{"status":"PASS","reason":"NO_QUEUE_RUNTIME_BINDING","queue_operational":false,"queue_executable":false,"queue_runtime_binding":false,"queue_worker_attached":false,"queue_dispatcher_attached":false,"queue_listener_attached":false,"queue_consumer_attached":false,"queue_processor_attached":false}
