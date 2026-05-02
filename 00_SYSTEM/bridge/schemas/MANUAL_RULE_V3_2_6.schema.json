@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "rule_id",
+    "source_file",
+    "source_hash_sha256",
+    "section_title",
+    "line_start",
+    "line_end",
+    "raw_excerpt_hash_sha256",
+    "normalized_text",
+    "category",
+    "severity",
+    "risk_score",
+    "modality",
+    "scope",
+    "enforcement",
+    "extraction_method",
+    "status",
+    "evidence"
+  ]
+}

@@ -1,0 +1,2 @@
+No ejecutar APIs externas.
+Ejecutar APIs externas automáticamente.

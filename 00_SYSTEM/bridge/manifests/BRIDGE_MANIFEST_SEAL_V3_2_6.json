@@ -1,0 +1,1 @@
+{"seal_id":"BRIDGE_MANIFEST_SEAL_V3_2_6","manifest_path":"00_SYSTEM/bridge/manifests/BRIDGE_ARTIFACT_MANIFEST_V3_2_6.json","manifest_hash_sha256":"28cc3841bb11033c5d30e42f4c191e9151b55ba1be48729500da7118343d69fb","sealed_by":"BRIDGE_V3_2_6_RULE_EXTRACTOR_CONFLICT_DETECTOR","status":"VALID","final_status":"PASS_WITH_WARNINGS","final_reason":"PASS_WITH_WARNINGS_STATE"}

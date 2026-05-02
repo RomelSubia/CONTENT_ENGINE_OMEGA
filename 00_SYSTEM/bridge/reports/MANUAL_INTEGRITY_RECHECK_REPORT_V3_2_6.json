@@ -1,0 +1,1 @@
+{"status":"PASS","data":{"manual_status":"CURRENT_VALID","manifest_path":"00_SYSTEM\\manual\\manifest\\MANUAL_SOURCE_MANIFEST.json","manual_hash_sha256":"21768bfea8b8229dc5c5997e8128f6a454c9dd9f32f635335224e1b42231e945","approved_for_bridge":true,"manual_path":"00_SYSTEM\\manual\\current\\MANUAL_MASTER_CURRENT.md"},"reason":"MANUAL_INTEGRITY_RECHECK_PASS"}

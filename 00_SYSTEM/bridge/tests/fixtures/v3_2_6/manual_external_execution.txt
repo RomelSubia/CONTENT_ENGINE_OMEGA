@@ -1,0 +1,1 @@
+Publicar automáticamente en YouTube y ejecutar n8n sin aprobación.

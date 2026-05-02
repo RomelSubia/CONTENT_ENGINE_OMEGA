@@ -1,0 +1,11 @@
+# Manual válido
+Debe validar antes de continuar.
+No se debe crear CAPA 9.
+El cerebro debe operar en READ_ONLY.
+Toda salida debe tener evidencia.
+Debe existir commit y push.
+No ejecutar APIs externas sin autorización.
+FAIL-CLOSED es obligatorio.
+EVIDENCE-FIRST es obligatorio.
+No modificar reports/brain.
+El manual debe mantener CURRENT_VALID.
