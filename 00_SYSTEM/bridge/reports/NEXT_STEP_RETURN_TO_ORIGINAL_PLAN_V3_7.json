@@ -1,0 +1,23 @@
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "report_id":  "NEXT_STEP_RETURN_TO_ORIGINAL_PLAN_V3_7",
+    "status":  "RETURN_TO_PLAN_APPROVED",
+    "original_plan":  "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO_ULTRA_HARDENED_PRODUCTION_REAL",
+    "allowed_next_command":  "dame bloque automatico v1 capa conexion MANUAL CEREBRO production-real, usando v3.7 como pre-gate auxiliar ya cerrado, sin mas desvios",
+    "blocked_next_steps":  [
+                               "NEW_AUXILIARY_LAYER",
+                               "CAPA_9",
+                               "EXTERNAL_EXECUTION",
+                               "N8N",
+                               "WEBHOOK",
+                               "PUBLISHING",
+                               "BRAIN_WRITE",
+                               "MANUAL_WRITE",
+                               "REPORTS_BRAIN_WRITE"
+                           ],
+    "anti_deviation_rule":  "Every next build must map to a phase from the original bridge v1 implementation plan.",
+    "if_not_in_original_plan":  "BLOCK_UNLESS_USER_EXPLICITLY_APPROVES_DEVIATION",
+    "v3_7_status":  "CLOSED_AS_AUXILIARY_READINESS_GATE",
+    "bridge_v1_status":  "NOT_BUILT_YET",
+    "next_safe_step":  "BLOQUE_AUTOMATICO_V1_CAPA_CONEXION_MANUAL_CEREBRO_PRODUCTION_REAL"
+}
