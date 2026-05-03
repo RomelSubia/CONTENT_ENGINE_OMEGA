@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "authorization_contract_id",
+    "contract_version",
+    "contract_type",
+    "authorization_contract_created",
+    "authorization_record_created",
+    "human_authorization_input_received",
+    "human_authorization_recorded",
+    "human_authorization_valid",
+    "authorization_status",
+    "authorized_operation",
+    "authorization_scope_type",
+    "execution_permission_granted",
+    "execution_ready",
+    "execution_performed",
+    "permission_matrix"
+  ]
+}

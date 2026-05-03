@@ -1,0 +1,1 @@
+{"status":"PASS","reason":"AUTHORIZATION_REPLAY_GUARD_PASS","authorization_replay_allowed":false,"authorization_reused":false,"previous_authorization_id":null,"replay_detected":false}

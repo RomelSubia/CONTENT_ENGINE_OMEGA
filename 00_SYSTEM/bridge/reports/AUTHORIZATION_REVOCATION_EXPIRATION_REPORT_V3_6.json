@@ -1,0 +1,1 @@
+{"status":"PASS","reason":"AUTHORIZATION_REVOCATION_EXPIRATION_PASS","revocable":true,"revoked":false,"expiration_required":true,"expiration_mode":"NEXT_LAYER_PERMISSION_EVALUATION_ONLY","permanent_authorization_allowed":false}
