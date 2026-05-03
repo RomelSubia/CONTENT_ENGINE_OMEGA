@@ -1,0 +1,1 @@
+{"status":"PASS","reason":"NO_FORBIDDEN_RUNTIME_PATTERNS_DETECTED","scanned_files_count":5,"forbidden_patterns_count":10,"findings_count":0,"findings":[],"runtime_execution_detected":false,"external_call_detected":false,"n8n_direct_call_detected":false,"scheduler_detected":false}

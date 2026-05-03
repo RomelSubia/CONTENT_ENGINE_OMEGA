@@ -1,0 +1,1 @@
+{"seal_id":"POST_BUILD_AUDIT_SEAL_V3_6","manifest_path":"00_SYSTEM/bridge/manifests/POST_BUILD_AUDIT_MANIFEST_V3_6.json","manifest_hash_sha256":"924e6c844c4204c904142b4820cf0621eb8e080735611c17ceb59a0213fcc17d","sealed_by":"POST_BUILD_AUDIT_V3_6","status":"VALID","final_status":"PASS_WITH_WARNINGS","next_step":"WARNING_REVIEW_OR_ACCEPTANCE_GATE_V3_6"}
