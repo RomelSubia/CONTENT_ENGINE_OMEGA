@@ -1,0 +1,297 @@
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "layer":  "v3.7_CONTROLLED_EXECUTION_READINESS_GATE",
+    "report_id":  "NO_TOUCH_HASH_BASELINE_PRE_V3_7",
+    "generated_by":  "POWERSHELL_BUILD_WRAPPER_BUILD_FIX_2",
+    "no_touch_roots":  [
+                           "00_SYSTEM/brain",
+                           "00_SYSTEM/reports/brain",
+                           "00_SYSTEM/manual/current",
+                           "00_SYSTEM/manual/historical",
+                           "00_SYSTEM/manual/manifest",
+                           "00_SYSTEM/manual/registry"
+                       ],
+    "files":  [
+                  {
+                      "path":  "00_SYSTEM/brain/BRAIN_CORE_MANIFEST.md",
+                      "sha256":  "a2366f29bc9a19efb17d4953a88ef2190840492241974804ced4638b06048b1d",
+                      "length":  398
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/evidence/CAPA_2_EVIDENCE.json",
+                      "sha256":  "891b7a16cc270c3e15e3533fc1e1c4b19a99f8671e8550e4cd7847e34c4d76b5",
+                      "length":  1339
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/evidence/evidence_trace.ps1",
+                      "sha256":  "8affc77ca41fb003b31ac2a8a84c1b1657738e9c86d9e0aaf596ae99639e6604",
+                      "length":  1692
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/integrity/runtime_integrity.ps1",
+                      "sha256":  "e92b1cfbdcfb75dc08b67caff8955d23a714b144965a7317487f333afb6f03f0",
+                      "length":  1253
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/memory/MEMORY_STORE.json",
+                      "sha256":  "d2620be2e2752931bd83725b995de45996f593b3c6fb96e3320f2d281100ac97",
+                      "length":  37
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/policies/POLICY_REGISTRY.json",
+                      "sha256":  "f3987a007b82f37884db2d0d0f9439e259def0bce0ae1daeb893c52b7119c16e",
+                      "length":  774
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/adaptive_memory_review.ps1",
+                      "sha256":  "31012c63bc64c78a43580d40a117cf3cf4d0f39e1ff020e92ba73ccf7e47ac0a",
+                      "length":  476
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/adaptive_recommendation.ps1",
+                      "sha256":  "40f3cab8ddabdfa0cffa7d98f6e372a6da6a1a202b45f342108c055183de8c4f",
+                      "length":  848
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/adaptive_safety_gate.ps1",
+                      "sha256":  "039aa3ead2e20c7eca796875ee0bd4f83a538bb674c769c8405a870cec0fb197",
+                      "length":  555
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/anomaly_detection.ps1",
+                      "sha256":  "f97af525848b3b7c58f15a114658526b93d97ad11c0772c4a159105eac468df2",
+                      "length":  2606
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/autonomy_policy.ps1",
+                      "sha256":  "359c1dc68fb9a182e0249807ce6e7a4c32cfa2694d1331a9e16e6c1875ac45ca",
+                      "length":  745
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/context_engine.ps1",
+                      "sha256":  "a33a6f3b420786ef6a3fc6add82e913ecdbfc3be657ae6b4801afb6f06c96bcd",
+                      "length":  819
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/decision_engine.ps1",
+                      "sha256":  "93d3e3f7f1323cc0e564059686cc793cc10f9a0de4c740debf42a5b9836c4da5",
+                      "length":  2016
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/determinism_engine.ps1",
+                      "sha256":  "6d35f8c9f124bf9e09812ddcffe61097b9352dc1b59723a62abec04e5f454b2c",
+                      "length":  2132
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/execution_alignment.ps1",
+                      "sha256":  "e78a37abf6ed9c06c0450d15a234be420f86b45b0f9b47d21f625e621e6120c2",
+                      "length":  1889
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/input_hardening.ps1",
+                      "sha256":  "a17d2db01c1ddd7e4cf517e08b4c95fe7ba709d717fb9722521ad21824e43ab5",
+                      "length":  1996
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/layer1_runner.ps1",
+                      "sha256":  "9c308acfe821ad3dbfd38e086e2335864d8c529bdc482743909e74f17fd66b61",
+                      "length":  659
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/layer2_runner.ps1",
+                      "sha256":  "a6100ab15efb471cae9b3d4f268dce4c32538b7af5e3a788e4b1987d2bfeffae",
+                      "length":  1377
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/layer3_runner.ps1",
+                      "sha256":  "f76e1d4ce903c4c983ba0395e1328fd249e1454674bf76e3b69f2183767c522f",
+                      "length":  2051
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/layer4_runner.ps1",
+                      "sha256":  "a41d3c85203768ff5cca6cb459ccd3e6d022366a9f311dbe0206d29e4d5eae6e",
+                      "length":  2407
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/layer5_runner.ps1",
+                      "sha256":  "2a0d8bcb216e2f91b377e88210acd9567d9333e605b5a5595b9f5db3c857410f",
+                      "length":  1768
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/layer6_runner.ps1",
+                      "sha256":  "39d5de01838661854ac548a05db681490946fccd243f87ea6b28e731af7ef4a4",
+                      "length":  918
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/layer7_runner.ps1",
+                      "sha256":  "287755a092e20e7b3f823bda142cb0652232d05492e75940288c35ce80dde078",
+                      "length":  1225
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/layer8_runner.ps1",
+                      "sha256":  "5bb6750e86fa1e54217171004ac257892507cba8ca6bbe461b17b0bcbfd61b4f",
+                      "length":  1822
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/learning_engine.ps1",
+                      "sha256":  "7fbf706ca84cc089beed3c8601f59f4ef715536850a6b188287ead860d1878cb",
+                      "length":  359
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/loop_guard.ps1",
+                      "sha256":  "f812a863c46ff2f316e673060c8607dd632ad83ac2e47da22cbb51b02f7d31c9",
+                      "length":  683
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/memory_engine.ps1",
+                      "sha256":  "45e069a441ac3626d918a60966b85a8df14dfb41a36d1f6f980396287fd4151d",
+                      "length":  1214
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/orchestrator.ps1",
+                      "sha256":  "e4b6529a69f7d6deb60ed930c297ab12a91930b8369547ba5673381bd9ec6b04",
+                      "length":  777
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/policy_enforcement.ps1",
+                      "sha256":  "564ee79e455b75c0a4c342eca8a65d69a38ee46f5dd7058b5e423c2c4b54ba98",
+                      "length":  1758
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/self_audit.ps1",
+                      "sha256":  "c2c41849af647270ffa06de5c70aa7dfe20a77cf8aae3165a0eb455fc1b39c5e",
+                      "length":  954
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/state_awareness.ps1",
+                      "sha256":  "3fcf3bbe63323fd97bd7db356318448a930fdb93dd0f0638efe8d8ea6cbcc191",
+                      "length":  1009
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/timeout_control.ps1",
+                      "sha256":  "043292262c2c58b81ba79fcb77b1b24d0b5baf144373cbd5c1e887f2d60b8738",
+                      "length":  443
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/runtime/trust_model.ps1",
+                      "sha256":  "3fd4695beb9e22607686f51e476ecf3daab5a8b9781cd6b1682335360735ecea",
+                      "length":  1068
+                  },
+                  {
+                      "path":  "00_SYSTEM/brain/state/BRAIN_STATE.json",
+                      "sha256":  "cccacf2346a3bcf899f91328e28adc55a8b2f73aeb932d9234946cdac698d71c",
+                      "length":  345
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_0_PREPARATION_AUDIT.txt",
+                      "sha256":  "7989be01291a62476139060a7309634a3f059afbe2bc6013d802a703662ebd55",
+                      "length":  545
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_1_OFFICIAL_SEAL.txt",
+                      "sha256":  "a7b936d204f2e488e4083af767939dfc94905d72eaf93e31b9c28de3cf1dc1ba",
+                      "length":  504
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_2_OFFICIAL_SEAL.txt",
+                      "sha256":  "350a82e1d1ae46e8d5acb1dbdca83082ea9963f9fd82ab78ed9e1a36d9bb6093",
+                      "length":  666
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_3_OFFICIAL_SEAL.txt",
+                      "sha256":  "72632d769d50ace395a4f7b3b3ab14df4be76109ae166668ed0432dc3da35b33",
+                      "length":  503
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_4_OFFICIAL_SEAL.txt",
+                      "sha256":  "92dc6e3a0675e7ca92c096b93acd04fd3e6bab38b5b4b07e9b1eadc19cd30b74",
+                      "length":  559
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_5_AUDIT.txt",
+                      "sha256":  "162623b568804037cd6ef3ba80296c913709f5505f8add8a6421e72215fd5895",
+                      "length":  521
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_5_OFFICIAL_SEAL.txt",
+                      "sha256":  "65fd8e71dc0c92965b1c5f0959a65466557c89ab8b16c0349f78260bd1eaca85",
+                      "length":  541
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_6_AUDIT.txt",
+                      "sha256":  "1fec3e1d3185f313e56412aecc4d5f731f507c7a428b870ba3f4ce22ee1be5a7",
+                      "length":  291
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_6_OFFICIAL_SEAL.txt",
+                      "sha256":  "a3e97af71df523d3b0b3a069b3a6d81fcb45b4520485c3770a557bca0cddf68a",
+                      "length":  621
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_7_OFFICIAL_SEAL.txt",
+                      "sha256":  "7b19a1b4ffc65fa0f94c38f6c12e955b1420e5e8fab3e87bae6a8bf3f48161df",
+                      "length":  177
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_8_AUDIT.txt",
+                      "sha256":  "4c263ac5099b0834c72739fa347278339fe036d5e843c31e0f3270183b1ce4b1",
+                      "length":  529
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_CAPA_8_OFFICIAL_SEAL.txt",
+                      "sha256":  "e858f63199e1bccb119e19e9559104de9c395db4683922bc2e6aad1f066699c0",
+                      "length":  598
+                  },
+                  {
+                      "path":  "00_SYSTEM/reports/brain/G_J_v2_2_BRAIN_GLOBAL_SEAL.txt",
+                      "sha256":  "3b6879343531264d66a7557535fb044856a72ec36783e71ed79b3c9e302d2267",
+                      "length":  889
+                  },
+                  {
+                      "path":  "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_v9_EJECUTABLE_REAL.docx",
+                      "sha256":  "0099ddd48305270db6298810eec80d719934dbc81032afe0d9de08eaa6d48280",
+                      "length":  45639
+                  },
+                  {
+                      "path":  "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md",
+                      "sha256":  "21768bfea8b8229dc5c5997e8128f6a454c9dd9f32f635335224e1b42231e945",
+                      "length":  21717
+                  },
+                  {
+                      "path":  "00_SYSTEM/manual/historical/CONTEN ENGINE MANUAL MAESTRO ÚNICO DE CREACIÓN v8 — ULTRA HARDENED.docx",
+                      "sha256":  "0950eb3b98d31263f2de6788e324842b5cf1ef4021d3e70f819c62688a359987",
+                      "length":  173085
+                  },
+                  {
+                      "path":  "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md",
+                      "sha256":  "3f95d14b0d96468c45120d022592fc67ab7842c902ef456b492bd8dbe5eca934",
+                      "length":  70550
+                  },
+                  {
+                      "path":  "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json",
+                      "sha256":  "b6df0908d477f0528ce52772f764cf7c69bf0a617d76db98efb1b337c5709986",
+                      "length":  892
+                  },
+                  {
+                      "path":  "00_SYSTEM/manual/registry/MANUAL_CURRENT_INDEX.json",
+                      "sha256":  "95631f03fde17f608f7d591cdaf40ab4750f27b3c5531355623be29c13e30ef0",
+                      "length":  597
+                  },
+                  {
+                      "path":  "00_SYSTEM/manual/registry/MANUAL_VERSION_HISTORY.json",
+                      "sha256":  "43517984ab2a424fb4b16ccb955a4c2f8098e3a3337613d58e744a7e1ef37001",
+                      "length":  477
+                  }
+              ],
+    "file_count":  54,
+    "execution_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false,
+    "next_safe_step":  "v3.7_POST_BUILD_AUDIT",
+    "status":  "PASS"
+}

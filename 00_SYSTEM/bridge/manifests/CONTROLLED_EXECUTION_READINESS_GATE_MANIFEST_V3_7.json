@@ -1,0 +1,112 @@
+{
+  "artifact_count": 16,
+  "artifacts": [
+    {
+      "path": "04_SCRIPTS/python/manual_brain_bridge/v3_7_controlled_execution_readiness_gate.py",
+      "sha256": "4c9b963a5a660813211225c7d846a1410a5dde5ea18206cf59747ee7e96ccd90",
+      "status": "VALID"
+    },
+    {
+      "path": "tests/manual_brain_bridge/test_v3_7_controlled_execution_readiness_gate.py",
+      "sha256": "8beb1edd9736c3d385d56fe73ebd13291c6733425decc217dffc2fb5f43e375d",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_READINESS_GATE_V3_7.json",
+      "sha256": "487d978647c30950b2772129a15c270b2765c09cefc41832f2434c0c9e073270",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_SURFACE_MAP_V3_7.json",
+      "sha256": "9e137441c13e49478d5a5ef81ca1079dce213797eba6d5a58e567f2d0c69e21d",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_RISK_TIER_MAP_V3_7.json",
+      "sha256": "bbe41568721b1d4b0b8af246a29b847170e52eccda79ae220cf1cf597726f80e",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_DRY_RUN_REQUIREMENTS_V3_7.json",
+      "sha256": "2fd52f9ec3e9586f61e4859987fa9eda1ed2aff781d0058669983f7dc55399f3",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_ROLLBACK_REQUIREMENTS_V3_7.json",
+      "sha256": "8ceae80ccf882bc72b1f453c0b86049e5cd3e25ec5a90ee4c5aaea9abbf90788",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_AUTH_READINESS_V3_7.json",
+      "sha256": "474959cbb4265967662d81315e7b4f34caea38376313c5c348a6611c583c9ba3",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_WARNING_INTEGRITY_V3_7.json",
+      "sha256": "c45b22de9f717299f3d7a9901f391493abcbf42f11fd6980a9a81220536142f9",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_PERMISSION_ELEVATION_V3_7.json",
+      "sha256": "b8f0ef55799927879d40d384773e0c65460962e79367497b2e5329200353c220",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/CONTROLLED_EXECUTION_NO_TOUCH_REPORT_V3_7.json",
+      "sha256": "916b2f35d7f48b9536fb6c09bfb06691046c2de4aa5834dbf02c97ca243da59b",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/NO_TOUCH_HASH_BASELINE_POST_V3_7.json",
+      "sha256": "2e1a0dae6b9718538f1e92708c53f09e4fdc3048eb832c488185119784ea838f",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/NO_TOUCH_DIFF_REPORT_V3_7.json",
+      "sha256": "a41d0ca3264dc86515411a7c24d793b1cc00d742ef25581635b084c869b51935",
+      "status": "VALID"
+    },
+    {
+      "path": "00_SYSTEM/bridge/reports/NEXT_LAYER_RECOMMENDATION_V3_7.json",
+      "sha256": "bc3c0ab4cbb7ce1f5c47a643d1d3b64e68f6495f281d9b3cb57abc51d8f5206d",
+      "status": "VALID"
+    },
+    {
+      "path": "05_REPORTS/manual_brain_bridge/CONTROLLED_EXECUTION_READINESS_GATE_SUMMARY_V3_7.md",
+      "sha256": "5de051c225ceef99a740c35bd7bc15689e79fbd9d45e5161c33d36d7fbdaecfd",
+      "status": "VALID"
+    },
+    {
+      "path": "05_REPORTS/manual_brain_bridge/V3_7_CONTROLLED_EXECUTION_READINESS_GATE_BUILD_REPORT.md",
+      "sha256": "e38cc497bb9e9a7210770d5d407bb90d5beb55fe42f6c0edef5b3c683ae36c10",
+      "status": "VALID"
+    }
+  ],
+  "automatic_block_allowed": false,
+  "blocked_paths_touched": [],
+  "brain_write_allowed": false,
+  "build_allowed": false,
+  "capa9_allowed": false,
+  "dry_run_execution_allowed": false,
+  "evidence": [],
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "layer": "v3.7_CONTROLLED_EXECUTION_READINESS_GATE",
+  "manifest_id": "CONTROLLED_EXECUTION_READINESS_GATE_MANIFEST_V3_7",
+  "manual_write_allowed": false,
+  "n8n_allowed": false,
+  "next_safe_step": "v3.7_POST_BUILD_AUDIT",
+  "production_clean_pass": false,
+  "production_with_warnings": true,
+  "publishing_allowed": false,
+  "report_id": "CONTROLLED_EXECUTION_READINESS_GATE_MANIFEST_V3_7",
+  "reports_brain_write_allowed": false,
+  "status": "PASS_WITH_WARNINGS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "unexpected_artifacts": [],
+  "warnings_hidden": 0,
+  "warnings_inherited_visible": 5,
+  "warnings_resolved_by_v3_7": 0,
+  "warnings_suppressed": 0,
+  "webhook_allowed": false
+}

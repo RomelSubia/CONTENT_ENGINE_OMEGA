@@ -1,0 +1,68 @@
+{
+  "automatic_block_allowed": false,
+  "brain_write_allowed": false,
+  "build_allowed": false,
+  "capa9_allowed": false,
+  "dry_run_execution_allowed": false,
+  "evidence": [],
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "layer": "v3.7_CONTROLLED_EXECUTION_READINESS_GATE",
+  "manual_write_allowed": false,
+  "n8n_allowed": false,
+  "next_safe_step": "v3.7_POST_BUILD_AUDIT",
+  "production_clean_pass": false,
+  "production_with_warnings": true,
+  "publishing_allowed": false,
+  "report_id": "CONTROLLED_EXECUTION_SURFACE_MAP_V3_7",
+  "reports_brain_write_allowed": false,
+  "status": "PASS_WITH_WARNINGS",
+  "surface_map": {
+    "SURFACE_0_NONE": {
+      "allowed_now": true,
+      "execution": false
+    },
+    "SURFACE_1_LOCAL_DRY_RUN": {
+      "allowed_now": false,
+      "designable_future": true
+    },
+    "SURFACE_2_LOCAL_FILE_GENERATION": {
+      "allowed_now": false,
+      "designable_future": true
+    },
+    "SURFACE_3_INTERNAL_REPORTING": {
+      "allowed_now": false,
+      "designable_future": true
+    },
+    "SURFACE_4_MANUAL_PATCH_PROPOSAL": {
+      "allowed_now": false,
+      "blocked": true
+    },
+    "SURFACE_5_EXTERNAL_API_CALL": {
+      "allowed_now": false,
+      "blocked": true
+    },
+    "SURFACE_6_N8N_WORKFLOW": {
+      "allowed_now": false,
+      "blocked": true
+    },
+    "SURFACE_7_WEBHOOK": {
+      "allowed_now": false,
+      "blocked": true
+    },
+    "SURFACE_8_PUBLISHING": {
+      "allowed_now": false,
+      "blocked": true
+    },
+    "SURFACE_9_MONETIZATION_ACTION": {
+      "allowed_now": false,
+      "blocked": true
+    }
+  },
+  "system": "CONTENT_ENGINE_OMEGA",
+  "warnings_hidden": 0,
+  "warnings_inherited_visible": 5,
+  "warnings_resolved_by_v3_7": 0,
+  "warnings_suppressed": 0,
+  "webhook_allowed": false
+}
