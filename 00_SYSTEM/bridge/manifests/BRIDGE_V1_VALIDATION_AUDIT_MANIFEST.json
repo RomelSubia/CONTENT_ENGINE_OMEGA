@@ -1,37 +1,37 @@
 {
-  "system": "CONTENT_ENGINE_OMEGA",
-  "manifest_id": "BRIDGE_V1_VALIDATION_AUDIT_MANIFEST",
-  "layer": "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
-  "status": "PASS",
-  "artifact_count": 4,
-  "artifacts": [
-    {
-      "path": "tests/manual_brain_bridge/test_bridge_v1_regression_guards.py",
-      "sha256": "4b773364c2798c5fa0108fa9159e1b33cf407f6869d51ac34bfd589c37935584",
-      "status": "VALID"
-    },
-    {
-      "path": "00_SYSTEM/bridge/reports/BRIDGE_V1_VALIDATION_AUDIT_REPORT.json",
-      "sha256": "4576138fd8c73c53447bf7120a3900eb0ccb3e2ac9665f5ed53a8fa5f814d1fd",
-      "status": "VALID"
-    },
-    {
-      "path": "00_SYSTEM/bridge/reports/BRIDGE_V1_REGRESSION_GUARD_REPORT.json",
-      "sha256": "16a58b25de7e462cc52e6cb4d84af349abfd36e65eb437801e4ef45689c144a6",
-      "status": "VALID"
-    },
-    {
-      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_V1_VALIDATION_AUDIT_REPORT.md",
-      "sha256": "e8b31617e61cee2b773a7d70d8a0e4eca96bc081156f74839b0a16a4f47825ed",
-      "status": "VALID"
-    }
-  ],
-  "execution_allowed": false,
-  "manual_write_allowed": false,
-  "brain_write_allowed": false,
-  "reports_brain_write_allowed": false,
-  "n8n_allowed": false,
-  "webhook_allowed": false,
-  "publishing_allowed": false,
-  "capa9_allowed": false
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "manifest_id":  "BRIDGE_V1_VALIDATION_AUDIT_MANIFEST",
+    "layer":  "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+    "status":  "PASS",
+    "artifact_count":  4,
+    "artifacts":  [
+                      {
+                          "path":  "tests/manual_brain_bridge/test_bridge_v1_regression_guards.py",
+                          "sha256":  "197b702f2b26c158c3aa4665e15e55a8e13fb654ff1e834ef093b7299749c80c",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_V1_VALIDATION_AUDIT_REPORT.json",
+                          "sha256":  "e44f68fa4eba1586709f6040046b9cc8d3d45ce9f1b898e8864d8f8697a60a37",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_V1_REGRESSION_GUARD_REPORT.json",
+                          "sha256":  "44cc41f954299afb9835b09470601c6a19b0c35fa99d3866b36d696f33c3a3a8",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "05_REPORTS/manual_brain_bridge/BRIDGE_V1_VALIDATION_AUDIT_REPORT.md",
+                          "sha256":  "2a8a1372837de48555cdcd7ff3185f159619662e81bae19b6e2b113ce5a23dd1",
+                          "status":  "VALID"
+                      }
+                  ],
+    "execution_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false
 }

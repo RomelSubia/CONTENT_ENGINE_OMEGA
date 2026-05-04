@@ -1,10 +1,16 @@
-# BRIDGE v1 VALIDATION / AUDIT  MANUAL  CEREBRO
+# BRIDGE v1 VALIDATION / AUDIT — MANUAL ↔ CEREBRO
 
 Status: PASS
 
 ## Validated layer
 
-MANUAL  CEREBRO CONNECTION LAYER v1 foundation.
+MANUAL ↔ CEREBRO CONNECTION LAYER v1 foundation.
+
+## Git gate
+
+- Required bridge commit: ea7bdc3
+- Audit HEAD: b58469d9aea79b9fceafd0767236cccef4ceb101
+- Rule: required bridge commit must be ancestor of HEAD.
 
 ## Current bridge foundation status
 
@@ -23,7 +29,7 @@ PASS_WITH_WARNINGS
 
 - py_compile: PASS
 - bridge validate-outputs: PASS
-- pytest total passed: 70
+- pytest total passed: 69
 - no-touch: PASS
 - no tmp residue: PASS
 - diff allowlist: PASS

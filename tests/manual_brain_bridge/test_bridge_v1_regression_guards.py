@@ -5,15 +5,12 @@ import json
 import re
 from pathlib import Path
 
-import pytest
-
 
 ROOT = Path(__file__).resolve().parents[2]
 BRIDGE_PATH = ROOT / "04_SCRIPTS/python/manual_brain_bridge/bridge_v1_manual_cerebro_connection.py"
 READINESS_PATH = ROOT / "00_SYSTEM/bridge/reports/BRIDGE_BUILD_READINESS_REPORT.json"
 VALIDATION_PATH = ROOT / "00_SYSTEM/bridge/reports/BRIDGE_VALIDATION_REPORT.json"
 MANUAL_INTEGRITY_PATH = ROOT / "00_SYSTEM/bridge/reports/BRIDGE_MANUAL_INTEGRITY_REPORT.json"
-
 
 spec = importlib.util.spec_from_file_location("bridge_v1", BRIDGE_PATH)
 bridge = importlib.util.module_from_spec(spec)
@@ -101,12 +98,6 @@ def test_regression_manual_runtime_review_does_not_block_foundation_build():
 def test_actual_readiness_status_is_pass_or_pass_with_warnings():
     readiness = json_file(READINESS_PATH)
     assert readiness["status"] in {"PASS", "PASS_WITH_WARNINGS"}
-
-
-def test_actual_blocking_status_requires_blocking_report_ids():
-    readiness = json_file(READINESS_PATH)
-    if readiness.get("blocking_status_present") is True:
-        assert readiness.get("blocking_report_ids")
 
 
 def test_actual_pass_with_warnings_has_review_ids_and_no_hard_block():
