@@ -1,0 +1,40 @@
+{
+  "allowed_next_step": "NEXT_LAYER_AFTER_CONTEXT_ALIGNMENT",
+  "auto_action_allowed": false,
+  "blocked_next_steps": [
+    "AUTO_EXECUTION",
+    "BRAIN_WRITE",
+    "MANUAL_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N_EXECUTION",
+    "WEBHOOK_EXECUTION",
+    "PUBLISHING",
+    "CAPA9",
+    "OPENAI_API_RUNTIME",
+    "SOCIAL_MEDIA_AUTOMATION",
+    "CONTENT_PUBLICATION",
+    "UNAPPROVED_EXTERNAL_SIDE_EFFECTS",
+    "DIRECT_PRODUCTION_EXECUTION"
+  ],
+  "blocked_replay_blocks": [
+    "BRIDGE v1 BUILD-FIX-4",
+    "BRIDGE v1 VALIDATION / AUDIT-FIX-1",
+    "BRIDGE v1 POST-VALIDATION REVIEW / GATE CLOSURE",
+    "MANUAL RUNTIME REVIEW-FIX-1"
+  ],
+  "brain_write_allowed": false,
+  "capa9_allowed": false,
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+  "manual_write_allowed": false,
+  "n8n_allowed": false,
+  "policy": "v2.2 resolves context only; it does not enable execution",
+  "publishing_allowed": false,
+  "report_id": "BRIDGE_V2_2_BLOCKED_NEXT_STEPS_REPORT",
+  "reports_brain_write_allowed": false,
+  "status": "PASS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "webhook_allowed": false
+}

@@ -1,0 +1,29 @@
+{
+  "auto_action_allowed": false,
+  "brain_write_allowed": false,
+  "bridge_v1_rebuild_allowed": false,
+  "bridge_v1_replay_allowed": false,
+  "capa9_allowed": false,
+  "context_alignment_required_before_next_layer": true,
+  "current_allowed_step": "BLOQUE_AUTOMATICO_V2_2_CONTEXT_ALIGNMENT_NEXT_STEP_RESOLUTION",
+  "current_readiness_status": "PASS",
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+  "manual_write_allowed": false,
+  "n8n_allowed": false,
+  "next_safe_step_after_v2_2": "NEXT_LAYER_AFTER_CONTEXT_ALIGNMENT",
+  "publishing_allowed": false,
+  "report_id": "BRIDGE_V2_2_NEXT_STEP_RESOLUTION_REPORT",
+  "reports_brain_write_allowed": false,
+  "request_decision": {
+    "allowed": true,
+    "decision": "ALLOW_BUILD_BLOCK",
+    "reason": "request matches current v2.2 controlled build path"
+  },
+  "runtime_manual_review_required": false,
+  "status": "PASS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "webhook_allowed": false
+}

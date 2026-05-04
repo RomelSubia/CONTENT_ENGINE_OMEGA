@@ -1,0 +1,102 @@
+{
+  "artifact_count": 9,
+  "artifacts": [
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "04_SCRIPTS/python/manual_brain_bridge/bridge_v2_2_context_alignment_next_step_resolution.py",
+      "sha256": "be8ca9e0921d246e55841052e2d74c142d5148041b6ddfa00e8cd87a21c857d5",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "tests/manual_brain_bridge/test_bridge_v2_2_context_alignment_next_step_resolution.py",
+      "sha256": "4a325efa681b79228bc065633a12a5c65a0eeb3674d70c4caaa82984c47e1ac2",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_2_CONTEXT_ALIGNMENT_REPORT.json",
+      "sha256": "d4196321ad6ba68ead6a188821e1cc9d76b77df901ef65fe0c37c2989943e6d9",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_2_EVIDENCE_TIMELINE_REPORT.json",
+      "sha256": "c2924e1f9a547c467001d600285a8e0d533bc1a6c1956193cb19de91593833dd",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_2_NEXT_STEP_RESOLUTION_REPORT.json",
+      "sha256": "ff312f30d25a79ad0f103adcc5f1499929dbeeb6cd41aa83dc26ed80ff47289f",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_2_STALE_EVIDENCE_REPORT.json",
+      "sha256": "ccca03d4f0ad4bb3d1376d54964f7c840c1ddfd9e8a2b807f3cac38bbab3d6cd",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_2_BLOCKED_NEXT_STEPS_REPORT.json",
+      "sha256": "976291ae2ddeb2034c4d55d42cdfc8e4c6fe8a759294c1b180dc21bbc4700b46",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_2_VALIDATION_REPORT.json",
+      "sha256": "d279caf18d6c68497c132c6e93d548feb57274825c188da7abe8a1077cf3c872",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_2",
+      "created_by_layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_V2_2_CONTEXT_ALIGNMENT_REPORT.md",
+      "sha256": "fd579d759a35025e5549891bf1225642a1ae3cd13a0a1bcf75300d2d438f8637",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    }
+  ],
+  "auto_action_allowed": false,
+  "blocked_paths_touched": [],
+  "brain_write_allowed": false,
+  "capa9_allowed": false,
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+  "manifest_id": "BRIDGE_V2_2_ARTIFACT_MANIFEST",
+  "manual_write_allowed": false,
+  "missing_artifacts": [],
+  "n8n_allowed": false,
+  "omission_reason": "Manifest cannot require its own final seal before the seal is created; seal closes over manifest hash after manifest PASS.",
+  "omitted_self_referential_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_2_ARTIFACT_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_2_CONTEXT_ALIGNMENT_SEAL.json"
+  ],
+  "publishing_allowed": false,
+  "report_id": "BRIDGE_V2_2_ARTIFACT_MANIFEST",
+  "reports_brain_write_allowed": false,
+  "status": "PASS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "tracked_artifact_count": 9,
+  "unexpected_artifacts": [],
+  "webhook_allowed": false
+}

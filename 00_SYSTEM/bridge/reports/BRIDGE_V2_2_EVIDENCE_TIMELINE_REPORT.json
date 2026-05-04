@@ -1,0 +1,166 @@
+{
+  "auto_action_allowed": false,
+  "brain_write_allowed": false,
+  "capa9_allowed": false,
+  "current_authority": [
+    "00_SYSTEM/bridge/reports/BRIDGE_BUILD_READINESS_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_SEAL.json"
+  ],
+  "current_readiness_status": "PASS",
+  "evidence": [
+    {
+      "blocking": false,
+      "classification": "HISTORICAL_SUPPORTING_EVIDENCE",
+      "evidence_id": "build_report",
+      "exists": true,
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_V1_BUILD_REPORT.md",
+      "sha256": "243f87af0a9972d8c9096941a582daf55f5f08441934da022e6c1c5abd21e1c3"
+    },
+    {
+      "blocking": false,
+      "classification": "HISTORICAL_SUPPORTING_EVIDENCE",
+      "evidence_id": "validation_audit_report",
+      "exists": true,
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_V1_VALIDATION_AUDIT_REPORT.md",
+      "sha256": "2a8a1372837de48555cdcd7ff3185f159619662e81bae19b6e2b113ce5a23dd1"
+    },
+    {
+      "blocking": false,
+      "classification": "SUPERSEDED_BY_RUNTIME_WARNING_CLOSURE",
+      "current_authority": "BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT + BRIDGE_BUILD_READINESS_REPORT",
+      "evidence_id": "gate_closure_report",
+      "exists": true,
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_V1_GATE_CLOSURE_REPORT.md",
+      "sha256": "85f758ec3e7a28e8b8c7fa91794cddd4fd7876715ff52bc57ecf4d37d6019f62"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "runtime_warning_closure_report",
+      "exists": true,
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT.md",
+      "sha256": "b08b55d269820555f2ff71cd927b29cf1348fd8b0e375b392f5587bf14b0f57f"
+    },
+    {
+      "blocking": false,
+      "classification": "HISTORICAL_SUPPORTING_EVIDENCE",
+      "evidence_id": "foundation_seal",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/manifests/BRIDGE_FOUNDATION_SEAL_V1.json",
+      "sha256": "16d56d30a825ed6ce9cb53d8430f6b95f407c8abbd4e679329579103888924c1"
+    },
+    {
+      "blocking": false,
+      "classification": "HISTORICAL_SUPPORTING_EVIDENCE",
+      "evidence_id": "validation_audit_seal",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/manifests/BRIDGE_V1_VALIDATION_AUDIT_SEAL.json",
+      "sha256": "4757496be6cf26e3bc1704a1e1b6bac8c143f4e3f8e1414ee593df316e04fb5f"
+    },
+    {
+      "blocking": false,
+      "classification": "HISTORICAL_SUPPORTING_EVIDENCE",
+      "evidence_id": "gate_closure_seal",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/manifests/BRIDGE_V1_GATE_CLOSURE_SEAL.json",
+      "sha256": "bd58a5294329108485cccb4634d262b9247cbd26cc94a58a032040fcdd12e3e3"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "runtime_warning_closure_seal",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/manifests/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_SEAL.json",
+      "sha256": "4245c15eac7c09b0a4407a1c60ed383e6e1201e1fd5d7e733902b3f294c65e08"
+    },
+    {
+      "blocking": false,
+      "classification": "SUPERSEDED_BY_RUNTIME_WARNING_CLOSURE",
+      "current_authority": "BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT + BRIDGE_BUILD_READINESS_REPORT",
+      "evidence_id": "gate_closure_json",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V1_GATE_CLOSURE_REPORT.json",
+      "sha256": "c97996ca6eb501f67fcdde16053d45c2f67390a78668a48d866431157df7d2fe"
+    },
+    {
+      "blocking": false,
+      "classification": "SUPERSEDED_BY_RUNTIME_WARNING_CLOSURE",
+      "current_authority": "BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT + BRIDGE_BUILD_READINESS_REPORT",
+      "evidence_id": "post_validation_review_json",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V1_POST_VALIDATION_REVIEW_REPORT.json",
+      "sha256": "d3a4dcc654c299699215f301e4c6a760951d7747443a44f2f0d31c923c4cb91e"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "current_readiness",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BUILD_READINESS_REPORT.json",
+      "sha256": "a69509e80fb9d780f35893bd43b68769d6e56a8dca21fb179530456f54670fbb"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "current_manual_integrity",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_MANUAL_INTEGRITY_REPORT.json",
+      "sha256": "dbd830d9c55e2b311c219893dd04de3bcf939a5715d98ced794ff3c6993f30c0"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "current_validation",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_VALIDATION_REPORT.json",
+      "sha256": "8c1db7aef28c2acfa8ec79c83ac525c1c061c96e933cfa7001075c2f136b3ed2"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "current_source_resolver",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_SOURCE_RESOLVER_REPORT.json",
+      "sha256": "87d101748c404c685c32a0b5ba67c8374c66ddcbb5c41a7d4d9c1d50461a430b"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "current_runtime_warning_closure",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT.json",
+      "sha256": "76cf709604bdd9fbd5eced1455a7098df5d855c21e5023f77866f6510560ff48"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "current_runtime_clean_next_step",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V1_RUNTIME_CLEAN_NEXT_STEP_READINESS_MAP.json",
+      "sha256": "7c1c4e1f31a07abc8de9c06f9f46ce58f6f884ab9eac6c1bf884288478510217"
+    },
+    {
+      "blocking": false,
+      "classification": "CURRENT_STATE_EVIDENCE",
+      "evidence_id": "current_runtime_warning_seal",
+      "exists": true,
+      "path": "00_SYSTEM/bridge/manifests/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_SEAL.json",
+      "sha256": "4245c15eac7c09b0a4407a1c60ed383e6e1201e1fd5d7e733902b3f294c65e08"
+    }
+  ],
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "historical_warning_policy": "older accepted-warning closure is superseded when runtime warning closure is clean and current readiness is PASS",
+  "layer": "BRIDGE_CONTEXT_ALIGNMENT_AND_NEXT_STEP_RESOLUTION_LAYER_V2_2",
+  "manual_write_allowed": false,
+  "n8n_allowed": false,
+  "publishing_allowed": false,
+  "report_id": "BRIDGE_V2_2_EVIDENCE_TIMELINE_REPORT",
+  "reports_brain_write_allowed": false,
+  "runtime_warning_currently_closed": true,
+  "status": "PASS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "webhook_allowed": false
+}
