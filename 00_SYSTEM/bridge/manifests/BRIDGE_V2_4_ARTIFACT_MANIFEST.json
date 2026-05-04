@@ -1,0 +1,193 @@
+{
+  "approval_consumed": false,
+  "approval_granted": false,
+  "artifact_count": 14,
+  "artifacts": [
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "04_SCRIPTS/python/manual_brain_bridge/bridge_v2_4_2_governed_build_request_human_approval_gate.py",
+      "sha256": "cf089b9c88a14e428ef55b51305f72803b2277df402de32b76cc75ca702ccb2f",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "tests/manual_brain_bridge/test_bridge_v2_4_2_governed_build_request_human_approval_gate.py",
+      "sha256": "7e05cce931763d29cb2f9908843d2dd93abbef1aced8635c8d0b8fef06204690",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_REPO_IDENTITY_REPORT.json",
+      "sha256": "64d5dd39caf3de7a29d2599881bc68188f6c75f0eec7783ce1269f54600ab09e",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_ARGOS_CONTAMINATION_GATE_REPORT.json",
+      "sha256": "58be9fafee31a1a873a00ff8a9f7c6e9bf48084c34fe581d786a364e1a856c28",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_AUTHORITY_BINDING_REPORT.json",
+      "sha256": "881997f9341b4ae7cef405de3e31720c18fee242783ff498daa8ade8207a0678",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_SCOPE_BINDING_REPORT.json",
+      "sha256": "e21582a91126906ccfeeac8b472d2a96e48e258e8a520b3f60a4a0b980d4aa67",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_BUILD_REQUEST_CONTRACT_REPORT.json",
+      "sha256": "580e8175dcffac8b0fce8194fc4a6660866ac352212c79843cbbb0ceaaf70bd6",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_HUMAN_APPROVAL_GATE_REPORT.json",
+      "sha256": "13e8c59e20f63dd69b4a5c2d847679dc482954523657bcf54a652c8e9f8c0e16",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_APPROVAL_EXPIRATION_REPORT.json",
+      "sha256": "56e9d64e031556f4aed385c51979e6566f56a8f3dee3924e629dbc6f03012fb9",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_ANTI_REPLAY_APPROVAL_REPORT.json",
+      "sha256": "c6b423c2731acdf0a52c6e1b11382fd1ed8f30e41980d8e49aa1f0114f61f00b",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_BLOCKED_CAPABILITIES_REPORT.json",
+      "sha256": "3d69eb7dc54b94fdc0952844018d97c96eef3d9a85eea0d7e3a4854a98d7f583",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_ANTI_SIMULATION_GATE_REPORT.json",
+      "sha256": "66ba9c07ba77cd309913cc851d4e7857a00bc44395f80b81cefed94a4aa556d7",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_4_VALIDATION_REPORT.json",
+      "sha256": "baaf334b7359510b9880cd88ae3252cd86d3d3c97f118a9dd1722c4e87621beb",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_4_2",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_V2_4_HUMAN_APPROVAL_GATE_REPORT.md",
+      "sha256": "68faa2b7875c2b2544eff787dc6a5b1a47294686fa1d4f320b8fd24b7ee8c29c",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    }
+  ],
+  "authority_files": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_3_GOVERNED_WORK_ORDER_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_3_VALIDATION_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_3_TRANSITION_GATE_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_3_AUTHORITY_HASH_REPORT.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_2_CONTEXT_ALIGNMENT_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BUILD_READINESS_REPORT.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_SEAL.json"
+  ],
+  "auto_action_allowed": false,
+  "blocked_capabilities": [
+    "AUTO_EXECUTION",
+    "DIRECT_PRODUCTION_EXECUTION",
+    "EXTERNAL_EXECUTION",
+    "EXTERNAL_SIDE_EFFECTS",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "MANUAL_WRITE",
+    "MANUAL_AUTO_UPDATE",
+    "MANUAL_CURRENT_MUTATION",
+    "MANUAL_MANIFEST_MUTATION",
+    "MANUAL_HISTORICAL_MUTATION",
+    "MANUAL_REGISTRY_MUTATION",
+    "N8N_EXECUTION",
+    "WEBHOOK_EXECUTION",
+    "PUBLISHING",
+    "OPENAI_API_RUNTIME",
+    "SOCIAL_MEDIA_AUTOMATION",
+    "CONTENT_PUBLICATION",
+    "CAPA9",
+    "APPROVAL_REUSE",
+    "APPROVAL_SELF_GRANT",
+    "APPROVAL_FROM_HISTORY",
+    "APPROVAL_FROM_REPORT",
+    "APPROVAL_FROM_COMMIT",
+    "APPROVAL_FROM_MANUAL",
+    "APPROVAL_CONSUMPTION_IN_SAME_LAYER"
+  ],
+  "blocked_paths_touched": [],
+  "brain_write_allowed": false,
+  "build_allowed_next": false,
+  "build_allowed_now": false,
+  "capa9_allowed": false,
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "generated_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+  "layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+  "manifest_id": "BRIDGE_V2_4_ARTIFACT_MANIFEST",
+  "manifest_reference": "00_SYSTEM/bridge/manifests/BRIDGE_V2_4_ARTIFACT_MANIFEST.json",
+  "manual_auto_update_allowed": false,
+  "manual_current_mutation_allowed": false,
+  "manual_historical_mutation_allowed": false,
+  "manual_manifest_mutation_allowed": false,
+  "manual_registry_mutation_allowed": false,
+  "manual_write_allowed": false,
+  "missing_artifacts": [],
+  "n8n_allowed": false,
+  "next_safe_step": "IMPLEMENTATION_PLAN_V2_5_OR_APPROVAL_CONSUMPTION_GATE_BLUEPRINT",
+  "omission_reason": "Manifest cannot require its own final seal before seal exists; seal closes over manifest hash after manifest PASS.",
+  "omitted_self_referential_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_4_ARTIFACT_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_4_HUMAN_APPROVAL_GATE_SEAL.json"
+  ],
+  "openai_api_runtime_allowed": false,
+  "publishing_allowed": false,
+  "report_id": "BRIDGE_V2_4_ARTIFACT_MANIFEST",
+  "reports_brain_write_allowed": false,
+  "social_media_automation_allowed": false,
+  "status": "PASS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "tracked_artifact_count": 14,
+  "unexpected_artifacts": [],
+  "webhook_allowed": false
+}

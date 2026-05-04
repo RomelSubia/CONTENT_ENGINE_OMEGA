@@ -1,0 +1,151 @@
+{
+  "approval_consumed": false,
+  "approval_from_commit_blocked": true,
+  "approval_from_history_blocked": true,
+  "approval_from_manual_blocked": true,
+  "approval_from_old_seal_blocked": true,
+  "approval_from_previous_layer_blocked": true,
+  "approval_from_report_blocked": true,
+  "approval_granted": false,
+  "approval_replay_blocked": true,
+  "approval_self_grant_blocked": true,
+  "authority_files": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_3_GOVERNED_WORK_ORDER_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_3_VALIDATION_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_3_TRANSITION_GATE_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_3_AUTHORITY_HASH_REPORT.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_2_CONTEXT_ALIGNMENT_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BUILD_READINESS_REPORT.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_SEAL.json"
+  ],
+  "auto_action_allowed": false,
+  "blocked_capabilities": [
+    "AUTO_EXECUTION",
+    "DIRECT_PRODUCTION_EXECUTION",
+    "EXTERNAL_EXECUTION",
+    "EXTERNAL_SIDE_EFFECTS",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "MANUAL_WRITE",
+    "MANUAL_AUTO_UPDATE",
+    "MANUAL_CURRENT_MUTATION",
+    "MANUAL_MANIFEST_MUTATION",
+    "MANUAL_HISTORICAL_MUTATION",
+    "MANUAL_REGISTRY_MUTATION",
+    "N8N_EXECUTION",
+    "WEBHOOK_EXECUTION",
+    "PUBLISHING",
+    "OPENAI_API_RUNTIME",
+    "SOCIAL_MEDIA_AUTOMATION",
+    "CONTENT_PUBLICATION",
+    "CAPA9",
+    "APPROVAL_REUSE",
+    "APPROVAL_SELF_GRANT",
+    "APPROVAL_FROM_HISTORY",
+    "APPROVAL_FROM_REPORT",
+    "APPROVAL_FROM_COMMIT",
+    "APPROVAL_FROM_MANUAL",
+    "APPROVAL_CONSUMPTION_IN_SAME_LAYER"
+  ],
+  "blocked_cases": [
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_APPROVAL_FROM_HISTORY"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_APPROVAL_FROM_REPORT"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_APPROVAL_FROM_COMMIT"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_APPROVAL_FROM_MANUAL"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_APPROVAL_FROM_OLD_SEAL"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_APPROVAL_FROM_PREVIOUS_LAYER"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_GLOBAL_OR_PERMANENT_APPROVAL"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_APPROVAL_SELF_GRANT"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "BLOCK_GENERIC_APPROVAL"
+    },
+    {
+      "allowed": false,
+      "approval_consumed": false,
+      "approval_granted": false,
+      "build_allowed_now": false,
+      "decision": "DEFER_TO_NEXT_LAYER_APPROVAL_CONSUMPTION_GATE",
+      "reason": "v2.4.2 creates approval gate only; it does not consume approval"
+    }
+  ],
+  "brain_write_allowed": false,
+  "build_allowed_next": false,
+  "build_allowed_now": false,
+  "capa9_allowed": false,
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "fresh_human_input_consumption_deferred": true,
+  "generated_by_layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+  "generic_approval_blocked": true,
+  "layer": "BRIDGE_GOVERNED_BUILD_REQUEST_CONTRACT_AND_HUMAN_APPROVAL_GATE_LAYER_V2_4_2",
+  "manifest_reference": "00_SYSTEM/bridge/manifests/BRIDGE_V2_4_ARTIFACT_MANIFEST.json",
+  "manual_auto_update_allowed": false,
+  "manual_current_mutation_allowed": false,
+  "manual_historical_mutation_allowed": false,
+  "manual_manifest_mutation_allowed": false,
+  "manual_registry_mutation_allowed": false,
+  "manual_write_allowed": false,
+  "n8n_allowed": false,
+  "next_safe_step": "IMPLEMENTATION_PLAN_V2_5_OR_APPROVAL_CONSUMPTION_GATE_BLUEPRINT",
+  "openai_api_runtime_allowed": false,
+  "publishing_allowed": false,
+  "report_id": "BRIDGE_V2_4_ANTI_REPLAY_APPROVAL_REPORT",
+  "reports_brain_write_allowed": false,
+  "social_media_automation_allowed": false,
+  "status": "PASS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "webhook_allowed": false
+}
