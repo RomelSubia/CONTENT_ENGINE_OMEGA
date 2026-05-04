@@ -1,0 +1,43 @@
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "report_id":  "BRIDGE_V1_NEXT_STEP_READINESS_MAP",
+    "layer":  "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+    "status":  "READY_FOR_NEXT_CONTROLLED_STEP",
+    "bridge_v1_closed":  true,
+    "bridge_v1_closure_status":  "CLOSED_WITH_ACCEPTED_WARNINGS",
+    "recommended_next_steps":  [
+                                   {
+                                       "step_id":  "OPTION_A_MANUAL_RUNTIME_REVIEW",
+                                       "allowed":  true,
+                                       "recommended_if":  "runtime_manual_review_required == true",
+                                       "purpose":  "Review current manual/manifest runtime state before allowing deeper bridge execution behavior.",
+                                       "execution_allowed":  false
+                                   },
+                                   {
+                                       "step_id":  "OPTION_B_NEXT_BRIDGE_LAYER_BLUEPRINT",
+                                       "allowed":  true,
+                                       "recommended_if":  "Continue original MANUAL ↔ CEREBRO plan after foundation closure.",
+                                       "purpose":  "Design next controlled bridge layer without skipping blueprint/review/approval protocol.",
+                                       "execution_allowed":  false
+                                   }
+                               ],
+    "blocked_next_steps":  [
+                               "AUTO_EXECUTION",
+                               "BRAIN_WRITE",
+                               "MANUAL_WRITE",
+                               "REPORTS_BRAIN_WRITE",
+                               "N8N_EXECUTION",
+                               "WEBHOOK_EXECUTION",
+                               "PUBLISHING",
+                               "CAPA9"
+                           ],
+    "next_command_recommendation":  "dame siguiente capa MANUAL ↔ CEREBRO según el plan original, usando BRIDGE v1 cerrado como foundation",
+    "execution_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false
+}

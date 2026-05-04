@@ -1,0 +1,38 @@
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "seal_id":  "BRIDGE_V1_GATE_CLOSURE_SEAL",
+    "layer":  "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+    "status":  "CLOSED_WITH_ACCEPTED_WARNINGS",
+    "reason":  "BRIDGE_V1_FOUNDATION_VALIDATED_AND_CLOSED_WITH_RUNTIME_REVIEW_WARNING",
+    "closed":  true,
+    "build_commit_required":  "ea7bdc3",
+    "audit_commit_required":  "7da549e",
+    "closure_head":  "7da549ef0b3c80c506de18404d2d901fda91cac1",
+    "tests_passed":  69,
+    "production_clean_pass":  false,
+    "production_with_warnings":  true,
+    "accepted_warnings":  [
+                              {
+                                  "warning_id":  "RUNTIME_MANUAL_REVIEW_REQUIRED",
+                                  "source":  "BRIDGE_BUILD_READINESS_REPORT",
+                                  "status":  "ACCEPTED_FOR_FOUNDATION_CLOSURE_ONLY",
+                                  "execution_allowed":  false,
+                                  "reason":  "Foundation bridge is buildable and validated, but runtime manual review remains tracked before execution/action."
+                              }
+                          ],
+    "closure_review_hash":  "d3a4dcc654c299699215f301e4c6a760951d7747443a44f2f0d31c923c4cb91e",
+    "gate_closure_hash":  "c97996ca6eb501f67fcdde16053d45c2f67390a78668a48d866431157df7d2fe",
+    "next_step_map_hash":  "b1c98f313caeccdda95e13f614bb4fb06172bb24641be0df5f815690d4986090",
+    "manifest_hash":  "66c7876d400a45c4398123f5517f3633bd85bdddf767d604063218ba0f6e5bc1",
+    "human_report_hash":  "85f758ec3e7a28e8b8c7fa91794cddd4fd7876715ff52bc57ecf4d37d6019f62",
+    "execution_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false,
+    "auto_action_allowed":  false,
+    "next_safe_step":  "NEXT_LAYER_AFTER_BRIDGE_V1_OR_MANUAL_RUNTIME_REVIEW"
+}

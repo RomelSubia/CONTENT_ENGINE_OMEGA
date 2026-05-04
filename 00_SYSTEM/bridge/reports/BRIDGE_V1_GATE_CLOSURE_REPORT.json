@@ -1,0 +1,45 @@
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "report_id":  "BRIDGE_V1_GATE_CLOSURE_REPORT",
+    "layer":  "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+    "status":  "CLOSED_WITH_ACCEPTED_WARNINGS",
+    "reason":  "BRIDGE_V1_FOUNDATION_VALIDATED_AND_CLOSED_WITH_RUNTIME_REVIEW_WARNING",
+    "closed":  true,
+    "bridge_v1_foundation_built":  true,
+    "bridge_v1_validated":  true,
+    "regression_guards_installed":  true,
+    "v3_7_auxiliary_pregate_only":  true,
+    "original_plan_authority_restored":  true,
+    "runtime_manual_review_required":  true,
+    "review_report_ids":  [
+                              "BRIDGE_MANUAL_INTEGRITY_REPORT"
+                          ],
+    "blocking_status_present":  false,
+    "blocking_report_ids":  [
+
+                            ],
+    "tests_passed":  69,
+    "production_clean_pass":  false,
+    "production_with_warnings":  true,
+    "accepted_warnings":  [
+                              {
+                                  "warning_id":  "RUNTIME_MANUAL_REVIEW_REQUIRED",
+                                  "source":  "BRIDGE_BUILD_READINESS_REPORT",
+                                  "status":  "ACCEPTED_FOR_FOUNDATION_CLOSURE_ONLY",
+                                  "execution_allowed":  false,
+                                  "reason":  "Foundation bridge is buildable and validated, but runtime manual review remains tracked before execution/action."
+                              }
+                          ],
+    "execution_allowed":  false,
+    "external_execution_allowed":  false,
+    "external_side_effects_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false,
+    "auto_action_allowed":  false,
+    "next_safe_step":  "NEXT_LAYER_AFTER_BRIDGE_V1_OR_MANUAL_RUNTIME_REVIEW"
+}

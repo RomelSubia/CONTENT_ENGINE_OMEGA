@@ -1,0 +1,38 @@
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "manifest_id":  "BRIDGE_V1_GATE_CLOSURE_MANIFEST",
+    "layer":  "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+    "status":  "PASS",
+    "closure_status":  "CLOSED_WITH_ACCEPTED_WARNINGS",
+    "artifact_count":  4,
+    "artifacts":  [
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_V1_POST_VALIDATION_REVIEW_REPORT.json",
+                          "sha256":  "d3a4dcc654c299699215f301e4c6a760951d7747443a44f2f0d31c923c4cb91e",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_V1_GATE_CLOSURE_REPORT.json",
+                          "sha256":  "c97996ca6eb501f67fcdde16053d45c2f67390a78668a48d866431157df7d2fe",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_V1_NEXT_STEP_READINESS_MAP.json",
+                          "sha256":  "b1c98f313caeccdda95e13f614bb4fb06172bb24641be0df5f815690d4986090",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "05_REPORTS/manual_brain_bridge/BRIDGE_V1_GATE_CLOSURE_REPORT.md",
+                          "sha256":  "85f758ec3e7a28e8b8c7fa91794cddd4fd7876715ff52bc57ecf4d37d6019f62",
+                          "status":  "VALID"
+                      }
+                  ],
+    "execution_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false
+}
