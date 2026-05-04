@@ -1,0 +1,54 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "report_id": "BRIDGE_V1_REGRESSION_GUARD_REPORT",
+  "layer": "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+  "status": "PASS",
+  "guards": {
+    "convert_to_json_depth_max_100": {
+      "status": "PASS",
+      "violations": []
+    },
+    "pytest_reserved_request_param": {
+      "status": "PASS",
+      "violations": []
+    },
+    "validate_v37_exact_fields": {
+      "status": "PASS",
+      "required": [
+        "freeze_path",
+        "deviation_path",
+        "next_path",
+        "does_not_replace",
+        "return_to_original_plan"
+      ]
+    },
+    "readiness_blocking_diagnostics": {
+      "status": "PASS",
+      "blocking_status_present": false,
+      "blocking_report_ids": []
+    },
+    "pass_with_warnings_policy": {
+      "status": "PASS",
+      "readiness_status": "PASS_WITH_WARNINGS",
+      "review_report_ids": [
+        "BRIDGE_MANUAL_INTEGRITY_REPORT"
+      ]
+    },
+    "manual_runtime_review_policy": {
+      "status": "PASS",
+      "manual_integrity_status": "REQUIRE_REVIEW",
+      "runtime_manual_review_required": true
+    }
+  },
+  "tests_passed": 70,
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "manual_write_allowed": false,
+  "brain_write_allowed": false,
+  "reports_brain_write_allowed": false,
+  "n8n_allowed": false,
+  "webhook_allowed": false,
+  "publishing_allowed": false,
+  "capa9_allowed": false,
+  "next_safe_step": "BRIDGE_V1_POST_VALIDATION_REVIEW_OR_GATE_CLOSURE"
+}

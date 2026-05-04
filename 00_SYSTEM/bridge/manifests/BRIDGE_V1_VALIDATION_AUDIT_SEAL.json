@@ -1,0 +1,21 @@
+{
+  "system": "CONTENT_ENGINE_OMEGA",
+  "seal_id": "BRIDGE_V1_VALIDATION_AUDIT_SEAL",
+  "layer": "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+  "status": "VALIDATED_WITH_REGRESSION_GUARDS",
+  "readiness_status": "PASS_WITH_WARNINGS",
+  "tests_passed": 70,
+  "manifest_hash": "95d0a71ca2747d6437963227ed7123010d0fcd8570d83ba254664617f895d4ed",
+  "audit_report_hash": "4576138fd8c73c53447bf7120a3900eb0ccb3e2ac9665f5ed53a8fa5f814d1fd",
+  "regression_report_hash": "16a58b25de7e462cc52e6cb4d84af349abfd36e65eb437801e4ef45689c144a6",
+  "human_report_hash": "e8b31617e61cee2b773a7d70d8a0e4eca96bc081156f74839b0a16a4f47825ed",
+  "execution_allowed": false,
+  "manual_write_allowed": false,
+  "brain_write_allowed": false,
+  "reports_brain_write_allowed": false,
+  "n8n_allowed": false,
+  "webhook_allowed": false,
+  "publishing_allowed": false,
+  "capa9_allowed": false,
+  "next_safe_step": "BRIDGE_V1_POST_VALIDATION_REVIEW_OR_GATE_CLOSURE"
+}
