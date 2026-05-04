@@ -135,3 +135,43 @@ def test_dynamic_manual_chat_noise_becomes_require_review(tmp_path: Path):
 
     assert report["status"] == "REQUIRE_REVIEW"
     assert report["runtime_manual_review_required"] is True
+
+def test_regression_manual_runtime_allows_legitimate_powershell_instruction_tokens(tmp_path: Path):
+    root = tmp_path / "repo"
+    root.mkdir()
+
+    manual = root / bridge.MANUAL_PATH
+    manual.parent.mkdir(parents=True, exist_ok=True)
+    manual.write_text(
+        "\n".join([
+            "Set-StrictMode -Version Latest",
+            "$ErrorActionPreference = \"Stop\"",
+            "Write-Host \"Repo check\"",
+            "git status --short",
+        ]),
+        encoding="utf-8",
+    )
+
+    source = bridge.source_resolver(root)
+    report = bridge.manual_integrity_guard(root, source)
+
+    assert report["status"] == "PASS"
+    assert report["runtime_manual_review_required"] is False
+    assert "NO_CHAT_NOISE_CHECK" not in report["failed_checks"]
+    assert "NO_TERMINAL_TRANSCRIPT_PROMPT_CHECK" not in report["failed_checks"]
+
+
+def test_regression_manual_runtime_still_blocks_terminal_prompt_transcript(tmp_path: Path):
+    root = tmp_path / "repo"
+    root.mkdir()
+
+    manual = root / bridge.MANUAL_PATH
+    manual.parent.mkdir(parents=True, exist_ok=True)
+    manual.write_text("PS D:\\CONTENT_ENGINE_OMEGA> git status", encoding="utf-8")
+
+    source = bridge.source_resolver(root)
+    report = bridge.manual_integrity_guard(root, source)
+
+    assert report["status"] == "REQUIRE_REVIEW"
+    assert report["runtime_manual_review_required"] is True
+    assert "NO_TERMINAL_TRANSCRIPT_PROMPT_CHECK" in report["failed_checks"]

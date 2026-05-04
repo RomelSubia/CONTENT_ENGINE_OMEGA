@@ -28,13 +28,11 @@
   "read_whitelist_ready": true,
   "report_id": "BRIDGE_BUILD_READINESS_REPORT",
   "reports_brain_write_allowed": false,
-  "review_report_ids": [
-    "BRIDGE_MANUAL_INTEGRITY_REPORT"
-  ],
+  "review_report_ids": [],
   "rollback_policy_ready": true,
-  "runtime_manual_review_required": true,
+  "runtime_manual_review_required": false,
   "schemas_ready": true,
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "system": "CONTENT_ENGINE_OMEGA",
   "test_harness_ready": true,
   "webhook_allowed": false,

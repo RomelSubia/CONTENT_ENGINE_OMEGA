@@ -260,6 +260,7 @@ def manual_integrity_guard(root: Path, source_report: dict[str, Any]) -> dict[st
         "ROOT_BOUNDARY_CHECK": True,
         "NO_BINARY_CONTENT_CHECK": True,
         "NO_CHAT_NOISE_CHECK": True,
+        "NO_TERMINAL_TRANSCRIPT_PROMPT_CHECK": True,
         "MAX_SIZE_CHECK": True,
     }
 
@@ -269,13 +270,28 @@ def manual_integrity_guard(root: Path, source_report: dict[str, Any]) -> dict[st
         assert_inside_root(root, manual)
         raw = manual.read_bytes()
         text = raw.decode("utf-8", errors="replace")
+        lower_text = text.lower()
+
+        terminal_prompt_detected = False
+        for line in text.splitlines():
+            candidate = line.strip().lower()
+            if candidate.startswith("ps ") and ":\\" in candidate and ">" in candidate:
+                terminal_prompt_detected = True
+                break
+
+        hard_noise_markers = [
+            "dame bloque",
+            "proceso terminado con el código",
+            "ahora puede cerrar este terminal",
+            "windows powershell\ncopyright",
+            "copyright (c) microsoft corporation. todos los derechos reservados",
+        ]
+
         checks["NON_EMPTY_CHECK"] = bool(text.strip())
         checks["ENCODING_CHECK"] = "\ufffd" not in text
         checks["MAX_SIZE_CHECK"] = len(raw) <= 5_000_000
-        checks["NO_CHAT_NOISE_CHECK"] = not any(
-            marker in text.lower()
-            for marker in ["ps d:\\", "dame bloque", "write-host", "git status"]
-        )
+        checks["NO_TERMINAL_TRANSCRIPT_PROMPT_CHECK"] = not terminal_prompt_detected
+        checks["NO_CHAT_NOISE_CHECK"] = not any(marker in lower_text for marker in hard_noise_markers)
         checks["NO_BINARY_CONTENT_CHECK"] = b"\x00" not in raw
     else:
         checks["NON_EMPTY_CHECK"] = False
@@ -287,6 +303,12 @@ def manual_integrity_guard(root: Path, source_report: dict[str, Any]) -> dict[st
 
     report["checks"] = checks
     report["failed_checks"] = failed_checks
+    report["allowed_instruction_tokens"] = [
+        "Write-Host",
+        "git status",
+        "Set-StrictMode",
+        "ErrorActionPreference",
+    ]
 
     if not failed_checks:
         report["status"] = "PASS"

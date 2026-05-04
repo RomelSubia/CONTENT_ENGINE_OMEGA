@@ -1,0 +1,33 @@
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "report_id":  "BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT",
+    "layer":  "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+    "status":  "CLOSED_CLEAN",
+    "closed_warning":  "RUNTIME_MANUAL_REVIEW_REQUIRED",
+    "reason":  "CURRENT_MANUAL_AND_MANIFEST_VALIDATED_RUNTIME_CLEAN_AFTER_FALSE_POSITIVE_FIX",
+    "warning_closed":  true,
+    "bridge_v1_readiness_status":  "PASS",
+    "bridge_v1_runtime_manual_review_required":  false,
+    "review_report_ids":  [
+
+                          ],
+    "blocking_status_present":  false,
+    "blocking_report_ids":  [
+
+                            ],
+    "tests_passed":  71,
+    "production_clean_pass":  true,
+    "production_with_warnings":  false,
+    "execution_allowed":  false,
+    "external_execution_allowed":  false,
+    "external_side_effects_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false,
+    "auto_action_allowed":  false,
+    "next_safe_step":  "NEXT_BRIDGE_LAYER_BLUEPRINT"
+}

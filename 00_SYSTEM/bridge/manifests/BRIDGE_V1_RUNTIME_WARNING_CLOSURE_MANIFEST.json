@@ -1,0 +1,109 @@
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "manifest_id":  "BRIDGE_V1_RUNTIME_WARNING_CLOSURE_MANIFEST",
+    "layer":  "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+    "status":  "PASS",
+    "warning_closed":  "RUNTIME_MANUAL_REVIEW_REQUIRED",
+    "false_positive_fix_applied":  true,
+    "artifact_count":  18,
+    "artifacts":  [
+                      {
+                          "path":  "04_SCRIPTS/python/manual_brain_bridge/bridge_v1_manual_cerebro_connection.py",
+                          "sha256":  "7e035124fbb2e811266b5c6af348f6b99173c38f511eb05c1ab09663abc71197",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "tests/manual_brain_bridge/test_bridge_v1_regression_guards.py",
+                          "sha256":  "ca0ec3e42ef7436ce868c5505f872792e9d354ce53caf857614f03951aff265a",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_V1_MANUAL_RUNTIME_REVIEW_REPORT.json",
+                          "sha256":  "f8680536a5ea4068155eccb8df59757059b375d31aedd1d4ce248dff8fb30b90",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT.json",
+                          "sha256":  "76cf709604bdd9fbd5eced1455a7098df5d855c21e5023f77866f6510560ff48",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_V1_RUNTIME_CLEAN_NEXT_STEP_READINESS_MAP.json",
+                          "sha256":  "7c1c4e1f31a07abc8de9c06f9f46ce58f6f884ab9eac6c1bf884288478510217",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "05_REPORTS/manual_brain_bridge/BRIDGE_V1_RUNTIME_WARNING_CLOSURE_REPORT.md",
+                          "sha256":  "b08b55d269820555f2ff71cd927b29cf1348fd8b0e375b392f5587bf14b0f57f",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_SOURCE_RESOLVER_REPORT.json",
+                          "sha256":  "87d101748c404c685c32a0b5ba67c8374c66ddcbb5c41a7d4d9c1d50461a430b",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_MANUAL_INTEGRITY_REPORT.json",
+                          "sha256":  "dbd830d9c55e2b311c219893dd04de3bcf939a5715d98ced794ff3c6993f30c0",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/MANUAL_RULES_REGISTRY.json",
+                          "sha256":  "3a9430e67eff0403dfd8a3cf36c5359fc5350b1e1bddd6ae8f0a91fa4b823a27",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_RULE_EXTRACTION_REPORT.json",
+                          "sha256":  "9acb9ced5c834b6f0b943a02d2a9acef4403331e818bebbdb62cf6658ac96b88",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_INTENT_CLASSIFICATION_REPORT.json",
+                          "sha256":  "be41a30fe06ba1bf3c3f1d36fa58c9433656936520eee6b640c37f75fd694096",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_CONFLICT_REPORT.json",
+                          "sha256":  "93a9304e9553e7acf10757e57b5604ac04861cd0fb00305f9a7cce06b1cd36b8",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_BRAIN_QUERY_REPORT.json",
+                          "sha256":  "e92072584cb34da7c7c3029d4969536a7ee96b3dc8ecdda8858049a72796c6ad",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_DECISION_MAP_REPORT.json",
+                          "sha256":  "de3d703a76c1423fa5ca9f3f3f323e726ca3689e8bf02aa3d17eb9ac6f5b13ae",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_PLAN_REPORT.json",
+                          "sha256":  "a1a6e4e8c5f2e711a896bbec7cb113b3090a83c39fb023a0d581f6caf38aa65a",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_TRACEABILITY_MATRIX.json",
+                          "sha256":  "46d56437a9202c9e1df143af83222fb0237125e70e6b86a061ad433d25afe1ea",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_BUILD_READINESS_REPORT.json",
+                          "sha256":  "a69509e80fb9d780f35893bd43b68769d6e56a8dca21fb179530456f54670fbb",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_VALIDATION_REPORT.json",
+                          "sha256":  "8c1db7aef28c2acfa8ec79c83ac525c1c061c96e933cfa7001075c2f136b3ed2",
+                          "status":  "VALID"
+                      }
+                  ],
+    "execution_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false
+}
