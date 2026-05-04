@@ -1,0 +1,35 @@
+{
+  "auto_action_allowed": false,
+  "brain_write_allowed": false,
+  "capa9_allowed": false,
+  "checks": {
+    "ENCODING_CHECK": true,
+    "EXISTS_CHECK": true,
+    "MAX_SIZE_CHECK": true,
+    "NON_EMPTY_CHECK": true,
+    "NO_BINARY_CONTENT_CHECK": true,
+    "NO_CHAT_NOISE_CHECK": false,
+    "ROOT_BOUNDARY_CHECK": true
+  },
+  "evidence": [],
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "fail_closed": true,
+  "failed_checks": [
+    "NO_CHAT_NOISE_CHECK"
+  ],
+  "integrity_status": "RUNTIME_MANUAL_REVIEW_REQUIRED",
+  "layer": "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+  "manual_write_allowed": false,
+  "n8n_allowed": false,
+  "next_safe_step": "BRIDGE_V1_VALIDATION_OR_NEXT_IMPLEMENTATION_BLOCK",
+  "publishing_allowed": false,
+  "reason": "Manual runtime content requires review. Bridge foundation remains buildable because no execution, manual write, brain write, or external side effects are allowed.",
+  "report_id": "BRIDGE_MANUAL_INTEGRITY_REPORT",
+  "reports_brain_write_allowed": false,
+  "runtime_manual_review_required": true,
+  "status": "REQUIRE_REVIEW",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "webhook_allowed": false
+}

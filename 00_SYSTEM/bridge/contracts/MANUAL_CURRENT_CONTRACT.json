@@ -1,1 +1,12 @@
-{"contract_id":"MANUAL_CURRENT_CONTRACT","system":"CONTENT_ENGINE_OMEGA","manual_path_required":"00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md","manifest_required":"00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json","hash_required":true,"status_required":"CURRENT_VALID","historical_blocked":true,"mixed_chat_transcript_blocked":true,"outside_root_locked":true}
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "contract_id":  "MANUAL_CURRENT_CONTRACT",
+    "manual_path_required":  "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md",
+    "manifest_required":  "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json",
+    "hash_required":  true,
+    "current_valid_required":  true,
+    "historical_blocked":  true,
+    "chat_transcript_blocked":  true,
+    "outside_root_blocked":  true,
+    "manual_write_allowed":  false
+}

@@ -1,1 +1,11 @@
-{"contract_id":"BRAIN_READ_ONLY_CONTRACT","brain_id":"G-J.x_v2.2","global_seal_required":true,"freeze_mode_required":true,"auto_action_allowed_required":false,"fail_closed_required":true,"read_only_required":true,"brain_write_allowed":false,"allowed_read_roots":["00_SYSTEM/brain/runtime/","00_SYSTEM/brain/memory/","00_SYSTEM/brain/evidence/","00_SYSTEM/brain/integrity/","00_SYSTEM/reports/brain/"],"blocked_write_roots":["00_SYSTEM/brain/","00_SYSTEM/reports/brain/GLOBAL_SEAL/"],"required_evidence":["GLOBAL_SEAL","FREEZE_MODE","AUTO_ACTION_FALSE","FAIL_CLOSED_ENFORCED"]}
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "contract_id":  "BRAIN_READ_ONLY_CONTRACT",
+    "brain_id":  "G-J.x_v2.2",
+    "global_seal_required":  true,
+    "freeze_mode_required":  true,
+    "auto_action_allowed_required":  false,
+    "fail_closed_required":  true,
+    "read_only_required":  true,
+    "brain_write_allowed":  false
+}

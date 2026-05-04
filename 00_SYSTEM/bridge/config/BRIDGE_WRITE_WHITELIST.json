@@ -1,1 +1,18 @@
-{"write_allowed":["00_SYSTEM/bridge/reports/","00_SYSTEM/bridge/manifests/","00_SYSTEM/bridge/quarantine/","00_SYSTEM/bridge/runtime/","05_REPORTS/manual_brain_bridge/"],"write_blocked":["00_SYSTEM/brain/**","00_SYSTEM/reports/brain/**","00_SYSTEM/manual/current/**","00_SYSTEM/manual/historical/**","00_SYSTEM/manual/manifest/**","00_SYSTEM/manual/registry/**"]}
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "whitelist_id":  "BRIDGE_WRITE_WHITELIST",
+    "allowed_prefixes":  [
+                             "00_SYSTEM/bridge/",
+                             "05_REPORTS/manual_brain_bridge/",
+                             "04_SCRIPTS/python/manual_brain_bridge/",
+                             "tests/manual_brain_bridge/"
+                         ],
+    "blocked_prefixes":  [
+                             "00_SYSTEM/brain/",
+                             "00_SYSTEM/reports/brain/",
+                             "00_SYSTEM/manual/current/",
+                             "00_SYSTEM/manual/historical/",
+                             "00_SYSTEM/manual/manifest/",
+                             "00_SYSTEM/manual/registry/"
+                         ]
+}

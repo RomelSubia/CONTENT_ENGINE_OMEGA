@@ -1,0 +1,103 @@
+{
+  "auto_action_allowed": false,
+  "brain_write_allowed": false,
+  "capa9_allowed": false,
+  "evidence": [],
+  "execution_allowed": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "fail_closed": true,
+  "layer": "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+  "manual_write_allowed": false,
+  "n8n_allowed": false,
+  "next_safe_step": "BRIDGE_V1_VALIDATION_OR_NEXT_IMPLEMENTATION_BLOCK",
+  "publishing_allowed": false,
+  "report_id": "MANUAL_RULES_REGISTRY",
+  "reports_brain_write_allowed": false,
+  "rule_count": 8,
+  "rules": [
+    {
+      "decision_behavior": "brain_write_allowed",
+      "enforcement_level": "LOCK",
+      "rule_id": "RULE_NO_BRAIN_WRITE",
+      "rule_type": "PROHIBITION_RULE",
+      "severity": "CRITICAL",
+      "source_hash": "ea5b7d339b78c729fb1dac32f9806ab048b4a963aff8b6f9a64de63ffd9de5bf",
+      "source_section": "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO",
+      "traceability_id": "TRACE_RULE_001"
+    },
+    {
+      "decision_behavior": "manual_write_allowed",
+      "enforcement_level": "BLOCK",
+      "rule_id": "RULE_NO_MANUAL_WRITE",
+      "rule_type": "PROHIBITION_RULE",
+      "severity": "CRITICAL",
+      "source_hash": "7667f8fdbf16dc9c8f9bb767a0c73e376d8d39b5c45a2e6c29fc014cc6190254",
+      "source_section": "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO",
+      "traceability_id": "TRACE_RULE_002"
+    },
+    {
+      "decision_behavior": "external_execution_allowed",
+      "enforcement_level": "BLOCK",
+      "rule_id": "RULE_NO_EXTERNAL_EXECUTION",
+      "rule_type": "SECURITY_RULE",
+      "severity": "CRITICAL",
+      "source_hash": "537ee4da8e9caa22a7e27db5aad8d52faff5f25a0ec5f9df68937940fd24f915",
+      "source_section": "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO",
+      "traceability_id": "TRACE_RULE_003"
+    },
+    {
+      "decision_behavior": "capa9_allowed",
+      "enforcement_level": "LOCK",
+      "rule_id": "RULE_NO_CAPA_9",
+      "rule_type": "PROHIBITION_RULE",
+      "severity": "CRITICAL",
+      "source_hash": "08fddd29f5a2bdd61ae184b7deae665470c72b62f37edd7a7f9659bcd7893934",
+      "source_section": "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO",
+      "traceability_id": "TRACE_RULE_004"
+    },
+    {
+      "decision_behavior": "fail_closed",
+      "enforcement_level": "LOCK",
+      "rule_id": "RULE_FAIL_CLOSED",
+      "rule_type": "SECURITY_RULE",
+      "severity": "CRITICAL",
+      "source_hash": "effbc15c44b10a26171850213013605de92077f32d656e0ecd2e6722e91043b6",
+      "source_section": "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO",
+      "traceability_id": "TRACE_RULE_005"
+    },
+    {
+      "decision_behavior": "traceability",
+      "enforcement_level": "BLOCK",
+      "rule_id": "RULE_TRACEABILITY_REQUIRED",
+      "rule_type": "EVIDENCE_RULE",
+      "severity": "CRITICAL",
+      "source_hash": "49845493e29a7583f9fb6fc5d65ec1863185a8010f6cf2d47267823115881db0",
+      "source_section": "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO",
+      "traceability_id": "TRACE_RULE_006"
+    },
+    {
+      "decision_behavior": "approval_required",
+      "enforcement_level": "REQUIRE_REVIEW",
+      "rule_id": "RULE_APPROVAL_REQUIRED",
+      "rule_type": "APPROVAL_RULE",
+      "severity": "HIGH",
+      "source_hash": "c4f6e4254dbfbfcb76b119d250d2c452357a2e617a4c9af5c742d589c5559150",
+      "source_section": "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO",
+      "traceability_id": "TRACE_RULE_007"
+    },
+    {
+      "decision_behavior": "brain_read_only",
+      "enforcement_level": "LOCK",
+      "rule_id": "RULE_FREEZE_BRAIN_READ_ONLY",
+      "rule_type": "FREEZE_RULE",
+      "severity": "CRITICAL",
+      "source_hash": "c4e6290f3f18cea65452a13db3d1c60a4ee17b68ada550475b3cb5c31287c95a",
+      "source_section": "IMPLEMENTATION_PLAN_CAPA_CONEXION_MANUAL_CEREBRO",
+      "traceability_id": "TRACE_RULE_008"
+    }
+  ],
+  "status": "PASS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "webhook_allowed": false
+}

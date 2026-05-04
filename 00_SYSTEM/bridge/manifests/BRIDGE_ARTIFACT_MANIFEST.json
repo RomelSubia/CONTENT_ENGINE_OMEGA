@@ -1,1 +1,194 @@
-{"manifest_id":"BRIDGE_ARTIFACT_MANIFEST","manifest_version":"v1.2.1","run_id":"BRIDGE_V1_2_1_FINAL","root":"D:\\CONTENT_ENGINE_OMEGA","artifacts":[{"artifact_id":"ART-0001","artifact_type":"CONFIG","relative_path":"00_SYSTEM/bridge/config/BRIDGE_POLICY.json","hash_sha256":"a97ee8d4847670277e8ddb98fb09da527eb836b2a46ec42a2c2ec2464920c34a","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0002","artifact_type":"CONFIG","relative_path":"00_SYSTEM/bridge/config/BRIDGE_READ_WHITELIST.json","hash_sha256":"83c34194da44595a31f4e6334c50be2e6e96ce310e683bbd8154a3161eeb4331","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0003","artifact_type":"CONFIG","relative_path":"00_SYSTEM/bridge/config/BRIDGE_WRITE_WHITELIST.json","hash_sha256":"588836642c40b882ce5fcdf9d70a66f6e0456a83bb1e59ca37e85709d4738d7a","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0004","artifact_type":"CONFIG","relative_path":"00_SYSTEM/bridge/config/BRIDGE_EXIT_CODES.json","hash_sha256":"12535a5ea62933720b154cb7c4b4a0d8bfea041e33074e9cc2c6d4f06eb1a511","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0005","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRIDGE_POLICY.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0006","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/MANUAL_SOURCE_MANIFEST.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0007","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/MANUAL_RULE.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0008","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/MANUAL_RULES_REGISTRY.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0009","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRAIN_READ_ONLY_CONTRACT.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0010","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRAIN_QUERY_REQUEST.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0011","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRAIN_QUERY_RESPONSE.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0012","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRIDGE_DECISION.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0013","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRIDGE_PLAN.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0014","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRIDGE_TRACEABILITY_MATRIX.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0015","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRIDGE_ARTIFACT_MANIFEST.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0016","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRIDGE_REPORT.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0017","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRIDGE_BUILD_READINESS_REPORT.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0018","artifact_type":"SCHEMA","relative_path":"00_SYSTEM/bridge/schemas/BRIDGE_MANIFEST_SEAL.schema.json","hash_sha256":"3ff9f0206e138585bf1d0d12fadafcad5e20a2f31eb770617aeabfd117a063e2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0019","artifact_type":"CONTRACT","relative_path":"00_SYSTEM/bridge/contracts/MANUAL_CURRENT_CONTRACT.json","hash_sha256":"3121c42657e5674021c648fa04b6de8397bd397fd5cbf6afd9c6a24842139bc2","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0020","artifact_type":"CONTRACT","relative_path":"00_SYSTEM/bridge/contracts/BRAIN_READ_ONLY_CONTRACT.json","hash_sha256":"e6a45a8079a2ea521fb5790bc3cdc95f4cfdc2498176b1a0a98a7d339b72fb41","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0021","artifact_type":"SCRIPT","relative_path":"00_SYSTEM/bridge/governance/bridge_foundation_validator.ps1","hash_sha256":"ee4b32f6f0301d212048a68ead331ae28bffcc0882b1156c3ddcbe21670b6318","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0022","artifact_type":"TEST_MATRIX","relative_path":"00_SYSTEM/bridge/tests/BRIDGE_TEST_MATRIX.json","hash_sha256":"a97494b71a7ce7278f2ea0940adba07ab4b55e45ce964caf7f107de6d65349a1","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0023","artifact_type":"TEST_RUNNER","relative_path":"00_SYSTEM/bridge/tests/run_bridge_tests.ps1","hash_sha256":"c586c2397d8980207dc681c632832718b022f528e7e78c4bb81c68bac2d76b9e","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0024","artifact_type":"REPORT","relative_path":"00_SYSTEM/bridge/reports/BRIDGE_TRACEABILITY_MATRIX.json","hash_sha256":"0fe7c631d3c1f03272461c696c42d36cd3df841c9a921a2041778abdf5460295","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0025","artifact_type":"REPORT","relative_path":"00_SYSTEM/bridge/reports/BRIDGE_BUILD_READINESS_REPORT.json","hash_sha256":"32c8fc717870721b290cb829881a69d6837a87613dfdce707361d392d42d6659","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false},{"artifact_id":"ART-0026","artifact_type":"SUMMARY","relative_path":"05_REPORTS/manual_brain_bridge/BRIDGE_EXECUTIVE_SUMMARY.md","hash_sha256":"4db2bd20a57bd16a0a4ab52ca17bb5cb5b815be5079d514e69c8581f42f489df","write_method":"ATOMIC_TMP_RENAME","status":"VALID","quarantined":false}]}
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "manifest_id":  "BRIDGE_ARTIFACT_MANIFEST",
+    "layer":  "MANUAL_CEREBRO_CONNECTION_LAYER_V1",
+    "status":  "PASS",
+    "artifact_count":  34,
+    "artifacts":  [
+                      {
+                          "path":  "04_SCRIPTS/python/manual_brain_bridge/bridge_v1_manual_cerebro_connection.py",
+                          "sha256":  "0e58bd7b8e187991b08add0bbbecf2c8003095df9d66c2007bece7b21ce5bbce",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "tests/manual_brain_bridge/test_bridge_v1_manual_cerebro_connection.py",
+                          "sha256":  "df4f9955bddc3f3045e3ce910c24d6f7c689db3036db2d99eafb9802796e1ba6",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/config/BRIDGE_POLICY.json",
+                          "sha256":  "542295f8a96ee0b3ad6636f36162ec049de80e62a7dee5248c26bdc3af24f0c1",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/config/BRIDGE_WRITE_WHITELIST.json",
+                          "sha256":  "0010e8823c999f0cb7ab0f8336ec18e52494153853882d3b607261a36256ecd7",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/config/BRIDGE_READ_WHITELIST.json",
+                          "sha256":  "eb6ea933f6add1a8f5e4325cdc281795528ae0daf253d6dc0c70a4f82a03705e",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/config/BRIDGE_EXIT_CODES.json",
+                          "sha256":  "8efc4945bec56a68f63f436350fe776dcece2f0cb09298cf0260df3e0d2532a0",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRIDGE_POLICY.schema.json",
+                          "sha256":  "d14ab3b37e1cc2ee6e3af99a4c145c89d388ed37beb77f23621ba0099fbb4c35",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/MANUAL_SOURCE_MANIFEST.schema.json",
+                          "sha256":  "3e7cf7f32cccc4001eb134cf01dbe09ca780b85defdd34021128ead1864b66c2",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/MANUAL_RULE.schema.json",
+                          "sha256":  "d754ceb6fb2ce1fa08fd3a21270c3237a06352a37cebedac6dcb1d9c6e319ed0",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/MANUAL_RULES_REGISTRY.schema.json",
+                          "sha256":  "0b0c402ea1caad1b44eff36eb2db62d0d6bde6ae43337f6fe27c9882194b3d99",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRAIN_READ_ONLY_CONTRACT.schema.json",
+                          "sha256":  "f4ecbd9db5f465de6acbee95beac0ffe76f4c25468336747f7948063549bdb48",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRAIN_QUERY_REQUEST.schema.json",
+                          "sha256":  "22a8992d25cb7ba5cc622e941e04c9f1c69c7f0bec7a658f76230fd3edde8e93",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRAIN_QUERY_RESPONSE.schema.json",
+                          "sha256":  "a16b3e4b245d8a122f86e0a30528e5632dd67130c7053f996bc6410c50ac5291",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRIDGE_DECISION.schema.json",
+                          "sha256":  "c3bf66ecedb940139f352b73253b0a8314d7a4ec1f760a72eccb2595f4c4e41b",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRIDGE_PLAN.schema.json",
+                          "sha256":  "8e7b3062a1685f3e76aba07b0a911ff18ced31abb9bca95bfa249b3cf98a0e13",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRIDGE_TRACEABILITY_MATRIX.schema.json",
+                          "sha256":  "7a5e951b8d2a182475da614a18e3f56c5f06eccecd7be1d020ae7f5dfce9f48b",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRIDGE_ARTIFACT_MANIFEST.schema.json",
+                          "sha256":  "d6e4ca1fe54a0979744fad607b8cedb6965eed92047397ffac12fd91c1199c7b",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRIDGE_REPORT.schema.json",
+                          "sha256":  "83d0fb4d2e946ff8ef73d28efb324e8193e1157166f04daba5e632409365ca99",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/schemas/BRIDGE_BUILD_READINESS_REPORT.schema.json",
+                          "sha256":  "fbe5bd88c9fab7c064d002893d9b07202ca92717248b7d26b1f907c86af55215",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/contracts/MANUAL_CURRENT_CONTRACT.json",
+                          "sha256":  "fe4511f9cf516a87a2c7313c9539723abfc4d206da51ffeb929fc8410b0cce52",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/contracts/BRAIN_READ_ONLY_CONTRACT.json",
+                          "sha256":  "5554f61f250e8cd5d997013c6885c06b804384dae91b68dda0524bfea46e1f51",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_SOURCE_RESOLVER_REPORT.json",
+                          "sha256":  "87d101748c404c685c32a0b5ba67c8374c66ddcbb5c41a7d4d9c1d50461a430b",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_MANUAL_INTEGRITY_REPORT.json",
+                          "sha256":  "9e1d6cd8b410498aae30370cd415b6babe56f3f6d95c653746530dde6b24e748",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/MANUAL_RULES_REGISTRY.json",
+                          "sha256":  "3a9430e67eff0403dfd8a3cf36c5359fc5350b1e1bddd6ae8f0a91fa4b823a27",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_RULE_EXTRACTION_REPORT.json",
+                          "sha256":  "9acb9ced5c834b6f0b943a02d2a9acef4403331e818bebbdb62cf6658ac96b88",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_INTENT_CLASSIFICATION_REPORT.json",
+                          "sha256":  "be41a30fe06ba1bf3c3f1d36fa58c9433656936520eee6b640c37f75fd694096",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_CONFLICT_REPORT.json",
+                          "sha256":  "93a9304e9553e7acf10757e57b5604ac04861cd0fb00305f9a7cce06b1cd36b8",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_BRAIN_QUERY_REPORT.json",
+                          "sha256":  "e92072584cb34da7c7c3029d4969536a7ee96b3dc8ecdda8858049a72796c6ad",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_DECISION_MAP_REPORT.json",
+                          "sha256":  "de3d703a76c1423fa5ca9f3f3f323e726ca3689e8bf02aa3d17eb9ac6f5b13ae",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_PLAN_REPORT.json",
+                          "sha256":  "a1a6e4e8c5f2e711a896bbec7cb113b3090a83c39fb023a0d581f6caf38aa65a",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_TRACEABILITY_MATRIX.json",
+                          "sha256":  "46d56437a9202c9e1df143af83222fb0237125e70e6b86a061ad433d25afe1ea",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_BUILD_READINESS_REPORT.json",
+                          "sha256":  "4550ed8c5b34c6814ba1f96ca77fa8b5e9e788795886e2fe306295d68a2ce765",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_VALIDATION_REPORT.json",
+                          "sha256":  "8c1db7aef28c2acfa8ec79c83ac525c1c061c96e933cfa7001075c2f136b3ed2",
+                          "status":  "VALID"
+                      },
+                      {
+                          "path":  "05_REPORTS/manual_brain_bridge/BRIDGE_V1_BUILD_REPORT.md",
+                          "sha256":  "243f87af0a9972d8c9096941a582daf55f5f08441934da022e6c1c5abd21e1c3",
+                          "status":  "VALID"
+                      }
+                  ],
+    "unexpected_artifacts":  [
+
+                             ],
+    "blocked_paths_touched":  [
+
+                              ],
+    "write_method":  "ATOMIC_TMP_RENAME",
+    "execution_allowed":  false,
+    "manual_write_allowed":  false,
+    "brain_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "n8n_allowed":  false,
+    "webhook_allowed":  false,
+    "publishing_allowed":  false,
+    "capa9_allowed":  false
+}

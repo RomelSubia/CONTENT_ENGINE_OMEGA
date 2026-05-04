@@ -1,6 +1,14 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "type": "object",
-  "additionalProperties": true,
-  "required": []
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "schema_id":  "MANUAL_RULE",
+    "type":  "object",
+    "additionalProperties":  true,
+    "required":  [
+                     "system"
+                 ],
+    "properties":  {
+                       "system":  {
+                                      "type":  "string"
+                                  }
+                   }
 }

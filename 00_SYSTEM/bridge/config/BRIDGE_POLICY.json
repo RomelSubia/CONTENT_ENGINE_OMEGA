@@ -1,1 +1,14 @@
-{"system":"CONTENT_ENGINE_OMEGA","layer":"MANUAL_BRAIN_CONNECTION_LAYER","version":"v1.2.1_final","execution_allowed":false,"external_side_effects_allowed":false,"brain_write_allowed":false,"manual_write_allowed":false,"auto_action_allowed":false,"fail_closed_required":true,"no_capa_9":true,"brain_mode_required":"FROZEN_READ_ONLY","retry_safe":true,"terminal_safe":true,"status":"FOUNDATION_POLICY_ACTIVE"}
+{
+    "system":  "CONTENT_ENGINE_OMEGA",
+    "policy_id":  "BRIDGE_POLICY",
+    "version":  "v1",
+    "execution_allowed":  false,
+    "external_side_effects_allowed":  false,
+    "brain_write_allowed":  false,
+    "manual_write_allowed":  false,
+    "reports_brain_write_allowed":  false,
+    "auto_action_allowed":  false,
+    "fail_closed_required":  true,
+    "no_capa_9":  true,
+    "v3_7_auxiliary_pregate_required":  true
+}
