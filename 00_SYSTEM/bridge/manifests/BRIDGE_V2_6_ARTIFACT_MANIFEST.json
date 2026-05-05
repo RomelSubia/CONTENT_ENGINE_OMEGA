@@ -1,0 +1,200 @@
+{
+  "artifact_count": 15,
+  "artifacts": [
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "04_SCRIPTS/python/manual_brain_bridge/bridge_v2_6_governed_build_execution_gate.py",
+      "sha256": "180f2d3ea5738cdd1ad91c8e1924a65bda128a5c90498da5784629dfa6c3a7b0",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "tests/manual_brain_bridge/test_bridge_v2_6_governed_build_execution_gate.py",
+      "sha256": "abbd9afdbbfe4517ca37afb84f0d6bf64b4ad80da90a00926aafdceff2a943f5",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_REPO_IDENTITY_REPORT.json",
+      "sha256": "8bec9932d4e04e36615a2744fae79f034e3c4a2cb6449e22233efc059ae3d4f7",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_V25_AUTHORITY_CONSUMPTION_REPORT.json",
+      "sha256": "41fa0aad598668baf19d485200523d70e34ad37753d0617a9292ed2196ace497",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_V25_PERMISSION_CONSUMPTION_REPORT.json",
+      "sha256": "331cc791f168508081c6651d8173f5e1e0f9fcca5ad1c5740a3bf7901f2013c1",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_EXECUTION_SCOPE_REPORT.json",
+      "sha256": "c93d7c34b373a1c7e7b0b47e350df04efc470251641dc27ac9ba4a8deb85c26f",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_EXECUTION_WINDOW_REPORT.json",
+      "sha256": "53a4fbd56051273245fac769144a3a1250a6e667708aa95a65fe768b327b11fe",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_CONTROLLED_BUILD_EXECUTION_REPORT.json",
+      "sha256": "cb4f15896e7c6dfd2c2ca4ce13ec47caece422b8b2964c65d093123dbab6f96b",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_AUTHORITY_INTEGRITY_REPORT.json",
+      "sha256": "7f5352c728ee138c16327b1a3fecbe62d305574887800e05b8292c72232e7a87",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_BLOCKED_CAPABILITIES_REPORT.json",
+      "sha256": "9e51f564793a8dd70cb55e35fe17832595f5fdfa6edb15dc878bd21f4ca047cd",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_NO_TOUCH_REPORT.json",
+      "sha256": "405fe1104f0feeaad724a2c73c60730732524c6766316bf6b1dff3499070a4f7",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_WATCH_ONLY_INTEGRITY_REPORT.json",
+      "sha256": "7e8c64f836c8fd6eb160c5ec969c68b54a2fc4eab2821134eec03600ba4594c3",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_ANTI_SIMULATION_GATE_REPORT.json",
+      "sha256": "0dfb613aaa8c64aae9cd4a0bbd8578f5a8d7c5b5b849d6e38b9fa7a0b7b9bb4d",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_V2_6_VALIDATION_REPORT.json",
+      "sha256": "43165217b701d073e1950ea4739a0d7015e9ebd49f22f583a4dd37476be08162",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    },
+    {
+      "artifact_type": "generated_v2_6_governed_build_execution_gate",
+      "created_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_V2_6_GOVERNED_BUILD_EXECUTION_GATE_REPORT.md",
+      "sha256": "85310fa4e9dc71aa3b240852fb3dc1988415ca1ded3e51bd9fa957661ba1c38f",
+      "status": "VALID",
+      "write_method": "ATOMIC_TMP_RENAME"
+    }
+  ],
+  "authority_files": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_5_APPROVAL_CONSUMPTION_GATE_SEAL.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_5_ARTIFACT_MANIFEST.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_5_VALIDATION_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_5_APPROVAL_CONSUMPTION_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_5_APPROVAL_INPUT_RECEIPT_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_5_APPROVAL_BINDING_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_5_V24_AUTHORITY_CONSUMPTION_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_V2_5_CONTAMINATION_GATE_REPORT.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_V2_5_APPROVAL_CONSUMPTION_GATE_REPORT.md"
+  ],
+  "auto_action_allowed": false,
+  "blocked_capabilities": [
+    "AUTO_EXECUTION",
+    "DIRECT_BUILD_EXECUTION_AFTER_V2_6",
+    "DIRECT_PRODUCTION_EXECUTION",
+    "EXTERNAL_EXECUTION",
+    "EXTERNAL_SIDE_EFFECTS",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "MANUAL_WRITE",
+    "MANUAL_AUTO_UPDATE",
+    "MANUAL_CURRENT_MUTATION",
+    "MANUAL_MANIFEST_MUTATION",
+    "MANUAL_HISTORICAL_MUTATION",
+    "MANUAL_REGISTRY_MUTATION",
+    "N8N_EXECUTION",
+    "WEBHOOK_EXECUTION",
+    "PUBLISHING",
+    "OPENAI_API_RUNTIME",
+    "SOCIAL_MEDIA_AUTOMATION",
+    "CONTENT_PUBLICATION",
+    "CAPA9",
+    "V25_PERMISSION_REUSE",
+    "UNCLOSED_EXECUTION_WINDOW",
+    "BUILD_CHAIN_WITHOUT_POST_AUDIT"
+  ],
+  "blocked_paths_touched": [],
+  "brain_write_allowed": false,
+  "build_allowed_next": false,
+  "build_allowed_now": false,
+  "capa9_allowed": false,
+  "execution_allowed": false,
+  "execution_window_reusable": false,
+  "external_execution_allowed": false,
+  "external_side_effects_allowed": false,
+  "generated_by_layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+  "layer": "BRIDGE_GOVERNED_BUILD_EXECUTION_GATE_LAYER_V2_6",
+  "manifest_id": "BRIDGE_V2_6_ARTIFACT_MANIFEST",
+  "manifest_reference": "00_SYSTEM/bridge/manifests/BRIDGE_V2_6_ARTIFACT_MANIFEST.json",
+  "manual_auto_update_allowed": false,
+  "manual_current_mutation_allowed": false,
+  "manual_historical_mutation_allowed": false,
+  "manual_manifest_mutation_allowed": false,
+  "manual_registry_mutation_allowed": false,
+  "manual_write_allowed": false,
+  "missing_artifacts": [],
+  "n8n_allowed": false,
+  "next_safe_step": "POST_EXECUTION_AUDIT_V2_7",
+  "omitted_self_referential_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_6_ARTIFACT_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_V2_6_GOVERNED_BUILD_EXECUTION_GATE_SEAL.json"
+  ],
+  "openai_api_runtime_allowed": false,
+  "post_execution_audit_allowed_next": true,
+  "publishing_allowed": false,
+  "report_id": "BRIDGE_V2_6_ARTIFACT_MANIFEST",
+  "reports_brain_write_allowed": false,
+  "social_media_automation_allowed": false,
+  "status": "PASS",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "tracked_artifact_count": 15,
+  "unexpected_artifacts": [],
+  "v25_permission_reusable_after_v26": false,
+  "webhook_allowed": false
+}
