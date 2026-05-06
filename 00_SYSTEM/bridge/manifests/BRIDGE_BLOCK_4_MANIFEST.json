@@ -1,0 +1,82 @@
+{
+  "artifacts": [
+    {
+      "bytes_utf8": 1247,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_AMBIGUITY_REPORT.json",
+      "sha256": "9750c56678964b2f1f0464f139e17d8dd98456f90b6d180f9b7cd1c0d54c4106"
+    },
+    {
+      "bytes_utf8": 3580,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_BLOCKED_CAPABILITY_REPORT.json",
+      "sha256": "7deac955124f8f726bbe336d7e69c05a5897842bfd2f34b9383644c78e35600a"
+    },
+    {
+      "bytes_utf8": 10154,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_HUMAN_REVIEW_PACKAGE.json",
+      "sha256": "40ef9ae2d0d2155f64893e5e253af464b41f6ed11d60ba136722af84fd81ba8f"
+    },
+    {
+      "bytes_utf8": 14934,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_INTENT_CLASSIFICATION_MAP.json",
+      "sha256": "e1704f6fea6141674c699d32a0eaf87e81eb9781db90657552005ca2137e44a4"
+    },
+    {
+      "bytes_utf8": 1020,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_NEXT_LAYER_READINESS_MAP.json",
+      "sha256": "01ff426c8ea1b8447ac60cc515549d944ad5f268fea6f34ad8aaf9ef0a0d65ee"
+    },
+    {
+      "bytes_utf8": 7499,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_RULE_EXTRACTION_MAP.json",
+      "sha256": "20726aa4bcfe8231731e971c234092598975d29a2a08519df320ccedb7d001a2"
+    },
+    {
+      "bytes_utf8": 928,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_SEMANTIC_DUPLICATE_REPORT.json",
+      "sha256": "6c34b221e43edbba91d8e6bd48a1d862373391bc1c76a277d7f011389748cfa2"
+    },
+    {
+      "bytes_utf8": 10921,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_SEMANTIC_EVIDENCE_INDEX.json",
+      "sha256": "3b113854743fb0ad9b65602f34f60204365c62784cb445a3883f6581240df3f4"
+    },
+    {
+      "bytes_utf8": 15739,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_SEMANTIC_SEGMENT_MAP.json",
+      "sha256": "973c2994218aa5293d9e218d82aa7b49a07d26dc7354009bfb649fcd0c94fa6c"
+    },
+    {
+      "bytes_utf8": 1706,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_REPORT.json",
+      "sha256": "1b9bf04efe29cfda1bc4f04a87772338717aff7db850e26a3e1f53fe209db2ff"
+    },
+    {
+      "bytes_utf8": 720,
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_4_RULE_EXTRACTOR_INTENT_CLASSIFIER_SUMMARY.md",
+      "sha256": "cb4cda516fec66b82174df20ac1347dd5e4a32fa498ce2a471e0e2c6f1d33366"
+    }
+  ],
+  "block": "BLOQUE_4_RULE_EXTRACTOR_INTENT_CLASSIFIER",
+  "block_5_allowed_now": false,
+  "block_5_blueprint_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "capa9_allowed_now": false,
+  "conflict_detection_allowed_next": false,
+  "execution_allowed_now": false,
+  "fix_applied": "BUILD_FIX_2_SPECIFIC_CAPABILITY_MATCH_PRIORITY",
+  "fixture_based_validation": true,
+  "lifecycle_status": "BUILT_PENDING_POST_AUDIT",
+  "manifest_id": "BRIDGE_BLOCK_4_MANIFEST",
+  "manual_write_allowed_now": false,
+  "n8n_allowed_now": false,
+  "next_safe_step": "BLOQUE_4_POST_BUILD_AUDIT",
+  "public_reports_hash_only": true,
+  "publishing_allowed_now": false,
+  "raw_semantic_text_persisted": false,
+  "real_brain_read_performed": false,
+  "real_manual_read_performed": false,
+  "real_reports_brain_read_performed": false,
+  "reports_brain_write_allowed_now": false,
+  "status": "PASS",
+  "webhook_allowed_now": false
+}

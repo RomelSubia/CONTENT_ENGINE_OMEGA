@@ -1,0 +1,225 @@
+{
+  "block": "BLOQUE_4_RULE_EXTRACTOR_INTENT_CLASSIFIER",
+  "block_5_allowed_now": false,
+  "block_5_blueprint_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "capa9_allowed_now": false,
+  "conflict_detection_allowed_next": false,
+  "execution_allowed_now": false,
+  "fixture_based_validation": true,
+  "human_review_package_count": 22,
+  "human_reviews": [
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_05B1BAF9A336",
+      "segment_id": "B4_SEG_af04a28c_0000",
+      "source_id": "B3_FIXTURE_SOURCE_004",
+      "span_hash": "af04a28c2fb903edf3a9a89b640c730b79043715f9abadd9dc8c5f28e90ad524",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "RULE_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_099417E26098",
+      "segment_id": "B4_SEG_de685c79_0000",
+      "source_id": "B3_FIXTURE_SOURCE_021",
+      "span_hash": "de685c79eda9306bd9cf216149a34b39d5eef16dd3104d6af45e85b8e5ee7d02",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "RULE_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_3DCDAF46BF88",
+      "segment_id": "B4_SEG_6020aed4_0000",
+      "source_id": "B3_FIXTURE_SOURCE_020",
+      "span_hash": "6020aed405931211c342de2c62c87e3a6caf3bc88b8bd66f87a4407be70424a7",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_45D974F6D33B",
+      "segment_id": "B4_SEG_32f0b7db_0000",
+      "source_id": "B3_FIXTURE_SOURCE_006",
+      "span_hash": "32f0b7db96061c150bdd2a5cba32ce51e030a4d5da709a50311dafe266da6e5f",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_5209BAE8369F",
+      "segment_id": "B4_SEG_9f77d25d_0000",
+      "source_id": "B3_FIXTURE_SOURCE_010",
+      "span_hash": "9f77d25d9a279b17a3dce72ee56874bb4b09be1aacf2d5169feadfac76dfb427",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_652590F817C7",
+      "segment_id": "B4_SEG_de685c79_0000",
+      "source_id": "B3_FIXTURE_SOURCE_021",
+      "span_hash": "de685c79eda9306bd9cf216149a34b39d5eef16dd3104d6af45e85b8e5ee7d02",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_688FCF76B9B6",
+      "segment_id": "B4_SEG_a1acf188_0000",
+      "source_id": "B3_FIXTURE_SOURCE_001",
+      "span_hash": "a1acf188108880447a062e7db4505f07c5c10e9df2a2a42c95fe3a7623b3d8b9",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_862768111A78",
+      "segment_id": "B4_SEG_8e4cc285_0000",
+      "source_id": "B3_FIXTURE_SOURCE_005",
+      "span_hash": "8e4cc28525f63c327cd0690af5d677051f89b1663b5085577a9eb8acc7ffc8d1",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_884B7A911FC6",
+      "segment_id": "B4_SEG_b5bca45e_0000",
+      "source_id": "B3_FIXTURE_SOURCE_016",
+      "span_hash": "b5bca45e914e4a00683d22a261221fb3ed287f8ccf6cf2df6c67a78038c24ddd",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_8E051CF0B19B",
+      "segment_id": "B4_SEG_76dbf918_0000",
+      "source_id": "B3_FIXTURE_SOURCE_015",
+      "span_hash": "76dbf918403aea67403de6195f27f3c5983358a19783d2af6baf1d5e90b0f72c",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_92F9238CCBE6",
+      "segment_id": "B4_SEG_43c10ac3_0000",
+      "source_id": "B3_FIXTURE_SOURCE_019",
+      "span_hash": "43c10ac351a499b1211fbdf253b58e7e56485727a0ad067402ba19c8eb538200",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_932492D47B89",
+      "segment_id": "B4_SEG_edfef272_0000",
+      "source_id": "B3_FIXTURE_SOURCE_003",
+      "span_hash": "edfef27253303cdade027807fd6ddef8c15b6c17c218de253ec0c9a0cf236a41",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_98152D590BD7",
+      "segment_id": "B4_SEG_6311c57a_0000",
+      "source_id": "B3_FIXTURE_SOURCE_009",
+      "span_hash": "6311c57a3d105be76129a671969b3687417efe5ad7267bcc7bfb22eded7b414c",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_A3A160DD32FB",
+      "segment_id": "B4_SEG_2689367b_0000",
+      "source_id": "B3_FIXTURE_SOURCE_011",
+      "span_hash": "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "RULE_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_AF5DAA7022D5",
+      "segment_id": "B4_SEG_e29b7ec3_0000",
+      "source_id": "B3_FIXTURE_SOURCE_012",
+      "span_hash": "e29b7ec30616a7a227ff0411eeee26f5c78c2de5d7a102dd06f9edad9af57f68",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "RULE_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_BBFBE491CD05",
+      "segment_id": "B4_SEG_43c10ac3_0000",
+      "source_id": "B3_FIXTURE_SOURCE_019",
+      "span_hash": "43c10ac351a499b1211fbdf253b58e7e56485727a0ad067402ba19c8eb538200",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_C151B105F460",
+      "segment_id": "B4_SEG_145a6418_0000",
+      "source_id": "B3_FIXTURE_SOURCE_008",
+      "span_hash": "145a641876d958d780bff4c48929e030f493a1b6f4e5db90617e6f22f21cdb18",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_C5E983B41B3F",
+      "segment_id": "B4_SEG_cd98dd2f_0000",
+      "source_id": "B3_FIXTURE_SOURCE_013",
+      "span_hash": "cd98dd2f8ddfa08babec6a7c08ff64486fb18fdd87c6abc39fe6fb60f6f106ed",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_D4FF9521D22D",
+      "segment_id": "B4_SEG_358d9edf_0000",
+      "source_id": "B3_FIXTURE_SOURCE_002",
+      "span_hash": "358d9edfe0a42558cb390efc5f44e27b1ed22fe58360b594bff406c7fef4e0b6",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_E8C8CD1A3857",
+      "segment_id": "B4_SEG_bb1c2daa_0000",
+      "source_id": "B3_FIXTURE_SOURCE_022",
+      "span_hash": "bb1c2daa3c1a7c412b045197275e821e23bf3c29dba520c15564bd7bf868a75a",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_EC8EE3C45D88",
+      "segment_id": "B4_SEG_608af6b1_0000",
+      "source_id": "B3_FIXTURE_SOURCE_007",
+      "span_hash": "608af6b11f0087871dfaade15878a7385c628e335f52f59ec11fd022a103e040",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    },
+    {
+      "decision": "REQUIRE_REVIEW",
+      "reason": "INTENT_REQUIRES_REVIEW",
+      "review_id": "B4_REVIEW_FCDAE21AB355",
+      "segment_id": "B4_SEG_6020aed4_0000",
+      "source_id": "B3_FIXTURE_SOURCE_020",
+      "span_hash": "6020aed405931211c342de2c62c87e3a6caf3bc88b8bd66f87a4407be70424a7",
+      "suggested_question": "¿La intención detectada solicita blueprint, build, validación o ejecución?"
+    }
+  ],
+  "lifecycle_status": "BUILT_PENDING_POST_AUDIT",
+  "manual_write_allowed_now": false,
+  "n8n_allowed_now": false,
+  "next_safe_step": "BLOQUE_4_POST_BUILD_AUDIT",
+  "public_reports_hash_only": true,
+  "publishing_allowed_now": false,
+  "raw_semantic_text_persisted": false,
+  "real_brain_read_performed": false,
+  "real_manual_read_performed": false,
+  "real_reports_brain_read_performed": false,
+  "report_id": "BRIDGE_BLOCK_4_HUMAN_REVIEW_PACKAGE",
+  "reports_brain_write_allowed_now": false,
+  "status": "PASS",
+  "webhook_allowed_now": false
+}

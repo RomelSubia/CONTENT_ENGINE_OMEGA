@@ -1,0 +1,107 @@
+{
+  "block": "BLOQUE_4_RULE_EXTRACTOR_INTENT_CLASSIFIER",
+  "block_5_allowed_now": false,
+  "block_5_blueprint_allowed_now": false,
+  "blocked_capabilities": [
+    {
+      "allowed": false,
+      "capability": "BRAIN_WRITE",
+      "decision": "BLOCK",
+      "detected": true,
+      "error_code": "B4_DANGEROUS_CAPABILITY_ACTION_ALLOWED_LOCK",
+      "reason": "Dangerous capability remains blocked.",
+      "segment_id": "B4_SEG_358d9edf_0000",
+      "source_id": "B3_FIXTURE_SOURCE_002"
+    },
+    {
+      "allowed": false,
+      "capability": "BRAIN_WRITE",
+      "decision": "BLOCK",
+      "detected": true,
+      "error_code": "B4_DANGEROUS_CAPABILITY_ACTION_ALLOWED_LOCK",
+      "reason": "Dangerous capability remains blocked.",
+      "segment_id": "B4_SEG_32f0b7db_0000",
+      "source_id": "B3_FIXTURE_SOURCE_006"
+    },
+    {
+      "allowed": false,
+      "capability": "CAPA9",
+      "decision": "BLOCK",
+      "detected": true,
+      "error_code": "B4_DANGEROUS_CAPABILITY_ACTION_ALLOWED_LOCK",
+      "reason": "Dangerous capability remains blocked.",
+      "segment_id": "B4_SEG_9f77d25d_0000",
+      "source_id": "B3_FIXTURE_SOURCE_010"
+    },
+    {
+      "allowed": false,
+      "capability": "EXECUTION",
+      "decision": "BLOCK",
+      "detected": true,
+      "error_code": "B4_DANGEROUS_CAPABILITY_ACTION_ALLOWED_LOCK",
+      "reason": "Dangerous capability remains blocked.",
+      "segment_id": "B4_SEG_8e4cc285_0000",
+      "source_id": "B3_FIXTURE_SOURCE_005"
+    },
+    {
+      "allowed": false,
+      "capability": "EXECUTION",
+      "decision": "BLOCK",
+      "detected": true,
+      "error_code": "B4_DANGEROUS_CAPABILITY_ACTION_ALLOWED_LOCK",
+      "reason": "Dangerous capability remains blocked.",
+      "segment_id": "B4_SEG_76dbf918_0000",
+      "source_id": "B3_FIXTURE_SOURCE_015"
+    },
+    {
+      "allowed": false,
+      "capability": "N8N",
+      "decision": "BLOCK",
+      "detected": true,
+      "error_code": "B4_DANGEROUS_CAPABILITY_ACTION_ALLOWED_LOCK",
+      "reason": "Dangerous capability remains blocked.",
+      "segment_id": "B4_SEG_6311c57a_0000",
+      "source_id": "B3_FIXTURE_SOURCE_009"
+    },
+    {
+      "allowed": false,
+      "capability": "PUBLISHING",
+      "decision": "BLOCK",
+      "detected": true,
+      "error_code": "B4_DANGEROUS_CAPABILITY_ACTION_ALLOWED_LOCK",
+      "reason": "Dangerous capability remains blocked.",
+      "segment_id": "B4_SEG_608af6b1_0000",
+      "source_id": "B3_FIXTURE_SOURCE_007"
+    },
+    {
+      "allowed": false,
+      "capability": "WEBHOOK",
+      "decision": "BLOCK",
+      "detected": true,
+      "error_code": "B4_DANGEROUS_CAPABILITY_ACTION_ALLOWED_LOCK",
+      "reason": "Dangerous capability remains blocked.",
+      "segment_id": "B4_SEG_145a6418_0000",
+      "source_id": "B3_FIXTURE_SOURCE_008"
+    }
+  ],
+  "blocked_capability_count": 8,
+  "brain_write_allowed_now": false,
+  "capa9_allowed_now": false,
+  "conflict_detection_allowed_next": false,
+  "execution_allowed_now": false,
+  "fixture_based_validation": true,
+  "lifecycle_status": "BUILT_PENDING_POST_AUDIT",
+  "manual_write_allowed_now": false,
+  "n8n_allowed_now": false,
+  "next_safe_step": "BLOQUE_4_POST_BUILD_AUDIT",
+  "public_reports_hash_only": true,
+  "publishing_allowed_now": false,
+  "raw_semantic_text_persisted": false,
+  "real_brain_read_performed": false,
+  "real_manual_read_performed": false,
+  "real_reports_brain_read_performed": false,
+  "report_id": "BRIDGE_BLOCK_4_BLOCKED_CAPABILITY_REPORT",
+  "reports_brain_write_allowed_now": false,
+  "status": "PASS",
+  "webhook_allowed_now": false
+}
