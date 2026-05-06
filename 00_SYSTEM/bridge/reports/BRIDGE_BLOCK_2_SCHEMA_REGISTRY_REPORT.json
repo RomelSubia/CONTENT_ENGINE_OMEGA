@@ -1,0 +1,6 @@
+{
+  "next_safe_step": "BLOQUE_2_POST_BUILD_AUDIT",
+  "report_id": "BRIDGE_BLOCK_2_SCHEMA_REGISTRY_REPORT",
+  "schema_count": 22,
+  "status": "PASS"
+}

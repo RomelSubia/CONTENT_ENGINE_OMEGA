@@ -1,0 +1,62 @@
+{
+  "artifacts": [
+    {
+      "bytes_utf8": 19135,
+      "path": "00_SYSTEM/bridge/contracts/BRIDGE_BLOCK_2_CONTRACT_REGISTRY.json",
+      "sha256": "39598f1c1fed6b9f496d4d242ceb8811e9d6885e703e0375889ae8fa678db407"
+    },
+    {
+      "bytes_utf8": 9169,
+      "path": "00_SYSTEM/bridge/policies/BRIDGE_BLOCK_2_POLICY_REGISTRY.json",
+      "sha256": "f71a499fdfb4c7cb2f115438bc4c22ac4e2f3ade8d40d083acba9332893647cd"
+    },
+    {
+      "bytes_utf8": 154,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_CONTRACT_REGISTRY_REPORT.json",
+      "sha256": "73c76338b948b3dab03f19cfd8d690823807d6cbb5eacb67cdc46b989c997c44"
+    },
+    {
+      "bytes_utf8": 416,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_NEXT_LAYER_READINESS_MAP.json",
+      "sha256": "568e79ae4f5efcf02663036eafd6598c21b5448a333e2589a69f51944a39c9fe"
+    },
+    {
+      "bytes_utf8": 527,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_PERMISSION_MODEL_REPORT.json",
+      "sha256": "fe88a96ee9224c17f1bb1633e8ea1231abffe45e5bf8f93ffea18251fbf8c488"
+    },
+    {
+      "bytes_utf8": 670,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_POLICY_REGISTRY_REPORT.json",
+      "sha256": "cdeffd0b049f5deeded2285a91c58546182ff6c6b93c42f9c30471824a14331a"
+    },
+    {
+      "bytes_utf8": 150,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_SCHEMA_REGISTRY_REPORT.json",
+      "sha256": "1c435c2a50d648497a4a1ef2c30dfab15a645bf8446bb84d8dbd9a09d2f9b33e"
+    },
+    {
+      "bytes_utf8": 393,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_SECURITY_GUARDS_REPORT.json",
+      "sha256": "7e21ce6e2a0071234414b7ac65f72c91d84310e9e28b9f55679df0c7f6c21ca9"
+    },
+    {
+      "bytes_utf8": 181,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_REPORT.json",
+      "sha256": "aeb74afe566d8727c903da2c65402fa3fc0c919908fa849b59ae5121e1added5"
+    },
+    {
+      "bytes_utf8": 10741,
+      "path": "00_SYSTEM/bridge/schemas/BRIDGE_BLOCK_2_SCHEMA_REGISTRY.json",
+      "sha256": "3e244d563e572606f95f4473ccebe8421bd1dd5c4a8a161c9d36fec34857745c"
+    },
+    {
+      "bytes_utf8": 381,
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_2_SCHEMAS_POLICIES_CONTRACTS_SUMMARY.md",
+      "sha256": "dd60b20646383b2f79650d2ba6deb3a9da7893c1f234343aa933a3d5d5826b81"
+    }
+  ],
+  "block": "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+  "canonical_json": true,
+  "manifest_id": "BRIDGE_BLOCK_2_MANIFEST"
+}

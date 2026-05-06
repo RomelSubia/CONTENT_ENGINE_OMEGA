@@ -1,0 +1,13 @@
+{
+  "block_3_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "capa9_allowed_now": false,
+  "execution_allowed_now": false,
+  "manual_write_allowed_now": false,
+  "n8n_allowed_now": false,
+  "next_safe_step": "BLOQUE_2_POST_BUILD_AUDIT",
+  "publishing_allowed_now": false,
+  "report_id": "BRIDGE_BLOCK_2_NEXT_LAYER_READINESS_MAP",
+  "status": "READY_FOR_POST_BUILD_AUDIT",
+  "webhook_allowed_now": false
+}

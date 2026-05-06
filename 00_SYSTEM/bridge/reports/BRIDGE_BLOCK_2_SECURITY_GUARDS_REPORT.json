@@ -1,0 +1,14 @@
+{
+  "guards": {
+    "capa9": "LOCKED",
+    "dangerous_import_scan": "DEFINED",
+    "external_io_ban": "DEFINED",
+    "false_permission_injection": "DEFINED",
+    "no_touch": "DEFINED",
+    "path_canonicalization": "DEFINED",
+    "secret_leakage_scan": "DEFINED"
+  },
+  "next_safe_step": "BLOQUE_2_POST_BUILD_AUDIT",
+  "report_id": "BRIDGE_BLOCK_2_SECURITY_GUARDS_REPORT",
+  "status": "PASS"
+}

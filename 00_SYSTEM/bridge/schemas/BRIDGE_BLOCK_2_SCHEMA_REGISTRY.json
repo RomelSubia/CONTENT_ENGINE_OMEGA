@@ -1,0 +1,382 @@
+{
+  "authority_active_now": true,
+  "block": "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+  "registry_id": "BRIDGE_BLOCK_2_SCHEMA_REGISTRY",
+  "registry_version": "1.0.0",
+  "schemas": [
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "BridgeSystemStateSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "BridgeLayerStateSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "ManualSourceRefSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "BrainSourceRefSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "PolicyRuleSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "GovernancePolicySchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "PermissionStateSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "HumanApprovalStateSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "ExecutionBoundarySchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "EvidencePointerSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "TraceabilityRecordSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "ContractInputSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "ContractOutputSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "ErrorEnvelopeSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "DecisionEnvelopeSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "NextStepRecommendationSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "PathPolicySchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "StaticImportScanSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "ExternalIOPolicySchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "RegistrySelfValidationSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "DeveloperDiagnosticSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    },
+    {
+      "allowed_values": {},
+      "blocked_values": {},
+      "compatibility": "STRICT",
+      "fail_closed_on_missing": true,
+      "fail_closed_on_unknown": true,
+      "forbidden_fields": [],
+      "governance_validation_required": true,
+      "optional_fields": [],
+      "required_fields": [
+        "schema_id",
+        "schema_version"
+      ],
+      "schema_id": "StableErrorCodeSchema",
+      "schema_version": "1.0.0",
+      "unknown_field_policy": "LOCK"
+    }
+  ]
+}

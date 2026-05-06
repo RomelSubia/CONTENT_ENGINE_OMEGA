@@ -1,0 +1,18 @@
+{
+  "next_safe_step": "BLOQUE_2_POST_BUILD_AUDIT",
+  "permissions": {
+    "automatic_block_allowed_now": false,
+    "brain_write_allowed": false,
+    "build_allowed_now": false,
+    "capa9_allowed": false,
+    "execution_allowed": false,
+    "external_execution_allowed": false,
+    "manual_write_allowed": false,
+    "n8n_allowed": false,
+    "publishing_allowed": false,
+    "reports_brain_write_allowed": false,
+    "webhook_allowed": false
+  },
+  "report_id": "BRIDGE_BLOCK_2_PERMISSION_MODEL_REPORT",
+  "status": "PASS"
+}

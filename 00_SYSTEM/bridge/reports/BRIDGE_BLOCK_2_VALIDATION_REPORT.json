@@ -1,0 +1,7 @@
+{
+  "canonical_json": true,
+  "next_safe_step": "BLOQUE_2_POST_BUILD_AUDIT",
+  "report_id": "BRIDGE_BLOCK_2_VALIDATION_REPORT",
+  "self_validation_errors": [],
+  "status": "PASS"
+}

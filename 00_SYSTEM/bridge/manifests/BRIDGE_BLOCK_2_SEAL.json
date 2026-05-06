@@ -1,0 +1,7 @@
+{
+  "block": "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+  "manifest_sha256": "f0f65219e9f38a3ecbab35cee3f5c442d8c77a8586122b1ca122046ab3afbd36",
+  "next_safe_step": "BLOQUE_2_POST_BUILD_AUDIT",
+  "seal_id": "BRIDGE_BLOCK_2_SEAL",
+  "status": "SEALED_PENDING_POST_BUILD_AUDIT"
+}

@@ -1,0 +1,721 @@
+{
+  "block": "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+  "contracts": [
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "BlueprintRequestContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "BlueprintOutputContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "ReviewHardeningContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "FinalApprovalContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "ImplementationPlanRequestContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "BuildRequestContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "ValidationRequestContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "AuditRequestContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "ClosureRequestContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "NextLayerRecommendationContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "HumanApprovalContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "PermissionContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "NoTouchContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "EvidenceContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "ErrorContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "DecisionContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "PathSafetyContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "StaticImportScanContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "ExternalIOBanContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "FailureArtifactContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    },
+    {
+      "compatible_next_steps": [
+        "BLOQUE_2_POST_BUILD_AUDIT"
+      ],
+      "contract_id": "DeveloperDiagnosticsContract",
+      "contract_version": "1.0.0",
+      "fail_closed": true,
+      "forbidden_outputs": [
+        "ExecutionOutputContract",
+        "ExternalActionGrant",
+        "ManualWriteGrant"
+      ],
+      "forbidden_permissions": [
+        "execution_allowed",
+        "manual_write_allowed",
+        "brain_write_allowed",
+        "reports_brain_write_allowed",
+        "n8n_allowed",
+        "webhook_allowed",
+        "publishing_allowed",
+        "capa9_allowed"
+      ],
+      "incompatible_next_steps": [
+        "BLOQUE_3",
+        "EXECUTION",
+        "CAPA9"
+      ],
+      "input_schema": "ContractInputSchema",
+      "output_schema": "ContractOutputSchema",
+      "required_evidence": [
+        "EvidencePointerSchema"
+      ],
+      "required_permissions": []
+    }
+  ],
+  "registry_id": "BRIDGE_BLOCK_2_CONTRACT_REGISTRY",
+  "registry_version": "1.0.0"
+}

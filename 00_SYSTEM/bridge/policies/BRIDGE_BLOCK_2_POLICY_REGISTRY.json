@@ -1,0 +1,352 @@
+{
+  "block": "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+  "decision_precedence": [
+    "PASS",
+    "PASS_WITH_WARNINGS",
+    "REQUIRE_REVIEW",
+    "BLOCK",
+    "LOCK"
+  ],
+  "policies": [
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "NO_TOUCH_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 0,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 0
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "NO_EXECUTION_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 2,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 1
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "NO_EXTERNAL_ACTION_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 3,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 2
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "NO_CAPA9_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 1,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 3
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "EVIDENCE_REQUIRED_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 10,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 4
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "PERMISSION_FALSE_BY_DEFAULT_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 7,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 5
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "HUMAN_AUTH_REQUIRED_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 8,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 6
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "WARNING_VISIBILITY_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 12,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 7
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "STATE_MACHINE_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 999,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 8
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "COMMIT_PUSH_GATE_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 13,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 9
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "TEST_GATE_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 14,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 10
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "UNKNOWN_STATE_LOCK_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 9,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 11
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "PATH_CANONICALIZATION_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 6,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 12
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "STATIC_IMPORT_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 4,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 13
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "EXTERNAL_IO_BAN_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 5,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 14
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "SECRET_LEAKAGE_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 999,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 15
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "DETERMINISM_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 11,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 16
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "FAILURE_ARTIFACT_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 999,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 17
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "PERFORMANCE_BOUNDARY_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 999,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 18
+    },
+    {
+      "block_conditions": [],
+      "default_decision": "BLOCK",
+      "evidence_required": true,
+      "fail_closed": true,
+      "lock_conditions": [],
+      "pass_conditions": [
+        "explicitly_validated"
+      ],
+      "policy_id": "DEVELOPER_DIAGNOSTICS_POLICY",
+      "policy_version": "1.0.0",
+      "precedence": 15,
+      "review_conditions": [],
+      "scope": "BLOQUE_2",
+      "stable_order": 19
+    }
+  ],
+  "policy_precedence": [
+    "NO_TOUCH_POLICY",
+    "NO_CAPA9_POLICY",
+    "NO_EXECUTION_POLICY",
+    "NO_EXTERNAL_ACTION_POLICY",
+    "STATIC_IMPORT_POLICY",
+    "EXTERNAL_IO_BAN_POLICY",
+    "PATH_CANONICALIZATION_POLICY",
+    "PERMISSION_FALSE_BY_DEFAULT_POLICY",
+    "HUMAN_AUTH_REQUIRED_POLICY",
+    "UNKNOWN_STATE_LOCK_POLICY",
+    "EVIDENCE_REQUIRED_POLICY",
+    "DETERMINISM_POLICY",
+    "WARNING_VISIBILITY_POLICY",
+    "COMMIT_PUSH_GATE_POLICY",
+    "TEST_GATE_POLICY",
+    "DEVELOPER_DIAGNOSTICS_POLICY"
+  ],
+  "registry_id": "BRIDGE_BLOCK_2_POLICY_REGISTRY",
+  "registry_version": "1.0.0"
+}
