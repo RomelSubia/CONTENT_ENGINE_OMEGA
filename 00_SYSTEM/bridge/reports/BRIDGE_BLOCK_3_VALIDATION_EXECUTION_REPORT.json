@@ -1,0 +1,120 @@
+{
+    "report_id":  "BRIDGE_BLOCK_3_VALIDATION_EXECUTION_REPORT",
+    "project":  "CONTENT_ENGINE_OMEGA",
+    "subsystem":  "MANUAL_CEREBRO_BRIDGE",
+    "block":  "BLOQUE_3_SOURCE_RESOLVER_INTEGRITY_GUARD",
+    "base_head":  "6b703902851c173847d9bedd00b35efc0c4d575d",
+    "base_head_short":  "6b70390",
+    "base_subject":  "Define validation plan MANUAL-CEREBRO bridge block 3 source resolver integrity guard",
+    "prerequisite_status":  "VALIDATION_PLAN_DEFINED",
+    "status":  "PASS",
+    "result":  "VALIDATED_POST_AUDITED",
+    "lifecycle_status_after_validation":  "VALIDATED_POST_AUDITED",
+    "validation_execution_performed":  true,
+    "collected_test_count":  272,
+    "minimum_tests_required":  220,
+    "target_tests_recommended":  "230+",
+    "source_mutation_performed":  false,
+    "tests_mutation_performed":  false,
+    "build_rewrite_performed":  false,
+    "real_source_read_performed":  false,
+    "fixture_based_validation":  true,
+    "no_manual_current_read":  true,
+    "no_brain_read":  true,
+    "no_reports_brain_read":  true,
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "reports_brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false,
+    "block_4_allowed_now":  false,
+    "gate_closure_allowed_next":  true,
+    "next_safe_step":  "BLOQUE_3_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+    "checks":  [
+                   {
+                       "id":  "B3_VAL_001",
+                       "domain":  "PY_COMPILE",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_002",
+                       "domain":  "PYTEST_COLLECT_220_PLUS",
+                       "status":  "PASS",
+                       "collected_tests":  272
+                   },
+                   {
+                       "id":  "B3_VAL_003",
+                       "domain":  "PYTEST_SPECIFIC",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_004",
+                       "domain":  "PYTEST_SUBSYSTEM",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_005",
+                       "domain":  "SELF_CHECK",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_006",
+                       "domain":  "VALIDATE_OUTPUTS",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_007",
+                       "domain":  "CANONICAL_JSON_NO_BOM",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_008",
+                       "domain":  "SOURCE_RESOLVER_CONTRACTS",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_009",
+                       "domain":  "PATH_WINDOWS_NO_TOUCH_EXTERNAL_IO",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_010",
+                       "domain":  "TEMP_ENCODING_SIZE_TOCTOU_REPARSE",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_011",
+                       "domain":  "DUPLICATE_ANTI_LEAK_FRESHNESS_DECISION_ERROR_ENVELOPES",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_012",
+                       "domain":  "MANIFEST_SEAL_OUTPUTS",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_013",
+                       "domain":  "FIXTURE_ONLY_NO_REAL_MANUAL_BRAIN_READ",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_014",
+                       "domain":  "DOWNSTREAM_BLOCKS",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_015",
+                       "domain":  "REGRESSION_FIXES",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_VAL_016",
+                       "domain":  "NEXT_STEP_GATE_CLOSURE",
+                       "status":  "PASS"
+                   }
+               ],
+    "check_count":  16
+}
