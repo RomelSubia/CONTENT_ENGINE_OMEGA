@@ -1,0 +1,42 @@
+{
+  "block": "BLOQUE_3_SOURCE_RESOLVER_INTEGRITY_GUARD",
+  "block_4_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "capa9_allowed_now": false,
+  "decisions_summary": {
+    "LOCK": 1,
+    "PASS": 1
+  },
+  "denied_sources_count": 1,
+  "execution_allowed_now": false,
+  "fixture_based_validation": true,
+  "lifecycle_status": "BUILT_PENDING_POST_AUDIT",
+  "manual_write_allowed_now": false,
+  "n8n_allowed_now": false,
+  "next_safe_step": "BLOQUE_3_POST_BUILD_AUDIT",
+  "no_brain_read": true,
+  "no_manual_current_read": true,
+  "no_reports_brain_read": true,
+  "publishing_allowed_now": false,
+  "real_source_read_performed": false,
+  "report_id": "BRIDGE_BLOCK_3_SOURCE_RESOLUTION_MAP",
+  "reports_brain_write_allowed_now": false,
+  "resolved_sources": [
+    {
+      "authority_status": "AUTHORITY_CANONICAL",
+      "decision": "PASS",
+      "encoding_status": "ENCODING_UTF8",
+      "error_codes": [],
+      "normalized_path": ".pytest_block3_basetemp/manual_current_fixture.md",
+      "safe_next_step": "BLOQUE_3_POST_BUILD_AUDIT",
+      "sha256": "e3f7a098364dfa35e7385c09fb4f690287ab2f2d0d1358996a1f26c206ffeeb9",
+      "short_preview_hash": "5b44cc547abf09b2c1792da5d1332e071da5f0d386ac0ac0d11de37cb45af90d",
+      "size_bytes": 22,
+      "source_id": "fixture_manual_current",
+      "source_type": "test_fixture"
+    }
+  ],
+  "safe_for_rule_extraction_count": 1,
+  "status": "PASS",
+  "webhook_allowed_now": false
+}

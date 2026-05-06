@@ -1,0 +1,40 @@
+{
+  "block": "BLOQUE_3_SOURCE_RESOLVER_INTEGRITY_GUARD",
+  "block_4_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "capa9_allowed_now": false,
+  "content_copied": false,
+  "denied_sources": [
+    {
+      "authority_status": "AUTHORITY_UNKNOWN",
+      "decision": "LOCK",
+      "encoding_status": null,
+      "error_codes": [
+        "B3_SOURCE_EXTERNAL_URL_LOCK"
+      ],
+      "normalized_path": "",
+      "safe_next_step": "REVIEW_SOURCE_RESOLUTION_FAILURE",
+      "sha256": null,
+      "short_preview_hash": null,
+      "size_bytes": null,
+      "source_id": "denied_external_url",
+      "source_type": "external_url"
+    }
+  ],
+  "execution_allowed_now": false,
+  "fixture_based_validation": true,
+  "lifecycle_status": "BUILT_PENDING_POST_AUDIT",
+  "manual_write_allowed_now": false,
+  "metadata_only": true,
+  "n8n_allowed_now": false,
+  "next_safe_step": "BLOQUE_3_POST_BUILD_AUDIT",
+  "no_brain_read": true,
+  "no_manual_current_read": true,
+  "no_reports_brain_read": true,
+  "publishing_allowed_now": false,
+  "real_source_read_performed": false,
+  "report_id": "BRIDGE_BLOCK_3_DENIED_SOURCE_REPORT",
+  "reports_brain_write_allowed_now": false,
+  "status": "PASS",
+  "webhook_allowed_now": false
+}

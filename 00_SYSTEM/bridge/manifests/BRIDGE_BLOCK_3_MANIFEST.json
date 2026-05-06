@@ -1,0 +1,58 @@
+{
+  "artifacts": [
+    {
+      "bytes_utf8": 1220,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_DENIED_SOURCE_REPORT.json",
+      "sha256": "8bf888f20bca82aa61eefb330f5fb2427bae82ffb620a005778662328c75a535"
+    },
+    {
+      "bytes_utf8": 828,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_NEXT_LAYER_READINESS_MAP.json",
+      "sha256": "5960ab2cb7825d609d5818ad2bd2350c47171deb6c69c455f122dcf9c0619532"
+    },
+    {
+      "bytes_utf8": 918,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_BOUNDARY_REPORT.json",
+      "sha256": "2a8afb9194abb084d13e1d7b2826240eaf07b13d04566bf465b4d896877e911e"
+    },
+    {
+      "bytes_utf8": 919,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_INTEGRITY_REPORT.json",
+      "sha256": "595805499f19a25406d38e84204de1037753170e524d11d388c87272d1c00b55"
+    },
+    {
+      "bytes_utf8": 1433,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_RESOLUTION_MAP.json",
+      "sha256": "8892023eb086dd11fdcada25733e8b4ffda7898df072f9eaccd6556ac7913c08"
+    },
+    {
+      "bytes_utf8": 969,
+      "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_REPORT.json",
+      "sha256": "b5132285c3035b3e2183914efac048c697d377923881b2c0d215a5546a78b3ff"
+    },
+    {
+      "bytes_utf8": 438,
+      "path": "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_3_SOURCE_RESOLVER_INTEGRITY_GUARD_SUMMARY.md",
+      "sha256": "41f66be601e306e88b9a6c3e8488bf2db3aafde37c28610002edd79be0de7039"
+    }
+  ],
+  "block": "BLOQUE_3_SOURCE_RESOLVER_INTEGRITY_GUARD",
+  "block_4_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "capa9_allowed_now": false,
+  "execution_allowed_now": false,
+  "fixture_based_validation": true,
+  "lifecycle_status": "BUILT_PENDING_POST_AUDIT",
+  "manifest_id": "BRIDGE_BLOCK_3_MANIFEST",
+  "manual_write_allowed_now": false,
+  "n8n_allowed_now": false,
+  "next_safe_step": "BLOQUE_3_POST_BUILD_AUDIT",
+  "no_brain_read": true,
+  "no_manual_current_read": true,
+  "no_reports_brain_read": true,
+  "publishing_allowed_now": false,
+  "real_source_read_performed": false,
+  "reports_brain_write_allowed_now": false,
+  "status": "PASS",
+  "webhook_allowed_now": false
+}
