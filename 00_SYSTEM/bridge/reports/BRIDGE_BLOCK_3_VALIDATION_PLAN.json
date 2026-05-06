@@ -1,0 +1,189 @@
+{
+    "validation_plan_id":  "BRIDGE_BLOCK_3_VALIDATION_PLAN",
+    "project":  "CONTENT_ENGINE_OMEGA",
+    "subsystem":  "MANUAL_CEREBRO_BRIDGE",
+    "block":  "BLOQUE_3_SOURCE_RESOLVER_INTEGRITY_GUARD",
+    "base_head":  "a1f9a2af70ef79f0eaf86b88e6ccd863d1bc78c9",
+    "base_head_short":  "a1f9a2a",
+    "base_subject":  "Define validation map MANUAL-CEREBRO bridge block 3 source resolver integrity guard",
+    "prerequisite_status":  "VALIDATION_MAP_DEFINED",
+    "status":  "VALIDATION_PLAN_DEFINED",
+    "result":  "PASS",
+    "validation_execution_performed":  false,
+    "validation_allowed_next":  true,
+    "validation_allowed_now":  false,
+    "block_4_allowed_now":  false,
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "reports_brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false,
+    "plan_count":  20,
+    "validation_plan_items":  [
+                                  {
+                                      "id":  "B3_VP_001",
+                                      "map_ref":  "B3_VM_001",
+                                      "command":  "pytest domain source resolver contracts",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_002",
+                                      "map_ref":  "B3_VM_002",
+                                      "command":  "pytest domain path canonicalization",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_003",
+                                      "map_ref":  "B3_VM_003",
+                                      "command":  "pytest domain Windows path hardening",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_004",
+                                      "map_ref":  "B3_VM_004",
+                                      "command":  "pytest domain no-touch boundaries",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_005",
+                                      "map_ref":  "B3_VM_005",
+                                      "command":  "pytest domain external IO blocking",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_006",
+                                      "map_ref":  "B3_VM_006",
+                                      "command":  "pytest domain temp/partial guard",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_007",
+                                      "map_ref":  "B3_VM_007",
+                                      "command":  "pytest domain encoding/binary guard",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_008",
+                                      "map_ref":  "B3_VM_008",
+                                      "command":  "pytest domain size/read boundary",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_009",
+                                      "map_ref":  "B3_VM_009",
+                                      "command":  "pytest domain TOCTOU guard",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_010",
+                                      "map_ref":  "B3_VM_010",
+                                      "command":  "pytest domain symlink/reparse guard",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_011",
+                                      "map_ref":  "B3_VM_011",
+                                      "command":  "pytest domain duplicate policy",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_012",
+                                      "map_ref":  "B3_VM_012",
+                                      "command":  "pytest domain anti-leak reports",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_013",
+                                      "map_ref":  "B3_VM_013",
+                                      "command":  "pytest domain freshness model",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_014",
+                                      "map_ref":  "B3_VM_014",
+                                      "command":  "pytest domain decision precedence",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_015",
+                                      "map_ref":  "B3_VM_015",
+                                      "command":  "pytest domain error envelopes",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_016",
+                                      "map_ref":  "B3_VM_016",
+                                      "command":  "pytest domain manifest/seal",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_017",
+                                      "map_ref":  "B3_VM_017",
+                                      "command":  "validate canonical JSON and deterministic outputs",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_018",
+                                      "map_ref":  "B3_VM_018",
+                                      "command":  "validate fixture-only flags and no real manual/brain read",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_019",
+                                      "map_ref":  "B3_VM_019",
+                                      "command":  "validate next-step safety and blocked downstream capabilities",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  },
+                                  {
+                                      "id":  "B3_VP_020",
+                                      "map_ref":  "B3_VM_020",
+                                      "command":  "validate regression fixes .pytest_cache + UTF-16 BOM",
+                                      "expected":  "PASS",
+                                      "required":  true
+                                  }
+                              ],
+    "execution_plan":  {
+                           "validation_commands":  [
+                                                       "python -m py_compile 04_SCRIPTS/python/manual_brain_bridge/bridge_block_3_source_resolver_integrity_guard.py",
+                                                       "python -m pytest --collect-only -q tests/manual_brain_bridge/test_bridge_block_3_source_resolver_integrity_guard.py --basetemp .pytest_block3_validation_basetemp",
+                                                       "python -m pytest -q tests/manual_brain_bridge/test_bridge_block_3_source_resolver_integrity_guard.py --basetemp .pytest_block3_validation_basetemp",
+                                                       "python -m pytest -q tests/manual_brain_bridge --basetemp .pytest_block3_validation_basetemp",
+                                                       "python 04_SCRIPTS/python/manual_brain_bridge/bridge_block_3_source_resolver_integrity_guard.py --self-check",
+                                                       "python 04_SCRIPTS/python/manual_brain_bridge/bridge_block_3_source_resolver_integrity_guard.py --validate-outputs",
+                                                       "audit canonical JSON/no BOM/final newline",
+                                                       "audit no-touch/no residue",
+                                                       "audit validation result contracts"
+                                                   ],
+                           "minimum_tests_required":  220,
+                           "target_tests_recommended":  "230+",
+                           "pytest_basetemp_required":  true,
+                           "validate_outputs_required":  true,
+                           "no_source_rewrite_allowed":  true,
+                           "no_real_manual_current_read":  true,
+                           "no_real_brain_read":  true,
+                           "no_execution_allowed":  true
+                       },
+    "next_safe_step":  "BLOQUE_3_VALIDATION"
+}
