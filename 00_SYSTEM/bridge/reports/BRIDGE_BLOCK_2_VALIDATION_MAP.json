@@ -1,0 +1,197 @@
+{
+    "map_id":  "BRIDGE_BLOCK_2_VALIDATION_MAP",
+    "project":  "CONTENT_ENGINE_OMEGA",
+    "subsystem":  "MANUAL_CEREBRO_BRIDGE",
+    "block":  "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+    "base_head":  "0eea4bd95e8ac3c0637c49eebf4d9df67b7a5fcf",
+    "base_subject":  "Audit MANUAL-CEREBRO bridge block 2 schemas policies contracts",
+    "prerequisite_status":  "BUILT_POST_BUILD_AUDITED",
+    "status":  "VALIDATION_MAP_DEFINED",
+    "validation_execution_performed":  false,
+    "validation_plan_allowed_next":  true,
+    "validation_allowed_now":  false,
+    "build_allowed_now":  false,
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "reports_brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false,
+    "block_3_allowed_now":  false,
+    "checks":  [
+                   {
+                       "id":  "B2_VAL_001",
+                       "domain":  "SCHEMA_REGISTRY",
+                       "description":  "Validate schema registry contains all required schemas and semantic versions.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_SCHEMA_REGISTRY.json",
+                                                 "BRIDGE_BLOCK_2_SCHEMA_REGISTRY_REPORT.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_002",
+                       "domain":  "POLICY_REGISTRY",
+                       "description":  "Validate policy registry contains all required fail-closed policies and precedence order.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_POLICY_REGISTRY.json",
+                                                 "BRIDGE_BLOCK_2_POLICY_REGISTRY_REPORT.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_003",
+                       "domain":  "CONTRACT_REGISTRY",
+                       "description":  "Validate contract registry contains required contracts and forbidden outputs.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_CONTRACT_REGISTRY.json",
+                                                 "BRIDGE_BLOCK_2_CONTRACT_REGISTRY_REPORT.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_004",
+                       "domain":  "PERMISSION_MODEL",
+                       "description":  "Validate permission model remains false-by-default.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_PERMISSION_MODEL_REPORT.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_005",
+                       "domain":  "FALSE_PERMISSION_INJECTION",
+                       "description":  "Validate dangerous capability/action terms are blocked when permission is false.",
+                       "required_evidence":  [
+                                                 "test_bridge_block_2_schemas_policies_contracts.py"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_006",
+                       "domain":  "PATH_CANONICALIZATION",
+                       "description":  "Validate traversal, absolute paths and no-touch paths are blocked.",
+                       "required_evidence":  [
+                                                 "test_bridge_block_2_schemas_policies_contracts.py"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_007",
+                       "domain":  "STATIC_IMPORT_GUARD",
+                       "description":  "Validate dangerous imports and destructive calls are blocked.",
+                       "required_evidence":  [
+                                                 "test_bridge_block_2_schemas_policies_contracts.py",
+                                                 "BRIDGE_BLOCK_2_SECURITY_GUARDS_REPORT.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_008",
+                       "domain":  "EXTERNAL_IO_BAN",
+                       "description":  "Validate external IO signatures are blocked and no external execution is authorized.",
+                       "required_evidence":  [
+                                                 "test_bridge_block_2_schemas_policies_contracts.py",
+                                                 "BRIDGE_BLOCK_2_SECURITY_GUARDS_REPORT.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_009",
+                       "domain":  "SECRET_LEAKAGE_GUARD",
+                       "description":  "Validate secret-like content detection works and generated artifacts contain no secrets.",
+                       "required_evidence":  [
+                                                 "test_bridge_block_2_schemas_policies_contracts.py"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_010",
+                       "domain":  "CANONICAL_JSON",
+                       "description":  "Validate all JSON artifacts are canonical and deterministic.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_MANIFEST.json",
+                                                 "BRIDGE_BLOCK_2_SEAL.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "HIGH"
+                   },
+                   {
+                       "id":  "B2_VAL_011",
+                       "domain":  "MANIFEST_SEAL",
+                       "description":  "Validate manifest and seal are reproducible and point to safe next step only.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_MANIFEST.json",
+                                                 "BRIDGE_BLOCK_2_SEAL.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "HIGH"
+                   },
+                   {
+                       "id":  "B2_VAL_012",
+                       "domain":  "NO_TOUCH",
+                       "description":  "Validate no manual/current, brain, reports/brain, manual history/manifest/registry paths are modified.",
+                       "required_evidence":  [
+                                                 "git diff-tree",
+                                                 "post-build audit traceability"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_013",
+                       "domain":  "NO_EXECUTION",
+                       "description":  "Validate execution, n8n, webhook, publishing and CAPA9 remain blocked.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_NEXT_LAYER_READINESS_MAP.json",
+                                                 "BRIDGE_BLOCK_2_POST_BUILD_AUDIT_REPORT.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   },
+                   {
+                       "id":  "B2_VAL_014",
+                       "domain":  "TEST_SUITE",
+                       "description":  "Validate specific and subsystem test suites pass with controlled basetemp.",
+                       "required_evidence":  [
+                                                 "pytest specific",
+                                                 "pytest subsystem"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "HIGH"
+                   },
+                   {
+                       "id":  "B2_VAL_015",
+                       "domain":  "TRACEABILITY",
+                       "description":  "Validate build commit, audit commit, artifact list and next safe step are traceable.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_POST_BUILD_AUDIT_TRACEABILITY.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "HIGH"
+                   },
+                   {
+                       "id":  "B2_VAL_016",
+                       "domain":  "NEXT_STEP_SAFETY",
+                       "description":  "Validate validation plan is the only next step allowed after this map.",
+                       "required_evidence":  [
+                                                 "BRIDGE_BLOCK_2_VALIDATION_MAP.json"
+                                             ],
+                       "expected_result":  "PASS",
+                       "severity":  "CRITICAL"
+                   }
+               ],
+    "check_count":  16,
+    "next_safe_step":  "BLOQUE_2_VALIDATION_PLAN"
+}

@@ -1,0 +1,11 @@
+{
+    "report_id":  "BRIDGE_BLOCK_2_VALIDATION_MAP_REPORT",
+    "status":  "PASS",
+    "result":  "VALIDATION_MAP_DEFINED",
+    "prerequisite":  "POST_BUILD_AUDIT_PASS",
+    "check_count":  16,
+    "critical_check_count":  12,
+    "high_check_count":  4,
+    "validation_execution_performed":  false,
+    "next_safe_step":  "BLOQUE_2_VALIDATION_PLAN"
+}
