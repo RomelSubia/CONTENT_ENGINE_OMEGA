@@ -1,0 +1,25 @@
+{
+    "manifest_id":  "BRIDGE_BLOCK_2_GATE_CLOSURE_MANIFEST",
+    "closed_block":  "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+    "base_head":  "6a1f9fe7711720e6193115671c20c7e2dda7f84d",
+    "artifacts":  [
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_REPORT.json",
+                          "sha256":  "ce8861ca090c414573281df781f196b7adb22a84093a071adaf47d44768523dd"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json",
+                          "sha256":  "fcae0f6ea0549029fb44a5f520346d40311adcfcb0db556d5d9f97aa7ce1f5ea"
+                      },
+                      {
+                          "path":  "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_TRACEABILITY.json",
+                          "sha256":  "dbc2a24566da42a0bffe74804d80f9a71c544f600396067f534b56de791af956"
+                      },
+                      {
+                          "path":  "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_2_GATE_CLOSURE_SUMMARY.md",
+                          "sha256":  "fee381599ccab19c5c391a14de882cac642f9f32004f1b0ef8ea94cb1f8e2eb8"
+                      }
+                  ],
+    "status":  "PASS",
+    "next_safe_step":  "BLOQUE_3_BLUEPRINT_SOURCE_RESOLVER_INTEGRITY_GUARD"
+}

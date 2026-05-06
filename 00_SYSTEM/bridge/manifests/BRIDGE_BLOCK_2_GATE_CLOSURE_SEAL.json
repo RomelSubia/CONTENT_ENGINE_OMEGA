@@ -1,0 +1,14 @@
+{
+    "seal_id":  "BRIDGE_BLOCK_2_GATE_CLOSURE_SEAL",
+    "closed_block":  "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+    "status":  "SEALED_CLOSED_VALIDATED",
+    "manifest_sha256":  "98db1c7a89c3a5e8e7f7f3ca74081e84f2b01397a13675798384dd02e819ebe9",
+    "next_safe_step":  "BLOQUE_3_BLUEPRINT_SOURCE_RESOLVER_INTEGRITY_GUARD",
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false
+}
