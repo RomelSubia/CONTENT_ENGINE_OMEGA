@@ -1,0 +1,21 @@
+{
+    "result_id":  "BRIDGE_BLOCK_2_VALIDATION_RESULT",
+    "status":  "PASS",
+    "result":  "VALIDATED",
+    "lifecycle_status":  "VALIDATED_POST_BUILD_AUDITED",
+    "validation_execution_performed":  true,
+    "checks_passed":  16,
+    "checks_failed":  0,
+    "next_safe_step":  "BLOQUE_2_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+    "still_blocked":  [
+                          "execution",
+                          "manual/current write",
+                          "brain write",
+                          "reports/brain write",
+                          "n8n",
+                          "webhook",
+                          "publishing",
+                          "CAPA9",
+                          "BLOQUE 3 direct build"
+                      ]
+}

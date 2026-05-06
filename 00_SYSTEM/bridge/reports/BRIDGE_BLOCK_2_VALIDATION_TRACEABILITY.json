@@ -1,0 +1,28 @@
+{
+    "traceability_id":  "BRIDGE_BLOCK_2_VALIDATION_TRACEABILITY",
+    "source_validation_plan_head":  "a4c2abd9fd8b29d94e086d6f10e3fc5abad2b384",
+    "source_validation_plan_subject":  "Plan validation for MANUAL-CEREBRO bridge block 2 schemas policies contracts",
+    "produced_files":  [
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_EXECUTION_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_RESULT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_TRACEABILITY.json",
+                           "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_2_VALIDATION_SUMMARY.md"
+                       ],
+    "forbidden_paths":  [
+                            "00_SYSTEM/brain/",
+                            "00_SYSTEM/reports/brain/",
+                            "00_SYSTEM/manual/current/",
+                            "00_SYSTEM/manual/historical/",
+                            "00_SYSTEM/manual/manifest/",
+                            "00_SYSTEM/manual/registry/"
+                        ],
+    "validation_commands_executed":  [
+                                         "py_compile",
+                                         "pytest specific block 2 with controlled basetemp",
+                                         "pytest manual_brain_bridge subsystem with controlled basetemp",
+                                         "validate-outputs",
+                                         "artifact contract checks"
+                                     ],
+    "status":  "PASS",
+    "next_safe_step":  "BLOQUE_2_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP"
+}

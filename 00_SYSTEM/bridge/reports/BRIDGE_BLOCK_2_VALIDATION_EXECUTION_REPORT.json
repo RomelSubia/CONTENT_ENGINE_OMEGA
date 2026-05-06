@@ -1,0 +1,130 @@
+{
+    "report_id":  "BRIDGE_BLOCK_2_VALIDATION_EXECUTION_REPORT",
+    "project":  "CONTENT_ENGINE_OMEGA",
+    "subsystem":  "MANUAL_CEREBRO_BRIDGE",
+    "block":  "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+    "base_head":  "a4c2abd9fd8b29d94e086d6f10e3fc5abad2b384",
+    "base_subject":  "Plan validation for MANUAL-CEREBRO bridge block 2 schemas policies contracts",
+    "prerequisite_status":  "VALIDATION_PLAN_DEFINED",
+    "status":  "PASS",
+    "result":  "VALIDATED",
+    "lifecycle_status":  "VALIDATED_POST_BUILD_AUDITED",
+    "validation_execution_performed":  true,
+    "checks":  [
+                   {
+                       "id":  "B2_EXEC_001",
+                       "domain":  "PY_COMPILE",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_002",
+                       "domain":  "PYTEST_SPECIFIC",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_003",
+                       "domain":  "PYTEST_SUBSYSTEM",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_004",
+                       "domain":  "VALIDATE_OUTPUTS",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_005",
+                       "domain":  "SCHEMA_REGISTRY",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_006",
+                       "domain":  "POLICY_REGISTRY",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_007",
+                       "domain":  "CONTRACT_REGISTRY",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_008",
+                       "domain":  "PERMISSION_MODEL_FALSE_BY_DEFAULT",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_009",
+                       "domain":  "SECURITY_GUARDS",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_010",
+                       "domain":  "CANONICAL_JSON_MANIFEST_SEAL",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_011",
+                       "domain":  "NO_TOUCH",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_012",
+                       "domain":  "NO_EXECUTION",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_013",
+                       "domain":  "BLOCK_3_BLOCKED",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_014",
+                       "domain":  "N8N_WEBHOOK_PUBLISHING_CAPA9_BLOCKED",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_015",
+                       "domain":  "TRACEABILITY",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   },
+                   {
+                       "id":  "B2_EXEC_016",
+                       "domain":  "NEXT_STEP_SAFETY",
+                       "status":  "PASS",
+                       "expected":  "PASS"
+                   }
+               ],
+    "check_count":  16,
+    "py_compile":  "PASS",
+    "pytest_specific":  "PASS",
+    "pytest_subsystem":  "PASS",
+    "validate_outputs":  "PASS",
+    "build_allowed_now":  false,
+    "validation_allowed_now":  false,
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "reports_brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false,
+    "block_3_allowed_now":  false,
+    "block_3_readiness_map_allowed_next":  false,
+    "gate_closure_or_next_layer_readiness_map_allowed_next":  true,
+    "next_safe_step":  "BLOQUE_2_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP"
+}
