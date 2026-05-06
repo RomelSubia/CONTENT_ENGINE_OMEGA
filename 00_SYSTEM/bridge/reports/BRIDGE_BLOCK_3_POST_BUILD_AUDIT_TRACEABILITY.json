@@ -1,0 +1,47 @@
+{
+    "traceability_id":  "BRIDGE_BLOCK_3_POST_BUILD_AUDIT_TRACEABILITY",
+    "audited_build_head":  "fcc796dd63a9c6954c38328242a397d9b6d4f3f2",
+    "audited_build_head_short":  "fcc796d",
+    "audited_build_subject":  "Build MANUAL-CEREBRO bridge block 3 source resolver integrity guard",
+    "consumed_files":  [
+                           "04_SCRIPTS/python/manual_brain_bridge/bridge_block_3_source_resolver_integrity_guard.py",
+                           "tests/manual_brain_bridge/test_bridge_block_3_source_resolver_integrity_guard.py",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_RESOLUTION_MAP.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_INTEGRITY_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_BOUNDARY_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_DENIED_SOURCE_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_NEXT_LAYER_READINESS_MAP.json",
+                           "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_MANIFEST.json",
+                           "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_SEAL.json",
+                           "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_3_SOURCE_RESOLVER_INTEGRITY_GUARD_SUMMARY.md"
+                       ],
+    "produced_files":  [
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_POST_BUILD_AUDIT_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_POST_BUILD_AUDIT_TRACEABILITY.json",
+                           "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_3_POST_BUILD_AUDIT_SUMMARY.md"
+                       ],
+    "no_touch_prefixes":  [
+                              "00_SYSTEM/brain/",
+                              "00_SYSTEM/reports/brain/",
+                              "00_SYSTEM/manual/current/",
+                              "00_SYSTEM/manual/historical/",
+                              "00_SYSTEM/manual/manifest/",
+                              "00_SYSTEM/manual/registry/"
+                          ],
+    "audit_commands":  [
+                           "git head/subject/sync check",
+                           "build diff allowlist check",
+                           "py_compile",
+                           "pytest collect-only with basetemp",
+                           "pytest specific block 3 with basetemp",
+                           "pytest manual_brain_bridge subsystem with basetemp",
+                           "self-check",
+                           "validate-outputs",
+                           "canonical JSON/no BOM check",
+                           "build contracts check",
+                           "no tmp residue"
+                       ],
+    "status":  "PASS",
+    "next_safe_step":  "BLOQUE_3_VALIDATION_MAP"
+}

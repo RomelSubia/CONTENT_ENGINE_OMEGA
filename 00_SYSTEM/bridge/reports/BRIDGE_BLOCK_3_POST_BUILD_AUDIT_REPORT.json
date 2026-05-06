@@ -1,0 +1,116 @@
+{
+    "report_id":  "BRIDGE_BLOCK_3_POST_BUILD_AUDIT_REPORT",
+    "project":  "CONTENT_ENGINE_OMEGA",
+    "subsystem":  "MANUAL_CEREBRO_BRIDGE",
+    "block":  "BLOQUE_3_SOURCE_RESOLVER_INTEGRITY_GUARD",
+    "audited_build_head":  "fcc796dd63a9c6954c38328242a397d9b6d4f3f2",
+    "audited_build_head_short":  "fcc796d",
+    "audited_build_subject":  "Build MANUAL-CEREBRO bridge block 3 source resolver integrity guard",
+    "status":  "PASS",
+    "result":  "BUILT_POST_AUDITED",
+    "prerequisite_status":  "BUILT_PENDING_POST_AUDIT",
+    "lifecycle_status_after_audit":  "BUILT_POST_AUDITED",
+    "source_mutation_performed":  false,
+    "tests_mutation_performed":  false,
+    "build_rewrite_performed":  false,
+    "validation_execution_performed":  false,
+    "real_source_read_performed":  false,
+    "fixture_based_validation":  true,
+    "no_manual_current_read":  true,
+    "no_brain_read":  true,
+    "no_reports_brain_read":  true,
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "reports_brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false,
+    "block_4_allowed_now":  false,
+    "validation_map_allowed_next":  true,
+    "next_safe_step":  "BLOQUE_3_VALIDATION_MAP",
+    "checks":  [
+                   {
+                       "id":  "B3_PBA_001",
+                       "domain":  "HEAD_BUILD_COMMIT",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_002",
+                       "domain":  "BUILD_DIFF_ALLOWLIST",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_003",
+                       "domain":  "NO_TOUCH_NOT_MUTATED",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_004",
+                       "domain":  "PY_COMPILE",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_005",
+                       "domain":  "PYTEST_COLLECT_220_PLUS",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_006",
+                       "domain":  "PYTEST_SPECIFIC",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_007",
+                       "domain":  "PYTEST_SUBSYSTEM",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_008",
+                       "domain":  "SELF_CHECK",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_009",
+                       "domain":  "VALIDATE_OUTPUTS",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_010",
+                       "domain":  "CANONICAL_JSON_NO_BOM",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_011",
+                       "domain":  "MANIFEST_SEAL",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_012",
+                       "domain":  "FIXTURE_BASED_ONLY",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_013",
+                       "domain":  "NO_REAL_MANUAL_BRAIN_READ",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_014",
+                       "domain":  "EXECUTION_AND_EXTERNAL_IO_BLOCKED",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_015",
+                       "domain":  "BLOCK_4_BLOCKED",
+                       "status":  "PASS"
+                   },
+                   {
+                       "id":  "B3_PBA_016",
+                       "domain":  "NEXT_STEP_VALIDATION_MAP",
+                       "status":  "PASS"
+                   }
+               ],
+    "check_count":  16
+}
