@@ -1,0 +1,174 @@
+{
+  "block": "BLOQUE_4_RULE_EXTRACTOR_INTENT_CLASSIFIER",
+  "block_5_allowed_now": false,
+  "block_5_blueprint_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "capa9_allowed_now": false,
+  "conflict_detection_allowed_next": false,
+  "consumed_validation_map_commit": "ed8f3c7",
+  "consumed_validation_map_commit_full": "ed8f3c77eee5670ac41ff8080f718bf25d0c77a5",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 4 rule extractor intent classifier",
+  "execution_allowed_now": false,
+  "gate_closure_allowed_now": false,
+  "manual_write_allowed_now": false,
+  "minimum_required_checks": 18,
+  "n8n_allowed_now": false,
+  "next_safe_step": "BLOQUE_4_VALIDATION",
+  "plan": "BLOQUE_4_VALIDATION_PLAN",
+  "previous_status": "VALIDATION_MAP_DEFINED",
+  "publishing_allowed_now": false,
+  "report_id": "BRIDGE_BLOCK_4_VALIDATION_PLAN",
+  "reports_brain_write_allowed_now": false,
+  "required_previous_status": "VALIDATION_MAP_DEFINED",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "target_next_safe_step_after_validation": "BLOQUE_4_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "target_next_status_after_validation": "VALIDATED_POST_AUDITED",
+  "validation_allowed_next": true,
+  "validation_execution_allowed_now": false,
+  "validation_execution_outputs_allowed": [
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_FINAL_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_TRACEABILITY.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_4_VALIDATION_SUMMARY.md"
+  ],
+  "validation_execution_required_controls": {
+    "block5_must_remain_blocked": true,
+    "commit_only_if_all_checks_pass": true,
+    "diff_allowlist_required": true,
+    "execution_manual_brain_n8n_webhook_publishing_capa9_must_remain_blocked": true,
+    "no_raw_semantic_text_required": true,
+    "no_touch_required": true,
+    "push_only_if_commit_succeeds": true
+  },
+  "validation_plan_checks": [
+    {
+      "check_id": "B4_VPLAN_001",
+      "command": "git log / git rev-parse",
+      "expected": "HEAD short equals ed8f3c7 and subject equals validation map commit subject",
+      "name": "head_exact_validation_map_commit",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_002",
+      "command": "git status --short + rev-parse HEAD/@{u}",
+      "expected": "working tree clean and HEAD == upstream",
+      "name": "repo_clean_synced_before_validation",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_003",
+      "command": "python -m py_compile 04_SCRIPTS/python/manual_brain_bridge/bridge_block_4_rule_extractor_intent_classifier.py",
+      "expected": "PASS",
+      "name": "py_compile_source",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_004",
+      "command": "PowerShell static scan over source file",
+      "expected": "No OpenAI/Ollama/network/subprocess/webbrowser/HTTP imports or literals",
+      "name": "static_forbidden_import_scan",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_005",
+      "command": "python -m pytest --collect-only -q tests/manual_brain_bridge/test_bridge_block_4_rule_extractor_intent_classifier.py",
+      "expected": "collected >= 260 and preferably >= 691",
+      "name": "pytest_collect_specific",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_006",
+      "command": "Import test file and read TEST_DOMAIN_COVERAGE",
+      "expected": "coverage total >= 260 and mandatory domains present",
+      "name": "test_domain_coverage_metadata",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_007",
+      "command": "python -m pytest -q tests/manual_brain_bridge/test_bridge_block_4_rule_extractor_intent_classifier.py --basetemp controlled",
+      "expected": "PASS, observed target 691 passed",
+      "name": "pytest_specific_suite",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_008",
+      "command": "python -m pytest -q tests/manual_brain_bridge --basetemp controlled",
+      "expected": "PASS, observed target 1432 passed",
+      "name": "pytest_subsystem_suite",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_009",
+      "command": "python bridge_block_4_rule_extractor_intent_classifier.py --self-check",
+      "expected": "status PASS and FIX-2 marker present",
+      "name": "self_check",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_010",
+      "command": "python bridge_block_4_rule_extractor_intent_classifier.py --validate-outputs",
+      "expected": "PASS deterministic artifacts",
+      "name": "validate_outputs",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_011",
+      "command": "Read BLOQUE 4 JSON reports/manifests/seal",
+      "expected": "BUILT_PENDING_POST_AUDIT build evidence + BUILT_POST_AUDITED audit evidence + VALIDATION_MAP_DEFINED map evidence",
+      "name": "artifact_contracts",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_012",
+      "command": "pytest domain specific_capability_match_priority",
+      "expected": "validation plan/map, post-build audit, gate closure classify specifically",
+      "name": "specific_match_regression",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_013",
+      "command": "pytest domain build_fix_1_regression_dangerous_intents",
+      "expected": "dangerous capabilities detected but action_allowed false",
+      "name": "dangerous_intent_regression",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_014",
+      "command": "Scan public JSON artifacts",
+      "expected": "No raw_text, normalized_text, context_text, source_text, body, content, transcript, excerpt, fake secrets",
+      "name": "anti_leak_hash_only",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_015",
+      "command": "Parse JSON + inspect bytes",
+      "expected": "UTF-8 no BOM, final newline, canonical parseable JSON",
+      "name": "canonical_json_no_bom",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_016",
+      "command": "git diff allowlist + no-touch prefixes",
+      "expected": "No manual/current, manual/historical, brain, reports/brain, manual registry/manifest writes",
+      "name": "no_touch_boundaries",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_017",
+      "command": "recursive residue scan",
+      "expected": "No .tmp/.partial/.bak/.orig, no pytest basetemp residue, no cache residue",
+      "name": "no_tmp_residue",
+      "required": true
+    },
+    {
+      "check_id": "B4_VPLAN_018",
+      "command": "Write validation execution reports only if all checks pass",
+      "expected": "status VALIDATED_POST_AUDITED, next safe step BLOQUE_4_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+      "name": "validation_output_contract",
+      "required": true
+    }
+  ],
+  "validation_plan_checks_count": 18,
+  "validation_plan_result": "PASS",
+  "verdict": "PASS",
+  "webhook_allowed_now": false
+}
