@@ -1,0 +1,21 @@
+{
+    "seal_id":  "BRIDGE_BLOCK_3_GATE_CLOSURE_SEAL",
+    "block":  "BLOQUE_3_SOURCE_RESOLVER_INTEGRITY_GUARD",
+    "status":  "SEALED_CLOSED_VALIDATED",
+    "closed_status":  "CLOSED_VALIDATED",
+    "manifest_sha256":  "1044e7b893a6749b9b05e0bd6250b6e531d1bac220714640587f3bcffa769a95",
+    "next_layer":  "BLOQUE_4_RULE_EXTRACTOR_INTENT_CLASSIFIER",
+    "next_safe_step":  "BLOQUE_4_BLUEPRINT_RULE_EXTRACTOR_INTENT_CLASSIFIER",
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "reports_brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false,
+    "block_4_blueprint_allowed_next":  true,
+    "block_4_implementation_plan_allowed_now":  false,
+    "block_4_build_allowed_now":  false,
+    "block_4_validation_allowed_now":  false
+}
