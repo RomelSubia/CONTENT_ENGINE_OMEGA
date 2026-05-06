@@ -1,0 +1,12 @@
+{
+    "report_id":  "BRIDGE_BLOCK_2_VALIDATION_PLAN_REPORT",
+    "status":  "PASS",
+    "result":  "VALIDATION_PLAN_DEFINED",
+    "prerequisite":  "VALIDATION_MAP_DEFINED",
+    "validation_execution_performed":  false,
+    "validation_allowed_next":  true,
+    "command_count":  5,
+    "check_count":  8,
+    "acceptance_criteria_count":  25,
+    "next_safe_step":  "BLOQUE_2_VALIDATION"
+}

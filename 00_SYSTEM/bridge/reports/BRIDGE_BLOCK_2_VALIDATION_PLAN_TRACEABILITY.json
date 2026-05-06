@@ -1,0 +1,45 @@
+{
+    "traceability_id":  "BRIDGE_BLOCK_2_VALIDATION_PLAN_TRACEABILITY",
+    "source_validation_map_head":  "f89adca1d5528d9295eb209e0b750b52629937e2",
+    "source_validation_map_subject":  "Map validation for MANUAL-CEREBRO bridge block 2 schemas policies contracts",
+    "consumed_files":  [
+                           "04_SCRIPTS/python/manual_brain_bridge/bridge_block_2_schemas_policies_contracts.py",
+                           "tests/manual_brain_bridge/test_bridge_block_2_schemas_policies_contracts.py",
+                           "00_SYSTEM/bridge/schemas/BRIDGE_BLOCK_2_SCHEMA_REGISTRY.json",
+                           "00_SYSTEM/bridge/policies/BRIDGE_BLOCK_2_POLICY_REGISTRY.json",
+                           "00_SYSTEM/bridge/contracts/BRIDGE_BLOCK_2_CONTRACT_REGISTRY.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_SCHEMA_REGISTRY_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_POLICY_REGISTRY_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_CONTRACT_REGISTRY_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_PERMISSION_MODEL_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_SECURITY_GUARDS_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_NEXT_LAYER_READINESS_MAP.json",
+                           "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_MANIFEST.json",
+                           "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_SEAL.json",
+                           "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_2_SCHEMAS_POLICIES_CONTRACTS_SUMMARY.md",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_POST_BUILD_AUDIT_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_POST_BUILD_AUDIT_TRACEABILITY.json",
+                           "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_2_POST_BUILD_AUDIT_SUMMARY.md",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_MAP.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_MAP_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_MAP_TRACEABILITY.json",
+                           "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_2_VALIDATION_MAP_SUMMARY.md"
+                       ],
+    "produced_files":  [
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_PLAN.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_PLAN_REPORT.json",
+                           "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_PLAN_TRACEABILITY.json",
+                           "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_2_VALIDATION_PLAN_SUMMARY.md"
+                       ],
+    "forbidden_paths":  [
+                            "00_SYSTEM/brain/",
+                            "00_SYSTEM/reports/brain/",
+                            "00_SYSTEM/manual/current/",
+                            "00_SYSTEM/manual/historical/",
+                            "00_SYSTEM/manual/manifest/",
+                            "00_SYSTEM/manual/registry/"
+                        ],
+    "status":  "PASS",
+    "next_safe_step":  "BLOQUE_2_VALIDATION"
+}

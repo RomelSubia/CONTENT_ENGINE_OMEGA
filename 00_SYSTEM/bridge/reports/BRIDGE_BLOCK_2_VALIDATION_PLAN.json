@@ -1,0 +1,183 @@
+{
+    "plan_id":  "BRIDGE_BLOCK_2_VALIDATION_PLAN",
+    "project":  "CONTENT_ENGINE_OMEGA",
+    "subsystem":  "MANUAL_CEREBRO_BRIDGE",
+    "block":  "BLOQUE_2_SCHEMAS_POLICIES_CONTRACTS",
+    "base_head":  "f89adca1d5528d9295eb209e0b750b52629937e2",
+    "base_subject":  "Map validation for MANUAL-CEREBRO bridge block 2 schemas policies contracts",
+    "prerequisite_status":  "VALIDATION_MAP_DEFINED",
+    "status":  "VALIDATION_PLAN_DEFINED",
+    "validation_execution_performed":  false,
+    "validation_allowed_next":  true,
+    "validation_allowed_now":  false,
+    "build_allowed_now":  false,
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "reports_brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false,
+    "block_3_allowed_now":  false,
+    "validation_commands":  [
+                                {
+                                    "id":  "B2_CMD_001",
+                                    "name":  "py_compile",
+                                    "command":  "\u0026 $Py -m py_compile \"04_SCRIPTS/python/manual_brain_bridge/bridge_block_2_schemas_policies_contracts.py\"",
+                                    "required_result":  "PASS",
+                                    "fail_result":  "BLOCK"
+                                },
+                                {
+                                    "id":  "B2_CMD_002",
+                                    "name":  "pytest_specific",
+                                    "command":  "\u0026 $Py -m pytest -q \"tests/manual_brain_bridge/test_bridge_block_2_schemas_policies_contracts.py\" --basetemp \".pytest_block2_validation_basetemp\"",
+                                    "required_result":  "PASS",
+                                    "fail_result":  "BLOCK"
+                                },
+                                {
+                                    "id":  "B2_CMD_003",
+                                    "name":  "pytest_subsystem",
+                                    "command":  "\u0026 $Py -m pytest -q \"tests/manual_brain_bridge\" --basetemp \".pytest_block2_validation_basetemp\"",
+                                    "required_result":  "PASS",
+                                    "fail_result":  "BLOCK"
+                                },
+                                {
+                                    "id":  "B2_CMD_004",
+                                    "name":  "validate_outputs",
+                                    "command":  "\u0026 $Py \"04_SCRIPTS/python/manual_brain_bridge/bridge_block_2_schemas_policies_contracts.py\" --validate-outputs",
+                                    "required_result":  "PASS",
+                                    "fail_result":  "LOCK"
+                                },
+                                {
+                                    "id":  "B2_CMD_005",
+                                    "name":  "git_diff_allowlist",
+                                    "command":  "git diff --name-only; git ls-files --others --exclude-standard",
+                                    "required_result":  "Only validation outputs may be created during validation execution",
+                                    "fail_result":  "LOCK"
+                                }
+                            ],
+    "validation_checks":  [
+                              {
+                                  "id":  "B2_PLAN_001",
+                                  "domain":  "SCHEMA_REGISTRY",
+                                  "action":  "Validate registry ids, required schemas, semantic versions, unknown-field policy, fail-closed behavior.",
+                                  "evidence":  [
+                                                   "BRIDGE_BLOCK_2_SCHEMA_REGISTRY.json",
+                                                   "BRIDGE_BLOCK_2_SCHEMA_REGISTRY_REPORT.json",
+                                                   "pytest specific"
+                                               ],
+                                  "required_result":  "PASS",
+                                  "severity":  "CRITICAL"
+                              },
+                              {
+                                  "id":  "B2_PLAN_002",
+                                  "domain":  "POLICY_REGISTRY",
+                                  "action":  "Validate required policies, precedence ordering, fail-closed flags, evidence-required flags.",
+                                  "evidence":  [
+                                                   "BRIDGE_BLOCK_2_POLICY_REGISTRY.json",
+                                                   "BRIDGE_BLOCK_2_POLICY_REGISTRY_REPORT.json",
+                                                   "pytest specific"
+                                               ],
+                                  "required_result":  "PASS",
+                                  "severity":  "CRITICAL"
+                              },
+                              {
+                                  "id":  "B2_PLAN_003",
+                                  "domain":  "CONTRACT_REGISTRY",
+                                  "action":  "Validate required contracts, input/output schema binding, forbidden outputs, forbidden permissions.",
+                                  "evidence":  [
+                                                   "BRIDGE_BLOCK_2_CONTRACT_REGISTRY.json",
+                                                   "BRIDGE_BLOCK_2_CONTRACT_REGISTRY_REPORT.json",
+                                                   "pytest specific"
+                                               ],
+                                  "required_result":  "PASS",
+                                  "severity":  "CRITICAL"
+                              },
+                              {
+                                  "id":  "B2_PLAN_004",
+                                  "domain":  "PERMISSION_MODEL",
+                                  "action":  "Validate all permissions remain false by default.",
+                                  "evidence":  [
+                                                   "BRIDGE_BLOCK_2_PERMISSION_MODEL_REPORT.json",
+                                                   "pytest specific"
+                                               ],
+                                  "required_result":  "PASS",
+                                  "severity":  "CRITICAL"
+                              },
+                              {
+                                  "id":  "B2_PLAN_005",
+                                  "domain":  "SECURITY_GUARDS",
+                                  "action":  "Validate path, import, external IO, secret leakage, no-touch, no-execution, CAPA9 locks.",
+                                  "evidence":  [
+                                                   "BRIDGE_BLOCK_2_SECURITY_GUARDS_REPORT.json",
+                                                   "pytest specific"
+                                               ],
+                                  "required_result":  "PASS",
+                                  "severity":  "CRITICAL"
+                              },
+                              {
+                                  "id":  "B2_PLAN_006",
+                                  "domain":  "CANONICAL_JSON_MANIFEST_SEAL",
+                                  "action":  "Validate deterministic JSON, reproducible manifest, reproducible seal, no secret-like generated content.",
+                                  "evidence":  [
+                                                   "BRIDGE_BLOCK_2_MANIFEST.json",
+                                                   "BRIDGE_BLOCK_2_SEAL.json",
+                                                   "validate-outputs"
+                                               ],
+                                  "required_result":  "PASS",
+                                  "severity":  "HIGH"
+                              },
+                              {
+                                  "id":  "B2_PLAN_007",
+                                  "domain":  "TRACEABILITY",
+                                  "action":  "Validate build, post-build audit, validation map and validation plan lineage.",
+                                  "evidence":  [
+                                                   "POST_BUILD_AUDIT_TRACEABILITY",
+                                                   "VALIDATION_MAP_TRACEABILITY",
+                                                   "VALIDATION_PLAN_TRACEABILITY"
+                                               ],
+                                  "required_result":  "PASS",
+                                  "severity":  "HIGH"
+                              },
+                              {
+                                  "id":  "B2_PLAN_008",
+                                  "domain":  "NEXT_STEP_SAFETY",
+                                  "action":  "Validate next safe step after validation is not BLOQUE 3 unless validation passes.",
+                                  "evidence":  [
+                                                   "VALIDATION_PLAN",
+                                                   "future VALIDATION_REPORT"
+                                               ],
+                                  "required_result":  "PASS",
+                                  "severity":  "CRITICAL"
+                              }
+                          ],
+    "acceptance_criteria":  [
+                                "py_compile PASS",
+                                "pytest specific block 2 PASS",
+                                "pytest manual_brain_bridge subsystem PASS",
+                                "validate-outputs PASS",
+                                "schema registry validation PASS",
+                                "policy registry validation PASS",
+                                "contract registry validation PASS",
+                                "permission model false-by-default PASS",
+                                "false permission injection guard PASS",
+                                "path canonicalization guard PASS",
+                                "static dangerous import guard PASS",
+                                "external IO ban PASS",
+                                "secret leakage guard PASS",
+                                "canonical JSON PASS",
+                                "manifest/seal reproducibility PASS",
+                                "no-touch PASS",
+                                "no-execution PASS",
+                                "BLOQUE 3 remains blocked",
+                                "manual/current write remains blocked",
+                                "brain write remains blocked",
+                                "reports/brain write remains blocked",
+                                "n8n/webhook/publishing/CAPA9 remain blocked",
+                                "git diff limited to validation outputs only",
+                                "commit/push only if all validation gates pass",
+                                "PC local = Git local = Git remote"
+                            ],
+    "next_safe_step":  "BLOQUE_2_VALIDATION"
+}
