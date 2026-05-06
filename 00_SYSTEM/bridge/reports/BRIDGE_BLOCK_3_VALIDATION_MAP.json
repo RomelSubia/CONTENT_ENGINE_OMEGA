@@ -1,0 +1,148 @@
+{
+    "validation_map_id":  "BRIDGE_BLOCK_3_VALIDATION_MAP",
+    "project":  "CONTENT_ENGINE_OMEGA",
+    "subsystem":  "MANUAL_CEREBRO_BRIDGE",
+    "block":  "BLOQUE_3_SOURCE_RESOLVER_INTEGRITY_GUARD",
+    "base_head":  "315b0fa6f6425dc68f0484ae213d547bce126d9e",
+    "base_head_short":  "315b0fa",
+    "base_subject":  "Post-build audit MANUAL-CEREBRO bridge block 3 source resolver integrity guard",
+    "prerequisite_status":  "BUILT_POST_AUDITED",
+    "status":  "VALIDATION_MAP_DEFINED",
+    "result":  "PASS",
+    "validation_execution_performed":  false,
+    "validation_plan_allowed_next":  true,
+    "validation_allowed_now":  false,
+    "block_4_allowed_now":  false,
+    "execution_allowed_now":  false,
+    "manual_write_allowed_now":  false,
+    "brain_write_allowed_now":  false,
+    "reports_brain_write_allowed_now":  false,
+    "n8n_allowed_now":  false,
+    "webhook_allowed_now":  false,
+    "publishing_allowed_now":  false,
+    "capa9_allowed_now":  false,
+    "map_count":  20,
+    "validation_items":  [
+                             {
+                                 "id":  "B3_VM_001",
+                                 "domain":  "SOURCE_RESOLVER_PUBLIC_CONTRACTS",
+                                 "objective":  "Validate source type, authority, snapshot, decision and output contracts.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_002",
+                                 "domain":  "PATH_CANONICALIZATION",
+                                 "objective":  "Validate root containment, traversal blocking, null path blocking and path normalization.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_003",
+                                 "domain":  "WINDOWS_PATH_HARDENING",
+                                 "objective":  "Validate UNC, reserved names, ADS streams, drive escape, trailing dot/space.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_004",
+                                 "domain":  "NO_TOUCH_BOUNDARIES",
+                                 "objective":  "Validate manual/brain/reports-brain writes remain blocked.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_005",
+                                 "domain":  "EXTERNAL_IO_BLOCKING",
+                                 "objective":  "Validate external URLs/API/webhook/n8n/publishing/CAPA9 remain blocked.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_006",
+                                 "domain":  "TEMP_PARTIAL_GUARD",
+                                 "objective":  "Validate tmp/partial/bak/orig/__pycache__/.pytest_cache classification and blocking.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_007",
+                                 "domain":  "ENCODING_BINARY_GUARD",
+                                 "objective":  "Validate UTF-8, UTF-8 BOM, UTF-16 review, unknown and binary blocking.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_008",
+                                 "domain":  "SIZE_READ_BOUNDARY",
+                                 "objective":  "Validate empty, normal, large and oversized file decisions.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_009",
+                                 "domain":  "TOCTOU_GUARD",
+                                 "objective":  "Validate hash/size/mtime/disappeared-during-read decisions.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_010",
+                                 "domain":  "SYMLINK_REPARSE_GUARD",
+                                 "objective":  "Validate symlink, reparse point and parent reparse point fail-closed behavior.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_011",
+                                 "domain":  "DUPLICATE_SOURCE_POLICY",
+                                 "objective":  "Validate duplicate hash/name/canonical conflict decisions.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_012",
+                                 "domain":  "ANTI_LEAK_REPORTS",
+                                 "objective":  "Validate reports are metadata-only and do not include manual/brain/secret content.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_013",
+                                 "domain":  "FRESHNESS_MODEL",
+                                 "objective":  "Validate current/recent/stale/unknown/conflicted freshness decisions.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_014",
+                                 "domain":  "DECISION_PRECEDENCE",
+                                 "objective":  "Validate LOCK \u003e BLOCK \u003e REQUIRE_REVIEW \u003e PASS_WITH_WARNINGS \u003e PASS.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_015",
+                                 "domain":  "ERROR_ENVELOPES",
+                                 "objective":  "Validate stable error codes and fail-closed unknown code behavior.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_016",
+                                 "domain":  "MANIFEST_SEAL",
+                                 "objective":  "Validate manifest/seal canonical hashes and next-safe-step integrity.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_017",
+                                 "domain":  "OUTPUT_CANONICAL_JSON",
+                                 "objective":  "Validate canonical JSON, no BOM, final newline and deterministic outputs.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_018",
+                                 "domain":  "FIXTURE_ONLY_VALIDATION",
+                                 "objective":  "Validate real_source_read_performed false and fixture_based_validation true.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_019",
+                                 "domain":  "NEXT_STEP_SAFETY",
+                                 "objective":  "Validate validation plan only is allowed next; validation execution and BLOQUE 4 remain blocked.",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "B3_VM_020",
+                                 "domain":  "REGRESSION_FIXES",
+                                 "objective":  "Validate .pytest_cache dot-preservation and UTF-16 BOM before binary detection remain protected.",
+                                 "required":  true
+                             }
+                         ],
+    "next_safe_step":  "BLOQUE_3_VALIDATION_PLAN"
+}
