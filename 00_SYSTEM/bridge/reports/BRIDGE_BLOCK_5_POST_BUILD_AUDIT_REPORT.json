@@ -1,0 +1,42 @@
+{
+  "audited_build_head_short": "6a98c53",
+  "audited_build_head_subject": "Fix MANUAL-CEREBRO bridge block 5 tests and report status",
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "branch": "main",
+  "build_changed_files_allowlist": "PASS",
+  "build_semantic_artifacts": {
+    "json_artifacts_checked": 8,
+    "readiness_status": "BUILT_PENDING_POST_AUDIT",
+    "seal_status": "SEALED_BUILT_PENDING_POST_AUDIT"
+  },
+  "gate": "POST_BUILD_AUDIT",
+  "git": "git version 2.51.1.windows.1",
+  "next_safe_step": "BLOQUE_5_VALIDATION_MAP",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_roots": "PASS",
+  "python": "Python 3.12.10",
+  "repo_clean_synced": "PASS",
+  "result": "PASS",
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "tests": {
+    "manual_brain_bridge_pytest": "1555 passed",
+    "py_compile": "PASS",
+    "targeted_pytest": "123 passed"
+  }
+}

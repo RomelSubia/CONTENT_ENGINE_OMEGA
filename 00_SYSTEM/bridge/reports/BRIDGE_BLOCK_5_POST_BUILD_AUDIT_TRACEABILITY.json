@@ -1,0 +1,55 @@
+{
+  "continuity_decision": {
+    "allow_validation_map_next": true,
+    "bloque_6_allowed_now": false,
+    "do_not_repeat_build": true,
+    "do_not_repeat_recovery_fixes": true,
+    "gate_closure_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_now": false
+  },
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "trace": [
+    {
+      "commit_short": "341d9ff",
+      "status": "CLOSED_VALIDATED",
+      "step": "BLOQUE_4_GATE_CLOSURE"
+    },
+    {
+      "commit_short": "797cd95",
+      "status": "BUILD_PUSHED_BUT_RECOVERED",
+      "step": "BLOQUE_5_BUILD"
+    },
+    {
+      "commit_short": "269fd55",
+      "status": "RECOVERED_BUT_TESTS_FAILED",
+      "step": "BLOQUE_5_BUILD_RECOVERY_FIX_1"
+    },
+    {
+      "commit_short": "6a98c53",
+      "status": "BUILT_PENDING_POST_AUDIT",
+      "step": "BLOQUE_5_BUILD_RECOVERY_FIX_2"
+    },
+    {
+      "commit_short": "PENDING_THIS_COMMIT",
+      "status": "BUILT_POST_AUDITED",
+      "step": "BLOQUE_5_POST_BUILD_AUDIT"
+    }
+  ]
+}

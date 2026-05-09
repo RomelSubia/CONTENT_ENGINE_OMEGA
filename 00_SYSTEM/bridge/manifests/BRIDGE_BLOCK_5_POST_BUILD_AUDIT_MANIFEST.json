@@ -1,0 +1,42 @@
+{
+  "audit_artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_REPORT.json": "ec53c6c92beb65e985059406a542fe9638abb2180f115850bbfdea189bef1cf4",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_TRACEABILITY.json": "93de4fda4ed2619ad3f4b56aecb13486c1a60eb9fa5108febee08749f6d85b7e"
+  },
+  "audited_build_head_short": "6a98c53",
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "build_artifacts": {
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_MANIFEST.json": "e2609aa3fc1706a63f8f8c74b48b0ee7ffb43fa5a198a958c18dd0e093ae9a30",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_SEAL.json": "35ad0d085fbaecda89b76002204b366c89e110cd93a040c97551ca0186c671ae",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_BRAIN_READ_ONLY_ADAPTER_REPORT.json": "95a777a1b9a7a8737a09f149c807cda526301867a124e3de64865e4ec3793ee3",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_CONFLICT_DETECTOR_REPORT.json": "3e3ac589375db1ea86d946e247976b98ff8ae443c8ea1683262e8bb98c0ecb4c",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_CONFLICT_SEVERITY_REPORT.json": "670bde2977f3e9c44cef21070bb270bf005f68125e665f3b8324b270a2e56bf7",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP.json": "71aeffb1cf4bef406d9e894b56b2cfcecf73c570e36e2780d12b639b8291f0fa",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NO_MUTATION_REPORT.json": "90e96d1deeb6e25774ef27b1d5a42b8946c1d4d429f8d503461b8cfbd884bd10",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_REPORT.json": "50dbaefbe6c854d84f4ef41ee2a6ffce777ab4a761f939bccc1d381e26d238d8",
+    "04_SCRIPTS/python/manual_brain_bridge/bridge_block_5_conflict_detector_brain_readonly_adapter.py": "f78aaba8e28f23012ffe766693172a9640a5d403ae6e58130d513da6ec2d7e93",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER_SUMMARY.md": "54c3c34f4ed9ddc89db121feb649d54e244ae49f5da614a618f70c592daf7acd",
+    "tests/manual_brain_bridge/test_bridge_block_5_conflict_detector_brain_readonly_adapter.py": "250b510bdae412e0909db335a8e7cb7b0d5c38359f8e0349931540a3911e59d3"
+  },
+  "canonical_json": true,
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_5_POST_BUILD_AUDIT_MANIFEST",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
