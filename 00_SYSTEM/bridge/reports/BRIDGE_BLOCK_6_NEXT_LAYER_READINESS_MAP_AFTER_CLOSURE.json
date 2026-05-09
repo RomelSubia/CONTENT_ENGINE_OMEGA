@@ -1,0 +1,48 @@
+{
+  "blueprint_allowed_next": true,
+  "build_allowed_now": false,
+  "current_block": "BLOQUE_6_DECISION_MAPPER_CONTROLLED_PLAN_BUILDER",
+  "current_status": "CLOSED_VALIDATED",
+  "implementation_plan_allowed_now": false,
+  "inherited_blocked_capabilities": [
+    "execution",
+    "manual_write",
+    "brain_write",
+    "reports_brain_write",
+    "n8n",
+    "webhook",
+    "publishing",
+    "capa9"
+  ],
+  "next_layer": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "next_safe_step": "BLOQUE_7_BLUEPRINT",
+  "permissions": {
+    "bloque_10_allowed_now": false,
+    "bloque_7_blueprint_allowed_next": true,
+    "bloque_7_build_allowed_now": false,
+    "bloque_7_implementation_plan_allowed_now": false,
+    "bloque_7_validation_allowed_now": false,
+    "bloque_8_allowed_now": false,
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "readiness_status": "READY_FOR_BLUEPRINT_ONLY",
+  "required_next_focus": [
+    "manifest_generation_contract",
+    "traceability_chain_contract",
+    "reports_materialization_contract",
+    "artifact_indexing_without_manual_or_brain_write",
+    "cross_block_report_integrity",
+    "no_touch_boundary_preservation"
+  ],
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_allowed_now": false
+}
