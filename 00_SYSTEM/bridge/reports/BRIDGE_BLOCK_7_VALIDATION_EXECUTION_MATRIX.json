@@ -1,0 +1,544 @@
+{
+  "block": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "blocked_actions": [
+    "BLOQUE_7_GATE_CLOSURE",
+    "BLOQUE_8_BLUEPRINT",
+    "BLOQUE_8_BUILD",
+    "BLOQUE_9",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "consumed_validation_map_head": "98bd34e",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "execution_matrix": [
+    {
+      "domain_id": "VM01",
+      "domain_name": "Manifest contract canonicality and produced artifact completeness",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 1,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM01-A",
+        "VM01-B"
+      ]
+    },
+    {
+      "domain_id": "VM02",
+      "domain_name": "ArtifactRecord path normalization, hash validity, and protected-root exclusion",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 2,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM02-A",
+        "VM02-B"
+      ]
+    },
+    {
+      "domain_id": "VM03",
+      "domain_name": "EvidenceIndex completeness, deduplication, and integrity status escalation",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 3,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM03-A",
+        "VM03-B"
+      ]
+    },
+    {
+      "domain_id": "VM04",
+      "domain_name": "TraceabilityChain node completeness and lifecycle ordering",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 4,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM04-A",
+        "VM04-B"
+      ]
+    },
+    {
+      "domain_id": "VM05",
+      "domain_name": "ReportMaterialization anti-inflation and no executable payload embedding",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 5,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM05-A",
+        "VM05-B"
+      ]
+    },
+    {
+      "domain_id": "VM06",
+      "domain_name": "PermissionConsistencyGuard cross-file equality and unsafe true lock behavior",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 6,
+      "failure_severity": "LOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM06-A",
+        "VM06-B"
+      ]
+    },
+    {
+      "domain_id": "VM07",
+      "domain_name": "Source-of-truth hierarchy: Git HEAD > seal > manifest > technical report > traceability > human summary",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 7,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM07-A",
+        "VM07-B"
+      ]
+    },
+    {
+      "domain_id": "VM08",
+      "domain_name": "CrossBlockIntegrityGuard: BLOQUE 8 premature boundary and global closure lock",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 8,
+      "failure_severity": "LOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM08-A",
+        "VM08-B"
+      ]
+    },
+    {
+      "domain_id": "VM09",
+      "domain_name": "NextLayerReadinessGuard allows only validation map/plan sequence",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 9,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM09-A",
+        "VM09-B"
+      ]
+    },
+    {
+      "domain_id": "VM10",
+      "domain_name": "Static source scan forbids runtime IO, writers, network, shell, and unsafe replace",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 10,
+      "failure_severity": "LOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM10-A",
+        "VM10-B"
+      ]
+    },
+    {
+      "domain_id": "VM11",
+      "domain_name": "py_compile and pytest regression envelope",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 11,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM11-A",
+        "VM11-B"
+      ]
+    },
+    {
+      "domain_id": "VM12",
+      "domain_name": "Canonical JSON validation for all generated reports/manifests/seals",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 12,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM12-A",
+        "VM12-B"
+      ]
+    },
+    {
+      "domain_id": "VM13",
+      "domain_name": "Build commit and post-build audit commit exact file allowlists",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 13,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM13-A",
+        "VM13-B"
+      ]
+    },
+    {
+      "domain_id": "VM14",
+      "domain_name": "No-touch protected roots fingerprint and git-diff invariants",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 14,
+      "failure_severity": "LOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM14-A",
+        "VM14-B"
+      ]
+    },
+    {
+      "domain_id": "VM15",
+      "domain_name": "Windows path normalization and CRLF/LF non-blocking warning handling",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 15,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM15-A",
+        "VM15-B"
+      ]
+    },
+    {
+      "domain_id": "VM16",
+      "domain_name": "Human summary consistency without becoming source of truth",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 16,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM16-A",
+        "VM16-B"
+      ]
+    },
+    {
+      "domain_id": "VM17",
+      "domain_name": "Manifest/seal digest relationship and artifact hash auditability",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 17,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM17-A",
+        "VM17-B"
+      ]
+    },
+    {
+      "domain_id": "VM18",
+      "domain_name": "Read-only materialization: no manual/brain/reports-brain write semantics",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 18,
+      "failure_severity": "LOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM18-A",
+        "VM18-B"
+      ]
+    },
+    {
+      "domain_id": "VM19",
+      "domain_name": "BLOQUE 7 status ladder: BUILT_POST_AUDITED -> VALIDATION_MAP_DEFINED -> VALIDATION_PLAN_DEFINED",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 19,
+      "failure_severity": "BLOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM19-A",
+        "VM19-B"
+      ]
+    },
+    {
+      "domain_id": "VM20",
+      "domain_name": "Downstream block boundary: BLOQUE 8 remains blocked until BLOQUE 7 CLOSED_VALIDATED",
+      "evidence_required": [
+        "build_reports",
+        "cross_block_report",
+        "manifest",
+        "permission_report",
+        "post_build_audit_reports",
+        "seal",
+        "source_py",
+        "static_scan",
+        "test_py",
+        "unit_tests"
+      ],
+      "execution_allowed_in_this_gate": false,
+      "execution_order": 20,
+      "failure_severity": "LOCK",
+      "minimum_result": "PASS",
+      "planned_for_next_gate": "BLOQUE_7_VALIDATION",
+      "required_items": [
+        "VM20-A",
+        "VM20-B"
+      ]
+    }
+  ],
+  "gate": "VALIDATION_PLAN",
+  "next_safe_step": "BLOQUE_7_VALIDATION",
+  "permissions": {
+    "bloque_8_allowed_now": false,
+    "bloque_8_blueprint_allowed_now": false,
+    "bloque_8_build_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_7_VALIDATION_EXECUTION_MATRIX",
+  "result": "PASS",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

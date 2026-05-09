@@ -1,0 +1,76 @@
+{
+  "block": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "blocked_actions": [
+    "BLOQUE_7_GATE_CLOSURE",
+    "BLOQUE_8_BLUEPRINT",
+    "BLOQUE_8_BUILD",
+    "BLOQUE_9",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "canonical_json": true,
+  "consumed_validation_map_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MAP_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MAP_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_VALIDATION_MAP.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_DOMAINS.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEMS.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_MAP_REPORT.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_7_VALIDATION_MAP_SUMMARY.md"
+  ],
+  "consumed_validation_map_head": "98bd34e",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "gate": "VALIDATION_PLAN",
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_7_VALIDATION_PLAN_MANIFEST",
+  "next_safe_step": "BLOQUE_7_VALIDATION",
+  "permissions": {
+    "bloque_8_allowed_now": false,
+    "bloque_8_blueprint_allowed_now": false,
+    "bloque_8_build_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_EXECUTION_MATRIX.json",
+      "artifact_type": "validation_plan_json",
+      "result": "PASS",
+      "sha256": "b4245e16b6d01a896f9f179c128089dc64fd08407d7e709ac8df754a47fe6ab0",
+      "status": "VALIDATION_PLAN_DEFINED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_PLAN_READINESS_MAP.json",
+      "artifact_type": "validation_plan_json",
+      "result": "PASS",
+      "sha256": "955783dc8f02d3d913daa9791f88ba9c4e0f71db750222216f4c0e89adadd7ef",
+      "status": "VALIDATION_PLAN_DEFINED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_PLAN_REPORT.json",
+      "artifact_type": "validation_plan_json",
+      "result": "PASS",
+      "sha256": "cf70a351a55f1fc5b3a2fcc72e7010555a7428765efd51d526b54716c8e59b68",
+      "status": "VALIDATION_PLAN_DEFINED"
+    }
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
