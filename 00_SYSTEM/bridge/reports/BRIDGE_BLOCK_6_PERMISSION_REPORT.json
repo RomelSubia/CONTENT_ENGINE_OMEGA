@@ -1,0 +1,28 @@
+{
+  "block": "BLOQUE_6_DECISION_MAPPER_CONTROLLED_PLAN_BUILDER",
+  "brain_write_allowed": false,
+  "component": "PERMISSION_MODEL",
+  "execution_allowed": false,
+  "human_authorization_consumption_allowed": false,
+  "manual_write_allowed": false,
+  "n8n_webhook_publishing_capa9_allowed": false,
+  "permissions": {
+    "bloque_7_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "reports_brain_write_allowed": false,
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
