@@ -1,0 +1,143 @@
+{
+  "block": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "blocked_actions": [
+    "BLOQUE_8_BLUEPRINT",
+    "BLOQUE_8_BUILD",
+    "BLOQUE_9",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "consumed_validation_plan_head": "1a8a459",
+  "consumed_validation_plan_subject": "Define validation plan MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "gate": "VALIDATION",
+  "next_safe_step": "BLOQUE_7_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "bloque_8_allowed_now": false,
+    "bloque_8_blueprint_allowed_now": false,
+    "bloque_8_build_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "preconditions_verified": {
+    "artifact_verification": {
+      "build_outputs_verified": 12,
+      "canonical_json": "PASS",
+      "execution_matrix_entries": 20,
+      "post_build_audit_outputs_verified": 6,
+      "readiness_status": "READY_FOR_VALIDATION_ONLY",
+      "validation_allowed_next": true,
+      "validation_domains": 20,
+      "validation_items": 40,
+      "validation_map_outputs_verified": 7,
+      "validation_plan_outputs_verified": 6,
+      "validation_plan_status": "VALIDATION_PLAN_DEFINED"
+    },
+    "contract_smoke_validation": {
+      "checks": {
+        "artifact_record_valid": "PASS",
+        "bloque8_premature_locks": "LOCK",
+        "manifest_contract_valid": "PASS",
+        "next_layer_readiness_valid": "PASS",
+        "permission_consistency_valid": "PASS",
+        "report_inflation_blocks": "BLOCK"
+      },
+      "contract_smoke_validation": "PASS",
+      "expected": {
+        "artifact_record_valid": "PASS",
+        "bloque8_premature_locks": "LOCK",
+        "manifest_contract_valid": "PASS",
+        "next_layer_readiness_valid": "PASS",
+        "permission_consistency_valid": "PASS",
+        "report_inflation_blocks": "BLOCK"
+      }
+    },
+    "protected_roots_before": {
+      "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+      "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+      "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+      "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+      "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+      "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+      "n8n": "MISSING",
+      "publication": "MISSING",
+      "workflows": "MISSING"
+    },
+    "py_compile_and_pytest": {
+      "manual_brain_bridge_pytest": "2104 passed",
+      "py_compile": "PASS",
+      "suite_minimum_required": 2104,
+      "targeted_minimum_required": 376,
+      "targeted_pytest": "376 passed"
+    },
+    "static_source_scan": {
+      "banned_attr_calls_checked": [
+        "remove",
+        "rename",
+        "rmtree",
+        "system",
+        "unlink",
+        "write_bytes",
+        "write_text"
+      ],
+      "banned_imports_checked": [
+        "ftplib",
+        "httpx",
+        "os",
+        "requests",
+        "shutil",
+        "smtplib",
+        "socket",
+        "subprocess",
+        "webbrowser"
+      ],
+      "safe_string_replace_calls_allowed": 2,
+      "static_source_scan": "PASS"
+    },
+    "validation_plan_changed_files": {
+      "allowlist_exact_match": true,
+      "changed_file_count": 6,
+      "changed_files": [
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_PLAN_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_PLAN_SEAL.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_EXECUTION_MATRIX.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_PLAN_READINESS_MAP.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_PLAN_REPORT.json",
+        "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_7_VALIDATION_PLAN_SUMMARY.md"
+      ]
+    },
+    "validation_plan_commit": {
+      "branch": "main",
+      "head_full": "1a8a459a13112faa0fb8e8d482e1d785393134d1",
+      "head_short": "1a8a459",
+      "head_subject": "Define validation plan MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+      "repo_clean_synced": true,
+      "upstream": "1a8a459a13112faa0fb8e8d482e1d785393134d1"
+    }
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_7_VALIDATION_EXECUTION_REPORT",
+  "result": "PASS",
+  "status": "VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_summary": {
+    "all_domains_pass": true,
+    "all_items_pass": true,
+    "domain_result_count": 20,
+    "item_result_count": 40,
+    "validation_status": "PASS"
+  }
+}

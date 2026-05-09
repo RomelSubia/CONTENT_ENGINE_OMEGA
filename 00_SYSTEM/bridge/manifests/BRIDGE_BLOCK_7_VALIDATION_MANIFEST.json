@@ -1,0 +1,111 @@
+{
+  "block": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "blocked_actions": [
+    "BLOQUE_8_BLUEPRINT",
+    "BLOQUE_8_BUILD",
+    "BLOQUE_9",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "canonical_json": true,
+  "consumed_build_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_CROSS_BLOCK_INTEGRITY_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_EVIDENCE_INDEX_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_MANIFEST_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_PERMISSION_CONSISTENCY_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_REPORTS_MATERIALIZATION_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_TRACEABILITY_CHAIN_REPORT.json",
+    "04_SCRIPTS/python/manual_brain_bridge/bridge_block_7_manifest_traceability_reports.py",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_7_MANIFEST_TRACEABILITY_REPORTS_SUMMARY.md",
+    "tests/manual_brain_bridge/test_bridge_block_7_manifest_traceability_reports.py"
+  ],
+  "consumed_post_build_audit_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_POST_BUILD_AUDIT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_TRACEABILITY.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_SUMMARY.md"
+  ],
+  "consumed_validation_map_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MAP_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MAP_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_VALIDATION_MAP.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_DOMAINS.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEMS.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_MAP_REPORT.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_7_VALIDATION_MAP_SUMMARY.md"
+  ],
+  "consumed_validation_plan_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_PLAN_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_PLAN_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_EXECUTION_MATRIX.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_PLAN_READINESS_MAP.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_PLAN_REPORT.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_7_VALIDATION_PLAN_SUMMARY.md"
+  ],
+  "consumed_validation_plan_head": "1a8a459",
+  "consumed_validation_plan_subject": "Define validation plan MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "gate": "VALIDATION",
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_7_VALIDATION_MANIFEST",
+  "next_safe_step": "BLOQUE_7_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "bloque_8_allowed_now": false,
+    "bloque_8_blueprint_allowed_now": false,
+    "bloque_8_build_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_VALIDATION.json",
+      "artifact_type": "validation_execution_json",
+      "result": "PASS",
+      "sha256": "1e74ba190f441a2e50de69cd824a3a8c6408fed99fc0b61974ee887ad45811fb",
+      "status": "VALIDATED_POST_AUDITED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_EXECUTION_REPORT.json",
+      "artifact_type": "validation_execution_json",
+      "result": "PASS",
+      "sha256": "3ee07888f6afb954ab9151a06d9e77091109e7d596bbea0e9dee4b2bf7b62aed",
+      "status": "VALIDATED_POST_AUDITED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEM_RESULTS.json",
+      "artifact_type": "validation_execution_json",
+      "result": "PASS",
+      "sha256": "df66708effa5e245e149fe8e464017aacdcc2a3c54c9eae7b424dee1d343828a",
+      "status": "VALIDATED_POST_AUDITED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_TRACEABILITY.json",
+      "artifact_type": "validation_execution_json",
+      "result": "PASS",
+      "sha256": "bf1043c5677f2e86a3f92ed5948fd4b826fcda1216836a0152d1e79e73932b09",
+      "status": "VALIDATED_POST_AUDITED"
+    }
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
