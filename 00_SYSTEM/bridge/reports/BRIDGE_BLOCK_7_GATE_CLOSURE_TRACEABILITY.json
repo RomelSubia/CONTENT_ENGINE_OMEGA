@@ -1,0 +1,80 @@
+{
+  "block": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "blocked_actions": [
+    "BLOQUE_8_IMPLEMENTATION_PLAN",
+    "BLOQUE_8_BUILD",
+    "BLOQUE_8_POST_BUILD_AUDIT",
+    "BLOQUE_8_VALIDATION_MAP",
+    "BLOQUE_8_VALIDATION_PLAN",
+    "BLOQUE_8_VALIDATION",
+    "BLOQUE_9",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "consumed_validation_head": "1c4c5ee",
+  "consumed_validation_subject": "Validate MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "gate": "GATE_CLOSURE",
+  "next_safe_step": "BLOQUE_8_BLUEPRINT",
+  "permissions": {
+    "bloque_8_blueprint_allowed_next": true,
+    "bloque_8_build_allowed_now": false,
+    "bloque_8_implementation_allowed_now": false,
+    "bloque_8_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_7_GATE_CLOSURE_TRACEABILITY",
+  "result": "PASS",
+  "status": "CLOSED_VALIDATED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "traceability": [
+    {
+      "artifact_set": "BUILD_OUTPUTS",
+      "node_id": "B07-build",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_set": "POST_BUILD_AUDIT_OUTPUTS",
+      "node_id": "B07-post-build-audit",
+      "status": "BUILT_POST_AUDITED"
+    },
+    {
+      "artifact_set": "VALIDATION_MAP_OUTPUTS",
+      "node_id": "B07-validation-map",
+      "status": "VALIDATION_MAP_DEFINED"
+    },
+    {
+      "artifact_set": "VALIDATION_PLAN_OUTPUTS",
+      "node_id": "B07-validation-plan",
+      "status": "VALIDATION_PLAN_DEFINED"
+    },
+    {
+      "artifact_set": "VALIDATION_OUTPUTS",
+      "commit": "1c4c5ee",
+      "node_id": "B07-validation",
+      "status": "VALIDATED_POST_AUDITED",
+      "subject": "Validate MANUAL-CEREBRO bridge block 7 manifest traceability reports"
+    },
+    {
+      "commit": "PENDING_THIS_GATE_CLOSURE_COMMIT",
+      "next_safe_step": "BLOQUE_8_BLUEPRINT",
+      "node_id": "B07-gate-closure",
+      "status": "CLOSED_VALIDATED",
+      "subject": "Close MANUAL-CEREBRO bridge block 7 manifest traceability reports"
+    }
+  ]
+}
