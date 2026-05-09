@@ -1,0 +1,29 @@
+{
+  "block": "BLOQUE_6_DECISION_MAPPER_CONTROLLED_PLAN_BUILDER",
+  "canonical_json": true,
+  "consumed_post_build_audit_head_short": "6c483b2",
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_6_VALIDATION_MAP_MANIFEST",
+  "permissions": {
+    "bloque_7_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "recovery_cleanup_confirmed": true,
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_map_artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_MAP.json": "64fcd1f39fb9b9377a772e6aa4bd30d72589ea71aa3121db21f20eff138b79c4",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_MAP_TRACEABILITY.json": "0c25663ebc39ee63a0ad5f7511aa7c5dfff1dcf0dc4c1aaa5ab8e3d041354b57"
+  }
+}
