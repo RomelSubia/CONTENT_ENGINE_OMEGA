@@ -1,0 +1,124 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "build_summary": {
+    "build_files": 11,
+    "build_json_artifacts": 8,
+    "canonical_json": "PASS"
+  },
+  "consumed_validation_plan_head_short": "847c5d4",
+  "consumed_validation_plan_subject": "Define validation plan MANUAL-CEREBRO bridge block 5 conflict detector brain readonly adapter",
+  "contract_summary": {
+    "checks": [
+      {
+        "check": "bounded_scope_passes",
+        "result": "PASS"
+      },
+      {
+        "check": "unbounded_brain_scan_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "raw_brain_dump_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "summary_without_hash_blocks",
+        "result": "BLOCK"
+      },
+      {
+        "check": "brain_fingerprint_unchanged_passes",
+        "result": "PASS"
+      },
+      {
+        "check": "brain_fingerprint_changed_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "claim_normalization_passes",
+        "result": "PASS"
+      },
+      {
+        "check": "claim_without_evidence_blocks",
+        "result": "BLOCK"
+      },
+      {
+        "check": "right_claim_normalization_passes",
+        "result": "PASS"
+      },
+      {
+        "check": "policy_conflict_blocks",
+        "result": "BLOCK"
+      },
+      {
+        "check": "permission_conflict_downgrade_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "cache_write_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "index_rebuild_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "embedding_update_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "auto_patch_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "auto_create_plan_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "bloque_6_boundary_locks",
+        "result": "LOCK"
+      },
+      {
+        "check": "performance_bounds_block_excess",
+        "result": "BLOCK"
+      },
+      {
+        "check": "deterministic_ordering_prioritizes_critical",
+        "result": "PASS"
+      }
+    ],
+    "contract_check_count": 19,
+    "contract_validation_result": "PASS"
+  },
+  "gate": "VALIDATION",
+  "next_safe_step": "BLOQUE_5_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "previous_status": "VALIDATION_PLAN_DEFINED",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_roots": "PASS",
+  "repo_clean_synced": "PASS",
+  "result": "PASS",
+  "status": "VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_summary": {
+    "manual_brain_bridge_pytest": "1555 passed",
+    "py_compile": "PASS",
+    "targeted_pytest": "123 passed"
+  },
+  "validation_plan_summary": {
+    "validation_plan": "PASS",
+    "validation_plan_manifest": "PASS",
+    "validation_plan_seal": "PASS",
+    "validation_step_count": 11
+  }
+}

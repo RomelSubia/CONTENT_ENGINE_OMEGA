@@ -1,0 +1,26 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "canonical_json": true,
+  "consumed_validation_plan_head_short": "847c5d4",
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_5_VALIDATION_MANIFEST",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "status": "VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_EXECUTION_REPORT.json": "ee11c8cdfad392f76464949ae5e702f8d5b2ed73ec6d4a575af5651899328d1b",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_TRACEABILITY.json": "b5313ef80f8bf34d97aa8ffa63001d6639495b34a97f34ebc5bda03a40486f72"
+  }
+}

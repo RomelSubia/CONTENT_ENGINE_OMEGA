@@ -1,0 +1,34 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "blocked_actions": [
+    "BLOQUE_6_BLUEPRINT",
+    "BLOQUE_6_BUILD",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "manifest_path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_MANIFEST.json",
+  "manifest_sha256": "7ff91175c6253cb08804acc8cd9c36a1665d0dc377f6d848348078dc8d1c09ac",
+  "next_safe_step": "BLOQUE_5_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "seal": "BRIDGE_BLOCK_5_VALIDATION_SEAL",
+  "status": "SEALED_VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
