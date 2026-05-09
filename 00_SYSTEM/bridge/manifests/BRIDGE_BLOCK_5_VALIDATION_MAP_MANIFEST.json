@@ -1,0 +1,28 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "canonical_json": true,
+  "consumed_post_build_audit_head_short": "659bdf4",
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_5_VALIDATION_MAP_MANIFEST",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_map_artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP.json": "9cc5233615b731fe70117d55e407295b75fd3dc9e3c16874e21aeae7df5ff992",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP_TRACEABILITY.json": "e46cec73bd20fdbf53cd4117a3c057ca6a73cece2b009df235c3275984641a98"
+  }
+}

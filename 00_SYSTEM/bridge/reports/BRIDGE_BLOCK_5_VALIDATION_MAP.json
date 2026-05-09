@@ -1,0 +1,190 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "build_summary": {
+    "build_files": 11,
+    "build_json_artifacts": 8,
+    "canonical_json": "PASS"
+  },
+  "consumed_post_build_audit_head_short": "659bdf4",
+  "consumed_post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 5 conflict detector brain readonly adapter",
+  "gate": "VALIDATION_MAP",
+  "next_safe_step": "BLOQUE_5_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "post_build_summary": {
+    "audited_build_head_short": "6a98c53",
+    "post_build_audit_manifest": "PASS",
+    "post_build_audit_report": "PASS",
+    "post_build_audit_seal": "PASS"
+  },
+  "previous_status": "BUILT_POST_AUDITED",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_summary": {
+    "manual_brain_bridge_pytest": "1555 passed",
+    "py_compile": "PASS",
+    "targeted_pytest": "123 passed"
+  },
+  "validation_domain_count": 11,
+  "validation_domains": [
+    {
+      "checks": [
+        "branch_main",
+        "head_is_post_build_audit_commit",
+        "repo_clean_synced",
+        "post_build_audit_status_built_post_audited"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "preconditions",
+      "id": "B5-VAL-001",
+      "objective": "Confirm BLOQUE 4 CLOSED_VALIDATED and BLOQUE 5 BUILT_POST_AUDITED continuity before any validation plan."
+    },
+    {
+      "checks": [
+        "build_json_canonical",
+        "post_build_audit_json_canonical",
+        "manifest_hashes_present",
+        "seal_next_step_valid",
+        "blocked_actions_complete"
+      ],
+      "decision_on_fail": "BLOCK",
+      "domain": "artifact_integrity",
+      "id": "B5-VAL-002",
+      "objective": "Validate canonical JSON, manifests, seals, hashes, and expected artifact presence."
+    },
+    {
+      "checks": [
+        "claim_without_evidence_blocks",
+        "claim_without_hash_blocks",
+        "one_sided_conflict_evidence_blocks",
+        "permission_conflict_locks",
+        "critical_conflict_downgrade_locks",
+        "conflict_order_stable"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "conflict_detector_contract",
+      "id": "B5-VAL-003",
+      "objective": "Validate claim normalization, conflict evidence pairing, deduplication, severity anti-downgrade, and deterministic ordering."
+    },
+    {
+      "checks": [
+        "unbounded_brain_scan_locks",
+        "raw_brain_dump_locks",
+        "summary_without_hash_blocks",
+        "brain_fingerprint_changed_locks",
+        "read_only_false_locks"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "brain_read_only_adapter_contract",
+      "id": "B5-VAL-004",
+      "objective": "Validate bounded read contract, raw leakage guard, mutation proof guard, and read-only result envelope."
+    },
+    {
+      "checks": [
+        "brain_write_attempt_locks",
+        "manual_write_attempt_locks",
+        "reports_brain_write_blocked",
+        "cache_write_locks",
+        "index_rebuild_locks",
+        "embedding_update_locks"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "no_mutation_guards",
+      "id": "B5-VAL-005",
+      "objective": "Validate no brain/manual/reports-brain/cache/index/embedding mutation behavior."
+    },
+    {
+      "checks": [
+        "auto_merge_locks",
+        "auto_patch_locks",
+        "auto_delete_locks",
+        "auto_promote_source_locks",
+        "auto_create_plan_locks",
+        "auto_execute_recovery_locks"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "automatic_resolution_prohibition",
+      "id": "B5-VAL-006",
+      "objective": "Validate BLOQUE 5 detects conflicts but never resolves, patches, merges, deletes, promotes, or executes."
+    },
+    {
+      "checks": [
+        "decision_mapper_blocked",
+        "controlled_plan_builder_blocked",
+        "plan_execution_model_blocked",
+        "bloque_6_blueprint_now_false",
+        "bloque_6_build_blocked"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "bloque_6_boundary",
+      "id": "B5-VAL-007",
+      "objective": "Validate BLOQUE 6 decision mapper / controlled plan builder is not created, recommended, or enabled."
+    },
+    {
+      "checks": [
+        "max_claims_enforced",
+        "max_pairwise_comparisons_enforced",
+        "max_brain_results_enforced",
+        "max_query_depth_enforced",
+        "unsafe_scope_early_blocks"
+      ],
+      "decision_on_fail": "BLOCK",
+      "domain": "performance_bounds",
+      "id": "B5-VAL-008",
+      "objective": "Validate max claims, pairwise comparisons, result count, query depth, timeout and deterministic limits."
+    },
+    {
+      "checks": [
+        "py_compile_pass",
+        "targeted_pytest_123_passed",
+        "manual_brain_bridge_pytest_1555_passed",
+        "pytest_local_basetemp_used",
+        "pytest_runtime_removed"
+      ],
+      "decision_on_fail": "BLOCK",
+      "domain": "test_harness",
+      "id": "B5-VAL-009",
+      "objective": "Validate test harness remains stable and sufficient."
+    },
+    {
+      "checks": [
+        "brain_fingerprint_unchanged",
+        "reports_brain_fingerprint_unchanged",
+        "manual_current_fingerprint_unchanged",
+        "manual_historical_fingerprint_unchanged",
+        "n8n_workflows_publication_unchanged"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "no_touch",
+      "id": "B5-VAL-010",
+      "objective": "Validate protected roots are untouched before, during, and after validation."
+    },
+    {
+      "checks": [
+        "validation_plan_allowed_next_true",
+        "validation_allowed_now_false",
+        "gate_closure_allowed_now_false",
+        "bloque_6_blueprint_allowed_now_false",
+        "execution_and_writes_false"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "permission_model",
+      "id": "B5-VAL-011",
+      "objective": "Validate only validation plan is allowed next; validation execution, gate closure, BLOQUE 6 and runtime actions remain blocked."
+    }
+  ]
+}
