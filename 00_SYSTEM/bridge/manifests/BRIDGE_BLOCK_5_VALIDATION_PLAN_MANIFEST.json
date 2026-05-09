@@ -1,0 +1,27 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "canonical_json": true,
+  "consumed_validation_map_head_short": "6bf55bc",
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_5_VALIDATION_PLAN_MANIFEST",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_plan_artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_PLAN.json": "664640ba651fa16b9aaa6d03e96f6d00bbe95794e0d8c509eacd58d97b81a70e",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_PLAN_TRACEABILITY.json": "e71a2a5e2d4d9be166205aa4dce783ce01a32d4f1ae28f2bae9f48b8ab0e3a65"
+  }
+}

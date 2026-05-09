@@ -1,0 +1,36 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "blocked_actions": [
+    "BLOQUE_5_GATE_CLOSURE",
+    "BLOQUE_6_BLUEPRINT",
+    "BLOQUE_6_BUILD",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "manifest_path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_PLAN_MANIFEST.json",
+  "manifest_sha256": "8bdaea41c315781455dcba1426ed27fd72e035ba37aa6f97e39a544b63fe51c1",
+  "next_safe_step": "BLOQUE_5_VALIDATION",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "seal": "BRIDGE_BLOCK_5_VALIDATION_PLAN_SEAL",
+  "status": "SEALED_VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

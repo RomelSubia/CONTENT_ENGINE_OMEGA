@@ -1,0 +1,200 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "build_summary": {
+    "build_files": 11,
+    "build_json_artifacts": 8,
+    "canonical_json": "PASS"
+  },
+  "consumed_validation_map_head_short": "6bf55bc",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 5 conflict detector brain readonly adapter",
+  "execution_rules": {
+    "bloque_6_allowed": false,
+    "brain_write_allowed": false,
+    "external_io_allowed": false,
+    "manual_write_allowed": false,
+    "reports_brain_write_allowed": false,
+    "source_mutation_allowed": false,
+    "validation_execution_allowed_next": true,
+    "validation_execution_performed_now": false
+  },
+  "gate": "VALIDATION_PLAN",
+  "next_safe_step": "BLOQUE_5_VALIDATION",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "previous_status": "VALIDATION_MAP_DEFINED",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_summary": {
+    "manual_brain_bridge_pytest": "1555 passed",
+    "py_compile": "PASS",
+    "targeted_pytest": "123 passed"
+  },
+  "validation_execution_plan": [
+    {
+      "decision_on_fail": "LOCK",
+      "must_verify": [
+        "branch == main",
+        "HEAD subject == validation plan commit before validation execution",
+        "BLOQUE 5 validation map exists and is canonical",
+        "repo clean/synced"
+      ],
+      "name": "Precondition continuity validation",
+      "source_domain": "B5-VAL-001",
+      "step": "VP-001"
+    },
+    {
+      "decision_on_fail": "BLOCK",
+      "must_verify": [
+        "all build/post-build/validation-map/validation-plan JSON artifacts parse",
+        "canonical JSON equality",
+        "manifest hashes present",
+        "seal next_safe_step valid",
+        "blocked_actions complete"
+      ],
+      "name": "Artifact integrity validation",
+      "source_domain": "B5-VAL-002",
+      "step": "VP-002"
+    },
+    {
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "must_verify": [
+        "claim_without_evidence -> BLOCK",
+        "claim_without_hash -> BLOCK",
+        "one_sided_conflict_evidence -> BLOCK",
+        "permission_conflict_downgrade -> LOCK",
+        "critical_conflict_downgrade -> LOCK",
+        "deterministic_conflict_ordering stable"
+      ],
+      "name": "Conflict detector contract validation",
+      "source_domain": "B5-VAL-003",
+      "step": "VP-003"
+    },
+    {
+      "decision_on_fail": "LOCK",
+      "must_verify": [
+        "unbounded_brain_scan -> LOCK",
+        "raw_brain_dump -> LOCK",
+        "summary_without_hash -> BLOCK",
+        "brain_fingerprint_changed -> LOCK",
+        "read_only_false -> LOCK"
+      ],
+      "name": "Brain read-only adapter contract validation",
+      "source_domain": "B5-VAL-004",
+      "step": "VP-004"
+    },
+    {
+      "decision_on_fail": "LOCK",
+      "must_verify": [
+        "brain_write_attempt -> LOCK",
+        "manual_write_attempt -> LOCK",
+        "reports_brain_write remains false",
+        "cache_write -> LOCK",
+        "index_rebuild -> LOCK",
+        "embedding_update -> LOCK"
+      ],
+      "name": "No mutation guard validation",
+      "source_domain": "B5-VAL-005",
+      "step": "VP-005"
+    },
+    {
+      "decision_on_fail": "LOCK",
+      "must_verify": [
+        "auto_merge -> LOCK",
+        "auto_patch -> LOCK",
+        "auto_delete -> LOCK",
+        "auto_promote_source -> LOCK",
+        "auto_create_plan -> LOCK",
+        "auto_execute_recovery -> LOCK"
+      ],
+      "name": "Automatic resolution prohibition validation",
+      "source_domain": "B5-VAL-006",
+      "step": "VP-006"
+    },
+    {
+      "decision_on_fail": "LOCK",
+      "must_verify": [
+        "decision_mapper blocked",
+        "controlled_plan_builder blocked",
+        "plan_execution_model blocked",
+        "bloque_6_blueprint_allowed_now false",
+        "bloque_6_build blocked"
+      ],
+      "name": "BLOQUE 6 boundary validation",
+      "source_domain": "B5-VAL-007",
+      "step": "VP-007"
+    },
+    {
+      "decision_on_fail": "BLOCK",
+      "must_verify": [
+        "max_claims enforced",
+        "max_pairwise_comparisons enforced",
+        "max_brain_results enforced",
+        "max_query_depth enforced",
+        "unsafe_scope early blocks"
+      ],
+      "name": "Performance bounds validation",
+      "source_domain": "B5-VAL-008",
+      "step": "VP-008"
+    },
+    {
+      "decision_on_fail": "BLOCK",
+      "must_verify": [
+        "py_compile PASS",
+        "targeted pytest 123 passed",
+        "manual_brain_bridge pytest 1555 passed",
+        "pytest local basetemp used",
+        "pytest runtime removed"
+      ],
+      "name": "Test harness validation",
+      "source_domain": "B5-VAL-009",
+      "step": "VP-009"
+    },
+    {
+      "decision_on_fail": "LOCK",
+      "must_verify": [
+        "00_SYSTEM/brain fingerprint unchanged",
+        "00_SYSTEM/reports/brain fingerprint unchanged",
+        "00_SYSTEM/manual/current fingerprint unchanged",
+        "00_SYSTEM/manual/historical fingerprint unchanged",
+        "n8n/workflows/publication unchanged"
+      ],
+      "name": "No-touch validation",
+      "source_domain": "B5-VAL-010",
+      "step": "VP-010"
+    },
+    {
+      "decision_on_fail": "LOCK",
+      "must_verify": [
+        "validation_allowed_next true after validation plan",
+        "gate_closure_allowed_now false",
+        "bloque_6_blueprint_allowed_now false",
+        "execution_allowed_now false",
+        "manual/brain/reports-brain writes false",
+        "n8n/webhook/publishing/CAPA9 false"
+      ],
+      "name": "Permission model validation",
+      "source_domain": "B5-VAL-011",
+      "step": "VP-011"
+    }
+  ],
+  "validation_map_summary": {
+    "validation_domain_count": 11,
+    "validation_map": "PASS",
+    "validation_map_manifest": "PASS",
+    "validation_map_seal": "PASS"
+  },
+  "validation_step_count": 11
+}
