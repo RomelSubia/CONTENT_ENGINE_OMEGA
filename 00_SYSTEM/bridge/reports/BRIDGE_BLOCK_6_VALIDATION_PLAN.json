@@ -1,0 +1,447 @@
+{
+  "block": "BLOQUE_6_DECISION_MAPPER_CONTROLLED_PLAN_BUILDER",
+  "build_summary": {
+    "build_artifact_count": 11,
+    "build_fix_marker": "BUILD_FIX_1_SCANNER_ACTIONABLE_FIELDS_ONLY",
+    "canonical_json": "PASS",
+    "manifest": "PASS",
+    "seal": "PASS"
+  },
+  "consumed_validation_map_head_short": "df265a6",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 6 decision mapper controlled plan builder",
+  "contract_plan_summary": {
+    "declarative_safety_list_not_false_positive": "PASS",
+    "executable_text_still_locks": "PASS",
+    "runtime_contract_plan_smoke": "PASS",
+    "safe_decision_envelope": "PASS"
+  },
+  "execution_performed": false,
+  "execution_requirements": {
+    "must_commit_only_validation_artifacts": true,
+    "must_confirm_branch": "main",
+    "must_confirm_repo_clean_synced": true,
+    "must_confirm_validation_domain_count": 17,
+    "must_confirm_validation_map_defined": true,
+    "must_consume_validation_plan_head": "PENDING_THIS_COMMIT",
+    "must_push_only_after_all_gates_pass": true,
+    "must_run_manual_brain_bridge_pytest_minimum": 1728,
+    "must_run_py_compile": true,
+    "must_run_targeted_pytest_minimum": 173,
+    "must_validate_canonical_json": true,
+    "must_validate_manifest_seal": true,
+    "must_validate_no_touch": true,
+    "must_validate_runtime_contracts": true,
+    "must_validate_tmp_residue_clean": true
+  },
+  "gate": "VALIDATION_PLAN",
+  "next_safe_step": "BLOQUE_6_VALIDATION",
+  "permissions": {
+    "bloque_7_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "post_build_summary": {
+    "post_build_audit_manifest": "PASS",
+    "post_build_audit_report": "PASS",
+    "post_build_audit_seal": "PASS"
+  },
+  "previous_status": "VALIDATION_MAP_DEFINED",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "static_summary": {
+    "banned_attr_calls_checked": [
+      "remove",
+      "rename",
+      "replace",
+      "rmtree",
+      "system",
+      "unlink",
+      "write_bytes",
+      "write_text"
+    ],
+    "banned_imports_checked": [
+      "ftplib",
+      "httpx",
+      "os",
+      "requests",
+      "shutil",
+      "smtplib",
+      "socket",
+      "subprocess",
+      "webbrowser"
+    ],
+    "static_source_scan": "PASS"
+  },
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_summary": {
+    "manual_brain_bridge_pytest": "1728 passed",
+    "py_compile": "PASS",
+    "suite_minimum_required": 1728,
+    "targeted_minimum_required": 173,
+    "targeted_pytest": "173 passed"
+  },
+  "validation_domain_count": 17,
+  "validation_map_summary": {
+    "recovery_cleanup_confirmed": true,
+    "validation_domain_count": 17,
+    "validation_map_manifest": "PASS",
+    "validation_map_report": "PASS",
+    "validation_map_seal": "PASS"
+  },
+  "validation_plan_item_count": 17,
+  "validation_plan_items": [
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "branch_main",
+        "head_is_block6_post_build_audit_commit",
+        "repo_clean_synced",
+        "post_build_audit_status_built_post_audited",
+        "bloque_7_blocked_now"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "preconditions",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Confirm BLOQUE 5 CLOSED_VALIDATED and BLOQUE 6 BUILT_POST_AUDITED continuity before validation plan.",
+      "plan_item_id": "B6-VPLAN-001",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-001"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "build_json_canonical",
+        "post_build_audit_json_canonical",
+        "manifest_hashes_present",
+        "seal_next_step_valid",
+        "blocked_actions_complete",
+        "build_fix_marker_present"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "artifact_integrity",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate canonical JSON, manifests, seals, artifact presence, hashes, and expected next safe step.",
+      "plan_item_id": "B6-VPLAN-002",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-002"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "decision_without_evidence_ref_blocks",
+        "decision_without_hash_ref_blocks",
+        "invalid_decision_locks",
+        "any_lock_input_wins",
+        "any_block_input_without_lock_blocks",
+        "unknown_authority_on_critical_decision_locks",
+        "lower_authority_pass_cannot_override_block_or_lock"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "decision_mapper_contract",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate decision envelopes, precedence hierarchy, authority hierarchy, evidence refs, hash refs, and fail-closed mapping.",
+      "plan_item_id": "B6-VPLAN-003",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-003"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "plan_status_not_proposed_only_locks",
+        "approval_status_approved_locks",
+        "execution_status_executed_locks",
+        "next_gate_required_false_blocks",
+        "approval_gate_required_false_blocks",
+        "build_gate_required_false_blocks"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "controlled_plan_builder_contract",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate controlled plan envelopes remain proposed-only, not-approved, not-executed, and next-gate bound.",
+      "plan_item_id": "B6-VPLAN-004",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-004"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "powershell_token_locks_in_actionable_description",
+        "pytest_token_locks_in_actionable_description",
+        "git_commit_token_locks_in_actionable_description",
+        "webhook_token_locks_in_actionable_description",
+        "forbidden_actions_tokens_do_not_false_positive",
+        "blocked_capabilities_tokens_do_not_false_positive",
+        "permissions_tokens_do_not_false_positive"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "executable_content_scanner",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate actionable executable content locks while declarative safety lists do not false-positive.",
+      "plan_item_id": "B6-VPLAN-005",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-005"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "authorization_input_present_true_locks",
+        "authorization_validated_true_locks",
+        "authorization_granted_true_locks",
+        "authorization_consumed_true_locks",
+        "execution_permission_granted_true_locks",
+        "authorization_status_not_requested_required"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "human_authorization_non_consumption",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate authorization may be required but cannot be requested, validated, granted, consumed, or converted into execution permission.",
+      "plan_item_id": "B6-VPLAN-006",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-006"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "evidence_ref_missing_blocks",
+        "artifact_path_missing_blocks",
+        "artifact_missing_blocks",
+        "hash_missing_blocks",
+        "hash_format_invalid_blocks",
+        "hash_mismatch_locks",
+        "source_status_invalid_locks",
+        "unknown_source_authority_locks"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "evidence_hash_verification",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate evidence dependencies require artifact path, sha256, hash match, allowed source status and known authority.",
+      "plan_item_id": "B6-VPLAN-007",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-007"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "runnable_step_sequence_locks",
+        "execution_ready_instruction_locks",
+        "automation_block_instruction_locks",
+        "safe_future_gate_description_passes"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "non_actionable_output_guard",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate BLOQUE 6 outputs describe/map/propose only and never provide runnable command sequences.",
+      "plan_item_id": "B6-VPLAN-008",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-008"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "rollback_missing_for_risky_plan_blocks",
+        "rollback_type_not_declaration_only_locks",
+        "rollback_executor_created_locks",
+        "rollback_executed_locks",
+        "recovery_writer_created_locks",
+        "quarantine_writer_created_locks"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "rollback_declaration_only",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate rollback is declaration-only and cannot create rollback/recovery/quarantine writers.",
+      "plan_item_id": "B6-VPLAN-009",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-009"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "global_traceability_engine_locks",
+        "full_reporting_layer_locks",
+        "cross_block_report_consolidator_locks",
+        "manifest_registry_engine_locks",
+        "minimal_traceability_allowed"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "block7_boundary",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate BLOQUE 6 does not create global traceability/reporting/manifest registry engines.",
+      "plan_item_id": "B6-VPLAN-010",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-010"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "atomic_writer_locks",
+        "lock_manager_locks",
+        "quarantine_writer_locks",
+        "recovery_executor_locks",
+        "rollback_executor_locks",
+        "pending_write_set_locks",
+        "mutation_queue_locks",
+        "rollback_requirement_only_allowed"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "block8_writer_boundary",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate BLOQUE 6 does not create writer-like structures, atomic writers, queues, locks, quarantine or recovery executors.",
+      "plan_item_id": "B6-VPLAN-011",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-011"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "plan_steps_exceed_limit_blocks",
+        "evidence_refs_exceed_limit_blocks",
+        "authorization_requirements_exceed_limit_blocks",
+        "total_plan_chars_exceed_limit_blocks",
+        "nested_depth_exceeded_blocks",
+        "step_description_exceeds_limit_blocks"
+      ],
+      "decision_on_fail": "BLOCK",
+      "domain": "size_complexity_bounds",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate max decision inputs, plan steps, evidence refs, authorizations, risk reasons, text size, and nesting depth.",
+      "plan_item_id": "B6-VPLAN-012",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-012"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "decisions_sorted_by_rank_and_authority",
+        "canonical_json_required",
+        "volatile_timestamp_locks",
+        "random_id_locks",
+        "unstable_hash_locks",
+        "same_input_same_hash"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "deterministic_ordering_hash_stability",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate stable ordering, canonical JSON, volatile fields blocked, and plan hashes stable across identical input.",
+      "plan_item_id": "B6-VPLAN-013",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-013"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "decision_without_reason_blocks",
+        "plan_without_reason_blocks",
+        "raw_source_dump_locks",
+        "full_artifact_dump_locks",
+        "decision_without_evidence_ref_blocks",
+        "decision_without_hash_ref_blocks"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "explainability_without_leakage",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate decisions/plans explain reason with refs and hashes but never raw/full artifact dumps.",
+      "plan_item_id": "B6-VPLAN-014",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-014"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "recursive_plan_generation_locks",
+        "self_referential_plan_blocks",
+        "plan_generates_plan_locks",
+        "decision_plan_loop_detected_locks",
+        "unbounded_plan_generation_locks"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "anti_loop_recursive_plan_guard",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate recursive plan generation, plan-generates-plan, self-reference and decision-plan loops are blocked/locked.",
+      "plan_item_id": "B6-VPLAN-015",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-015"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "validation_plan_allowed_next_true",
+        "validation_allowed_now_false",
+        "gate_closure_allowed_now_false",
+        "bloque_7_blueprint_allowed_now_false",
+        "execution_allowed_now_false",
+        "manual_write_allowed_now_false",
+        "brain_write_allowed_now_false",
+        "reports_brain_write_allowed_now_false",
+        "n8n_webhook_publishing_capa9_false"
+      ],
+      "decision_on_fail": "LOCK",
+      "domain": "permission_model",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate only validation plan is allowed next; validation execution, gate closure, BLOQUE 7 and all runtime/write actions remain blocked.",
+      "plan_item_id": "B6-VPLAN-016",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-016"
+    },
+    {
+      "brain_write_allowed": false,
+      "checks_to_execute_later": [
+        "py_compile_pass",
+        "targeted_pytest_173_passed",
+        "manual_brain_bridge_pytest_1728_passed",
+        "pytest_runtime_removed",
+        "protected_roots_unchanged",
+        "repo_clean_synced"
+      ],
+      "decision_on_fail": "BLOCK_OR_LOCK",
+      "domain": "test_harness_no_touch_repo_sync",
+      "execution_status": "PLANNED_ONLY_NOT_EXECUTED",
+      "external_automation_allowed": false,
+      "manual_write_allowed": false,
+      "objective": "Validate py_compile, targeted pytest, full manual_brain_bridge suite, local pytest temp, tmp cleanup, no-touch and repo sync.",
+      "plan_item_id": "B6-VPLAN-017",
+      "reports_brain_write_allowed": false,
+      "validation_domain_id": "B6-VAL-017"
+    }
+  ]
+}
