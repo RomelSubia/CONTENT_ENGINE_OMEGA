@@ -1,0 +1,47 @@
+{
+  "component": "CONFLICT_SEVERITY_POLICY",
+  "decision_rank": {
+    "BLOCK": 3,
+    "LOCK": 4,
+    "PASS": 0,
+    "PASS_WITH_WARNINGS": 1,
+    "REQUIRE_REVIEW": 2
+  },
+  "minimum_decisions": {
+    "BRAIN_WRITE_CONFLICT": "LOCK",
+    "CAPA9_CONFLICT": "LOCK",
+    "DUPLICATE_RULE_CONFLICT": "PASS_WITH_WARNINGS",
+    "EVIDENCE_CONFLICT": "BLOCK",
+    "INTENT_CONTRADICTION": "REQUIRE_REVIEW",
+    "NO_TOUCH_CONFLICT": "LOCK",
+    "PERMISSION_CONFLICT": "LOCK",
+    "POLICY_CONFLICT": "BLOCK",
+    "SEMANTIC_CONFLICT": "REQUIRE_REVIEW",
+    "SOURCE_AUTHORITY_CONFLICT": "BLOCK",
+    "STATE_CONFLICT": "BLOCK",
+    "TIMELINE_CONFLICT": "REQUIRE_REVIEW",
+    "UNKNOWN_CONFLICT": "REQUIRE_REVIEW"
+  },
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "severity_rank": {
+    "CRITICAL": 3,
+    "HIGH": 2,
+    "LOW": 0,
+    "MEDIUM": 1
+  },
+  "status": "BUILT_PENDING_POST_AUDIT"
+}

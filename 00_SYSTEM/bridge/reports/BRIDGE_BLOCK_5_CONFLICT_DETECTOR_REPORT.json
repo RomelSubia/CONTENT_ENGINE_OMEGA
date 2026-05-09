@@ -1,0 +1,30 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "component": "CONFLICT_DETECTOR",
+  "features": [
+    "claim_normalization",
+    "conflict_evidence_pairing",
+    "conflict_deduplication",
+    "severity_anti_downgrade",
+    "deterministic_conflict_ordering",
+    "automatic_resolution_prohibition",
+    "bloque_6_boundary_guard"
+  ],
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

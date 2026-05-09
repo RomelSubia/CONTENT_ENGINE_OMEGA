@@ -1,0 +1,36 @@
+{
+  "bloque_6_blueprint_allowed_now": false,
+  "current_block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "current_status": "BUILT_PENDING_POST_AUDIT",
+  "gate_closure_allowed_now": false,
+  "hard_blocks": {
+    "bloque_6": "BLOCKED",
+    "brain_write": "BLOCKED",
+    "capa9": "BLOCKED",
+    "execution": "BLOCKED",
+    "manual_write": "BLOCKED",
+    "n8n": "BLOCKED",
+    "publishing": "BLOCKED",
+    "reports_brain_write": "BLOCKED",
+    "webhook": "BLOCKED"
+  },
+  "next_safe_step": "BLOQUE_5_POST_BUILD_AUDIT",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "post_build_audit_allowed_next": true,
+  "project": "CONTENT_ENGINE_OMEGA",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_allowed_now": false
+}

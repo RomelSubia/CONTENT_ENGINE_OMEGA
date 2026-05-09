@@ -1,0 +1,33 @@
+{
+  "artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_BRAIN_READ_ONLY_ADAPTER_REPORT.json": "95a777a1b9a7a8737a09f149c807cda526301867a124e3de64865e4ec3793ee3",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_CONFLICT_DETECTOR_REPORT.json": "3e3ac589375db1ea86d946e247976b98ff8ae443c8ea1683262e8bb98c0ecb4c",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_CONFLICT_SEVERITY_REPORT.json": "670bde2977f3e9c44cef21070bb270bf005f68125e665f3b8324b270a2e56bf7",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP.json": "5f69b2e3e3a11209d0c0ebf24a2efa83ba1e184494a7f47b6080baddaa4fb011",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NO_MUTATION_REPORT.json": "90e96d1deeb6e25774ef27b1d5a42b8946c1d4d429f8d503461b8cfbd884bd10",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_REPORT.json": "50dbaefbe6c854d84f4ef41ee2a6ffce777ab4a761f939bccc1d381e26d238d8",
+    "04_SCRIPTS/python/manual_brain_bridge/bridge_block_5_conflict_detector_brain_readonly_adapter.py": "9502413e15ff2b066eadcca9f39e07fbc543b2fd48561831d355d26ffc7e3439",
+    "tests/manual_brain_bridge/test_bridge_block_5_conflict_detector_brain_readonly_adapter.py": "bc36298730aff326203889c01f4c43c4fe767c17516c40110aa6374757acd60b"
+  },
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "canonical_json": true,
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_5_MANIFEST",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

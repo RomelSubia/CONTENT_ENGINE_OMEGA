@@ -1,0 +1,39 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "cache_index_embedding_mutation": "LOCKED",
+  "component": "BRAIN_READ_ONLY_ADAPTER_CONTRACT",
+  "mutation_proof_guard": "FINGERPRINT_BEFORE_AFTER_REQUIRED",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "raw_content_leakage_guard": "ENFORCED_BY_CONTRACT",
+  "read_scope_limiter": {
+    "directory_walk_all_brain_allowed": false,
+    "full_brain_scan_allowed": false,
+    "max_claims_per_batch": 200,
+    "max_pairwise_comparisons": 5000,
+    "max_query_depth": 2,
+    "max_results_per_query": 10,
+    "max_summary_chars_per_result": 800,
+    "max_total_summary_chars": 4000,
+    "mode": "STRICT_BOUNDED_READ",
+    "raw_file_dump_allowed": false,
+    "recursive_unbounded_scan_allowed": false,
+    "timeout_seconds": 30
+  },
+  "runtime_brain_access_performed": false,
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

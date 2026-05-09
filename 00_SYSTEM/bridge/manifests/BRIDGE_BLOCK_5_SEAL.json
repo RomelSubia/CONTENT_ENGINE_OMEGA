@@ -1,0 +1,38 @@
+{
+  "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+  "blocked_actions": [
+    "BLOQUE_5_VALIDATION",
+    "BLOQUE_5_GATE_CLOSURE",
+    "BLOQUE_6_BLUEPRINT",
+    "BLOQUE_6_BUILD",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "manifest_path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_MANIFEST.json",
+  "manifest_sha256": "d631735b4635df462e94fda86966e61bd6a7cb139ed51920c7fd1711e5a88d66",
+  "next_safe_step": "BLOQUE_5_POST_BUILD_AUDIT",
+  "permissions": {
+    "bloque_6_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "seal": "BRIDGE_BLOCK_5_SEAL",
+  "status": "SEALED_BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
