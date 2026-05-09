@@ -1,0 +1,646 @@
+{
+  "block": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "blocked_actions": [
+    "BLOQUE_7_VALIDATION",
+    "BLOQUE_7_GATE_CLOSURE",
+    "BLOQUE_8_BLUEPRINT",
+    "BLOQUE_8_BUILD",
+    "BLOQUE_9",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "consumed_post_build_audit_head": "d4b75cc",
+  "consumed_post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "gate": "VALIDATION_MAP",
+  "items": [
+    {
+      "description": "Validate Manifest contract canonicality and produced artifact completeness",
+      "domain_id": "VM01",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM01-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Manifest contract canonicality and produced artifact completeness",
+      "domain_id": "VM01",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM01-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate ArtifactRecord path normalization, hash validity, and protected-root exclusion",
+      "domain_id": "VM02",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM02-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for ArtifactRecord path normalization, hash validity, and protected-root exclusion",
+      "domain_id": "VM02",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM02-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate EvidenceIndex completeness, deduplication, and integrity status escalation",
+      "domain_id": "VM03",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM03-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for EvidenceIndex completeness, deduplication, and integrity status escalation",
+      "domain_id": "VM03",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM03-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate TraceabilityChain node completeness and lifecycle ordering",
+      "domain_id": "VM04",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM04-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for TraceabilityChain node completeness and lifecycle ordering",
+      "domain_id": "VM04",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM04-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate ReportMaterialization anti-inflation and no executable payload embedding",
+      "domain_id": "VM05",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM05-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for ReportMaterialization anti-inflation and no executable payload embedding",
+      "domain_id": "VM05",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM05-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate PermissionConsistencyGuard cross-file equality and unsafe true lock behavior",
+      "domain_id": "VM06",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM06-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for PermissionConsistencyGuard cross-file equality and unsafe true lock behavior",
+      "domain_id": "VM06",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM06-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Source-of-truth hierarchy: Git HEAD > seal > manifest > technical report > traceability > human summary",
+      "domain_id": "VM07",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM07-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Source-of-truth hierarchy: Git HEAD > seal > manifest > technical report > traceability > human summary",
+      "domain_id": "VM07",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM07-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate CrossBlockIntegrityGuard: BLOQUE 8 premature boundary and global closure lock",
+      "domain_id": "VM08",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM08-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for CrossBlockIntegrityGuard: BLOQUE 8 premature boundary and global closure lock",
+      "domain_id": "VM08",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM08-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate NextLayerReadinessGuard allows only validation map/plan sequence",
+      "domain_id": "VM09",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM09-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for NextLayerReadinessGuard allows only validation map/plan sequence",
+      "domain_id": "VM09",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM09-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Static source scan forbids runtime IO, writers, network, shell, and unsafe replace",
+      "domain_id": "VM10",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM10-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Static source scan forbids runtime IO, writers, network, shell, and unsafe replace",
+      "domain_id": "VM10",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM10-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate py_compile and pytest regression envelope",
+      "domain_id": "VM11",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM11-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for py_compile and pytest regression envelope",
+      "domain_id": "VM11",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM11-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Canonical JSON validation for all generated reports/manifests/seals",
+      "domain_id": "VM12",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM12-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Canonical JSON validation for all generated reports/manifests/seals",
+      "domain_id": "VM12",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM12-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Build commit and post-build audit commit exact file allowlists",
+      "domain_id": "VM13",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM13-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Build commit and post-build audit commit exact file allowlists",
+      "domain_id": "VM13",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM13-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate No-touch protected roots fingerprint and git-diff invariants",
+      "domain_id": "VM14",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM14-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for No-touch protected roots fingerprint and git-diff invariants",
+      "domain_id": "VM14",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM14-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Windows path normalization and CRLF/LF non-blocking warning handling",
+      "domain_id": "VM15",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM15-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Windows path normalization and CRLF/LF non-blocking warning handling",
+      "domain_id": "VM15",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM15-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Human summary consistency without becoming source of truth",
+      "domain_id": "VM16",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM16-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Human summary consistency without becoming source of truth",
+      "domain_id": "VM16",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM16-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Manifest/seal digest relationship and artifact hash auditability",
+      "domain_id": "VM17",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM17-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Manifest/seal digest relationship and artifact hash auditability",
+      "domain_id": "VM17",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM17-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Read-only materialization: no manual/brain/reports-brain write semantics",
+      "domain_id": "VM18",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM18-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Read-only materialization: no manual/brain/reports-brain write semantics",
+      "domain_id": "VM18",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM18-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate BLOQUE 7 status ladder: BUILT_POST_AUDITED -> VALIDATION_MAP_DEFINED -> VALIDATION_PLAN_DEFINED",
+      "domain_id": "VM19",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM19-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for BLOQUE 7 status ladder: BUILT_POST_AUDITED -> VALIDATION_MAP_DEFINED -> VALIDATION_PLAN_DEFINED",
+      "domain_id": "VM19",
+      "expected_result": "PASS",
+      "failure_severity": "BLOCK",
+      "item_id": "VM19-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    },
+    {
+      "description": "Validate Downstream block boundary: BLOQUE 8 remains blocked until BLOQUE 7 CLOSED_VALIDATED",
+      "domain_id": "VM20",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM20-A",
+      "required_evidence": [
+        "source_py",
+        "test_py",
+        "build_reports",
+        "post_build_audit_reports",
+        "manifest",
+        "seal"
+      ],
+      "validation_type": "contract_check"
+    },
+    {
+      "description": "Validate fail-closed behavior for Downstream block boundary: BLOQUE 8 remains blocked until BLOQUE 7 CLOSED_VALIDATED",
+      "domain_id": "VM20",
+      "expected_result": "PASS",
+      "failure_severity": "LOCK",
+      "item_id": "VM20-B",
+      "required_evidence": [
+        "unit_tests",
+        "static_scan",
+        "permission_report",
+        "cross_block_report"
+      ],
+      "validation_type": "negative_guard_check"
+    }
+  ],
+  "next_safe_step": "BLOQUE_7_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_8_allowed_now": false,
+    "bloque_8_blueprint_allowed_now": false,
+    "bloque_8_build_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_7_VALIDATION_ITEMS",
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

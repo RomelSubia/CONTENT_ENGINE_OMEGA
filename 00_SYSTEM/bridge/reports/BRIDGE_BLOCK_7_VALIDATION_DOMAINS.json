@@ -1,0 +1,186 @@
+{
+  "block": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "blocked_actions": [
+    "BLOQUE_7_VALIDATION",
+    "BLOQUE_7_GATE_CLOSURE",
+    "BLOQUE_8_BLUEPRINT",
+    "BLOQUE_8_BUILD",
+    "BLOQUE_9",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "consumed_post_build_audit_head": "d4b75cc",
+  "consumed_post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "domains": [
+    {
+      "domain_id": "VM01",
+      "domain_name": "Manifest contract canonicality and produced artifact completeness",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM02",
+      "domain_name": "ArtifactRecord path normalization, hash validity, and protected-root exclusion",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM03",
+      "domain_name": "EvidenceIndex completeness, deduplication, and integrity status escalation",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM04",
+      "domain_name": "TraceabilityChain node completeness and lifecycle ordering",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM05",
+      "domain_name": "ReportMaterialization anti-inflation and no executable payload embedding",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM06",
+      "domain_name": "PermissionConsistencyGuard cross-file equality and unsafe true lock behavior",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "LOCK"
+    },
+    {
+      "domain_id": "VM07",
+      "domain_name": "Source-of-truth hierarchy: Git HEAD > seal > manifest > technical report > traceability > human summary",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM08",
+      "domain_name": "CrossBlockIntegrityGuard: BLOQUE 8 premature boundary and global closure lock",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "LOCK"
+    },
+    {
+      "domain_id": "VM09",
+      "domain_name": "NextLayerReadinessGuard allows only validation map/plan sequence",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM10",
+      "domain_name": "Static source scan forbids runtime IO, writers, network, shell, and unsafe replace",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "LOCK"
+    },
+    {
+      "domain_id": "VM11",
+      "domain_name": "py_compile and pytest regression envelope",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM12",
+      "domain_name": "Canonical JSON validation for all generated reports/manifests/seals",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM13",
+      "domain_name": "Build commit and post-build audit commit exact file allowlists",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM14",
+      "domain_name": "No-touch protected roots fingerprint and git-diff invariants",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "LOCK"
+    },
+    {
+      "domain_id": "VM15",
+      "domain_name": "Windows path normalization and CRLF/LF non-blocking warning handling",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM16",
+      "domain_name": "Human summary consistency without becoming source of truth",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM17",
+      "domain_name": "Manifest/seal digest relationship and artifact hash auditability",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM18",
+      "domain_name": "Read-only materialization: no manual/brain/reports-brain write semantics",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "LOCK"
+    },
+    {
+      "domain_id": "VM19",
+      "domain_name": "BLOQUE 7 status ladder: BUILT_POST_AUDITED -> VALIDATION_MAP_DEFINED -> VALIDATION_PLAN_DEFINED",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "BLOCK"
+    },
+    {
+      "domain_id": "VM20",
+      "domain_name": "Downstream block boundary: BLOQUE 8 remains blocked until BLOQUE 7 CLOSED_VALIDATED",
+      "minimum_result": "PASS",
+      "required_in_validation_plan": true,
+      "severity_on_failure": "LOCK"
+    }
+  ],
+  "gate": "VALIDATION_MAP",
+  "next_safe_step": "BLOQUE_7_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_8_allowed_now": false,
+    "bloque_8_blueprint_allowed_now": false,
+    "bloque_8_build_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_7_VALIDATION_DOMAINS",
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

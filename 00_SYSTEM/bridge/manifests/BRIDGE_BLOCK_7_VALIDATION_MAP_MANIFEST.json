@@ -1,0 +1,98 @@
+{
+  "block": "BLOQUE_7_MANIFEST_TRACEABILITY_REPORTS",
+  "blocked_actions": [
+    "BLOQUE_7_VALIDATION",
+    "BLOQUE_7_GATE_CLOSURE",
+    "BLOQUE_8_BLUEPRINT",
+    "BLOQUE_8_BUILD",
+    "BLOQUE_9",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "canonical_json": true,
+  "consumed_build_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_CROSS_BLOCK_INTEGRITY_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_EVIDENCE_INDEX_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_MANIFEST_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_PERMISSION_CONSISTENCY_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_REPORTS_MATERIALIZATION_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_TRACEABILITY_CHAIN_REPORT.json",
+    "04_SCRIPTS/python/manual_brain_bridge/bridge_block_7_manifest_traceability_reports.py",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_7_MANIFEST_TRACEABILITY_REPORTS_SUMMARY.md",
+    "tests/manual_brain_bridge/test_bridge_block_7_manifest_traceability_reports.py"
+  ],
+  "consumed_post_build_audit_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_POST_BUILD_AUDIT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_TRACEABILITY.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_SUMMARY.md"
+  ],
+  "consumed_post_build_audit_head": "d4b75cc",
+  "consumed_post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "gate": "VALIDATION_MAP",
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_7_VALIDATION_MAP_MANIFEST",
+  "next_safe_step": "BLOQUE_7_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_8_allowed_now": false,
+    "bloque_8_blueprint_allowed_now": false,
+    "bloque_8_build_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_VALIDATION_MAP.json",
+      "artifact_type": "validation_map_json",
+      "result": "PASS",
+      "sha256": "7e8ccb181c25dd6e24f85e30cdf40e3708fbbeddbb7d0b1b43fbd4a11c2f0deb",
+      "status": "VALIDATION_MAP_DEFINED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_DOMAINS.json",
+      "artifact_type": "validation_map_json",
+      "result": "PASS",
+      "sha256": "de77c2caefc1705ff4b1f428b4d9f6c3765f959c1a162d2fad34beb2d0681d18",
+      "status": "VALIDATION_MAP_DEFINED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEMS.json",
+      "artifact_type": "validation_map_json",
+      "result": "PASS",
+      "sha256": "44e91820b7547e16dfb17c686603bc7741e784a63168f53055912904fb16142c",
+      "status": "VALIDATION_MAP_DEFINED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_MAP_REPORT.json",
+      "artifact_type": "validation_map_json",
+      "result": "PASS",
+      "sha256": "50871fa0cabfc3bd7ba36e6ec013c7e7532bc791dc292cdfe6d1a9eaf29c5a1f",
+      "status": "VALIDATION_MAP_DEFINED"
+    }
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
