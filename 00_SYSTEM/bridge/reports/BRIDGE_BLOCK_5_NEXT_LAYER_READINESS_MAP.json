@@ -31,6 +31,7 @@
   },
   "post_build_audit_allowed_next": true,
   "project": "CONTENT_ENGINE_OMEGA",
+  "status": "BUILT_PENDING_POST_AUDIT",
   "subsystem": "MANUAL_CEREBRO_BRIDGE",
   "validation_allowed_now": false
 }

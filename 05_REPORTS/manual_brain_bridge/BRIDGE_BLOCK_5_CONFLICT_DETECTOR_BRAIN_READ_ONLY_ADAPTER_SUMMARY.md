@@ -1,30 +1,16 @@
-# CONTENT ENGINE Ω — BLOQUE 5 BUILD
+# CONTENT ENGINE Ω — BLOQUE 5 BUILD RECOVERY-FIX-1
 
 ## Resultado
 
-BLOQUE 5 — Conflict detector + brain read-only adapter queda en estado:
+BLOQUE 5 — Conflict detector + brain read-only adapter queda corregido como:
 
 `BUILT_PENDING_POST_AUDIT`
 
-## Componentes construidos
+## Corrección aplicada
 
-- Conflict detector
-- Brain read-only adapter contract
-- Brain read scope limiter
-- Raw content leakage guard
-- Brain mutation proof guard
-- Adapter capability denylist
-- Claim normalization contract
-- Conflict evidence pairing
-- Conflict deduplication
-- Severity anti-downgrade guard
-- Human review boundary
-- Output redaction policy
-- No cache / no index mutation guard
-- Automatic conflict resolution prohibition
-- BLOQUE 6 boundary guard
-- Performance bound
-- Deterministic conflict ordering
+- `BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP.json` ahora contiene top-level `status`.
+- Manifest y seal regenerados con hashes actualizados.
+- Permisos siguen fail-closed.
 
 ## Permisos
 
@@ -36,5 +22,5 @@ BLOQUE 5 — Conflict detector + brain read-only adapter queda en estado:
 
 ## Seal
 
-- Manifest SHA256: `d631735b4635df462e94fda86966e61bd6a7cb139ed51920c7fd1711e5a88d66`
-- Seal SHA256: `3971607348b37cfd38845ce528f92fb7441d8994789ecb39acd1577ef8f0e896`
+- Manifest SHA256: `f0cedc81c393a70832241e128d875fce66fa9c2d0703585dc6672c588cdf96be`
+- Seal SHA256: `d162492e38796c3141f73aac993143cd7022dffd16edc0bc2f21fb09b0264f59`
