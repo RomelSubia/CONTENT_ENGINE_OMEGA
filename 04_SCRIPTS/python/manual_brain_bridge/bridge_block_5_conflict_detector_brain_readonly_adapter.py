@@ -657,6 +657,7 @@ def build_block5_report_payloads() -> Dict[str, Dict[str, Any]]:
         "project": "CONTENT_ENGINE_OMEGA",
         "subsystem": "MANUAL_CEREBRO_BRIDGE",
         "current_block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
+        "status": "BUILT_PENDING_POST_AUDIT",
         "current_status": "BUILT_PENDING_POST_AUDIT",
         "next_safe_step": "BLOQUE_5_POST_BUILD_AUDIT",
         "post_build_audit_allowed_next": True,

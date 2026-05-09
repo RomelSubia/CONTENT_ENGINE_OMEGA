@@ -15,7 +15,7 @@
     "CAPA9"
   ],
   "manifest_path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_MANIFEST.json",
-  "manifest_sha256": "f0cedc81c393a70832241e128d875fce66fa9c2d0703585dc6672c588cdf96be",
+  "manifest_sha256": "e2609aa3fc1706a63f8f8c74b48b0ee7ffb43fa5a198a958c18dd0e093ae9a30",
   "next_safe_step": "BLOQUE_5_POST_BUILD_AUDIT",
   "permissions": {
     "bloque_6_blueprint_allowed_now": false,

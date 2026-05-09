@@ -177,8 +177,6 @@ def test_claim_normalization_outputs_stable_normalized_claim():
 @pytest.mark.parametrize(
     "left_kwargs,right_kwargs,expected",
     [
-        ({}, {"content_hash": OTHER_HASH, "evidence_pointer": ""}, b5.BLOCK),
-        ({}, {"content_hash": "bad"}, b5.BLOCK),
         ({"authority_level": "SEALED"}, {"authority_level": "SEALED", "content_hash": OTHER_HASH}, b5.LOCK),
         ({"authority_level": "HIGH"}, {"authority_level": "CANONICAL", "content_hash": OTHER_HASH}, b5.PASS),
     ],
@@ -187,6 +185,46 @@ def test_conflict_evidence_pairing(left_kwargs, right_kwargs, expected):
     left = claim(**left_kwargs)
     right = claim(claim_id="c2", **right_kwargs)
     assert b5.validate_conflict_evidence(left, right)["status"] == expected
+
+
+def test_conflict_evidence_pairing_blocks_one_sided_evidence_with_malformed_claim():
+    left = claim()
+    right = b5.NormalizedClaim(
+        claim_id="c2",
+        raw_claim="Brain write is allowed",
+        normalized_claim="brain write is allowed",
+        claim_type="POLICY",
+        polarity="ALLOW",
+        subject="brain",
+        predicate="write",
+        object="content",
+        scope="manual_cerebro_bridge",
+        authority_level="HIGH",
+        confidence="HIGH",
+        evidence_pointer="",
+        hash=OTHER_HASH,
+    )
+    assert b5.validate_conflict_evidence(left, right)["status"] == b5.BLOCK
+
+
+def test_conflict_evidence_pairing_blocks_invalid_hash_with_malformed_claim():
+    left = claim()
+    right = b5.NormalizedClaim(
+        claim_id="c2",
+        raw_claim="Brain write is allowed",
+        normalized_claim="brain write is allowed",
+        claim_type="POLICY",
+        polarity="ALLOW",
+        subject="brain",
+        predicate="write",
+        object="content",
+        scope="manual_cerebro_bridge",
+        authority_level="HIGH",
+        confidence="HIGH",
+        evidence_pointer="evidence://y",
+        hash="bad",
+    )
+    assert b5.validate_conflict_evidence(left, right)["status"] == b5.BLOCK
 
 
 @pytest.mark.parametrize(

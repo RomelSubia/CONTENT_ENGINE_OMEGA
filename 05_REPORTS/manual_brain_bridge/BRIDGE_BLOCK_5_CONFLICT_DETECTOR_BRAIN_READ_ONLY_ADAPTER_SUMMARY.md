@@ -1,4 +1,4 @@
-# CONTENT ENGINE Ω — BLOQUE 5 BUILD RECOVERY-FIX-1
+# CONTENT ENGINE Ω — BLOQUE 5 BUILD RECOVERY-FIX-2
 
 ## Resultado
 
@@ -6,9 +6,10 @@ BLOQUE 5 — Conflict detector + brain read-only adapter queda corregido como:
 
 `BUILT_PENDING_POST_AUDIT`
 
-## Corrección aplicada
+## Correcciones aplicadas
 
-- `BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP.json` ahora contiene top-level `status`.
+- `build_block5_report_payloads()` ahora entrega top-level `status` en todos los payloads.
+- Tests de evidence pairing separan claims válidos de malformed claim envelopes.
 - Manifest y seal regenerados con hashes actualizados.
 - Permisos siguen fail-closed.
 
@@ -22,5 +23,5 @@ BLOQUE 5 — Conflict detector + brain read-only adapter queda corregido como:
 
 ## Seal
 
-- Manifest SHA256: `f0cedc81c393a70832241e128d875fce66fa9c2d0703585dc6672c588cdf96be`
-- Seal SHA256: `d162492e38796c3141f73aac993143cd7022dffd16edc0bc2f21fb09b0264f59`
+- Manifest SHA256: `e2609aa3fc1706a63f8f8c74b48b0ee7ffb43fa5a198a958c18dd0e093ae9a30`
+- Seal SHA256: `35ad0d085fbaecda89b76002204b366c89e110cd93a040c97551ca0186c671ae`

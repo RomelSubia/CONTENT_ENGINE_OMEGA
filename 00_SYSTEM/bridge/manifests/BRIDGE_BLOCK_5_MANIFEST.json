@@ -6,8 +6,8 @@
     "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP.json": "71aeffb1cf4bef406d9e894b56b2cfcecf73c570e36e2780d12b639b8291f0fa",
     "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NO_MUTATION_REPORT.json": "90e96d1deeb6e25774ef27b1d5a42b8946c1d4d429f8d503461b8cfbd884bd10",
     "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_REPORT.json": "50dbaefbe6c854d84f4ef41ee2a6ffce777ab4a761f939bccc1d381e26d238d8",
-    "04_SCRIPTS/python/manual_brain_bridge/bridge_block_5_conflict_detector_brain_readonly_adapter.py": "9502413e15ff2b066eadcca9f39e07fbc543b2fd48561831d355d26ffc7e3439",
-    "tests/manual_brain_bridge/test_bridge_block_5_conflict_detector_brain_readonly_adapter.py": "bc36298730aff326203889c01f4c43c4fe767c17516c40110aa6374757acd60b"
+    "04_SCRIPTS/python/manual_brain_bridge/bridge_block_5_conflict_detector_brain_readonly_adapter.py": "f78aaba8e28f23012ffe766693172a9640a5d403ae6e58130d513da6ec2d7e93",
+    "tests/manual_brain_bridge/test_bridge_block_5_conflict_detector_brain_readonly_adapter.py": "250b510bdae412e0909db335a8e7cb7b0d5c38359f8e0349931540a3911e59d3"
   },
   "block": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
   "canonical_json": true,
