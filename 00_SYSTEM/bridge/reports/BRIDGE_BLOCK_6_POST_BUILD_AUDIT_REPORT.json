@@ -1,0 +1,77 @@
+{
+  "artifact_summary": {
+    "build_artifact_count": 11,
+    "build_fix_marker": "BUILD_FIX_1_SCANNER_ACTIONABLE_FIELDS_ONLY",
+    "canonical_json": "PASS",
+    "json_report_count": 6,
+    "manifest": "PASS",
+    "seal": "PASS"
+  },
+  "audited_build_head_short": "9d252fa",
+  "audited_build_head_subject": "Build MANUAL-CEREBRO bridge block 6 decision mapper controlled plan builder",
+  "block": "BLOQUE_6_DECISION_MAPPER_CONTROLLED_PLAN_BUILDER",
+  "branch": "main",
+  "build_changed_files_allowlist": "PASS",
+  "contract_summary": {
+    "declarative_forbidden_actions_not_false_positive": "PASS",
+    "executable_text_locks": "PASS",
+    "runtime_contract_smoke": "PASS",
+    "safe_decision_envelope": "PASS"
+  },
+  "gate": "POST_BUILD_AUDIT",
+  "git": "git version 2.51.1.windows.1",
+  "next_safe_step": "BLOQUE_6_VALIDATION_MAP",
+  "permissions": {
+    "bloque_7_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_roots": "PASS",
+  "python": "Python 3.12.10",
+  "repo_clean_synced": "PASS",
+  "result": "PASS",
+  "static_summary": {
+    "banned_attr_calls_checked": [
+      "remove",
+      "rename",
+      "replace",
+      "rmtree",
+      "system",
+      "unlink",
+      "write_bytes",
+      "write_text"
+    ],
+    "banned_imports_checked": [
+      "ftplib",
+      "httpx",
+      "os",
+      "requests",
+      "shutil",
+      "smtplib",
+      "socket",
+      "subprocess",
+      "webbrowser"
+    ],
+    "static_source_scan": "PASS"
+  },
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_summary": {
+    "manual_brain_bridge_pytest": "1728 passed",
+    "py_compile": "PASS",
+    "suite_minimum_required": 1728,
+    "targeted_minimum_required": 173,
+    "targeted_pytest": "173 passed"
+  }
+}

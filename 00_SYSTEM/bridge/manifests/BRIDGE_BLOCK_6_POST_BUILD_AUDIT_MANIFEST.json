@@ -1,0 +1,42 @@
+{
+  "audit_artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_POST_BUILD_AUDIT_REPORT.json": "d2d1975749e803560fe2942377db652093057051053c0810210d35fa6ae82800",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_POST_BUILD_AUDIT_TRACEABILITY.json": "6b5d3dd7ad388e6fb8bcb9013ff3af822a69c58bfc734b2b6837745dfb1b8342"
+  },
+  "audited_build_head_short": "9d252fa",
+  "block": "BLOQUE_6_DECISION_MAPPER_CONTROLLED_PLAN_BUILDER",
+  "build_artifacts": {
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_MANIFEST.json": "0317f6856fcb4d22d046ae64637fdc0a3cb367075bd95fa1f8a6bfbe0314aa70",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_SEAL.json": "7326d4aae9393b6e614d3acaef475ed797bdf0fb8bb21c516da7d606629fb74c",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_CONTROLLED_PLAN_BUILDER_REPORT.json": "bc0de51bcdfd190051c28282cc70434c2a0b174abcd3d8a82210a4d9da3ab6d3",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_DECISION_MAPPER_REPORT.json": "f0435d023249457f51f971a44d7a9bbe0da3a191c0efb514ca74f4809dddfc8f",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_NEXT_LAYER_READINESS_MAP.json": "a858f2cb616a92fc6d505e5ee786a361908d32f1132f61b68c55ef943e819203",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_PERMISSION_REPORT.json": "f24733aadb2103616855d42cef6443bb22ac6305b182b5607b3dd6710bab1b94",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_PLAN_SAFETY_REPORT.json": "7e4b52972181f604eca82ff8fa8f62c38ca4936deec50db16aef54a114ca70ef",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_REPORT.json": "6d5eccbfc1bc648fc4df9c99ff7647ff4bdba81e2a15e430201584335e54ad4e",
+    "04_SCRIPTS/python/manual_brain_bridge/bridge_block_6_decision_mapper_controlled_plan_builder.py": "f5b0d0d112f0f58ad1f7425dc59c20ec4398af04ef42e4962524a3b3703f39c9",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_6_DECISION_MAPPER_CONTROLLED_PLAN_BUILDER_SUMMARY.md": "aa5aaebcd837087277f1a8a95d2b57da4a876d7b0a561727fb6d11780811907e",
+    "tests/manual_brain_bridge/test_bridge_block_6_decision_mapper_controlled_plan_builder.py": "94fa0878f06aacab6b2506a50b93dbdbbc58c1f7d3cccffdcc1882eaa1ff275a"
+  },
+  "canonical_json": true,
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_6_POST_BUILD_AUDIT_MANIFEST",
+  "permissions": {
+    "bloque_7_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
