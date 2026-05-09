@@ -1,0 +1,34 @@
+{
+  "block": "BLOQUE_6_DECISION_MAPPER_CONTROLLED_PLAN_BUILDER",
+  "blocked_actions": [
+    "BLOQUE_7_BLUEPRINT",
+    "BLOQUE_7_BUILD",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "manifest_path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_VALIDATION_EXECUTION_MANIFEST.json",
+  "manifest_sha256": "f3a0fad51f128e70bfc5d01eeaf4428457dea2a6dbe76b84ff53975987a59ab8",
+  "next_safe_step": "BLOQUE_6_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "bloque_7_blueprint_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "seal": "BRIDGE_BLOCK_6_VALIDATION_EXECUTION_SEAL",
+  "status": "SEALED_VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
