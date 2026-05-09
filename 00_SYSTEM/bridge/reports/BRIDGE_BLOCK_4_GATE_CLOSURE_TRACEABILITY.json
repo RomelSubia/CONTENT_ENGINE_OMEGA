@@ -1,67 +1,46 @@
 {
-  "allowed_next": "BLOQUE_5_BLUEPRINT",
-  "block": "BLOQUE_4_RULE_EXTRACTOR_INTENT_CLASSIFIER",
-  "block_5_blueprint_allowed_next": true,
-  "block_5_build_allowed_now": false,
-  "block_5_gate_closure_allowed_now": false,
-  "block_5_validation_allowed_now": false,
-  "block_closed": true,
-  "blocked_now": {
-    "bloque_5_build": true,
-    "bloque_5_validation": true,
-    "brain_adapter_runtime": true,
-    "brain_write": true,
-    "capa9": true,
-    "conflict_detection_runtime": true,
-    "execution": true,
-    "manual_write": true,
-    "n8n": true,
-    "publishing": true,
-    "reports_brain_write": true,
-    "webhook": true
+  "continuity_decision": {
+    "allow_only_block_5_blueprint_next": true,
+    "do_not_advance_to_block_5_build": true,
+    "do_not_repeat_build": true,
+    "do_not_repeat_post_build_audit": true,
+    "do_not_repeat_validation": true,
+    "do_not_repeat_validation_map": true,
+    "do_not_repeat_validation_plan": true,
+    "do_not_reset": true
   },
-  "brain_read_only_adapter_allowed_now": false,
-  "brain_write_allowed_now": false,
-  "capa9_allowed_now": false,
-  "closure": "BLOQUE_4_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
-  "closure_result": "PASS",
-  "conflict_detection_allowed_now": false,
-  "consumed_validation_commit": "ff35732",
-  "consumed_validation_commit_full": "ff357328dacb721e97170e643c5266791868f8ee",
-  "consumed_validation_subject": "Validate MANUAL-CEREBRO bridge block 4 rule extractor intent classifier",
-  "evidence_chain": [
+  "project": "CONTENT_ENGINE_OMEGA",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "trace": [
     {
-      "commit": "ccbf6f0",
-      "stage": "build_fix_2"
+      "commit_short": "ccbf6f0",
+      "status": "PASS",
+      "step": "BLOQUE_4_BUILD_FIX_2"
     },
     {
-      "commit": "7bafda2",
-      "stage": "post_build_audit"
+      "commit_short": "7bafda2",
+      "status": "PASS",
+      "step": "BLOQUE_4_POST_BUILD_AUDIT"
     },
     {
-      "commit": "ed8f3c7",
-      "stage": "validation_map"
+      "commit_short": "ed8f3c7",
+      "status": "PASS",
+      "step": "BLOQUE_4_VALIDATION_MAP"
     },
     {
-      "commit": "2fcbc32",
-      "stage": "validation_plan"
+      "commit_short": "2fcbc32",
+      "status": "PASS",
+      "step": "BLOQUE_4_VALIDATION_PLAN"
     },
     {
-      "commit": "ff35732",
-      "stage": "validation"
+      "commit_short": "ff35732",
+      "status": "VALIDATED_POST_AUDITED",
+      "step": "BLOQUE_4_VALIDATION"
+    },
+    {
+      "commit_short": "PENDING_THIS_COMMIT",
+      "status": "CLOSED_VALIDATED",
+      "step": "BLOQUE_4_GATE_CLOSURE_RETRY_1"
     }
-  ],
-  "execution_allowed_now": false,
-  "from_status": "VALIDATED_POST_AUDITED",
-  "manual_write_allowed_now": false,
-  "n8n_allowed_now": false,
-  "next_layer": "BLOQUE_5_CONFLICT_DETECTOR_BRAIN_READ_ONLY_ADAPTER",
-  "next_safe_step": "BLOQUE_5_BLUEPRINT",
-  "previous_status": "VALIDATED_POST_AUDITED",
-  "publishing_allowed_now": false,
-  "report_id": "BRIDGE_BLOCK_4_GATE_CLOSURE_TRACEABILITY",
-  "reports_brain_write_allowed_now": false,
-  "status": "CLOSED_VALIDATED",
-  "to_status": "CLOSED_VALIDATED",
-  "webhook_allowed_now": false
+  ]
 }
