@@ -1,53 +1,28 @@
 {
   "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
-  "block7_gate_closure_verification": {
-    "block7_closure": "PASS",
-    "block7_outputs_verified": 6,
-    "block7_status": "CLOSED_VALIDATED",
-    "next_safe_step": "BLOQUE_8_BLUEPRINT"
-  },
   "bloque_9_allowed_now": false,
-  "build_fix": "BUILD_FIX_1_1_ROBUST_FUNCTION_BOUNDARY_PATH_CANONICALIZATION",
-  "build_gate": "BLOQUE_8_AUTOMATIC_BLOCK_BUILD_FIX_1_1",
-  "consumed_block7_head": "1ba759a",
-  "consumed_block7_subject": "Close MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "build_fix": "BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS",
+  "build_gate": "BLOQUE_8_BUILD_FIX_2_1_RETRY",
+  "consumed_block7_head": "2e19ebd",
+  "consumed_block7_subject": "Build MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
   "current_status": "BUILT_PENDING_POST_AUDIT",
-  "dirty_recovery_before_fix": {
-    "dirty_entries_before_fix": 2,
-    "out_of_scope_dirty_entries": [],
-    "protected_dirty_entries": [],
-    "recoverable_block8_partial_outputs": [
-      "04_SCRIPTS/python/manual_brain_bridge/bridge_block_8_atomic_writer_lock_quarantine_recovery.py",
-      "tests/manual_brain_bridge/test_bridge_block_8_atomic_writer_lock_quarantine_recovery.py"
-    ]
-  },
   "gate_closure_allowed_now": false,
-  "next_safe_step": "BLOQUE_8_POST_BUILD_AUDIT",
-  "partial_cleanup_report": {
-    "removed_partial_artifacts": [],
-    "source_preserved_for_boundary_patch": "04_SCRIPTS/python/manual_brain_bridge/bridge_block_8_atomic_writer_lock_quarantine_recovery.py",
-    "test_preserved_for_retry": "tests/manual_brain_bridge/test_bridge_block_8_atomic_writer_lock_quarantine_recovery.py"
+  "manifest_gap_before_retry": {
+    "confirmed_failure": "MANIFEST_PRODUCED_ARTIFACTS_INCOMPLETE",
+    "existing_build_artifacts_present": 13,
+    "manifest_status": "BUILT_PENDING_POST_AUDIT",
+    "missing_from_manifest_before_retry": [
+      "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY_SUMMARY.md"
+    ],
+    "produced_artifacts_count_before": 10,
+    "required_manifest_artifacts_count": 11,
+    "seal_status": "SEALED_BUILT_PENDING_POST_AUDIT"
   },
+  "next_safe_step": "BLOQUE_8_POST_BUILD_AUDIT",
   "patch_report": {
-    "canonicalize_destination_path_patch": {
-      "end": 13568,
-      "function": "canonicalize_destination_path",
-      "method": "TOP_LEVEL_FUNCTION_BOUNDARY_REPLACEMENT",
-      "new_length": 2142,
-      "old_length": 1688,
-      "start": 11880
-    },
-    "extra_negative_tests_added": true,
-    "normalize_path_patch": {
-      "end": 3651,
-      "function": "normalize_path",
-      "method": "TOP_LEVEL_FUNCTION_BOUNDARY_REPLACEMENT",
-      "new_length": 323,
-      "old_length": 187,
-      "start": 3464
-    },
-    "patch_strategy": "ROBUST_TOP_LEVEL_FUNCTION_BOUNDARY_REPLACEMENT",
-    "unsafe_lstrip_removed": true
+    "marker": "BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS",
+    "source_marker_added_or_present": true,
+    "test_marker_added_or_present": true
   },
   "permissions": {
     "bloque_9_allowed_now": false,
@@ -67,6 +42,7 @@
     "webhook_allowed_now": false
   },
   "post_build_audit_allowed_next": true,
+  "previous_post_build_audit_failure": "MANIFEST_PRODUCED_ARTIFACTS_INCOMPLETE",
   "project": "CONTENT_ENGINE_OMEGA",
   "protected_roots_before": {
     "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
@@ -82,75 +58,6 @@
   "readiness_status": "READY_FOR_POST_BUILD_AUDIT_ONLY",
   "report": "BRIDGE_BLOCK_8_NEXT_LAYER_READINESS_MAP",
   "result": "PASS",
-  "runtime_semantics_report": {
-    "locked_path_cases": {
-      "../../escape.json": {
-        "findings": [
-          "PATH_ESCAPES_ROOT",
-          "PATH_TRAVERSAL"
-        ],
-        "reason": "PATH_CANONICALIZED",
-        "status": "LOCK"
-      },
-      "../escape.json": {
-        "findings": [
-          "PATH_ESCAPES_ROOT",
-          "PATH_TRAVERSAL"
-        ],
-        "reason": "PATH_CANONICALIZED",
-        "status": "LOCK"
-      },
-      "././escape.json": {
-        "findings": [
-          "PATH_DOT_SEGMENT"
-        ],
-        "reason": "PATH_CANONICALIZED",
-        "status": "LOCK"
-      },
-      "./escape.json": {
-        "findings": [
-          "PATH_DOT_SEGMENT"
-        ],
-        "reason": "PATH_CANONICALIZED",
-        "status": "LOCK"
-      },
-      "//server/share/file.json": {
-        "findings": [
-          "ABSOLUTE_OR_UNC_PATH"
-        ],
-        "reason": "PATH_CANONICALIZED",
-        "status": "LOCK"
-      },
-      "/tmp/escape.json": {
-        "findings": [
-          "ABSOLUTE_OR_UNC_PATH"
-        ],
-        "reason": "PATH_CANONICALIZED",
-        "status": "LOCK"
-      },
-      "00_SYSTEM/bridge/../brain/x.json": {
-        "findings": [
-          "PATH_TRAVERSAL"
-        ],
-        "reason": "PATH_CANONICALIZED",
-        "status": "LOCK"
-      },
-      "C:/Windows/system32/file.txt": {
-        "findings": [
-          "PATH_ESCAPES_ROOT",
-          "WINDOWS_DRIVE_PATH"
-        ],
-        "reason": "PATH_CANONICALIZED",
-        "status": "LOCK"
-      }
-    },
-    "runtime_semantics": "PASS",
-    "safe_path_case": {
-      "findings": [],
-      "reason": "PATH_CANONICALIZED",
-      "status": "PASS"
-    }
-  },
   "static_scan_summary": {
     "banned_attr_calls_checked": [
       "remove",
@@ -179,19 +86,21 @@
       "exec",
       "open"
     ],
+    "build_fix_2_1_marker_present": true,
     "privileged_helper_scope_enforced": true,
     "privileged_replace_calls_allowed": 1,
     "safe_string_replace_calls_allowed": 3,
-    "static_source_scan": "PASS"
+    "static_source_scan": "PASS",
+    "unsafe_lstrip_absent": true
   },
   "status": "BUILT_PENDING_POST_AUDIT",
   "subsystem": "MANUAL_CEREBRO_BRIDGE",
   "test_summary": {
-    "manual_brain_bridge_pytest": "2453 passed",
+    "manual_brain_bridge_pytest": "2454 passed",
     "py_compile": "PASS",
-    "suite_minimum_required": 2324,
-    "targeted_minimum_required": 220,
-    "targeted_pytest": "349 passed"
+    "suite_minimum_required": 2454,
+    "targeted_minimum_required": 350,
+    "targeted_pytest": "350 passed"
   },
   "validation_allowed_now": false,
   "validation_map_allowed_now": false

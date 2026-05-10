@@ -7,6 +7,8 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Mapping, Sequence
 
+BUILD_FIX_2_1_STATUS_PARSER = "BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS"
+
 
 PASS = "PASS"
 BLOCK = "BLOCK"

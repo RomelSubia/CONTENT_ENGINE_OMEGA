@@ -1,10 +1,10 @@
 {
   "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
-  "build_fix": "BUILD_FIX_1_1_ROBUST_FUNCTION_BOUNDARY_PATH_CANONICALIZATION",
+  "build_fix": "BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS",
   "dangerous_permissions_all_false": true,
-  "gate": "BUILD_FIX_1_1",
+  "gate": "BUILD_FIX_2_1_RETRY",
   "manifest_path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_MANIFEST.json",
-  "manifest_sha256": "530853104ae490d5f31c5c04b7dab2659d0271ca0af08255b462ba24b1da05fa",
+  "manifest_sha256": "d0438b43abfec5a6d8014b5d145314d5a05a6975d166676cc8f5217d1daa288a",
   "next_safe_step": "BLOQUE_8_POST_BUILD_AUDIT",
   "permissions": {
     "bloque_9_allowed_now": false,
@@ -23,6 +23,7 @@
     "validation_plan_allowed_now": false,
     "webhook_allowed_now": false
   },
+  "previous_post_build_audit_failure": "MANIFEST_PRODUCED_ARTIFACTS_INCOMPLETE",
   "project": "CONTENT_ENGINE_OMEGA",
   "result": "PASS",
   "seal": "BRIDGE_BLOCK_8_SEAL",

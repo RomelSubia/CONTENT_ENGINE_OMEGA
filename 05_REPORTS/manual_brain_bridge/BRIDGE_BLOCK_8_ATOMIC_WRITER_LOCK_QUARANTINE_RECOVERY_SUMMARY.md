@@ -1,50 +1,45 @@
-# CONTENT ENGINE Ω — BLOQUE 8 BUILD-FIX-1.1
+# CONTENT ENGINE Ω — BLOQUE 8 BUILD-FIX-2.1 RETRY
 
 ## Resultado
 
-`BLOQUE 8 AUTOMATIC BLOCK BUILD-FIX-1.1 = PASS`
+`BLOQUE 8 BUILD-FIX-2.1 RETRY = PASS`
 
-Estado después del build fix:
+Estado después del retry:
 
 `BUILT_PENDING_POST_AUDIT`
 
 ## Base consumida
 
-- BLOQUE 7 closure HEAD: `1ba759a`
-- Subject: `Close MANUAL-CEREBRO bridge block 7 manifest traceability reports`
+- HEAD base: `2e19ebd`
+- Subject base: `Build MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery`
 
 ## Corrección aplicada
 
-`BUILD_FIX_1_1_ROBUST_FUNCTION_BOUNDARY_PATH_CANONICALIZATION`
+`BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS`
 
 Se corrigió:
 
-- Reemplazo robusto por límites de función top-level.
-- `normalize_path()` ya no usa `lstrip("./")`.
-- `canonicalize_destination_path()` inspecciona raw path parts antes de normalizar.
-- `../` y `../../` bloquean como `PATH_TRAVERSAL`.
-- dot segments en destino bloquean como `PATH_DOT_SEGMENT`.
-- absolute/UNC/drive paths bloquean.
-- root escape bloquea de forma determinística.
+- Se preservó la disciplina de parser raw porcelain.
+- Se cerró el fallo `MANIFEST_PRODUCED_ARTIFACTS_INCOMPLETE`.
+- El summary humano queda incluido como artifact producido.
+- `BRIDGE_BLOCK_8_MANIFEST.json` incluye todos los produced_artifacts requeridos.
+- Seal recalculado contra manifest completo.
 
 ## Evidencia
 
-- Dirty recovery before fix: `PASS`
-- Partial allowed cleanup: `PASS`
-- BLOQUE 7 gate closure artifacts: `PASS`
-- Patch runtime semantics: `PASS`
+- Repo clean/synced inicial: `PASS`
+- Previous manifest gap confirmed: `PASS`
 - Static source scan: `PASS`
 - PrivilegedPromotionHelper scanner policy: `PASS`
 - py_compile: `PASS`
-- targeted pytest: `349 passed`
-- manual_brain_bridge pytest: `2453 passed`
-- manifest/seal: `PASS`
+- targeted pytest: `350 passed`
+- manual_brain_bridge pytest: `2454 passed`
+- manifest produced_artifacts completeness: `PASS`
 - no-touch protected roots: `PASS`
-- repo clean/synced: `PASS`
 
 ## Permisos
 
-- Post-build audit allowed next: `TRUE`
+- Post-build audit retry allowed next: `TRUE`
 - Validation map now: `FALSE`
 - Validation now: `FALSE`
 - Gate closure now: `FALSE`
@@ -53,11 +48,6 @@ Se corrigió:
 - execution/n8n/webhook/publishing/CAPA9: `FALSE`
 - rollback execution: `FALSE`
 
-## Seal
-
-- Manifest SHA256: `530853104ae490d5f31c5c04b7dab2659d0271ca0af08255b462ba24b1da05fa`
-- Seal SHA256: `e20dcee0521035af298aa04954b021ab8ea005ad2146cb5d3d2c254d0ceb073c`
-
 ## Next safe step
 
-`BLOQUE 8 POST-BUILD AUDIT`
+`BLOQUE 8 POST-BUILD AUDIT RETRY-1`

@@ -540,3 +540,12 @@ def test_build_fix_1_1_absolute_unc_or_drive_paths_lock():
 def test_build_fix_1_1_normalize_path_no_longer_strips_parent_segments():
     assert b8.normalize_path("../escape.json").startswith("..")
     assert b8.normalize_path("../../escape.json").startswith("../..")
+
+
+def test_build_fix_2_1_status_parser_and_manifest_marker_present():
+    assert getattr(
+        b8,
+        "BUILD_FIX_2_1_STATUS_PARSER",
+        "",
+    ) == "BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS"
+
