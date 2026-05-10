@@ -1,0 +1,1178 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "contract": "Block9ValidationMapContract",
+  "domain_count": 18,
+  "domains": [
+    {
+      "domain_id": "B9-VAL-D01",
+      "name": "Repository baseline and consumed audit commit",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D02",
+      "name": "Build commit surface allowlist integrity",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D03",
+      "name": "Post-build audit artifact integrity",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D04",
+      "name": "Build artifact manifest and seal integrity",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D05",
+      "name": "Standalone evidence resolver correctness",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D06",
+      "name": "Historical naming mismatch resilience",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B9-VAL-D07",
+      "name": "Test registry schema and immutability",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B9-VAL-D08",
+      "name": "Test count and coverage minimums",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B9-VAL-D09",
+      "name": "Negative and failure-injection tests",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B9-VAL-D10",
+      "name": "Assertion depth and result separation",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B9-VAL-D11",
+      "name": "Deterministic replay",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B9-VAL-D12",
+      "name": "Permission boundary and no execution",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D13",
+      "name": "No manual/current write",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D14",
+      "name": "No brain or reports-brain write",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D15",
+      "name": "No n8n/webhook/publishing/CAPA9",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D16",
+      "name": "No-touch protected roots",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B9-VAL-D17",
+      "name": "Runtime smoke and static source scan",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B9-VAL-D18",
+      "name": "Next step gating: validation plan only",
+      "risk": "CRITICAL"
+    }
+  ],
+  "gate": "VALIDATION_MAP",
+  "gate_count": 22,
+  "git_context": {
+    "audited_build_short": "b7eda2d",
+    "audited_build_subject": "Build MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+    "branch": "main",
+    "post_build_audit_head_full": "f7c73889ed8aca9a4f7f01bdba6972bc49d2216c",
+    "post_build_audit_head_short": "f7c7388",
+    "post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 9 test harness 40 pruebas"
+  },
+  "next_safe_step": "BLOQUE_9_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "preconditions": {
+    "assertions": 135,
+    "build_artifacts_status": "BUILT_PENDING_POST_AUDIT",
+    "evidence_resolver_missing_real": 0,
+    "harness_gate_count": 22,
+    "harness_test_count": 45,
+    "post_build_audit_status": "BUILT_POST_AUDITED"
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_execution_allowed_now": false,
+  "validation_gates": [
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G01_REPO_CLEAN_SYNCED",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G02_EXPECTED_AUDIT_HEAD_SUBJECT",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G03_EXPECTED_BUILD_PARENT",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G04_AUDIT_ARTIFACTS_PRESENT",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G05_AUDIT_MANIFEST_SEAL_VALID",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G06_BUILD_ARTIFACTS_PRESENT",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G07_BUILD_MANIFEST_SEAL_VALID",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G08_EVIDENCE_RESOLVER_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G09_MISSING_REAL_ZERO",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G10_TEST_COUNT_45",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G11_REQUIRED_TEST_COUNT_40",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G12_NEGATIVE_TESTS_THRESHOLD",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G13_FAILURE_INJECTION_THRESHOLD",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G14_ASSERTIONS_135",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G15_GATES_22_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G16_REGISTRY_IMMUTABILITY",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G17_DETERMINISTIC_REPLAY",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G18_STATIC_SCAN_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G19_PY_COMPILE_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G20_RUNTIME_SMOKE_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G21_NO_TOUCH_PROTECTED_ROOTS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G22_NEXT_STEP_VALIDATION_PLAN_ONLY",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    }
+  ],
+  "validation_item_count": 36,
+  "validation_items": [
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D01",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D01-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D01",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D01-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D02",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D02-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D02",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D02-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D03",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D03-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D03",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D03-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D04",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D04-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D04",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D04-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D05",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D05-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D05",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D05-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D06",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D06-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D06",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D06-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D07",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D07-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D07",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D07-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D08",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D08-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D08",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D08-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D09",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D09-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D09",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D09-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D10",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D10-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D10",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D10-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D11",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D11-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D11",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D11-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D12",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D12-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D12",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D12-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D13",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D13-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D13",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D13-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D14",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D14-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D14",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D14-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D15",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D15-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D15",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D15-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D16",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D16-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D16",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D16-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D17",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D17-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D17",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D17-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D18",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D18-I01",
+      "mode": "POSITIVE_VALIDATION",
+      "mutation_allowed": false,
+      "required_result": "PASS",
+      "validation_plan_required_before_execution": true
+    },
+    {
+      "dangerous_permissions_expected_false": [
+        "execution_allowed_now",
+        "external_execution_allowed_now",
+        "manual_write_allowed_now",
+        "brain_write_allowed_now",
+        "reports_brain_write_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "publishing_allowed_now",
+        "capa9_allowed_now",
+        "bloque_10_blueprint_allowed_now",
+        "bloque_10_implementation_plan_allowed_now",
+        "bloque_10_build_allowed_now",
+        "bloque_10_validation_allowed_now",
+        "global_execution_allowed_now"
+      ],
+      "domain_id": "B9-VAL-D18",
+      "execution_phase": "BLOQUE_9_VALIDATION",
+      "item_id": "B9-VAL-D18-I02",
+      "mode": "NEGATIVE_BLOCKING",
+      "mutation_allowed": false,
+      "required_result": "LOCK_OR_BLOCK_ON_VIOLATION",
+      "validation_plan_required_before_execution": true
+    }
+  ],
+  "validation_plan_required_next": true
+}

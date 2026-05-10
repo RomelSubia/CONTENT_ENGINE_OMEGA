@@ -1,0 +1,174 @@
+{
+  "all_gates_defined": true,
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "contract": "ValidationGatesContract",
+  "failure_policy": "FAIL_CLOSED",
+  "gate": "VALIDATION_MAP",
+  "gates": [
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G01_REPO_CLEAN_SYNCED",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G02_EXPECTED_AUDIT_HEAD_SUBJECT",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G03_EXPECTED_BUILD_PARENT",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G04_AUDIT_ARTIFACTS_PRESENT",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G05_AUDIT_MANIFEST_SEAL_VALID",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G06_BUILD_ARTIFACTS_PRESENT",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G07_BUILD_MANIFEST_SEAL_VALID",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G08_EVIDENCE_RESOLVER_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G09_MISSING_REAL_ZERO",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G10_TEST_COUNT_45",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G11_REQUIRED_TEST_COUNT_40",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G12_NEGATIVE_TESTS_THRESHOLD",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G13_FAILURE_INJECTION_THRESHOLD",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G14_ASSERTIONS_135",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G15_GATES_22_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G16_REGISTRY_IMMUTABILITY",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G17_DETERMINISTIC_REPLAY",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G18_STATIC_SCAN_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G19_PY_COMPILE_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G20_RUNTIME_SMOKE_PASS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G21_NO_TOUCH_PROTECTED_ROOTS",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G22_NEXT_STEP_VALIDATION_PLAN_ONLY",
+      "required_for_validation": true,
+      "status": "DEFINED"
+    }
+  ],
+  "git_context": {
+    "audited_build_short": "b7eda2d",
+    "audited_build_subject": "Build MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+    "branch": "main",
+    "post_build_audit_head_full": "f7c73889ed8aca9a4f7f01bdba6972bc49d2216c",
+    "post_build_audit_head_short": "f7c7388",
+    "post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 9 test harness 40 pruebas"
+  },
+  "next_safe_step": "BLOQUE_9_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "required_gate_count": 22,
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

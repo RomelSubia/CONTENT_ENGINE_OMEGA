@@ -1,0 +1,61 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "contract": "ValidationTraceabilityMapContract",
+  "gate": "VALIDATION_MAP",
+  "git_context": {
+    "audited_build_short": "b7eda2d",
+    "audited_build_subject": "Build MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+    "branch": "main",
+    "post_build_audit_head_full": "f7c73889ed8aca9a4f7f01bdba6972bc49d2216c",
+    "post_build_audit_head_short": "f7c7388",
+    "post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 9 test harness 40 pruebas"
+  },
+  "next_safe_step": "BLOQUE_9_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "traceability": {
+    "audited_build": {
+      "head": "b7eda2d",
+      "subject": "Build MANUAL-CEREBRO bridge block 9 test harness 40 pruebas"
+    },
+    "build_artifacts": {
+      "manifest_sha256": "511640d3e0cb620fbc3da81140c219ba4d2d5eaf6383d81e8ba0ebe7326f3448",
+      "seal_sha256": "46acd243870a0dab6030204187777e21a44519b69f38b7fa48cdf4e5e4f984cc"
+    },
+    "consumed_post_build_audit": {
+      "head": "f7c7388",
+      "subject": "Post-build audit MANUAL-CEREBRO bridge block 9 test harness 40 pruebas"
+    },
+    "post_build_audit_artifacts": {
+      "manifest_sha256": "1a80d1d67994cca055b1463cbc20f85d0fb55fcd6dbf03add6f5f2ac8bbf6311",
+      "seal_sha256": "3a3632f83df4cdda1ba73cf61d8ebe9ad90e22d6f79388ca9ef0d9ec96b2e697"
+    },
+    "status": "PASS",
+    "validation_map_consumes": [
+      "BLOQUE_9_BUILT_POST_AUDITED",
+      "BLOQUE_9_BUILD_FIX_2_STANDALONE",
+      "BLOQUE_9_POST_BUILD_AUDIT"
+    ]
+  }
+}
