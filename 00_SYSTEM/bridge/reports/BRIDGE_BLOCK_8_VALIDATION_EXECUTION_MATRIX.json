@@ -1,0 +1,3216 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_8_VALIDATION_EXECUTION",
+    "BLOQUE_8_GATE_CLOSURE",
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_post_build_audit_head": "1690cb5",
+  "consumed_post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_map": "BUILT_POST_AUDITED",
+  "execute_now": false,
+  "execution_matrix": [
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D01::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D01::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D01::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D01::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D01::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D01::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D01::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D01::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D01::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D01::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D01::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D01::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D01::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D01::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D01::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D01::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D01::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D01::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D01::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D01::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D01::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D01",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D01::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D02::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D02::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D02::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D02::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D02::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D02::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D02::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D02::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D02::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D02::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D02::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D02::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D02::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D02::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D02::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D02::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D02::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D02::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D02::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D02::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D02::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D02",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D02::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D03::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D03::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D03::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D03::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D03::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D03::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D03::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D03::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D03::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D03::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D03::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D03::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D03::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D03::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D03::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D03::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D03::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D03::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D03::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D03::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D03::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D03",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D03::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D04::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D04::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D04::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D04::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D04::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D04::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D04::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D04::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D04::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D04::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D04::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D04::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D04::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D04::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D04::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D04::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D04::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D04::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D04::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D04::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D04::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D04",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D04::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D05::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D05::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D05::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D05::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D05::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D05::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D05::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D05::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D05::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D05::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D05::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D05::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D05::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D05::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D05::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D05::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D05::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D05::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D05::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D05::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D05::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D05",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D05::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D06::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D06::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D06::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D06::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D06::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D06::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D06::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D06::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D06::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D06::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D06::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D06::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D06::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D06::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D06::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D06::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D06::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D06::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D06::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D06::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D06::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D06",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D06::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D07::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D07::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D07::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D07::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D07::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D07::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D07::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D07::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D07::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D07::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D07::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D07::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D07::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D07::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D07::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D07::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D07::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D07::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D07::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D07::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D07::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D07",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D07::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D08::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D08::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D08::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D08::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D08::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D08::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D08::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D08::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D08::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D08::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D08::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D08::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D08::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D08::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D08::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D08::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D08::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D08::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D08::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D08::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D08::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D08",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D08::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D09::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D09::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D09::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D09::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D09::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D09::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D09::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D09::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D09::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D09::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D09::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D09::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D09::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D09::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D09::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D09::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D09::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D09::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D09::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D09::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D09::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D09",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D09::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D10::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D10::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D10::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D10::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D10::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D10::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D10::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D10::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D10::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D10::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D10::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D10::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D10::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D10::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D10::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D10::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D10::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D10::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D10::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D10::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D10::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D10",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D10::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D11::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D11::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D11::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D11::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D11::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D11::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D11::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D11::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D11::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D11::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D11::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D11::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D11::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D11::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D11::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D11::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D11::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D11::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D11::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D11::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D11::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D11",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D11::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D12::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D12::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D12::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D12::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D12::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D12::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D12::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D12::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D12::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D12::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D12::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D12::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D12::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D12::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D12::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D12::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D12::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D12::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D12::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D12::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D12::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D12",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D12::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D13::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D13::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D13::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D13::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D13::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D13::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D13::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D13::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D13::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D13::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D13::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D13::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D13::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D13::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D13::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D13::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D13::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D13::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D13::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D13::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D13::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D13",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D13::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D14::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D14::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D14::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D14::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D14::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D14::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D14::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D14::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D14::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D14::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D14::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D14::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D14::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D14::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D14::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D14::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D14::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D14::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D14::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D14::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D14::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D14",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D14::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D15::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D15::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D15::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D15::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D15::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D15::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D15::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D15::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D15::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D15::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D15::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D15::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D15::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D15::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D15::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D15::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D15::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D15::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D15::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D15::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D15::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D15",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D15::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D16::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D16::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D16::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D16::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D16::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D16::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D16::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D16::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D16::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D16::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D16::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D16::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D16::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D16::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D16::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D16::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D16::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D16::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D16::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D16::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D16::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D16",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D16::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D17::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D17::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D17::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D17::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D17::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D17::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D17::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D17::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D17::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D17::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D17::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D17::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D17::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D17::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D17::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D17::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D17::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D17::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D17::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D17::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D17::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D17",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D17::B8-G22",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G01",
+      "matrix_id": "B8-D18::B8-G01",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G02",
+      "matrix_id": "B8-D18::B8-G02",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G03",
+      "matrix_id": "B8-D18::B8-G03",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G04",
+      "matrix_id": "B8-D18::B8-G04",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G05",
+      "matrix_id": "B8-D18::B8-G05",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G06",
+      "matrix_id": "B8-D18::B8-G06",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G07",
+      "matrix_id": "B8-D18::B8-G07",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G08",
+      "matrix_id": "B8-D18::B8-G08",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G09",
+      "matrix_id": "B8-D18::B8-G09",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G10",
+      "matrix_id": "B8-D18::B8-G10",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G11",
+      "matrix_id": "B8-D18::B8-G11",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G12",
+      "matrix_id": "B8-D18::B8-G12",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G13",
+      "matrix_id": "B8-D18::B8-G13",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G14",
+      "matrix_id": "B8-D18::B8-G14",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G15",
+      "matrix_id": "B8-D18::B8-G15",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G16",
+      "matrix_id": "B8-D18::B8-G16",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G17",
+      "matrix_id": "B8-D18::B8-G17",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G18",
+      "matrix_id": "B8-D18::B8-G18",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G19",
+      "matrix_id": "B8-D18::B8-G19",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G20",
+      "matrix_id": "B8-D18::B8-G20",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G21",
+      "matrix_id": "B8-D18::B8-G21",
+      "planned_in_validation_plan": true
+    },
+    {
+      "domain_id": "B8-D18",
+      "execute_now": false,
+      "expected_failure_policy": "FAIL_CLOSED",
+      "gate_id": "B8-G22",
+      "matrix_id": "B8-D18::B8-G22",
+      "planned_in_validation_plan": true
+    }
+  ],
+  "execution_matrix_count": 396,
+  "gate": "VALIDATION_MAP",
+  "next_safe_step": "BLOQUE_8_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_VALIDATION_EXECUTION_MATRIX",
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

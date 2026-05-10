@@ -1,0 +1,223 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_8_VALIDATION_EXECUTION",
+    "BLOQUE_8_GATE_CLOSURE",
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_post_build_audit_head": "1690cb5",
+  "consumed_post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_map": "BUILT_POST_AUDITED",
+  "gate": "VALIDATION_MAP",
+  "gate_count": 22,
+  "next_safe_step": "BLOQUE_8_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_VALIDATION_GATES_MAP",
+  "result": "PASS",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_gates": [
+    {
+      "failure_status": "LOCK",
+      "gate": "HEAD_AND_BRANCH_GATE",
+      "gate_id": "B8-G01",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "HEAD must equal validation-map base 1690cb5 on main and upstream must match."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "WORKTREE_CLEAN_GATE",
+      "gate_id": "B8-G02",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Worktree must be clean before validation plan or execution."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "POST_BUILD_AUDIT_CONSUMPTION_GATE",
+      "gate_id": "B8-G03",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Post-build audit retry-1 artifacts must be canonical and PASS."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "BUILD_ARTIFACTS_COMPLETENESS_GATE",
+      "gate_id": "B8-G04",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Build produced_artifacts must remain 11/11 complete."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "STATIC_SCAN_GATE",
+      "gate_id": "B8-G05",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Static scan must block forbidden imports/calls and enforce privileged helper scope."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "PY_COMPILE_GATE",
+      "gate_id": "B8-G06",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "BLOQUE 8 source must compile."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "TARGETED_TEST_GATE",
+      "gate_id": "B8-G07",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "BLOQUE 8 targeted tests must meet or exceed 350 passed."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "SUITE_TEST_GATE",
+      "gate_id": "B8-G08",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "manual_brain_bridge suite must meet or exceed 2454 passed."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "TRANSACTION_CONTRACT_GATE",
+      "gate_id": "B8-G09",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Atomic write transaction contracts must validate required fields and permissions."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "PATH_TRAVERSAL_GATE",
+      "gate_id": "B8-G10",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Traversal, dot segments, absolute, UNC and drive paths must lock."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "PROTECTED_ROOT_GATE",
+      "gate_id": "B8-G11",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Protected roots must be blocked and no-touch fingerprints must remain unchanged."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "LOCK_GATE",
+      "gate_id": "B8-G12",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Active/stale/corrupt/head-mismatch/scope-mismatch locks must fail closed."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "STAGING_GATE",
+      "gate_id": "B8-G13",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Staging manifest must reject missing/unplanned/bad-hash/oversized outputs."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "PROMOTION_HELPER_GATE",
+      "gate_id": "B8-G14",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Only privileged helper may promote/replace; raw paths must be rejected."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "QUARANTINE_RECOVERY_GATE",
+      "gate_id": "B8-G15",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Quarantine and recovery contracts must fail closed on dangerous cases."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "FAILURE_POINT_GATE",
+      "gate_id": "B8-G16",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "All 13 failpoints must map to valid recovery classes."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "ROLLBACK_DRAFT_ONLY_GATE",
+      "gate_id": "B8-G17",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Rollback execution and destructive rollback content must lock."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "NO_REINTERPRETATION_GATE",
+      "gate_id": "B8-G18",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "No plan mutation, allowlist expansion, output substitution or permission inference."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "POST_WRITE_AUDIT_GATE",
+      "gate_id": "B8-G19",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Post-write audit must validate output scope, hashes, no-touch, lock release and tmp residue."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "READINESS_PERMISSION_GATE",
+      "gate_id": "B8-G20",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "After validation map only validation plan is allowed next."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "MANIFEST_SEAL_GATE",
+      "gate_id": "B8-G21",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "Manifest/seal must be canonical, hashed and internally consistent."
+    },
+    {
+      "failure_status": "LOCK",
+      "gate": "NO_TOUCH_FINAL_GATE",
+      "gate_id": "B8-G22",
+      "required_for_validation_execution": true,
+      "required_for_validation_plan": true,
+      "requirement": "No protected roots or out-of-scope files may change during validation map."
+    }
+  ]
+}
