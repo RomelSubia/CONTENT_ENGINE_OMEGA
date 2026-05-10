@@ -1,0 +1,60 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "contract": "GateClosureNextLayerReadinessMapContract",
+  "gate": "GATE_CLOSURE",
+  "git_context": {
+    "branch": "main",
+    "validation_head_full": "4832275dcad627d96ec6b53f679cbb832ed5749b",
+    "validation_head_short": "4832275",
+    "validation_plan_short": "3650f05",
+    "validation_plan_subject": "Define validation plan MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+    "validation_subject": "Validate MANUAL-CEREBRO bridge block 9 test harness 40 pruebas"
+  },
+  "next_safe_step": "BLOQUE_10_BLUEPRINT",
+  "permissions": {
+    "bloque_10_blueprint_allowed_next": true,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "readiness": {
+    "bloque_10_blueprint_allowed_next": true,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "closed_block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+    "current_status": "CLOSED_VALIDATED",
+    "execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "next_layer": {
+      "allowed_next": "BLUEPRINT_ONLY",
+      "block": "BLOQUE_10",
+      "build_allowed_now": false,
+      "implementation_plan_allowed_now": false,
+      "name": "Validation + audit + commit/push/sync",
+      "validation_allowed_now": false
+    },
+    "next_safe_step": "BLOQUE_10_BLUEPRINT",
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "status": "PASS",
+    "webhook_allowed_now": false
+  },
+  "result": "PASS",
+  "status": "CLOSED_VALIDATED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

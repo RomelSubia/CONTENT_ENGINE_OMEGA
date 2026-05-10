@@ -1,0 +1,49 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "canonical_json": true,
+  "consumed_validation_commit": "4832275",
+  "consumed_validation_subject": "Validate MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+  "gate": "GATE_CLOSURE",
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_INTEGRITY_AUDIT.json": "e066375c599f95ae1ce03495541e476d45906694a680e2b2ed3dade3e4d2ed57",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json": "e527b9db3cb9344adbf35a45a3d1139fa86826f1c05fab188b737013e43b0b60",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_NO_TOUCH_REPORT.json": "818ed78ecf77976ad57297529d246e8f6553e69e6f7f6433b7757c7264319e0f",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_REPORT.json": "0afedcc124b322141ead83a991e63748c2dec86f761c7f62d84ef0371944db57",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_TRACEABILITY.json": "5764c91d43cd075676d4efb444a6f7d35ab959f5ac17ef434d5a401c04631832",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json": "7bf5ceabfb1126c04fae018db01236ae3d301197c1009918e9e04859340f540e",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_9_GATE_CLOSURE_SUMMARY.md": "208dc97cb0a555a6827ae08f8a1db3c61f08433ea38f2b82eb34d8ef12c60f86"
+  },
+  "next_safe_step": "BLOQUE_10_BLUEPRINT",
+  "permissions": {
+    "bloque_10_blueprint_allowed_next": true,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_9_GATE_CLOSURE_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_9_GATE_CLOSURE_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_INTEGRITY_AUDIT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_TRACEABILITY.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_9_GATE_CLOSURE_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "CLOSED_VALIDATED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
