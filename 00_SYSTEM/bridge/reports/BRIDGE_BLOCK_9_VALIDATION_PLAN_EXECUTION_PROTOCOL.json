@@ -1,0 +1,187 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "contract": "ValidationPlanExecutionProtocolContract",
+  "execution_protocol": {
+    "command_count": 9,
+    "commands": [
+      {
+        "command_id": "B9-VCMD-01",
+        "command_type": "git_read_only",
+        "description": "Confirm repo branch/head/upstream and expected validation plan base.",
+        "must_pass": true
+      },
+      {
+        "command_id": "B9-VCMD-02",
+        "command_type": "python_read_only",
+        "description": "Validate all BLOQUE 9 build/post-build/validation-map JSON artifacts are canonical.",
+        "must_pass": true
+      },
+      {
+        "command_id": "B9-VCMD-03",
+        "command_type": "python_read_only",
+        "description": "Validate manifest/seal hashes and produced_artifacts completeness.",
+        "must_pass": true
+      },
+      {
+        "command_id": "B9-VCMD-04",
+        "command_type": "python_ast_read_only",
+        "description": "Run static source/test scan.",
+        "must_pass": true
+      },
+      {
+        "command_id": "B9-VCMD-05",
+        "command_type": "python_compile_read_only",
+        "description": "Run py_compile for BLOQUE 9 source/test files.",
+        "must_pass": true
+      },
+      {
+        "command_id": "B9-VCMD-06",
+        "command_type": "pytest_read_only",
+        "description": "Run targeted pytest for BLOQUE 9 test harness.",
+        "expected_min_passed": 56,
+        "must_pass": true
+      },
+      {
+        "command_id": "B9-VCMD-07",
+        "command_type": "pytest_read_only",
+        "description": "Run manual_brain_bridge pytest suite.",
+        "expected_min_passed": 2510,
+        "must_pass": true
+      },
+      {
+        "command_id": "B9-VCMD-08",
+        "command_type": "python_runtime_read_only",
+        "description": "Run runtime self-check b9.validate_harness().",
+        "expected": {
+          "assertions": 135,
+          "gate_count": 22,
+          "test_count": 45
+        },
+        "must_pass": true
+      },
+      {
+        "command_id": "B9-VCMD-09",
+        "command_type": "filesystem_hash_read_only",
+        "description": "Compare protected root fingerprints before/after validation.",
+        "must_pass": true
+      }
+    ],
+    "mutation_policy": {
+      "brain_write_allowed": false,
+      "commit_allowed_only_for_validation_artifacts": true,
+      "external_execution_allowed": false,
+      "manual_write_allowed": false,
+      "reports_brain_write_allowed": false,
+      "source_mutation_allowed": false
+    },
+    "phase_count": 6,
+    "phases": [
+      {
+        "mutation_allowed": false,
+        "name": "Pre-validation repository and evidence baseline",
+        "phase_id": "B9-VPLAN-P01",
+        "purpose": "Confirm branch, HEAD, parent chain, repo clean/synced, and validation map status.",
+        "required_gates": [
+          "B9-VAL-G01_REPO_CLEAN_SYNCED",
+          "B9-VAL-G02_EXPECTED_AUDIT_HEAD_SUBJECT",
+          "B9-VAL-G03_EXPECTED_BUILD_PARENT"
+        ]
+      },
+      {
+        "mutation_allowed": false,
+        "name": "Artifact integrity validation",
+        "phase_id": "B9-VPLAN-P02",
+        "purpose": "Validate canonical JSON, manifest/seal hashes, produced artifact completeness, and report integrity.",
+        "required_gates": [
+          "B9-VAL-G04_AUDIT_ARTIFACTS_PRESENT",
+          "B9-VAL-G05_AUDIT_MANIFEST_SEAL_VALID",
+          "B9-VAL-G06_BUILD_ARTIFACTS_PRESENT",
+          "B9-VAL-G07_BUILD_MANIFEST_SEAL_VALID"
+        ]
+      },
+      {
+        "mutation_allowed": false,
+        "name": "Evidence resolver regression validation",
+        "phase_id": "B9-VPLAN-P03",
+        "purpose": "Prove standalone resolver remains robust against historical naming mismatch.",
+        "required_gates": [
+          "B9-VAL-G08_EVIDENCE_RESOLVER_PASS",
+          "B9-VAL-G09_MISSING_REAL_ZERO"
+        ]
+      },
+      {
+        "mutation_allowed": false,
+        "name": "Harness depth validation",
+        "phase_id": "B9-VPLAN-P04",
+        "purpose": "Validate 45 tests, 40 minimum, negative tests, failure injection, assertions, and 22 gates.",
+        "required_gates": [
+          "B9-VAL-G10_TEST_COUNT_45",
+          "B9-VAL-G11_REQUIRED_TEST_COUNT_40",
+          "B9-VAL-G12_NEGATIVE_TESTS_THRESHOLD",
+          "B9-VAL-G13_FAILURE_INJECTION_THRESHOLD",
+          "B9-VAL-G14_ASSERTIONS_135",
+          "B9-VAL-G15_GATES_22_PASS"
+        ]
+      },
+      {
+        "mutation_allowed": false,
+        "name": "Determinism and immutability validation",
+        "phase_id": "B9-VPLAN-P05",
+        "purpose": "Validate registry immutability, deterministic replay, result separation, and no hidden mutation.",
+        "required_gates": [
+          "B9-VAL-G16_REGISTRY_IMMUTABILITY",
+          "B9-VAL-G17_DETERMINISTIC_REPLAY"
+        ]
+      },
+      {
+        "mutation_allowed": false,
+        "name": "Runtime/static/no-touch validation",
+        "phase_id": "B9-VPLAN-P06",
+        "purpose": "Validate static scan, py_compile, runtime smoke, protected root fingerprints, and next-step gating.",
+        "required_gates": [
+          "B9-VAL-G18_STATIC_SCAN_PASS",
+          "B9-VAL-G19_PY_COMPILE_PASS",
+          "B9-VAL-G20_RUNTIME_SMOKE_PASS",
+          "B9-VAL-G21_NO_TOUCH_PROTECTED_ROOTS",
+          "B9-VAL-G22_NEXT_STEP_VALIDATION_PLAN_ONLY"
+        ]
+      }
+    ],
+    "requires_next_user_request": "BLOQUE_9_VALIDATION",
+    "status": "PASS",
+    "validation_allowed_next": true,
+    "validation_execution_allowed_now": false
+  },
+  "gate": "VALIDATION_PLAN",
+  "git_context": {
+    "branch": "main",
+    "post_build_audit_short": "f7c7388",
+    "post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+    "validation_map_head_full": "e1c3632a1095199cc4f3af6982931de8791b9239",
+    "validation_map_head_short": "e1c3632",
+    "validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 9 test harness 40 pruebas"
+  },
+  "next_safe_step": "BLOQUE_9_VALIDATION",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
