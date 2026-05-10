@@ -1,0 +1,87 @@
+{
+  "audit_retry": "RETRY_1",
+  "audited_build_fix": "BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS",
+  "audited_build_head": "45fcf58",
+  "audited_build_subject": "Build fix 2.1 MANUAL-CEREBRO bridge block 8 status parser manifest completeness",
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_8_VALIDATION_PLAN",
+    "BLOQUE_8_VALIDATION",
+    "BLOQUE_8_GATE_CLOSURE",
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "canonical_json": true,
+  "consumed_build_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_BUILD_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_LOCK_AND_STALE_LOCK_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_NEXT_LAYER_READINESS_MAP.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_PATH_BOUNDARY_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_PERMISSION_AND_LIMITS_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_QUARANTINE_RECOVERY_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_STAGING_PROMOTION_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_TRANSACTION_CONTRACT_REPORT.json",
+    "04_SCRIPTS/python/manual_brain_bridge/bridge_block_8_atomic_writer_lock_quarantine_recovery.py",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY_SUMMARY.md",
+    "tests/manual_brain_bridge/test_bridge_block_8_atomic_writer_lock_quarantine_recovery.py"
+  ],
+  "gate": "POST_BUILD_AUDIT_RETRY_1",
+  "hash_algorithm": "sha256",
+  "manifest": "BRIDGE_BLOCK_8_POST_BUILD_AUDIT_MANIFEST",
+  "next_safe_step": "BLOQUE_8_VALIDATION_MAP",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_NEXT_LAYER_READINESS_MAP_AFTER_POST_BUILD_AUDIT.json",
+      "artifact_type": "block8_post_build_audit_retry_1_json",
+      "result": "PASS",
+      "sha256": "3ad8a172721c59e7bbbeea71a62004d2f4f5921a45ba56acf0e3b7178f6c2866",
+      "status": "BUILT_POST_AUDITED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_REPORT.json",
+      "artifact_type": "block8_post_build_audit_retry_1_json",
+      "result": "PASS",
+      "sha256": "79d536157aea90512522228ec39b6f7be1fb8d3c79b284858d45be428df44018",
+      "status": "BUILT_POST_AUDITED"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_TRACEABILITY.json",
+      "artifact_type": "block8_post_build_audit_retry_1_json",
+      "result": "PASS",
+      "sha256": "21473766a9535a117b56f6045e4e6007965a43df43334b225f505fb81ad67a6f",
+      "status": "BUILT_POST_AUDITED"
+    }
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

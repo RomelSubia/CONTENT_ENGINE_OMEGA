@@ -1,0 +1,86 @@
+{
+  "audited_build_fix": "BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS",
+  "audited_build_head": "45fcf58",
+  "audited_build_subject": "Build fix 2.1 MANUAL-CEREBRO bridge block 8 status parser manifest completeness",
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_8_VALIDATION_PLAN",
+    "BLOQUE_8_VALIDATION",
+    "BLOQUE_8_GATE_CLOSURE",
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "gate": "POST_BUILD_AUDIT_RETRY_1",
+  "next_safe_step": "BLOQUE_8_VALIDATION_MAP",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_POST_BUILD_AUDIT_TRACEABILITY",
+  "result": "PASS",
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "traceability": [
+    {
+      "commit": "1ba759a",
+      "node_id": "B07-gate-closure",
+      "status": "CLOSED_VALIDATED",
+      "subject": "Close MANUAL-CEREBRO bridge block 7 manifest traceability reports"
+    },
+    {
+      "commit": "2e19ebd",
+      "next_safe_step": "BLOQUE_8_POST_BUILD_AUDIT",
+      "node_id": "B08-build",
+      "status": "BUILT_PENDING_POST_AUDIT",
+      "subject": "Build MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+    },
+    {
+      "commit": "45fcf58",
+      "fix": "BUILD_FIX_2_1_RAW_PORCELAIN_STATUS_PARSER_AND_MANIFEST_COMPLETENESS",
+      "node_id": "B08-build-fix-2.1",
+      "produced_artifacts_actual_count": 11,
+      "produced_artifacts_completeness": "PASS",
+      "produced_artifacts_required_count": 11,
+      "status": "BUILT_PENDING_POST_AUDIT",
+      "subject": "Build fix 2.1 MANUAL-CEREBRO bridge block 8 status parser manifest completeness"
+    },
+    {
+      "commit": "PENDING_THIS_AUDIT_COMMIT",
+      "next_safe_step": "BLOQUE_8_VALIDATION_MAP",
+      "node_id": "B08-post-build-audit-retry-1",
+      "produced": [
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_SEAL.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_NEXT_LAYER_READINESS_MAP_AFTER_POST_BUILD_AUDIT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_REPORT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_TRACEABILITY.json",
+        "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_SUMMARY.md"
+      ],
+      "status": "BUILT_POST_AUDITED",
+      "subject": "Post-build audit MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+    }
+  ]
+}
