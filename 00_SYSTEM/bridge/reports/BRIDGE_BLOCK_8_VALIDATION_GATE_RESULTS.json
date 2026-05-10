@@ -1,0 +1,176 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_validation_plan_head": "3ee7f4d",
+  "consumed_validation_plan_subject": "Define validation plan MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_validation": "VALIDATION_PLAN_DEFINED",
+  "failed_gates": [],
+  "gate": "VALIDATION",
+  "gate_count": 22,
+  "gate_results": [
+    {
+      "failure_policy": "LOCK",
+      "gate": "HEAD_AND_BRANCH_GATE",
+      "gate_id": "B8-G01",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "WORKTREE_CLEAN_GATE",
+      "gate_id": "B8-G02",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "VALIDATION_PLAN_CONSUMPTION_GATE",
+      "gate_id": "B8-G03",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "BUILD_ARTIFACTS_COMPLETENESS_GATE",
+      "gate_id": "B8-G04",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "STATIC_SCAN_GATE",
+      "gate_id": "B8-G05",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "PY_COMPILE_GATE",
+      "gate_id": "B8-G06",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "TARGETED_TEST_GATE",
+      "gate_id": "B8-G07",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "SUITE_TEST_GATE",
+      "gate_id": "B8-G08",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "TRANSACTION_CONTRACT_GATE",
+      "gate_id": "B8-G09",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "PATH_TRAVERSAL_GATE",
+      "gate_id": "B8-G10",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "PROTECTED_ROOT_GATE",
+      "gate_id": "B8-G11",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "LOCK_GATE",
+      "gate_id": "B8-G12",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "STAGING_GATE",
+      "gate_id": "B8-G13",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "PROMOTION_HELPER_GATE",
+      "gate_id": "B8-G14",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "QUARANTINE_RECOVERY_GATE",
+      "gate_id": "B8-G15",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "FAILURE_POINT_GATE",
+      "gate_id": "B8-G16",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "ROLLBACK_DRAFT_ONLY_GATE",
+      "gate_id": "B8-G17",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "NO_REINTERPRETATION_GATE",
+      "gate_id": "B8-G18",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "POST_WRITE_AUDIT_GATE",
+      "gate_id": "B8-G19",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "READINESS_PERMISSION_GATE",
+      "gate_id": "B8-G20",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "MANIFEST_SEAL_GATE",
+      "gate_id": "B8-G21",
+      "result": "PASS"
+    },
+    {
+      "failure_policy": "LOCK",
+      "gate": "NO_TOUCH_FINAL_GATE",
+      "gate_id": "B8-G22",
+      "result": "PASS"
+    }
+  ],
+  "next_safe_step": "BLOQUE_8_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_VALIDATION_GATE_RESULTS",
+  "result": "PASS",
+  "status": "VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

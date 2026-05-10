@@ -1,0 +1,140 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_validation_plan_head": "3ee7f4d",
+  "consumed_validation_plan_subject": "Define validation plan MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_validation": "VALIDATION_PLAN_DEFINED",
+  "gate": "VALIDATION",
+  "next_safe_step": "BLOQUE_8_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_VALIDATION_RUNTIME_SEMANTICS",
+  "result": "PASS",
+  "runtime_semantics": {
+    "locked_path_cases": {
+      "../../escape.json": {
+        "findings": [
+          "PATH_ESCAPES_ROOT",
+          "PATH_TRAVERSAL"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "../escape.json": {
+        "findings": [
+          "PATH_ESCAPES_ROOT",
+          "PATH_TRAVERSAL"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "././escape.json": {
+        "findings": [
+          "PATH_DOT_SEGMENT"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "./escape.json": {
+        "findings": [
+          "PATH_DOT_SEGMENT"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "//server/share/file.json": {
+        "findings": [
+          "ABSOLUTE_OR_UNC_PATH"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "/tmp/escape.json": {
+        "findings": [
+          "ABSOLUTE_OR_UNC_PATH"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "00_SYSTEM/brain/unsafe.json": {
+        "findings": [
+          "PROTECTED_ROOT"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "00_SYSTEM/bridge/../brain/x.json": {
+        "findings": [
+          "PATH_TRAVERSAL"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "00_SYSTEM/manual/current/unsafe.md": {
+        "findings": [
+          "PROTECTED_ROOT"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "00_SYSTEM/reports/brain/unsafe.json": {
+        "findings": [
+          "PROTECTED_ROOT"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "C:/Windows/system32/file.txt": {
+        "findings": [
+          "PATH_ESCAPES_ROOT",
+          "WINDOWS_DRIVE_PATH"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      }
+    },
+    "normalize_path_parent_segments_preserved": true,
+    "report_payload_contract": "PASS",
+    "required_attrs_present": [
+      "normalize_path",
+      "canonicalize_destination_path",
+      "build_block8_report_payloads",
+      "PASS",
+      "LOCK",
+      "BLOCK"
+    ],
+    "runtime_semantic_validation": "PASS",
+    "safe_path_case": {
+      "findings": [],
+      "reason": "PATH_CANONICALIZED",
+      "status": "PASS"
+    }
+  },
+  "status": "VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

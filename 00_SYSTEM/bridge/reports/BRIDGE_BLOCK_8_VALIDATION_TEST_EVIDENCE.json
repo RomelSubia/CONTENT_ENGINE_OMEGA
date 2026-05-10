@@ -1,0 +1,63 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_validation_plan_head": "3ee7f4d",
+  "consumed_validation_plan_subject": "Define validation plan MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_validation": "VALIDATION_PLAN_DEFINED",
+  "gate": "VALIDATION",
+  "minimums": {
+    "manual_brain_bridge_pytest_minimum": 2454,
+    "targeted_pytest_minimum": 350
+  },
+  "next_safe_step": "BLOQUE_8_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_VALIDATION_TEST_EVIDENCE",
+  "result": "PASS",
+  "static_scan": {
+    "absolute_unc_guard_present": true,
+    "build_fix_2_1_marker_present": true,
+    "dot_segment_guard_present": true,
+    "path_traversal_guard_present": true,
+    "privileged_helper_scope_enforced": true,
+    "privileged_replace_calls_allowed": 1,
+    "safe_string_replace_calls_allowed": 3,
+    "static_source_scan": "PASS",
+    "unsafe_lstrip_absent": true,
+    "windows_drive_guard_present": true
+  },
+  "status": "VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_report": {
+    "manual_brain_bridge_pytest": "2454 passed",
+    "py_compile": "PASS",
+    "suite_minimum_required": 2454,
+    "targeted_minimum_required": 350,
+    "targeted_pytest": "350 passed"
+  }
+}
