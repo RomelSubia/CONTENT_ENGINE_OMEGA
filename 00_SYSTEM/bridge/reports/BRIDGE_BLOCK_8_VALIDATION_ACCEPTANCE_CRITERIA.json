@@ -1,0 +1,129 @@
+{
+  "acceptance_criteria": [
+    {
+      "criterion": "Repo invariants",
+      "criterion_id": "B8-AC01",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "main branch, expected HEAD, upstream sync and clean worktree before validation."
+    },
+    {
+      "criterion": "Validation map consumed",
+      "criterion_id": "B8-AC02",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "18 domains, 22 gates and 396 execution matrix entries consumed exactly."
+    },
+    {
+      "criterion": "Build artifact integrity",
+      "criterion_id": "B8-AC03",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "Build produced_artifacts remain 11/11 complete with summary included."
+    },
+    {
+      "criterion": "Static safety",
+      "criterion_id": "B8-AC04",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "Forbidden imports/calls absent; privileged replace exactly scoped."
+    },
+    {
+      "criterion": "Compilation",
+      "criterion_id": "B8-AC05",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "py_compile passes for BLOQUE 8 source."
+    },
+    {
+      "criterion": "Targeted tests",
+      "criterion_id": "B8-AC06",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "BLOQUE 8 targeted pytest >= 350 passed."
+    },
+    {
+      "criterion": "Full bridge tests",
+      "criterion_id": "B8-AC07",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "tests/manual_brain_bridge pytest >= 2454 passed."
+    },
+    {
+      "criterion": "Path hardening",
+      "criterion_id": "B8-AC08",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "Traversal, dot segment, absolute/UNC/drive and protected root cases lock."
+    },
+    {
+      "criterion": "Lock/recovery hardening",
+      "criterion_id": "B8-AC09",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "Stale/corrupt/active locks, quarantine, recovery and rollback draft tests pass."
+    },
+    {
+      "criterion": "No-touch",
+      "criterion_id": "B8-AC10",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "Protected root fingerprints unchanged before/after validation."
+    },
+    {
+      "criterion": "Manifest/seal",
+      "criterion_id": "B8-AC11",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "Validation artifacts canonical; manifest/seal hashes valid."
+    },
+    {
+      "criterion": "Readiness",
+      "criterion_id": "B8-AC12",
+      "failure_status": "LOCK",
+      "required_for_validation_pass": true,
+      "requirement": "Only gate closure becomes allowed after validation; BLOQUE 9/execution remain blocked."
+    }
+  ],
+  "acceptance_criteria_count": 12,
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_8_GATE_CLOSURE",
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_validation_map_head": "af1befd",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_plan": "VALIDATION_MAP_DEFINED",
+  "gate": "VALIDATION_PLAN",
+  "next_safe_step": "BLOQUE_8_VALIDATION",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_VALIDATION_ACCEPTANCE_CRITERIA",
+  "result": "PASS",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

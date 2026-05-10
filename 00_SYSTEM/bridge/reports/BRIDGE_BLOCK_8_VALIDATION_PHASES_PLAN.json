@@ -1,0 +1,101 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_8_GATE_CLOSURE",
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_validation_map_head": "af1befd",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_plan": "VALIDATION_MAP_DEFINED",
+  "gate": "VALIDATION_PLAN",
+  "next_safe_step": "BLOQUE_8_VALIDATION",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "phase_count": 8,
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_VALIDATION_PHASES_PLAN",
+  "result": "PASS",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "validation_phases": [
+    {
+      "failure_policy": "LOCK",
+      "must_execute_in_validation": true,
+      "phase": "BASELINE_CONSUMPTION_AND_REPO_INVARIANTS",
+      "phase_id": "B8-VP-P01",
+      "purpose": "Consume af1befd exactly; verify branch main, upstream sync, clean worktree, validation-map artifacts and no-touch baseline."
+    },
+    {
+      "failure_policy": "LOCK",
+      "must_execute_in_validation": true,
+      "phase": "BUILD_AND_AUDIT_ARTIFACT_INTEGRITY",
+      "phase_id": "B8-VP-P02",
+      "purpose": "Validate build, post-build audit and validation-map artifacts are canonical, complete and internally consistent."
+    },
+    {
+      "failure_policy": "LOCK",
+      "must_execute_in_validation": true,
+      "phase": "STATIC_AND_CONTRACT_GUARDS",
+      "phase_id": "B8-VP-P03",
+      "purpose": "Re-run static scanner, verify forbidden imports/calls, privileged helper scope and path canonicalization markers."
+    },
+    {
+      "failure_policy": "LOCK",
+      "must_execute_in_validation": true,
+      "phase": "TRANSACTION_AND_LIMIT_CONTRACT_VALIDATION",
+      "phase_id": "B8-VP-P04",
+      "purpose": "Execute transaction contract, permissions, limits, no reinterpretation and readiness tests."
+    },
+    {
+      "failure_policy": "LOCK",
+      "must_execute_in_validation": true,
+      "phase": "PATH_BOUNDARY_AND_PROTECTED_ROOT_VALIDATION",
+      "phase_id": "B8-VP-P05",
+      "purpose": "Execute traversal, dot segment, UNC, drive, root escape, allowlist and protected root no-touch tests."
+    },
+    {
+      "failure_policy": "LOCK",
+      "must_execute_in_validation": true,
+      "phase": "LOCK_STAGING_PROMOTION_VALIDATION",
+      "phase_id": "B8-VP-P06",
+      "purpose": "Execute lock lifecycle, stale-lock, staging, promotion helper and promotion manifest tests."
+    },
+    {
+      "failure_policy": "LOCK",
+      "must_execute_in_validation": true,
+      "phase": "QUARANTINE_RECOVERY_AND_ROLLBACK_DRAFT_VALIDATION",
+      "phase_id": "B8-VP-P07",
+      "purpose": "Execute quarantine, recovery class, failpoint matrix and rollback-draft-only tests."
+    },
+    {
+      "failure_policy": "LOCK",
+      "must_execute_in_validation": true,
+      "phase": "FULL_TEST_AND_NO_TOUCH_FINALIZATION",
+      "phase_id": "B8-VP-P08",
+      "purpose": "Run targeted pytest, full manual_brain_bridge suite, output scope, protected fingerprints, manifest/seal and readiness final checks."
+    }
+  ]
+}

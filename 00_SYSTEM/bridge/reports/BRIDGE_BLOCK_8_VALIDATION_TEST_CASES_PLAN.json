@@ -1,0 +1,245 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_8_GATE_CLOSURE",
+    "BLOQUE_9_BLUEPRINT",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_validation_map_head": "af1befd",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_plan": "VALIDATION_MAP_DEFINED",
+  "gate": "VALIDATION_PLAN",
+  "next_safe_step": "BLOQUE_8_VALIDATION",
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_VALIDATION_TEST_CASES_PLAN",
+  "result": "PASS",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_case_count": 20,
+  "validation_test_cases": [
+    {
+      "case_id": "B8-VAL-TC01",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "transaction required fields",
+      "phase_hint": "B8-VP-P01",
+      "target": "validate_atomic_write_transaction"
+    },
+    {
+      "case_id": "B8-VAL-TC02",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "unsafe permissions lock",
+      "phase_hint": "B8-VP-P01",
+      "target": "validate_atomic_write_transaction"
+    },
+    {
+      "case_id": "B8-VAL-TC03",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "transaction limits",
+      "phase_hint": "B8-VP-P01",
+      "target": "validate_transaction_limits"
+    },
+    {
+      "case_id": "B8-VAL-TC04",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "path traversal locks",
+      "phase_hint": "B8-VP-P02",
+      "target": "canonicalize_destination_path"
+    },
+    {
+      "case_id": "B8-VAL-TC05",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "dot segment locks",
+      "phase_hint": "B8-VP-P02",
+      "target": "canonicalize_destination_path"
+    },
+    {
+      "case_id": "B8-VAL-TC06",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "absolute/UNC/drive path locks",
+      "phase_hint": "B8-VP-P02",
+      "target": "canonicalize_destination_path"
+    },
+    {
+      "case_id": "B8-VAL-TC07",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "protected root locks",
+      "phase_hint": "B8-VP-P03",
+      "target": "validate_path_boundary"
+    },
+    {
+      "case_id": "B8-VAL-TC08",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "output allowlist exactness",
+      "phase_hint": "B8-VP-P03",
+      "target": "validate_output_allowlist"
+    },
+    {
+      "case_id": "B8-VAL-TC09",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "lock active/corrupt/mismatch behavior",
+      "phase_hint": "B8-VP-P03",
+      "target": "validate_lock_contract"
+    },
+    {
+      "case_id": "B8-VAL-TC10",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "stale lock audit policy",
+      "phase_hint": "B8-VP-P04",
+      "target": "classify_stale_lock"
+    },
+    {
+      "case_id": "B8-VAL-TC11",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "staging manifest planned/staged exactness",
+      "phase_hint": "B8-VP-P04",
+      "target": "validate_staging_manifest"
+    },
+    {
+      "case_id": "B8-VAL-TC12",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "privileged promotion helper scope",
+      "phase_hint": "B8-VP-P04",
+      "target": "validate_privileged_promotion_scope"
+    },
+    {
+      "case_id": "B8-VAL-TC13",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "promotion manifest hashes and journal",
+      "phase_hint": "B8-VP-P05",
+      "target": "validate_promotion_manifest"
+    },
+    {
+      "case_id": "B8-VAL-TC14",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "quarantine dangerous cases",
+      "phase_hint": "B8-VP-P05",
+      "target": "validate_quarantine_contract"
+    },
+    {
+      "case_id": "B8-VAL-TC15",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "failure point matrix 13/13",
+      "phase_hint": "B8-VP-P05",
+      "target": "validate_failure_point_matrix"
+    },
+    {
+      "case_id": "B8-VAL-TC16",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "recovery manifest class D/E behavior",
+      "phase_hint": "B8-VP-P06",
+      "target": "validate_recovery_manifest"
+    },
+    {
+      "case_id": "B8-VAL-TC17",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "rollback draft only",
+      "phase_hint": "B8-VP-P06",
+      "target": "validate_rollback_draft_only"
+    },
+    {
+      "case_id": "B8-VAL-TC18",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "no plan reinterpretation",
+      "phase_hint": "B8-VP-P06",
+      "target": "validate_no_plan_reinterpretation"
+    },
+    {
+      "case_id": "B8-VAL-TC19",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "post-write audit fail closed",
+      "phase_hint": "B8-VP-P07",
+      "target": "validate_post_write_audit"
+    },
+    {
+      "case_id": "B8-VAL-TC20",
+      "execute_in_validation": true,
+      "expected_status": "PASS_OR_EXPECTED_LOCK_BLOCK",
+      "failure_policy": "LOCK",
+      "minimum_assertions": 3,
+      "name": "readiness permissions",
+      "phase_hint": "B8-VP-P07",
+      "target": "build_block8_report_payloads"
+    }
+  ]
+}
