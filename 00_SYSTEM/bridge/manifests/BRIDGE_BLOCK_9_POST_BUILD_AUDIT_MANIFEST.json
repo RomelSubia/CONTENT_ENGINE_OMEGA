@@ -1,0 +1,53 @@
+{
+  "audited_build_commit": "b7eda2d",
+  "audited_build_subject": "Build MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "canonical_json": true,
+  "gate": "POST_BUILD_AUDIT",
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_ARTIFACT_INTEGRITY_AUDIT.json": "ac4699b10ad2afc0eb1f2d239019c60feede0093b0fb1c4f5a1e181967a74114",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_AUDIT_REPORT.json": "2d48cfd65df9b5a69e9af16fe724ea9dbf5bae72b3d2a3483b8683c0d9755da6",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_COMMIT_SURFACE_AUDIT.json": "3fe02c9c029d9c9b76f3d4962d266f8f6a6de437eda282adc8d2a7151ec1c7d0",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_NEXT_STEP_READINESS.json": "9733929401cdd56cae1e29565e0f465339c2dc12794cc2ee421719b44723eb96",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_NO_TOUCH_AUDIT.json": "fa16249ed02f46669a3d24d691446fbabbb65642414a96f4a4843d61a335ae3d",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_TEST_AUDIT.json": "e6f7f0f9e672bd6ce5838adaab7fd9554b6a38b137adac22af9f3065f6e27bf1",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_9_POST_BUILD_AUDIT_SUMMARY.md": "0c0f5351872b83cf31abf35b497ed0f2885874e8dbf4268366bd89c2f844d4b3"
+  },
+  "next_safe_step": "BLOQUE_9_VALIDATION_MAP",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_9_POST_BUILD_AUDIT_MANIFEST.json",
+    "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_9_POST_BUILD_AUDIT_SEAL.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_ARTIFACT_INTEGRITY_AUDIT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_AUDIT_REPORT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_COMMIT_SURFACE_AUDIT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_NEXT_STEP_READINESS.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_NO_TOUCH_AUDIT.json",
+    "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_POST_BUILD_TEST_AUDIT.json",
+    "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_9_POST_BUILD_AUDIT_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

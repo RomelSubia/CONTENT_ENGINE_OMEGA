@@ -1,0 +1,165 @@
+{
+  "artifact_audit": {
+    "discovery": {
+      "direct_count": 7,
+      "evidence_file_count_scanned": 575,
+      "missing_real_count": 0,
+      "semantic_count": 1,
+      "status": "PASS",
+      "traceability_anchored_count": 0
+    },
+    "harness_validation": {
+      "fail_unexpected_count": 0,
+      "failure_injection_count": 26,
+      "gate_count": 22,
+      "gates": {
+        "B9-G01_TEST_REGISTRY_SCHEMA_GATE": true,
+        "B9-G02_TEST_COUNT_MINIMUM_GATE": true,
+        "B9-G03_ASSERTION_DEPTH_GATE": true,
+        "B9-G04_NEGATIVE_TEST_RATIO_GATE": true,
+        "B9-G05_FAILURE_INJECTION_GATE": true,
+        "B9-G06_FIXTURE_SYNTHETIC_ONLY_GATE": true,
+        "B9-G07_DETERMINISTIC_REPLAY_GATE": true,
+        "B9-G08_PERMISSION_BOUNDARY_GATE": true,
+        "B9-G09_CROSS_BLOCK_COVERAGE_GATE": true,
+        "B9-G10_TEST_REGISTRY_IMMUTABILITY_GATE": true,
+        "B9-G11_EXECUTION_RESULTS_SEPARATION_GATE": true,
+        "B9-G12_FAILURE_INJECTION_EXPECTED_LOCK_GATE": true,
+        "B9-G13_NO_UNKNOWN_RESULTS_GATE": true,
+        "B9-G14_NO_UNEXPECTED_FAILURE_GATE": true,
+        "B9-G15_BLOCK_1_8_COVERAGE_GATE": true,
+        "B9-G16_POST_BUILD_AUDIT_ONLY_GATE": true,
+        "B9-G17_VALIDATION_BLOCKED_GATE": true,
+        "B9-G18_GATE_CLOSURE_BLOCKED_GATE": true,
+        "B9-G19_BLOQUE_10_BLOCKED_GATE": true,
+        "B9-G20_EXECUTION_BLOCKED_GATE": true,
+        "B9-G21_MANUAL_BRAIN_WRITE_BLOCKED_GATE": true,
+        "B9-G22_N8N_WEBHOOK_PUBLICATION_BLOCKED_GATE": true
+      },
+      "negative_test_count": 26,
+      "passed_gate_count": 22,
+      "recommended_test_count": 45,
+      "recommended_total_assertions": 135,
+      "required_failure_injection_count": 10,
+      "required_negative_test_count": 12,
+      "required_test_count": 40,
+      "required_total_assertions": 120,
+      "status": "PASS",
+      "test_count": 45,
+      "total_assertions": 135,
+      "unknown_count": 0
+    },
+    "manifest_sha256": "511640d3e0cb620fbc3da81140c219ba4d2d5eaf6383d81e8ba0ebe7326f3448",
+    "report_count": 14,
+    "reports": {
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_ASSERTION_MATRIX.json": {
+        "result": "PASS",
+        "sha256": "d7da08620d3eff7ce180cce9bb4591c6149cad699d384252c4eb595af1c8f7de",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_CONSUMED_CHAIN_ARTIFACTS_REPORT.json": {
+        "result": "PASS",
+        "sha256": "2231e05ba217dd76b9f327c532603ae8e1f1a2d8e075e32a9e7cdfc32cecdbba",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_CONSUMED_CHAIN_DISCOVERY_REPORT.json": {
+        "result": "PASS",
+        "sha256": "05c3b5682b9efd49c749522199cf82dbea3bb669ead3104205942fa11c9c8e04",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_COVERAGE_REPORT.json": {
+        "result": "PASS",
+        "sha256": "37c16b0ced7d3fe26af9147dde61ccea828392de88b3bd0ceae46f1805abc277",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_DETERMINISTIC_REPLAY_REPORT.json": {
+        "result": "PASS",
+        "sha256": "42f29a406006e0bd301f8eacb7d9c93661c69f3fcff1954d3087b6fd545bc15a",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_EXECUTION_RESULTS.json": {
+        "result": "PASS",
+        "sha256": "babb295e47cf0849aa7bed8eb9487b60aedc36ae36f61198a5c09bef22dcc661",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_FAILURE_INJECTION_MATRIX.json": {
+        "result": "PASS",
+        "sha256": "04963dea4c32c6e20e13d46b93901a3874001e20b6e0881a048112e67f5a3a82",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_NEXT_LAYER_READINESS_MAP.json": {
+        "result": "PASS",
+        "sha256": "22d58d00465e3f8abeaacd4b997cbe517bfa43bcae4b4bf953c5a187437a71f0",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_NO_TOUCH_REPORT.json": {
+        "result": "PASS",
+        "sha256": "badf0acfa48adc4e5e9ac50675e89d86d6a2bffaa70f2cdaf2a460b0727efbd1",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_PERMISSION_BOUNDARY_REPORT.json": {
+        "result": "PASS",
+        "sha256": "585c25435a2d1ed4470b8268ce6f05c0adeb08a8e1bb2fb051a4229507665080",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_REGISTRY_IMMUTABILITY_REPORT.json": {
+        "result": "PASS",
+        "sha256": "efac2badf60e5e2a8a960731ab59ef4f29a2fc5f38ce84ba6dc6951f7785631d",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_SCENARIO_MATRIX.json": {
+        "result": "PASS",
+        "sha256": "78c0ef6791ef71bd6af42f9bd1105fbc8e9c213fb21ea63d2403ec7043ecda8a",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_TEST_CASES_REGISTRY.json": {
+        "result": "PASS",
+        "sha256": "7b52de089b3088db4b11d8732633a37a3fefec6bda00476b7a744f165425f3cf",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      },
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_TEST_HARNESS_REPORT.json": {
+        "result": "PASS",
+        "sha256": "03e88dfa1cf39e9e12969a2a0946b8596fd92ac05cf2f89128eb071a1f816728",
+        "status": "BUILT_PENDING_POST_AUDIT"
+      }
+    },
+    "seal_sha256": "46acd243870a0dab6030204187777e21a44519b69f38b7fa48cdf4e5e4f984cc",
+    "status": "PASS"
+  },
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "contract": "PostBuildArtifactIntegrityAuditContract",
+  "gate": "POST_BUILD_AUDIT",
+  "git_context": {
+    "branch": "main",
+    "build_head_full": "b7eda2dbe00bf22693420e4e9c04e0f28d14b1fe",
+    "build_head_short": "b7eda2d",
+    "build_subject": "Build MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+    "parent_short": "311cc15",
+    "parent_subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+  },
+  "next_safe_step": "BLOQUE_9_VALIDATION_MAP",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

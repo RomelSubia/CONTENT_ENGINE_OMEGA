@@ -1,0 +1,54 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "contract": "PostBuildNoTouchAuditContract",
+  "gate": "POST_BUILD_AUDIT",
+  "git_context": {
+    "branch": "main",
+    "build_head_full": "b7eda2dbe00bf22693420e4e9c04e0f28d14b1fe",
+    "build_head_short": "b7eda2d",
+    "build_subject": "Build MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+    "parent_short": "311cc15",
+    "parent_subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+  },
+  "next_safe_step": "BLOQUE_9_VALIDATION_MAP",
+  "no_touch_audit": {
+    "changed_roots": {},
+    "no_touch_pass": true,
+    "protected_roots_checked": [
+      "00_SYSTEM/brain",
+      "00_SYSTEM/manual/current",
+      "00_SYSTEM/manual/historical",
+      "00_SYSTEM/manual/manifest",
+      "00_SYSTEM/manual/registry",
+      "00_SYSTEM/reports/brain",
+      "n8n",
+      "publication",
+      "workflows"
+    ],
+    "status": "PASS"
+  },
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "BUILT_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
