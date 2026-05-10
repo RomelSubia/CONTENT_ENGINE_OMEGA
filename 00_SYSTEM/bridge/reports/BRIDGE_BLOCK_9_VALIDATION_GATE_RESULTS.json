@@ -1,0 +1,171 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "contract": "ValidationGateResultsContract",
+  "gate": "VALIDATION",
+  "gate_count": 22,
+  "gate_results": [
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G01_REPO_CLEAN_SYNCED",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G02_EXPECTED_VALIDATION_PLAN_HEAD_SUBJECT",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G03_EXPECTED_VALIDATION_MAP_PARENT",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G04_VALIDATION_PLAN_ARTIFACTS_PRESENT",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G05_VALIDATION_PLAN_MANIFEST_SEAL_VALID",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G06_CORE_EVIDENCE_PRESENT",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G07_EVIDENCE_RESOLVER_PASS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G08_MISSING_REAL_ZERO",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G09_TEST_COUNT_45",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G10_REQUIRED_TEST_COUNT_40",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G11_NEGATIVE_TESTS_THRESHOLD",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G12_FAILURE_INJECTION_THRESHOLD",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G13_ASSERTIONS_135",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G14_HARNESS_GATES_22_PASS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G15_STATIC_SCAN_PASS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G16_PY_COMPILE_PASS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G17_TARGETED_PYTEST_PASS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G18_MANUAL_BRAIN_BRIDGE_PYTEST_PASS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G19_RUNTIME_SELF_CHECK_PASS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G20_RUNTIME_GATES_22_PASS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G21_NO_TOUCH_PROTECTED_ROOTS",
+      "required": true,
+      "status": "PASS"
+    },
+    {
+      "failure_policy": "FAIL_CLOSED",
+      "gate_id": "B9-VAL-G22_NEXT_STEP_GATE_CLOSURE_ONLY",
+      "required": true,
+      "status": "PASS"
+    }
+  ],
+  "git_context": {
+    "branch": "main",
+    "validation_map_short": "e1c3632",
+    "validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 9 test harness 40 pruebas",
+    "validation_plan_head_full": "3650f0537c837846d23acf1b9a4305e8b4f8d6bb",
+    "validation_plan_head_short": "3650f05",
+    "validation_plan_subject": "Define validation plan MANUAL-CEREBRO bridge block 9 test harness 40 pruebas"
+  },
+  "next_safe_step": "BLOQUE_9_GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "passed_gate_count": 22,
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATED_POST_AUDITED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
