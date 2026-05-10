@@ -1,0 +1,1380 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "build_execution": {
+    "manual_brain_bridge_pytest_passed": 2510,
+    "static_summary": {
+      "forbidden_calls_checked": [
+        "compile",
+        "eval",
+        "exec",
+        "open"
+      ],
+      "forbidden_imports_checked": [
+        "ftplib",
+        "httpx",
+        "os",
+        "pathlib",
+        "requests",
+        "shutil",
+        "smtplib",
+        "socket",
+        "subprocess",
+        "webbrowser"
+      ],
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "targeted_pytest_passed": 56
+  },
+  "build_fix": {
+    "fix_id": "BUILD_FIX_2_STANDALONE",
+    "fixed_issue": "NO_CONSUMED_ARTIFACTS_FOUND_FOR_BLOQUE_1",
+    "no_temp_script_reuse": true,
+    "solution": "Standalone evidence resolver with direct, semantic, and traceability-anchored discovery."
+  },
+  "contract": "ExecutionResultsContract",
+  "execution_results": [
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "cd489f34341bf88c2ded30e7082d1c494d523f65994f413a1258d2b5dbd74a41",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T001"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "c5fee7942f7d30b91c9a5caa19994b3b84db1a0d1df0772019031751e15ab429",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T002"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "5f6186e8e3f3131e9fcb34e3b231edba1fd5e89799fd4c99eeef05b3a7986ae8",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T003"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "fd17af52fca5120a51a3b3baa2f14b60412af397d6cd82c9c23167889ffa093d",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T004"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "3b821c59b901b297e9639360d1df094b8097e201441ddc7a258a6a95ccafe120",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T005"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "619540234be45ceddd51bd87ac7c1f2212bcbf1a77a75091ecfeddb2b05b771b",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T006"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "33b68fe9ab51d8f06237a6505aaea83a30411cb043a0acaa8e7f20d5aa05430a",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T007"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "f74989911deb1220bce5a673476309ec62db25a2854fd6e88949ac1942acd6c3",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T008"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "5bd6802bcfed2e85fd128a51dedb5ab27ca276de99e78cebe8b56e4e2edeba80",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T009"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "d7737d72b5b584c69c6b4c0f48e164d1e4c459619b68d75cd1ac01bfdcc2a2e1",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T010"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "9f328c5838f28e2915e22246d47c36d6a6667b845d584dd22899114fc3d8add1",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T011"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "7edfa47ce03d6150922cededdfea66acf9902077ee69826ecb9dc78cbff6b8e4",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T012"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "d153240f4882d96df6534b343193bfebb9828d6dff6e0b32a3555b0764a325ec",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T013"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "2126ed4847c15d1ce2049ed03d49a9053e94e981ac9ddffe78583267d88014c0",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T014"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "6e59b83ce9da313f5c077172a615d5c86c64f8d2d5d2173407fc8a64621087f5",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T015"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "35f152d1b9d62c0dbdf5bb692a987dc72e0620e53faf9622b5e9ad569f472785",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T016"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "1ae983a8cd98ffbea3f4e827a214954e116659f20a25eb61c4715ced8750caeb",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T017"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "d6ecaf67ee1a9e1eeb12bf82b0aa764f563225872b86994c9dc41e18c81eec60",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T018"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "6ef109731b0aa93e2623eb0c5cdae9b26b13403ba18d115c38993d2334f1ac53",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T019"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "d267349954def636b05352b1d449c2180d98535dba369072ecefdcbbc54ace1b",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T020"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "da1a25c10a1eedc494564110025a39340a37e5a99a3bd01a442f8bf52ad1089c",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T021"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "9c3bf8ec8555fd1fb17909d52ee186fe97fd22f4854a84435aa6f12e2a12b9b6",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T022"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "7a875103f4cac16c0c78f6b6519533966cabedc1566be7e2f3891aeb4171abd7",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T023"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "ece721e6593a011947ffba092ace7e2b71805e9a23d7ab73b745ddff08819204",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T024"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "bbdc475407f95e1720ff478d62bb583b5ae263053ed7c9b61648f7fbac43f058",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T025"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "0ed10360c5af8512471e2c717bf94197ad9eece7620720add4a4168c824b08cd",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T026"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "4f04920a332716cb172a7a9189b95b0db575a0be7959ed8c0a356ec5f6d71f7b",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T027"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "13b6795e473f986fdc1e9515971ec8168b4cc86e68e618ee70bbb7e423ada979",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T028"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "36fe3a18e1545fa482ee196d905790c0e643fe93cb1d8ebd59afbcf4555283bb",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T029"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "32ff09a02d09ca1db14764335a7f2bbb057d2edd1ad1d246edac087929812418",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T030"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "843737222af6c8973434e6e78e1c8c4913fcbb47e7314212c5776023e6ce9476",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T031"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "da8c3a7a23f7cf5686bb7e56cebf12a1e7e54b4896f57826d0046b7b29d7edeb",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T032"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "dc4cc69874d2ab3897bd5559262d09a728d0ffda39b86270828d021b7ff5bd96",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T033"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "5a7b2e15f339a4b408c50f9c56ac257c7750f1703a3018cba2a222541a352c4d",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T034"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "581cf3733bfaa6d32b59725f429285d0de191b5b72e2cd62090e0356ab68f26c",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T035"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "7b84dc34ba0d1c9f2a1c97fa859689e8566bf9f60c7eca97daa4e084e766ec11",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T036"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "7c991df766386dd75f520286d35b19316120b808974f4a19392778b811a012c5",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T037"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "aa9857fff58c67352d40b9dd699a9c0038a05032ada4e8b28aeb0556c59e1599",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T038"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "8272559c7d0831f4c59ddc7aa32d61693deea2b2f378f39a72d01d85c001749f",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T039"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "35d344a6e577c7be8900a0957d3c02b80393dd2fdb505614892122ef881e050e",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T040"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "81b25504a542b702d00bcaceb92d0cce893b6ad0ebb3705f3ac340c0b40193bd",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T041"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "80e4419ef16679a3dff6ec6d21ad6febe539e41eda8ab4e54cf638c12748e536",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T042"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "PASS",
+      "assertion_count": 3,
+      "evidence_hash": "92ef0faa4315034b8e544ea3e677154fc5f08103b13f4dddc1a88786cc020fe2",
+      "failure_policy": "PASS",
+      "result": "PASS",
+      "test_id": "B9-T043"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "7013fbbc8dfcff14a7cef50c3217a448718c422d563d8c7cd15627d7e1490ef4",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T044"
+    },
+    {
+      "actual_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "actual_no_touch": true,
+      "actual_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "actual_status": "LOCK",
+      "assertion_count": 3,
+      "evidence_hash": "4f3970f27387fea24a75c6062d99b8999cc7f211e6f01bd07726afb358416c3f",
+      "failure_policy": "LOCK",
+      "result": "PASS",
+      "test_id": "B9-T045"
+    }
+  ],
+  "expected_base": {
+    "head_short": "311cc15",
+    "head_subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+  },
+  "gate": "BUILD_FIX_2_STANDALONE",
+  "git_context": {
+    "head_full": "311cc1514f4ac0c3a59669c191b85eecd3e8bd96",
+    "head_short": "311cc15",
+    "head_subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+  },
+  "next_safe_step": "BLOQUE_9_POST_BUILD_AUDIT",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_now": false,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "registry_separate_from_results": true,
+  "result": "PASS",
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

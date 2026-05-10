@@ -1,0 +1,1815 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "build_execution": {
+    "manual_brain_bridge_pytest_passed": 2510,
+    "static_summary": {
+      "forbidden_calls_checked": [
+        "compile",
+        "eval",
+        "exec",
+        "open"
+      ],
+      "forbidden_imports_checked": [
+        "ftplib",
+        "httpx",
+        "os",
+        "pathlib",
+        "requests",
+        "shutil",
+        "smtplib",
+        "socket",
+        "subprocess",
+        "webbrowser"
+      ],
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "targeted_pytest_passed": 56
+  },
+  "build_fix": {
+    "fix_id": "BUILD_FIX_2_STANDALONE",
+    "fixed_issue": "NO_CONSUMED_ARTIFACTS_FOUND_FOR_BLOQUE_1",
+    "no_temp_script_reuse": true,
+    "solution": "Standalone evidence resolver with direct, semantic, and traceability-anchored discovery."
+  },
+  "contract": "TestCasesRegistryContract",
+  "expected_base": {
+    "head_short": "311cc15",
+    "head_subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+  },
+  "gate": "BUILD_FIX_2_STANDALONE",
+  "git_context": {
+    "head_full": "311cc1514f4ac0c3a59669c191b85eecd3e8bd96",
+    "head_short": "311cc15",
+    "head_subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+  },
+  "next_safe_step": "BLOQUE_9_POST_BUILD_AUDIT",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_now": false,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "registry_hash": "1fc67a294730ac862f65218dcdbb63bef518bcbfcbcdd0fca06719745550669a",
+  "result": "PASS",
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_cases": [
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-REPO",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "cad77cde3727400419ba1af5418e2ad114b4469583aa97e47523ee3dc5e1d54e",
+      "fixture_id": "FX-B9-T001",
+      "input_payload_hash": "1568d6e7fa1cae93d8c1ce6a1270ada44fc6a063cd0b56423402d13535b23e1e",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T001",
+      "test_name": "HEAD esperado y branch main"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-REPO",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "cb8b294fdb1bff2f1ec9cc18a2142d6089849dfc3e3494d9316c1a7b1a0675ca",
+      "fixture_id": "FX-B9-T002",
+      "input_payload_hash": "f0148cb1bc0eb8797ec1a8c24e2765ade91189c5d389c5b94df579fb8b64e492",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T002",
+      "test_name": "upstream sync exacto"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-REPO",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "309a236298b19a9bd2df182d77f9748f283070d5bb1944094c810a544c2df3c8",
+      "fixture_id": "FX-B9-T003",
+      "input_payload_hash": "f9bcf36bf2f550c584c017989b67334a062fbcb610462e4dc8aa6bae4c14849f",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T003",
+      "test_name": "worktree clean antes de pruebas"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-REPO",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "028f66df0ca137ab3eb9c9f0497f940fb9fb25f847c3936e73da3589ae908440",
+      "fixture_id": "FX-B9-T004",
+      "input_payload_hash": "fd110a8db64e4fb7488b5830381ff2862626341d46aa37fc6ae3be3733010f41",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T004",
+      "test_name": "artifacts BLOQUE 8 closure presentes"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_1",
+        "BLOQUE_2",
+        "BLOQUE_3",
+        "BLOQUE_4",
+        "BLOQUE_5",
+        "BLOQUE_6",
+        "BLOQUE_7",
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": true,
+      "domain_id": "B9-D-CHAIN",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "d8880b270a2c0cfd047b3a3dda58f740f852bc18e47856f5be2260745e38a3e1",
+      "fixture_id": "FX-B9-T005",
+      "input_payload_hash": "17c85008df7d0593dc9fc41ce0b66c6d827c298cfc9bcbad17278a716d48ce70",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T005",
+      "test_name": "evidencia histórica BLOQUE 1-8 resuelta sin naming rígido"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_2"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-SCHEMA",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "b2ec7aaba60cb168f605f7f38c1c1874e072fcecb051e91a9107cdec93127931",
+      "fixture_id": "FX-B9-T006",
+      "input_payload_hash": "918868cf22f5d21b3e75b36b10b8152a23ca9bfeceae9bc32884cb735502fd14",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T006",
+      "test_name": "schema válido acepta payload válido"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_2"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-SCHEMA",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "cc6ac580dab8d742ced898a224f810fcb1b18e242c0c98cb80f9db18876b2661",
+      "fixture_id": "FX-B9-T007",
+      "input_payload_hash": "a6286e874532b53baa31db20baac5f1b1e6cc58448fbe016aeaee83e6816b15b",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T007",
+      "test_name": "schema inválido bloquea payload incompleto"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_2"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-POLICY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "c9be810dd130481f59531248d7b4666751559f301e9d0e451d263f392c6c9668",
+      "fixture_id": "FX-B9-T008",
+      "input_payload_hash": "5ae12187a5db351b2371167ba4e6c35ded755797a0f141cde0b1018e777986db",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T008",
+      "test_name": "policy contract mantiene permisos peligrosos en false"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_2"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-POLICY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "fa10515b6abc8f718ae1cf7b01153885e32f75f40248c11ba48e4ac4df5be062",
+      "fixture_id": "FX-B9-T009",
+      "input_payload_hash": "ddc159f21105761c7fd12c0d24cfb69961ec4c6205ddba7afd481b309c9d3587",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T009",
+      "test_name": "permission escalation queda bloqueado"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_2"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-POLICY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "388358a59b7b5c798977a8ce1d41d4815568e349e61a3d6c8eeea1f879adc6d6",
+      "fixture_id": "FX-B9-T010",
+      "input_payload_hash": "38c04e11513221a3f9f4e5e2d6c4c09fbbe3aecd9884b547ee90fe764f091101",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T010",
+      "test_name": "non-canonical JSON queda bloqueado"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_3"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-SOURCE",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "c704e122c2ea2144bddb324138dfedc217d42c331adccd69e76c107622c9c01b",
+      "fixture_id": "FX-B9-T011",
+      "input_payload_hash": "e7e2f98848adf600a66503a46dff1b5df9c6f5b495001f015497a31d0d2eea43",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T011",
+      "test_name": "source resolver acepta fuente permitida"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_3"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-SOURCE",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "64f0fbf306e4475a71c8e0ccf934de6b925c96e298713745a2acab54b9c59a27",
+      "fixture_id": "FX-B9-T012",
+      "input_payload_hash": "339cdd28d9122fa8a51bde8b408e82daa3d383ffe706f0306c5e40992a38f469",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T012",
+      "test_name": "source resolver bloquea fuente desconocida"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_3"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-INTEGRITY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "27812695ef81018f660be2fd7c3c66aa9bd4ecbd0d02f72a8889e8da85c5adc6",
+      "fixture_id": "FX-B9-T013",
+      "input_payload_hash": "aef80716ec4afa47dd0c836ef3c316f03d4dd9a8b30de2530a006e459a72c093",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T013",
+      "test_name": "integrity guard detecta hash mismatch"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_3"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-INTEGRITY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "54a54dc2e6e9ab41e491eb81e842c4c3ffce15bdc0f070b97802f2c701081c81",
+      "fixture_id": "FX-B9-T014",
+      "input_payload_hash": "489178fbc6799efef0d03f38c0294ee35ff17b4dc38f92909e803a169563793a",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T014",
+      "test_name": "integrity guard detecta artifact faltante"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_3"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-SOURCE",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "a8e2eb06a3243e3964a58aadb41d5e555342bb825bdc76436f43a12884f1f2fd",
+      "fixture_id": "FX-B9-T015",
+      "input_payload_hash": "57c646c618197ebb53c5c5e88bcc134adfeee87ce4b416dbf41f3d7e252f8461",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T015",
+      "test_name": "resolver bloquea path traversal"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_4"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-RULES",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "bf4d247714086bc6bf478feda29f041e8d143b9114f470d983c1b8e1a717be9b",
+      "fixture_id": "FX-B9-T016",
+      "input_payload_hash": "f2e2ed9fcbc2b4fc4231156b6713356abde0a2bece9d3c2ff78dfc1cc5510181",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T016",
+      "test_name": "rule extractor extrae regla válida"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_4"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-RULES",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "def3d9bbd7398d8ce555acfe42283cd82f5d73c5c8d6ec9288f71f87cd49fd41",
+      "fixture_id": "FX-B9-T017",
+      "input_payload_hash": "fb181e65b13e0670269560a7a68297e43ab6b8c6e80aad879af484d6ccb46937",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T017",
+      "test_name": "rule extractor bloquea regla ambigua crítica"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_4"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-INTENT",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "de3e462bfd25fea34aff5293b14b9200462ba8a66e5e680f68d69396b6649e91",
+      "fixture_id": "FX-B9-T018",
+      "input_payload_hash": "e44bdb6a58df2371420c6f6a663103f1e65c8aff7119cb3929c2bbbd05bb4752",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T018",
+      "test_name": "intent classifier clasifica read-only permitido"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_4"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-INTENT",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "298f8863a99c40f649553bb5f97a5597c23a084a921a697570934f9c37926f18",
+      "fixture_id": "FX-B9-T019",
+      "input_payload_hash": "2dae37197985cdf23e31738e6fdf00a3847b2d23c5037de3d83a55ed686a87a9",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T019",
+      "test_name": "intent classifier bloquea write intent"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_4"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-INTENT",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "ba072552104bf60e8c3a9ed129213880e6e097fe9569f574a905ad5ed12edb49",
+      "fixture_id": "FX-B9-T020",
+      "input_payload_hash": "7fb12329a7484165fc777b8c6398662b992df4068a3d5ebbb9810bcad2ea79c9",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T020",
+      "test_name": "intent classifier bloquea ejecución prematura"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_5"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-CONFLICT",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "161dd23971fda7496efa71d23b262c03fb223c96bf8b5eba0bf9e88ec7ff8eed",
+      "fixture_id": "FX-B9-T021",
+      "input_payload_hash": "3bd38d9d7754056d94bc354345f537547f10a58911538cecd3bc3d0074b64517",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T021",
+      "test_name": "conflict detector detecta conflicto real"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_5"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-CONFLICT",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "e1edf5fb26fd991980d14231042e0de9451c610bdd46e49ed2d2f047055236a3",
+      "fixture_id": "FX-B9-T022",
+      "input_payload_hash": "85ae2360a5bf2813b7ada1f233fa5a059c68f83d32d2d0b88afce13cf0ee608c",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T022",
+      "test_name": "conflict detector no infla falso conflicto"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_5"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-BRAIN-READONLY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "62265dad6c657d6819be5c1aa0e6c3e325dff88fb74be15e9df9386368285872",
+      "fixture_id": "FX-B9-T023",
+      "input_payload_hash": "545e7569454c3b2a8a72804a7fa8fd139e4a8feb1082cf97b9f5f4158e3b1dd0",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T023",
+      "test_name": "brain adapter permite read-only"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_5"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-BRAIN-READONLY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "1b5e2f500eb654631318f799a4a45565c365705d24afdccdd64c5b1cc9053603",
+      "fixture_id": "FX-B9-T024",
+      "input_payload_hash": "a85a04e402ebba24bd1d31551fc8dfbe896049e1d607975b639046bdf2838e57",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T024",
+      "test_name": "brain adapter bloquea write"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_5"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-BRAIN-READONLY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "c98312a3c9404214f393d1e5b395015a805a012e0dee6b9eb57a1af93e50a55e",
+      "fixture_id": "FX-B9-T025",
+      "input_payload_hash": "6bdf47a2a11423308224b14882110fed00303390fc8ab1f5071a96f713404bc9",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T025",
+      "test_name": "brain adapter bloquea respuesta corrupta"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_6"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-DECISION",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "294f3069ce60e01768d933b477df488c469de2fea40f292d3d48615166716f76",
+      "fixture_id": "FX-B9-T026",
+      "input_payload_hash": "91b59a7138afda8f32b438b16a7ec5be153d49be51cc47f86956def8b48d6dcb",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T026",
+      "test_name": "decision mapper produce decisión controlada"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_6"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-DECISION",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "8b0d0b85397e46c28293c74adc551eb302f00810c10564f84cd2e2a8e8944c0b",
+      "fixture_id": "FX-B9-T027",
+      "input_payload_hash": "8682c970462bce42b102d87b697c852ff2a7a9d0841aadc3c622aaa4de366900",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T027",
+      "test_name": "decision mapper bloquea acción sin permiso"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_6"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-PLAN",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "20588f7e21101722e3855d0a3be14f6a1a04cb58c77e3664f48199102afeeeff",
+      "fixture_id": "FX-B9-T028",
+      "input_payload_hash": "5f8198336ede65a62be4301ce2eb3cbf4dae79598000f17c60d3b17b12d77cc4",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T028",
+      "test_name": "controlled plan builder crea plan sin ejecutar"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_6"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-PLAN",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "7d39543250c79606b211f865bf313e36fba4edbecd8e6f9db0300620b0124478",
+      "fixture_id": "FX-B9-T029",
+      "input_payload_hash": "aeb7ed5a484e64e23f50836ca2530b5c5238161644a5103c30f440a9f219cfc6",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T029",
+      "test_name": "controlled plan builder bloquea ejecución directa"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_6"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-PLAN",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "ee32caf85266978e6d537fdf018885927e544a662197aec619e917aa1419fc3c",
+      "fixture_id": "FX-B9-T030",
+      "input_payload_hash": "e0407b4fe33c8057318935b94b0216a8b1bc826e252cdcadb562780edf52552a",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T030",
+      "test_name": "no plan reinterpretation: no cambia allowlist"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_7"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-MANIFEST",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "9a8ace32e7985194216b9a8277e26ad5d47410b1fc5b99ccaedee6bf4d717d18",
+      "fixture_id": "FX-B9-T031",
+      "input_payload_hash": "e37d1059e459f148d20a7495d86c95a0715f72657a7eee4564d1e7acde988e4c",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T031",
+      "test_name": "manifest contiene produced_artifacts completos"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_7"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-MANIFEST",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "e2df82a56f9a08ee223ab57e4e586d63e959eea4d8c953297f5774e0fde44403",
+      "fixture_id": "FX-B9-T032",
+      "input_payload_hash": "f20bb3d556f7451d7fd4389db30c574da3b05d1700b467467455e9142be1728d",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T032",
+      "test_name": "seal referencia manifest hash correcto"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_1",
+        "BLOQUE_2",
+        "BLOQUE_3",
+        "BLOQUE_4",
+        "BLOQUE_5",
+        "BLOQUE_6",
+        "BLOQUE_7",
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": true,
+      "domain_id": "B9-D-TRACEABILITY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "085bc745a4307ea678e47548730fcc2286bf7fe4c0a84052a1bc09f00982e5e9",
+      "fixture_id": "FX-B9-T033",
+      "input_payload_hash": "f1188fbf74d9eea778792ec4e48e9544c96c1388a1559b758149dc30431597f3",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T033",
+      "test_name": "traceability conecta BLOQUE 1-8"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_7"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-REPORTS",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "83ea9163b152267b387569a706de9e29cebabb33ccd1932a31f9135be80bdbaa",
+      "fixture_id": "FX-B9-T034",
+      "input_payload_hash": "c3c2d1a068ca2f7626118e644f78d1f44f88f524ee2d928286cc7ff4e1b51760",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T034",
+      "test_name": "report inflation guard bloquea conteos falsos"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_7"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-REPORTS",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "d5d9fc45f089af1b0051ad52f467ea63bb8b1ea45a801956ba113e5ace7ee751",
+      "fixture_id": "FX-B9-T035",
+      "input_payload_hash": "c2ec15cb5fc00f93bba557139f0afdefa6cbca263dfb587534fce49a21663f18",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T035",
+      "test_name": "missing report bloquea readiness"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-ATOMIC-WRITER",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "40b3c73908e6637ecd84e3bec40f9b9e9404a185f76c12eca5df924e5ff62c61",
+      "fixture_id": "FX-B9-T036",
+      "input_payload_hash": "8cef27a211378f03428debafc2a06aaa9410701ee349a3c1cc461461a06bfa2e",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T036",
+      "test_name": "atomic writer bloquea protected roots"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-LOCK",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "7e89334ae613088d823c71316cb5d467b05aeeb0f32f30cda5345a052205aa81",
+      "fixture_id": "FX-B9-T037",
+      "input_payload_hash": "dba4cd229ddd3f57ff2bcf1123f89b9c0354c3c8dcc04facd26abf03ec152f2c",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T037",
+      "test_name": "lock activo bloquea operación"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-LOCK",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "c06113921386b1482bcd6c8ff7f76e38bf8c8a668c7502518e50ef476aae9868",
+      "fixture_id": "FX-B9-T038",
+      "input_payload_hash": "b4aac27120cc61ca30ef99c7e2247b2dc96b77b48b025deda41de1fe88b44859",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T038",
+      "test_name": "stale lock exige recovery audit"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-QUARANTINE",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "4c0fec829d9884b75a96c535a5e2f39bc8ac696de6440aa4993919b014dc42ad",
+      "fixture_id": "FX-B9-T039",
+      "input_payload_hash": "d6e99f3010f94225b3e139113d07d0ddea2ffcedfb2a8f0fb8956ab7d636c4d5",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T039",
+      "test_name": "quarantine clasifica caso peligroso"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-ROLLBACK",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "3221247f83d14550bc8ce3ff7c689954d3b6aaa4fe58ab07f5d2a0cacbe14b5e",
+      "fixture_id": "FX-B9-T040",
+      "input_payload_hash": "559c3e76b2d15c288b9e673f867e08132b2988bb3414574a7ac52d1f575683bc",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T040",
+      "test_name": "rollback permanece draft-only"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_3",
+        "BLOQUE_7",
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": true,
+      "domain_id": "B9-D-DETERMINISM",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "7b0101e591b6cfca7ca465fe546cae096f3c7a45ade4f60808f6571f1c7329c0",
+      "fixture_id": "FX-B9-T041",
+      "input_payload_hash": "97b8dc58658ed7bfb70703c6491a4dd724e0024bb3b71e74831045363f2ff134",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T041",
+      "test_name": "deterministic replay subset produces same normalized results"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_1",
+        "BLOQUE_2",
+        "BLOQUE_3",
+        "BLOQUE_4",
+        "BLOQUE_5",
+        "BLOQUE_6",
+        "BLOQUE_7",
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": true,
+      "domain_id": "B9-D-NO-MUTATION",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "94f0e5ee0f3e05a9417d6b6c4a1d26805af6cfcc40dc6320729093ecb13cb419",
+      "fixture_id": "FX-B9-T042",
+      "input_payload_hash": "6d59419ef8877fa4ed4bb9c674faeb31c99b33c3154318eec7e170d9334fa8a8",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T042",
+      "test_name": "consumed evidence cannot be rewritten by harness"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_9"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-IMMUTABILITY",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "PASS",
+      "failure_injection": false,
+      "failure_policy": "PASS",
+      "fixture_hash": "86fbe2c978383af60fc581ae3f1e4f799ce58e1ce6934d27df184058b2f73ca5",
+      "fixture_id": "FX-B9-T043",
+      "input_payload_hash": "040a60020a230bb6d844a1cbb58ab9648c0fd4297a4afa59a1e59ced7a1a6ba0",
+      "minimum_assertions": 3,
+      "negative": false,
+      "test_id": "B9-T043",
+      "test_name": "test registry cannot be changed during execution"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_1",
+        "BLOQUE_2",
+        "BLOQUE_3",
+        "BLOQUE_4",
+        "BLOQUE_5",
+        "BLOQUE_6",
+        "BLOQUE_7",
+        "BLOQUE_8"
+      ],
+      "cross_block_coverage": true,
+      "domain_id": "B9-D-COVERAGE",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "19055de82ca68ebabdcad952c676dff8f29334a31f553adaae416ba7885ff8be",
+      "fixture_id": "FX-B9-T044",
+      "input_payload_hash": "1f4b6bc79c327482eb6ca14fc8006b863dca64af7abc575efc1377c81bae7bf3",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T044",
+      "test_name": "coverage report fails if any block 1-8 below minimum"
+    },
+    {
+      "block_coverage": [
+        "BLOQUE_9"
+      ],
+      "cross_block_coverage": false,
+      "domain_id": "B9-D-READINESS",
+      "expected_artifacts": [
+        "hash_only_evidence",
+        "no_runtime_write"
+      ],
+      "expected_no_touch": true,
+      "expected_permissions": {
+        "bloque_10_blueprint_allowed_now": false,
+        "bloque_10_build_allowed_now": false,
+        "bloque_10_implementation_plan_allowed_now": false,
+        "bloque_10_validation_allowed_now": false,
+        "brain_write_allowed_now": false,
+        "capa9_allowed_now": false,
+        "execution_allowed_now": false,
+        "external_execution_allowed_now": false,
+        "global_execution_allowed_now": false,
+        "manual_write_allowed_now": false,
+        "n8n_allowed_now": false,
+        "publishing_allowed_now": false,
+        "reports_brain_write_allowed_now": false,
+        "webhook_allowed_now": false
+      },
+      "expected_status": "LOCK",
+      "failure_injection": true,
+      "failure_policy": "LOCK",
+      "fixture_hash": "7dcc426bda11ba1f3f05ae6dffea392e26e32982901e8fd456f7122babf9c88e",
+      "fixture_id": "FX-B9-T045",
+      "input_payload_hash": "7b99aa154742f90d65beaca0f42d3545bfff643eaf05897238a8d247616356ad",
+      "minimum_assertions": 3,
+      "negative": true,
+      "test_id": "B9-T045",
+      "test_name": "BLOQUE 10 readiness cannot enable build/execution"
+    }
+  ]
+}

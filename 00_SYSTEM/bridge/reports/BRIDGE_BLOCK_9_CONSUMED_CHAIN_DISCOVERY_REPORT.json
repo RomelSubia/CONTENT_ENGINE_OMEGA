@@ -1,0 +1,1381 @@
+{
+  "block": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "build_execution": {
+    "manual_brain_bridge_pytest_passed": 2510,
+    "static_summary": {
+      "forbidden_calls_checked": [
+        "compile",
+        "eval",
+        "exec",
+        "open"
+      ],
+      "forbidden_imports_checked": [
+        "ftplib",
+        "httpx",
+        "os",
+        "pathlib",
+        "requests",
+        "shutil",
+        "smtplib",
+        "socket",
+        "subprocess",
+        "webbrowser"
+      ],
+      "status": "PASS",
+      "violation_count": 0
+    },
+    "targeted_pytest_passed": 56
+  },
+  "build_fix": {
+    "fix_id": "BUILD_FIX_2_STANDALONE",
+    "fixed_issue": "NO_CONSUMED_ARTIFACTS_FOUND_FOR_BLOQUE_1",
+    "no_temp_script_reuse": true,
+    "solution": "Standalone evidence resolver with direct, semantic, and traceability-anchored discovery."
+  },
+  "consumed_chain_discovery": {
+    "block8_semantic_validation": {
+      "block8_identity_confirmed": true,
+      "block9_next_layer_confirmed": true,
+      "closed_validated_confirmed_by_cross_evidence": true,
+      "gate_report_sha256": "27cc86a45e1e0f25620b89e5d2d3da4da8b464bb2b482b8529d6c365910f2c45",
+      "gate_report_status": "CLOSED_VALIDATED",
+      "hard_blocks_confirmed": true,
+      "manifest_sha256": "0e6e966eae6dc41537de2cef7ed34c2b3808f210a783f02d27325472a80e268b",
+      "readiness_sha256": "eef2db2f58358924cf60daa788f99b5b0a7b40c582fe47bff6371e6155fc7078",
+      "seal_sha256": "cebeb74c2fe6222045ab14399e1b472764aef17617ba6006c109883367f7f90d",
+      "seal_status": "SEALED_CLOSED_VALIDATED",
+      "sealed_status": null,
+      "status": "PASS",
+      "traceability_sha256": "44de5af2070679054202fa1e4eab5544de96e7b7607ddcb24a937899b559a73b",
+      "validation_mode": "BUILD_FIX_2_STANDALONE_SEMANTIC_BLOCK8_CLOSURE"
+    },
+    "blocks": {
+      "BLOQUE_1": {
+        "artifact_count": 70,
+        "artifacts": [
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "53748b21de8a9cda785edb263030e96742d105a9ced218dc79db258d44e13c88",
+            "sha256": "f63228df7f06da198733fc742f6145371ffe4ba44fb1baad43f6475ee9d58634"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "7da1a3cccb507d0aaf55c4279bd421840053725eac82de77d4cdbb219bd2ef65",
+            "sha256": "b93c479c3634034f2c0ee7e7242160d34e2c956eb42e1f582e0b394cef78f76c"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "f35b1517097f731917b7662d2c316e3266cfd089b77597b8126c81359ac17158",
+            "sha256": "67c96bd9e22e6b5d77beb340cb940f4de0d09250174fdcbd2ec15655c155c28d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "933ff03446c0305360dab0f4d513ba33857d92f1132adfa69eea17c103d51a20",
+            "sha256": "d7b35723d6e5e0402c10fdfdeecb38ed7128974103391fc5baa7cc5c4fa1558c"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_MANIFEST.json",
+            "semantic_excerpt_hash": "9af342b6008354f874e8fd7ce877adc56a1109882e54d586ee2dabbafb210e70",
+            "sha256": "816201154b9609b2896831c4d2d240ad0a7591bf529034413d84c096ce02745f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_SEAL.json",
+            "semantic_excerpt_hash": "f16a78eb24d32c22389f54db82661c891d3cd0a26dc9a9cf683a16a608c05cef",
+            "sha256": "ac712a45a58e4b601588fd588bf7ebd10ad907e3f8bfc94ca10e36823584b531"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_SEAL.json",
+            "semantic_excerpt_hash": "c45047d1fa2fe81b488c70ff7afe5d16c5c48207acc1cb26915935452647b90f",
+            "sha256": "f026971bac6d3725fde6f30ec606b6612d12431397431d5207df6872e4b6cb92"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MANIFEST.json",
+            "semantic_excerpt_hash": "7ef538d385c8b90678ee99abbc03f1d10682fea4688bd1158fd67119484b5cdb",
+            "sha256": "5bd97f5bec1724b74e5cd64028c8bb1041b73b4f774e9353ec64789c61beb467"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MAP_MANIFEST.json",
+            "semantic_excerpt_hash": "6c26f6ba6f2c28ecfa5b7dc7d1627bfd56bc4049bc4dd3d99dea335595e302f6",
+            "sha256": "dbf371adf89c885a93682fe134486ef5aa43c12c9c3b7fdecc79e4d67b7e0c6a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MAP_SEAL.json",
+            "semantic_excerpt_hash": "79627ae638598c0cc0068680d08996a2b713babc6c2268fd279757543805960e",
+            "sha256": "a6b241a40b01910c62149fdafeb002c6e8555e6c330f4ed2945baf487e303019"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_PLAN_MANIFEST.json",
+            "semantic_excerpt_hash": "c9b80ba80331ca9ae1f1fab81e5a132d226870826656ee0255cf02694e2da281",
+            "sha256": "f8ed7f2719ae15f9b080f3a2dfc7ed98d0853489c07e23132e930e8790e6014f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_PLAN_SEAL.json",
+            "semantic_excerpt_hash": "3ecd16f2f4faf0831d98962c113e4005b2c7112ae5630b402e944699c450a0f5",
+            "sha256": "11210b056f8f45459544475473e6fc383799adb90f7f64f50d339bf769f7f960"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_SEAL.json",
+            "semantic_excerpt_hash": "a990648606c9f6230b122fd0a7ad89cab9873ca1806bbd56ec6e04e6bbc91ce4",
+            "sha256": "4f1435762e4441d7b177c2008b1ebed6db284e258d25c4df70c9af8c409862be"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "3ed4fb64c73e340ce0ef9d272795e9733913977b61626e20f8b450a8199a4ffa",
+            "sha256": "0e6e966eae6dc41537de2cef7ed34c2b3808f210a783f02d27325472a80e268b"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "9e11c5d9ef33ab1ef1aa9fccbfd232f476d9aa8c9b60448f59ddca1689db4f21",
+            "sha256": "cebeb74c2fe6222045ab14399e1b472764aef17617ba6006c109883367f7f90d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_MANIFEST.json",
+            "semantic_excerpt_hash": "60528636976252f2672e73b2caad726010f2a89341e21bf587243eb04486e30c",
+            "sha256": "02d05b72ca1cfc99686b8659d404c882114816b81abaf83327a77674f7ef48cf"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_POST_BUILD_AUDIT_SEAL.json",
+            "semantic_excerpt_hash": "1305c512261f8cd52c3622621e6880b4cd0d4c22ab8c6add708964e2e102513d",
+            "sha256": "63e51b4aa6182becceb727cb5e432eb7e6fda25265818976d71f48d68bb05fed"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_VALIDATION_MANIFEST.json",
+            "semantic_excerpt_hash": "4c821733a43f51f8fe12bbc74ea658cfabe33574dd94ded04f780470dc94826a",
+            "sha256": "85ed8c3b6ce1c8c1ca65962346be8189292a2d97cb06f35589bc0608b33823c0"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_VALIDATION_MAP_MANIFEST.json",
+            "semantic_excerpt_hash": "6b7632093e69237519a0b9ebe84665efa935b93e955d7b35494114e265e7185b",
+            "sha256": "2db1b572cfc866353a1ae8eb75426c546dd6da57bed6b82faaa3c58c87b86d73"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_VALIDATION_MAP_SEAL.json",
+            "semantic_excerpt_hash": "4698be0fda1c5cb8b4996fcede585ccf11ce2512571a3996688b271be4810edd",
+            "sha256": "31271d0710e6b349ae04f44095ef23b81244755c6f1d3d4e583c072945f48e62"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_VALIDATION_PLAN_MANIFEST.json",
+            "semantic_excerpt_hash": "79360c761ed8e77a80a03312cf05b137cbff58c95dc3015b9c1772a95fb51577",
+            "sha256": "87b11c8264fa1c1a3121f947ea4133e232a164349e0ef4a782cad30c3fe337e7"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_VALIDATION_PLAN_SEAL.json",
+            "semantic_excerpt_hash": "0a82c788be9590698ed667724c038e0191f1acce29e80a1501bb45db41856272",
+            "sha256": "f174aa8dd0427a93bf97fd4d756fac2b581d22c45f3ee9af328252429085e12f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_VALIDATION_SEAL.json",
+            "semantic_excerpt_hash": "288dad1b02e88dca6fcd05356843b06f1b9d5f514fd2b7cc58ce36e99d419916",
+            "sha256": "54dde2cb8c513a8b6e6477921576bd847bc1577d756668b1f76ad6b426733482"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_REPORT.json",
+            "semantic_excerpt_hash": "9ed883930587b806027c3ad947f258bae75d34b17559594a42f965c81e07e05f",
+            "sha256": "2e4439fe5d77a73429c34d94cffed397bf53bcf0028c36487b63927908747780"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_TRACEABILITY.json",
+            "semantic_excerpt_hash": "a4de89cd67ab9993ab0238c19b56d39d8ad196ba3393c708a4e60ce7a9078174",
+            "sha256": "8e3cd69c2463c76c2013bc552f6d69f90f4fe65f5fccc1f51bd7aae9969a6464"
+          }
+        ],
+        "block": "BLOQUE_1",
+        "resolution": "SEMANTIC_ARTIFACTS",
+        "resolver_note": "Matched by artifact content aliases; naming mismatch accepted with content evidence.",
+        "status": "PASS"
+      },
+      "BLOQUE_2": {
+        "artifact_count": 34,
+        "artifacts": [
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "1a738c4d3d81ad147638cf3db442b309be00a9cadbf2a2c85297adf13a78b2ca",
+            "sha256": "98db1c7a89c3a5e8e7f7f3ca74081e84f2b01397a13675798384dd02e819ebe9"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "25de1b6e250c89c3331e01df8707fa191caaebe0947ebbaee575e34acfddd6e4",
+            "sha256": "f00eabb8f592fbe23624cdb9ba68b766094d37ff762d8495f5afb5b127f4592d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_MANIFEST.json",
+            "semantic_excerpt_hash": "d8c6633279d392024617a690167458dd03ac6091dd3bfedc4b5ee7653c6fe372",
+            "sha256": "f0f65219e9f38a3ecbab35cee3f5c442d8c77a8586122b1ca122046ab3afbd36"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_SEAL.json",
+            "semantic_excerpt_hash": "675abd51a678d99fd5aeab224b0be23c3c9d39066835c351147a8d2ba0566ae8",
+            "sha256": "7563d0b487dde3fb21c2eb6b7fb3f9126712f7755fd4a0e9eaf2a1c6672098c2"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_CONTRACT_REGISTRY_REPORT.json",
+            "semantic_excerpt_hash": "653f019232819d5b1dbdea8f18b2278488c5cd6b1c3f2d80f7a8717f2f32a432",
+            "sha256": "73c76338b948b3dab03f19cfd8d690823807d6cbb5eacb67cdc46b989c997c44"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "07645852c3d8b16936947307088013bec3a0a81afddb6cbb53fd1fdaff8133be",
+            "sha256": "fcae0f6ea0549029fb44a5f520346d40311adcfcb0db556d5d9f97aa7ce1f5ea"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_REPORT.json",
+            "semantic_excerpt_hash": "15f986fe634dd7254eb5b3a7a76f4c8289925db0b0539a22e9e2976c2d6dcdc8",
+            "sha256": "ce8861ca090c414573281df781f196b7adb22a84093a071adaf47d44768523dd"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_TRACEABILITY.json",
+            "semantic_excerpt_hash": "e17a1aaaa195d09f53bf2dcea8d807507cfc0f77b7ac7c29a6304a0386a8db2e",
+            "sha256": "dbc2a24566da42a0bffe74804d80f9a71c544f600396067f534b56de791af956"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "97e307a2b07dcecc8a2a9db600a74077a590a1741a6197009d1ce7a640e9e0bf",
+            "sha256": "568e79ae4f5efcf02663036eafd6598c21b5448a333e2589a69f51944a39c9fe"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_PERMISSION_MODEL_REPORT.json",
+            "semantic_excerpt_hash": "539cff0d766845d293a4e6dd4ab5feee1cbc29ae89fead220df8f6b0cbf1c131",
+            "sha256": "fe88a96ee9224c17f1bb1633e8ea1231abffe45e5bf8f93ffea18251fbf8c488"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_POLICY_REGISTRY_REPORT.json",
+            "semantic_excerpt_hash": "18207dc5acd107d29bf0cf8287b514c35be36cb24c3cffc73e76b424101e1572",
+            "sha256": "cdeffd0b049f5deeded2285a91c58546182ff6c6b93c42f9c30471824a14331a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_POST_BUILD_AUDIT_REPORT.json",
+            "semantic_excerpt_hash": "35dde8a6b298bd7e5b8eb983e38a8165e1d25a68cdb5da8b5b82da8d1c445710",
+            "sha256": "bf80348476cd5eee7e59218c5a6d9921aaaf078ff028dbdbf2980a6dd2423835"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_POST_BUILD_AUDIT_TRACEABILITY.json",
+            "semantic_excerpt_hash": "a529cf0a616c7e3d491a28760579be57bdb00f217f1fe7603f999e5706a6be26",
+            "sha256": "4cd5dce24486cb01ad4e33fc3c6ac15d907d58ef6b39cb246c9d73c37e69be12"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_SCHEMA_REGISTRY_REPORT.json",
+            "semantic_excerpt_hash": "0ae4039409eddcb1c49df28f0cfdf17eb8729abe2b778c8c33c420fd9a3a9bac",
+            "sha256": "1c435c2a50d648497a4a1ef2c30dfab15a645bf8446bb84d8dbd9a09d2f9b33e"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_SECURITY_GUARDS_REPORT.json",
+            "semantic_excerpt_hash": "4d019a69570716ddc372010ae9a51825ed7372dc40545fad25dd7436dde73dbd",
+            "sha256": "7e21ce6e2a0071234414b7ac65f72c91d84310e9e28b9f55679df0c7f6c21ca9"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_EXECUTION_REPORT.json",
+            "semantic_excerpt_hash": "b8e291dfa69513c0a60611e830de3dbe7045d14899f0261d5468496fb84af8e9",
+            "sha256": "40e325e6d340b839eed3c2d70dc54bc846aebedc7361e7988f0f65f4516b06fb"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_MAP.json",
+            "semantic_excerpt_hash": "4cc82caf44e8a7f7964cb0ef89b3a12d3091853fdb575aebba825f5f113be2ec",
+            "sha256": "c9405eb2295d457443796fa3648a90a6ec1122c7baf8acdb9f0116bac6e22213"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_MAP_REPORT.json",
+            "semantic_excerpt_hash": "4a2e7212fe61c6dfcbb9de60d02962955e0872e5cb9a5019a5b0b42b87f24c36",
+            "sha256": "172198065d3455417f93ebe1355cb9417b6ffddabc71fb8baf67f51871d17497"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_MAP_TRACEABILITY.json",
+            "semantic_excerpt_hash": "09978ff6117a76b747205748fffe3390e5bab3f4f4b142e22f5c843b19163944",
+            "sha256": "797b1d7da644b45f0d7b9115edf90ab53983058facf61d2f36b2080c2fd4925a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_PLAN.json",
+            "semantic_excerpt_hash": "770a7549e01d4690431d3cc16eb8c729062d8e1fa9b0eaa78eaa0d35ec1afc97",
+            "sha256": "84aa23f499ef04e41e0238930575fc6c798638e7c98fe71157cf44d4b3be5354"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_PLAN_REPORT.json",
+            "semantic_excerpt_hash": "1f6c079857863ebbd447a2b30b3f21c887dc8178f367a8a13525b7487a2aed94",
+            "sha256": "57b0cf60d15834a2006ea8b79cafdd7efe061f0cf732b4c3da24ae6437fd844a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_PLAN_TRACEABILITY.json",
+            "semantic_excerpt_hash": "20cab5da7e897d1467ef79f27684f3e0b5f3dabf0819fb0c7391b6453f0e7c56",
+            "sha256": "7bb7de6431bff53a7e872345bc56ddf6be3402310db9310cc149b252131b20e0"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_REPORT.json",
+            "semantic_excerpt_hash": "e0a459e29b41c5437e00e1ed28c53a56f8151b942009087c07c621f611762792",
+            "sha256": "aeb74afe566d8727c903da2c65402fa3fc0c919908fa849b59ae5121e1added5"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_RESULT.json",
+            "semantic_excerpt_hash": "b483d89d9747c44c626517aa449344688d0839fb79105a6a9d9861e22af4347e",
+            "sha256": "38508ebbe5a70a6e359fa5192bc2081c21f0598c420b6f7fbbf625a6c1078738"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_VALIDATION_TRACEABILITY.json",
+            "semantic_excerpt_hash": "21a33a67379cc623948ae7467954a58648be550245b39e53882f29840953fd2c",
+            "sha256": "63a4b322edd0d7fa46a87843369f4a8dbc62b6d0116416e95af6f269354e1d87"
+          }
+        ],
+        "block": "BLOQUE_2",
+        "resolution": "DIRECT_ARTIFACTS",
+        "resolver_note": "Matched by file naming aliases and/or direct block patterns.",
+        "status": "PASS"
+      },
+      "BLOQUE_3": {
+        "artifact_count": 32,
+        "artifacts": [
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "3f34d83ef2f6e1bb7145412e9e67edd579c3e47c002a56124c87824dd3450070",
+            "sha256": "1044e7b893a6749b9b05e0bd6250b6e531d1bac220714640587f3bcffa769a95"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "3061fd08027f218d42784c1d21b74d731a2fa10c3311adc6f2e8e9ff5b8a3bd8",
+            "sha256": "37c29f0a99b15103e3fcf2469be67ee31709ba35f692e535715e7337ceb0dd1d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_MANIFEST.json",
+            "semantic_excerpt_hash": "abcc72574cca90c71fddf2e67c43a619fd0ee458e78a9a00602884c34aa6a641",
+            "sha256": "9976cccf24827da12a0cb7b221f28119629113f4fd1532d5e5bda8911488895f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_SEAL.json",
+            "semantic_excerpt_hash": "7c206acc7a4b4009e3f5e5e6a8940fbd3288792bfc6fdb11c64f98e057b5b900",
+            "sha256": "9d681964be1d06d88fd701049f301e362b8759c02fd6dbfbd5657a9176f6ef47"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_DENIED_SOURCE_REPORT.json",
+            "semantic_excerpt_hash": "6d8e0ae4d9374cc8a66b022c3f155dcced434fb0174c619a7d206a4bd007b63c",
+            "sha256": "8bf888f20bca82aa61eefb330f5fb2427bae82ffb620a005778662328c75a535"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "0093f71744466b352f42421a6360d7b94e5b85368fb23434f69f86f08c0abda4",
+            "sha256": "99da61441d267fb0aa336e5221b407faecb0a29a87588ac13a95ba2280ad35b8"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_REPORT.json",
+            "semantic_excerpt_hash": "c8babde6535e3aa275f00fae820b2ee983d332e8c4152f27ca925d284d97c14b",
+            "sha256": "ab7f30202c9c01d8f46650d2d2d40de49d5a7c4d354244951407316f1f744026"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_TRACEABILITY.json",
+            "semantic_excerpt_hash": "0c49dbcd8433f56032da5318747ef792f31bf4fd47cec12f5db01bdda10e6c93",
+            "sha256": "05c549c7ec17d1f6fd5af802061b37cf2f12919004fc2273e01ecb9e5cc3280b"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "331f6ba5e0df2185e017db4609386c9087cc8cb3b70bad91cc23ad854f170222",
+            "sha256": "5960ab2cb7825d609d5818ad2bd2350c47171deb6c69c455f122dcf9c0619532"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_POST_BUILD_AUDIT_REPORT.json",
+            "semantic_excerpt_hash": "2f02f3459d6fb7785791dd22028ff796b3471308e1e94c30ca5b08ce8fe6c808",
+            "sha256": "32d95163658c8ecc8e3f7ad7bd9ca4fff05aea6a48596a4f5b0d41c86fba4c37"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_POST_BUILD_AUDIT_TRACEABILITY.json",
+            "semantic_excerpt_hash": "643c69b312328dc9efb5e39b9c838bf95d11ecf899866fe6f4ad482e07a34e17",
+            "sha256": "c3b9ece090f8e1128ea4e809e5c6a04f6e339c1594c2bd23318996bce9704a23"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_BOUNDARY_REPORT.json",
+            "semantic_excerpt_hash": "8a1e37b3ff01622f3642d514366141e7fe73bf82ad7673443e5a2e261229791d",
+            "sha256": "2a8afb9194abb084d13e1d7b2826240eaf07b13d04566bf465b4d896877e911e"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_INTEGRITY_REPORT.json",
+            "semantic_excerpt_hash": "f7235af989f7c0237e057637e6b5434751b0a98fb2908a746cf14c60352bd49d",
+            "sha256": "595805499f19a25406d38e84204de1037753170e524d11d388c87272d1c00b55"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_SOURCE_RESOLUTION_MAP.json",
+            "semantic_excerpt_hash": "781925204b93caf63f619de2420377b4c547197dff2401643d4e611d5c14e9e1",
+            "sha256": "8892023eb086dd11fdcada25733e8b4ffda7898df072f9eaccd6556ac7913c08"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_EXECUTION_REPORT.json",
+            "semantic_excerpt_hash": "d2b405fe91211c83f4a4fdbf2e517b273733514eeb330a8c85dc6e50da6cd473",
+            "sha256": "08429463ca2ceb92d6461f12c585e5214a3b6b5670a94a2c76f528e95694e683"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_MAP.json",
+            "semantic_excerpt_hash": "3ff480d292e359401193c2d668ae5b83437dd3e9dc99ab3ea4f04d4d06f60f88",
+            "sha256": "c82e8575dbf5efce19f582da22873c5d6ef3a844b5c21aec74c5123f2774973a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_MAP_REPORT.json",
+            "semantic_excerpt_hash": "22eb4ab8f9ebe34ebcd4ef8d67285461b20dff40ae5de7af6c343ad7eee376c7",
+            "sha256": "93f172867269e58c5060fa54a35051ab9a3c9f8305db5478fc9cf7f56912b2bb"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_MAP_TRACEABILITY.json",
+            "semantic_excerpt_hash": "7649c04cb1697fb4c526673ae761e0d7f2e974684b746a2e30a0cedccdc3b43a",
+            "sha256": "f179c70d368a9f3ef40086fb59b842a6e3821479edda98319c5ce2d922f70b55"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_PLAN.json",
+            "semantic_excerpt_hash": "fa6b66c694be0bf319ac98d52f30f4fb860c374857da7a6b9297378b5bc2651a",
+            "sha256": "b668c43b16b30be00b1bece875a0433b625647b495fd550c246f012322dd2bfe"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_PLAN_REPORT.json",
+            "semantic_excerpt_hash": "3fbfa6cf833b6bd03f1162c720e92ec615fc3262886eeb282f2c91fe25d16c87",
+            "sha256": "1ad1e20a5441c3295bd927e36f9305f537c62bdf588865614f7c19fb53a7c79f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_PLAN_TRACEABILITY.json",
+            "semantic_excerpt_hash": "5782c64bf7a000704afdd0b8a847584d8e1d855f40a6c6039255d9ea89d49ba9",
+            "sha256": "20abaf7a1bc81d3bd805cfa8f199c246507e314b1bbcc9e92e2af0302a199b20"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_REPORT.json",
+            "semantic_excerpt_hash": "19b89e97b8f0be1266127e2efd1deee7f5ec2e440923c0599068613965b16668",
+            "sha256": "b5132285c3035b3e2183914efac048c697d377923881b2c0d215a5546a78b3ff"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_RESULT.json",
+            "semantic_excerpt_hash": "c5b419a88a26f0b1130d860df9f3ebaf170465b555cb9955431f1d3eb3982b66",
+            "sha256": "c918fd4068c2bc66cf58ca516dd518eb6261c266e0fa64264f7c24255bd6573b"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_VALIDATION_TRACEABILITY.json",
+            "semantic_excerpt_hash": "54619c99b2f2a2f5e7b77ea9b7e34c5f48459a49a784e882f6dc8f671fc42ce2",
+            "sha256": "c7cb82465a590f45e13ff997c16faa8316af6a1900b675982a1a110fa5978246"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_SOURCE_RESOLVER_REPORT.json",
+            "semantic_excerpt_hash": "db553ab7e214b66e8c8f1b2ff1c0e1a6b246e557dfadc42083e07458b003a8a5",
+            "sha256": "87d101748c404c685c32a0b5ba67c8374c66ddcbb5c41a7d4d9c1d50461a430b"
+          }
+        ],
+        "block": "BLOQUE_3",
+        "resolution": "DIRECT_ARTIFACTS",
+        "resolver_note": "Matched by file naming aliases and/or direct block patterns.",
+        "status": "PASS"
+      },
+      "BLOQUE_4": {
+        "artifact_count": 31,
+        "artifacts": [
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "fa8be70612ce073af1d104eafbeba81ea24c00667e7a05ba8c03fb9986a4e2ea",
+            "sha256": "502bc73236c982958b718f3039651c731cb191d254156423d840c6842b4e4041"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "117106227759fba5e1b9c1aadbe0a2aff94e8e5759e5ae476dc2a682007bd160",
+            "sha256": "dd78a3d9ce574acf89e94a41385a98cc4c82e4df64898af97f26957ff5610ca4"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_MANIFEST.json",
+            "semantic_excerpt_hash": "a4d71cd6b786d95f119adb04671e1148e54c36899d36cc4397b22038d93f2675",
+            "sha256": "eac3f17c451ad4ff27acbbbd90884e1ce305549a9c4470ce711896d3d000f238"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_SEAL.json",
+            "semantic_excerpt_hash": "a52d6156ff3aba5234b66633f65497aa60ed0251c0f32c9a422ebf8bc13a3283",
+            "sha256": "1d1d09dd3323cd084e63c87904e2149f3b2811dcd864adf47b42085ccdce7b95"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_AMBIGUITY_REPORT.json",
+            "semantic_excerpt_hash": "7affcdea0736be053c00b7aa85758426f7fdc3dd3d3bb4d5a24973adddd7653f",
+            "sha256": "9750c56678964b2f1f0464f139e17d8dd98456f90b6d180f9b7cd1c0d54c4106"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_BLOCKED_CAPABILITY_REPORT.json",
+            "semantic_excerpt_hash": "d045d674499cf8803e27ce3cd9b610e46a4ea6c1f3a79f07d5cdd95bab3b0a34",
+            "sha256": "7deac955124f8f726bbe336d7e69c05a5897842bfd2f34b9383644c78e35600a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "ab6d7ce3ee1e1cf32d5aebf4e9ae606ecac60102b55d8dca7e8a7848e50fb813",
+            "sha256": "96f77a5cd7bada5282996738f8df89e877697ce377642605f9d5d6b8186d8732"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_REPORT.json",
+            "semantic_excerpt_hash": "8cecc28e76312872e370361d72318d3c09cbdb9817737a32b3bc1bbd2f07b9b6",
+            "sha256": "16ab2c820d7b71712c64c7278ff6eb7df8c603c54eb208126d08e1d5e1c431f0"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_TRACEABILITY.json",
+            "semantic_excerpt_hash": "baf2d5615ce99c8d85ad9b874ff4af7384a1cd6f185d83852fe4a93a3af92c2d",
+            "sha256": "27f9e0142516418cbca1bae82fb92a129879619bfa140351a6343ba5b9218de7"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_HUMAN_REVIEW_PACKAGE.json",
+            "semantic_excerpt_hash": "7de9900503d85636988eb5507c7fddff56d2d941c5b618ddcbd74cd9f74c9acf",
+            "sha256": "40ef9ae2d0d2155f64893e5e253af464b41f6ed11d60ba136722af84fd81ba8f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_INTENT_CLASSIFICATION_MAP.json",
+            "semantic_excerpt_hash": "7e0b7873ba9320bce11ea6dadf293748fddc020740d592a483ed279085adb668",
+            "sha256": "e1704f6fea6141674c699d32a0eaf87e81eb9781db90657552005ca2137e44a4"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "1ced23925a603ad212d8330298cf1aab53dec7f4d633496dd7d32383172bdf6c",
+            "sha256": "01ff426c8ea1b8447ac60cc515549d944ad5f268fea6f34ad8aaf9ef0a0d65ee"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_POST_BUILD_AUDIT_REPORT.json",
+            "semantic_excerpt_hash": "10f1f696206ff73f954ceed6dd0dacec20ba681c03e4ab0b9e79fe694f6d6411",
+            "sha256": "100647b0ee537381b2ed8d5dfd2515bd1cb358d453556da3168a70b1919b0e60"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_POST_BUILD_AUDIT_TRACEABILITY.json",
+            "semantic_excerpt_hash": "c97b2201e437a38a3a40ba083c72eca1667f983c61b4d3d6acf02d86590cc90b",
+            "sha256": "2b5e655dca5928728461b1bee9ff66a738edcee5dbdfedaa62a739d11538a45a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_RULE_EXTRACTION_MAP.json",
+            "semantic_excerpt_hash": "5ba3094ee20f8c43556c3bbbd894f4a79a6cb21c7caadc8189ffbaebd3d5d4e0",
+            "sha256": "20726aa4bcfe8231731e971c234092598975d29a2a08519df320ccedb7d001a2"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_SEMANTIC_DUPLICATE_REPORT.json",
+            "semantic_excerpt_hash": "a07d433c899df3dd9bde78d055ec2d4d9cf4c7661f2200d974a7959d05d1e3f3",
+            "sha256": "6c34b221e43edbba91d8e6bd48a1d862373391bc1c76a277d7f011389748cfa2"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_SEMANTIC_EVIDENCE_INDEX.json",
+            "semantic_excerpt_hash": "84425c67c6935adadfa017436470f6b3c6fdc30dbdccecf12b493ee46449bec1",
+            "sha256": "3b113854743fb0ad9b65602f34f60204365c62784cb445a3883f6581240df3f4"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_SEMANTIC_SEGMENT_MAP.json",
+            "semantic_excerpt_hash": "f09611bc24d3c4fb673238ad41c4e53eb62ba58a75ffef246eb16b5ae51c4c19",
+            "sha256": "973c2994218aa5293d9e218d82aa7b49a07d26dc7354009bfb649fcd0c94fa6c"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_FINAL_REPORT.json",
+            "semantic_excerpt_hash": "62731e51c77d2d993aa96514033b512c8427788c89b6021a3ca1adfc95f51b8c",
+            "sha256": "9cc3b326cfd823c9bf645c6a5752d71855631970dd7138eaea1684bb44758472"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_MAP.json",
+            "semantic_excerpt_hash": "8ca30313627047bb299d60d6d431ca68a401f29f65709b0c2e0e563efb06ad85",
+            "sha256": "8f39292e21050a4c8a95818a0ce47637e02c594626964555c5ea70119a7090c7"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_MAP_TRACEABILITY.json",
+            "semantic_excerpt_hash": "5bad752f4acefb2790c7c89542b54e498281228be0cff47002ba36eac1387f42",
+            "sha256": "df3c621141137bb4d41a21126993ee7071ae69912e2bb0eb11ee6a29a70ffa9e"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_PLAN.json",
+            "semantic_excerpt_hash": "dcb836b96216420ed94d9365edbcce437ace5bd1c491bc3828a1d55bef89656f",
+            "sha256": "13a6400351d4cf7b85c08d9fdd588a5ef31ec90fa34e9260216c5532fc72bcf9"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_PLAN_TRACEABILITY.json",
+            "semantic_excerpt_hash": "99ffbee8e0325466dfedca3822d94135077c6690098bfb47a7522f756fd49441",
+            "sha256": "e7e7ba8de5406b09a882424ef49f0c844367971328c72033db026824c56df487"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_REPORT.json",
+            "semantic_excerpt_hash": "7c4afbd8f440f968b0c03fd54978c08c41db1e322f35638ca0f166fc6423c514",
+            "sha256": "1b9bf04efe29cfda1bc4f04a87772338717aff7db850e26a3e1f53fe209db2ff"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_VALIDATION_TRACEABILITY.json",
+            "semantic_excerpt_hash": "ae9192ff5efdd97ad16edb5ce3e9d3930c723537ff8d40e2bac3847e229b4807",
+            "sha256": "9161a93f5006c62df61c69b271955938c29604eb7dc3b00a4d36618f6b7a4e4d"
+          }
+        ],
+        "block": "BLOQUE_4",
+        "resolution": "DIRECT_ARTIFACTS",
+        "resolver_note": "Matched by file naming aliases and/or direct block patterns.",
+        "status": "PASS"
+      },
+      "BLOQUE_5": {
+        "artifact_count": 36,
+        "artifacts": [
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "8f929cfa71f96cfed4f0d36df14d4cf16cfefc97c8ca8eb159a9ddbf4c2c0c29",
+            "sha256": "6c28318ee1021989d5b09a02755a9db480eedba37b5b2c5463b10431d9f45c75"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "6c98402ad07cb4881742eac9e0659e0ffe5fb9995de49fd1015fe54b9734ff7a",
+            "sha256": "0544cb9c2bc5c11427581050e3e53d75efee8365a6eca9e63a0d46d048cdcd51"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_MANIFEST.json",
+            "semantic_excerpt_hash": "06c20cbe84a36bd681e8793dfebc38219ef8861d80fea6a30fd9e700db5c5844",
+            "sha256": "e2609aa3fc1706a63f8f8c74b48b0ee7ffb43fa5a198a958c18dd0e093ae9a30"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_MANIFEST.json",
+            "semantic_excerpt_hash": "a66bc0b924669fd71a411e7da4313b4b8e84314fbce4b30c86a3afc7e002e5d4",
+            "sha256": "5d9d20711325408fb7f0f11832968c9e38c8e5e1c8270d445d927213547ecc73"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_SEAL.json",
+            "semantic_excerpt_hash": "47acba144c695f7272e81f7121748be8c9e4c623183d91fb99bbf8a2f4a1c8ee",
+            "sha256": "3bf1ecbfb806f008f92e3395f5365762675a7e68da9549d9a698ba89df497802"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_SEAL.json",
+            "semantic_excerpt_hash": "222701cc48ef63a048c6b8fded980ecb06c7801685907bdd9bb0cd617609934c",
+            "sha256": "35ad0d085fbaecda89b76002204b366c89e110cd93a040c97551ca0186c671ae"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_MANIFEST.json",
+            "semantic_excerpt_hash": "289eca1169061d492e7d0ff033de136fc3f59e02cb65eef1177e16697a5ac1ab",
+            "sha256": "7ff91175c6253cb08804acc8cd9c36a1665d0dc377f6d848348078dc8d1c09ac"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_MAP_MANIFEST.json",
+            "semantic_excerpt_hash": "0e74f0a0641665658ba54f9ba3adf72de68ed3a08bd23aab6e86c2909d5c7c0f",
+            "sha256": "8b90c8862e7d16f6451f1ca05f8f8412a8990d7e675cdecd5eb782c442332c92"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_MAP_SEAL.json",
+            "semantic_excerpt_hash": "2f274191996987d24c92c6d8079b97ebf60c3761f9ea1a29c478a6827773cd40",
+            "sha256": "5f23765efc3ad2c48cf47f66a12b44fc9f431c9897def0c115fb66db7be971ee"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_PLAN_MANIFEST.json",
+            "semantic_excerpt_hash": "d9a4a67ef1b472e691f6c352fb9b39fc6c2cbd2c5ef6835b02c23570f2bb1859",
+            "sha256": "8bdaea41c315781455dcba1426ed27fd72e035ba37aa6f97e39a544b63fe51c1"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_PLAN_SEAL.json",
+            "semantic_excerpt_hash": "e91c0d4f6181bee76ab8198de04edd6686f7c80453d8df68562c011d44923c38",
+            "sha256": "bbe17ea7ed09521aefb8bbad767544cfee735bde5151b47edfc0c8805ed8f21f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_SEAL.json",
+            "semantic_excerpt_hash": "17f822fd8915c3d4154e8e45fffbdbc9b3b554030948f7a2c19fbb4f37389d18",
+            "sha256": "84af8fc8391f2019754895a09d1e19e22a4300794c24a93aeb9d9cfff70ce2c6"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_BRAIN_READ_ONLY_ADAPTER_REPORT.json",
+            "semantic_excerpt_hash": "5c2934c7e410a322f5267351256de42efa40797fb567d76ce9ee9ecc5a0299ca",
+            "sha256": "95a777a1b9a7a8737a09f149c807cda526301867a124e3de64865e4ec3793ee3"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_CONFLICT_DETECTOR_REPORT.json",
+            "semantic_excerpt_hash": "d1eee6ed3c2a9b1a6e0cea966ea78528774469d5d16f07d6b9b4d9e27429a4d7",
+            "sha256": "3e3ac589375db1ea86d946e247976b98ff8ae443c8ea1683262e8bb98c0ecb4c"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_CONFLICT_SEVERITY_REPORT.json",
+            "semantic_excerpt_hash": "192d756d1459cfc21ae2db8cdbcb19f735f34978ce4f259da9d04e42e80810db",
+            "sha256": "670bde2977f3e9c44cef21070bb270bf005f68125e665f3b8324b270a2e56bf7"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_GATE_CLOSURE_REPORT.json",
+            "semantic_excerpt_hash": "0752bf2a7af034e29a48eaeffdabf8d060ec0b5a1e23e92fbee2e6f79071fd13",
+            "sha256": "b122cf2dafa62ae837906437821ec03963efed26ffd4e1f6e3c53b224e52385c"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_GATE_CLOSURE_TRACEABILITY.json",
+            "semantic_excerpt_hash": "919a2dc89b313fb0281f0e83a38bd9892a6f74fdbeb515e4e58795eb5188c700",
+            "sha256": "a2049100b92a74b7617c83a5896c13f79cf73e047546144891070bf2d3f8395a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "e7ba35de5b16973c1e57a1f77a02e1b0fd548a3731660208b491c4465fe749ca",
+            "sha256": "71aeffb1cf4bef406d9e894b56b2cfcecf73c570e36e2780d12b639b8291f0fa"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json",
+            "semantic_excerpt_hash": "48eb79f28b19ac8df35ee3de2a028b9b1228399bb499c43c80bcf315e5fcb209",
+            "sha256": "1eb23d1cc36764f8c66f035ed96f204fb368f022f29aeda50f44550276a86e0d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NO_MUTATION_REPORT.json",
+            "semantic_excerpt_hash": "327a31921817b4cca2b391822c9a2a3e06d313b667f0baa4ad18c1a7dac22a70",
+            "sha256": "90e96d1deeb6e25774ef27b1d5a42b8946c1d4d429f8d503461b8cfbd884bd10"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_REPORT.json",
+            "semantic_excerpt_hash": "2b0f2ec25aee592984cd0e7779ed2ff5205f7ac36b90a1cd4292e7ba4479e1f1",
+            "sha256": "ec53c6c92beb65e985059406a542fe9638abb2180f115850bbfdea189bef1cf4"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_TRACEABILITY.json",
+            "semantic_excerpt_hash": "6620b4d5a7dd2b900a0ac50972aeb11d901e46bf973eed992fe197293fbad73c",
+            "sha256": "93de4fda4ed2619ad3f4b56aecb13486c1a60eb9fa5108febee08749f6d85b7e"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_EXECUTION_REPORT.json",
+            "semantic_excerpt_hash": "0fbd94f5b10403a63757b2b6d494503e2ec8416d40e7b0d2db50e6853252b1d4",
+            "sha256": "ee11c8cdfad392f76464949ae5e702f8d5b2ed73ec6d4a575af5651899328d1b"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP.json",
+            "semantic_excerpt_hash": "12c2e28d9811d5883f7cdc189966f952e958fe654602dd46b8ebaad42ea2b0ab",
+            "sha256": "9cc5233615b731fe70117d55e407295b75fd3dc9e3c16874e21aeae7df5ff992"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP_TRACEABILITY.json",
+            "semantic_excerpt_hash": "3209666fd29301f9bdb830a21d6feee630f794b6a89a72647be9590ff72b6923",
+            "sha256": "e46cec73bd20fdbf53cd4117a3c057ca6a73cece2b009df235c3275984641a98"
+          }
+        ],
+        "block": "BLOQUE_5",
+        "resolution": "DIRECT_ARTIFACTS",
+        "resolver_note": "Matched by file naming aliases and/or direct block patterns.",
+        "status": "PASS"
+      },
+      "BLOQUE_6": {
+        "artifact_count": 35,
+        "artifacts": [
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "53748b21de8a9cda785edb263030e96742d105a9ced218dc79db258d44e13c88",
+            "sha256": "f63228df7f06da198733fc742f6145371ffe4ba44fb1baad43f6475ee9d58634"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "7da1a3cccb507d0aaf55c4279bd421840053725eac82de77d4cdbb219bd2ef65",
+            "sha256": "b93c479c3634034f2c0ee7e7242160d34e2c956eb42e1f582e0b394cef78f76c"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_MANIFEST.json",
+            "semantic_excerpt_hash": "fe79dd02ae1e19100bbcce9108ef3c60afb16dd1f05f2386bb8c85f903c3c9db",
+            "sha256": "0317f6856fcb4d22d046ae64637fdc0a3cb367075bd95fa1f8a6bfbe0314aa70"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_POST_BUILD_AUDIT_MANIFEST.json",
+            "semantic_excerpt_hash": "0072e0add7e928b0d7816b8e12747f8c8bab7a3f33422ef576757f40ba67d7c3",
+            "sha256": "73ac2d7e2dff5d8e00d4cc84083cd5fc0dcb0b3d7ee221e275ef77bac98bc7f0"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_POST_BUILD_AUDIT_SEAL.json",
+            "semantic_excerpt_hash": "7f3236269edf02c09561e2b65f8cae05a8932a255dd996ecd32661c6d5a8e186",
+            "sha256": "c7a86f992274960595530764f88f2af30685e4b60e0a6f7660362db3fef14d77"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_SEAL.json",
+            "semantic_excerpt_hash": "19323ecc402f50dd4c5cb4fcd35cb9f9b43b832ec3686943f043d03970502345",
+            "sha256": "7326d4aae9393b6e614d3acaef475ed797bdf0fb8bb21c516da7d606629fb74c"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_VALIDATION_EXECUTION_MANIFEST.json",
+            "semantic_excerpt_hash": "5f4533db0c253c314cbe414f4073266069844fff768c2e33994707a3a876d640",
+            "sha256": "f3a0fad51f128e70bfc5d01eeaf4428457dea2a6dbe76b84ff53975987a59ab8"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_VALIDATION_EXECUTION_SEAL.json",
+            "semantic_excerpt_hash": "3021969cb6e117b3eaec13c6fd9fb7ac99cfd8c2fcb8afb347a7749574138751",
+            "sha256": "30ea5787d4d481792b342efce5b502d4569d2c3f6015a9fa9a1b34e9a6ceaeef"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_VALIDATION_MAP_MANIFEST.json",
+            "semantic_excerpt_hash": "a90a8e61d0956640516e05b5518ca7989094bbc8e1fe47f4c5920cc5b4c5fc36",
+            "sha256": "49a5e0e834d320bb7340d86c1d49214318ce568a8b3bb7e35e4e31e6c9d721fc"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_VALIDATION_MAP_SEAL.json",
+            "semantic_excerpt_hash": "f5c4d68903d2150e84cdbdca602ce701611094cf762e5b530c1bff67de5f9f79",
+            "sha256": "485f121a66c1daebee85737eb4ad1ce42f2fec9fbda8488547073377833e7a3b"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_VALIDATION_PLAN_MANIFEST.json",
+            "semantic_excerpt_hash": "f9ba8ce9c825392c41a3a1cd6fe4153f102831bed98ef41aa927293f275887c1",
+            "sha256": "4ce30932164893ce44c3e4a88c08a8ec2e908193848f7fc3bf6b721b1b56ced0"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_VALIDATION_PLAN_SEAL.json",
+            "semantic_excerpt_hash": "8deef3881a5b61e348bb43b69eea70ba7a9956d6089f65e9e604475890642fca",
+            "sha256": "297e7bcf7bf076232a7ac974e48be987e165d1aa6ae4df2aa1181bfbf7d38243"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_CONTROLLED_PLAN_BUILDER_REPORT.json",
+            "semantic_excerpt_hash": "9b01cd72f15d0f43b0426e228869150ebcc065eeacf370e8747c986619875044",
+            "sha256": "bc0de51bcdfd190051c28282cc70434c2a0b174abcd3d8a82210a4d9da3ab6d3"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_DECISION_MAPPER_REPORT.json",
+            "semantic_excerpt_hash": "267b31f30967e4079df4cf13112bc41751b532287b06495afdb9ca88f8da79f7",
+            "sha256": "f0435d023249457f51f971a44d7a9bbe0da3a191c0efb514ca74f4809dddfc8f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_REPORT.json",
+            "semantic_excerpt_hash": "9ed883930587b806027c3ad947f258bae75d34b17559594a42f965c81e07e05f",
+            "sha256": "2e4439fe5d77a73429c34d94cffed397bf53bcf0028c36487b63927908747780"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_TRACEABILITY.json",
+            "semantic_excerpt_hash": "a4de89cd67ab9993ab0238c19b56d39d8ad196ba3393c708a4e60ce7a9078174",
+            "sha256": "8e3cd69c2463c76c2013bc552f6d69f90f4fe65f5fccc1f51bd7aae9969a6464"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "f918171aaee048629a5abfffa40389ebb1ab51c8f0385d2da6e255a89bc039e3",
+            "sha256": "a858f2cb616a92fc6d505e5ee786a361908d32f1132f61b68c55ef943e819203"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json",
+            "semantic_excerpt_hash": "635a178fa38a2821e710c0b595334b4b76189cfa62efd49367e2fc6c2757b0c6",
+            "sha256": "7c1a1c533b1d9f33b13d0bd0e05782d9c81c1c48a8663bb483d7ffabc27de8bf"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_PERMISSION_REPORT.json",
+            "semantic_excerpt_hash": "f9680ec0de99bf6658fca015d7a79285cf4f96bf38f9a627514480bcf06fe8a6",
+            "sha256": "f24733aadb2103616855d42cef6443bb22ac6305b182b5607b3dd6710bab1b94"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_PLAN_SAFETY_REPORT.json",
+            "semantic_excerpt_hash": "11a4898b809000a087a755086fcba7b3d2fb25dd53bebbfc52824c46b4c67890",
+            "sha256": "7e4b52972181f604eca82ff8fa8f62c38ca4936deec50db16aef54a114ca70ef"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_POST_BUILD_AUDIT_REPORT.json",
+            "semantic_excerpt_hash": "4752efe308c04294e72d257fb15548fd247d2a068046c9cf002a1ba16a5a8dc9",
+            "sha256": "d2d1975749e803560fe2942377db652093057051053c0810210d35fa6ae82800"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_POST_BUILD_AUDIT_TRACEABILITY.json",
+            "semantic_excerpt_hash": "6253542c23f0252bdcef5ab572325dbfd637dc5f477ec2a25c7688dd123b05cc",
+            "sha256": "6b5d3dd7ad388e6fb8bcb9013ff3af822a69c58bfc734b2b6837745dfb1b8342"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_EXECUTION_REPORT.json",
+            "semantic_excerpt_hash": "fd69713991a66a7bade2281305a54abf49eb04e2a8c384cfc8108a212088f479",
+            "sha256": "1130ce27197bcb0663f1aa6095887f6cda0b617d1f3b436d8981237ea9d1528a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_EXECUTION_TRACEABILITY.json",
+            "semantic_excerpt_hash": "afe4aab9f836a73ba4b9300ba0e0fe001cb4e4efcc05ded308c6be500f942b40",
+            "sha256": "6497a552bba2b69017542c6826c051103446755288c07ae4f34f0bac4c5ab864"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_MAP.json",
+            "semantic_excerpt_hash": "87cfadea904b551d03a5bab811e8fdb2c7fa78a6ba7c81dbc95b9bffa4b01388",
+            "sha256": "64fcd1f39fb9b9377a772e6aa4bd30d72589ea71aa3121db21f20eff138b79c4"
+          }
+        ],
+        "block": "BLOQUE_6",
+        "resolution": "DIRECT_ARTIFACTS",
+        "resolver_note": "Matched by file naming aliases and/or direct block patterns.",
+        "status": "PASS"
+      },
+      "BLOQUE_7": {
+        "artifact_count": 42,
+        "artifacts": [
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "f35b1517097f731917b7662d2c316e3266cfd089b77597b8126c81359ac17158",
+            "sha256": "67c96bd9e22e6b5d77beb340cb940f4de0d09250174fdcbd2ec15655c155c28d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "933ff03446c0305360dab0f4d513ba33857d92f1132adfa69eea17c103d51a20",
+            "sha256": "d7b35723d6e5e0402c10fdfdeecb38ed7128974103391fc5baa7cc5c4fa1558c"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_MANIFEST.json",
+            "semantic_excerpt_hash": "a48f072705d8b17c904be80bcbf79140bbaa4cf4f8776ca6f2457ca816172d64",
+            "sha256": "9e0704f9fef6faaf7bc1bc36a74305129d9d88ad6e899f6999a4bfd509395349"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_MANIFEST.json",
+            "semantic_excerpt_hash": "9af342b6008354f874e8fd7ce877adc56a1109882e54d586ee2dabbafb210e70",
+            "sha256": "816201154b9609b2896831c4d2d240ad0a7591bf529034413d84c096ce02745f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_SEAL.json",
+            "semantic_excerpt_hash": "f16a78eb24d32c22389f54db82661c891d3cd0a26dc9a9cf683a16a608c05cef",
+            "sha256": "ac712a45a58e4b601588fd588bf7ebd10ad907e3f8bfc94ca10e36823584b531"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_SEAL.json",
+            "semantic_excerpt_hash": "c45047d1fa2fe81b488c70ff7afe5d16c5c48207acc1cb26915935452647b90f",
+            "sha256": "f026971bac6d3725fde6f30ec606b6612d12431397431d5207df6872e4b6cb92"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MANIFEST.json",
+            "semantic_excerpt_hash": "7ef538d385c8b90678ee99abbc03f1d10682fea4688bd1158fd67119484b5cdb",
+            "sha256": "5bd97f5bec1724b74e5cd64028c8bb1041b73b4f774e9353ec64789c61beb467"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MAP_MANIFEST.json",
+            "semantic_excerpt_hash": "6c26f6ba6f2c28ecfa5b7dc7d1627bfd56bc4049bc4dd3d99dea335595e302f6",
+            "sha256": "dbf371adf89c885a93682fe134486ef5aa43c12c9c3b7fdecc79e4d67b7e0c6a"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_MAP_SEAL.json",
+            "semantic_excerpt_hash": "79627ae638598c0cc0068680d08996a2b713babc6c2268fd279757543805960e",
+            "sha256": "a6b241a40b01910c62149fdafeb002c6e8555e6c330f4ed2945baf487e303019"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_PLAN_MANIFEST.json",
+            "semantic_excerpt_hash": "c9b80ba80331ca9ae1f1fab81e5a132d226870826656ee0255cf02694e2da281",
+            "sha256": "f8ed7f2719ae15f9b080f3a2dfc7ed98d0853489c07e23132e930e8790e6014f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_PLAN_SEAL.json",
+            "semantic_excerpt_hash": "3ecd16f2f4faf0831d98962c113e4005b2c7112ae5630b402e944699c450a0f5",
+            "sha256": "11210b056f8f45459544475473e6fc383799adb90f7f64f50d339bf769f7f960"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_VALIDATION_SEAL.json",
+            "semantic_excerpt_hash": "a990648606c9f6230b122fd0a7ad89cab9873ca1806bbd56ec6e04e6bbc91ce4",
+            "sha256": "4f1435762e4441d7b177c2008b1ebed6db284e258d25c4df70c9af8c409862be"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_CROSS_BLOCK_INTEGRITY_REPORT.json",
+            "semantic_excerpt_hash": "a0a31d137d4c7d54febcdd81acf1cce2e6e407acadb8a54c54a2b186b2c69691",
+            "sha256": "32006bae74656fcc25695423c724968bbcddca15072273dcb663b26c4adfdd4e"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_EVIDENCE_INDEX_REPORT.json",
+            "semantic_excerpt_hash": "842e525370cad74e3da64255ae618d20506597a942f9cf0c43515f959b66f8c2",
+            "sha256": "a8ae54b89f50ed8b513554cec406d6ebe05e18aaca93d08c2319ede0667fe294"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_GATE_CLOSURE_REPORT.json",
+            "semantic_excerpt_hash": "6902853dfa83b524df6c98a98a5f9f6964911bff5821e836f1417f39ae2c7783",
+            "sha256": "0bc48577e263cc9d7332f538baf7057c63b8d3d97b45f00c67e76a421c856b74"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_GATE_CLOSURE_TRACEABILITY.json",
+            "semantic_excerpt_hash": "248a9fc619bb3a3fe73f3bbec299b454baad7a6dece66a4973c971a6eb87a453",
+            "sha256": "7204c5c404501222f71a1fce91cee249034f62ead21c3296dcbbe69cfe8a8a52"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_MANIFEST_REPORT.json",
+            "semantic_excerpt_hash": "5d93af59a1d6da10c2873ac5bdbf9854f2482e429a09d1a767bd4268fd41bed8",
+            "sha256": "bc014592e332212a49ef10500eea1313e4cf061d7476c75b2e7ebfc9c5736be1"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP.json",
+            "semantic_excerpt_hash": "126189aef418912efdac442321e9c3e144c69bf8d31fde5d5deef8e277f76a47",
+            "sha256": "768ca99be5e60069dcfc9137d14917faf533240b1a6e37b859f7935861919d07"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json",
+            "semantic_excerpt_hash": "b475b72a28a9a842252f8a7989fae6199556709a0416e35d1d6f614138b0c3ce",
+            "sha256": "307f414ea91222d9454cc8f6b2d78bb1d217b76b9451265c6c8925034ce3ba79"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_POST_BUILD_AUDIT.json",
+            "semantic_excerpt_hash": "0e4fd1bf4878ff39f11899661b1c3f8adfe324e8f6ba6318188de93c43f423a1",
+            "sha256": "c3dac50dc5820486b9afc70882aaf347efd30f306456121388dafe4853ce139d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_VALIDATION.json",
+            "semantic_excerpt_hash": "7185e33301872f817cf810cf2a8ecf5524c08d92de4d032bd01621b10d4d5735",
+            "sha256": "1e74ba190f441a2e50de69cd824a3a8c6408fed99fc0b61974ee887ad45811fb"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_NEXT_LAYER_READINESS_MAP_AFTER_VALIDATION_MAP.json",
+            "semantic_excerpt_hash": "54414bd4d4e171a3703b4882af1e1e0e91fd2e3764231ea51a460dc68c32b136",
+            "sha256": "7e8ccb181c25dd6e24f85e30cdf40e3708fbbeddbb7d0b1b43fbd4a11c2f0deb"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_PERMISSION_CONSISTENCY_REPORT.json",
+            "semantic_excerpt_hash": "676d6705aae044d8904943cb94752e4a4aab1fac00e518c044c73bb589c9f3cc",
+            "sha256": "7dc269c69cbd995a1967b028b3aef78e42968c9bd1150c81f3be5f365792adfc"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_REPORT.json",
+            "semantic_excerpt_hash": "b6af594f98dff33cd91350273233ceedb5aa449c8ecdba6ea17f1327966e02f3",
+            "sha256": "a11b3d7becad3b07844a59e962d15e4c1da7ea58628f0bd3d54630a4ee8c7758"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_POST_BUILD_AUDIT_TRACEABILITY.json",
+            "semantic_excerpt_hash": "6b2a912229db29cf47f6023e9d6fd4b251ea77e7078ee5acfce5c2be0ffb3af0",
+            "sha256": "e510649d2ec0b878ca03e190e86ef316c0cf26333b30ed50c46f8363cd64dbad"
+          }
+        ],
+        "block": "BLOQUE_7",
+        "resolution": "DIRECT_ARTIFACTS",
+        "resolver_note": "Matched by file naming aliases and/or direct block patterns.",
+        "status": "PASS"
+      },
+      "BLOQUE_8": {
+        "artifact_count": 262,
+        "artifacts": [
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "1a738c4d3d81ad147638cf3db442b309be00a9cadbf2a2c85297adf13a78b2ca",
+            "sha256": "98db1c7a89c3a5e8e7f7f3ca74081e84f2b01397a13675798384dd02e819ebe9"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "25de1b6e250c89c3331e01df8707fa191caaebe0947ebbaee575e34acfddd6e4",
+            "sha256": "f00eabb8f592fbe23624cdb9ba68b766094d37ff762d8495f5afb5b127f4592d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_MANIFEST.json",
+            "semantic_excerpt_hash": "d8c6633279d392024617a690167458dd03ac6091dd3bfedc4b5ee7653c6fe372",
+            "sha256": "f0f65219e9f38a3ecbab35cee3f5c442d8c77a8586122b1ca122046ab3afbd36"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_SEAL.json",
+            "semantic_excerpt_hash": "675abd51a678d99fd5aeab224b0be23c3c9d39066835c351147a8d2ba0566ae8",
+            "sha256": "7563d0b487dde3fb21c2eb6b7fb3f9126712f7755fd4a0e9eaf2a1c6672098c2"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "3f34d83ef2f6e1bb7145412e9e67edd579c3e47c002a56124c87824dd3450070",
+            "sha256": "1044e7b893a6749b9b05e0bd6250b6e531d1bac220714640587f3bcffa769a95"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "3061fd08027f218d42784c1d21b74d731a2fa10c3311adc6f2e8e9ff5b8a3bd8",
+            "sha256": "37c29f0a99b15103e3fcf2469be67ee31709ba35f692e535715e7337ceb0dd1d"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_MANIFEST.json",
+            "semantic_excerpt_hash": "abcc72574cca90c71fddf2e67c43a619fd0ee458e78a9a00602884c34aa6a641",
+            "sha256": "9976cccf24827da12a0cb7b221f28119629113f4fd1532d5e5bda8911488895f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_3_SEAL.json",
+            "semantic_excerpt_hash": "7c206acc7a4b4009e3f5e5e6a8940fbd3288792bfc6fdb11c64f98e057b5b900",
+            "sha256": "9d681964be1d06d88fd701049f301e362b8759c02fd6dbfbd5657a9176f6ef47"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "fa8be70612ce073af1d104eafbeba81ea24c00667e7a05ba8c03fb9986a4e2ea",
+            "sha256": "502bc73236c982958b718f3039651c731cb191d254156423d840c6842b4e4041"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "117106227759fba5e1b9c1aadbe0a2aff94e8e5759e5ae476dc2a682007bd160",
+            "sha256": "dd78a3d9ce574acf89e94a41385a98cc4c82e4df64898af97f26957ff5610ca4"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_MANIFEST.json",
+            "semantic_excerpt_hash": "a4d71cd6b786d95f119adb04671e1148e54c36899d36cc4397b22038d93f2675",
+            "sha256": "eac3f17c451ad4ff27acbbbd90884e1ce305549a9c4470ce711896d3d000f238"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_SEAL.json",
+            "semantic_excerpt_hash": "a52d6156ff3aba5234b66633f65497aa60ed0251c0f32c9a422ebf8bc13a3283",
+            "sha256": "1d1d09dd3323cd084e63c87904e2149f3b2811dcd864adf47b42085ccdce7b95"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "8f929cfa71f96cfed4f0d36df14d4cf16cfefc97c8ca8eb159a9ddbf4c2c0c29",
+            "sha256": "6c28318ee1021989d5b09a02755a9db480eedba37b5b2c5463b10431d9f45c75"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_GATE_CLOSURE_SEAL.json",
+            "semantic_excerpt_hash": "6c98402ad07cb4881742eac9e0659e0ffe5fb9995de49fd1015fe54b9734ff7a",
+            "sha256": "0544cb9c2bc5c11427581050e3e53d75efee8365a6eca9e63a0d46d048cdcd51"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_MANIFEST.json",
+            "semantic_excerpt_hash": "06c20cbe84a36bd681e8793dfebc38219ef8861d80fea6a30fd9e700db5c5844",
+            "sha256": "e2609aa3fc1706a63f8f8c74b48b0ee7ffb43fa5a198a958c18dd0e093ae9a30"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_MANIFEST.json",
+            "semantic_excerpt_hash": "a66bc0b924669fd71a411e7da4313b4b8e84314fbce4b30c86a3afc7e002e5d4",
+            "sha256": "5d9d20711325408fb7f0f11832968c9e38c8e5e1c8270d445d927213547ecc73"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_SEAL.json",
+            "semantic_excerpt_hash": "47acba144c695f7272e81f7121748be8c9e4c623183d91fb99bbf8a2f4a1c8ee",
+            "sha256": "3bf1ecbfb806f008f92e3395f5365762675a7e68da9549d9a698ba89df497802"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_SEAL.json",
+            "semantic_excerpt_hash": "222701cc48ef63a048c6b8fded980ecb06c7801685907bdd9bb0cd617609934c",
+            "sha256": "35ad0d085fbaecda89b76002204b366c89e110cd93a040c97551ca0186c671ae"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_MANIFEST.json",
+            "semantic_excerpt_hash": "289eca1169061d492e7d0ff033de136fc3f59e02cb65eef1177e16697a5ac1ab",
+            "sha256": "7ff91175c6253cb08804acc8cd9c36a1665d0dc377f6d848348078dc8d1c09ac"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_MAP_MANIFEST.json",
+            "semantic_excerpt_hash": "0e74f0a0641665658ba54f9ba3adf72de68ed3a08bd23aab6e86c2909d5c7c0f",
+            "sha256": "8b90c8862e7d16f6451f1ca05f8f8412a8990d7e675cdecd5eb782c442332c92"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_MAP_SEAL.json",
+            "semantic_excerpt_hash": "2f274191996987d24c92c6d8079b97ebf60c3761f9ea1a29c478a6827773cd40",
+            "sha256": "5f23765efc3ad2c48cf47f66a12b44fc9f431c9897def0c115fb66db7be971ee"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_PLAN_MANIFEST.json",
+            "semantic_excerpt_hash": "d9a4a67ef1b472e691f6c352fb9b39fc6c2cbd2c5ef6835b02c23570f2bb1859",
+            "sha256": "8bdaea41c315781455dcba1426ed27fd72e035ba37aa6f97e39a544b63fe51c1"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_PLAN_SEAL.json",
+            "semantic_excerpt_hash": "e91c0d4f6181bee76ab8198de04edd6686f7c80453d8df68562c011d44923c38",
+            "sha256": "bbe17ea7ed09521aefb8bbad767544cfee735bde5151b47edfc0c8805ed8f21f"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_VALIDATION_SEAL.json",
+            "semantic_excerpt_hash": "17f822fd8915c3d4154e8e45fffbdbc9b3b554030948f7a2c19fbb4f37389d18",
+            "sha256": "84af8fc8391f2019754895a09d1e19e22a4300794c24a93aeb9d9cfff70ce2c6"
+          },
+          {
+            "json_parse_ok": true,
+            "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_GATE_CLOSURE_MANIFEST.json",
+            "semantic_excerpt_hash": "53748b21de8a9cda785edb263030e96742d105a9ced218dc79db258d44e13c88",
+            "sha256": "f63228df7f06da198733fc742f6145371ffe4ba44fb1baad43f6475ee9d58634"
+          }
+        ],
+        "block": "BLOQUE_8",
+        "resolution": "DIRECT_ARTIFACTS",
+        "resolver_note": "Matched by file naming aliases and/or direct block patterns.",
+        "status": "PASS"
+      }
+    },
+    "direct_count": 7,
+    "evidence_file_count_scanned": 575,
+    "missing_real_count": 0,
+    "naming_mismatch_blindage": true,
+    "policy": {
+      "block8_must_not_be_traceability_only": true,
+      "direct_artifacts": "PASS",
+      "hash_only_consumption": true,
+      "missing_real": "BLOCK",
+      "no_previous_artifact_rewrite": true,
+      "semantic_artifacts": "PASS",
+      "traceability_anchored": "PASS_FOR_HISTORICAL_BLOCKS_ONLY"
+    },
+    "resolver_mode": "BUILD_FIX_2_STANDALONE_EVIDENCE_RESOLVER",
+    "semantic_count": 1,
+    "status": "PASS",
+    "traceability_anchored_count": 0
+  },
+  "contract": "ConsumedChainDiscoveryContract",
+  "expected_base": {
+    "head_short": "311cc15",
+    "head_subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+  },
+  "gate": "BUILD_FIX_2_STANDALONE",
+  "git_context": {
+    "head_full": "311cc1514f4ac0c3a59669c191b85eecd3e8bd96",
+    "head_short": "311cc15",
+    "head_subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+  },
+  "next_safe_step": "BLOQUE_9_POST_BUILD_AUDIT",
+  "permissions": {
+    "bloque_10_blueprint_allowed_now": false,
+    "bloque_10_build_allowed_now": false,
+    "bloque_10_implementation_plan_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_now": false,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
