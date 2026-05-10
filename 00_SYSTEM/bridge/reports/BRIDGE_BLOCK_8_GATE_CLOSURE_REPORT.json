@@ -1,0 +1,145 @@
+{
+  "artifact_reports": {
+    "build": {
+      "artifact_count": 13,
+      "canonical_json_count": 10,
+      "label": "BUILD",
+      "status": "PASS"
+    },
+    "post_build_audit": {
+      "artifact_count": 6,
+      "canonical_json_count": 5,
+      "label": "POST_BUILD_AUDIT",
+      "status": "PASS"
+    },
+    "validation": {
+      "artifact_count": 10,
+      "canonical_json_count": 9,
+      "label": "VALIDATION",
+      "status": "PASS"
+    },
+    "validation_map": {
+      "artifact_count": 8,
+      "canonical_json_count": 7,
+      "label": "VALIDATION_MAP",
+      "status": "PASS"
+    },
+    "validation_plan": {
+      "artifact_count": 9,
+      "canonical_json_count": 8,
+      "label": "VALIDATION_PLAN",
+      "status": "PASS"
+    }
+  },
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_9_IMPLEMENTATION_PLAN",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "closure_summary": {
+    "build_manifest_completeness": {
+      "actual_count": 11,
+      "produced_artifacts_completeness": "PASS",
+      "required_count": 11,
+      "summary_included": true
+    },
+    "closure_decision": "CLOSED_VALIDATED",
+    "manual_brain_bridge_pytest": "2454 passed",
+    "no_touch": "PASS",
+    "repo_clean_synced": "PASS",
+    "static_scan": "PASS",
+    "targeted_pytest": "350 passed",
+    "validation_consumed": "PASS",
+    "validation_gates_passed": 22
+  },
+  "consumed_validation_head": "ced48ac",
+  "consumed_validation_subject": "Validate MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_closure": "VALIDATED_POST_AUDITED",
+  "gate": "GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "next_layer": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "next_safe_step": "BLOQUE_9_BLUEPRINT",
+  "permissions": {
+    "bloque_10_allowed_now": false,
+    "bloque_9_blueprint_allowed_next": true,
+    "bloque_9_build_allowed_now": false,
+    "bloque_9_implementation_plan_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_roots_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "report": "BRIDGE_BLOCK_8_GATE_CLOSURE_REPORT",
+  "result": "PASS",
+  "static_source_scan": {
+    "path_guards_present": true,
+    "privileged_helper_scope_enforced": true,
+    "privileged_replace_calls_allowed": 1,
+    "safe_string_replace_calls_allowed": 3,
+    "static_source_scan": "PASS",
+    "unsafe_lstrip_absent": true
+  },
+  "status": "CLOSED_VALIDATED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_report": {
+    "manual_brain_bridge_pytest": "2454 passed",
+    "py_compile": "PASS",
+    "suite_minimum_required": 2454,
+    "targeted_minimum_required": 350,
+    "targeted_pytest": "350 passed"
+  },
+  "validation_commit_report": {
+    "allowlist_exact_match": true,
+    "changed_file_count": 10,
+    "changed_files": [
+      "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_VALIDATION_MANIFEST.json",
+      "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_VALIDATION_SEAL.json",
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_NEXT_LAYER_READINESS_MAP_AFTER_VALIDATION.json",
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_VALIDATION_EXECUTION_RESULTS.json",
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_VALIDATION_GATE_RESULTS.json",
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_VALIDATION_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_VALIDATION_REPORT.json",
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_VALIDATION_RUNTIME_SEMANTICS.json",
+      "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_VALIDATION_TEST_EVIDENCE.json",
+      "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_8_VALIDATION_SUMMARY.md"
+    ]
+  },
+  "validation_semantics": {
+    "bloque_9_allowed_now": false,
+    "dangerous_permissions_all_false": true,
+    "failed_gates": [],
+    "gate_closure_allowed_next": true,
+    "gate_count": 22,
+    "manual_brain_bridge_pytest": "2454 passed",
+    "no_touch": "PASS",
+    "runtime_semantics": "PASS",
+    "targeted_pytest": "350 passed",
+    "validation_status": "VALIDATED_POST_AUDITED"
+  }
+}

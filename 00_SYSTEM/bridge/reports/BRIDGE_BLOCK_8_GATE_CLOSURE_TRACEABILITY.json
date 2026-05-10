@@ -1,0 +1,94 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "blocked_actions": [
+    "BLOQUE_9_IMPLEMENTATION_PLAN",
+    "BLOQUE_9_BUILD",
+    "BLOQUE_10",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9",
+    "ROLLBACK_EXECUTION"
+  ],
+  "consumed_validation_head": "ced48ac",
+  "consumed_validation_subject": "Validate MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery",
+  "current_status_before_closure": "VALIDATED_POST_AUDITED",
+  "gate": "GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "next_layer": "BLOQUE_9_TEST_HARNESS_40_PRUEBAS",
+  "next_safe_step": "BLOQUE_9_BLUEPRINT",
+  "permissions": {
+    "bloque_10_allowed_now": false,
+    "bloque_9_blueprint_allowed_next": true,
+    "bloque_9_build_allowed_now": false,
+    "bloque_9_implementation_plan_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "report": "BRIDGE_BLOCK_8_GATE_CLOSURE_TRACEABILITY",
+  "result": "PASS",
+  "status": "CLOSED_VALIDATED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "traceability": [
+    {
+      "commit": "1ba759a",
+      "node_id": "B07-gate-closure",
+      "status": "CLOSED_VALIDATED",
+      "subject": "Close MANUAL-CEREBRO bridge block 7 manifest traceability reports"
+    },
+    {
+      "commit": "2e19ebd",
+      "node_id": "B08-build",
+      "status": "BUILT_PENDING_POST_AUDIT",
+      "subject": "Build MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+    },
+    {
+      "commit": "45fcf58",
+      "node_id": "B08-build-fix-2.1",
+      "status": "BUILT_PENDING_POST_AUDIT",
+      "subject": "Build fix 2.1 MANUAL-CEREBRO bridge block 8 status parser manifest completeness"
+    },
+    {
+      "commit": "1690cb5",
+      "node_id": "B08-post-build-audit",
+      "status": "BUILT_POST_AUDITED",
+      "subject": "Post-build audit MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+    },
+    {
+      "commit": "af1befd",
+      "node_id": "B08-validation-map",
+      "status": "VALIDATION_MAP_DEFINED",
+      "subject": "Define validation map MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+    },
+    {
+      "commit": "3ee7f4d",
+      "node_id": "B08-validation-plan",
+      "status": "VALIDATION_PLAN_DEFINED",
+      "subject": "Define validation plan MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+    },
+    {
+      "commit": "ced48ac",
+      "node_id": "B08-validation",
+      "status": "VALIDATED_POST_AUDITED",
+      "subject": "Validate MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+    },
+    {
+      "commit": "PENDING_THIS_GATE_CLOSURE_COMMIT",
+      "next_safe_step": "BLOQUE_9_BLUEPRINT",
+      "node_id": "B08-gate-closure",
+      "status": "CLOSED_VALIDATED",
+      "subject": "Close MANUAL-CEREBRO bridge block 8 atomic writer lock quarantine recovery"
+    }
+  ]
+}
