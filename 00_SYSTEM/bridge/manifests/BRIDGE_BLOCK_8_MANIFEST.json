@@ -1,0 +1,234 @@
+{
+  "block": "BLOQUE_8_ATOMIC_WRITER_LOCK_QUARANTINE_RECOVERY",
+  "build_fix": "BUILD_FIX_1_1_ROBUST_FUNCTION_BOUNDARY_PATH_CANONICALIZATION",
+  "canonical_json": true,
+  "consumed_block7_head": "1ba759a",
+  "consumed_block7_subject": "Close MANUAL-CEREBRO bridge block 7 manifest traceability reports",
+  "dangerous_permissions_all_false": true,
+  "gate": "BUILD_FIX_1_1",
+  "hash_algorithm": "sha256",
+  "next_safe_step": "BLOQUE_8_POST_BUILD_AUDIT",
+  "patch_report": {
+    "canonicalize_destination_path_patch": {
+      "end": 13568,
+      "function": "canonicalize_destination_path",
+      "method": "TOP_LEVEL_FUNCTION_BOUNDARY_REPLACEMENT",
+      "new_length": 2142,
+      "old_length": 1688,
+      "start": 11880
+    },
+    "extra_negative_tests_added": true,
+    "normalize_path_patch": {
+      "end": 3651,
+      "function": "normalize_path",
+      "method": "TOP_LEVEL_FUNCTION_BOUNDARY_REPLACEMENT",
+      "new_length": 323,
+      "old_length": 187,
+      "start": 3464
+    },
+    "patch_strategy": "ROBUST_TOP_LEVEL_FUNCTION_BOUNDARY_REPLACEMENT",
+    "unsafe_lstrip_removed": true
+  },
+  "permissions": {
+    "bloque_9_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "execution_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "rollback_execution_allowed": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_now": false,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_BUILD_REPORT.json",
+      "artifact_type": "block8_build_report_json",
+      "result": "PASS",
+      "sha256": "0ab3804b99558c09e7e99e0bb9015c40333dd906de8533f5e2a44a0f95730fbc",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_LOCK_AND_STALE_LOCK_REPORT.json",
+      "artifact_type": "block8_build_report_json",
+      "result": "PASS",
+      "sha256": "147ec636dbb6740d1c7fbe37729f3c92c69d44aeac3e055f639893a76df0485e",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_NEXT_LAYER_READINESS_MAP.json",
+      "artifact_type": "block8_build_report_json",
+      "result": "PASS",
+      "sha256": "76789d541d917ea92ee1064eba6e4cf95f6c2229c70f44b14eb6778f5975e617",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_PATH_BOUNDARY_REPORT.json",
+      "artifact_type": "block8_build_report_json",
+      "result": "PASS",
+      "sha256": "257a96c775659fa6ead46b419783237ab8f6afd194010f8a30c822537a20e085",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_PERMISSION_AND_LIMITS_REPORT.json",
+      "artifact_type": "block8_build_report_json",
+      "result": "PASS",
+      "sha256": "8aac7eb5b8251cfc6ea66bc41e4f99793f4b24d32b1c7fdb86e252c61e627fcf",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_QUARANTINE_RECOVERY_REPORT.json",
+      "artifact_type": "block8_build_report_json",
+      "result": "PASS",
+      "sha256": "bff5747080d1099d4704e54a9a04677536dd87805f33b54e6155f2df4b9e36c1",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_STAGING_PROMOTION_REPORT.json",
+      "artifact_type": "block8_build_report_json",
+      "result": "PASS",
+      "sha256": "024a8bfb5d4aeb4441a4c1732ecb2a00d4b0bee49f9ab2bad398dba8fb0bbe9b",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_8_TRANSACTION_CONTRACT_REPORT.json",
+      "artifact_type": "block8_build_report_json",
+      "result": "PASS",
+      "sha256": "737e9ad6d20ad76bb312197532e52a976d00fd26edf67c8db303ba8b6875e4c5",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "04_SCRIPTS/python/manual_brain_bridge/bridge_block_8_atomic_writer_lock_quarantine_recovery.py",
+      "artifact_type": "source_py",
+      "result": "PASS",
+      "sha256": "5731bd30789da3db8c0907d32712086e75e42451c209af80e014a4c26066b3e5",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    },
+    {
+      "artifact_path": "tests/manual_brain_bridge/test_bridge_block_8_atomic_writer_lock_quarantine_recovery.py",
+      "artifact_type": "test_py",
+      "result": "PASS",
+      "sha256": "3848ec335323e4c32604645f92a4e6c4568dbb9dc7b9b177a1eb008fc1967f3c",
+      "status": "BUILT_PENDING_POST_AUDIT"
+    }
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "runtime_semantics_report": {
+    "locked_path_cases": {
+      "../../escape.json": {
+        "findings": [
+          "PATH_ESCAPES_ROOT",
+          "PATH_TRAVERSAL"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "../escape.json": {
+        "findings": [
+          "PATH_ESCAPES_ROOT",
+          "PATH_TRAVERSAL"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "././escape.json": {
+        "findings": [
+          "PATH_DOT_SEGMENT"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "./escape.json": {
+        "findings": [
+          "PATH_DOT_SEGMENT"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "//server/share/file.json": {
+        "findings": [
+          "ABSOLUTE_OR_UNC_PATH"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "/tmp/escape.json": {
+        "findings": [
+          "ABSOLUTE_OR_UNC_PATH"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "00_SYSTEM/bridge/../brain/x.json": {
+        "findings": [
+          "PATH_TRAVERSAL"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      },
+      "C:/Windows/system32/file.txt": {
+        "findings": [
+          "PATH_ESCAPES_ROOT",
+          "WINDOWS_DRIVE_PATH"
+        ],
+        "reason": "PATH_CANONICALIZED",
+        "status": "LOCK"
+      }
+    },
+    "runtime_semantics": "PASS",
+    "safe_path_case": {
+      "findings": [],
+      "reason": "PATH_CANONICALIZED",
+      "status": "PASS"
+    }
+  },
+  "static_scan_summary": {
+    "banned_attr_calls_checked": [
+      "remove",
+      "rename",
+      "rmdir",
+      "rmtree",
+      "system",
+      "unlink",
+      "write_bytes",
+      "write_text"
+    ],
+    "banned_imports_checked": [
+      "ftplib",
+      "httpx",
+      "os",
+      "requests",
+      "shutil",
+      "smtplib",
+      "socket",
+      "subprocess",
+      "webbrowser"
+    ],
+    "banned_name_calls_checked": [
+      "compile",
+      "eval",
+      "exec",
+      "open"
+    ],
+    "privileged_helper_scope_enforced": true,
+    "privileged_replace_calls_allowed": 1,
+    "safe_string_replace_calls_allowed": 3,
+    "static_source_scan": "PASS"
+  },
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE",
+  "test_summary": {
+    "manual_brain_bridge_pytest": "2453 passed",
+    "py_compile": "PASS",
+    "suite_minimum_required": 2324,
+    "targeted_minimum_required": 220,
+    "targeted_pytest": "349 passed"
+  }
+}
