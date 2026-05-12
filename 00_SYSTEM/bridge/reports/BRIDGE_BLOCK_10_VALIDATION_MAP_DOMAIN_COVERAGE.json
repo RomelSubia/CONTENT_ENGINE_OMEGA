@@ -1,0 +1,145 @@
+{
+  "block": "BLOQUE_10_VALIDATION_AUDIT_COMMIT_PUSH_SYNC",
+  "consumed_post_build_audit_commit": "08573d8",
+  "consumed_post_build_audit_subject": "Post-build audit MANUAL-CEREBRO bridge block 10 validation audit commit push sync",
+  "contract": "Block10ValidationMapDomainCoverageContract",
+  "domain_count": 22,
+  "domains": [
+    {
+      "domain_id": "B10-D01",
+      "name": "Repo baseline",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D02",
+      "name": "Expected HEAD binding",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D03",
+      "name": "Parent chain audit",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D04",
+      "name": "Remote sync audit",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D05",
+      "name": "Remote URL audit",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D06",
+      "name": "Block 1-9 closure chain",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D07",
+      "name": "Historical evidence resolver",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D08",
+      "name": "Missing real detection",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D09",
+      "name": "Manifest/seal integrity",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D10",
+      "name": "Canonical JSON integrity",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D11",
+      "name": "Hash consistency",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D12",
+      "name": "Commit surface audit",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D13",
+      "name": "Push audit",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D14",
+      "name": "Test harness integrity",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D15",
+      "name": "Anti-simulation",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D16",
+      "name": "No-touch fingerprints",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D17",
+      "name": "Permission boundary",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D18",
+      "name": "State matrix enforcement",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D19",
+      "name": "Failure recovery policy",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D20",
+      "name": "Readiness separation",
+      "risk": "HIGH"
+    },
+    {
+      "domain_id": "B10-D21",
+      "name": "Bridge final closure criteria",
+      "risk": "CRITICAL"
+    },
+    {
+      "domain_id": "B10-D22",
+      "name": "Next phase blueprint-only boundary",
+      "risk": "CRITICAL"
+    }
+  ],
+  "gate": "VALIDATION_MAP_RETRY_2_FIX_1",
+  "next_safe_step": "BLOQUE_10_VALIDATION_PLAN",
+  "permissions": {
+    "bloque_10_gate_closure_allowed_now": false,
+    "bloque_10_validation_allowed_now": false,
+    "bloque_10_validation_plan_allowed_next": true,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_build_allowed_now": false,
+    "content_engine_construction_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_cerebro_bridge_closed_validated": false,
+    "manual_cerebro_bridge_final_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "retry": "RETRY_2_FIX_1_WINDOWS_SUBPROCESS_GIT_HARDENING",
+  "status": "VALIDATION_MAP_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
