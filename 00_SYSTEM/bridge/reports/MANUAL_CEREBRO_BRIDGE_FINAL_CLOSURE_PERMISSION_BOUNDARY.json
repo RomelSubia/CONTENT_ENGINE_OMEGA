@@ -1,0 +1,43 @@
+{
+  "consumed_block10_gate_closure_commit": "376ff46",
+  "consumed_block10_gate_closure_subject": "Close MANUAL-CEREBRO bridge block 10 validation audit commit push sync",
+  "contract": "ManualCerebroBridgeFinalClosurePermissionBoundaryContract",
+  "gate": "FINAL_CLOSURE",
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_READINESS_MAP",
+  "permission_boundary": {
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_build_allowed_now": false,
+    "content_engine_construction_allowed_now": false,
+    "content_engine_construction_readiness_map_allowed_next": true,
+    "dangerous_permissions_all_false": true,
+    "execution_allowed_now": false,
+    "manual_cerebro_bridge_closed_validated": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "status": "PASS",
+    "webhook_allowed_now": false
+  },
+  "permissions": {
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_build_allowed_now": false,
+    "content_engine_construction_allowed_now": false,
+    "content_engine_construction_readiness_map_allowed_next": true,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_cerebro_bridge_closed_validated": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "MANUAL_CEREBRO_BRIDGE_CLOSED_VALIDATED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

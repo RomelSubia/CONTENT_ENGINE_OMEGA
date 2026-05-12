@@ -1,0 +1,389 @@
+{
+  "chain_audit": {
+    "block_hits": {
+      "BLOQUE_1": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_DOMAINS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEMS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_EXECUTION_MATRIX.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEM_RESULTS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_GATE_CLOSURE_REPORT.json"
+        }
+      ],
+      "BLOQUE_10": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_DOMAINS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEMS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_EXECUTION_MATRIX.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEM_RESULTS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_GATE_CLOSURE_REPORT.json"
+        }
+      ],
+      "BLOQUE_2": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_CONSUMED_CHAIN_DISCOVERY_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_VALIDATION_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_BUILD_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_CHAIN_EVIDENCE_DISCOVERY_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_2_GATE_CLOSURE_SEAL.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "05_REPORTS/manual_brain_bridge/BRIDGE_BLOCK_2_GATE_CLOSURE_SUMMARY.md"
+        }
+      ],
+      "BLOQUE_3": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_CONSUMED_CHAIN_DISCOVERY_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_VALIDATION_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_9_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_BUILD_REPORT.json"
+        }
+      ],
+      "BLOQUE_4": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP.json"
+        }
+      ],
+      "BLOQUE_5": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_PLAN_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_TRACEABILITY.json"
+        }
+      ],
+      "BLOQUE_6": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_PLAN_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json"
+        }
+      ],
+      "BLOQUE_7": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_POST_BUILD_AUDIT_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_MAP.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_MAP_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_PLAN.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_PLAN_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_VALIDATION_EXECUTION_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_TRACEABILITY.json"
+        }
+      ],
+      "BLOQUE_8": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_TRACEABILITY_CHAIN_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_DOMAINS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEMS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_EXECUTION_MATRIX.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEM_RESULTS.json"
+        }
+      ],
+      "BLOQUE_9": [
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_REPORT.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_TRACEABILITY.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_DOMAINS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEMS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_EXECUTION_MATRIX.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_VALIDATION_ITEM_RESULTS.json"
+        },
+        {
+          "evidence": "CLOSED_VALIDATED_TOKEN_FOUND",
+          "path": "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_7_GATE_CLOSURE_REPORT.json"
+        }
+      ]
+    },
+    "blocks_checked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "chain_status": "BLOCKS_1_TO_10_CLOSED_VALIDATED_EVIDENCE_FOUND",
+    "files_scanned": 786,
+    "missing_blocks": [],
+    "parse_error_count": 0,
+    "parse_errors_sample": [],
+    "status": "PASS"
+  },
+  "consumed_block10_gate_closure_commit": "376ff46",
+  "consumed_block10_gate_closure_subject": "Close MANUAL-CEREBRO bridge block 10 validation audit commit push sync",
+  "contract": "ManualCerebroBridgeBlocks1To10ChainAuditContract",
+  "gate": "FINAL_CLOSURE",
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_READINESS_MAP",
+  "permissions": {
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_build_allowed_now": false,
+    "content_engine_construction_allowed_now": false,
+    "content_engine_construction_readiness_map_allowed_next": true,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_cerebro_bridge_closed_validated": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "MANUAL_CEREBRO_BRIDGE_CLOSED_VALIDATED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}

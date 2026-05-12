@@ -1,0 +1,39 @@
+{
+  "consumed_block10_gate_closure_commit": "376ff46",
+  "consumed_block10_gate_closure_subject": "Close MANUAL-CEREBRO bridge block 10 validation audit commit push sync",
+  "contract": "ManualCerebroBridgeFinalClosureEvidenceAuditContract",
+  "evidence_audit": {
+    "block10_gate_closure_manifest_sha256": "04cd5c03088732ad3dfad90c28aad96c813c4653464a9d10fbd5f833c98923e5",
+    "block10_gate_closure_seal_sha256": "e763b15386a96a8707bc817272878437c3770cf4457852530708ac74c9cdf205",
+    "blocks_1_to_10_chain_status": "BLOCKS_1_TO_10_CLOSED_VALIDATED_EVIDENCE_FOUND",
+    "consumed_block10_gate_closure_commit": "376ff46",
+    "consumed_block10_gate_closure_subject": "Close MANUAL-CEREBRO bridge block 10 validation audit commit push sync",
+    "evidence_file_count_scanned": 639,
+    "hash_only_consumption": true,
+    "missing_real_count": 0,
+    "no_previous_artifact_rewrite": true,
+    "status": "PASS"
+  },
+  "gate": "FINAL_CLOSURE",
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_READINESS_MAP",
+  "permissions": {
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_build_allowed_now": false,
+    "content_engine_construction_allowed_now": false,
+    "content_engine_construction_readiness_map_allowed_next": true,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_cerebro_bridge_closed_validated": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "MANUAL_CEREBRO_BRIDGE_CLOSED_VALIDATED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
