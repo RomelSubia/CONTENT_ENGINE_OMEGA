@@ -1,0 +1,38 @@
+{
+  "block": "BLOQUE_10_VALIDATION_AUDIT_COMMIT_PUSH_SYNC",
+  "blocked_actions": [
+    "CONTENT_ENGINE_CONSTRUCTION",
+    "EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "gate": "GATE_CLOSURE_OR_NEXT_LAYER_READINESS_MAP",
+  "manifest_path": "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_10_GATE_CLOSURE_MANIFEST.json",
+  "manifest_sha256": "04cd5c03088732ad3dfad90c28aad96c813c4653464a9d10fbd5f833c98923e5",
+  "next_safe_step": "MANUAL_CEREBRO_BRIDGE_FINAL_CLOSURE",
+  "permissions": {
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_build_allowed_now": false,
+    "content_engine_construction_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_cerebro_bridge_closed_validated": false,
+    "manual_cerebro_bridge_final_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "sealed_status": "BLOQUE_10_CLOSED_VALIDATED",
+  "status": "SEALED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
