@@ -1,0 +1,124 @@
+{
+  "block": "BLOQUE_10_VALIDATION_AUDIT_COMMIT_PUSH_SYNC",
+  "consumed_validation_map_commit": "42141af",
+  "consumed_validation_map_subject": "Define validation map MANUAL-CEREBRO bridge block 10 validation audit commit push sync",
+  "contract": "Block10ValidationPlanExecutionSequenceContract",
+  "gate": "VALIDATION_PLAN",
+  "next_safe_step": "BLOQUE_10_VALIDATION",
+  "permissions": {
+    "bloque_10_gate_closure_allowed_now": false,
+    "bloque_10_validation_allowed_next": true,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_build_allowed_now": false,
+    "content_engine_construction_allowed_now": false,
+    "execution_allowed_now": false,
+    "external_execution_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_cerebro_bridge_closed_validated": false,
+    "manual_cerebro_bridge_final_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "phase_count": 8,
+  "phases": [
+    {
+      "gates": [
+        "BRANCH_MAIN",
+        "HEAD_SUBJECT",
+        "PARENT_BINDING",
+        "REMOTE_SYNC"
+      ],
+      "mutation_allowed": false,
+      "name": "baseline_repo_and_head_binding",
+      "phase_id": "B10-VP-01",
+      "required": true
+    },
+    {
+      "gates": [
+        "MANIFEST_PRESENT",
+        "SEAL_PRESENT",
+        "HASH_VALID",
+        "CANONICAL_JSON"
+      ],
+      "mutation_allowed": false,
+      "name": "validation_map_artifact_integrity",
+      "phase_id": "B10-VP-02",
+      "required": true
+    },
+    {
+      "gates": [
+        "MISSING_REAL_ZERO",
+        "EVIDENCE_SCAN_MINIMUM",
+        "HASH_ONLY_CONSUMPTION"
+      ],
+      "mutation_allowed": false,
+      "name": "evidence_binding_and_missing_real_zero",
+      "phase_id": "B10-VP-03",
+      "required": true
+    },
+    {
+      "gates": [
+        "PY_COMPILE",
+        "TARGETED_PYTEST",
+        "MANUAL_BRIDGE_PYTEST",
+        "RUNTIME_SELF_CHECK"
+      ],
+      "mutation_allowed": false,
+      "name": "runtime_contracts_and_test_harness",
+      "phase_id": "B10-VP-04",
+      "required": true
+    },
+    {
+      "gates": [
+        "NEGATIVE_ITEMS_MINIMUM",
+        "FAILURE_INJECTION_MINIMUM",
+        "LOCK_OR_BLOCK_EXPECTED"
+      ],
+      "mutation_allowed": false,
+      "name": "negative_and_failure_injection_execution",
+      "phase_id": "B10-VP-05",
+      "required": true
+    },
+    {
+      "gates": [
+        "DANGEROUS_PERMISSIONS_FALSE",
+        "PROTECTED_ROOTS_UNCHANGED",
+        "NO_RUNTIME_RESIDUE"
+      ],
+      "mutation_allowed": false,
+      "name": "permission_boundary_and_no_touch",
+      "phase_id": "B10-VP-06",
+      "required": true
+    },
+    {
+      "gates": [
+        "VALIDATION_REPORTS_ONLY",
+        "MANIFEST_AND_SEAL_ONLY",
+        "OUTPUT_SCOPE_EXACT"
+      ],
+      "mutation_allowed": false,
+      "name": "validation_output_generation_constraints",
+      "phase_id": "B10-VP-07",
+      "required": true
+    },
+    {
+      "gates": [
+        "GATE_CLOSURE_ALLOWED_NEXT_ONLY_IF_VALIDATION_PASS",
+        "BRIDGE_STILL_NOT_CLOSED",
+        "CONTENT_ENGINE_STILL_BLOCKED"
+      ],
+      "mutation_allowed": false,
+      "name": "post_validation_readiness_boundary",
+      "phase_id": "B10-VP-08",
+      "required": true
+    }
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "VALIDATION_PLAN_DEFINED",
+  "subsystem": "MANUAL_CEREBRO_BRIDGE"
+}
