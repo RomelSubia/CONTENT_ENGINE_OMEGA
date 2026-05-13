@@ -1,0 +1,195 @@
+{
+  "blocked_actions": [
+    "CONTENT_ENGINE_EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "component": "CONTENT_ENGINE_CONSTRUCTION_CORE",
+  "dangerous_permissions_all_false": true,
+  "domain_registry": {
+    "domain_count": 11,
+    "domains": [
+      {
+        "execution_allowed_now": false,
+        "id": "governance"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "construction"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "strategy"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "prompts"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "scripts"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "assets"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "queue"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "metrics"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "monetization"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "publishing_preparation"
+      },
+      {
+        "execution_allowed_now": false,
+        "id": "audit"
+      }
+    ],
+    "status": "PASS"
+  },
+  "domain_validation": {
+    "missing": [],
+    "status": "PASS",
+    "unsafe": []
+  },
+  "fix_reason": "OUTPUT_SCOPE_UNTRACKED_DIRECTORIES_REPORTED_BY_GIT_STATUS",
+  "gate": "BUILD_FIX_1",
+  "git_context": {
+    "branch": "main",
+    "bridge_evidence": {
+      "candidate_count": 84,
+      "candidates": [
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_10_GATE_CLOSURE_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_10_GATE_CLOSURE_SEAL.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_4_GATE_CLOSURE_SEAL.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_GATE_CLOSURE_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_5_GATE_CLOSURE_SEAL.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_GATE_CLOSURE_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_6_GATE_CLOSURE_SEAL.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_GATE_CLOSURE_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_7_GATE_CLOSURE_SEAL.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_GATE_CLOSURE_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_8_GATE_CLOSURE_SEAL.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_9_GATE_CLOSURE_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/BRIDGE_BLOCK_9_GATE_CLOSURE_SEAL.json",
+        "00_SYSTEM/bridge/manifests/MANUAL_CEREBRO_BRIDGE_FINAL_CLOSURE_MANIFEST.json",
+        "00_SYSTEM/bridge/manifests/MANUAL_CEREBRO_BRIDGE_FINAL_CLOSURE_SEAL.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_CHAIN_VALIDATION_MAP.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_GATE_CLOSURE_EVIDENCE_AUDIT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_GATE_CLOSURE_NEXT_STEP_READINESS.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_GATE_CLOSURE_NO_TOUCH.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_GATE_CLOSURE_PERMISSION_BOUNDARY.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_GATE_CLOSURE_REPORT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_GATE_CLOSURE_VALIDATION_AUDIT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_NEXT_LAYER_READINESS_MAP.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_STATE_MATRIX.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_VALIDATION_ACCEPTANCE_AUDIT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_VALIDATION_EXECUTION_RESULTS.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_VALIDATION_MAP.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_VALIDATION_MAP_EXECUTION_MATRIX.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_VALIDATION_MAP_GATE_COVERAGE.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_VALIDATION_PLAN.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_VALIDATION_PLAN_ACCEPTANCE_CRITERIA.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_10_VALIDATION_REPORT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_2_GATE_CLOSURE_REPORT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_3_GATE_CLOSURE_REPORT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_NEXT_LAYER_READINESS_MAP.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_REPORT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_4_GATE_CLOSURE_TRACEABILITY.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_GATE_CLOSURE_REPORT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_GATE_CLOSURE_TRACEABILITY.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_POST_BUILD_AUDIT_TRACEABILITY.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_MAP_TRACEABILITY.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_PLAN_TRACEABILITY.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_5_VALIDATION_TRACEABILITY.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_REPORT.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_GATE_CLOSURE_TRACEABILITY.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_NEXT_LAYER_READINESS_MAP_AFTER_CLOSURE.json",
+        "00_SYSTEM/bridge/reports/BRIDGE_BLOCK_6_POST_BUILD_AUDIT_TRACEABILITY.json"
+      ],
+      "status": "PASS"
+    },
+    "dirty_paths_consumed": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_CORE_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_CORE_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_BOUNDARY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_CORE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_DOMAIN_REGISTRY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_EVIDENCE_CONTRACT_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_FAILURE_POLICY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_NEXT_LAYER_READINESS_MAP.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_OUTPUT_SCOPE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_PERMISSION_MATRIX.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_PLAN_KERNEL_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_STATE_REPORT.json",
+      "04_SCRIPTS/python/content_engine/construction_core/__init__.py",
+      "04_SCRIPTS/python/content_engine/construction_core/build_boundary_planner.py",
+      "04_SCRIPTS/python/content_engine/construction_core/construction_plan_kernel.py",
+      "04_SCRIPTS/python/content_engine/construction_core/domain_registry.py",
+      "04_SCRIPTS/python/content_engine/construction_core/evidence_contract_engine.py",
+      "04_SCRIPTS/python/content_engine/construction_core/failure_report_contract.py",
+      "04_SCRIPTS/python/content_engine/construction_core/no_touch_validator.py",
+      "04_SCRIPTS/python/content_engine/construction_core/permission_matrix.py",
+      "04_SCRIPTS/python/content_engine/construction_core/project_state_reader.py",
+      "04_SCRIPTS/python/content_engine/construction_core/state_contract.py",
+      "05_REPORTS/content_engine/CONTENT_ENGINE_CONSTRUCTION_CORE_SUMMARY.md",
+      "tests/content_engine/test_construction_core_build_boundary_planner.py",
+      "tests/content_engine/test_construction_core_construction_plan_kernel.py",
+      "tests/content_engine/test_construction_core_domain_registry.py",
+      "tests/content_engine/test_construction_core_evidence_contract_engine.py",
+      "tests/content_engine/test_construction_core_failure_report_contract.py",
+      "tests/content_engine/test_construction_core_integration.py",
+      "tests/content_engine/test_construction_core_no_touch_validator.py",
+      "tests/content_engine/test_construction_core_permission_matrix.py",
+      "tests/content_engine/test_construction_core_project_state_reader.py",
+      "tests/content_engine/test_construction_core_state_contract.py"
+    ],
+    "head": "873f24832b92de848da3531ae3b0281246d22b13",
+    "python": "Python 3.12.10",
+    "subject": "Close MANUAL-CEREBRO bridge final closure"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_POST_BUILD_AUDIT",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_construction_gate_closure_allowed_now": false,
+    "content_engine_construction_post_build_audit_allowed_next": true,
+    "content_engine_construction_validation_allowed_now": false,
+    "content_engine_construction_validation_map_allowed_now": false,
+    "content_engine_construction_validation_plan_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "monetization_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "BUILT_PENDING_POST_AUDIT"
+}
