@@ -1,0 +1,78 @@
+{
+  "blocked_actions": [
+    "CONTENT_ENGINE_EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "canonical_json": true,
+  "commit_subject_expected": "Validate Content Engine construction core",
+  "component": "CONTENT_ENGINE_CONSTRUCTION_CORE",
+  "consumed_audit_subject": "Post-build audit Content Engine construction core",
+  "gate": "VALIDATION",
+  "git_context": {
+    "branch": "main",
+    "build_subject": "Build Content Engine construction core",
+    "head": "eb23f37118e2c3ff7aa865d1e65413a1db74208d",
+    "python": "Python 3.12.10",
+    "subject": "Post-build audit Content Engine construction core"
+  },
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_READINESS.json": "b9db69394b4e23cec47d8d7019a33e756cb5e85d6e43a3664af7215d92990797",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_EXECUTION_MATRIX.json": "0a25033753e49703a0ad178051f3484a659a8dedb3c74f1713c6b2dfd5168e05",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_NO_TOUCH_REPORT.json": "fd02500367011ac5464e8c62eb180aee4e1afec2edc78501a8043fd870c5b9cd",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_REPORT.json": "dbf501030cd32672f6404234b3664f2981088a394a83a82f27ab4bf6dab67509",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_RESULTS.json": "b3801bceefd58980a4c5140148fd5e8a60f918f733be49302a7ca2f3065cf449",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_SECURITY_REPORT.json": "a780d97c0b9c4ace1ce770945a35049306a62dee87792e7f3500ab1b609dfe88",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_TEST_REPORT.json": "f0c372a90413208481317f016cf960d6f4796e999afb3fcfdb1fb469df1a3bd5",
+    "05_REPORTS/content_engine/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_SUMMARY.md": "f1b6d3139faa9d1805752b8e95f65c773568f0b00f2e65378ba14d912c5afa90"
+  },
+  "manifest_completeness": "PASS",
+  "manifest_type": "CONTENT_ENGINE_CONSTRUCTION_VALIDATION_MANIFEST",
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_construction_gate_closure_allowed_next": true,
+    "content_engine_construction_gate_closure_allowed_now": false,
+    "content_engine_construction_validation_allowed_now": false,
+    "content_engine_construction_validation_plan_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "monetization_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_SEAL.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_READINESS.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_EXECUTION_MATRIX.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_RESULTS.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_SECURITY_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_TEST_REPORT.json",
+    "05_REPORTS/content_engine/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "self_referential_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_SEAL.json"
+  ],
+  "status": "VALIDATED_POST_AUDITED"
+}

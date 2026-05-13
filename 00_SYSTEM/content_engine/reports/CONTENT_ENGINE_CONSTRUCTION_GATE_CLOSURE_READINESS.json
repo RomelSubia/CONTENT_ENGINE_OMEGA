@@ -1,0 +1,61 @@
+{
+  "blocked_actions": [
+    "CONTENT_ENGINE_EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "component": "CONTENT_ENGINE_CONSTRUCTION_CORE",
+  "consumed_audit_subject": "Post-build audit Content Engine construction core",
+  "gate": "VALIDATION",
+  "git_context": {
+    "branch": "main",
+    "build_subject": "Build Content Engine construction core",
+    "head": "eb23f37118e2c3ff7aa865d1e65413a1db74208d",
+    "python": "Python 3.12.10",
+    "subject": "Post-build audit Content Engine construction core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_construction_gate_closure_allowed_next": true,
+    "content_engine_construction_gate_closure_allowed_now": false,
+    "content_engine_construction_validation_allowed_now": false,
+    "content_engine_construction_validation_plan_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "monetization_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "readiness": {
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "current_status": "VALIDATED_POST_AUDITED",
+    "execution_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE",
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "status": "PASS",
+    "webhook_allowed_now": false
+  },
+  "result": "PASS",
+  "status": "VALIDATED_POST_AUDITED"
+}

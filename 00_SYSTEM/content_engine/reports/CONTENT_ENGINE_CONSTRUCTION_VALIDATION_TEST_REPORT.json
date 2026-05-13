@@ -1,0 +1,86 @@
+{
+  "blocked_actions": [
+    "CONTENT_ENGINE_EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "component": "CONTENT_ENGINE_CONSTRUCTION_CORE",
+  "consumed_audit_subject": "Post-build audit Content Engine construction core",
+  "gate": "VALIDATION",
+  "git_context": {
+    "branch": "main",
+    "build_subject": "Build Content Engine construction core",
+    "head": "eb23f37118e2c3ff7aa865d1e65413a1db74208d",
+    "python": "Python 3.12.10",
+    "subject": "Post-build audit Content Engine construction core"
+  },
+  "minimum_content_engine": 51,
+  "minimum_targeted": 51,
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_construction_gate_closure_allowed_next": true,
+    "content_engine_construction_gate_closure_allowed_now": false,
+    "content_engine_construction_validation_allowed_now": false,
+    "content_engine_construction_validation_plan_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "monetization_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "runtime_self_check": {
+    "checks": {
+      "construction_plan": true,
+      "determinism": true,
+      "domain_registry": true,
+      "failure_report": true,
+      "failure_report_blocks_commit": true,
+      "failure_report_blocks_execution": true,
+      "failure_report_blocks_push": true,
+      "no_touch": true,
+      "permissions": true,
+      "state": true
+    },
+    "failure_report_contract": {
+      "brain_write_performed": false,
+      "capa9_performed": false,
+      "commit_created": false,
+      "construction_core_built": false,
+      "execution_started": false,
+      "extra": {},
+      "failed_gate": "synthetic_gate",
+      "failure_reason": "synthetic_validation_failure",
+      "manual_write_performed": false,
+      "n8n_performed": false,
+      "publishing_performed": false,
+      "push_performed": false,
+      "reports_brain_write_performed": false,
+      "status": "FAILED_BLOCKED",
+      "webhook_performed": false
+    },
+    "plan_hash": "ca0c7dd0a78370e912bed1b21296513fce7c93a66e9451b2750085c76414dfb8",
+    "status": "PASS"
+  },
+  "status": "VALIDATED_POST_AUDITED",
+  "tests": {
+    "content_engine_pytest_passed": 51,
+    "targeted_pytest_passed": 51
+  }
+}
