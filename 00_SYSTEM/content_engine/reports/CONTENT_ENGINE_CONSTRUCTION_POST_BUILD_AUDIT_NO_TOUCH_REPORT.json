@@ -1,0 +1,66 @@
+{
+  "blocked_actions": [
+    "CONTENT_ENGINE_EXECUTION",
+    "CONTENT_ENGINE_VALIDATION_EXECUTION",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "component": "CONTENT_ENGINE_CONSTRUCTION_CORE",
+  "consumed_build_subject": "Build Content Engine construction core",
+  "gate": "POST_BUILD_AUDIT",
+  "git_context": {
+    "branch": "main",
+    "head": "9f7281605923a98a8893fa8d4e5276f01f2e3668",
+    "python": "Python 3.12.10",
+    "subject": "Build Content Engine construction core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_VALIDATION_MAP",
+  "no_touch": {
+    "changed": {},
+    "status": "PASS"
+  },
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_construction_gate_closure_allowed_now": false,
+    "content_engine_construction_validation_allowed_now": false,
+    "content_engine_construction_validation_map_allowed_next": true,
+    "content_engine_construction_validation_plan_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "monetization_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_roots": [
+    "00_SYSTEM/brain",
+    "00_SYSTEM/reports/brain",
+    "00_SYSTEM/manual/current",
+    "00_SYSTEM/manual/historical",
+    "00_SYSTEM/manual/manifest",
+    "00_SYSTEM/manual/registry",
+    "n8n",
+    "workflows",
+    "publication",
+    "09_PUBLICATION",
+    "14_EXPORTS",
+    "13_BACKUPS",
+    "12_LOGS/runtime"
+  ],
+  "result": "PASS",
+  "status": "BUILT_POST_AUDITED"
+}
