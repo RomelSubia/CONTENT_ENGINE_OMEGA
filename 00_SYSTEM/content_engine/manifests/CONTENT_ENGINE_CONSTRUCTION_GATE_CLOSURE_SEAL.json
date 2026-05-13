@@ -12,6 +12,7 @@
   ],
   "component": "CONTENT_ENGINE_CONSTRUCTION_CORE",
   "consumed_validation_subject": "Validate Content Engine construction core",
+  "execution_allowed_now": false,
   "gate": "GATE_CLOSURE",
   "git_context": {
     "audit_subject": "Post-build audit Content Engine construction core",
@@ -21,6 +22,8 @@
     "python": "Python 3.12.10",
     "validation_subject": "Validate Content Engine construction core"
   },
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_MANIFEST.json",
+  "manifest_sha256": "ebad387a5007a6b8b837466fbfa1f4e80f79994c3509606f208c7fe29724bf79",
   "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_NEXT_LAYER_READINESS_MAP",
   "permissions": {
     "asset_generation_allowed_now": false,
@@ -43,21 +46,8 @@
     "webhook_allowed_now": false
   },
   "project": "CONTENT_ENGINE_OMEGA",
-  "readiness_map": {
-    "brain_write_allowed_now": false,
-    "capa9_allowed_now": false,
-    "current_status": "CLOSED_VALIDATED",
-    "execution_allowed_now": false,
-    "manual_write_allowed_now": false,
-    "n8n_allowed_now": false,
-    "next_layer_build_allowed_now": false,
-    "next_layer_readiness_map_allowed_next": true,
-    "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_NEXT_LAYER_READINESS_MAP",
-    "publishing_allowed_now": false,
-    "reports_brain_write_allowed_now": false,
-    "status": "PASS",
-    "webhook_allowed_now": false
-  },
   "result": "PASS",
+  "seal_type": "CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SEAL",
+  "sealed_status": "CONTENT_ENGINE_CONSTRUCTION_CORE_CLOSED_VALIDATED",
   "status": "CLOSED_VALIDATED"
 }

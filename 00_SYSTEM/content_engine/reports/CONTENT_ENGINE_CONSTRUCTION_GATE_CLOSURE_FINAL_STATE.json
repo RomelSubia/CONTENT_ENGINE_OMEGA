@@ -12,6 +12,22 @@
   ],
   "component": "CONTENT_ENGINE_CONSTRUCTION_CORE",
   "consumed_validation_subject": "Validate Content Engine construction core",
+  "final_state": {
+    "brain_write_allowed_now": false,
+    "build": "DONE",
+    "capa9_allowed_now": false,
+    "content_engine_construction_core": "CLOSED_VALIDATED",
+    "execution_allowed_now": false,
+    "gate_closure": "DONE",
+    "manual_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_NEXT_LAYER_READINESS_MAP",
+    "post_build_audit": "DONE",
+    "publishing_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation": "DONE",
+    "webhook_allowed_now": false
+  },
   "gate": "GATE_CLOSURE",
   "git_context": {
     "audit_subject": "Post-build audit Content Engine construction core",
@@ -43,21 +59,6 @@
     "webhook_allowed_now": false
   },
   "project": "CONTENT_ENGINE_OMEGA",
-  "readiness_map": {
-    "brain_write_allowed_now": false,
-    "capa9_allowed_now": false,
-    "current_status": "CLOSED_VALIDATED",
-    "execution_allowed_now": false,
-    "manual_write_allowed_now": false,
-    "n8n_allowed_now": false,
-    "next_layer_build_allowed_now": false,
-    "next_layer_readiness_map_allowed_next": true,
-    "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_NEXT_LAYER_READINESS_MAP",
-    "publishing_allowed_now": false,
-    "reports_brain_write_allowed_now": false,
-    "status": "PASS",
-    "webhook_allowed_now": false
-  },
   "result": "PASS",
   "status": "CLOSED_VALIDATED"
 }

@@ -1,0 +1,75 @@
+{
+  "blocked_actions": [
+    "CONTENT_ENGINE_EXECUTION",
+    "NEXT_LAYER_BUILD",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "N8N",
+    "WEBHOOK",
+    "PUBLISHING",
+    "CAPA9"
+  ],
+  "canonical_json": true,
+  "commit_subject_expected": "Close Content Engine construction core",
+  "component": "CONTENT_ENGINE_CONSTRUCTION_CORE",
+  "consumed_validation_subject": "Validate Content Engine construction core",
+  "gate": "GATE_CLOSURE",
+  "git_context": {
+    "audit_subject": "Post-build audit Content Engine construction core",
+    "branch": "main",
+    "build_subject": "Build Content Engine construction core",
+    "head": "84544a8ca48ecb90d694c7310badcc9869a008f3",
+    "python": "Python 3.12.10",
+    "validation_subject": "Validate Content Engine construction core"
+  },
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_FINAL_STATE.json": "847fc9c2aeb10843a43db1951979a2d62071498c9107812d77cd1f02efc3bd33",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_NO_TOUCH_REPORT.json": "9753d11b26f89e58b88c49501ca5b004ae6761ab6213469e15d821e70fba10f4",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_REPORT.json": "50d4e9f89bc4ab9264fd0712a7d32907f50c5ed650405e3f0f7b0f6e38f9ea38",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SURFACE_REPORT.json": "5a43390a0e2edd81d6cc703938bc22478d5205a34a870261be5cfa5b5077d3df",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_NEXT_LAYER_READINESS_MAP.json": "5e3f33236c5c47c39271c48d95c4884e7cc672197a7154d2206353be1be31c91",
+    "05_REPORTS/content_engine/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SUMMARY.md": "95c4ffe4271898f2627697f5f620f21fe38928945367c4d9f348ea6f0108a8cc"
+  },
+  "manifest_completeness": "PASS",
+  "manifest_type": "CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_MANIFEST",
+  "next_safe_step": "CONTENT_ENGINE_CONSTRUCTION_NEXT_LAYER_READINESS_MAP",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_construction_gate_closure_allowed_now": false,
+    "content_engine_construction_next_layer_readiness_map_allowed_next": true,
+    "content_engine_construction_validation_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "monetization_allowed_now": false,
+    "n8n_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SEAL.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_FINAL_STATE.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SURFACE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_CONSTRUCTION_NEXT_LAYER_READINESS_MAP.json",
+    "05_REPORTS/content_engine/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "self_referential_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SEAL.json"
+  ],
+  "status": "CLOSED_VALIDATED"
+}
