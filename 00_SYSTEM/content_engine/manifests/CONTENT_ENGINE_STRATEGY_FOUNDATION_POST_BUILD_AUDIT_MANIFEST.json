@@ -1,0 +1,83 @@
+{
+  "blocked_actions": [
+    "CONTENT_GENERATION",
+    "PROMPT_PRODUCTION",
+    "SCRIPT_GENERATION",
+    "QUEUE_WRITE",
+    "METRICS_WRITE",
+    "ASSET_WRITE",
+    "PUBLISHING",
+    "N8N",
+    "WEBHOOK",
+    "CAPA9",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE"
+  ],
+  "canonical_json": true,
+  "commit_subject_expected": "Post-build audit Content Engine strategy foundation core",
+  "component": "CONTENT_ENGINE_STRATEGY_FOUNDATION_CORE",
+  "consumed_build_subject": "Build Content Engine strategy foundation core",
+  "gate": "POST_BUILD_AUDIT",
+  "git_context": {
+    "branch": "main",
+    "head": "003d0b9f54a743578dda67048be448ab987421b5",
+    "python": "Python 3.12.10",
+    "subject": "Build Content Engine strategy foundation core"
+  },
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_NO_TOUCH_REPORT.json": "403c9b76dbc61feb844fc75c3c8ffbcc747111c9d7cc0b1cb3d713be5624a914",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_REPORT.json": "7c7205e75424404057fae239e76573c3e0806ba0b2c10472a7cc7e30a9ea83c7",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SECURITY_REPORT.json": "28d723978679107fefe120447696ca4e8d7a7ff48347b412b89ab14131dbfce3",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SURFACE_REPORT.json": "503b1c236320393ece064adb31da26e965b9afa6f15fc39cad565733130b7849",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_TEST_REPORT.json": "6a770ce41277377a13d807f8f00c2f1cb16811d5da186ba23eb963959ed79e90",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_VALIDATION_MAP_READINESS.json": "a7f3566cc434f4f956040843cac0ba1380dfdb3ddd54d0aa4b96c326aadb1bbe",
+    "05_REPORTS/content_engine/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SUMMARY.md": "9549fc7deeb58e8595358cab9df01ab0d55a8f7760df48041b7c0e6a81032630"
+  },
+  "manifest_completeness": "PASS",
+  "manifest_type": "CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_MANIFEST",
+  "next_safe_step": "CONTENT_ENGINE_STRATEGY_FOUNDATION_VALIDATION_MAP",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_strategy_foundation_gate_closure_allowed_now": false,
+    "content_engine_strategy_foundation_validation_allowed_now": false,
+    "content_engine_strategy_foundation_validation_map_allowed_next": true,
+    "content_engine_strategy_foundation_validation_plan_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "final_script_generation_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "monetization_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_generation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SEAL.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SECURITY_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SURFACE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_TEST_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_STRATEGY_FOUNDATION_VALIDATION_MAP_READINESS.json",
+    "05_REPORTS/content_engine/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "self_referential_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SEAL.json"
+  ],
+  "status": "BUILT_POST_AUDITED"
+}
