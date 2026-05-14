@@ -1,0 +1,154 @@
+{
+  "audience_registry": {
+    "audiences": [
+      {
+        "attention_span": "medio",
+        "audience_id": "AUD_A_DISCIPLINA_ECONOMICA",
+        "awareness_level": "problem-aware",
+        "channel_id": "CHANNEL_A_MONEY_MINDSET_CONVERSION",
+        "content_depth": "práctico",
+        "conversion_readiness_future": "media",
+        "desires": [
+          "mejor control"
+        ],
+        "language_style": "directo",
+        "objections": [
+          "miedo a empezar"
+        ],
+        "pain_points": [
+          "desorden financiero"
+        ],
+        "trust_level_required": "medio"
+      },
+      {
+        "attention_span": "alto",
+        "audience_id": "AUD_D_PROFESIONAL_TECH",
+        "awareness_level": "solution-aware",
+        "channel_id": "CHANNEL_D_AI_TECH_PERSONAL_BRAND",
+        "content_depth": "medio-alto",
+        "conversion_readiness_future": "media",
+        "desires": [
+          "automatizar"
+        ],
+        "language_style": "claro técnico",
+        "objections": [
+          "complejidad técnica"
+        ],
+        "pain_points": [
+          "falta de sistemas"
+        ],
+        "trust_level_required": "alto"
+      },
+      {
+        "attention_span": "bajo",
+        "audience_id": "AUD_B_CURIOSIDAD_RAPIDA",
+        "awareness_level": "unaware",
+        "channel_id": "CHANNEL_B_CURIOSITIES_MASS_TRAFFIC",
+        "content_depth": "ligero",
+        "conversion_readiness_future": "baja",
+        "desires": [
+          "aprender rápido"
+        ],
+        "language_style": "simple",
+        "objections": [
+          "poco tiempo"
+        ],
+        "pain_points": [
+          "aburrimiento"
+        ],
+        "trust_level_required": "bajo"
+      },
+      {
+        "attention_span": "medio",
+        "audience_id": "AUD_C_DISCIPLINA_PERSONAL",
+        "awareness_level": "problem-aware",
+        "channel_id": "CHANNEL_C_MOTIVATION_DISCIPLINE_RETENTION",
+        "content_depth": "medio",
+        "conversion_readiness_future": "baja",
+        "desires": [
+          "disciplina"
+        ],
+        "language_style": "emocional moderado",
+        "objections": [
+          "cansancio"
+        ],
+        "pain_points": [
+          "falta de constancia"
+        ],
+        "trust_level_required": "medio"
+      }
+    ],
+    "personal_data_allowed": false,
+    "status": "PASS"
+  },
+  "audience_validation": {
+    "invasive": [],
+    "missing": [],
+    "status": "PASS",
+    "without_channel": []
+  },
+  "blocked_actions": [
+    "CONTENT_GENERATION",
+    "PROMPT_PRODUCTION",
+    "SCRIPT_GENERATION",
+    "QUEUE_WRITE",
+    "METRICS_WRITE",
+    "ASSET_WRITE",
+    "PUBLISHING",
+    "N8N",
+    "WEBHOOK",
+    "CAPA9",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE"
+  ],
+  "component": "CONTENT_ENGINE_STRATEGY_FOUNDATION_CORE",
+  "exact_address_blocked": true,
+  "fix_reason": "MUTABILITY_SENSITIVE_DATA_AND_IDENTITY_PILLARS",
+  "gate": "BUILD_FIX_1",
+  "git_context": {
+    "branch": "main",
+    "construction_core_closure": {
+      "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SEAL.json",
+      "sealed_status": "CONTENT_ENGINE_CONSTRUCTION_CORE_CLOSED_VALIDATED",
+      "status": "PASS"
+    },
+    "dirty_paths_consumed": [
+      "04_SCRIPTS/python/content_engine/strategy_foundation/__init__.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/audience_profile_registry.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/channel_registry.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/channel_rule_engine.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/channel_separation_matrix.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/content_lifecycle_contract.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/content_pillar_registry.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/learning_placeholder_contract.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/strategy_boundary_planner.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/strategy_evidence_contract.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/strategy_failure_policy.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/strategy_identity_contract.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/strategy_quality_contract.py",
+      "04_SCRIPTS/python/content_engine/strategy_foundation/strategy_state_contract.py",
+      "tests/content_engine/test_strategy_foundation_audience_profile_registry.py",
+      "tests/content_engine/test_strategy_foundation_boundary_planner.py",
+      "tests/content_engine/test_strategy_foundation_channel_registry.py",
+      "tests/content_engine/test_strategy_foundation_channel_rule_engine.py",
+      "tests/content_engine/test_strategy_foundation_channel_separation_matrix.py",
+      "tests/content_engine/test_strategy_foundation_content_pillar_registry.py",
+      "tests/content_engine/test_strategy_foundation_evidence_contract.py",
+      "tests/content_engine/test_strategy_foundation_failure_policy.py",
+      "tests/content_engine/test_strategy_foundation_identity_contract.py",
+      "tests/content_engine/test_strategy_foundation_integration.py",
+      "tests/content_engine/test_strategy_foundation_learning_placeholder.py",
+      "tests/content_engine/test_strategy_foundation_lifecycle_contract.py",
+      "tests/content_engine/test_strategy_foundation_quality_contract.py",
+      "tests/content_engine/test_strategy_foundation_state_contract.py"
+    ],
+    "head": "cf070be13d589ee5c184a41d802f77e0023be43f",
+    "python": "Python 3.12.10",
+    "subject": "Close Content Engine construction core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status": "BUILT_PENDING_POST_AUDIT"
+}
