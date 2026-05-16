@@ -1,0 +1,106 @@
+{
+  "component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
+  "coverage": {
+    "execution_items": 45,
+    "security_gates": 22,
+    "status": "PASS"
+  },
+  "current_core_status_before_validation": "BUILT_POST_AUDITED",
+  "current_plan_status": "VALIDATION_PLAN_DEFINED",
+  "gate": "VALIDATION",
+  "git_context": {
+    "branch": "main",
+    "head": "f72c4c6a6651099752c3d50c5083a5e722b02621",
+    "python": "Python 3.12.10",
+    "subject": "Define validation plan Content Engine prompt governance core"
+  },
+  "minimums": {
+    "content_engine_pytest": 261,
+    "failure_injection": 25,
+    "negative_tests": 54,
+    "runtime_domains": 30,
+    "targeted_pytest": 120
+  },
+  "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE",
+  "permissions": {
+    "asset_write_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "final_prompt_generation_allowed_now": false,
+    "full_prompt_body_generation_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_production_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "runtime": {
+    "checks": {
+      "channel_block": true,
+      "channel_pass": true,
+      "evidence_contract": true,
+      "execution_boundary_block": true,
+      "execution_boundary_pass": true,
+      "failure_policy": true,
+      "fixture_block": true,
+      "fixture_pass": true,
+      "human_auth_block": true,
+      "idempotency_block": true,
+      "indirect_generation_block": true,
+      "indirect_generation_pass": true,
+      "inheritance": true,
+      "intent_block": true,
+      "intent_pass": true,
+      "language_tone_block": true,
+      "language_tone_pass": true,
+      "no_final_block": true,
+      "no_final_pass": true,
+      "no_full_body_block": true,
+      "no_full_body_pass": true,
+      "policy_override_block": true,
+      "quality": true,
+      "risk_final_block": true,
+      "risk_non_final_pass": true,
+      "risk_ready_metadata_block": true,
+      "safety_publish_block": true,
+      "safety_queue_block": true,
+      "semantic_block": true,
+      "semantic_safe": true,
+      "state": true,
+      "type_registry": true,
+      "versioning_pass": true
+    },
+    "domain_count": 33,
+    "status": "PASS"
+  },
+  "signals": {
+    "failure_injection_tests": 25,
+    "negative_tests": 54,
+    "status": "PASS"
+  },
+  "static_scan": {
+    "status": "PASS",
+    "violation_count": 0
+  },
+  "status": "VALIDATED_POST_AUDITED",
+  "tests": {
+    "content_engine_pytest_passed": 261,
+    "targeted_pytest_passed": 120
+  },
+  "validation_plan": {
+    "execution_item_count": 45,
+    "gate_closure_allowed_now": false,
+    "manifest_sha256": "878b97f58579045c04777862eb04396bcf84d24744b49aaa8b905fe75cdeb343",
+    "sealed_status": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_PLAN_DEFINED",
+    "security_gate_count": 22,
+    "validation_allowed_next": true
+  }
+}
