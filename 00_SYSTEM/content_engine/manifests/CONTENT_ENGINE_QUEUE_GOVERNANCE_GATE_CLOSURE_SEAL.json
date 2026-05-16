@@ -1,0 +1,14 @@
+{
+  "component": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE",
+  "component_status": "CLOSED_VALIDATED",
+  "execution_allowed_now": false,
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+  "manifest_sha256": "036c32561112200521036f3739edfb13f999f5f207753d42a082a6f5767a44bc",
+  "next_layer_readiness_allowed_next": true,
+  "next_safe_step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_QUEUE_GOVERNANCE",
+  "productive_operations_allowed_now": false,
+  "project": "CONTENT_ENGINE_OMEGA",
+  "queue_write_allowed_now": false,
+  "real_queue_mutation_allowed_now": false,
+  "sealed_status": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_CLOSED_VALIDATED"
+}
