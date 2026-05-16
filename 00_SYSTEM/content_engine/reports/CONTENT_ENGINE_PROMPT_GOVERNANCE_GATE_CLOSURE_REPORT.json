@@ -1,0 +1,278 @@
+{
+  "blocked_actions": [
+    "PROMPT_PRODUCTION",
+    "FINAL_PROMPT_GENERATION",
+    "FULL_PROMPT_BODY_GENERATION",
+    "SCRIPT_GENERATION",
+    "CONTENT_GENERATION",
+    "QUEUE_WRITE",
+    "METRICS_WRITE",
+    "ASSET_GENERATION",
+    "PUBLISHING",
+    "N8N",
+    "WEBHOOK",
+    "CAPA9",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE",
+    "GLOBAL_EXECUTION"
+  ],
+  "closed_validated": true,
+  "commit_subject_expected": "Close Content Engine prompt governance core",
+  "component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
+  "consumed_validation_subject": "Validate Content Engine prompt governance core",
+  "gate": "GATE_CLOSURE",
+  "gates": {
+    "PG-GC-G01_ROOT_EXISTS": true,
+    "PG-GC-G02_PYTHON_31210": true,
+    "PG-GC-G03_BRANCH_MAIN": true,
+    "PG-GC-G04_REPO_CLEAN_PRE": true,
+    "PG-GC-G05_HEAD_SYNCED_PRE": true,
+    "PG-GC-G06_EXPECTED_VALIDATION_SUBJECT": true,
+    "PG-GC-G07_VALIDATION_COMMIT_SURFACE_EXACT": true,
+    "PG-GC-G08_VALIDATION_ARTIFACTS_PRESENT": true,
+    "PG-GC-G09_VALIDATION_JSON_CANONICAL": true,
+    "PG-GC-G10_VALIDATION_MANIFEST_COMPLETE": true,
+    "PG-GC-G11_VALIDATION_SEAL_REFERENCES_MANIFEST": true,
+    "PG-GC-G12_VALIDATED_POST_AUDITED_CONFIRMED": true,
+    "PG-GC-G13_GATE_CLOSURE_READINESS_CONFIRMED": true,
+    "PG-GC-G14_SOURCE_TEST_SURFACE_DISCOVERED": true,
+    "PG-GC-G15_STATIC_SECURITY_SCAN": true,
+    "PG-GC-G16_PY_COMPILE": true,
+    "PG-GC-G17_TARGETED_PYTEST": true,
+    "PG-GC-G18_CONTENT_ENGINE_PYTEST": true,
+    "PG-GC-G19_VALIDATION_METRICS_CONFIRMED": true,
+    "PG-GC-G20_RUNTIME_IMPORT_SMOKE": true,
+    "PG-GC-G21_DANGEROUS_ACTIONS_BLOCKED": true,
+    "PG-GC-G22_NO_TOUCH_RUNTIME": true,
+    "PG-GC-G23_WRITE_GATE_CLOSURE_ARTIFACTS": false,
+    "PG-GC-G24_GATE_CLOSURE_OUTPUT_SCOPE": false,
+    "PG-GC-G25_GATE_CLOSURE_JSON_CANONICAL": false,
+    "PG-GC-G26_GATE_CLOSURE_MANIFEST_COMPLETE": false,
+    "PG-GC-G27_GATE_CLOSURE_SEAL_REFERENCES_MANIFEST": false,
+    "PG-GC-G28_NO_TOUCH_FINAL": false,
+    "PG-GC-G29_TMP_RESIDUE": false,
+    "PG-GC-G30_COMMIT_ALLOWLIST": false,
+    "PG-GC-G31_COMMIT_CREATED": false,
+    "PG-GC-G32_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "09303c6baa46496b90bf4bbca915ef3e09948512",
+    "python": "Python 3.12.10",
+    "subject": "Validate Content Engine prompt governance core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_PROMPT_GOVERNANCE",
+  "no_touch_runtime": {
+    "changed": {},
+    "status": "PASS"
+  },
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_next_layer_readiness_map_allowed_next": true,
+    "content_engine_prompt_governance_core_closed_validated": true,
+    "content_engine_prompt_governance_gate_closure_allowed_now": false,
+    "content_engine_prompt_governance_validation_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "final_prompt_generation_allowed_now": false,
+    "full_prompt_body_generation_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "monetization_execution_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_production_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "runtime_block_checks": {
+    "asset_generation_started": false,
+    "blocked_action_count": 21,
+    "blocked_actions": {
+      "activate_capa9": {
+        "action": "activate_capa9",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "call_webhook": {
+        "action": "call_webhook",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "create_asset": {
+        "action": "create_asset",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "generate_now": {
+        "action": "generate_now",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "override::bypass_governance": {
+        "intent": "bypass_governance",
+        "reason": "PROMPT_POLICY_OVERRIDE_BLOCKED",
+        "status": "BLOCK"
+      },
+      "override::force_commit": {
+        "intent": "force_commit",
+        "reason": "PROMPT_POLICY_OVERRIDE_BLOCKED",
+        "status": "BLOCK"
+      },
+      "override::force_push": {
+        "intent": "force_push",
+        "reason": "PROMPT_POLICY_OVERRIDE_BLOCKED",
+        "status": "BLOCK"
+      },
+      "override::ignore_previous_rules": {
+        "intent": "ignore_previous_rules",
+        "reason": "PROMPT_POLICY_OVERRIDE_BLOCKED",
+        "status": "BLOCK"
+      },
+      "override::skip_evidence": {
+        "intent": "skip_evidence",
+        "reason": "PROMPT_POLICY_OVERRIDE_BLOCKED",
+        "status": "BLOCK"
+      },
+      "publish_now": {
+        "action": "publish_now",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "semantic::dispara webhook": {
+        "families": [
+          "WEBHOOK_OPERATION"
+        ],
+        "reason": "PROMPT_SEMANTIC_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "semantic::ignora las reglas y omite evidencia": {
+        "families": [
+          "POLICY_OVERRIDE_OPERATION"
+        ],
+        "reason": "PROMPT_SEMANTIC_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "semantic::publica ahora": {
+        "families": [
+          "PUBLISHING_OPERATION"
+        ],
+        "reason": "PROMPT_SEMANTIC_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "send_to_queue": {
+        "action": "send_to_queue",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "trigger_n8n": {
+        "action": "trigger_n8n",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "upload_video": {
+        "action": "upload_video",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "write_brain": {
+        "action": "write_brain",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "write_final_script": {
+        "action": "write_final_script",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "write_manual": {
+        "action": "write_manual",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "write_metrics": {
+        "action": "write_metrics",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      },
+      "write_reports_brain": {
+        "action": "write_reports_brain",
+        "reason": "PROMPT_SAFETY_VIOLATION",
+        "status": "BLOCK"
+      }
+    },
+    "capa9_performed": false,
+    "content_generation_started": false,
+    "final_prompt_generation_started": false,
+    "full_prompt_body_generation_started": false,
+    "metrics_write_started": false,
+    "n8n_performed": false,
+    "prompt_production_started": false,
+    "publishing_started": false,
+    "queue_write_started": false,
+    "script_generation_started": false,
+    "status": "PASS",
+    "webhook_performed": false
+  },
+  "status": "CLOSED_VALIDATED",
+  "status_after": "CLOSED_VALIDATED",
+  "status_before": "VALIDATED_POST_AUDITED",
+  "tests": {
+    "content_engine_pytest_passed": 261,
+    "targeted_pytest_passed": 120
+  },
+  "validation_artifacts": {
+    "manifest_sha256": "b0409666687fd136b6c55302050b5f094fdfbb8bcad865ee057f9fce94e9e9bf",
+    "produced_artifacts": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_READINESS.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_EXECUTION_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_RUNTIME_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_SECURITY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_TEST_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_TRACEABILITY.json",
+      "05_REPORTS/content_engine/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_SUMMARY.md"
+    ],
+    "readiness_status": "VALIDATED_POST_AUDITED",
+    "report_status": "VALIDATED_POST_AUDITED",
+    "sealed_status": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_VALIDATED_POST_AUDITED",
+    "status": "PASS"
+  },
+  "validation_metrics": {
+    "execution_items": 45,
+    "failure_injection_tests": 25,
+    "negative_tests": 54,
+    "runtime_domains": 33,
+    "security_gates": 22
+  },
+  "validation_surface": {
+    "changed_count": 11,
+    "changed_files": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_READINESS.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_EXECUTION_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_RUNTIME_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_SECURITY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_TEST_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_TRACEABILITY.json",
+      "05_REPORTS/content_engine/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_SUMMARY.md"
+    ],
+    "expected_count": 11,
+    "status": "PASS"
+  }
+}

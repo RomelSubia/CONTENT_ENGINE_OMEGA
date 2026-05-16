@@ -55,23 +55,14 @@
     "webhook_allowed_now": false
   },
   "project": "CONTENT_ENGINE_OMEGA",
-  "readiness_map": {
-    "brain_write_allowed_now": false,
-    "capa9_allowed_now": false,
-    "content_generation_allowed_now": false,
-    "current_component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
-    "current_component_status": "CLOSED_VALIDATED",
-    "manual_write_allowed_now": false,
-    "n8n_allowed_now": false,
-    "next_layer_build_allowed_now": false,
-    "next_layer_readiness_map_allowed_next": true,
-    "prompt_production_allowed_now": false,
-    "publishing_allowed_now": false,
-    "reports_brain_write_allowed_now": false,
-    "status": "PASS",
-    "webhook_allowed_now": false
-  },
   "result": "PASS",
+  "state_transition": {
+    "from": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_VALIDATED_POST_AUDITED",
+    "gate_closure_completed": true,
+    "next_layer_readiness_map_allowed_next": true,
+    "productive_operations_allowed_now": false,
+    "to": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_CLOSED_VALIDATED"
+  },
   "status": "CLOSED_VALIDATED",
   "status_after": "CLOSED_VALIDATED",
   "status_before": "VALIDATED_POST_AUDITED"

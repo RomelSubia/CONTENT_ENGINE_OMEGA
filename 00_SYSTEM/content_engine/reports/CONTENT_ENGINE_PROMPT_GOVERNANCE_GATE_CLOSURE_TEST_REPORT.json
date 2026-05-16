@@ -55,24 +55,28 @@
     "webhook_allowed_now": false
   },
   "project": "CONTENT_ENGINE_OMEGA",
-  "readiness_map": {
-    "brain_write_allowed_now": false,
-    "capa9_allowed_now": false,
-    "content_generation_allowed_now": false,
-    "current_component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
-    "current_component_status": "CLOSED_VALIDATED",
-    "manual_write_allowed_now": false,
-    "n8n_allowed_now": false,
-    "next_layer_build_allowed_now": false,
-    "next_layer_readiness_map_allowed_next": true,
-    "prompt_production_allowed_now": false,
-    "publishing_allowed_now": false,
-    "reports_brain_write_allowed_now": false,
-    "status": "PASS",
-    "webhook_allowed_now": false
-  },
   "result": "PASS",
   "status": "CLOSED_VALIDATED",
   "status_after": "CLOSED_VALIDATED",
-  "status_before": "VALIDATED_POST_AUDITED"
+  "status_before": "VALIDATED_POST_AUDITED",
+  "tests": {
+    "content_engine_pytest_passed": 261,
+    "targeted_pytest_passed": 120
+  },
+  "validation_metric_minimums": {
+    "content_engine_pytest_minimum": 261,
+    "execution_matrix_minimum": 45,
+    "failure_injection_tests_minimum": 25,
+    "negative_tests_minimum": 54,
+    "runtime_domains_minimum": 33,
+    "security_gates_minimum": 22,
+    "targeted_pytest_minimum": 120
+  },
+  "validation_metrics": {
+    "execution_items": 45,
+    "failure_injection_tests": 25,
+    "negative_tests": 54,
+    "runtime_domains": 33,
+    "security_gates": 22
+  }
 }

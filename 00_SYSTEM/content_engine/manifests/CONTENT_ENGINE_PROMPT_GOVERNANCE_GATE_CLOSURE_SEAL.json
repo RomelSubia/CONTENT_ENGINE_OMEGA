@@ -21,6 +21,7 @@
   "commit_subject_expected": "Close Content Engine prompt governance core",
   "component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
   "consumed_validation_subject": "Validate Content Engine prompt governance core",
+  "execution_allowed_now": false,
   "gate": "GATE_CLOSURE",
   "git_context": {
     "branch": "main",
@@ -28,6 +29,8 @@
     "python": "Python 3.12.10",
     "subject": "Validate Content Engine prompt governance core"
   },
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+  "manifest_sha256": "c8a8be3aeffe10e9f2235b7eb33bfcc9fe655c641f3da78cf9d9c8dddfb79be1",
   "next_safe_step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_PROMPT_GOVERNANCE",
   "permissions": {
     "asset_generation_allowed_now": false,
@@ -54,24 +57,11 @@
     "script_generation_allowed_now": false,
     "webhook_allowed_now": false
   },
+  "productive_operations_allowed_now": false,
   "project": "CONTENT_ENGINE_OMEGA",
-  "readiness_map": {
-    "brain_write_allowed_now": false,
-    "capa9_allowed_now": false,
-    "content_generation_allowed_now": false,
-    "current_component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
-    "current_component_status": "CLOSED_VALIDATED",
-    "manual_write_allowed_now": false,
-    "n8n_allowed_now": false,
-    "next_layer_build_allowed_now": false,
-    "next_layer_readiness_map_allowed_next": true,
-    "prompt_production_allowed_now": false,
-    "publishing_allowed_now": false,
-    "reports_brain_write_allowed_now": false,
-    "status": "PASS",
-    "webhook_allowed_now": false
-  },
   "result": "PASS",
+  "seal_type": "CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_SEAL",
+  "sealed_status": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_CLOSED_VALIDATED",
   "status": "CLOSED_VALIDATED",
   "status_after": "CLOSED_VALIDATED",
   "status_before": "VALIDATED_POST_AUDITED"
