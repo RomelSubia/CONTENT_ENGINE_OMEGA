@@ -1,0 +1,12 @@
+{
+  "component": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE",
+  "execution_allowed_now": false,
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_MANIFEST.json",
+  "manifest_sha256": "59d72208cdc06235a3430309327c10117e79be3dab7303b62e5aa613b9f9a9dd",
+  "next_safe_step": "CONTENT_ENGINE_QUEUE_GOVERNANCE_POST_BUILD_AUDIT",
+  "productive_operations_allowed_now": false,
+  "project": "CONTENT_ENGINE_OMEGA",
+  "queue_write_allowed_now": false,
+  "real_queue_mutation_allowed_now": false,
+  "sealed_status": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_BUILT_PENDING_POST_AUDIT"
+}

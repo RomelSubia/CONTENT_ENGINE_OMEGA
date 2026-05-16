@@ -1,0 +1,145 @@
+{
+  "component": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE",
+  "dirty_allowlist_consumed": {
+    "allowed_dirty_count": 52,
+    "dirty_count": 31,
+    "dirty_files": [
+      "04_SCRIPTS/python/content_engine/queue_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_boundary_guard.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_canonicalization.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_channel_router.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_evidence_contract.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_failure_policy.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_intake_contract.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_item_schema.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_lifecycle_contract.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_manifest_contract.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_priority_engine.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_readiness_engine.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_sensitive_data_guard.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_state_contract.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_threat_model.py",
+      "tests/content_engine/test_queue_governance_boundary_guard.py",
+      "tests/content_engine/test_queue_governance_canonicalization.py",
+      "tests/content_engine/test_queue_governance_channel_router.py",
+      "tests/content_engine/test_queue_governance_evidence_contract.py",
+      "tests/content_engine/test_queue_governance_failure_policy.py",
+      "tests/content_engine/test_queue_governance_id_timestamp.py",
+      "tests/content_engine/test_queue_governance_intake_contract.py",
+      "tests/content_engine/test_queue_governance_integration.py",
+      "tests/content_engine/test_queue_governance_item_schema.py",
+      "tests/content_engine/test_queue_governance_lifecycle_contract.py",
+      "tests/content_engine/test_queue_governance_manifest_contract.py",
+      "tests/content_engine/test_queue_governance_priority_engine.py",
+      "tests/content_engine/test_queue_governance_readiness_engine.py",
+      "tests/content_engine/test_queue_governance_sensitive_data_guard.py",
+      "tests/content_engine/test_queue_governance_state_contract.py",
+      "tests/content_engine/test_queue_governance_threat_model.py"
+    ],
+    "status": "PASS"
+  },
+  "gates": {
+    "QG-FIX3-G01_ROOT_EXISTS": true,
+    "QG-FIX3-G02_PYTHON_31210": true,
+    "QG-FIX3-G03_BRANCH_MAIN": true,
+    "QG-FIX3-G04_HEAD_SYNCED": true,
+    "QG-FIX3-G05_EXPECTED_BASE_SUBJECT": true,
+    "QG-FIX3-G06_DIRTY_ALLOWLIST_CONSUMED": true,
+    "QG-FIX3-G07_PROTECTED_ROOTS_FINGERPRINTED_BEFORE": true,
+    "QG-FIX3-G08_SEMANTIC_PRECISION_PATCH_APPLIED": true,
+    "QG-FIX3-G09_STATIC_SOURCE_SCAN": true,
+    "QG-FIX3-G10_FORBIDDEN_RUNTIME_TOKEN_SCAN_ZERO": true,
+    "QG-FIX3-G11_PY_COMPILE": true,
+    "QG-FIX3-G12_TARGETED_QUEUE_GOVERNANCE_PYTEST": true,
+    "QG-FIX3-G13_CONTENT_ENGINE_PYTEST": true,
+    "QG-FIX3-G14_RUNTIME_SELF_CHECK": true,
+    "QG-FIX3-G15_SECURITY_BASELINES": true,
+    "QG-FIX3-G16_NO_TOUCH_PROTECTED_ROOTS": true,
+    "QG-FIX3-G17_REPORTS_WRITTEN": false,
+    "QG-FIX3-G18_MANIFEST_SEAL_SUMMARY_WRITTEN": false,
+    "QG-FIX3-G19_OUTPUT_SCOPE_EXACT": false,
+    "QG-FIX3-G20_JSON_CANONICAL": false,
+    "QG-FIX3-G21_MANIFEST_COMPLETE": false,
+    "QG-FIX3-G22_SEAL_REFERENCES_MANIFEST": false,
+    "QG-FIX3-G23_FAILURE_POLICY_VALIDATED": false,
+    "QG-FIX3-G24_TMP_RESIDUE_CLEAN": false,
+    "QG-FIX3-G25_COMMIT_ALLOWLIST": false,
+    "QG-FIX3-G26_COMMIT_CREATED": false,
+    "QG-FIX3-G27_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "ef7eb23a43eec9ab1262ebc412372dfaf46c09f1",
+    "python": "Python 3.12.10",
+    "subject": "Define Content Engine next layer readiness map after prompt governance"
+  },
+  "metrics": {
+    "content_engine_tests": 410,
+    "failure_injection_tests": 35,
+    "negative_tests": 70,
+    "no_touch_checks": 16,
+    "report_files": 18,
+    "security_gates": 32,
+    "source_files": 15,
+    "targeted_queue_governance_tests": 149,
+    "test_files": 16,
+    "total_allowed_outputs": 52
+  },
+  "next_safe_step": "CONTENT_ENGINE_QUEUE_GOVERNANCE_POST_BUILD_AUDIT",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "post_build_audit_allowed_next": true,
+    "prompt_generation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "real_queue_mutation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_now": false,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "semantic_precision_patch": {
+    "fixes": [
+      "field_scope_sensitive_data_guard",
+      "execution_precedence_before_sensitive_scan",
+      "d_channel_generic_motivation_summary_block"
+    ],
+    "patch_result": {
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_channel_router.py": {
+        "after_sha256": "090887b97d3a1b3132345ec838da1f2430eab07a5d58b19dc14fd3ca73e5dfbb",
+        "before_sha256": "3d415ef62c80a7cbfe1b54c1ac43836df819b52ca9465718feeb42643cdc1ecf",
+        "changed": true
+      },
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_sensitive_data_guard.py": {
+        "after_sha256": "679f124db2374de27d002aac092de0b8f9e064d06076c3658e1cbdee592e2935",
+        "before_sha256": "d372ecf79169f62a2950e0f0ae6bf9450cd8639e87f235ea06067b5ad8c11659",
+        "changed": true
+      },
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_threat_model.py": {
+        "after_sha256": "258f7bdf9b1b5539e8f597ac9f52382825e747dda77ccc6897411abf09cb2155",
+        "before_sha256": "712d4698c5b8a4b4dee71ddb2cd99e573967039bddd0fc1700227fc9e5e26e5d",
+        "changed": true
+      }
+    },
+    "patched_files": [
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_channel_router.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_sensitive_data_guard.py",
+      "04_SCRIPTS/python/content_engine/queue_governance/queue_threat_model.py"
+    ],
+    "status": "PASS"
+  },
+  "state_contract": "BUILT_PENDING_POST_AUDIT",
+  "status": "BUILT_PENDING_POST_AUDIT",
+  "step": "AUTOMATIC_BLOCK_BUILD_FIX_3"
+}
