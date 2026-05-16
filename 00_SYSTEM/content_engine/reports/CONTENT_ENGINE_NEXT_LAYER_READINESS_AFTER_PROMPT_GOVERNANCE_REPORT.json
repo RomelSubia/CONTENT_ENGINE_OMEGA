@@ -1,0 +1,209 @@
+{
+  "build_allowed_now": false,
+  "closure_artifacts": {
+    "manifest_sha256": "c8a8be3aeffe10e9f2235b7eb33bfcc9fe655c641f3da78cf9d9c8dddfb79be1",
+    "produced_artifacts": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_SECURITY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_STATE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_TEST_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_VALIDATION_AUDIT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_NEXT_LAYER_READINESS_MAP.json",
+      "05_REPORTS/content_engine/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_SUMMARY.md"
+    ],
+    "sealed_status": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_CLOSED_VALIDATED",
+    "state_report_status": "CLOSED_VALIDATED",
+    "status": "PASS"
+  },
+  "closure_surface": {
+    "changed_count": 10,
+    "changed_files": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_SECURITY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_STATE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_TEST_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_VALIDATION_AUDIT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_NEXT_LAYER_READINESS_MAP.json",
+      "05_REPORTS/content_engine/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_SUMMARY.md"
+    ],
+    "status": "PASS"
+  },
+  "current_component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
+  "current_component_status": "CLOSED_VALIDATED",
+  "dependencies": {
+    "blueprint_must_define": [
+      "queue item canonical schema",
+      "draft-only idea intake contract",
+      "channel-to-queue routing map",
+      "queue lifecycle states without real queue mutation",
+      "validation gates",
+      "failure policy",
+      "output scope",
+      "manifest/seal requirements"
+    ],
+    "build_must_remain_blocked_until": [
+      "readiness map completed",
+      "blueprint completed",
+      "review-hardening completed",
+      "final approval completed",
+      "implementation plan completed"
+    ],
+    "required_before_blueprint": [
+      "repo clean/synced",
+      "prompt governance closure seal valid",
+      "productive operations blocked",
+      "queue write blocked",
+      "manual/brain/reports-brain no-touch"
+    ],
+    "required_closed_layers": {
+      "CONTENT_ENGINE_CONSTRUCTION_CORE": "CLOSED_VALIDATED",
+      "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE": "CLOSED_VALIDATED",
+      "CONTENT_ENGINE_STRATEGY_FOUNDATION_CORE": "CLOSED_VALIDATED"
+    }
+  },
+  "gates": {
+    "NL-RM-G01_ROOT_EXISTS": true,
+    "NL-RM-G02_PYTHON_31210": true,
+    "NL-RM-G03_BRANCH_MAIN": true,
+    "NL-RM-G04_REPO_CLEAN_PRE": true,
+    "NL-RM-G05_HEAD_SYNCED_PRE": true,
+    "NL-RM-G06_EXPECTED_PROMPT_GOVERNANCE_CLOSURE_SUBJECT": true,
+    "NL-RM-G07_PROMPT_GOVERNANCE_CLOSURE_SURFACE_EXACT": true,
+    "NL-RM-G08_PROMPT_GOVERNANCE_CLOSURE_ARTIFACTS_PRESENT": true,
+    "NL-RM-G09_PROMPT_GOVERNANCE_CLOSURE_JSON_CANONICAL": true,
+    "NL-RM-G10_PROMPT_GOVERNANCE_CLOSURE_MANIFEST_COMPLETE": true,
+    "NL-RM-G11_PROMPT_GOVERNANCE_CLOSURE_SEAL_VALID": true,
+    "NL-RM-G12_CLOSED_VALIDATED_CONFIRMED": true,
+    "NL-RM-G13_NEXT_LAYER_CANDIDATE_DEFINED": true,
+    "NL-RM-G14_DEPENDENCIES_CONFIRMED": true,
+    "NL-RM-G15_NO_PRODUCTIVE_PERMISSION_OPENED": true,
+    "NL-RM-G16_CONTENT_ENGINE_TEST_BASELINE": true,
+    "NL-RM-G17_NO_TOUCH_PRE_TO_RUNTIME": true,
+    "NL-RM-G18_WRITE_READINESS_ARTIFACTS": false,
+    "NL-RM-G19_READINESS_OUTPUT_SCOPE": false,
+    "NL-RM-G20_READINESS_JSON_CANONICAL": false,
+    "NL-RM-G21_READINESS_MANIFEST_COMPLETE": false,
+    "NL-RM-G22_READINESS_SEAL_VALID": false,
+    "NL-RM-G23_NO_TOUCH_FINAL": false,
+    "NL-RM-G24_TMP_RESIDUE": false,
+    "NL-RM-G25_COMMIT_ALLOWLIST": false,
+    "NL-RM-G26_COMMIT_CREATED": false,
+    "NL-RM-G27_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "b9cbb4ceceb5e4f464e9ce5dc395ff76b726faaf",
+    "python": "Python 3.12.10",
+    "subject": "Close Content Engine prompt governance core"
+  },
+  "next_layer_candidate": {
+    "allowed_next": {
+      "blueprint": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_BLUEPRINT"
+    },
+    "blocked_now": {
+      "automatic_build": true,
+      "content_generation": true,
+      "implementation_plan": true,
+      "n8n_webhook_capa9": true,
+      "prompt_production": true,
+      "publishing": true,
+      "queue_write": true
+    },
+    "next_safe_step": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_BLUEPRINT",
+    "reason": "After Construction Core, Strategy Foundation Core, and Prompt Governance Core are closed validated, the next safe non-productive layer is queue governance: schema, lifecycle, priority, evidence, channel separation, and fail-closed queue boundaries without writing a real production queue.",
+    "recommended_next_layer": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE",
+    "scope": {
+      "allowed_future_design_only": [
+        "queue schema definition",
+        "queue item lifecycle states",
+        "channel routing rules",
+        "idea intake contract",
+        "priority and readiness scoring contract",
+        "evidence requirements",
+        "failure policy",
+        "no-touch and no-production boundaries"
+      ],
+      "not_allowed_now": [
+        "real queue writes",
+        "real metric ingestion",
+        "final prompt generation",
+        "final script generation",
+        "asset generation",
+        "publishing",
+        "n8n execution",
+        "webhook execution",
+        "CAPA9 activation"
+      ]
+    }
+  },
+  "next_safe_step": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_BLUEPRINT",
+  "no_touch_runtime": {
+    "changed": {},
+    "status": "PASS"
+  },
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_engine_next_layer_readiness_map_defined": true,
+    "content_engine_prompt_governance_core_closed_validated": true,
+    "content_engine_queue_governance_core_blueprint_allowed_next": true,
+    "content_engine_queue_governance_core_build_allowed_now": false,
+    "content_engine_queue_write_allowed_now": false,
+    "content_engine_real_queue_mutation_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "content_queue_write_allowed_now": false,
+    "final_prompt_generation_allowed_now": false,
+    "full_prompt_body_generation_allowed_now": false,
+    "global_execution_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_production_allowed_now": false,
+    "publishing_allowed_now": false,
+    "publishing_execution_allowed_now": false,
+    "publishing_preparation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "permissions_audit": {
+    "dangerous_permissions_false": {
+      "asset_generation_allowed_now": false,
+      "brain_write_allowed_now": false,
+      "capa9_allowed_now": false,
+      "content_generation_allowed_now": false,
+      "content_queue_write_allowed_now": false,
+      "final_prompt_generation_allowed_now": false,
+      "full_prompt_body_generation_allowed_now": false,
+      "global_execution_allowed_now": false,
+      "manual_write_allowed_now": false,
+      "metrics_write_allowed_now": false,
+      "n8n_allowed_now": false,
+      "prompt_production_allowed_now": false,
+      "publishing_allowed_now": false,
+      "publishing_execution_allowed_now": false,
+      "publishing_preparation_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "script_generation_allowed_now": false,
+      "webhook_allowed_now": false
+    },
+    "status": "PASS"
+  },
+  "productive_operations_allowed_now": false,
+  "project": "CONTENT_ENGINE_OMEGA",
+  "queue_write_allowed_now": false,
+  "recommended_next_layer": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE",
+  "result": "PASS",
+  "status": "NEXT_LAYER_READINESS_MAP_DEFINED",
+  "step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_PROMPT_GOVERNANCE",
+  "tests": {
+    "content_engine_pytest_passed": 261
+  }
+}
