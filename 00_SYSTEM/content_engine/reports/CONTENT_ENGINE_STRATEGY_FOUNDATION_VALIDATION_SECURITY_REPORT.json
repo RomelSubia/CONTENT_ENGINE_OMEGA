@@ -1,0 +1,48 @@
+{
+  "asset_write_allowed": false,
+  "blocked_actions": [
+    "CONTENT_GENERATION",
+    "PROMPT_PRODUCTION",
+    "SCRIPT_GENERATION",
+    "QUEUE_WRITE",
+    "METRICS_WRITE",
+    "ASSET_WRITE",
+    "PUBLISHING",
+    "N8N",
+    "WEBHOOK",
+    "CAPA9",
+    "MANUAL_WRITE",
+    "BRAIN_WRITE",
+    "REPORTS_BRAIN_WRITE"
+  ],
+  "brain_write_allowed": false,
+  "capa9_allowed": false,
+  "component": "CONTENT_ENGINE_STRATEGY_FOUNDATION_CORE",
+  "consumed_audit_subject": "Post-build audit Content Engine strategy foundation core",
+  "content_generation_allowed": false,
+  "gate": "VALIDATION",
+  "git_context": {
+    "audit_subject": "Post-build audit Content Engine strategy foundation core",
+    "branch": "main",
+    "build_subject": "Build Content Engine strategy foundation core",
+    "head": "d24eb582cb6aa79108f9e84f0563c4d5fbb1b76c",
+    "python": "Python 3.12.10"
+  },
+  "manual_write_allowed": false,
+  "metrics_write_allowed": false,
+  "n8n_allowed": false,
+  "next_safe_step": "CONTENT_ENGINE_STRATEGY_FOUNDATION_GATE_CLOSURE",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "prompt_production_allowed": false,
+  "publishing_allowed": false,
+  "queue_write_allowed": false,
+  "reports_brain_write_allowed": false,
+  "result": "PASS",
+  "script_generation_allowed": false,
+  "static_security": {
+    "status": "PASS",
+    "violation_count": 0
+  },
+  "status": "VALIDATED_POST_AUDITED",
+  "webhook_allowed": false
+}
