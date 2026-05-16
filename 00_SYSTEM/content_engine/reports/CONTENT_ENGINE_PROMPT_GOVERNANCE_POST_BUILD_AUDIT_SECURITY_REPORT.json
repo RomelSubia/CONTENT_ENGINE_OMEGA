@@ -1,0 +1,48 @@
+{
+  "audited_build_subject": "Build Content Engine prompt governance core",
+  "component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
+  "dangerous_actions_blocked": {
+    "final_prompt_generation": true,
+    "manual_brain_reports_brain": true,
+    "n8n_webhook_capa9": true,
+    "prompt_production": true,
+    "queue_metrics_assets_publishing": true,
+    "script_content_generation": true
+  },
+  "gate": "POST_BUILD_AUDIT",
+  "git_context": {
+    "branch": "main",
+    "head": "5f76da1b8f58ce22eeb93dd074593de9b09deb4f",
+    "python": "Python 3.12.10",
+    "subject": "Build Content Engine prompt governance core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP",
+  "permissions": {
+    "asset_write_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "final_prompt_generation_allowed_now": false,
+    "full_prompt_body_generation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_production_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_next": true,
+    "validation_plan_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "static_scan": {
+    "status": "PASS",
+    "violation_count": 0
+  },
+  "status": "BUILT_POST_AUDITED"
+}
