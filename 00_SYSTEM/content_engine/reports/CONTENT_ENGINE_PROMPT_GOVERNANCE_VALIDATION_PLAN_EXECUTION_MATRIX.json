@@ -1,0 +1,502 @@
+{
+  "component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
+  "current_core_status": "BUILT_POST_AUDITED",
+  "current_map_status": "VALIDATION_MAP_DEFINED",
+  "execution_matrix": [
+    {
+      "description": "Validate repo clean/synced before execution.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E01",
+      "required": true,
+      "sequence": 1,
+      "target": "repo_clean_synced"
+    },
+    {
+      "description": "Validate validation plan seal before execution.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E02",
+      "required": true,
+      "sequence": 2,
+      "target": "validation_plan_seal"
+    },
+    {
+      "description": "Validate 23 source files present and unmodified outside planned execution.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E03",
+      "required": true,
+      "sequence": 3,
+      "target": "source_surface"
+    },
+    {
+      "description": "Validate 23 test files present.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E04",
+      "required": true,
+      "sequence": 4,
+      "target": "test_surface"
+    },
+    {
+      "description": "Execute static source scan.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E05",
+      "required": true,
+      "sequence": 5,
+      "target": "static_scan"
+    },
+    {
+      "description": "Execute py_compile over source/tests.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E06",
+      "required": true,
+      "sequence": 6,
+      "target": "py_compile"
+    },
+    {
+      "description": "Execute targeted pytest >=120.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E07",
+      "required": true,
+      "sequence": 7,
+      "target": "targeted_pytest"
+    },
+    {
+      "description": "Execute content_engine pytest >=261.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E08",
+      "required": true,
+      "sequence": 8,
+      "target": "content_engine_pytest"
+    },
+    {
+      "description": "Validate state contract remains fail-closed.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E09",
+      "required": true,
+      "sequence": 9,
+      "target": "state_contract"
+    },
+    {
+      "description": "Validate inheritance contract.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E10",
+      "required": true,
+      "sequence": 10,
+      "target": "strategy_inheritance"
+    },
+    {
+      "description": "Validate prompt type registry.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E11",
+      "required": true,
+      "sequence": 11,
+      "target": "type_registry"
+    },
+    {
+      "description": "Validate prompt intent contract.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E12",
+      "required": true,
+      "sequence": 12,
+      "target": "intent_contract"
+    },
+    {
+      "description": "Validate channel binding.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E13",
+      "required": true,
+      "sequence": 13,
+      "target": "channel_binding"
+    },
+    {
+      "description": "Validate channel scope.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E14",
+      "required": true,
+      "sequence": 14,
+      "target": "channel_scope"
+    },
+    {
+      "description": "Validate execution boundary.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E15",
+      "required": true,
+      "sequence": 15,
+      "target": "execution_boundary"
+    },
+    {
+      "description": "Validate no-final-output contract.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E16",
+      "required": true,
+      "sequence": 16,
+      "target": "no_final_output"
+    },
+    {
+      "description": "Validate no full prompt body.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E17",
+      "required": true,
+      "sequence": 17,
+      "target": "no_full_prompt_body"
+    },
+    {
+      "description": "Validate test fixture boundary.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E18",
+      "required": true,
+      "sequence": 18,
+      "target": "test_fixture_boundary"
+    },
+    {
+      "description": "Validate indirect generation detector.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E19",
+      "required": true,
+      "sequence": 19,
+      "target": "indirect_generation"
+    },
+    {
+      "description": "Validate language/tone boundary.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E20",
+      "required": true,
+      "sequence": 20,
+      "target": "language_tone"
+    },
+    {
+      "description": "Validate human authorization cannot be prompted.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E21",
+      "required": true,
+      "sequence": 21,
+      "target": "human_authorization"
+    },
+    {
+      "description": "Validate prompt quality contract.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E22",
+      "required": true,
+      "sequence": 22,
+      "target": "quality_contract"
+    },
+    {
+      "description": "Validate prompt safety contract.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E23",
+      "required": true,
+      "sequence": 23,
+      "target": "safety_contract"
+    },
+    {
+      "description": "Validate semantic safety filter.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E24",
+      "required": true,
+      "sequence": 24,
+      "target": "semantic_safety"
+    },
+    {
+      "description": "Validate risk classifier.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E25",
+      "required": true,
+      "sequence": 25,
+      "target": "risk_classifier"
+    },
+    {
+      "description": "Validate policy override guard.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E26",
+      "required": true,
+      "sequence": 26,
+      "target": "policy_override"
+    },
+    {
+      "description": "Validate versioning contract.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E27",
+      "required": true,
+      "sequence": 27,
+      "target": "versioning"
+    },
+    {
+      "description": "Validate idempotency gate.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E28",
+      "required": true,
+      "sequence": 28,
+      "target": "idempotency"
+    },
+    {
+      "description": "Validate evidence contract.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E29",
+      "required": true,
+      "sequence": 29,
+      "target": "evidence_contract"
+    },
+    {
+      "description": "Validate failure policy.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E30",
+      "required": true,
+      "sequence": 30,
+      "target": "failure_policy"
+    },
+    {
+      "description": "Validate >=54 negative signals.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E31",
+      "required": true,
+      "sequence": 31,
+      "target": "negative_signals"
+    },
+    {
+      "description": "Validate >=25 failure injection signals.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E32",
+      "required": true,
+      "sequence": 32,
+      "target": "failure_injection"
+    },
+    {
+      "description": "Confirm prompt production remains blocked.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E33",
+      "required": true,
+      "sequence": 33,
+      "target": "no_prompt_production"
+    },
+    {
+      "description": "Confirm content/script generation remains blocked.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E34",
+      "required": true,
+      "sequence": 34,
+      "target": "no_content_generation"
+    },
+    {
+      "description": "Confirm queue/metrics/assets/publishing remain blocked.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E35",
+      "required": true,
+      "sequence": 35,
+      "target": "no_queue_metrics_assets_publishing"
+    },
+    {
+      "description": "Confirm n8n/webhook/CAPA9 remain blocked.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E36",
+      "required": true,
+      "sequence": 36,
+      "target": "no_n8n_webhook_capa9"
+    },
+    {
+      "description": "Confirm manual/brain/reports-brain remain blocked.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E37",
+      "required": true,
+      "sequence": 37,
+      "target": "no_manual_brain_reports_brain"
+    },
+    {
+      "description": "Validate protected roots no-touch.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E38",
+      "required": true,
+      "sequence": 38,
+      "target": "protected_roots_no_touch"
+    },
+    {
+      "description": "Validate validation output scope.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E39",
+      "required": true,
+      "sequence": 39,
+      "target": "validation_output_scope"
+    },
+    {
+      "description": "Validate validation evidence canonical JSON.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E40",
+      "required": true,
+      "sequence": 40,
+      "target": "canonical_json"
+    },
+    {
+      "description": "Validate validation manifest completeness.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E41",
+      "required": true,
+      "sequence": 41,
+      "target": "manifest_complete"
+    },
+    {
+      "description": "Validate validation seal hash.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E42",
+      "required": true,
+      "sequence": 42,
+      "target": "seal_hash"
+    },
+    {
+      "description": "Validate tmp residue cleanup.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E43",
+      "required": true,
+      "sequence": 43,
+      "target": "tmp_residue"
+    },
+    {
+      "description": "Validate commit allowlist.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E44",
+      "required": true,
+      "sequence": 44,
+      "target": "commit_allowlist"
+    },
+    {
+      "description": "Validate push sync after validation.",
+      "execution_allowed_in_plan": false,
+      "execution_allowed_in_validation_step": true,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVP-E45",
+      "required": true,
+      "sequence": 45,
+      "target": "push_sync"
+    }
+  ],
+  "gate": "VALIDATION_PLAN",
+  "git_context": {
+    "branch": "main",
+    "head": "ee8a040a06d8b0274a6087e5852740535a5d671a",
+    "python": "Python 3.12.10",
+    "subject": "Define validation map Content Engine prompt governance core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION",
+  "permissions": {
+    "asset_write_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "final_prompt_generation_allowed_now": false,
+    "full_prompt_body_generation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_production_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "static_scan": {
+    "status": "PASS",
+    "violation_count": 0
+  },
+  "status": "VALIDATION_PLAN_DEFINED",
+  "tests": {
+    "content_engine_pytest_passed": 261,
+    "targeted_pytest_passed": 120
+  },
+  "validation_map": {
+    "current_core_status": "BUILT_POST_AUDITED",
+    "domain_count": 10,
+    "manifest_sha256": "2e50ee29f19bfd6d5ef3305b7f8443904056a7e2aaf367ae466dc6d5c05df065",
+    "sealed_status": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_DEFINED",
+    "validation_gate_count": 60
+  }
+}

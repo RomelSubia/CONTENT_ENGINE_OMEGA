@@ -1,0 +1,64 @@
+{
+  "component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
+  "current_core_status": "BUILT_POST_AUDITED",
+  "current_map_status": "VALIDATION_MAP_DEFINED",
+  "gate": "VALIDATION_PLAN",
+  "git_context": {
+    "branch": "main",
+    "head": "ee8a040a06d8b0274a6087e5852740535a5d671a",
+    "python": "Python 3.12.10",
+    "subject": "Define validation map Content Engine prompt governance core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION",
+  "permissions": {
+    "asset_write_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "final_prompt_generation_allowed_now": false,
+    "full_prompt_body_generation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_production_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "validation_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "static_scan": {
+    "status": "PASS",
+    "violation_count": 0
+  },
+  "status": "VALIDATION_PLAN_DEFINED",
+  "tests": {
+    "content_engine_pytest_passed": 261,
+    "targeted_pytest_passed": 120
+  },
+  "traceability": {
+    "consumed_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP",
+    "execution_items": 45,
+    "gate_closure_allowed_now": false,
+    "input_core_status": "BUILT_POST_AUDITED",
+    "input_status": "VALIDATION_MAP_DEFINED",
+    "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION",
+    "output_status": "VALIDATION_PLAN_DEFINED",
+    "security_gates": 22,
+    "status": "PASS",
+    "test_files": 23,
+    "validation_execution_allowed_next": true,
+    "validation_execution_started_now": false
+  },
+  "validation_map": {
+    "current_core_status": "BUILT_POST_AUDITED",
+    "domain_count": 10,
+    "manifest_sha256": "2e50ee29f19bfd6d5ef3305b7f8443904056a7e2aaf367ae466dc6d5c05df065",
+    "sealed_status": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_DEFINED",
+    "validation_gate_count": 60
+  }
+}
