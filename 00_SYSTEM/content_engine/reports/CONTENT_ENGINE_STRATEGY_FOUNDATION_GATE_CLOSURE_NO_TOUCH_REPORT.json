@@ -27,28 +27,29 @@
     "validation_subject": "Validate Content Engine strategy foundation core"
   },
   "next_safe_step": "CONTENT_ENGINE_STRATEGY_FOUNDATION_NEXT_LAYER_READINESS_MAP",
-  "project": "CONTENT_ENGINE_OMEGA",
-  "readiness_map": {
-    "asset_write_allowed_now": false,
-    "brain_write_allowed_now": false,
-    "capa9_allowed_now": false,
-    "content_generation_allowed_now": false,
-    "current_status": "CLOSED_VALIDATED",
-    "manual_write_allowed_now": false,
-    "metrics_write_allowed_now": false,
-    "n8n_allowed_now": false,
-    "next_layer_blueprint_allowed_now": false,
-    "next_layer_build_allowed_now": false,
-    "next_layer_readiness_map_allowed_next": true,
-    "next_safe_step": "CONTENT_ENGINE_STRATEGY_FOUNDATION_NEXT_LAYER_READINESS_MAP",
-    "prompt_generation_allowed_now": false,
-    "publishing_allowed_now": false,
-    "queue_write_allowed_now": false,
-    "reports_brain_write_allowed_now": false,
-    "script_generation_allowed_now": false,
-    "status": "PASS",
-    "webhook_allowed_now": false
+  "no_touch": {
+    "changed": {},
+    "status": "PASS"
   },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_roots": [
+    "00_SYSTEM/brain",
+    "00_SYSTEM/reports/brain",
+    "00_SYSTEM/manual/current",
+    "00_SYSTEM/manual/historical",
+    "00_SYSTEM/manual/manifest",
+    "00_SYSTEM/manual/registry",
+    "n8n",
+    "workflows",
+    "publication",
+    "09_PUBLICATION",
+    "14_EXPORTS",
+    "13_BACKUPS",
+    "12_LOGS/runtime",
+    "07_DATA/queue",
+    "07_DATA/metrics",
+    "08_ASSETS"
+  ],
   "result": "PASS",
   "status": "CLOSED_VALIDATED"
 }
