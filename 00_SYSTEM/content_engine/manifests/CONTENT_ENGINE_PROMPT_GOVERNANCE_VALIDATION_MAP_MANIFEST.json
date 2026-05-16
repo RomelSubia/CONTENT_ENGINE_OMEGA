@@ -1,0 +1,95 @@
+{
+  "canonical_json": true,
+  "commit_subject_expected": "Define validation map Content Engine prompt governance core",
+  "component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
+  "current_core_status": "BUILT_POST_AUDITED",
+  "gate": "VALIDATION_MAP",
+  "git_context": {
+    "branch": "main",
+    "head": "73ce1ca42cba866a6720c501208b2bb6c61a5f44",
+    "python": "Python 3.12.10",
+    "subject": "Post-build audit Content Engine prompt governance core"
+  },
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_DOMAINS.json": "d21261e27e768c361199ecc1a0ced6c26a80f66aff24aad88fae40a90d5e096d",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_GATES.json": "4d8724b132e1226bbaac12dd2162190ffa79bd11a9be9aec3dd4d707f14bd8c1",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_NO_TOUCH_REPORT.json": "0a1b3b2620ab655ce512ae88fc8309a109e4929015cbfd13c2f1ab52e1a52832",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_REPORT.json": "85386b53636cd45fd1e2664e5ff50b9f79b3e54937336a8e31206d1dd324a641",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_SECURITY_MATRIX.json": "2e87e8a0d849c4e18303be030c2ab0f5b03cee7c3ca50a2bc3a0f977182546d3",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_TRACEABILITY.json": "64f4f7cb6e7666456a938e7b1a44d4c5cb9f1bba51779f30d106e0ce1a6d5308",
+    "05_REPORTS/content_engine/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_SUMMARY.md": "df29b6b51e2949a1f2d42ce30ae6bb005210d29b26152a12403432e659b1cc24"
+  },
+  "manifest_completeness": "PASS",
+  "manifest_type": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_MANIFEST",
+  "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_PLAN",
+  "permissions": {
+    "asset_write_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "final_prompt_generation_allowed_now": false,
+    "full_prompt_body_generation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_production_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "validation_execution_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "post_build_audit": {
+    "manifest_sha256": "dfce656839a5dcab104282ac1c2b7267bd58ed25577ae5e4f113a961c9cdca09",
+    "post_build_audit_status": "BUILT_POST_AUDITED",
+    "readiness": {
+      "brain_write_allowed_now": false,
+      "capa9_allowed_now": false,
+      "content_generation_allowed_now": false,
+      "current_status": "BUILT_POST_AUDITED",
+      "gate_closure_allowed_now": false,
+      "manual_write_allowed_now": false,
+      "n8n_allowed_now": false,
+      "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP",
+      "prompt_production_allowed_now": false,
+      "publishing_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "status": "PASS",
+      "validation_allowed_now": false,
+      "validation_map_allowed_next": true,
+      "validation_plan_allowed_now": false,
+      "webhook_allowed_now": false
+    },
+    "sealed_status": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_BUILT_POST_AUDITED"
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_DOMAINS.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_GATES.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_SECURITY_MATRIX.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_TRACEABILITY.json",
+    "05_REPORTS/content_engine/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "self_referential_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_SEAL.json"
+  ],
+  "static_scan": {
+    "status": "PASS",
+    "violation_count": 0
+  },
+  "status": "VALIDATION_MAP_DEFINED",
+  "tests": {
+    "content_engine_pytest_passed": 261,
+    "targeted_pytest_passed": 120
+  }
+}

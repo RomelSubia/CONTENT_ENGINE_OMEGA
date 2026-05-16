@@ -1,0 +1,488 @@
+{
+  "component": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE",
+  "current_core_status": "BUILT_POST_AUDITED",
+  "gate": "VALIDATION_MAP",
+  "git_context": {
+    "branch": "main",
+    "head": "73ce1ca42cba866a6720c501208b2bb6c61a5f44",
+    "python": "Python 3.12.10",
+    "subject": "Post-build audit Content Engine prompt governance core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_PLAN",
+  "permissions": {
+    "asset_write_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "final_prompt_generation_allowed_now": false,
+    "full_prompt_body_generation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_production_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "validation_execution_allowed_now": false,
+    "validation_plan_allowed_next": true,
+    "webhook_allowed_now": false
+  },
+  "post_build_audit": {
+    "manifest_sha256": "dfce656839a5dcab104282ac1c2b7267bd58ed25577ae5e4f113a961c9cdca09",
+    "post_build_audit_status": "BUILT_POST_AUDITED",
+    "readiness": {
+      "brain_write_allowed_now": false,
+      "capa9_allowed_now": false,
+      "content_generation_allowed_now": false,
+      "current_status": "BUILT_POST_AUDITED",
+      "gate_closure_allowed_now": false,
+      "manual_write_allowed_now": false,
+      "n8n_allowed_now": false,
+      "next_safe_step": "CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP",
+      "prompt_production_allowed_now": false,
+      "publishing_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "status": "PASS",
+      "validation_allowed_now": false,
+      "validation_map_allowed_next": true,
+      "validation_plan_allowed_now": false,
+      "webhook_allowed_now": false
+    },
+    "sealed_status": "CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_BUILT_POST_AUDITED"
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "static_scan": {
+    "status": "PASS",
+    "violation_count": 0
+  },
+  "status": "VALIDATION_MAP_DEFINED",
+  "tests": {
+    "content_engine_pytest_passed": 261,
+    "targeted_pytest_passed": 120
+  },
+  "validation_gates": [
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG01",
+      "name": "REPO_CLEAN_SYNCED",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG02",
+      "name": "EXPECTED_POST_BUILD_AUDIT_SUBJECT",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG03",
+      "name": "POST_BUILD_AUDIT_SEAL_STATUS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG04",
+      "name": "POST_BUILD_AUDIT_MANIFEST_HASH",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG05",
+      "name": "POST_BUILD_AUDIT_READINESS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG06",
+      "name": "BUILD_SURFACE_EXACT_75_FILES",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG07",
+      "name": "SOURCE_SURFACE_PRESENT_23_FILES",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG08",
+      "name": "TEST_SURFACE_PRESENT_23_FILES",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG09",
+      "name": "STATIC_SCAN_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG10",
+      "name": "PY_COMPILE_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG11",
+      "name": "TARGETED_PYTEST_120_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG12",
+      "name": "CONTENT_ENGINE_PYTEST_261_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG13",
+      "name": "RUNTIME_DOMAINS_BASELINE",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG14",
+      "name": "NEGATIVE_SIGNALS_54",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG15",
+      "name": "FAILURE_INJECTION_25",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG16",
+      "name": "STATE_CONTRACT_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG17",
+      "name": "STRATEGY_INHERITANCE_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG18",
+      "name": "PROMPT_TYPE_REGISTRY_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG19",
+      "name": "PROMPT_INTENT_CONTRACT_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG20",
+      "name": "CHANNEL_BINDING_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG21",
+      "name": "CHANNEL_SCOPE_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG22",
+      "name": "EXECUTION_BOUNDARY_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG23",
+      "name": "NO_FINAL_OUTPUT_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG24",
+      "name": "NO_FULL_PROMPT_BODY_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG25",
+      "name": "TEST_FIXTURE_BOUNDARY_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG26",
+      "name": "INDIRECT_GENERATION_DETECTOR_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG27",
+      "name": "LANGUAGE_TONE_BOUNDARY_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG28",
+      "name": "HUMAN_AUTHORIZATION_CANNOT_BE_PROMPTED_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG29",
+      "name": "PROMPT_QUALITY_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG30",
+      "name": "PROMPT_SAFETY_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG31",
+      "name": "SEMANTIC_SAFETY_FILTER_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG32",
+      "name": "RISK_CLASSIFIER_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG33",
+      "name": "POLICY_OVERRIDE_GUARD_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG34",
+      "name": "VERSIONING_CONTRACT_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG35",
+      "name": "IDEMPOTENCY_GATE_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG36",
+      "name": "EVIDENCE_CONTRACT_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG37",
+      "name": "FAILURE_POLICY_PASS",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG38",
+      "name": "NO_PROMPT_PRODUCTION",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG39",
+      "name": "NO_FINAL_PROMPT_GENERATION",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG40",
+      "name": "NO_FULL_PROMPT_BODY_GENERATION",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG41",
+      "name": "NO_SCRIPT_GENERATION",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG42",
+      "name": "NO_CONTENT_GENERATION",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG43",
+      "name": "NO_QUEUE_WRITE",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG44",
+      "name": "NO_METRICS_WRITE",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG45",
+      "name": "NO_ASSET_WRITE",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG46",
+      "name": "NO_PUBLISHING",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG47",
+      "name": "NO_N8N",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG48",
+      "name": "NO_WEBHOOK",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG49",
+      "name": "NO_CAPA9",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG50",
+      "name": "NO_MANUAL_WRITE",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG51",
+      "name": "NO_BRAIN_WRITE",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG52",
+      "name": "NO_REPORTS_BRAIN_WRITE",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG53",
+      "name": "PROTECTED_ROOTS_NO_TOUCH",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG54",
+      "name": "CANONICAL_JSON",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG55",
+      "name": "MANIFEST_COMPLETE",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG56",
+      "name": "SEAL_HASH",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG57",
+      "name": "VALIDATION_PLAN_ONLY_NEXT",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG58",
+      "name": "VALIDATION_EXECUTION_BLOCKED_NOW",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG59",
+      "name": "GATE_CLOSURE_BLOCKED_NOW",
+      "required": true
+    },
+    {
+      "bypass_allowed": false,
+      "failure_policy": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH",
+      "id": "PGVM-VG60",
+      "name": "FAIL_CLOSED_ON_ANY_ERROR",
+      "required": true
+    }
+  ]
+}
