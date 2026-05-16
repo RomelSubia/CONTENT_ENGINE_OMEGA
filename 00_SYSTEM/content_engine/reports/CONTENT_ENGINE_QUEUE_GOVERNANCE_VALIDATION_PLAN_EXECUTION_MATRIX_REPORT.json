@@ -1,0 +1,216 @@
+{
+  "component": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE",
+  "execution_matrix": [
+    {
+      "commands": [
+        "git status --porcelain=v1 -uall",
+        "git rev-parse HEAD",
+        "git rev-parse @{u}",
+        "read validation map seal"
+      ],
+      "on_failure": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH_NO_VALIDATION_CONTINUATION",
+      "order": 1,
+      "phase_id": "QG-VP-P01",
+      "phase_name": "pre_validation_state_and_evidence_gate",
+      "productive_operations_allowed": false,
+      "required_gates": [
+        "QG-VAL-G01_POST_BUILD_AUDIT_SEAL_VALID",
+        "QG-VAL-G02_COMPONENT_STATUS_BUILT_POST_AUDITED",
+        "QG-VAL-G32_VALIDATION_PLAN_ALLOWED_NEXT"
+      ]
+    },
+    {
+      "commands": [
+        "verify source/test allowlist",
+        "verify validation map manifest produced_artifacts",
+        "verify seal hash",
+        "canonical JSON check"
+      ],
+      "on_failure": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH_NO_VALIDATION_CONTINUATION",
+      "order": 2,
+      "phase_id": "QG-VP-P02",
+      "phase_name": "surface_and_artifact_integrity_gate",
+      "productive_operations_allowed": false,
+      "required_gates": [
+        "QG-VAL-G03_SOURCE_SURFACE_PRESENT",
+        "QG-VAL-G04_TEST_SURFACE_PRESENT",
+        "QG-VAL-G05_BUILD_REPORTS_PRESENT",
+        "QG-VAL-G06_AUDIT_REPORTS_PRESENT",
+        "QG-VAL-G24_MANIFEST_SEAL_PASS"
+      ]
+    },
+    {
+      "commands": [
+        "AST static source scan",
+        "zero exact forbidden runtime token scan",
+        "python -m py_compile source and tests"
+      ],
+      "on_failure": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH_NO_VALIDATION_CONTINUATION",
+      "order": 3,
+      "phase_id": "QG-VP-P03",
+      "phase_name": "static_security_gate",
+      "productive_operations_allowed": false,
+      "required_gates": [
+        "QG-VAL-G07_STATIC_SOURCE_SCAN_PASS",
+        "QG-VAL-G08_FORBIDDEN_RUNTIME_TOKEN_SCAN_ZERO",
+        "QG-VAL-G09_PY_COMPILE_PASS"
+      ]
+    },
+    {
+      "commands": [
+        "python -m pytest tests/content_engine/test_queue_governance_*.py -q",
+        "python -m pytest tests/content_engine -q"
+      ],
+      "on_failure": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH_NO_VALIDATION_CONTINUATION",
+      "order": 4,
+      "phase_id": "QG-VP-P04",
+      "phase_name": "test_execution_gate",
+      "productive_operations_allowed": false,
+      "required_gates": [
+        "QG-VAL-G10_TARGETED_QUEUE_GOVERNANCE_TESTS_PASS",
+        "QG-VAL-G11_CONTENT_ENGINE_TESTS_PASS"
+      ]
+    },
+    {
+      "commands": [
+        "runtime self-check",
+        "contract function assertions",
+        "safe payload and blocked payload checks"
+      ],
+      "on_failure": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH_NO_VALIDATION_CONTINUATION",
+      "order": 5,
+      "phase_id": "QG-VP-P05",
+      "phase_name": "runtime_contract_gate",
+      "productive_operations_allowed": false,
+      "required_gates": [
+        "QG-VAL-G12_RUNTIME_SELF_CHECK_PASS",
+        "QG-VAL-G13_STATE_CONTRACT_PASS",
+        "QG-VAL-G14_SCHEMA_CANONICALIZATION_PASS",
+        "QG-VAL-G15_INTAKE_SOURCE_TYPE_PASS",
+        "QG-VAL-G16_CHANNEL_ROUTING_PASS",
+        "QG-VAL-G17_LIFECYCLE_PASS",
+        "QG-VAL-G18_PRIORITY_READINESS_PASS",
+        "QG-VAL-G19_EVIDENCE_CONTRACT_PASS"
+      ]
+    },
+    {
+      "commands": [
+        "boundary guard runtime checks",
+        "sensitive-data field-scope checks",
+        "threat risk precedence checks",
+        "failure report validation"
+      ],
+      "on_failure": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH_NO_VALIDATION_CONTINUATION",
+      "order": 6,
+      "phase_id": "QG-VP-P06",
+      "phase_name": "security_boundary_gate",
+      "productive_operations_allowed": false,
+      "required_gates": [
+        "QG-VAL-G20_BOUNDARY_GUARD_PASS",
+        "QG-VAL-G21_SENSITIVE_DATA_GUARD_PASS",
+        "QG-VAL-G22_THREAT_MODEL_PASS",
+        "QG-VAL-G23_FAILURE_POLICY_PASS",
+        "QG-VAL-G28_QUEUE_WRITE_REMAINS_BLOCKED",
+        "QG-VAL-G29_CONTENT_GENERATION_REMAINS_BLOCKED",
+        "QG-VAL-G30_PUBLISHING_AUTOMATION_REMAIN_BLOCKED",
+        "QG-VAL-G31_MANUAL_BRAIN_REMAIN_BLOCKED"
+      ]
+    },
+    {
+      "commands": [
+        "protected root fingerprint compare",
+        "source/test hash compare",
+        "validation output allowlist check",
+        "commit/push validation only if every validation gate passes"
+      ],
+      "on_failure": "FAILED_BLOCKED_NO_COMMIT_NO_PUSH_NO_VALIDATION_CONTINUATION",
+      "order": 7,
+      "phase_id": "QG-VP-P07",
+      "phase_name": "no_touch_output_scope_and_commit_gate",
+      "productive_operations_allowed": false,
+      "required_gates": [
+        "QG-VAL-G25_NO_TOUCH_PASS",
+        "QG-VAL-G26_OUTPUT_SCOPE_PASS",
+        "QG-VAL-G27_SOURCE_TEST_NO_MUTATION_PASS"
+      ]
+    }
+  ],
+  "gates": {
+    "QG-VP-G01_ROOT_EXISTS": true,
+    "QG-VP-G02_PYTHON_31210": true,
+    "QG-VP-G03_BRANCH_MAIN": true,
+    "QG-VP-G04_REPO_CLEAN_PRE_PLAN": true,
+    "QG-VP-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "QG-VP-G06_EXPECTED_VALIDATION_MAP_COMMIT": true,
+    "QG-VP-G07_VALIDATION_MAP_SEAL_VALID": true,
+    "QG-VP-G08_VALIDATION_MAP_ARTIFACTS_PRESENT": true,
+    "QG-VP-G09_SOURCE_TEST_BASELINE_CAPTURED": true,
+    "QG-VP-G10_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "QG-VP-G11_STATIC_SOURCE_SCAN": true,
+    "QG-VP-G12_FORBIDDEN_RUNTIME_TOKEN_SCAN_ZERO": true,
+    "QG-VP-G13_PY_COMPILE": true,
+    "QG-VP-G14_TARGETED_QUEUE_GOVERNANCE_PYTEST": true,
+    "QG-VP-G15_CONTENT_ENGINE_PYTEST": true,
+    "QG-VP-G16_RUNTIME_SELF_CHECK": true,
+    "QG-VP-G17_VALIDATION_PHASES_DEFINED": true,
+    "QG-VP-G18_VALIDATION_COMMANDS_DEFINED": true,
+    "QG-VP-G19_EXECUTION_MATRIX_DEFINED": true,
+    "QG-VP-G20_EVIDENCE_REQUIREMENTS_DEFINED": true,
+    "QG-VP-G21_FAILURE_POLICY_DEFINED": true,
+    "QG-VP-G22_NO_TOUCH_PROTECTED_ROOTS": true,
+    "QG-VP-G23_SOURCE_TEST_NO_MUTATION": true,
+    "QG-VP-G24_VALIDATION_PLAN_REPORTS_WRITTEN": false,
+    "QG-VP-G25_VALIDATION_PLAN_MANIFEST_SEAL_SUMMARY_WRITTEN": false,
+    "QG-VP-G26_OUTPUT_SCOPE_EXACT": false,
+    "QG-VP-G27_JSON_CANONICAL": false,
+    "QG-VP-G28_MANIFEST_COMPLETE": false,
+    "QG-VP-G29_SEAL_REFERENCES_MANIFEST": false,
+    "QG-VP-G30_TMP_RESIDUE_CLEAN": false,
+    "QG-VP-G31_COMMIT_ALLOWLIST": false,
+    "QG-VP-G32_COMMIT_CREATED": false,
+    "QG-VP-G33_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "d25d4b444fba720d8b0e107ff7320286c2f99986",
+    "python": "Python 3.12.10",
+    "subject": "Define validation map Content Engine queue governance core"
+  },
+  "metrics": {
+    "command_count": 24,
+    "content_engine_tests": 410,
+    "execution_matrix_items": 7,
+    "forbidden_runtime_token_violation_count": 0,
+    "protected_root_count": 16,
+    "source_file_count": 15,
+    "static_scan_violation_count": 0,
+    "targeted_queue_governance_tests": 149,
+    "test_file_count": 16,
+    "validation_phase_count": 7
+  },
+  "next_safe_step": "CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "metrics_write_allowed_now": false,
+    "n8n_allowed_now": false,
+    "prompt_generation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "real_queue_mutation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_generation_allowed_now": false,
+    "validation_allowed_next": true,
+    "validation_execution_performed_now": false,
+    "webhook_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status_after": "VALIDATION_PLAN_DEFINED",
+  "status_before": "VALIDATION_MAP_DEFINED",
+  "step": "VALIDATION_PLAN"
+}

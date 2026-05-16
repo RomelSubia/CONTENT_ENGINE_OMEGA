@@ -1,0 +1,15 @@
+{
+  "component": "CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE",
+  "component_status": "VALIDATION_PLAN_DEFINED",
+  "execution_allowed_now": false,
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_PLAN_MANIFEST.json",
+  "manifest_sha256": "41157b7eecc79947433fad6ca11c04405aa08c36916cc40cb146422417a02bce",
+  "next_safe_step": "CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION",
+  "productive_operations_allowed_now": false,
+  "project": "CONTENT_ENGINE_OMEGA",
+  "queue_write_allowed_now": false,
+  "real_queue_mutation_allowed_now": false,
+  "sealed_status": "CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_PLAN_DEFINED",
+  "validation_allowed_next": true,
+  "validation_execution_performed_now": false
+}
