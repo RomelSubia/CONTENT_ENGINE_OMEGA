@@ -1,0 +1,219 @@
+{
+  "build_surface": {
+    "source_files": 18,
+    "status": "PASS",
+    "test_files": 21
+  },
+  "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+  "gates": {
+    "CGG-CLOSE-G01_ROOT_EXISTS": true,
+    "CGG-CLOSE-G02_PYTHON_31210": true,
+    "CGG-CLOSE-G03_BRANCH_MAIN": true,
+    "CGG-CLOSE-G04_REPO_CLEAN_PRE_CLOSURE": true,
+    "CGG-CLOSE-G05_HEAD_SYNCED_PRE_CLOSURE": true,
+    "CGG-CLOSE-G06_EXPECTED_VALIDATION_COMMIT": true,
+    "CGG-CLOSE-G07_VALIDATION_SEAL_VALID": true,
+    "CGG-CLOSE-G08_VALIDATION_ARTIFACTS_PRESENT": true,
+    "CGG-CLOSE-G09_SOURCE_TEST_BASELINE_CAPTURED": true,
+    "CGG-CLOSE-G10_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CGG-CLOSE-G11_BUILD_SURFACE_PRESENT": true,
+    "CGG-CLOSE-G12_STATIC_SOURCE_SCAN_PASS": true,
+    "CGG-CLOSE-G13_FORBIDDEN_EXTERNAL_IMPORTS_ZERO": true,
+    "CGG-CLOSE-G14_FORBIDDEN_OPERATIONAL_LITERAL_SCAN_ZERO": true,
+    "CGG-CLOSE-G15_FORBIDDEN_PUBLISHABLE_OUTPUT_SCAN_ZERO": true,
+    "CGG-CLOSE-G16_VALIDATION_COMMIT_ALLOWLIST_VERIFIED": true,
+    "CGG-CLOSE-G17_VALIDATION_METRICS_REVALIDATED": true,
+    "CGG-CLOSE-G18_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "CGG-CLOSE-G19_SOURCE_TEST_NO_MUTATION": true,
+    "CGG-CLOSE-G20_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CGG-CLOSE-G21_GATE_CLOSURE_REPORTS_WRITTEN": false,
+    "CGG-CLOSE-G22_GATE_CLOSURE_MANIFEST_SEAL_WRITTEN": false,
+    "CGG-CLOSE-G23_OUTPUT_SCOPE_EXACT": false,
+    "CGG-CLOSE-G24_JSON_CANONICAL": false,
+    "CGG-CLOSE-G25_MANIFEST_COMPLETE": false,
+    "CGG-CLOSE-G26_SEAL_VALID": false,
+    "CGG-CLOSE-G27_TMP_RESIDUE_CLEAN": false,
+    "CGG-CLOSE-G28_COMMIT_ALLOWLIST": false,
+    "CGG-CLOSE-G29_COMMIT_CREATED": false,
+    "CGG-CLOSE-G30_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "c84401639c1658a98788c288e4b6d6447a17e98f",
+    "python": "Python 3.12.10",
+    "subject": "Validate Content Engine content generation governance core"
+  },
+  "layer_mode": "GOVERNANCE_ONLY",
+  "metrics": {
+    "closure_reports": 6,
+    "source_files": 18,
+    "test_files": 21,
+    "validation_artifacts": 13,
+    "validation_content_engine_tests": 444,
+    "validation_targeted_tests": 34
+  },
+  "next_safe_step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_GENERATION_GOVERNANCE",
+  "no_touch": {
+    "changed": {},
+    "status": "PASS"
+  },
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "generation_execution_layer_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "next_layer_readiness_map_allowed_next": true,
+    "productive_operations_allowed_now": false,
+    "prompt_execution_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "real_queue_mutation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_execution_allowed_now": false
+  },
+  "productive_operations": {
+    "asset_generation_started": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "manual_write_performed": false,
+    "prompt_execution_started": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "real_queue_mutation_performed": false,
+    "reports_brain_write_performed": false,
+    "script_execution_started": false,
+    "status": "PASS"
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "source_test_no_mutation": {
+    "changed": {},
+    "source_test_file_count": 39,
+    "status": "PASS"
+  },
+  "static_scan": {
+    "call_violation_count": 0,
+    "import_violation_count": 0,
+    "literal_violation_count": 0,
+    "publishable_violation_count": 0,
+    "status": "PASS"
+  },
+  "status_after": "CLOSED_VALIDATED",
+  "status_before": "VALIDATED_POST_AUDITED",
+  "step": "GATE_CLOSURE",
+  "summary": "Gate closure passed. Content Generation Governance Core advanced to CLOSED_VALIDATED.",
+  "validation_commit_surface": {
+    "changed_file_count": 13,
+    "changed_files": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_CHAIN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_COMPILE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_HARD_FALSE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_OUTPUT_SCOPE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_READINESS_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_RUNTIME_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_STATIC_SCAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_TEST_REPORT.json",
+      "05_REPORTS/content_engine/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SUMMARY.md"
+    ],
+    "status": "PASS"
+  },
+  "validation_evidence": {
+    "status": "PASS",
+    "validation_artifact_count": 13,
+    "validation_manifest": {
+      "canonical_json": true,
+      "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+      "git_context": {
+        "branch": "main",
+        "head": "7b05370e25f355441a7739dfbc0f858aee066e54",
+        "python": "Python 3.12.10",
+        "subject": "Define validation plan Content Engine content generation governance core"
+      },
+      "hash_algorithm": "sha256",
+      "hashed_artifacts": {
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_CHAIN_REPORT.json": "0e9c75075de778e6afb00781b83d47e3d5b49b7f9239f9b7a50c2e1e5b3ca1c4",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_COMPILE_REPORT.json": "345157d0cbf9b1ccb5cd5830fcca927c451c2a4bcd0847d81b98c2fd13a8a46a",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_HARD_FALSE_REPORT.json": "51afbfe22ad9da4378f2b05f8733920e7414c469f414b17989e9ebb78c532a20",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_NO_TOUCH_REPORT.json": "82f5dd2214a83ec28223e3a3f4a03d758462b2abd349e0a8f93f99f8e8c3cd18",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_OUTPUT_SCOPE_REPORT.json": "7c3092e076d5173a7aac4005b114b5c21c9a81f49f4e54a0a5ce79851539cbd4",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_READINESS_REPORT.json": "cfcbd1ebd6ad5f813deeaf429da3b8b944d002010e36124a82f29b81cca04156",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_REPORT.json": "cc65ff150d0993607352b75b121abbb89a971a2e863d919dbbb18a2ba1f0877c",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_RUNTIME_REPORT.json": "97283257005ff740ca55e7a68e652879321f8cab1745ba6acc99c14a986db959",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_STATIC_SCAN_REPORT.json": "51126ee5574e4dd2443f5a7cb17d84b85b6d3dae7f4f59d41fbb17bb09d56798",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_TEST_REPORT.json": "e0abc7091133f38a190bbcb495a850c94c622ff2f55453308e46ee60908b4e96",
+        "05_REPORTS/content_engine/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SUMMARY.md": "04eab8c30abddac595fbbd8a8defea26d2e56cdd7255c1748f306de78f5830c5"
+      },
+      "layer_mode": "GOVERNANCE_ONLY",
+      "manifest_completeness": "PASS",
+      "manifest_type": "CONTENT_GENERATION_GOVERNANCE_VALIDATION_MANIFEST",
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE",
+      "produced_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_CHAIN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_COMPILE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_HARD_FALSE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_NO_TOUCH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_OUTPUT_SCOPE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_READINESS_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_RUNTIME_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_STATIC_SCAN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_TEST_REPORT.json",
+        "05_REPORTS/content_engine/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SUMMARY.md"
+      ],
+      "project": "CONTENT_ENGINE_OMEGA",
+      "result": "PASS",
+      "self_referential_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json"
+      ],
+      "status": "VALIDATED_POST_AUDITED"
+    },
+    "validation_seal": {
+      "asset_generation_allowed_now": false,
+      "automation_allowed_now": false,
+      "brain_write_allowed_now": false,
+      "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+      "content_generation_allowed_now": false,
+      "content_generation_governance_status": "VALIDATED_POST_AUDITED",
+      "draft_creation_allowed_now": false,
+      "gate_closure_allowed_next": true,
+      "generation_execution_layer_allowed_now": false,
+      "layer_mode": "GOVERNANCE_ONLY",
+      "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MANIFEST.json",
+      "manifest_sha256": "4d69ac80fdca382f73c38ba00ccb26ee714dc4ab4bcba38d12aa487359a40738",
+      "manual_write_allowed_now": false,
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE",
+      "productive_operations_allowed_now": false,
+      "project": "CONTENT_ENGINE_OMEGA",
+      "prompt_execution_allowed_now": false,
+      "publishing_allowed_now": false,
+      "queue_write_allowed_now": false,
+      "real_queue_mutation_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "script_execution_allowed_now": false,
+      "sealed_status": "CONTENT_GENERATION_GOVERNANCE_CORE_VALIDATED_POST_AUDITED"
+    }
+  },
+  "validation_metrics": {
+    "metrics": {
+      "content_engine_tests_passed": 444,
+      "runtime_checks": 17,
+      "source_files": 18,
+      "targeted_tests_passed": 34,
+      "test_files": 21,
+      "validation_report_count": 10
+    },
+    "status": "PASS"
+  }
+}
