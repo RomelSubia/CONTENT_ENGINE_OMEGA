@@ -1,0 +1,16 @@
+{
+  "content_generation_allowed_now": false,
+  "execution_allowed_now": false,
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_QUEUE_GOVERNANCE_MANIFEST.json",
+  "manifest_sha256": "cef4175eecdc864b295b2d3c36c621a87bfd3cd026305c194e57ce65f01212b2",
+  "next_layer_blueprint_allowed_next": true,
+  "next_layer_build_allowed_now": false,
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_CORE_BLUEPRINT",
+  "productive_operations_allowed_now": false,
+  "project": "CONTENT_ENGINE_OMEGA",
+  "queue_write_allowed_now": false,
+  "readiness_status": "READINESS_MAP_DEFINED",
+  "real_queue_mutation_allowed_now": false,
+  "sealed_status": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_QUEUE_GOVERNANCE_DEFINED",
+  "selected_next_layer": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_CORE"
+}
