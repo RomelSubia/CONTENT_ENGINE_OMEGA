@@ -1,0 +1,489 @@
+{
+  "build_surface": {
+    "source_files": 18,
+    "status": "PASS",
+    "test_files": 21
+  },
+  "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+  "gates": {
+    "CGG-VMAP-G01_ROOT_EXISTS": true,
+    "CGG-VMAP-G02_PYTHON_31210": true,
+    "CGG-VMAP-G03_BRANCH_MAIN": true,
+    "CGG-VMAP-G04_REPO_CLEAN_PRE_MAP": true,
+    "CGG-VMAP-G05_HEAD_SYNCED_PRE_MAP": true,
+    "CGG-VMAP-G06_EXPECTED_POST_BUILD_AUDIT_COMMIT": true,
+    "CGG-VMAP-G07_POST_BUILD_AUDIT_SEAL_VALID": true,
+    "CGG-VMAP-G08_POST_BUILD_AUDIT_ARTIFACTS_PRESENT": true,
+    "CGG-VMAP-G09_SOURCE_TEST_BASELINE_CAPTURED": true,
+    "CGG-VMAP-G10_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CGG-VMAP-G11_BUILD_SURFACE_PRESENT": true,
+    "CGG-VMAP-G12_STATIC_SOURCE_SCAN_PASS": true,
+    "CGG-VMAP-G13_FORBIDDEN_EXTERNAL_IMPORTS_ZERO": true,
+    "CGG-VMAP-G14_FORBIDDEN_OPERATIONAL_LITERAL_SCAN_ZERO": true,
+    "CGG-VMAP-G15_FORBIDDEN_PUBLISHABLE_OUTPUT_SCAN_ZERO": true,
+    "CGG-VMAP-G16_VALIDATION_DOMAINS_DEFINED": true,
+    "CGG-VMAP-G17_EXECUTION_MATRIX_DEFINED": true,
+    "CGG-VMAP-G18_VALIDATION_GATES_DEFINED": true,
+    "CGG-VMAP-G19_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "CGG-VMAP-G20_SOURCE_TEST_NO_MUTATION": true,
+    "CGG-VMAP-G21_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CGG-VMAP-G22_VALIDATION_MAP_REPORTS_WRITTEN": false,
+    "CGG-VMAP-G23_VALIDATION_MAP_MANIFEST_SEAL_WRITTEN": false,
+    "CGG-VMAP-G24_OUTPUT_SCOPE_EXACT": false,
+    "CGG-VMAP-G25_JSON_CANONICAL": false,
+    "CGG-VMAP-G26_MANIFEST_COMPLETE": false,
+    "CGG-VMAP-G27_SEAL_VALID": false,
+    "CGG-VMAP-G28_TMP_RESIDUE_CLEAN": false,
+    "CGG-VMAP-G29_COMMIT_ALLOWLIST": false,
+    "CGG-VMAP-G30_COMMIT_CREATED": false,
+    "CGG-VMAP-G31_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "2f18fb063214f9a558565222b14335477c4a78ca",
+    "python": "Python 3.12.10",
+    "subject": "Post-build audit Content Engine content generation governance core"
+  },
+  "layer_mode": "GOVERNANCE_ONLY",
+  "metrics": {
+    "execution_matrix_phase_count": 7,
+    "post_build_audit_artifacts": 12,
+    "source_files": 18,
+    "test_files": 21,
+    "validation_domain_count": 14,
+    "validation_gate_count": 22
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN",
+  "no_touch": {
+    "changed": {},
+    "status": "PASS"
+  },
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "generation_execution_layer_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "productive_operations_allowed_now": false,
+    "prompt_execution_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "real_queue_mutation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_execution_allowed_now": false,
+    "validation_execution_allowed_now": false,
+    "validation_plan_allowed_next": true
+  },
+  "post_build_audit": {
+    "post_build_audit_artifact_count": 12,
+    "post_build_audit_manifest": {
+      "canonical_json": true,
+      "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+      "git_context": {
+        "branch": "main",
+        "head": "e17c505e76bf990d07c4e0841e045352ecf9d3df",
+        "python": "Python 3.12.10",
+        "subject": "Build fix 2 Content Engine content generation governance core test syntax repair"
+      },
+      "hash_algorithm": "sha256",
+      "hashed_artifacts": {
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_ARTIFACT_REPORT.json": "3f16effc2db430c0cb7a49aba04c19ed32e35f2debfeb0517919c1f1ee47a498",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_CHAIN_REPORT.json": "9f4f1bc0e256c1649ae931568560e5310f0628b3ceab5aa066bd9758216c8231",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_NO_TOUCH_REPORT.json": "1e7240a789fa6cbe4af39728be2ab0bc44bba9b472f83a9bf0e712d58ac95c4a",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_OUTPUT_SCOPE_REPORT.json": "d7a4c79dc60e07f42b3d9ae55bc82d85d4b89c73337066932f54ee497e4db901",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_READINESS_REPORT.json": "c100f7c5f511df7a0cc6aa7138470d37a10aadd9ebe4412710939771f345f376",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_REPORT.json": "6b3e89ca8167560d207e84e74394ab474b7706b347c1cd0633ede63df3434a05",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_RUNTIME_REPORT.json": "a3f00b70778e9b6efa1aba368056a7a8917fdacf13f83f38ab623da56fa591c9",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_STATIC_SCAN_REPORT.json": "3a31ad7bd58090273d7b07a03aa6e6e8108d815ddc8bd45c225a0bec09f69ca5",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_TEST_REPORT.json": "72180d9d5fd48fae36c96c1774e86b0a1ec51462304ea9299c91af262e982879",
+        "05_REPORTS/content_engine/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SUMMARY.md": "fdd24620427c89f6337d09ad9842157c4b61ef08cf919f32e98e9f7f47727118"
+      },
+      "layer_mode": "GOVERNANCE_ONLY",
+      "manifest_completeness": "PASS",
+      "manifest_type": "CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST",
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP",
+      "produced_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_ARTIFACT_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_CHAIN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_NO_TOUCH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_OUTPUT_SCOPE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_READINESS_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_RUNTIME_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_STATIC_SCAN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_TEST_REPORT.json",
+        "05_REPORTS/content_engine/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SUMMARY.md"
+      ],
+      "project": "CONTENT_ENGINE_OMEGA",
+      "result": "PASS",
+      "self_referential_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json"
+      ],
+      "status": "BUILT_POST_AUDITED"
+    },
+    "post_build_audit_seal": {
+      "asset_generation_allowed_now": false,
+      "automation_allowed_now": false,
+      "brain_write_allowed_now": false,
+      "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+      "content_generation_allowed_now": false,
+      "content_generation_governance_status": "BUILT_POST_AUDITED",
+      "draft_creation_allowed_now": false,
+      "generation_execution_layer_allowed_now": false,
+      "layer_mode": "GOVERNANCE_ONLY",
+      "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+      "manifest_sha256": "902f5fdf18adb2d9fc0f96e4af5a627d7802b44b57c0006022037e5d524bdbe2",
+      "manual_write_allowed_now": false,
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP",
+      "productive_operations_allowed_now": false,
+      "project": "CONTENT_ENGINE_OMEGA",
+      "prompt_execution_allowed_now": false,
+      "publishing_allowed_now": false,
+      "queue_write_allowed_now": false,
+      "real_queue_mutation_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "script_execution_allowed_now": false,
+      "sealed_status": "CONTENT_GENERATION_GOVERNANCE_CORE_BUILT_POST_AUDITED",
+      "validation_map_allowed_next": true
+    },
+    "status": "PASS"
+  },
+  "productive_operations": {
+    "asset_generation_started": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "manual_write_performed": false,
+    "prompt_execution_started": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "real_queue_mutation_performed": false,
+    "reports_brain_write_performed": false,
+    "script_execution_started": false,
+    "status": "PASS",
+    "validation_execution_performed": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "source_test_no_mutation": {
+    "changed": {},
+    "source_test_file_count": 39,
+    "status": "PASS"
+  },
+  "static_scan": {
+    "call_violation_count": 0,
+    "import_violation_count": 0,
+    "literal_violation_count": 0,
+    "publishable_violation_count": 0,
+    "status": "PASS"
+  },
+  "status_after": "VALIDATION_MAP_DEFINED",
+  "status_before": "BUILT_POST_AUDITED",
+  "step": "VALIDATION_MAP",
+  "summary": "Validation map defined for post-build audited Content Generation Governance Core.",
+  "validation_map": {
+    "execution_matrix": [
+      {
+        "commands_required_in_validation_plan": [
+          "AST import/call scan over source allowlist",
+          "forbidden contiguous literal scan",
+          "publishable output literal scan"
+        ],
+        "domain_ids": [
+          "CGG-VAL-D13"
+        ],
+        "execution_type": "static_analysis",
+        "pass_condition": "zero violations",
+        "phase": "P01_STATIC_SECURITY"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "python -m py_compile over all source/test allowlist"
+        ],
+        "domain_ids": [
+          "CGG-VAL-D01",
+          "CGG-VAL-D02",
+          "CGG-VAL-D13"
+        ],
+        "execution_type": "compile_gate",
+        "pass_condition": "all files compile",
+        "phase": "P02_PY_COMPILE"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "pytest each content_generation_governance test file"
+        ],
+        "domain_ids": [
+          "CGG-VAL-D01",
+          "CGG-VAL-D02",
+          "CGG-VAL-D03",
+          "CGG-VAL-D04",
+          "CGG-VAL-D05",
+          "CGG-VAL-D06",
+          "CGG-VAL-D07",
+          "CGG-VAL-D08",
+          "CGG-VAL-D09",
+          "CGG-VAL-D10",
+          "CGG-VAL-D11",
+          "CGG-VAL-D12"
+        ],
+        "execution_type": "targeted_tests",
+        "pass_condition": ">= 34 targeted tests pass",
+        "phase": "P03_TARGETED_PYTEST"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "python -m pytest tests/content_engine -q"
+        ],
+        "domain_ids": [
+          "CGG-VAL-D01",
+          "CGG-VAL-D14"
+        ],
+        "execution_type": "suite_tests",
+        "pass_condition": ">= 444 content_engine tests pass",
+        "phase": "P04_CONTENT_ENGINE_SUITE"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "import content_engine.content_generation_governance",
+          "run smoke contract checks"
+        ],
+        "domain_ids": [
+          "CGG-VAL-D01",
+          "CGG-VAL-D03",
+          "CGG-VAL-D04",
+          "CGG-VAL-D05",
+          "CGG-VAL-D07",
+          "CGG-VAL-D08",
+          "CGG-VAL-D09",
+          "CGG-VAL-D10",
+          "CGG-VAL-D11",
+          "CGG-VAL-D12"
+        ],
+        "execution_type": "runtime_contract",
+        "pass_condition": "all runtime checks pass and all hard-false values remain false",
+        "phase": "P05_RUNTIME_CONTRACT_SMOKE"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "fingerprint protected roots before/after validation",
+          "hash source/test allowlist before/after validation"
+        ],
+        "domain_ids": [
+          "CGG-VAL-D14"
+        ],
+        "execution_type": "integrity_gate",
+        "pass_condition": "no protected root mutation and no source/test mutation",
+        "phase": "P06_NO_TOUCH_AND_SOURCE_TEST_NO_MUTATION"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "write validation reports",
+          "write manifest/seal",
+          "canonical JSON validation",
+          "output scope exact validation"
+        ],
+        "domain_ids": [
+          "CGG-VAL-D12",
+          "CGG-VAL-D14"
+        ],
+        "execution_type": "evidence_gate",
+        "pass_condition": "all validation artifacts canonical, scoped and sealed",
+        "phase": "P07_ARTIFACTS_MANIFEST_SEAL"
+      }
+    ],
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN",
+    "status": "PASS",
+    "validation_domains": [
+      {
+        "domain_id": "CGG-VAL-D01",
+        "must_validate": [
+          "layer_mode GOVERNANCE_ONLY",
+          "content_generation_allowed_now false",
+          "draft_creation_allowed_now false",
+          "publishing_allowed_now false",
+          "automation_allowed_now false",
+          "queue_write_allowed_now false",
+          "manual/brain/reports-brain false"
+        ],
+        "name": "state_hard_false_contract",
+        "purpose": "Validate all governance state hard-false permissions remain false."
+      },
+      {
+        "domain_id": "CGG-VAL-D02",
+        "must_validate": [
+          "required fields",
+          "queue_item_id format",
+          "created_at_utc format",
+          "queue_governance_ref CLOSED_VALIDATED",
+          "productive status blocked"
+        ],
+        "name": "candidate_schema_traceability",
+        "purpose": "Validate conceptual payload schema and closed-chain traceability."
+      },
+      {
+        "domain_id": "CGG-VAL-D03",
+        "must_validate": [
+          "safe conceptual payload returns human review required",
+          "generation permission false",
+          "draft permission false",
+          "publish permission false"
+        ],
+        "name": "eligibility_governance_only",
+        "purpose": "Validate eligibility classification never becomes generation permission."
+      },
+      {
+        "domain_id": "CGG-VAL-D04",
+        "must_validate": [
+          "publication dominates execution",
+          "automation dominates policy",
+          "sensitive data blocks as security",
+          "safety risk separated from policy risk"
+        ],
+        "name": "risk_precedence",
+        "purpose": "Validate publication, execution, automation, security and safety precedence."
+      },
+      {
+        "domain_id": "CGG-VAL-D05",
+        "must_validate": [
+          "generate script phrase blocked",
+          "publish phrase blocked",
+          "automation phrase blocked",
+          "queue mutation phrase blocked",
+          "human bypass blocked"
+        ],
+        "name": "boundary_guard",
+        "purpose": "Validate execution, publishing, automation and queue mutation attempts block."
+      },
+      {
+        "domain_id": "CGG-VAL-D06",
+        "must_validate": [
+          "A money guarantees blocked",
+          "D generic motivation blocked",
+          "B unverifiable facts blocked",
+          "C toxic discipline blocked"
+        ],
+        "name": "channel_specific_policy",
+        "purpose": "Validate Channel A/D/B/C policy and contamination rules."
+      },
+      {
+        "domain_id": "CGG-VAL-D07",
+        "must_validate": [
+          "email in idea_summary blocked",
+          "technical queue_item_id not PII",
+          "local path in human field blocked",
+          "secret/token pattern blocked"
+        ],
+        "name": "sensitive_data_field_scope",
+        "purpose": "Validate PII/security scanning is human-field scoped and avoids technical false positives."
+      },
+      {
+        "domain_id": "CGG-VAL-D08",
+        "must_validate": [
+          "example hook blocked",
+          "example caption blocked",
+          "creative checklist blocked",
+          "governance-only checklist allowed"
+        ],
+        "name": "near_final_and_sample_guard",
+        "purpose": "Validate no final, near-final, sample or creative checklist content can escape."
+      },
+      {
+        "domain_id": "CGG-VAL-D09",
+        "must_validate": [
+          "human_review_required true",
+          "generation_execution false",
+          "required review names safe",
+          "missing output fields block"
+        ],
+        "name": "output_schema_hard_false",
+        "purpose": "Validate all outputs carry required fields and hard-false flags."
+      },
+      {
+        "domain_id": "CGG-VAL-D10",
+        "must_validate": [
+          "payload duplicate blocked",
+          "07_DATA reference blocked",
+          "no historical read",
+          "concept hash deterministic"
+        ],
+        "name": "duplication_governance_payload_only",
+        "purpose": "Validate duplication guard does not read real history or file roots."
+      },
+      {
+        "domain_id": "CGG-VAL-D11",
+        "must_validate": [
+          "publishable report sample blocked",
+          "operational literal blocked",
+          "external integration markers blocked"
+        ],
+        "name": "report_sanitization_and_operational_literals",
+        "purpose": "Validate reports cannot store publishable content and operational literals remain blocked."
+      },
+      {
+        "domain_id": "CGG-VAL-D12",
+        "must_validate": [
+          "FAILED_BLOCKED report hard-false",
+          "manifest canonical fields",
+          "seal hard-false",
+          "next safe step post-build audited path"
+        ],
+        "name": "failure_policy_and_manifest",
+        "purpose": "Validate fail-closed reports and manifest/seal contracts."
+      },
+      {
+        "domain_id": "CGG-VAL-D13",
+        "must_validate": [
+          "no requests/httpx/socket/subprocess/openai/etc",
+          "no forbidden contiguous operational literals",
+          "no publishable source strings"
+        ],
+        "name": "static_security_and_no_external_calls",
+        "purpose": "Validate source remains pure governance with no external APIs/imports/literals."
+      },
+      {
+        "domain_id": "CGG-VAL-D14",
+        "must_validate": [
+          "manual/brain/reports-brain no touch",
+          "queue data no touch",
+          "assets/publication no touch",
+          "content generation not performed"
+        ],
+        "name": "no_touch_and_productive_operations",
+        "purpose": "Validate protected roots and all productive operations remain untouched/false."
+      }
+    ],
+    "validation_execution_allowed_now": false,
+    "validation_gates": [
+      "CGG-VAL-G01_POST_BUILD_AUDIT_CONSUMED",
+      "CGG-VAL-G02_STATIC_SECURITY_ZERO",
+      "CGG-VAL-G03_PY_COMPILE_REQUIRED",
+      "CGG-VAL-G04_TARGETED_TESTS_REQUIRED",
+      "CGG-VAL-G05_CONTENT_ENGINE_SUITE_REQUIRED",
+      "CGG-VAL-G06_RUNTIME_SMOKE_REQUIRED",
+      "CGG-VAL-G07_STATE_HARD_FALSE_REQUIRED",
+      "CGG-VAL-G08_BOUNDARY_GUARD_REQUIRED",
+      "CGG-VAL-G09_RISK_PRECEDENCE_REQUIRED",
+      "CGG-VAL-G10_CHANNEL_POLICY_REQUIRED",
+      "CGG-VAL-G11_SENSITIVE_FIELD_SCOPE_REQUIRED",
+      "CGG-VAL-G12_NEAR_FINAL_BLOCK_REQUIRED",
+      "CGG-VAL-G13_OUTPUT_SCHEMA_REQUIRED",
+      "CGG-VAL-G14_DUPLICATION_PAYLOAD_ONLY_REQUIRED",
+      "CGG-VAL-G15_REPORT_SANITIZATION_REQUIRED",
+      "CGG-VAL-G16_OPERATIONAL_LITERAL_BLOCK_REQUIRED",
+      "CGG-VAL-G17_FAILURE_POLICY_REQUIRED",
+      "CGG-VAL-G18_MANIFEST_SEAL_REQUIRED",
+      "CGG-VAL-G19_NO_TOUCH_REQUIRED",
+      "CGG-VAL-G20_SOURCE_TEST_NO_MUTATION_REQUIRED",
+      "CGG-VAL-G21_PRODUCTIVE_OPERATIONS_BLOCKED_REQUIRED",
+      "CGG-VAL-G22_VALIDATION_PLAN_ALLOWED_NEXT_ONLY"
+    ],
+    "validation_plan_allowed_next": true
+  }
+}
