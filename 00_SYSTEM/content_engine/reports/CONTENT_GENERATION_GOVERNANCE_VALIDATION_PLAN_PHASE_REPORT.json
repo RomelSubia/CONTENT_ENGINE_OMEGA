@@ -1,0 +1,226 @@
+{
+  "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+  "gates": {
+    "CGG-VPLAN-G01_ROOT_EXISTS": true,
+    "CGG-VPLAN-G02_PYTHON_31210": true,
+    "CGG-VPLAN-G03_BRANCH_MAIN": true,
+    "CGG-VPLAN-G04_REPO_CLEAN_PRE_PLAN": true,
+    "CGG-VPLAN-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "CGG-VPLAN-G06_EXPECTED_VALIDATION_MAP_COMMIT": true,
+    "CGG-VPLAN-G07_VALIDATION_MAP_SEAL_VALID": true,
+    "CGG-VPLAN-G08_VALIDATION_MAP_ARTIFACTS_PRESENT": true,
+    "CGG-VPLAN-G09_SOURCE_TEST_BASELINE_CAPTURED": true,
+    "CGG-VPLAN-G10_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CGG-VPLAN-G11_BUILD_SURFACE_PRESENT": true,
+    "CGG-VPLAN-G12_STATIC_SOURCE_SCAN_PASS": true,
+    "CGG-VPLAN-G13_FORBIDDEN_EXTERNAL_IMPORTS_ZERO": true,
+    "CGG-VPLAN-G14_FORBIDDEN_OPERATIONAL_LITERAL_SCAN_ZERO": true,
+    "CGG-VPLAN-G15_FORBIDDEN_PUBLISHABLE_OUTPUT_SCAN_ZERO": true,
+    "CGG-VPLAN-G16_VALIDATION_PHASES_DEFINED": true,
+    "CGG-VPLAN-G17_VALIDATION_COMMAND_PLAN_DEFINED": true,
+    "CGG-VPLAN-G18_VALIDATION_ACCEPTANCE_GATES_DEFINED": true,
+    "CGG-VPLAN-G19_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "CGG-VPLAN-G20_SOURCE_TEST_NO_MUTATION": true,
+    "CGG-VPLAN-G21_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CGG-VPLAN-G22_VALIDATION_PLAN_REPORTS_WRITTEN": false,
+    "CGG-VPLAN-G23_VALIDATION_PLAN_MANIFEST_SEAL_WRITTEN": false,
+    "CGG-VPLAN-G24_OUTPUT_SCOPE_EXACT": false,
+    "CGG-VPLAN-G25_JSON_CANONICAL": false,
+    "CGG-VPLAN-G26_MANIFEST_COMPLETE": false,
+    "CGG-VPLAN-G27_SEAL_VALID": false,
+    "CGG-VPLAN-G28_TMP_RESIDUE_CLEAN": false,
+    "CGG-VPLAN-G29_COMMIT_ALLOWLIST": false,
+    "CGG-VPLAN-G30_COMMIT_CREATED": false,
+    "CGG-VPLAN-G31_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "27b538bf45e55f750b3ff27787e3133720d523cb",
+    "python": "Python 3.12.10",
+    "subject": "Define validation map Content Engine content generation governance core"
+  },
+  "layer_mode": "GOVERNANCE_ONLY",
+  "metrics": {
+    "source_files": 18,
+    "test_files": 21,
+    "validation_acceptance_gate_count": 25,
+    "validation_command_count": 7,
+    "validation_map_artifacts": 10,
+    "validation_phase_count": 8
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION",
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "generation_execution_layer_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "productive_operations_allowed_now": false,
+    "prompt_execution_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "real_queue_mutation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_execution_allowed_now": false,
+    "validation_allowed_next": true,
+    "validation_execution_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status_after": "VALIDATION_PLAN_DEFINED",
+  "status_before": "VALIDATION_MAP_DEFINED",
+  "step": "VALIDATION_PLAN",
+  "validation_phases": [
+    {
+      "evidence_to_collect": [
+        "git head",
+        "git subject",
+        "validation map seal",
+        "validation map manifest",
+        "source/test hashes",
+        "protected root fingerprints"
+      ],
+      "execution_allowed": false,
+      "name": "pre_validation_binding",
+      "phase_id": "CGG-VPLAN-P01",
+      "purpose": "Bind validation to validation-map evidence and post-build audited component.",
+      "required_gates": [
+        "repo clean/synced",
+        "expected validation map commit subject",
+        "validation map seal valid",
+        "validation map artifacts present",
+        "source/test baseline captured",
+        "protected roots fingerprinted"
+      ]
+    },
+    {
+      "acceptance": "zero violations",
+      "evidence_to_collect": [
+        "static_scan_report",
+        "external_import_violation_count",
+        "operational_literal_violation_count",
+        "publishable_output_violation_count"
+      ],
+      "name": "static_security_validation",
+      "phase_id": "CGG-VPLAN-P02",
+      "purpose": "Validate no external imports, dangerous calls, operational literals or publishable strings.",
+      "required_commands": [
+        "AST import scan over source allowlist",
+        "AST call scan over source allowlist",
+        "forbidden contiguous literal scan",
+        "publishable output string scan"
+      ]
+    },
+    {
+      "acceptance": "all files compile successfully",
+      "evidence_to_collect": [
+        "py_compile_result",
+        "compiled_source_count",
+        "compiled_test_count"
+      ],
+      "name": "compile_validation",
+      "phase_id": "CGG-VPLAN-P03",
+      "purpose": "Compile all source and test files.",
+      "required_commands": [
+        "python -m py_compile over all content generation governance source/test files"
+      ]
+    },
+    {
+      "acceptance": ">= 34 targeted tests pass",
+      "evidence_to_collect": [
+        "targeted_pytest_stdout",
+        "targeted_pytest_passed_count"
+      ],
+      "name": "targeted_pytest_validation",
+      "phase_id": "CGG-VPLAN-P04",
+      "purpose": "Execute all targeted content generation governance tests.",
+      "required_commands": [
+        "python -m pytest <21 content generation governance test files> -q"
+      ]
+    },
+    {
+      "acceptance": ">= 444 content_engine tests pass",
+      "evidence_to_collect": [
+        "content_engine_pytest_stdout",
+        "content_engine_pytest_passed_count"
+      ],
+      "name": "content_engine_suite_validation",
+      "phase_id": "CGG-VPLAN-P05",
+      "purpose": "Execute full Content Engine test suite to detect regressions.",
+      "required_commands": [
+        "python -m pytest tests/content_engine -q"
+      ]
+    },
+    {
+      "acceptance": "all runtime checks pass and all productive permissions remain false",
+      "evidence_to_collect": [
+        "runtime_contract_report",
+        "hard_false_report",
+        "blocked_operations_report"
+      ],
+      "name": "runtime_contract_validation",
+      "phase_id": "CGG-VPLAN-P06",
+      "purpose": "Execute runtime contract smoke checks without productive operations.",
+      "required_checks": [
+        "state hard-false pass",
+        "safe conceptual payload pass",
+        "missing traceability block",
+        "execution phrase block",
+        "publication phrase block",
+        "automation phrase block",
+        "queue mutation phrase block",
+        "human bypass block",
+        "sensitive data block",
+        "near-final content block",
+        "report sanitization block",
+        "operational literal block",
+        "productive status block",
+        "duplication no real history block",
+        "failure report pass",
+        "manifest payload pass"
+      ]
+    },
+    {
+      "acceptance": "no unauthorized mutation",
+      "evidence_to_collect": [
+        "no_touch_report",
+        "source_test_no_mutation_report",
+        "output_scope_report",
+        "tmp_cleanup_report"
+      ],
+      "name": "integrity_no_touch_validation",
+      "phase_id": "CGG-VPLAN-P07",
+      "purpose": "Ensure validation execution does not mutate source/tests/protected roots.",
+      "required_checks": [
+        "protected root fingerprints before/after unchanged",
+        "source/test hashes before/after unchanged",
+        "validation output scope exact",
+        "no tmp residue"
+      ]
+    },
+    {
+      "acceptance": "canonical JSON, complete manifest, hard-false seal, output scope exact",
+      "evidence_to_collect": [
+        "validation artifacts",
+        "manifest hash map",
+        "seal hard-false verification"
+      ],
+      "name": "validation_evidence_manifest_seal",
+      "phase_id": "CGG-VPLAN-P08",
+      "purpose": "Write validation reports, manifest, seal and readiness evidence.",
+      "required_outputs": [
+        "validation report",
+        "validation phase report",
+        "validation test report",
+        "validation runtime report",
+        "validation no-touch report",
+        "validation output scope report",
+        "validation manifest",
+        "validation seal",
+        "validation summary"
+      ]
+    }
+  ]
+}

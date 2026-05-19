@@ -1,0 +1,429 @@
+{
+  "build_surface": {
+    "source_files": 18,
+    "status": "PASS",
+    "test_files": 21
+  },
+  "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+  "gates": {
+    "CGG-VPLAN-G01_ROOT_EXISTS": true,
+    "CGG-VPLAN-G02_PYTHON_31210": true,
+    "CGG-VPLAN-G03_BRANCH_MAIN": true,
+    "CGG-VPLAN-G04_REPO_CLEAN_PRE_PLAN": true,
+    "CGG-VPLAN-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "CGG-VPLAN-G06_EXPECTED_VALIDATION_MAP_COMMIT": true,
+    "CGG-VPLAN-G07_VALIDATION_MAP_SEAL_VALID": true,
+    "CGG-VPLAN-G08_VALIDATION_MAP_ARTIFACTS_PRESENT": true,
+    "CGG-VPLAN-G09_SOURCE_TEST_BASELINE_CAPTURED": true,
+    "CGG-VPLAN-G10_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CGG-VPLAN-G11_BUILD_SURFACE_PRESENT": true,
+    "CGG-VPLAN-G12_STATIC_SOURCE_SCAN_PASS": true,
+    "CGG-VPLAN-G13_FORBIDDEN_EXTERNAL_IMPORTS_ZERO": true,
+    "CGG-VPLAN-G14_FORBIDDEN_OPERATIONAL_LITERAL_SCAN_ZERO": true,
+    "CGG-VPLAN-G15_FORBIDDEN_PUBLISHABLE_OUTPUT_SCAN_ZERO": true,
+    "CGG-VPLAN-G16_VALIDATION_PHASES_DEFINED": true,
+    "CGG-VPLAN-G17_VALIDATION_COMMAND_PLAN_DEFINED": true,
+    "CGG-VPLAN-G18_VALIDATION_ACCEPTANCE_GATES_DEFINED": true,
+    "CGG-VPLAN-G19_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "CGG-VPLAN-G20_SOURCE_TEST_NO_MUTATION": true,
+    "CGG-VPLAN-G21_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CGG-VPLAN-G22_VALIDATION_PLAN_REPORTS_WRITTEN": false,
+    "CGG-VPLAN-G23_VALIDATION_PLAN_MANIFEST_SEAL_WRITTEN": false,
+    "CGG-VPLAN-G24_OUTPUT_SCOPE_EXACT": false,
+    "CGG-VPLAN-G25_JSON_CANONICAL": false,
+    "CGG-VPLAN-G26_MANIFEST_COMPLETE": false,
+    "CGG-VPLAN-G27_SEAL_VALID": false,
+    "CGG-VPLAN-G28_TMP_RESIDUE_CLEAN": false,
+    "CGG-VPLAN-G29_COMMIT_ALLOWLIST": false,
+    "CGG-VPLAN-G30_COMMIT_CREATED": false,
+    "CGG-VPLAN-G31_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "27b538bf45e55f750b3ff27787e3133720d523cb",
+    "python": "Python 3.12.10",
+    "subject": "Define validation map Content Engine content generation governance core"
+  },
+  "layer_mode": "GOVERNANCE_ONLY",
+  "metrics": {
+    "source_files": 18,
+    "test_files": 21,
+    "validation_acceptance_gate_count": 25,
+    "validation_command_count": 7,
+    "validation_map_artifacts": 10,
+    "validation_phase_count": 8
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION",
+  "no_touch": {
+    "changed": {},
+    "status": "PASS"
+  },
+  "permissions": {
+    "asset_generation_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "generation_execution_layer_allowed_now": false,
+    "manual_write_allowed_now": false,
+    "productive_operations_allowed_now": false,
+    "prompt_execution_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "real_queue_mutation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "script_execution_allowed_now": false,
+    "validation_allowed_next": true,
+    "validation_execution_allowed_now": false
+  },
+  "productive_operations": {
+    "asset_generation_started": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "manual_write_performed": false,
+    "prompt_execution_started": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "real_queue_mutation_performed": false,
+    "reports_brain_write_performed": false,
+    "script_execution_started": false,
+    "status": "PASS",
+    "validation_execution_performed": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "source_test_no_mutation": {
+    "changed": {},
+    "source_test_file_count": 39,
+    "status": "PASS"
+  },
+  "static_scan": {
+    "call_violation_count": 0,
+    "import_violation_count": 0,
+    "literal_violation_count": 0,
+    "publishable_violation_count": 0,
+    "status": "PASS"
+  },
+  "status_after": "VALIDATION_PLAN_DEFINED",
+  "status_before": "VALIDATION_MAP_DEFINED",
+  "step": "VALIDATION_PLAN",
+  "summary": "Validation plan defined for Content Generation Governance Core.",
+  "validation_map_evidence": {
+    "status": "PASS",
+    "validation_map_artifact_count": 10,
+    "validation_map_manifest": {
+      "canonical_json": true,
+      "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+      "git_context": {
+        "branch": "main",
+        "head": "2f18fb063214f9a558565222b14335477c4a78ca",
+        "python": "Python 3.12.10",
+        "subject": "Post-build audit Content Engine content generation governance core"
+      },
+      "hash_algorithm": "sha256",
+      "hashed_artifacts": {
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_CHAIN_REPORT.json": "1033a250bb00573a9594c4a497a014e95c7dd4fa86c505788d1c8fd2d956fb99",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_DOMAIN_REPORT.json": "b372c9b0d86da8c6f0ebe3985a258deeb9fdf675349eb82901d52362b9f03d33",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_EXECUTION_MATRIX_REPORT.json": "f4e6566e0d3bfcb4d9de5f868b44aaedc930e8dd55d0fa0011455654fecc5f22",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_NO_TOUCH_REPORT.json": "9fe8c9bdecad5e5efdf04aec17431f14f090c0941c13e20b3e99dc9308a32da3",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_READINESS_REPORT.json": "acb1ecbbb4affbfb1966a27ad798347a2fe27fbadc314d935d59456f9ad21d2f",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_REPORT.json": "aa23323f8f7cdc33cbbc860564114f2d893a3fbe6290160eef3ab4771a9e09d4",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SECURITY_REPORT.json": "d47717fab25b24a23d511d26c676b7e679b469d8b4812f4bec7f2b67a04560f8",
+        "05_REPORTS/content_engine/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SUMMARY.md": "02d5a8b935320f653dd1b9137bdd801b40ec87df0269ac6ef9063717bfd20727"
+      },
+      "layer_mode": "GOVERNANCE_ONLY",
+      "manifest_completeness": "PASS",
+      "manifest_type": "CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_MANIFEST",
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN",
+      "produced_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_CHAIN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_DOMAIN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_EXECUTION_MATRIX_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_NO_TOUCH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_READINESS_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SECURITY_REPORT.json",
+        "05_REPORTS/content_engine/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SUMMARY.md"
+      ],
+      "project": "CONTENT_ENGINE_OMEGA",
+      "result": "PASS",
+      "self_referential_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json"
+      ],
+      "status": "VALIDATION_MAP_DEFINED"
+    },
+    "validation_map_seal": {
+      "asset_generation_allowed_now": false,
+      "automation_allowed_now": false,
+      "brain_write_allowed_now": false,
+      "component": "CONTENT_GENERATION_GOVERNANCE_CORE",
+      "content_generation_allowed_now": false,
+      "content_generation_governance_status": "VALIDATION_MAP_DEFINED",
+      "draft_creation_allowed_now": false,
+      "generation_execution_layer_allowed_now": false,
+      "layer_mode": "GOVERNANCE_ONLY",
+      "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+      "manifest_sha256": "18121599200d383a586fcde6a69c6208112ea7a95323c37fc2e1761c34fd70d3",
+      "manual_write_allowed_now": false,
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN",
+      "productive_operations_allowed_now": false,
+      "project": "CONTENT_ENGINE_OMEGA",
+      "prompt_execution_allowed_now": false,
+      "publishing_allowed_now": false,
+      "queue_write_allowed_now": false,
+      "real_queue_mutation_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "script_execution_allowed_now": false,
+      "sealed_status": "CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_DEFINED",
+      "validation_execution_allowed_now": false,
+      "validation_plan_allowed_next": true
+    }
+  },
+  "validation_plan": {
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_GENERATION_GOVERNANCE_VALIDATION",
+    "status": "PASS",
+    "validation_acceptance_gates": [
+      "CGG-VPLAN-G01_VALIDATION_MAP_CONSUMED",
+      "CGG-VPLAN-G02_POST_BUILD_AUDITED_COMPONENT_BOUND",
+      "CGG-VPLAN-G03_STATIC_SCAN_REQUIRED",
+      "CGG-VPLAN-G04_PY_COMPILE_REQUIRED",
+      "CGG-VPLAN-G05_TARGETED_TESTS_REQUIRED",
+      "CGG-VPLAN-G06_CONTENT_ENGINE_TESTS_REQUIRED",
+      "CGG-VPLAN-G07_RUNTIME_SMOKE_REQUIRED",
+      "CGG-VPLAN-G08_HARD_FALSE_REQUIRED",
+      "CGG-VPLAN-G09_BOUNDARY_BLOCKS_REQUIRED",
+      "CGG-VPLAN-G10_RISK_PRECEDENCE_REQUIRED",
+      "CGG-VPLAN-G11_CHANNEL_POLICY_REQUIRED",
+      "CGG-VPLAN-G12_SENSITIVE_FIELD_SCOPE_REQUIRED",
+      "CGG-VPLAN-G13_NEAR_FINAL_BLOCK_REQUIRED",
+      "CGG-VPLAN-G14_OUTPUT_SCHEMA_REQUIRED",
+      "CGG-VPLAN-G15_DUPLICATION_PAYLOAD_ONLY_REQUIRED",
+      "CGG-VPLAN-G16_REPORT_SANITIZATION_REQUIRED",
+      "CGG-VPLAN-G17_OPERATIONAL_LITERAL_BLOCK_REQUIRED",
+      "CGG-VPLAN-G18_FAILURE_POLICY_REQUIRED",
+      "CGG-VPLAN-G19_MANIFEST_SEAL_REQUIRED",
+      "CGG-VPLAN-G20_NO_TOUCH_REQUIRED",
+      "CGG-VPLAN-G21_SOURCE_TEST_NO_MUTATION_REQUIRED",
+      "CGG-VPLAN-G22_PRODUCTIVE_OPERATIONS_BLOCKED_REQUIRED",
+      "CGG-VPLAN-G23_VALIDATION_REPORTS_REQUIRED",
+      "CGG-VPLAN-G24_VALIDATION_MANIFEST_SEAL_REQUIRED",
+      "CGG-VPLAN-G25_GATE_CLOSURE_BLOCKED_UNTIL_VALIDATION_PASS"
+    ],
+    "validation_allowed_next": true,
+    "validation_command_plan": [
+      {
+        "allowed_to_mutate": false,
+        "command": "internal AST/static scan over SOURCE_RELS",
+        "command_id": "CGG-VCMD-01",
+        "pass_condition": "zero external imports, zero dangerous calls, zero operational literals, zero publishable strings",
+        "phase_id": "CGG-VPLAN-P02",
+        "type": "static_scan"
+      },
+      {
+        "allowed_to_mutate": false,
+        "command": "python -m py_compile <SOURCE_RELS + TEST_RELS>",
+        "command_id": "CGG-VCMD-02",
+        "pass_condition": "exit code 0",
+        "phase_id": "CGG-VPLAN-P03",
+        "type": "py_compile"
+      },
+      {
+        "allowed_to_mutate": false,
+        "command": "python -m pytest <TEST_RELS> -q -p no:cacheprovider --basetemp <runtime>",
+        "command_id": "CGG-VCMD-03",
+        "pass_condition": ">= 34 passed",
+        "phase_id": "CGG-VPLAN-P04",
+        "type": "pytest_targeted"
+      },
+      {
+        "allowed_to_mutate": false,
+        "command": "python -m pytest tests/content_engine -q -p no:cacheprovider --basetemp <runtime>",
+        "command_id": "CGG-VCMD-04",
+        "pass_condition": ">= 444 passed",
+        "phase_id": "CGG-VPLAN-P05",
+        "type": "pytest_suite"
+      },
+      {
+        "allowed_to_mutate": false,
+        "command": "import content_engine.content_generation_governance and run runtime checks",
+        "command_id": "CGG-VCMD-05",
+        "pass_condition": "all contract checks pass",
+        "phase_id": "CGG-VPLAN-P06",
+        "type": "runtime_smoke"
+      },
+      {
+        "allowed_to_mutate": false,
+        "command": "fingerprint protected roots + hash source/tests before/after validation execution",
+        "command_id": "CGG-VCMD-06",
+        "pass_condition": "no protected root/source/test mutation",
+        "phase_id": "CGG-VPLAN-P07",
+        "type": "integrity_check"
+      },
+      {
+        "allowed_to_mutate": true,
+        "command": "write validation evidence only to validation output allowlist",
+        "command_id": "CGG-VCMD-07",
+        "pass_condition": "only validation reports/manifest/seal/summary changed",
+        "phase_id": "CGG-VPLAN-P08",
+        "type": "evidence_write"
+      }
+    ],
+    "validation_execution_allowed_now": false,
+    "validation_phases": [
+      {
+        "evidence_to_collect": [
+          "git head",
+          "git subject",
+          "validation map seal",
+          "validation map manifest",
+          "source/test hashes",
+          "protected root fingerprints"
+        ],
+        "execution_allowed": false,
+        "name": "pre_validation_binding",
+        "phase_id": "CGG-VPLAN-P01",
+        "purpose": "Bind validation to validation-map evidence and post-build audited component.",
+        "required_gates": [
+          "repo clean/synced",
+          "expected validation map commit subject",
+          "validation map seal valid",
+          "validation map artifacts present",
+          "source/test baseline captured",
+          "protected roots fingerprinted"
+        ]
+      },
+      {
+        "acceptance": "zero violations",
+        "evidence_to_collect": [
+          "static_scan_report",
+          "external_import_violation_count",
+          "operational_literal_violation_count",
+          "publishable_output_violation_count"
+        ],
+        "name": "static_security_validation",
+        "phase_id": "CGG-VPLAN-P02",
+        "purpose": "Validate no external imports, dangerous calls, operational literals or publishable strings.",
+        "required_commands": [
+          "AST import scan over source allowlist",
+          "AST call scan over source allowlist",
+          "forbidden contiguous literal scan",
+          "publishable output string scan"
+        ]
+      },
+      {
+        "acceptance": "all files compile successfully",
+        "evidence_to_collect": [
+          "py_compile_result",
+          "compiled_source_count",
+          "compiled_test_count"
+        ],
+        "name": "compile_validation",
+        "phase_id": "CGG-VPLAN-P03",
+        "purpose": "Compile all source and test files.",
+        "required_commands": [
+          "python -m py_compile over all content generation governance source/test files"
+        ]
+      },
+      {
+        "acceptance": ">= 34 targeted tests pass",
+        "evidence_to_collect": [
+          "targeted_pytest_stdout",
+          "targeted_pytest_passed_count"
+        ],
+        "name": "targeted_pytest_validation",
+        "phase_id": "CGG-VPLAN-P04",
+        "purpose": "Execute all targeted content generation governance tests.",
+        "required_commands": [
+          "python -m pytest <21 content generation governance test files> -q"
+        ]
+      },
+      {
+        "acceptance": ">= 444 content_engine tests pass",
+        "evidence_to_collect": [
+          "content_engine_pytest_stdout",
+          "content_engine_pytest_passed_count"
+        ],
+        "name": "content_engine_suite_validation",
+        "phase_id": "CGG-VPLAN-P05",
+        "purpose": "Execute full Content Engine test suite to detect regressions.",
+        "required_commands": [
+          "python -m pytest tests/content_engine -q"
+        ]
+      },
+      {
+        "acceptance": "all runtime checks pass and all productive permissions remain false",
+        "evidence_to_collect": [
+          "runtime_contract_report",
+          "hard_false_report",
+          "blocked_operations_report"
+        ],
+        "name": "runtime_contract_validation",
+        "phase_id": "CGG-VPLAN-P06",
+        "purpose": "Execute runtime contract smoke checks without productive operations.",
+        "required_checks": [
+          "state hard-false pass",
+          "safe conceptual payload pass",
+          "missing traceability block",
+          "execution phrase block",
+          "publication phrase block",
+          "automation phrase block",
+          "queue mutation phrase block",
+          "human bypass block",
+          "sensitive data block",
+          "near-final content block",
+          "report sanitization block",
+          "operational literal block",
+          "productive status block",
+          "duplication no real history block",
+          "failure report pass",
+          "manifest payload pass"
+        ]
+      },
+      {
+        "acceptance": "no unauthorized mutation",
+        "evidence_to_collect": [
+          "no_touch_report",
+          "source_test_no_mutation_report",
+          "output_scope_report",
+          "tmp_cleanup_report"
+        ],
+        "name": "integrity_no_touch_validation",
+        "phase_id": "CGG-VPLAN-P07",
+        "purpose": "Ensure validation execution does not mutate source/tests/protected roots.",
+        "required_checks": [
+          "protected root fingerprints before/after unchanged",
+          "source/test hashes before/after unchanged",
+          "validation output scope exact",
+          "no tmp residue"
+        ]
+      },
+      {
+        "acceptance": "canonical JSON, complete manifest, hard-false seal, output scope exact",
+        "evidence_to_collect": [
+          "validation artifacts",
+          "manifest hash map",
+          "seal hard-false verification"
+        ],
+        "name": "validation_evidence_manifest_seal",
+        "phase_id": "CGG-VPLAN-P08",
+        "purpose": "Write validation reports, manifest, seal and readiness evidence.",
+        "required_outputs": [
+          "validation report",
+          "validation phase report",
+          "validation test report",
+          "validation runtime report",
+          "validation no-touch report",
+          "validation output scope report",
+          "validation manifest",
+          "validation seal",
+          "validation summary"
+        ]
+      }
+    ]
+  }
+}
