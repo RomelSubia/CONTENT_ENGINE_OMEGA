@@ -1,0 +1,609 @@
+{
+  "build_surface": {
+    "source_files": 19,
+    "status": "PASS",
+    "test_files": 20
+  },
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "gates": {
+    "CDG-VMAP-G01_ROOT_EXISTS": true,
+    "CDG-VMAP-G02_PYTHON_31210": true,
+    "CDG-VMAP-G03_BRANCH_MAIN": true,
+    "CDG-VMAP-G04_REPO_CLEAN_PRE_MAP": true,
+    "CDG-VMAP-G05_HEAD_SYNCED_PRE_MAP": true,
+    "CDG-VMAP-G06_EXPECTED_POST_BUILD_AUDIT_COMMIT": true,
+    "CDG-VMAP-G07_POST_BUILD_AUDIT_SEAL_VALID": true,
+    "CDG-VMAP-G08_POST_BUILD_AUDIT_ARTIFACTS_PRESENT": true,
+    "CDG-VMAP-G09_SOURCE_TEST_BASELINE_CAPTURED": true,
+    "CDG-VMAP-G10_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CDG-VMAP-G11_BUILD_SURFACE_PRESENT": true,
+    "CDG-VMAP-G12_STATIC_SOURCE_SCAN_PASS": true,
+    "CDG-VMAP-G13_FORBIDDEN_EXTERNAL_IMPORTS_ZERO": true,
+    "CDG-VMAP-G14_FORBIDDEN_OPERATIONAL_LITERAL_SCAN_ZERO": true,
+    "CDG-VMAP-G15_FORBIDDEN_PUBLISHABLE_OUTPUT_SCAN_ZERO": true,
+    "CDG-VMAP-G16_VALIDATION_DOMAINS_DEFINED": true,
+    "CDG-VMAP-G17_EXECUTION_MATRIX_DEFINED": true,
+    "CDG-VMAP-G18_VALIDATION_GATES_DEFINED": true,
+    "CDG-VMAP-G19_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "CDG-VMAP-G20_SOURCE_TEST_NO_MUTATION": true,
+    "CDG-VMAP-G21_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CDG-VMAP-G22_VALIDATION_MAP_REPORTS_WRITTEN": false,
+    "CDG-VMAP-G23_VALIDATION_MAP_MANIFEST_SEAL_WRITTEN": false,
+    "CDG-VMAP-G24_OUTPUT_SCOPE_EXACT": false,
+    "CDG-VMAP-G25_JSON_CANONICAL": false,
+    "CDG-VMAP-G26_MANIFEST_COMPLETE": false,
+    "CDG-VMAP-G27_SEAL_VALID": false,
+    "CDG-VMAP-G28_TMP_RESIDUE_CLEAN": false,
+    "CDG-VMAP-G29_COMMIT_ALLOWLIST": false,
+    "CDG-VMAP-G30_COMMIT_CREATED": false,
+    "CDG-VMAP-G31_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "595298a004bb767c480ca8293d5fe664268be12c",
+    "python": "Python 3.12.10",
+    "remote": "595298a004bb767c480ca8293d5fe664268be12c",
+    "subject": "Post-build audit Content Engine content drafting governance core"
+  },
+  "layer_mode": "GOVERNANCE_ONLY",
+  "metrics": {
+    "execution_matrix_phase_count": 7,
+    "post_build_audit_artifacts": 12,
+    "source_files": 19,
+    "test_files": 20,
+    "validation_domain_count": 17,
+    "validation_gate_count": 25
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN",
+  "no_touch": {
+    "changed": {},
+    "status": "PASS"
+  },
+  "permissions": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_execution_allowed_now": false,
+    "validation_plan_allowed_next": true
+  },
+  "post_build_audit": {
+    "post_build_audit_artifact_count": 12,
+    "post_build_audit_manifest": {
+      "canonical_json": true,
+      "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+      "consumed_build_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_NO_TOUCH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_OUTPUT_SCOPE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_READINESS_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_RUNTIME_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_STATIC_SCAN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_TEST_REPORT.json",
+        "05_REPORTS/content_engine/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SUMMARY.md"
+      ],
+      "consumed_status": "BUILT_PENDING_POST_AUDIT",
+      "git_context": {
+        "branch": "main",
+        "head": "fa91cac5786faffdc15e96e2dca9e834eb620bd7",
+        "python": "Python 3.12.10",
+        "remote": "fa91cac5786faffdc15e96e2dca9e834eb620bd7",
+        "subject": "Build Content Engine content drafting governance core final unique basetemp fix"
+      },
+      "hash_algorithm": "sha256",
+      "hashed_artifacts": {
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_ARTIFACT_REPORT.json": "efca1b708ef7bebf24b7e70a56ac5d23cc8f4d483470b8f3d5bd3c1e8300fad9",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_CHAIN_REPORT.json": "8486b6b9b8b201b968a0511288a4e0390f6e5a68441af287e315586c86f962b5",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_NO_TOUCH_REPORT.json": "c6efc17e50366c3059f781775264de02b40891a99c40da35cea33686bdc817f8",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_OUTPUT_SCOPE_REPORT.json": "5ffe64548d449f5f2489cab286e65b5dbf9dd10db5e8482e55f39c1978688feb",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_READINESS_REPORT.json": "333efd46bf9d825ba0372b5fe27b2ece6b4f6449837336e6fb26ee1563525b8a",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_REPORT.json": "a940eef0ac1146647ba2a44f30a0871dd48294f41f0990bf38f3e9c959a0a568",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_RUNTIME_REPORT.json": "b6c20c43a130eeb4329d46346eb845cd464822d59482b687e19793edfc4a52b2",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_STATIC_SCAN_REPORT.json": "bd21a7723a963c74668126c3127f5a5dfe8bb0bb3052fb4b018fdc4312ca8ed1",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_TEST_REPORT.json": "38500eb41725fe4d373d2180aefe9c4f260df8168593132b7abcc9293ea08c34",
+        "05_REPORTS/content_engine/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SUMMARY.md": "08c899731887a4648687bef71018a1d638a1162961389be31ac49832a98151c5"
+      },
+      "manifest_completeness": "PASS",
+      "manifest_type": "CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST",
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP",
+      "produced_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_ARTIFACT_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_CHAIN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_NO_TOUCH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_OUTPUT_SCOPE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_READINESS_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_RUNTIME_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_STATIC_SCAN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_TEST_REPORT.json",
+        "05_REPORTS/content_engine/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SUMMARY.md"
+      ],
+      "project": "CONTENT_ENGINE_OMEGA",
+      "result": "PASS",
+      "self_referential_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json"
+      ],
+      "source_files": [
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/__init__.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/drafting_governance_state.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_candidate_schema.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_lifecycle_state.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_boundary_guard.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_near_final_guard.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_publishability_guard.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_monetization_guard.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_marketing_ethics_guard.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_channel_policy.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_domain_contamination_guard.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_sensitive_data_guard.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_argos_contract_hint.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_maturity_gate.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_evidence_contract.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_traceability_contract.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_failure_policy.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_manifest_contract.py",
+        "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_output_schema.py"
+      ],
+      "status": "BUILT_POST_AUDITED",
+      "test_files": [
+        "tests/content_engine/test_content_drafting_governance_state.py",
+        "tests/content_engine/test_draft_candidate_schema.py",
+        "tests/content_engine/test_draft_lifecycle_state.py",
+        "tests/content_engine/test_draft_boundary_guard.py",
+        "tests/content_engine/test_draft_near_final_guard.py",
+        "tests/content_engine/test_draft_publishability_guard.py",
+        "tests/content_engine/test_draft_monetization_guard.py",
+        "tests/content_engine/test_draft_marketing_ethics_guard.py",
+        "tests/content_engine/test_draft_channel_policy.py",
+        "tests/content_engine/test_draft_domain_contamination_guard.py",
+        "tests/content_engine/test_draft_sensitive_data_guard.py",
+        "tests/content_engine/test_draft_argos_contract_hint.py",
+        "tests/content_engine/test_draft_maturity_gate.py",
+        "tests/content_engine/test_draft_evidence_contract.py",
+        "tests/content_engine/test_draft_traceability_contract.py",
+        "tests/content_engine/test_draft_failure_policy.py",
+        "tests/content_engine/test_draft_manifest_contract.py",
+        "tests/content_engine/test_draft_output_schema.py",
+        "tests/content_engine/test_content_drafting_governance_integration.py",
+        "tests/content_engine/test_content_drafting_governance_negative_execution_prompts.py"
+      ]
+    },
+    "post_build_audit_seal": {
+      "argos_bridge_build_allowed_now": false,
+      "automation_allowed_now": false,
+      "brain_write_allowed_now": false,
+      "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+      "content_generation_allowed_now": false,
+      "draft_creation_allowed_now": false,
+      "gate_closure_allowed_now": false,
+      "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+      "manifest_sha256": "1e91910c3d1b93848562c84847edb1a38819bb7d2f318d372dc8da56e26beefe",
+      "manual_current_mutation_allowed_now": false,
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP",
+      "project": "CONTENT_ENGINE_OMEGA",
+      "publishing_allowed_now": false,
+      "queue_write_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "sealed_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_BUILT_POST_AUDITED",
+      "status": "BUILT_POST_AUDITED",
+      "validation_allowed_now": false,
+      "validation_map_allowed_next": true,
+      "validation_plan_allowed_now": false
+    },
+    "status": "PASS"
+  },
+  "productive_operations": {
+    "argos_bridge_build_performed": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "capa9_started": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "manual_current_mutation_performed": false,
+    "n8n_started": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "real_queue_mutation_performed": false,
+    "reports_brain_write_performed": false,
+    "status": "PASS",
+    "validation_execution_performed": false,
+    "webhook_started": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "source_test_no_mutation": {
+    "changed": {},
+    "source_test_file_count": 39,
+    "status": "PASS"
+  },
+  "static_scan": {
+    "call_violation_count": 0,
+    "import_violation_count": 0,
+    "literal_violation_count": 0,
+    "publishable_violation_count": 0,
+    "status": "PASS"
+  },
+  "status_after": "VALIDATION_MAP_DEFINED",
+  "status_before": "BUILT_POST_AUDITED",
+  "step": "VALIDATION_MAP",
+  "summary": "Validation map defined for post-build audited Content Drafting Governance Core.",
+  "validation_map": {
+    "execution_matrix": [
+      {
+        "commands_required_in_validation_plan": [
+          "AST import/call scan over source allowlist",
+          "forbidden contiguous literal scan",
+          "forbidden publishable language scan"
+        ],
+        "domain_ids": [
+          "CDG-VAL-D16"
+        ],
+        "execution_type": "static_analysis",
+        "pass_condition": "zero violations",
+        "phase": "P01_STATIC_SECURITY"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "python -m py_compile over all source/test allowlist"
+        ],
+        "domain_ids": [
+          "CDG-VAL-D01",
+          "CDG-VAL-D02",
+          "CDG-VAL-D16"
+        ],
+        "execution_type": "compile_gate",
+        "pass_condition": "all files compile",
+        "phase": "P02_PY_COMPILE"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "pytest each content_drafting_governance test file with unique basetemp"
+        ],
+        "domain_ids": [
+          "CDG-VAL-D01",
+          "CDG-VAL-D02",
+          "CDG-VAL-D03",
+          "CDG-VAL-D04",
+          "CDG-VAL-D05",
+          "CDG-VAL-D06",
+          "CDG-VAL-D07",
+          "CDG-VAL-D08",
+          "CDG-VAL-D09",
+          "CDG-VAL-D10",
+          "CDG-VAL-D11",
+          "CDG-VAL-D12",
+          "CDG-VAL-D13",
+          "CDG-VAL-D14",
+          "CDG-VAL-D15"
+        ],
+        "execution_type": "targeted_tests",
+        "pass_condition": "all targeted drafting governance tests pass",
+        "phase": "P03_TARGETED_PYTEST"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "python -m pytest tests/content_engine -q with unique basetemp"
+        ],
+        "domain_ids": [
+          "CDG-VAL-D01",
+          "CDG-VAL-D17"
+        ],
+        "execution_type": "suite_tests",
+        "pass_condition": "content_engine suite passes",
+        "phase": "P04_CONTENT_ENGINE_SUITE"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "import content_engine.content_drafting_governance",
+          "run runtime contract checks"
+        ],
+        "domain_ids": [
+          "CDG-VAL-D01",
+          "CDG-VAL-D02",
+          "CDG-VAL-D04",
+          "CDG-VAL-D05",
+          "CDG-VAL-D06",
+          "CDG-VAL-D07",
+          "CDG-VAL-D08",
+          "CDG-VAL-D09",
+          "CDG-VAL-D10",
+          "CDG-VAL-D11",
+          "CDG-VAL-D12",
+          "CDG-VAL-D13",
+          "CDG-VAL-D14",
+          "CDG-VAL-D15"
+        ],
+        "execution_type": "runtime_contract",
+        "pass_condition": "all runtime checks pass and hard-false values remain false",
+        "phase": "P05_RUNTIME_CONTRACT_SMOKE"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "fingerprint protected roots before/after validation",
+          "hash source/test allowlist before/after validation",
+          "clean runtime temp before output scope"
+        ],
+        "domain_ids": [
+          "CDG-VAL-D17"
+        ],
+        "execution_type": "integrity_gate",
+        "pass_condition": "no protected root mutation and no source/test mutation",
+        "phase": "P06_NO_TOUCH_AND_SOURCE_TEST_NO_MUTATION"
+      },
+      {
+        "commands_required_in_validation_plan": [
+          "write validation reports",
+          "write validation manifest/seal",
+          "validate canonical JSON",
+          "validate output scope exact"
+        ],
+        "domain_ids": [
+          "CDG-VAL-D15",
+          "CDG-VAL-D17"
+        ],
+        "execution_type": "evidence_gate",
+        "pass_condition": "all validation artifacts canonical, scoped and sealed",
+        "phase": "P07_ARTIFACTS_MANIFEST_SEAL"
+      }
+    ],
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN",
+    "status": "PASS",
+    "validation_domains": [
+      {
+        "domain_id": "CDG-VAL-D01",
+        "must_validate": [
+          "draft_creation_allowed_now false",
+          "content_generation_allowed_now false",
+          "queue_write_allowed_now false",
+          "publishing_allowed_now false",
+          "automation_allowed_now false",
+          "final_output_allowed_now false",
+          "argos_bridge_allowed_now false"
+        ],
+        "name": "state_hard_false_contract",
+        "purpose": "Validate drafting governance state remains governance-only and all productive permissions are false."
+      },
+      {
+        "domain_id": "CDG-VAL-D02",
+        "must_validate": [
+          "required fields enforced",
+          "commercial intent requires value proposition",
+          "unsupported domain blocks",
+          "missing fields fail closed",
+          "human review remains required"
+        ],
+        "name": "draft_candidate_schema",
+        "purpose": "Validate required conceptual draft candidate fields, commercial intent constraints and fail-closed missing field behavior."
+      },
+      {
+        "domain_id": "CDG-VAL-D03",
+        "must_validate": [
+          "CONCEPTUAL_ONLY allowed",
+          "DRAFT_GOVERNANCE_REVIEW_REQUIRED allowed",
+          "PUBLISHED blocked",
+          "FINAL blocked",
+          "SCHEDULED blocked",
+          "AUTO_APPROVED blocked"
+        ],
+        "name": "draft_lifecycle_state",
+        "purpose": "Validate lifecycle cannot enter final, scheduled, published or auto-approved states."
+      },
+      {
+        "domain_id": "CDG-VAL-D04",
+        "must_validate": [
+          "publish phrase blocked",
+          "queue write phrase blocked",
+          "webhook phrase blocked",
+          "external API phrase blocked",
+          "human bypass blocked",
+          "safe metadata clear"
+        ],
+        "name": "boundary_guard",
+        "purpose": "Validate draft boundary blocks publish, queue write, execution, automation and human bypass phrases."
+      },
+      {
+        "domain_id": "CDG-VAL-D05",
+        "must_validate": [
+          "caption final blocked",
+          "guion final blocked",
+          "final CTA blocked",
+          "high publishability blocked",
+          "final_output_allowed false even when clear"
+        ],
+        "name": "near_final_and_publishability_guard",
+        "purpose": "Validate near-final/final copy and publishability score cannot produce final outputs."
+      },
+      {
+        "domain_id": "CDG-VAL-D06",
+        "must_validate": [
+          "ingresos garantizados blocked",
+          "ventas garantizadas blocked",
+          "sin riesgo blocked",
+          "evidence required for risky claims",
+          "human review remains required"
+        ],
+        "name": "monetization_guard",
+        "purpose": "Validate monetization claims are evidence-bound and no guaranteed income/sales promises pass unblocked."
+      },
+      {
+        "domain_id": "CDG-VAL-D07",
+        "must_validate": [
+          "escasez falsa blocked",
+          "false urgency blocked",
+          "exploit fear blocked",
+          "ethical persuasion allowed only as metadata/review"
+        ],
+        "name": "marketing_ethics_guard",
+        "purpose": "Validate persuasion stays ethical and blocks false scarcity, false urgency and exploitative manipulation."
+      },
+      {
+        "domain_id": "CDG-VAL-D08",
+        "must_validate": [
+          "finca_san_mateo supported",
+          "cacao supported",
+          "arriendos supported",
+          "bravi supported",
+          "bramviss supported",
+          "digital A/B/C/D supported",
+          "websites supported",
+          "future_business_or_brand supported",
+          "unknown domain blocked"
+        ],
+        "name": "channel_and_domain_policy",
+        "purpose": "Validate supported channels/domains for Finca San Mateo, cacao, arriendos, Bravi, BramViss, digital channels, websites and future brands."
+      },
+      {
+        "domain_id": "CDG-VAL-D09",
+        "must_validate": [
+          "Bravi contaminated by cacao markers blocked",
+          "Finca event context clear",
+          "foreign domain matches reported",
+          "no cross-domain assumption allowed"
+        ],
+        "name": "domain_contamination_guard",
+        "purpose": "Validate business/channel domain tone contamination is detected before draft review."
+      },
+      {
+        "domain_id": "CDG-VAL-D10",
+        "must_validate": [
+          "email blocked",
+          "phone blocked",
+          "secret/token markers blocked",
+          "local path blocked",
+          "technical draft id clear"
+        ],
+        "name": "sensitive_data_guard",
+        "purpose": "Validate human-field sensitive data is blocked while technical IDs avoid false positives."
+      },
+      {
+        "domain_id": "CDG-VAL-D11",
+        "must_validate": [
+          "compatibility_mode METADATA_ONLY",
+          "argos_dependency false",
+          "cross_imports_allowed false",
+          "bridge_build_allowed_now false",
+          "argos_can_bypass_gates false"
+        ],
+        "name": "argos_metadata_only_contract",
+        "purpose": "Validate ARGOS compatibility remains metadata-only, no dependency, no cross-imports, no bridge build."
+      },
+      {
+        "domain_id": "CDG-VAL-D12",
+        "must_validate": [
+          "level zero blocks promotion",
+          "evidence required",
+          "metrics required",
+          "recovery required",
+          "draft_creation_allowed false",
+          "autonomy_escalation_allowed false"
+        ],
+        "name": "maturity_gate",
+        "purpose": "Validate maturity promotion requires evidence/metrics/recovery but never opens draft creation or autonomy escalation."
+      },
+      {
+        "domain_id": "CDG-VAL-D13",
+        "must_validate": [
+          "empty evidence_refs invalid when required",
+          "missing traceability_refs blocked",
+          "valid refs pass review only",
+          "no final output permission"
+        ],
+        "name": "evidence_and_traceability_contracts",
+        "purpose": "Validate evidence_refs and traceability_refs are required and empty refs fail closed."
+      },
+      {
+        "domain_id": "CDG-VAL-D14",
+        "must_validate": [
+          "fail_closed_result status FAILED_BLOCKED",
+          "draft_creation_performed false",
+          "content_generation_performed false",
+          "queue_write_performed false",
+          "publishing_performed false",
+          "automation_performed false",
+          "human_review_required true",
+          "final_output_allowed false"
+        ],
+        "name": "failure_policy_and_output_schema",
+        "purpose": "Validate fail-closed result and governance output schema preserve hard-false operational flags."
+      },
+      {
+        "domain_id": "CDG-VAL-D15",
+        "must_validate": [
+          "manifest status BUILT_PENDING_POST_AUDIT or post-audit traceable",
+          "canonical_json true",
+          "self_sha256 present",
+          "draft_creation_allowed false",
+          "content_generation_allowed false",
+          "queue_write_allowed false"
+        ],
+        "name": "manifest_contract",
+        "purpose": "Validate manifest contract is canonical, hashable and preserves hard-false build state."
+      },
+      {
+        "domain_id": "CDG-VAL-D16",
+        "must_validate": [
+          "no forbidden imports",
+          "no eval/exec/compile",
+          "no operational contiguous literals",
+          "no publishable final strings"
+        ],
+        "name": "static_security_and_no_external_calls",
+        "purpose": "Validate source remains pure governance: no external APIs, no subprocess, no browser automation, no publishable literals."
+      },
+      {
+        "domain_id": "CDG-VAL-D17",
+        "must_validate": [
+          "manual current no touch",
+          "brain no touch",
+          "reports-brain no touch",
+          "queue no touch",
+          "assets no touch",
+          "publication no touch",
+          "n8n/webhook/CAPA9 blocked",
+          "source/test no mutation during validation"
+        ],
+        "name": "no_touch_and_productive_operations",
+        "purpose": "Validate protected roots and productive operations remain untouched/false."
+      }
+    ],
+    "validation_execution_allowed_now": false,
+    "validation_gates": [
+      "CDG-VAL-G01_POST_BUILD_AUDIT_CONSUMED",
+      "CDG-VAL-G02_STATIC_SECURITY_ZERO",
+      "CDG-VAL-G03_PY_COMPILE_REQUIRED",
+      "CDG-VAL-G04_TARGETED_TESTS_REQUIRED",
+      "CDG-VAL-G05_CONTENT_ENGINE_SUITE_REQUIRED",
+      "CDG-VAL-G06_RUNTIME_SMOKE_REQUIRED",
+      "CDG-VAL-G07_STATE_HARD_FALSE_REQUIRED",
+      "CDG-VAL-G08_SCHEMA_FAIL_CLOSED_REQUIRED",
+      "CDG-VAL-G09_LIFECYCLE_FINAL_STATES_BLOCKED_REQUIRED",
+      "CDG-VAL-G10_BOUNDARY_GUARD_REQUIRED",
+      "CDG-VAL-G11_NEAR_FINAL_PUBLISHABILITY_REQUIRED",
+      "CDG-VAL-G12_MONETIZATION_GUARD_REQUIRED",
+      "CDG-VAL-G13_MARKETING_ETHICS_REQUIRED",
+      "CDG-VAL-G14_CHANNEL_DOMAIN_POLICY_REQUIRED",
+      "CDG-VAL-G15_DOMAIN_CONTAMINATION_REQUIRED",
+      "CDG-VAL-G16_SENSITIVE_DATA_REQUIRED",
+      "CDG-VAL-G17_ARGOS_METADATA_ONLY_REQUIRED",
+      "CDG-VAL-G18_MATURITY_GATE_REQUIRED",
+      "CDG-VAL-G19_EVIDENCE_TRACEABILITY_REQUIRED",
+      "CDG-VAL-G20_FAILURE_OUTPUT_SCHEMA_REQUIRED",
+      "CDG-VAL-G21_MANIFEST_CONTRACT_REQUIRED",
+      "CDG-VAL-G22_NO_TOUCH_REQUIRED",
+      "CDG-VAL-G23_SOURCE_TEST_NO_MUTATION_REQUIRED",
+      "CDG-VAL-G24_PRODUCTIVE_OPERATIONS_BLOCKED_REQUIRED",
+      "CDG-VAL-G25_VALIDATION_PLAN_ALLOWED_NEXT_ONLY"
+    ],
+    "validation_plan_allowed_next": true
+  }
+}
