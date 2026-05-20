@@ -1,0 +1,18 @@
+{
+  "automation_allowed_now": false,
+  "blueprint_allowed_next": true,
+  "brain_write_allowed_now": false,
+  "content_generation_allowed_now": false,
+  "draft_creation_allowed_now": false,
+  "manifest_path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_MANIFEST.json",
+  "manifest_sha256": "df4e30545a6beb705bf533a5c3e60ba7d3ddf51a6a98ab6de53c936f98441138",
+  "manual_current_mutation_allowed_now": false,
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_BLUEPRINT",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "publishing_allowed_now": false,
+  "queue_write_allowed_now": false,
+  "reports_brain_write_allowed_now": false,
+  "sealed_status": "MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_DEFINED",
+  "selected_next_layer": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "status": "ALIGNMENT_NOTE_DEFINED"
+}

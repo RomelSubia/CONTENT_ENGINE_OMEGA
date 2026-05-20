@@ -1,0 +1,164 @@
+{
+  "consumed_status": "NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_GENERATION_GOVERNANCE_DEFINED",
+  "gates": {
+    "ALIGN-G01_ROOT_EXISTS": true,
+    "ALIGN-G02_PYTHON_31210": true,
+    "ALIGN-G03_BRANCH_MAIN": true,
+    "ALIGN-G04_REPO_CLEAN_PRE_ALIGNMENT": true,
+    "ALIGN-G05_HEAD_SYNCED_PRE_ALIGNMENT": true,
+    "ALIGN-G06_EXPECTED_READINESS_COMMIT": true,
+    "ALIGN-G07_READINESS_SEAL_VALID": true,
+    "ALIGN-G08_READINESS_ARTIFACTS_PRESENT": true,
+    "ALIGN-G09_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "ALIGN-G10_ALIGNMENT_MODEL_DEFINED": true,
+    "ALIGN-G11_MULTIDOMAIN_SCOPE_DEFINED": true,
+    "ALIGN-G12_MONETIZATION_OBJECTIVE_PRESERVED": true,
+    "ALIGN-G13_ARGOS_RELATIONSHIP_DEFINED": true,
+    "ALIGN-G14_FAULT_ISOLATION_DEFINED": true,
+    "ALIGN-G15_MATURITY_MODEL_DEFINED": true,
+    "ALIGN-G16_NEXT_BLUEPRINT_IMPACT_DEFINED": true,
+    "ALIGN-G17_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "ALIGN-G18_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "ALIGN-G19_REPORTS_WRITTEN": false,
+    "ALIGN-G20_MANIFEST_SEAL_WRITTEN": false,
+    "ALIGN-G21_OUTPUT_SCOPE_EXACT": false,
+    "ALIGN-G22_JSON_CANONICAL": false,
+    "ALIGN-G23_MANIFEST_COMPLETE": false,
+    "ALIGN-G24_SEAL_VALID": false,
+    "ALIGN-G25_TMP_RESIDUE_CLEAN": false,
+    "ALIGN-G26_COMMIT_ALLOWLIST": false,
+    "ALIGN-G27_COMMIT_CREATED": false,
+    "ALIGN-G28_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "b0dccb57c80276859d3f835112a2476276156994",
+    "python": "Python 3.12.10",
+    "subject": "Define next layer readiness map after content generation governance"
+  },
+  "maturity_model": {
+    "levels": [
+      {
+        "allowed": [
+          "strategy",
+          "rules",
+          "schemas",
+          "manual_alignment_notes"
+        ],
+        "blocked": [
+          "draft_creation",
+          "publishing",
+          "automation"
+        ],
+        "level": 0,
+        "name": "design_and_governance"
+      },
+      {
+        "allowed": [
+          "ideas",
+          "structures",
+          "non-final conceptual outputs"
+        ],
+        "blocked": [
+          "real drafts",
+          "publication",
+          "automation"
+        ],
+        "level": 1,
+        "name": "controlled_conceptual_assistance"
+      },
+      {
+        "allowed": [
+          "internal drafts with mandatory human review"
+        ],
+        "blocked": [
+          "external publication",
+          "autonomous execution"
+        ],
+        "level": 2,
+        "name": "governed_internal_drafts"
+      },
+      {
+        "allowed": [
+          "campaign organization",
+          "variants",
+          "calendar planning"
+        ],
+        "blocked": [
+          "automatic publishing"
+        ],
+        "level": 3,
+        "name": "governed_campaigns"
+      },
+      {
+        "allowed": [
+          "final approval packages"
+        ],
+        "blocked": [
+          "publication without explicit human authorization"
+        ],
+        "level": 4,
+        "name": "assisted_publication_preparation"
+      },
+      {
+        "allowed": [
+          "limited repetitive low-risk actions"
+        ],
+        "blocked": [
+          "high-risk or unbounded automation"
+        ],
+        "level": 5,
+        "name": "partial_automation"
+      },
+      {
+        "allowed": [
+          "evidence-backed controlled autonomy"
+        ],
+        "blocked": [
+          "unbounded autonomy"
+        ],
+        "level": 6,
+        "name": "advanced_controlled_autonomy"
+      }
+    ],
+    "principle": "evolution_by_evidence_not_by_desire",
+    "promotion_requirements": [
+      "measurable_improvement",
+      "security_improvement_or_preservation",
+      "real_need",
+      "stability",
+      "maturity",
+      "governance_integrity",
+      "traceability",
+      "rollback_or_recovery_strategy",
+      "no_regression",
+      "human_control",
+      "evidence_that_evolution_is_beneficial"
+    ]
+  },
+  "metrics": {
+    "expanded_scope_items": 12,
+    "maturity_levels": 7,
+    "named_domains": 9,
+    "per_channel_documentation_fields": 21,
+    "promotion_requirements": 11,
+    "selected_next_layer": "CONTENT_DRAFTING_GOVERNANCE_CORE"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_BLUEPRINT",
+  "permissions": {
+    "automation_allowed_now": false,
+    "blueprint_allowed_next": true,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "selected_next_layer": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "status_after": "ALIGNMENT_NOTE_DEFINED",
+  "step": "MULTIDOMAIN_MONETIZATION_AND_ARGOS_INTEGRATION_ALIGNMENT_NOTE"
+}
