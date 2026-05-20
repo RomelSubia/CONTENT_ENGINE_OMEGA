@@ -1,0 +1,148 @@
+{
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "gates": {
+    "CDG-VPLAN-G01_ROOT_EXISTS": true,
+    "CDG-VPLAN-G02_PYTHON_31210": true,
+    "CDG-VPLAN-G03_BRANCH_MAIN": true,
+    "CDG-VPLAN-G04_REPO_CLEAN_PRE_PLAN": true,
+    "CDG-VPLAN-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "CDG-VPLAN-G06_EXPECTED_VALIDATION_MAP_COMMIT": true,
+    "CDG-VPLAN-G07_VALIDATION_MAP_SEAL_VALID": true,
+    "CDG-VPLAN-G08_VALIDATION_MAP_ARTIFACTS_PRESENT": true,
+    "CDG-VPLAN-G09_SOURCE_TEST_BASELINE_CAPTURED": true,
+    "CDG-VPLAN-G10_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CDG-VPLAN-G11_BUILD_SURFACE_PRESENT": true,
+    "CDG-VPLAN-G12_VALIDATION_COMMAND_PLAN_DEFINED": true,
+    "CDG-VPLAN-G13_VALIDATION_ACCEPTANCE_GATES_DEFINED": true,
+    "CDG-VPLAN-G14_VALIDATION_EVIDENCE_REQUIREMENTS_DEFINED": true,
+    "CDG-VPLAN-G15_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "CDG-VPLAN-G16_SOURCE_TEST_NO_MUTATION": true,
+    "CDG-VPLAN-G17_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CDG-VPLAN-G18_VALIDATION_PLAN_REPORTS_WRITTEN": false,
+    "CDG-VPLAN-G19_VALIDATION_PLAN_MANIFEST_SEAL_WRITTEN": false,
+    "CDG-VPLAN-G20_OUTPUT_SCOPE_EXACT": false,
+    "CDG-VPLAN-G21_JSON_CANONICAL": false,
+    "CDG-VPLAN-G22_MANIFEST_COMPLETE": false,
+    "CDG-VPLAN-G23_SEAL_VALID": false,
+    "CDG-VPLAN-G24_TMP_RESIDUE_CLEAN": false,
+    "CDG-VPLAN-G25_COMMIT_ALLOWLIST": false,
+    "CDG-VPLAN-G26_COMMIT_CREATED": false,
+    "CDG-VPLAN-G27_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "d902916700f74b7407012a4425b2b19a2966510e",
+    "python": "Python 3.12.10",
+    "remote": "d902916700f74b7407012a4425b2b19a2966510e",
+    "subject": "Define validation map Content Engine content drafting governance core"
+  },
+  "layer_mode": "GOVERNANCE_ONLY",
+  "metrics": {
+    "acceptance_gate_count": 25,
+    "command_plan_phase_count": 7,
+    "evidence_requirement_count": 15,
+    "source_files": 19,
+    "test_files": 20,
+    "validation_map_artifacts": 10
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_VALIDATION",
+  "permissions": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "validation_allowed_next": true,
+    "validation_execution_performed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status_after": "VALIDATION_PLAN_DEFINED",
+  "status_before": "VALIDATION_MAP_DEFINED",
+  "step": "VALIDATION_PLAN",
+  "validation_command_plan": [
+    {
+      "commands": [
+        "AST import/call scan over source allowlist",
+        "forbidden contiguous literal scan",
+        "forbidden publishable language scan"
+      ],
+      "execution_mode": "future_validation_only",
+      "phase": "P01_STATIC_SECURITY",
+      "required_result": "zero violations",
+      "run_order": 1
+    },
+    {
+      "commands": [
+        "python -m py_compile over all source/test allowlist"
+      ],
+      "execution_mode": "future_validation_only",
+      "phase": "P02_PY_COMPILE",
+      "required_result": "all source/test files compile",
+      "run_order": 2
+    },
+    {
+      "commands": [
+        "python -m pytest each content_drafting_governance test file -q --basetemp <unique_repo_local_basetemp>"
+      ],
+      "execution_mode": "future_validation_only",
+      "phase": "P03_TARGETED_PYTEST",
+      "required_result": "all targeted drafting governance tests pass",
+      "run_order": 3
+    },
+    {
+      "commands": [
+        "python -m pytest tests/content_engine -q --basetemp <unique_repo_local_basetemp>"
+      ],
+      "execution_mode": "future_validation_only",
+      "phase": "P04_CONTENT_ENGINE_SUITE",
+      "required_result": "content_engine suite passes",
+      "run_order": 4
+    },
+    {
+      "commands": [
+        "import content_engine.content_drafting_governance",
+        "verify hard-false state",
+        "verify multidomain support",
+        "verify monetization guard",
+        "verify marketing ethics guard",
+        "verify near-final/publishability guard",
+        "verify ARGOS metadata-only contract",
+        "verify maturity gate",
+        "verify evidence/traceability fail-closed behavior"
+      ],
+      "execution_mode": "future_validation_only",
+      "phase": "P05_RUNTIME_CONTRACT_SMOKE",
+      "required_result": "all runtime contracts pass and no productive permission opens",
+      "run_order": 5
+    },
+    {
+      "commands": [
+        "fingerprint protected roots before/after validation",
+        "hash source/test allowlist before/after validation",
+        "clean .pytest_runtime before output scope"
+      ],
+      "execution_mode": "future_validation_only",
+      "phase": "P06_NO_TOUCH_AND_SOURCE_TEST_NO_MUTATION",
+      "required_result": "no protected root mutation and no source/test mutation",
+      "run_order": 6
+    },
+    {
+      "commands": [
+        "write validation reports",
+        "write validation manifest/seal",
+        "validate canonical JSON",
+        "validate output scope exact",
+        "commit/push validation artifacts only if all gates pass"
+      ],
+      "execution_mode": "future_validation_only",
+      "phase": "P07_ARTIFACTS_MANIFEST_SEAL",
+      "required_result": "validation artifacts canonical, scoped, sealed, committed, pushed",
+      "run_order": 7
+    }
+  ]
+}
