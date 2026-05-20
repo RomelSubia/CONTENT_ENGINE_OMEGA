@@ -1,0 +1,22 @@
+{
+  "automation_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "build_allowed_now": false,
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "content_generation_allowed_now": false,
+  "draft_creation_allowed_now": false,
+  "implementation_plan_allowed_now": false,
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_MANIFEST.json",
+  "manifest_sha256": "64ff2c9d54172c1a7a9a6ebb9a6b130d42c438ef2eeef6d19120b7a109170162",
+  "manual_current_mutation_allowed_now": false,
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_REVIEW_HARDENING",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "publishing_allowed_now": false,
+  "queue_write_allowed_now": false,
+  "reports_brain_write_allowed_now": false,
+  "review_hardening_allowed_next": true,
+  "sealed_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_BLUEPRINT_DEFINED",
+  "source_mutation_allowed_now": false,
+  "status": "BLUEPRINT_DEFINED",
+  "test_mutation_allowed_now": false
+}
