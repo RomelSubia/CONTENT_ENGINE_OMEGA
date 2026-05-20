@@ -1,0 +1,80 @@
+{
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "consumed_final_approval_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_APPROVED",
+  "gates": {
+    "DRAFT-ANNEX-G01_ROOT_EXISTS": true,
+    "DRAFT-ANNEX-G02_PYTHON_31210": true,
+    "DRAFT-ANNEX-G03_BRANCH_MAIN": true,
+    "DRAFT-ANNEX-G04_REPO_CLEAN_PRE_ANNEX": true,
+    "DRAFT-ANNEX-G05_HEAD_SYNCED_PRE_ANNEX": true,
+    "DRAFT-ANNEX-G06_EXPECTED_FINAL_APPROVAL_COMMIT": true,
+    "DRAFT-ANNEX-G07_FINAL_APPROVAL_SEAL_VALID": true,
+    "DRAFT-ANNEX-G08_FINAL_APPROVAL_ARTIFACTS_PRESENT": true,
+    "DRAFT-ANNEX-G09_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "DRAFT-ANNEX-G10_ANNEX_MODEL_DEFINED": true,
+    "DRAFT-ANNEX-G11_MULTIDOMAIN_MAX_BALANCED": true,
+    "DRAFT-ANNEX-G12_MONETIZATION_MAX_BALANCED": true,
+    "DRAFT-ANNEX-G13_MARKETING_MAX_BALANCED": true,
+    "DRAFT-ANNEX-G14_CREATIVITY_CAMPAIGN_NARRATIVE_BALANCED": true,
+    "DRAFT-ANNEX-G15_METRICS_LEARNING_GROWTH_BALANCED": true,
+    "DRAFT-ANNEX-G16_NEAR_FINAL_BLOCK_MAX_STRICT": true,
+    "DRAFT-ANNEX-G17_ARGOS_COMPATIBILITY_MAX_SAFE": true,
+    "DRAFT-ANNEX-G18_FAULT_ISOLATION_MAX_SAFE": true,
+    "DRAFT-ANNEX-G19_MATURITY_AUTONOMY_MAX_CONTROLLED": true,
+    "DRAFT-ANNEX-G20_SECURITY_FAIL_CLOSED_MAX_STRICT": true,
+    "DRAFT-ANNEX-G21_IMPLEMENTATION_PLAN_REQUIREMENTS_COMPLETE": true,
+    "DRAFT-ANNEX-G22_PRODUCTIVE_ACTIONS_BLOCKED": true,
+    "DRAFT-ANNEX-G23_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "DRAFT-ANNEX-G24_REPORTS_WRITTEN": false,
+    "DRAFT-ANNEX-G25_MANIFEST_SEAL_WRITTEN": false,
+    "DRAFT-ANNEX-G26_OUTPUT_SCOPE_EXACT": false,
+    "DRAFT-ANNEX-G27_JSON_CANONICAL": false,
+    "DRAFT-ANNEX-G28_MANIFEST_COMPLETE": false,
+    "DRAFT-ANNEX-G29_SEAL_VALID": false,
+    "DRAFT-ANNEX-G30_TMP_RESIDUE_CLEAN": false,
+    "DRAFT-ANNEX-G31_COMMIT_ALLOWLIST": false,
+    "DRAFT-ANNEX-G32_COMMIT_CREATED": false,
+    "DRAFT-ANNEX-G33_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "de24221a042e9f8c6eda33e175fe03191be12269",
+    "python": "Python 3.12.10",
+    "subject": "Approve Content Engine content drafting governance core for implementation plan"
+  },
+  "metrics": {
+    "balanced_axes": 10,
+    "blocked_now": 17,
+    "implementation_plan_non_negotiable_requirements": 24
+  },
+  "monetization_real_income": {
+    "hard_requirements": [
+      "monetization_intent must be explicit",
+      "income objective must be metadata, never a guarantee",
+      "commercial claims require evidence or human review",
+      "false guarantees, unrealistic income promises, false scarcity and false urgency must block",
+      "stable real income is the strategic objective but not a permission to fabricate outcomes"
+    ],
+    "required_level": "MAXIMUM_BALANCED"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+  "permissions": {
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "build_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "implementation_allowed_now": false,
+    "implementation_plan_allowed_next": true,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "source_mutation_allowed_now": false,
+    "test_mutation_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status_after": "FINAL_HARDENING_ANNEX_DEFINED",
+  "step": "FINAL_HARDENING_ANNEX"
+}

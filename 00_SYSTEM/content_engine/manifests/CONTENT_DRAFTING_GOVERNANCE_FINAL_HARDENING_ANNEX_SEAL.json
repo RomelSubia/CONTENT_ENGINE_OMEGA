@@ -1,0 +1,23 @@
+{
+  "annex_verdict": "ALL_POINTS_ELEVATED_AND_BALANCED_FOR_IMPLEMENTATION_PLAN_DESIGN_STAGE",
+  "automation_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "build_allowed_now": false,
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "content_generation_allowed_now": false,
+  "draft_creation_allowed_now": false,
+  "implementation_allowed_now": false,
+  "implementation_plan_allowed_next": true,
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_MANIFEST.json",
+  "manifest_sha256": "ccea0e86f9535da776d14a2a210a9748959a5c9b6e6c5a7209368aef7e9c1d45",
+  "manual_current_mutation_allowed_now": false,
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "publishing_allowed_now": false,
+  "queue_write_allowed_now": false,
+  "reports_brain_write_allowed_now": false,
+  "sealed_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_FINAL_HARDENING_ANNEX_DEFINED",
+  "source_mutation_allowed_now": false,
+  "status": "FINAL_HARDENING_ANNEX_DEFINED",
+  "test_mutation_allowed_now": false
+}

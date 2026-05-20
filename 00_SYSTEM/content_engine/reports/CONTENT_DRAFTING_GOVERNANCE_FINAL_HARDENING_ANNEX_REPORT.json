@@ -1,0 +1,326 @@
+{
+  "annex": {
+    "annex_model": {
+      "annex_scope": "pre_implementation_plan_final_extreme_hardening",
+      "annex_verdict": "ALL_POINTS_ELEVATED_AND_BALANCED_FOR_IMPLEMENTATION_PLAN_DESIGN_STAGE",
+      "balanced_axes": {
+        "ARGOS_compatibility_independence": {
+          "hard_requirements": [
+            "ARGOS compatibility remains metadata/contract-ready only",
+            "no ARGOS dependency",
+            "no cross-imports",
+            "no ARGOS bridge build in this layer",
+            "read-only manifest first remains the future integration path",
+            "ARGOS cannot bypass Content Engine gates",
+            "Content Engine must remain operational without ARGOS"
+          ],
+          "required_level": "MAXIMUM_SAFE"
+        },
+        "creativity_campaigns_narrative": {
+          "hard_requirements": [
+            "creativity may propose structures but must not output final publishable content in this layer",
+            "campaign context must remain metadata/review-oriented",
+            "narrative assets must be treated as governed draft candidates, not final assets",
+            "creative freedom cannot bypass security, monetization or maturity gates"
+          ],
+          "required_level": "MAXIMUM_BALANCED"
+        },
+        "fault_isolation": {
+          "hard_requirements": [
+            "if Content Engine fails, ARGOS may register health status only",
+            "if ARGOS fails, Content Engine may mark ARGOS disconnected only",
+            "no cross-system invasive repair",
+            "no infinite interrogation loops",
+            "no cascade failure",
+            "bridge future must be health-check/status-only before any request/response bridge"
+          ],
+          "required_level": "MAXIMUM_SAFE"
+        },
+        "marketing_psychology_digital_marketing": {
+          "hard_requirements": [
+            "ethical persuasion is allowed as structure",
+            "manipulation, deception, fear pressure and sensitive audience exploitation must block",
+            "marketing psychology must remain bounded by evidence, audience safety and human review",
+            "digital marketing context must be tagged as campaign, funnel, awareness, trust, conversion or retention metadata"
+          ],
+          "required_level": "MAXIMUM_BALANCED"
+        },
+        "maturity_autonomy": {
+          "hard_requirements": [
+            "current layer remains design/governance only",
+            "promotion by evidence only",
+            "no autonomy escalation without safety, metrics, stability, need and rollback/recovery posture",
+            "maturity_level_required_before_draft_creation must be planned",
+            "human_review_required must remain true for initial governed drafts"
+          ],
+          "required_level": "MAXIMUM_CONTROLLED"
+        },
+        "metrics_learning_growth_decisions": {
+          "hard_requirements": [
+            "future draft candidates must include expected_metric_metadata",
+            "learning_objective and growth_decision_context must be representable",
+            "no growth decision can be treated as validated without metrics/evidence",
+            "future optimization must be evidence-based, not assumed"
+          ],
+          "required_level": "MAXIMUM_BALANCED"
+        },
+        "monetization_real_income": {
+          "hard_requirements": [
+            "monetization_intent must be explicit",
+            "income objective must be metadata, never a guarantee",
+            "commercial claims require evidence or human review",
+            "false guarantees, unrealistic income promises, false scarcity and false urgency must block",
+            "stable real income is the strategic objective but not a permission to fabricate outcomes"
+          ],
+          "required_level": "MAXIMUM_BALANCED"
+        },
+        "multidomain_multichannel": {
+          "hard_requirements": [
+            "every future draft object must include channel_or_domain_id",
+            "domain identity, tone, audience and offer/value context must be explicit",
+            "Finca San Mateo, cacao, arriendos, Bravi, BramViss, digital channels A/B/C/D, websites and future brands must be supported as governed domains",
+            "cross-domain contamination must block",
+            "social channels and business domains must not share uncontrolled tone, policy or claims"
+          ],
+          "required_level": "MAXIMUM_BALANCED"
+        },
+        "near_final_content_blocking": {
+          "hard_requirements": [
+            "publishability_score must exist in future implementation",
+            "hard block threshold required for final/near-final content",
+            "caption final, publication-ready script, ready-to-post copy, final CTA and final campaign text must block",
+            "governance-only examples must be clearly non-final and non-publishable",
+            "final_output_allowed must remain false until future publication governance closure"
+          ],
+          "required_level": "MAXIMUM_STRICT"
+        },
+        "security_fail_closed_no_touch": {
+          "hard_requirements": [
+            "fail-closed on missing evidence",
+            "fail-closed on conflicting permissions",
+            "fail-closed on output scope mismatch",
+            "protected roots no-touch",
+            "manual current, brain, reports-brain, queue data, metrics, assets and publication roots remain blocked",
+            "no source/test mutation in annex",
+            "implementation plan only remains next"
+          ],
+          "required_level": "MAXIMUM_STRICT"
+        }
+      },
+      "blocked_now": [
+        "implementation",
+        "automatic_block_build",
+        "source_mutation",
+        "test_mutation",
+        "draft_creation",
+        "content_generation",
+        "queue_write",
+        "real_queue_mutation",
+        "publishing",
+        "automation",
+        "n8n",
+        "webhook",
+        "CAPA9",
+        "manual_current_mutation",
+        "brain_write",
+        "reports_brain_write",
+        "ARGOS_bridge_build"
+      ],
+      "implementation_plan_non_negotiable_requirements": [
+        "exact source allowlist",
+        "exact test allowlist",
+        "exact report/manifest/seal allowlist",
+        "draft candidate schema with required domain/channel metadata",
+        "monetization claim risk classifier",
+        "ethical marketing boundary guard",
+        "near-final publishability score with hard block threshold",
+        "domain contamination guard",
+        "ARGOS compatibility metadata only",
+        "maturity gate contract",
+        "human review required contract",
+        "final_output_allowed false contract",
+        "draft_creation_allowed false until future validated closure",
+        "static source scan",
+        "forbidden operational literal scan",
+        "py_compile",
+        "targeted pytest",
+        "content_engine suite compatibility",
+        "runtime smoke checks",
+        "no-touch protected roots",
+        "output scope exact",
+        "canonical JSON",
+        "manifest/seal",
+        "commit/push/sync"
+      ],
+      "production_real_principle": "No implementation plan may be accepted unless every planned module, test, runtime check, report, manifest and seal preserves multidomain monetization, ethical marketing, near-final content blocking, ARGOS independence, maturity-by-evidence and fail-closed governance.",
+      "purpose": "Elevate and balance all Content Drafting Governance Core design points before implementation planning, without opening implementation, build, draft creation, content generation, queue write, publishing or automation.",
+      "status": "FINAL_HARDENING_ANNEX_DEFINED"
+    },
+    "status": "PASS"
+  },
+  "blocked_operations": {
+    "argos_bridge_build_performed": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "build_started": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "implementation_plan_started": false,
+    "implementation_started": false,
+    "manual_current_mutation_performed": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "real_queue_mutation_performed": false,
+    "reports_brain_write_performed": false,
+    "source_mutation_performed": false,
+    "status": "PASS",
+    "test_mutation_performed": false
+  },
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "consumed_final_approval_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_APPROVED",
+  "final_approval_evidence": {
+    "artifact_count": 12,
+    "manifest": {
+      "canonical_json": true,
+      "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+      "git_context": {
+        "branch": "main",
+        "head": "d4f7540a64dc1f3c894c0d13ed2844c05fcf6fdc",
+        "python": "Python 3.12.10",
+        "subject": "Harden Content Engine content drafting governance core blueprint"
+      },
+      "hash_algorithm": "sha256",
+      "hashed_artifacts": {
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_APPROVAL_MATRIX_REPORT.json": "401d36594e119f5169e2a9d3ba442d42f23f89d2e69e78068705f88cd8bafe72",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_ARGOS_REPORT.json": "6f68d0849e9906522dd257aaf4df380fbcacc4742964e3793fd67c97973e5f61",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_CHAIN_REPORT.json": "716049a3d1df68b56b7425c946f6e596369c0ec61dc070ebaf9dd2273961d503",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_IMPLEMENTATION_PLAN_READINESS_REPORT.json": "2a5dcb34806b89f2db412e0d3fdfd908d7e91888d012adf50f466f95e6746b2b",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MATURITY_REPORT.json": "d686e1e240063a16a863590c5969ca0d7949ae4e1c394c6d20a1ffda48c527d1",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MONETIZATION_REPORT.json": "462ed59d96a7d4fb44427b2d79376d2fe79ea15008c254359da6d2d4db036e3c",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MULTIDOMAIN_REPORT.json": "9fc281a5aadd3d91089f258a3057b37c20640ec254e0d392d2409396c2f07a90",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_REPORT.json": "410ea62da46bc601cf87633073eb890cc6205e68f8fd3909dc8fe3c37ea028ba",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SECURITY_REPORT.json": "73be0b7c0d83a1404af120e7018cec4336141b1684760fbc8330742dfd13b515",
+        "05_REPORTS/content_engine/CONTENT_DRAFTING_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW.md": "526e7b5d881285bfa75c80ab62f23d01dea348f982190cf9f3168a7b5e90f124"
+      },
+      "manifest_completeness": "PASS",
+      "manifest_type": "CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MANIFEST",
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+      "produced_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_APPROVAL_MATRIX_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_ARGOS_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_CHAIN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_IMPLEMENTATION_PLAN_READINESS_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MATURITY_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MONETIZATION_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MULTIDOMAIN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_REPORT.json",
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SECURITY_REPORT.json",
+        "05_REPORTS/content_engine/CONTENT_DRAFTING_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW.md"
+      ],
+      "project": "CONTENT_ENGINE_OMEGA",
+      "result": "PASS",
+      "self_referential_artifacts": [
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+        "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json"
+      ],
+      "status": "FINAL_APPROVAL_APPROVED"
+    },
+    "seal": {
+      "approval_scope": "IMPLEMENTATION_PLAN_ONLY",
+      "automation_allowed_now": false,
+      "brain_write_allowed_now": false,
+      "build_allowed_now": false,
+      "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+      "content_generation_allowed_now": false,
+      "draft_creation_allowed_now": false,
+      "implementation_allowed_now": false,
+      "implementation_plan_allowed_next": true,
+      "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+      "manifest_sha256": "98a04002aef0e38834fa2a33a8bee0eb6042f89ec448620b69d05a1a61821d84",
+      "manual_current_mutation_allowed_now": false,
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+      "project": "CONTENT_ENGINE_OMEGA",
+      "publishing_allowed_now": false,
+      "queue_write_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "sealed_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_APPROVED",
+      "source_mutation_allowed_now": false,
+      "status": "FINAL_APPROVAL_APPROVED",
+      "test_mutation_allowed_now": false
+    },
+    "status": "PASS"
+  },
+  "gates": {
+    "DRAFT-ANNEX-G01_ROOT_EXISTS": true,
+    "DRAFT-ANNEX-G02_PYTHON_31210": true,
+    "DRAFT-ANNEX-G03_BRANCH_MAIN": true,
+    "DRAFT-ANNEX-G04_REPO_CLEAN_PRE_ANNEX": true,
+    "DRAFT-ANNEX-G05_HEAD_SYNCED_PRE_ANNEX": true,
+    "DRAFT-ANNEX-G06_EXPECTED_FINAL_APPROVAL_COMMIT": true,
+    "DRAFT-ANNEX-G07_FINAL_APPROVAL_SEAL_VALID": true,
+    "DRAFT-ANNEX-G08_FINAL_APPROVAL_ARTIFACTS_PRESENT": true,
+    "DRAFT-ANNEX-G09_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "DRAFT-ANNEX-G10_ANNEX_MODEL_DEFINED": true,
+    "DRAFT-ANNEX-G11_MULTIDOMAIN_MAX_BALANCED": true,
+    "DRAFT-ANNEX-G12_MONETIZATION_MAX_BALANCED": true,
+    "DRAFT-ANNEX-G13_MARKETING_MAX_BALANCED": true,
+    "DRAFT-ANNEX-G14_CREATIVITY_CAMPAIGN_NARRATIVE_BALANCED": true,
+    "DRAFT-ANNEX-G15_METRICS_LEARNING_GROWTH_BALANCED": true,
+    "DRAFT-ANNEX-G16_NEAR_FINAL_BLOCK_MAX_STRICT": true,
+    "DRAFT-ANNEX-G17_ARGOS_COMPATIBILITY_MAX_SAFE": true,
+    "DRAFT-ANNEX-G18_FAULT_ISOLATION_MAX_SAFE": true,
+    "DRAFT-ANNEX-G19_MATURITY_AUTONOMY_MAX_CONTROLLED": true,
+    "DRAFT-ANNEX-G20_SECURITY_FAIL_CLOSED_MAX_STRICT": true,
+    "DRAFT-ANNEX-G21_IMPLEMENTATION_PLAN_REQUIREMENTS_COMPLETE": true,
+    "DRAFT-ANNEX-G22_PRODUCTIVE_ACTIONS_BLOCKED": true,
+    "DRAFT-ANNEX-G23_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "DRAFT-ANNEX-G24_REPORTS_WRITTEN": false,
+    "DRAFT-ANNEX-G25_MANIFEST_SEAL_WRITTEN": false,
+    "DRAFT-ANNEX-G26_OUTPUT_SCOPE_EXACT": false,
+    "DRAFT-ANNEX-G27_JSON_CANONICAL": false,
+    "DRAFT-ANNEX-G28_MANIFEST_COMPLETE": false,
+    "DRAFT-ANNEX-G29_SEAL_VALID": false,
+    "DRAFT-ANNEX-G30_TMP_RESIDUE_CLEAN": false,
+    "DRAFT-ANNEX-G31_COMMIT_ALLOWLIST": false,
+    "DRAFT-ANNEX-G32_COMMIT_CREATED": false,
+    "DRAFT-ANNEX-G33_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "de24221a042e9f8c6eda33e175fe03191be12269",
+    "python": "Python 3.12.10",
+    "subject": "Approve Content Engine content drafting governance core for implementation plan"
+  },
+  "metrics": {
+    "balanced_axes": 10,
+    "blocked_now": 17,
+    "implementation_plan_non_negotiable_requirements": 24
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+  "no_touch": {
+    "changed": {},
+    "status": "PASS"
+  },
+  "permissions": {
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "build_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "implementation_allowed_now": false,
+    "implementation_plan_allowed_next": true,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "source_mutation_allowed_now": false,
+    "test_mutation_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status_after": "FINAL_HARDENING_ANNEX_DEFINED",
+  "step": "FINAL_HARDENING_ANNEX",
+  "summary": "Final hardening annex defined before implementation plan."
+}
