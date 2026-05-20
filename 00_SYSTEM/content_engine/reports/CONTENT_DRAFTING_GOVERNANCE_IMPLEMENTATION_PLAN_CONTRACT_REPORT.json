@@ -1,0 +1,227 @@
+{
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "consumed_annex_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_FINAL_HARDENING_ANNEX_DEFINED",
+  "gates": {
+    "DRAFT-PLAN-G01_ROOT_EXISTS": true,
+    "DRAFT-PLAN-G02_PYTHON_31210": true,
+    "DRAFT-PLAN-G03_BRANCH_MAIN": true,
+    "DRAFT-PLAN-G04_REPO_CLEAN_PRE_PLAN": true,
+    "DRAFT-PLAN-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "DRAFT-PLAN-G06_EXPECTED_FINAL_ANNEX_COMMIT": true,
+    "DRAFT-PLAN-G07_FINAL_ANNEX_SEAL_VALID": true,
+    "DRAFT-PLAN-G08_FINAL_ANNEX_ARTIFACTS_PRESENT": true,
+    "DRAFT-PLAN-G09_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "DRAFT-PLAN-G10_PLAN_MODEL_DEFINED": true,
+    "DRAFT-PLAN-G11_SOURCE_ALLOWLIST_EXACT": true,
+    "DRAFT-PLAN-G12_TEST_ALLOWLIST_EXACT": true,
+    "DRAFT-PLAN-G13_OUTPUT_ALLOWLIST_EXACT": true,
+    "DRAFT-PLAN-G14_CONTRACTS_COMPLETE": true,
+    "DRAFT-PLAN-G15_MULTIDOMAIN_CONTRACTS_PRESENT": true,
+    "DRAFT-PLAN-G16_MONETIZATION_CONTRACTS_PRESENT": true,
+    "DRAFT-PLAN-G17_MARKETING_ETHICS_CONTRACTS_PRESENT": true,
+    "DRAFT-PLAN-G18_NEAR_FINAL_GUARD_CONTRACTS_PRESENT": true,
+    "DRAFT-PLAN-G19_ARGOS_METADATA_ONLY_CONTRACT_PRESENT": true,
+    "DRAFT-PLAN-G20_MATURITY_CONTRACTS_PRESENT": true,
+    "DRAFT-PLAN-G21_TEST_MATRIX_COMPLETE": true,
+    "DRAFT-PLAN-G22_SECURITY_SCANS_DEFINED": true,
+    "DRAFT-PLAN-G23_RUNTIME_SMOKE_DEFINED": true,
+    "DRAFT-PLAN-G24_NO_TOUCH_REQUIREMENTS_DEFINED": true,
+    "DRAFT-PLAN-G25_PRODUCTIVE_ACTIONS_BLOCKED": true,
+    "DRAFT-PLAN-G26_NO_TOUCH_PROTECTED_ROOTS_PASS": true,
+    "DRAFT-PLAN-G27_REPORTS_WRITTEN": false,
+    "DRAFT-PLAN-G28_MANIFEST_SEAL_WRITTEN": false,
+    "DRAFT-PLAN-G29_OUTPUT_SCOPE_EXACT": false,
+    "DRAFT-PLAN-G30_JSON_CANONICAL": false,
+    "DRAFT-PLAN-G31_MANIFEST_COMPLETE": false,
+    "DRAFT-PLAN-G32_SEAL_VALID": false,
+    "DRAFT-PLAN-G33_TMP_RESIDUE_CLEAN": false,
+    "DRAFT-PLAN-G34_COMMIT_ALLOWLIST": false,
+    "DRAFT-PLAN-G35_COMMIT_CREATED": false,
+    "DRAFT-PLAN-G36_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "c81c3e37541dcad64ce14bade54e77fb26499221",
+    "python": "Python 3.12.10",
+    "subject": "Add final hardening annex for Content Engine content drafting governance core"
+  },
+  "metrics": {
+    "failure_injection_tests_required": 14,
+    "future_build_output_allowlist_count": 10,
+    "minimum_targeted_tests": 44,
+    "module_contract_count": 19,
+    "negative_tests_required": 24,
+    "source_allowlist_count": 19,
+    "test_allowlist_count": 20
+  },
+  "module_contracts": {
+    "__init__.py": [
+      "export only safe public governance helpers",
+      "no runtime side effects",
+      "no external calls"
+    ],
+    "draft_argos_contract_hint.py": [
+      "metadata only",
+      "no ARGOS dependency",
+      "no cross imports",
+      "read-only manifest future hint only",
+      "health-status bridge hint only",
+      "ARGOS cannot bypass gates"
+    ],
+    "draft_boundary_guard.py": [
+      "block publish commands",
+      "block automation commands",
+      "block queue mutation",
+      "block external API/webhook instruction",
+      "block human bypass phrases as authorization",
+      "block script execution semantics"
+    ],
+    "draft_candidate_schema.py": [
+      "draft_candidate_id required",
+      "channel_or_domain_id required",
+      "monetization_intent required",
+      "communication_intent required",
+      "audience_profile required",
+      "offer_or_value_proposition required when commercial",
+      "campaign_or_growth_context required",
+      "expected_metric_metadata required",
+      "learning_objective required",
+      "growth_decision_context required",
+      "human_review_required true",
+      "final_output_allowed false"
+    ],
+    "draft_channel_policy.py": [
+      "support Finca San Mateo",
+      "support cacao",
+      "support arriendos",
+      "support Bravi",
+      "support BramViss",
+      "support digital channels A/B/C/D",
+      "support social networks",
+      "support websites",
+      "support future businesses or brands",
+      "domain tone and policy required"
+    ],
+    "draft_domain_contamination_guard.py": [
+      "block mixed domain tone",
+      "block cross-domain policy leakage",
+      "block business/social uncontrolled claim mixing",
+      "require explicit channel_or_domain_id"
+    ],
+    "draft_evidence_contract.py": [
+      "evidence_refs required",
+      "fail closed on missing evidence when claims require evidence",
+      "canonical evidence object"
+    ],
+    "draft_failure_policy.py": [
+      "fail closed on missing required metadata",
+      "fail closed on conflicting permissions",
+      "fail closed on publishability risk",
+      "fail closed on policy contamination"
+    ],
+    "draft_lifecycle_state.py": [
+      "CONCEPTUAL_ONLY",
+      "DRAFT_GOVERNANCE_REVIEW_REQUIRED",
+      "BLOCKED_BY_POLICY",
+      "BLOCKED_BY_MATURITY",
+      "BLOCKED_BY_RISK",
+      "READY_FOR_HUMAN_REVIEW_ONLY",
+      "no published/final status"
+    ],
+    "draft_manifest_contract.py": [
+      "canonical JSON manifest",
+      "hash artifacts",
+      "seal hard false permissions",
+      "next safe step binding"
+    ],
+    "draft_marketing_ethics_guard.py": [
+      "ethical persuasion allowed as structure",
+      "manipulation blocks",
+      "deception blocks",
+      "fear pressure blocks",
+      "sensitive audience exploitation blocks",
+      "false urgency/scarcity blocks"
+    ],
+    "draft_maturity_gate.py": [
+      "promotion by evidence only",
+      "maturity_level_required_before_draft_creation",
+      "no autonomy escalation",
+      "require metrics/safety/stability/need/recovery posture"
+    ],
+    "draft_monetization_guard.py": [
+      "monetization claim risk classifier",
+      "income objective is metadata only",
+      "false guarantee blocks",
+      "unrealistic income promise blocks",
+      "commercial claims require evidence/human review"
+    ],
+    "draft_near_final_guard.py": [
+      "detect final caption",
+      "detect final script",
+      "detect ready-to-post copy",
+      "detect final CTA",
+      "detect final campaign text",
+      "governance-only examples allowed only if non-final"
+    ],
+    "draft_output_schema.py": [
+      "human_review_required true",
+      "final_output_allowed false",
+      "draft_creation_performed false",
+      "content_generation_performed false",
+      "queue_write_performed false",
+      "publishing_performed false",
+      "automation_performed false"
+    ],
+    "draft_publishability_guard.py": [
+      "publishability_score required",
+      "hard block threshold required",
+      "final_output_allowed always false in this layer",
+      "near-final and publishable text blocked"
+    ],
+    "draft_sensitive_data_guard.py": [
+      "block personal contact data in human-visible draft fields",
+      "block secrets/tokens/keys",
+      "block local sensitive paths in human fields",
+      "avoid false positives on technical IDs"
+    ],
+    "draft_traceability_contract.py": [
+      "traceability refs required",
+      "link to generation governance candidate optional",
+      "link to channel/domain policy required"
+    ],
+    "drafting_governance_state.py": [
+      "hard false permissions",
+      "draft_creation_allowed_now false",
+      "content_generation_allowed_now false",
+      "queue_write_allowed_now false",
+      "publishing_allowed_now false",
+      "automation_allowed_now false",
+      "maturity_level_current 0"
+    ]
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+  "permissions": {
+    "automatic_block_build_allowed_next": true,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "build_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "implementation_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "post_build_audit_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "source_mutation_allowed_now": false,
+    "test_mutation_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_map_allowed_now": false,
+    "validation_plan_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "status_after": "IMPLEMENTATION_PLAN_DEFINED",
+  "step": "IMPLEMENTATION_PLAN"
+}
