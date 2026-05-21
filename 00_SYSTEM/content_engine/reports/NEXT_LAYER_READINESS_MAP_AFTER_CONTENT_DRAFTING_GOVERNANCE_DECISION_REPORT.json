@@ -1,0 +1,71 @@
+{
+  "allowed_next_action": "BLUEPRINT_ONLY",
+  "consumed_component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "consumed_gate_closure": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+    "manifest_sha256": "caab0376b87e1584ad0ff2a6b4e969ca6a1be508becbc7398875a213348b9168",
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+    "seal_sha256": "0b1178a884ff8de8f69de9726400c2e76234d7838c7897c51a3c66be08d5692e"
+  },
+  "consumed_status": "CLOSED_VALIDATED",
+  "decision": {
+    "allowed_next_action": "BLUEPRINT_ONLY",
+    "reason": "A runtime governance layer is required before any real draft creation or productive content execution can be allowed.",
+    "selected_next_layer": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE"
+  },
+  "gates": {
+    "NLR-CDG-G01_ROOT_EXISTS": true,
+    "NLR-CDG-G02_PYTHON_OK": true,
+    "NLR-CDG-G03_BRANCH_MAIN": true,
+    "NLR-CDG-G04_REPO_CLEAN_PRE_READINESS": true,
+    "NLR-CDG-G05_HEAD_SYNCED_PRE_READINESS": true,
+    "NLR-CDG-G06_GATE_CLOSURE_COMMIT_SUBJECT_OK": true,
+    "NLR-CDG-G07_GATE_CLOSURE_SEAL_PRESENT": true,
+    "NLR-CDG-G08_GATE_CLOSURE_MANIFEST_PRESENT": true,
+    "NLR-CDG-G09_GATE_CLOSURE_SEAL_HASH_OK": true,
+    "NLR-CDG-G10_CLOSED_VALIDATED_STATUS_OK": true,
+    "NLR-CDG-G11_NEXT_LAYER_READINESS_ALLOWED": true,
+    "NLR-CDG-G12_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "NLR-CDG-G13_NEXT_LAYER_SELECTED": true,
+    "NLR-CDG-G14_BLUEPRINT_ONLY_ACTION_DEFINED": true,
+    "NLR-CDG-G15_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "NLR-CDG-G16_READINESS_REPORTS_WRITTEN": false,
+    "NLR-CDG-G17_READINESS_MANIFEST_WRITTEN": false,
+    "NLR-CDG-G18_READINESS_SEAL_WRITTEN": false,
+    "NLR-CDG-G19_OUTPUT_SCOPE_EXACT": false,
+    "NLR-CDG-G20_JSON_CANONICAL": false,
+    "NLR-CDG-G21_MANIFEST_COMPLETE": false,
+    "NLR-CDG-G22_SEAL_VALID": false,
+    "NLR-CDG-G23_NO_TOUCH_PROTECTED_ROOTS": false,
+    "NLR-CDG-G24_COMMIT_ALLOWLIST_EXACT": false,
+    "NLR-CDG-G25_COMMIT_CREATED": false,
+    "NLR-CDG-G26_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "25d8369fea43e7564a2cc5b0a0588db77f3a2950",
+    "python": "Python 3.12.10",
+    "remote": "25d8369fea43e7564a2cc5b0a0588db77f3a2950",
+    "subject": "Close Content Drafting Governance Core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT",
+  "permissions": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "blueprint_allowed_next": true,
+    "brain_write_allowed_now": false,
+    "build_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "implementation_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "selected_next_layer": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+  "status": "DEFINED",
+  "step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE"
+}
