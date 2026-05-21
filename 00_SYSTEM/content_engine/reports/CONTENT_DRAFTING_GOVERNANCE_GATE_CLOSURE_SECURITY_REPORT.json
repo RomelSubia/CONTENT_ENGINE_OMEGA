@@ -1,0 +1,71 @@
+{
+  "closed_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_CLOSED_VALIDATED",
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "consumed_validation": {
+    "validation_manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MANIFEST.json",
+    "validation_manifest_sha256": "5750311939a7bcb928b5d6d1c668cd14d6cfd23503e93e80171a201d03b3ab4a",
+    "validation_seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+    "validation_seal_sha256": "4bd4edf95f88b4d74218f642e24d58423c494e153c8ab6132ab376eb403fde9e"
+  },
+  "consumed_validation_commit": {
+    "branch": "main",
+    "head": "b0186b82fca5cf1e2b17a328e228e92420442cda",
+    "python": "Python 3.12.10",
+    "remote": "b0186b82fca5cf1e2b17a328e228e92420442cda",
+    "subject": "Validate and harden Content Drafting Governance Core"
+  },
+  "gates": {
+    "CDG-GATE-CLOSURE-G01_ROOT_EXISTS": true,
+    "CDG-GATE-CLOSURE-G02_PYTHON_OK": true,
+    "CDG-GATE-CLOSURE-G03_BRANCH_MAIN": true,
+    "CDG-GATE-CLOSURE-G04_REPO_CLEAN_PRE_CLOSURE": true,
+    "CDG-GATE-CLOSURE-G05_HEAD_SYNCED_PRE_CLOSURE": true,
+    "CDG-GATE-CLOSURE-G06_VALIDATION_COMMIT_SUBJECT_OK": true,
+    "CDG-GATE-CLOSURE-G07_VALIDATION_SEAL_PRESENT": true,
+    "CDG-GATE-CLOSURE-G08_VALIDATION_MANIFEST_PRESENT": true,
+    "CDG-GATE-CLOSURE-G09_VALIDATION_SEAL_HASH_OK": true,
+    "CDG-GATE-CLOSURE-G10_VALIDATION_STATUS_OK": true,
+    "CDG-GATE-CLOSURE-G11_VALIDATION_NEXT_STEP_OK": true,
+    "CDG-GATE-CLOSURE-G12_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CDG-GATE-CLOSURE-G13_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CDG-GATE-CLOSURE-G14_GATE_CLOSURE_REPORTS_WRITTEN": false,
+    "CDG-GATE-CLOSURE-G15_GATE_CLOSURE_MANIFEST_WRITTEN": false,
+    "CDG-GATE-CLOSURE-G16_GATE_CLOSURE_SEAL_WRITTEN": false,
+    "CDG-GATE-CLOSURE-G17_OUTPUT_SCOPE_EXACT": false,
+    "CDG-GATE-CLOSURE-G18_JSON_CANONICAL": false,
+    "CDG-GATE-CLOSURE-G19_MANIFEST_COMPLETE": false,
+    "CDG-GATE-CLOSURE-G20_SEAL_VALID": false,
+    "CDG-GATE-CLOSURE-G21_NO_TOUCH_PROTECTED_ROOTS": false,
+    "CDG-GATE-CLOSURE-G22_COMMIT_ALLOWLIST_EXACT": false,
+    "CDG-GATE-CLOSURE-G23_COMMIT_CREATED": false,
+    "CDG-GATE-CLOSURE-G24_PUSH_SYNC": false
+  },
+  "next_safe_step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE",
+  "permissions": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "next_layer_build_allowed_now": false,
+    "next_layer_readiness_map_allowed_next": true,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "security": {
+    "argos_bridge_build_blocked": true,
+    "content_generation_blocked": true,
+    "draft_creation_blocked": true,
+    "manual_brain_reports_brain_blocked": true,
+    "productive_operations_blocked": true,
+    "publishing_automation_blocked": true,
+    "queue_write_blocked": true
+  },
+  "status_after": "CLOSED_VALIDATED",
+  "status_before": "VALIDATED_POST_AUDITED",
+  "step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE"
+}
