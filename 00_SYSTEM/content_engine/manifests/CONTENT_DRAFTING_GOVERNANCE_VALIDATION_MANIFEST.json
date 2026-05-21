@@ -1,0 +1,70 @@
+{
+  "canonical_json": true,
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "component_status": "VALIDATED_POST_AUDITED",
+  "git_context": {
+    "branch": "main",
+    "dirty_paths": [
+      "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_boundary_guard.py",
+      "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_candidate_schema.py",
+      "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_channel_policy.py",
+      "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_marketing_ethics_guard.py",
+      "tests/content_engine/test_draft_boundary_guard.py",
+      "tests/content_engine/test_draft_candidate_schema.py",
+      "tests/content_engine/test_draft_channel_policy.py",
+      "tests/content_engine/test_draft_marketing_ethics_guard.py"
+    ],
+    "head": "cdd8d7cca40b2a3fccd6e7f42318ed55e93fc0e3",
+    "python": "Python 3.12.10",
+    "remote": "cdd8d7cca40b2a3fccd6e7f42318ed55e93fc0e3",
+    "subject": "Define validation plan Content Engine content drafting governance core"
+  },
+  "hardening": "FINAL_CONSOLIDATED_HARDENING_WITH_SCHEMA_ALIAS_EXTENSION_AND_TRACEABILITY_HARNESS_ALIGNMENT",
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_CHAIN_REPORT.json": "7f2f0111e10d8419ec12be3e454a990991bf5954610269d2b7f3139b1a692c8e",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_COMPILE_REPORT.json": "3d2c813a9a73d8b63ed8f0644b5861269b9d6e24b64e2d1217dc016bb30add65",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_DOMAIN_REPORT.json": "1f1ce485bec8e1f200f3884edf6741a1e4ae22b8c3cf5d2c7594924bcb652b9f",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_NO_TOUCH_REPORT.json": "54f3ec64b7470c602f0db91633aa29d6f49d1ca2e4fd9f415cd152e5f0ef5de9",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_OUTPUT_SCOPE_REPORT.json": "e88ce8c95bdb03598a2ea507e7ddf31ae962f71c6a63c1698b3f80cd3b395a8a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_READINESS_REPORT.json": "57ea981930e456c6e949234cb76d3777252104631a2de0e2619462c636be4e56",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_REPORT.json": "3ecc796bf058f22bfff5ad20882a74b71153cff733dc7ca2dd828b079aa9b255",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_RUNTIME_REPORT.json": "cdbf07112e97eaad2be2aee6474b15c80c11d6163154ce62a36b1968b3bf283a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SECURITY_REPORT.json": "e52debf1f4b7a6b1c40c1b7f3439c50f170f3101e3568beecbd42ddfca70039b",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_STATIC_SCAN_REPORT.json": "0394fb8af8589c83ed813868d6297aec194058c341958d8a33f6cbf20be75ae4",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_TEST_REPORT.json": "949741d766beec0b8ce4212dc0e584539774e8f97229171ad910d73f85e51808",
+    "05_REPORTS/content_engine/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SUMMARY.md": "12f4616bb84dadf23a2e0dda169ad6c65d10bf435f181ebfbad4209368095adc"
+  },
+  "manifest_completeness": "PASS",
+  "manifest_type": "CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MANIFEST",
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE",
+  "patched_files": [
+    "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_boundary_guard.py",
+    "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_candidate_schema.py",
+    "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_channel_policy.py",
+    "04_SCRIPTS/python/content_engine/content_drafting_governance/draft_marketing_ethics_guard.py",
+    "tests/content_engine/test_draft_boundary_guard.py",
+    "tests/content_engine/test_draft_candidate_schema.py",
+    "tests/content_engine/test_draft_channel_policy.py",
+    "tests/content_engine/test_draft_marketing_ethics_guard.py"
+  ],
+  "produced_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_CHAIN_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_COMPILE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_DOMAIN_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_OUTPUT_SCOPE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_READINESS_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_RUNTIME_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SECURITY_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_STATIC_SCAN_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_TEST_REPORT.json",
+    "05_REPORTS/content_engine/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "validation_status": "PASSED"
+}

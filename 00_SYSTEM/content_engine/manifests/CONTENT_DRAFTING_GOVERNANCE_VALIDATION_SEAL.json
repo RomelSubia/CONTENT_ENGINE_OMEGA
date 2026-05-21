@@ -1,0 +1,21 @@
+{
+  "argos_bridge_build_allowed_now": false,
+  "automation_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "component": "CONTENT_DRAFTING_GOVERNANCE_CORE",
+  "content_drafting_governance_status": "VALIDATED_POST_AUDITED",
+  "content_generation_allowed_now": false,
+  "draft_creation_allowed_now": false,
+  "gate_closure_allowed_next": true,
+  "hardening": "FINAL_CONSOLIDATED_HARDENING_WITH_SCHEMA_ALIAS_EXTENSION_AND_TRACEABILITY_HARNESS_ALIGNMENT",
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MANIFEST.json",
+  "manifest_sha256": "5750311939a7bcb928b5d6d1c668cd14d6cfd23503e93e80171a201d03b3ab4a",
+  "manual_current_mutation_allowed_now": false,
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "publishing_allowed_now": false,
+  "queue_write_allowed_now": false,
+  "reports_brain_write_allowed_now": false,
+  "sealed_status": "CONTENT_DRAFTING_GOVERNANCE_CORE_VALIDATED_POST_AUDITED",
+  "validation_status": "PASSED"
+}
