@@ -1,0 +1,790 @@
+{
+  "component": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+  "consumed_post_build_audit": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+    "manifest_sha256": "355c21d6de5868f97f5477681f4047c3fc1b4ad3aae0414ba8d84a997eaef5c5",
+    "report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_REPORT.json",
+    "report_sha256": "ef97e45777dba6daef117f7c221d98b1a83f69e8d0001f859d0c7f4dacc963b2",
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+    "seal_sha256": "db00015d9ad6c9df106515e0c0321c98f3377b6ad49ded5e12152f9b26855d24",
+    "security_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SECURITY_REPORT.json",
+    "security_report_sha256": "4e61e054d2a24eff283234e5d9339870c8f69dbcebee391923e709a722880125",
+    "source_test_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SOURCE_TEST_REPORT.json",
+    "source_test_report_sha256": "243bf66569d9c0b2d3cf46f1e092d3d568566f2cab29d4a056de3371cda3c87b",
+    "test_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_TEST_REPORT.json",
+    "test_report_sha256": "e77357ab74064343c6ddbbfcb9abd903577a2126c76b93253f9eef5087c42889"
+  },
+  "gate_count": 118,
+  "gates": {
+    "CDR-VM-G01_ROOT_EXISTS": true,
+    "CDR-VM-G02_PYTHON_OK": true,
+    "CDR-VM-G03_BRANCH_MAIN": true,
+    "CDR-VM-G04_REPO_CLEAN_PRE_VALIDATION_MAP": true,
+    "CDR-VM-G05_HEAD_SYNCED_PRE_VALIDATION_MAP": true,
+    "CDR-VM-G06_POST_BUILD_AUDIT_COMMIT_SUBJECT_OK": true,
+    "CDR-VM-G07_POST_BUILD_AUDIT_SEAL_PRESENT": true,
+    "CDR-VM-G08_POST_BUILD_AUDIT_MANIFEST_PRESENT": true,
+    "CDR-VM-G09_POST_BUILD_AUDIT_REPORTS_PRESENT": true,
+    "CDR-VM-G10_POST_BUILD_AUDIT_SEAL_HASH_OK": true,
+    "CDR-VM-G11_POST_BUILD_AUDIT_STATUS_OK": true,
+    "CDR-VM-G12_VALIDATION_MAP_ALLOWED": true,
+    "CDR-VM-G13_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CDR-VM-G14_VALIDATION_DOMAINS_DEFINED": true,
+    "CDR-VM-G15_VALIDATION_GATES_DEFINED": true,
+    "CDR-VM-G16_NEGATIVE_CASES_DEFINED": true,
+    "CDR-VM-G17_EVIDENCE_REQUIREMENTS_DEFINED": true,
+    "CDR-VM-G18_SECURITY_REQUIREMENTS_DEFINED": true,
+    "CDR-VM-G19_NO_TOUCH_REQUIREMENTS_DEFINED": true,
+    "CDR-VM-G20_VALIDATION_PLAN_ALLOWED_NEXT_ONLY": true,
+    "CDR-VM-G21_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CDR-VM-G22_VALIDATION_MAP_REPORTS_WRITTEN": false,
+    "CDR-VM-G23_VALIDATION_MAP_MANIFEST_WRITTEN": false,
+    "CDR-VM-G24_VALIDATION_MAP_SEAL_WRITTEN": false,
+    "CDR-VM-G25_OUTPUT_SCOPE_EXACT": false,
+    "CDR-VM-G26_JSON_CANONICAL": false,
+    "CDR-VM-G27_MANIFEST_COMPLETE": false,
+    "CDR-VM-G28_SEAL_VALID": false,
+    "CDR-VM-G29_NO_TOUCH_PROTECTED_ROOTS": false,
+    "CDR-VM-G30_COMMIT_ALLOWLIST_EXACT": false,
+    "CDR-VM-G31_COMMIT_CREATED": false,
+    "CDR-VM-G32_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "4fba7a247a6604e16dd5e0d68fa86289f5d49b55",
+    "python": "Python 3.12.10",
+    "remote": "4fba7a247a6604e16dd5e0d68fa86289f5d49b55",
+    "subject": "Post-build audit Content Draft Runtime Governance Core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN",
+  "permissions": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_DEFINED",
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP",
+  "validation_gates": [
+    {
+      "domain_id": "VMD-CDR-01",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "post_build_audit_seal_valid",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-01",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "post_build_audit_manifest_hash_valid",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-01",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "build_commit_surface_confirmed",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-01",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "source_test_hashes_confirmed",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-01",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_reports_consumable",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-02",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "valid_preview_request_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-02",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "missing_required_fields_block",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-02",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "blocked_runtime_modes_fail_closed",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-02",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "unsupported_domain_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-02",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "missing_evidence_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-02",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "missing_traceability_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-02",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "human_review_false_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-02",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "maturity_non_zero_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "safe_decision_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "unsafe_decision_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "output_status_matches_decision",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "side_effects_performed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "draft_creation_performed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "content_generation_performed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "queue_write_performed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "publishing_performed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-03",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "automation_performed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "conceptual_preview_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "final_caption_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "final_script_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "final_cta_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "platform_ready_metadata_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "publish_now_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "texto_listo_para_publicar_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "hashtags_finales_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "asset_final_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-04",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "publication_link_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-05",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "empty_mutation_surface_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-05",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "non_empty_mutation_surface_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-05",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "external_calls_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-05",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "filesystem_writes_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-05",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "queue_mutation_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-05",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "publication_mutation_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-05",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "asset_generation_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-05",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "automation_triggered_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-06",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "all_states_block_productive_actions",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-06",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "preview_ready_only_conceptual_limited",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-06",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "requires_human_review_read_only",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-06",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "sealed_no_op_evidence_only",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-06",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "queue_false_everywhere",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-06",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "publish_false_everywhere",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-06",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "automation_false_everywhere",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-06",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "draft_false_everywhere",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-07",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "evidence_refs_required",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-07",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "traceability_refs_required",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-07",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "empty_evidence_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-07",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "empty_traceability_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-07",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "canonical_json_required",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-07",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "manifest_required",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-07",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "seal_required",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-07",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "traceability_required_flag",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-08",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "human_review_true_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-08",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "human_review_false_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-08",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "human_review_required_true",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-08",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "human_review_completed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-08",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "human_authorization_required_for_next_stage_true",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-08",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "human_authorization_can_execute_productive_action_now_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-09",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "supported_domain_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-09",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "unknown_domain_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-09",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "expected_domain_mismatch_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-09",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "expected_domain_match_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-09",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "domain_context_must_match_true",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-09",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "cross_domain_contamination_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-09",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "brand_voice_mixing_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-09",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "campaign_context_mixing_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-10",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "argos_metadata_only",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-10",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "argos_dependency_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-10",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "argos_controls_content_engine_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-10",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "content_engine_requires_argos_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-10",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "cross_imports_allowed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-10",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "argos_bridge_build_allowed_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-10",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "health_status_only_true",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-10",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "cascade_failure_prevention_true",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-11",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "maturity_level_zero_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-11",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "maturity_level_non_zero_blocks",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-11",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "autonomy_level_zero",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-11",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "autonomy_escalation_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-11",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "fail_closed_status",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-11",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "fail_closed_state",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-11",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "fail_closed_human_review",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-11",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "fail_closed_productive_flags_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-12",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_bundle_passes",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-12",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_bundle_canonical_required",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-12",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_bundle_manifest_true",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-12",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_bundle_seal_true",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-12",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_bundle_human_review_marker_true",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-12",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_bundle_productive_effect_claims_false",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-12",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_bundle_failure_flag_for_bad_preview",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-12",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "audit_bundle_hash_algorithm_sha256",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_requests_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_httpx_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_openai_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_elevenlabs_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_webhook_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_n8n_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_capa9_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_queue_write_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_publication_trigger_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-13",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "no_manual_brain_reports_brain_token",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-14",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "py_compile_pass",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-14",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "targeted_pytest_pass",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-14",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "content_engine_suite_pass",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-14",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "runtime_contract_smoke_pass",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-14",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "basetemp_repo_local",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-14",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "basetemp_cleaned",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-15",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "source_test_no_mutation",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-15",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "protected_roots_no_touch",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-15",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "queue_no_touch",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-15",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "publication_no_touch",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-15",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "manual_current_no_touch",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-15",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "brain_no_touch",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-15",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "reports_brain_no_touch",
+      "required": true
+    },
+    {
+      "domain_id": "VMD-CDR-15",
+      "fail_policy": "FAIL_CLOSED",
+      "gate": "argos_bridge_not_built",
+      "required": true
+    }
+  ],
+  "validation_map_status": "VALIDATION_MAP_DEFINED"
+}

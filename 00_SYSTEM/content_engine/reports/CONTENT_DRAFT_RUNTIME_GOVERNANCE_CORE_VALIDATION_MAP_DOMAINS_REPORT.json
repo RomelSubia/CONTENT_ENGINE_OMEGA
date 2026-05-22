@@ -1,0 +1,319 @@
+{
+  "component": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+  "consumed_post_build_audit": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+    "manifest_sha256": "355c21d6de5868f97f5477681f4047c3fc1b4ad3aae0414ba8d84a997eaef5c5",
+    "report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_REPORT.json",
+    "report_sha256": "ef97e45777dba6daef117f7c221d98b1a83f69e8d0001f859d0c7f4dacc963b2",
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+    "seal_sha256": "db00015d9ad6c9df106515e0c0321c98f3377b6ad49ded5e12152f9b26855d24",
+    "security_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SECURITY_REPORT.json",
+    "security_report_sha256": "4e61e054d2a24eff283234e5d9339870c8f69dbcebee391923e709a722880125",
+    "source_test_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SOURCE_TEST_REPORT.json",
+    "source_test_report_sha256": "243bf66569d9c0b2d3cf46f1e092d3d568566f2cab29d4a056de3371cda3c87b",
+    "test_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_TEST_REPORT.json",
+    "test_report_sha256": "e77357ab74064343c6ddbbfcb9abd903577a2126c76b93253f9eef5087c42889"
+  },
+  "gates": {
+    "CDR-VM-G01_ROOT_EXISTS": true,
+    "CDR-VM-G02_PYTHON_OK": true,
+    "CDR-VM-G03_BRANCH_MAIN": true,
+    "CDR-VM-G04_REPO_CLEAN_PRE_VALIDATION_MAP": true,
+    "CDR-VM-G05_HEAD_SYNCED_PRE_VALIDATION_MAP": true,
+    "CDR-VM-G06_POST_BUILD_AUDIT_COMMIT_SUBJECT_OK": true,
+    "CDR-VM-G07_POST_BUILD_AUDIT_SEAL_PRESENT": true,
+    "CDR-VM-G08_POST_BUILD_AUDIT_MANIFEST_PRESENT": true,
+    "CDR-VM-G09_POST_BUILD_AUDIT_REPORTS_PRESENT": true,
+    "CDR-VM-G10_POST_BUILD_AUDIT_SEAL_HASH_OK": true,
+    "CDR-VM-G11_POST_BUILD_AUDIT_STATUS_OK": true,
+    "CDR-VM-G12_VALIDATION_MAP_ALLOWED": true,
+    "CDR-VM-G13_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CDR-VM-G14_VALIDATION_DOMAINS_DEFINED": true,
+    "CDR-VM-G15_VALIDATION_GATES_DEFINED": true,
+    "CDR-VM-G16_NEGATIVE_CASES_DEFINED": true,
+    "CDR-VM-G17_EVIDENCE_REQUIREMENTS_DEFINED": true,
+    "CDR-VM-G18_SECURITY_REQUIREMENTS_DEFINED": true,
+    "CDR-VM-G19_NO_TOUCH_REQUIREMENTS_DEFINED": true,
+    "CDR-VM-G20_VALIDATION_PLAN_ALLOWED_NEXT_ONLY": true,
+    "CDR-VM-G21_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CDR-VM-G22_VALIDATION_MAP_REPORTS_WRITTEN": false,
+    "CDR-VM-G23_VALIDATION_MAP_MANIFEST_WRITTEN": false,
+    "CDR-VM-G24_VALIDATION_MAP_SEAL_WRITTEN": false,
+    "CDR-VM-G25_OUTPUT_SCOPE_EXACT": false,
+    "CDR-VM-G26_JSON_CANONICAL": false,
+    "CDR-VM-G27_MANIFEST_COMPLETE": false,
+    "CDR-VM-G28_SEAL_VALID": false,
+    "CDR-VM-G29_NO_TOUCH_PROTECTED_ROOTS": false,
+    "CDR-VM-G30_COMMIT_ALLOWLIST_EXACT": false,
+    "CDR-VM-G31_COMMIT_CREATED": false,
+    "CDR-VM-G32_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "4fba7a247a6604e16dd5e0d68fa86289f5d49b55",
+    "python": "Python 3.12.10",
+    "remote": "4fba7a247a6604e16dd5e0d68fa86289f5d49b55",
+    "subject": "Post-build audit Content Draft Runtime Governance Core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN",
+  "permissions": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "validation_allowed_now": false,
+    "validation_plan_allowed_next": true
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_DEFINED",
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP",
+  "validation_domains": [
+    {
+      "acceptance": "All consumed evidence resolves, hashes match, and no missing audit artifact exists.",
+      "domain_id": "VMD-CDR-01",
+      "name": "Build chain and evidence integrity",
+      "purpose": "Confirm post-build audit, build, source/test hashes, manifests and seals are consumable and consistent.",
+      "required_gates": [
+        "post_build_audit_seal_valid",
+        "post_build_audit_manifest_hash_valid",
+        "build_commit_surface_confirmed",
+        "source_test_hashes_confirmed",
+        "audit_reports_consumable"
+      ]
+    },
+    {
+      "acceptance": "Safe preview-only requests pass and all incomplete/unsafe requests fail closed.",
+      "domain_id": "VMD-CDR-02",
+      "name": "Runtime request contract validation",
+      "purpose": "Validate required request fields, mode restrictions, evidence refs, traceability refs, human review and maturity level.",
+      "required_gates": [
+        "valid_preview_request_passes",
+        "missing_required_fields_block",
+        "blocked_runtime_modes_fail_closed",
+        "unsupported_domain_blocks",
+        "missing_evidence_blocks",
+        "missing_traceability_blocks",
+        "human_review_false_blocks",
+        "maturity_non_zero_blocks"
+      ]
+    },
+    {
+      "acceptance": "No decision/output path can claim productive activity.",
+      "domain_id": "VMD-CDR-03",
+      "name": "Runtime decision and output hard-false guarantees",
+      "purpose": "Confirm every decision/output preserves productive hard-false flags.",
+      "required_gates": [
+        "safe_decision_passes",
+        "unsafe_decision_blocks",
+        "output_status_matches_decision",
+        "side_effects_performed_false",
+        "draft_creation_performed_false",
+        "content_generation_performed_false",
+        "queue_write_performed_false",
+        "publishing_performed_false",
+        "automation_performed_false"
+      ]
+    },
+    {
+      "acceptance": "Preview remains conceptual, non-final, non-publishable, non-queueable and human-review required.",
+      "domain_id": "VMD-CDR-04",
+      "name": "Preview non-publishability",
+      "purpose": "Block final/publishable content markers in preview text.",
+      "required_gates": [
+        "conceptual_preview_passes",
+        "final_caption_blocks",
+        "final_script_blocks",
+        "final_cta_blocks",
+        "platform_ready_metadata_blocks",
+        "publish_now_blocks",
+        "texto_listo_para_publicar_blocks",
+        "hashtags_finales_blocks",
+        "asset_final_blocks",
+        "publication_link_blocks"
+      ]
+    },
+    {
+      "acceptance": "All no-side-effect fields remain false and mutation_surface remains empty for valid paths.",
+      "domain_id": "VMD-CDR-05",
+      "name": "No-side-effect runtime contract",
+      "purpose": "Guarantee no mutation surface, external calls, queue/publication mutation, asset generation or automation.",
+      "required_gates": [
+        "empty_mutation_surface_passes",
+        "non_empty_mutation_surface_blocks",
+        "external_calls_false",
+        "filesystem_writes_false",
+        "queue_mutation_false",
+        "publication_mutation_false",
+        "asset_generation_false",
+        "automation_triggered_false"
+      ]
+    },
+    {
+      "acceptance": "No runtime state opens productive permissions.",
+      "domain_id": "VMD-CDR-06",
+      "name": "Permission matrix and runtime states",
+      "purpose": "Confirm every runtime state blocks draft/content/queue/publish/automation.",
+      "required_gates": [
+        "all_states_block_productive_actions",
+        "preview_ready_only_conceptual_limited",
+        "requires_human_review_read_only",
+        "sealed_no_op_evidence_only",
+        "queue_false_everywhere",
+        "publish_false_everywhere",
+        "automation_false_everywhere",
+        "draft_false_everywhere"
+      ]
+    },
+    {
+      "acceptance": "Runtime governance remains evidence-bound and traceability-bound.",
+      "domain_id": "VMD-CDR-07",
+      "name": "Evidence and traceability contracts",
+      "purpose": "Validate runtime evidence refs and traceability refs requirements.",
+      "required_gates": [
+        "evidence_refs_required",
+        "traceability_refs_required",
+        "empty_evidence_blocks",
+        "empty_traceability_blocks",
+        "canonical_json_required",
+        "manifest_required",
+        "seal_required",
+        "traceability_required_flag"
+      ]
+    },
+    {
+      "acceptance": "Human authorization cannot bypass productive blocks.",
+      "domain_id": "VMD-CDR-08",
+      "name": "Human review contract",
+      "purpose": "Ensure human review is always required and cannot execute productive actions at this layer.",
+      "required_gates": [
+        "human_review_true_passes",
+        "human_review_false_blocks",
+        "human_review_required_true",
+        "human_review_completed_false",
+        "human_authorization_required_for_next_stage_true",
+        "human_authorization_can_execute_productive_action_now_false"
+      ]
+    },
+    {
+      "acceptance": "Runtime requests cannot mix domain/campaign/brand context.",
+      "domain_id": "VMD-CDR-09",
+      "name": "Domain isolation contract",
+      "purpose": "Prevent cross-domain, brand voice and campaign context contamination.",
+      "required_gates": [
+        "supported_domain_passes",
+        "unknown_domain_blocks",
+        "expected_domain_mismatch_blocks",
+        "expected_domain_match_passes",
+        "domain_context_must_match_true",
+        "cross_domain_contamination_false",
+        "brand_voice_mixing_false",
+        "campaign_context_mixing_false"
+      ]
+    },
+    {
+      "acceptance": "Content Engine remains independent and ARGOS integration remains status-only.",
+      "domain_id": "VMD-CDR-10",
+      "name": "ARGOS boundary contract",
+      "purpose": "Confirm ARGOS remains metadata-only, not required, no cross-imports, no bridge build and no cascade failure.",
+      "required_gates": [
+        "argos_metadata_only",
+        "argos_dependency_false",
+        "argos_controls_content_engine_false",
+        "content_engine_requires_argos_false",
+        "cross_imports_allowed_false",
+        "argos_bridge_build_allowed_false",
+        "health_status_only_true",
+        "cascade_failure_prevention_true"
+      ]
+    },
+    {
+      "acceptance": "No autonomy escalation and all unsafe paths return FAILED_BLOCKED.",
+      "domain_id": "VMD-CDR-11",
+      "name": "Maturity and failure policy",
+      "purpose": "Ensure autonomy level remains 0, escalation blocked, unsafe paths fail closed.",
+      "required_gates": [
+        "maturity_level_zero_passes",
+        "maturity_level_non_zero_blocks",
+        "autonomy_level_zero",
+        "autonomy_escalation_false",
+        "fail_closed_status",
+        "fail_closed_state",
+        "fail_closed_human_review",
+        "fail_closed_productive_flags_false"
+      ]
+    },
+    {
+      "acceptance": "Runtime audit artifacts are evidence-ready and non-productive.",
+      "domain_id": "VMD-CDR-12",
+      "name": "Audit bundle and manifest/seal readiness",
+      "purpose": "Confirm audit bundle requires canonical JSON, sha256, manifest, seal and has no productive effect claims.",
+      "required_gates": [
+        "audit_bundle_passes",
+        "audit_bundle_canonical_required",
+        "audit_bundle_manifest_true",
+        "audit_bundle_seal_true",
+        "audit_bundle_human_review_marker_true",
+        "audit_bundle_productive_effect_claims_false",
+        "audit_bundle_failure_flag_for_bad_preview",
+        "audit_bundle_hash_algorithm_sha256"
+      ]
+    },
+    {
+      "acceptance": "No source token can trigger external IO, automation, queue/publication, or protected root mutation.",
+      "domain_id": "VMD-CDR-13",
+      "name": "Static security and forbidden operations",
+      "purpose": "Confirm source contains no forbidden external IO/productive mutation tokens.",
+      "required_gates": [
+        "no_requests_token",
+        "no_httpx_token",
+        "no_openai_token",
+        "no_elevenlabs_token",
+        "no_webhook_token",
+        "no_n8n_token",
+        "no_capa9_token",
+        "no_queue_write_token",
+        "no_publication_trigger_token",
+        "no_manual_brain_reports_brain_token"
+      ]
+    },
+    {
+      "acceptance": "Validation remains stable on Windows and does not reuse locked user temp.",
+      "domain_id": "VMD-CDR-14",
+      "name": "Regression and suite stability",
+      "purpose": "Reconfirm py_compile, targeted tests and content_engine suite using repo-local basetemp.",
+      "required_gates": [
+        "py_compile_pass",
+        "targeted_pytest_pass",
+        "content_engine_suite_pass",
+        "runtime_contract_smoke_pass",
+        "basetemp_repo_local",
+        "basetemp_cleaned"
+      ]
+    },
+    {
+      "acceptance": "Validation map and future validation remain non-productive and no-touch.",
+      "domain_id": "VMD-CDR-15",
+      "name": "No-touch and no-mutation validation boundary",
+      "purpose": "Confirm validation map defines no source/test/runtime/protected-root mutation.",
+      "required_gates": [
+        "source_test_no_mutation",
+        "protected_roots_no_touch",
+        "queue_no_touch",
+        "publication_no_touch",
+        "manual_current_no_touch",
+        "brain_no_touch",
+        "reports_brain_no_touch",
+        "argos_bridge_not_built"
+      ]
+    }
+  ],
+  "validation_map_status": "VALIDATION_MAP_DEFINED"
+}
