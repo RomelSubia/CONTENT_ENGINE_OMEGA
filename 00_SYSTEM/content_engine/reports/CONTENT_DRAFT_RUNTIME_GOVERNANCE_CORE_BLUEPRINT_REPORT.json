@@ -1,0 +1,455 @@
+{
+  "blueprint": {
+    "acceptance_criteria": [
+      "Defines runtime governance envelope.",
+      "Declares explicitly it is not a draft executor.",
+      "Defines no-side-effect contract.",
+      "Defines runtime request/decision/output schemas.",
+      "Defines permission matrix by state.",
+      "Defines preview non-publishability rules.",
+      "Defines threat model.",
+      "Defines runtime evidence bundle.",
+      "Defines traceability contract.",
+      "Defines human review contract.",
+      "Defines domain isolation matrix.",
+      "Defines ARGOS metadata-only and health-status-only boundary.",
+      "Defines maturity level matrix.",
+      "Defines diagnostic-only recovery policy.",
+      "Keeps all productive operations blocked.",
+      "Keeps implementation/build/runtime execution blocked.",
+      "Keeps manual/brain/reports-brain no-touch.",
+      "Keeps ARGOS bridge build blocked."
+    ],
+    "argos_boundary_contract": {
+      "argos_bridge_build_allowed_now": false,
+      "argos_controls_content_engine": false,
+      "argos_dependency": false,
+      "argos_failure_behavior": "Content Engine records ARGOS_UNAVAILABLE_STATUS_ONLY and continues independent governance.",
+      "argos_mode": "METADATA_ONLY",
+      "cascade_failure_prevention": true,
+      "content_engine_failure_behavior": "ARGOS may record CONTENT_ENGINE_FAULT_RECOVERING only; no internal repair or dependency loop.",
+      "content_engine_requires_argos": false,
+      "cross_imports_allowed": false,
+      "cross_system_failure_isolation_contract": true,
+      "health_status_only": true
+    },
+    "definition": {
+      "blueprint_status": "DEFINED",
+      "component": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+      "core_statement": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE defines a Runtime Governance Envelope for future draft runtime requests in PREVIEW_ONLY, DRY_RUN_ONLY, or VALIDATION_ONLY modes. It is not a draft executor and cannot create drafts, generate content, write queue, publish, or automate.",
+      "spanish_statement": "La capa define el sobre de gobernanza del runtime para futuras solicitudes de borrador en modo preview/dry-run/validación, garantizando falla cerrada, cero efectos secundarios, revisión humana obligatoria, evidencia, trazabilidad, aislamiento por dominio, independencia de ARGOS y bloqueo total de acciones productivas."
+    },
+    "diagnostic_only_recovery_policy": {
+      "automatic_recovery_mutation": false,
+      "brain_cleanup": false,
+      "diagnostic_only": true,
+      "external_retry": false,
+      "manifest_read": true,
+      "manual_cleanup": false,
+      "publication_cleanup": false,
+      "queue_cleanup": false,
+      "read_only_audit": true,
+      "seal_read": true,
+      "source_mutation": false,
+      "status_report": true
+    },
+    "domain_isolation_matrix": {
+      "brand_voice_mixing_allowed": false,
+      "campaign_context_mixing_allowed": false,
+      "cross_domain_contamination_allowed": false,
+      "domain_context_must_match": true,
+      "domains": [
+        "finca_san_mateo",
+        "cacao",
+        "arriendos",
+        "bravi",
+        "bramviss",
+        "digital_a",
+        "digital_b",
+        "digital_c",
+        "digital_d",
+        "websites",
+        "future_business_or_brand"
+      ]
+    },
+    "evidence_bundle_contract": {
+      "canonical_json_required": true,
+      "hash_algorithm": "sha256",
+      "manifest_required": true,
+      "required_artifacts_future": [
+        "runtime_request_snapshot",
+        "runtime_precheck_report",
+        "runtime_decision_report",
+        "runtime_no_side_effect_report",
+        "runtime_failure_report",
+        "runtime_traceability_report",
+        "runtime_manifest",
+        "runtime_seal",
+        "runtime_human_review_marker"
+      ],
+      "seal_required": true
+    },
+    "human_review_contract": {
+      "human_authorization_can_execute_productive_action_now": false,
+      "human_authorization_phrase_required": true,
+      "human_authorization_required_for_next_stage": true,
+      "human_review_completed": false,
+      "human_review_required": true
+    },
+    "maturity_level_matrix": {
+      "autonomy_escalation_allowed": false,
+      "levels": {
+        "0": "Governance blueprint only",
+        "1": "Runtime preview governance",
+        "2": "Runtime dry-run evidence",
+        "3": "Controlled draft creation",
+        "4": "Controlled content generation",
+        "5": "Queue staging",
+        "6": "Assisted publishing",
+        "7": "Partial automation",
+        "8+": "Advanced controlled autonomy"
+      },
+      "runtime_autonomy_level_now": 0
+    },
+    "no_side_effect_contract": {
+      "NO_SIDE_EFFECT_RUNTIME": true,
+      "asset_generation_performed": false,
+      "automation_triggered": false,
+      "external_calls_performed": false,
+      "filesystem_writes_performed": false,
+      "mutation_surface": [],
+      "publication_mutation_performed": false,
+      "queue_mutation_performed": false,
+      "side_effects_performed": false
+    },
+    "permission_matrix_by_state": {
+      "RUNTIME_FAILED_CLOSED": {
+        "automation": false,
+        "content": false,
+        "draft": false,
+        "preview": false,
+        "publish": false,
+        "queue": false
+      },
+      "RUNTIME_NOT_STARTED": {
+        "automation": false,
+        "content": false,
+        "draft": false,
+        "preview": false,
+        "publish": false,
+        "queue": false
+      },
+      "RUNTIME_PRECHECKED": {
+        "automation": false,
+        "content": false,
+        "draft": false,
+        "preview": false,
+        "publish": false,
+        "queue": false
+      },
+      "RUNTIME_PREVIEW_BLOCKED": {
+        "automation": false,
+        "content": false,
+        "draft": false,
+        "preview": false,
+        "publish": false,
+        "queue": false
+      },
+      "RUNTIME_PREVIEW_READY": {
+        "automation": false,
+        "content": false,
+        "draft": false,
+        "preview": "conceptual_limited",
+        "publish": false,
+        "queue": false
+      },
+      "RUNTIME_REQUEST_RECEIVED": {
+        "automation": false,
+        "content": false,
+        "draft": false,
+        "preview": false,
+        "publish": false,
+        "queue": false
+      },
+      "RUNTIME_REQUIRES_HUMAN_REVIEW": {
+        "automation": false,
+        "content": false,
+        "draft": false,
+        "preview": "read_only",
+        "publish": false,
+        "queue": false
+      },
+      "RUNTIME_SEALED_NO_OP": {
+        "automation": false,
+        "content": false,
+        "draft": false,
+        "preview": "evidence_only",
+        "publish": false,
+        "queue": false
+      }
+    },
+    "preview_non_publishability_contract": {
+      "blocked_patterns": [
+        "final caption",
+        "final script",
+        "final CTA",
+        "platform-ready metadata",
+        "publish now",
+        "texto listo para publicar",
+        "hashtags finales",
+        "asset final",
+        "publication link"
+      ],
+      "final_output_allowed": false,
+      "human_review_required": true,
+      "non_publishable": true,
+      "platform_ready_allowed": false,
+      "preview_may_only_be": [
+        "conceptual",
+        "incomplete",
+        "non_publishable",
+        "non_exportable",
+        "non_queueable",
+        "for_human_review_only"
+      ],
+      "preview_only": true,
+      "queue_ready_allowed": false
+    },
+    "runtime_decision_schema": {
+      "allowed_decision_states": [
+        "RUNTIME_DECISION_ALLOWED_PREVIEW_ONLY",
+        "RUNTIME_DECISION_BLOCKED",
+        "RUNTIME_DECISION_FAILED_CLOSED",
+        "RUNTIME_DECISION_REQUIRES_HUMAN_REVIEW"
+      ],
+      "required_fields": [
+        "decision_status",
+        "decision_reason",
+        "allowed_runtime_mode",
+        "blocked_reason_code",
+        "risk_flags",
+        "human_review_required",
+        "evidence_refs",
+        "traceability_refs"
+      ]
+    },
+    "runtime_governance_envelope": {
+      "productive_runtime_allowed_now": false,
+      "runtime_envelope_fields": [
+        "runtime_envelope_id",
+        "runtime_request_id",
+        "runtime_mode",
+        "runtime_state",
+        "request_status",
+        "decision_status",
+        "preview_allowed",
+        "side_effects_allowed",
+        "human_review_required",
+        "evidence_required",
+        "traceability_required",
+        "manifest_required",
+        "seal_required"
+      ],
+      "runtime_envelope_required": true,
+      "side_effects_allowed": false
+    },
+    "runtime_output_schema": {
+      "hard_false_fields": [
+        "side_effects_performed",
+        "draft_creation_performed",
+        "content_generation_performed",
+        "queue_write_performed",
+        "publishing_performed",
+        "automation_performed"
+      ],
+      "required_fields": [
+        "status",
+        "reason",
+        "runtime_state",
+        "runtime_mode",
+        "preview_only",
+        "non_publishable",
+        "human_review_required",
+        "side_effects_performed",
+        "draft_creation_performed",
+        "content_generation_performed",
+        "queue_write_performed",
+        "publishing_performed",
+        "automation_performed",
+        "evidence_refs",
+        "traceability_refs",
+        "manifest_refs",
+        "seal_refs"
+      ]
+    },
+    "runtime_request_schema": {
+      "allowed_runtime_modes_now": [
+        "PREVIEW_ONLY",
+        "DRY_RUN_ONLY",
+        "VALIDATION_ONLY",
+        "NO_OP_AUDIT_ONLY"
+      ],
+      "blocked_if_missing": [
+        "draft_candidate_id",
+        "channel_or_domain_id",
+        "runtime_mode",
+        "evidence_refs",
+        "traceability_refs",
+        "human_review_required",
+        "schema_version"
+      ],
+      "blocked_runtime_modes_now": [
+        "CREATE_DRAFT",
+        "GENERATE_CONTENT",
+        "WRITE_QUEUE",
+        "PUBLISH",
+        "AUTOMATE"
+      ],
+      "required_fields": [
+        "runtime_request_id",
+        "draft_candidate_id",
+        "channel_or_domain_id",
+        "runtime_mode",
+        "requested_action",
+        "maturity_level",
+        "evidence_refs",
+        "traceability_refs",
+        "human_review_required",
+        "actor_context",
+        "created_at",
+        "schema_version"
+      ]
+    },
+    "runtime_states": {
+      "allowed_states": [
+        "RUNTIME_NOT_STARTED",
+        "RUNTIME_REQUEST_RECEIVED",
+        "RUNTIME_PRECHECKED",
+        "RUNTIME_PREVIEW_READY",
+        "RUNTIME_PREVIEW_BLOCKED",
+        "RUNTIME_REQUIRES_HUMAN_REVIEW",
+        "RUNTIME_FAILED_CLOSED",
+        "RUNTIME_SEALED_NO_OP"
+      ],
+      "forbidden_states_now": [
+        "DRAFT_CREATED",
+        "CONTENT_CREATED",
+        "QUEUE_WRITTEN",
+        "PUBLISHED",
+        "AUTOMATED",
+        "WEBHOOK_SENT",
+        "N8N_TRIGGERED",
+        "CAPA9_TRIGGERED"
+      ]
+    },
+    "threat_model": {
+      "required_controls": [
+        "non_publishability_guard",
+        "no_side_effect_contract",
+        "queue_hard_false",
+        "publishing_hard_false",
+        "automation_hard_false",
+        "domain_isolation_matrix",
+        "marketing_ethics_guard",
+        "evidence_contract",
+        "traceability_contract",
+        "human_review_contract",
+        "argos_metadata_only_contract",
+        "no_touch_guard",
+        "canonical_json_and_hash_verification",
+        "state_transition_validation"
+      ],
+      "threats": [
+        "Preview-to-final-output escalation",
+        "Dry-run-to-real-mutation drift",
+        "Queue write bypass",
+        "Publishing trigger leakage",
+        "Automation/webhook accidental activation",
+        "Domain contamination",
+        "Marketing ethics bypass",
+        "Evidence spoofing",
+        "Traceability omission",
+        "Human review bypass",
+        "ARGOS dependency/cascade failure",
+        "Protected root touch",
+        "Non-canonical manifest/seal",
+        "Runtime state desynchronization"
+      ]
+    }
+  },
+  "blueprint_status": "DEFINED",
+  "component": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+  "consumed_readiness_map": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_MANIFEST.json",
+    "manifest_sha256": "6de320cc5b617f0a4c03bda603242a84482b37d6b77dba5249671e6fe19ef5c7",
+    "seal_path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+    "seal_sha256": "150b001261e450eefa65546a66fb23daadac8e41904473975331e852b03232fa"
+  },
+  "gates": {
+    "CDR-BP-G01_ROOT_EXISTS": true,
+    "CDR-BP-G02_PYTHON_OK": true,
+    "CDR-BP-G03_BRANCH_MAIN": true,
+    "CDR-BP-G04_REPO_CLEAN_PRE_BLUEPRINT": true,
+    "CDR-BP-G05_HEAD_SYNCED_PRE_BLUEPRINT": true,
+    "CDR-BP-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "CDR-BP-G07_READINESS_SEAL_PRESENT": true,
+    "CDR-BP-G08_READINESS_MANIFEST_PRESENT": true,
+    "CDR-BP-G09_READINESS_SEAL_HASH_OK": true,
+    "CDR-BP-G10_READINESS_STATUS_OK": true,
+    "CDR-BP-G11_BLUEPRINT_ONLY_ALLOWED": true,
+    "CDR-BP-G12_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CDR-BP-G13_RUNTIME_GOVERNANCE_ENVELOPE_DEFINED": true,
+    "CDR-BP-G14_NO_SIDE_EFFECT_CONTRACT_DEFINED": true,
+    "CDR-BP-G15_REQUEST_DECISION_OUTPUT_SCHEMAS_DEFINED": true,
+    "CDR-BP-G16_PERMISSION_MATRIX_DEFINED": true,
+    "CDR-BP-G17_PREVIEW_NON_PUBLISHABILITY_DEFINED": true,
+    "CDR-BP-G18_THREAT_MODEL_DEFINED": true,
+    "CDR-BP-G19_EVIDENCE_BUNDLE_DEFINED": true,
+    "CDR-BP-G20_HUMAN_REVIEW_CONTRACT_DEFINED": true,
+    "CDR-BP-G21_DOMAIN_ISOLATION_DEFINED": true,
+    "CDR-BP-G22_ARGOS_BOUNDARY_DEFINED": true,
+    "CDR-BP-G23_MATURITY_MATRIX_DEFINED": true,
+    "CDR-BP-G24_DIAGNOSTIC_ONLY_RECOVERY_DEFINED": true,
+    "CDR-BP-G25_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CDR-BP-G26_BLUEPRINT_REPORTS_WRITTEN": false,
+    "CDR-BP-G27_BLUEPRINT_MANIFEST_WRITTEN": false,
+    "CDR-BP-G28_BLUEPRINT_SEAL_WRITTEN": false,
+    "CDR-BP-G29_OUTPUT_SCOPE_EXACT": false,
+    "CDR-BP-G30_JSON_CANONICAL": false,
+    "CDR-BP-G31_MANIFEST_COMPLETE": false,
+    "CDR-BP-G32_SEAL_VALID": false,
+    "CDR-BP-G33_NO_TOUCH_PROTECTED_ROOTS": false,
+    "CDR-BP-G34_COMMIT_ALLOWLIST_EXACT": false,
+    "CDR-BP-G35_COMMIT_CREATED": false,
+    "CDR-BP-G36_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "66c9341c0de19f189c6792eee2956522716536e3",
+    "python": "Python 3.12.10",
+    "remote": "66c9341c0de19f189c6792eee2956522716536e3",
+    "subject": "Define Content Engine next layer readiness map after content drafting governance"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING",
+  "permissions": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "build_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "final_approval_review_allowed_now": false,
+    "implementation_plan_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "review_hardening_allowed_next": true,
+    "runtime_execution_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_DEFINED",
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT",
+  "summary": "Production-real blueprint defined for Content Draft Runtime Governance Core."
+}
