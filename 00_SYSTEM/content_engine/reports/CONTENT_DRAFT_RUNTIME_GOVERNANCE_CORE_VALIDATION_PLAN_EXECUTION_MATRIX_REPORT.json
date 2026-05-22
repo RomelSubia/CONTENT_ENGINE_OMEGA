@@ -1,0 +1,202 @@
+{
+  "component": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+  "consumed_validation_map": {
+    "domains_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_DOMAINS_REPORT.json",
+    "domains_report_sha256": "a1a342d4fe826db08522ee61f6e786714118bd180bf000dc17814ec6475be60f",
+    "gates_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_GATES_REPORT.json",
+    "gates_report_sha256": "54126483f94012aa593c32cb2760fc1ded130979c92d862cf724085e924f3b9d",
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_MANIFEST.json",
+    "manifest_sha256": "3d17742e107e4392e6973fb976ac2a53f34fb5b50f73db7851b185fced126f2e",
+    "negative_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_NEGATIVE_CASES_REPORT.json",
+    "negative_report_sha256": "ef2ae54ffae3402944d75c94192c2b4b3b26065276dba2d830adc5f5610b728c",
+    "no_touch_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_NO_TOUCH_REPORT.json",
+    "no_touch_report_sha256": "306579f1040fa35582d184213ffa182586ecd27f65d7228853969956e2b6aa64",
+    "report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_REPORT.json",
+    "report_sha256": "0bf7c16678e6d17301881592538be2b988383aec2339d306c9a4406d085aed06",
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+    "seal_sha256": "5421d20f4e61ddfe41badbe2ffc24b34eedb94422fc68ce0ee6011f93eee50b1",
+    "security_report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SECURITY_REPORT.json",
+    "security_report_sha256": "d68ebe89a8803069fc88c04e1c3e16209027d784a25790fa4b8bc97f6f64d1fb"
+  },
+  "execution_matrix": [
+    {
+      "execution_type": "READ_ONLY_EVIDENCE_CHECK",
+      "fail_policy": "FAIL_CLOSED",
+      "mutation_allowed": false,
+      "phase_id": "CDR-VP-P01",
+      "phase_name": "Evidence chain precheck",
+      "productive_operation_allowed": false,
+      "required_outputs_future": [
+        "chain_evidence_validation_result",
+        "seal_hash_validation_result",
+        "manifest_scope_validation_result"
+      ],
+      "runtime_execution_allowed": false
+    },
+    {
+      "execution_type": "STATIC_SCAN_ONLY",
+      "fail_policy": "FAIL_CLOSED",
+      "mutation_allowed": false,
+      "phase_id": "CDR-VP-P02",
+      "phase_name": "Static security validation",
+      "productive_operation_allowed": false,
+      "required_outputs_future": [
+        "static_security_scan_result",
+        "forbidden_token_scan_result"
+      ],
+      "runtime_execution_allowed": false
+    },
+    {
+      "execution_type": "TEST_EXECUTION_NO_PRODUCTIVE_RUNTIME",
+      "fail_policy": "FAIL_CLOSED",
+      "mutation_allowed": false,
+      "phase_id": "CDR-VP-P03",
+      "phase_name": "Compile and suite stability validation",
+      "productive_operation_allowed": false,
+      "required_outputs_future": [
+        "py_compile_result",
+        "targeted_pytest_result",
+        "content_engine_suite_result",
+        "basetemp_cleanup_result"
+      ],
+      "runtime_execution_allowed": false
+    },
+    {
+      "execution_type": "CONTRACT_PROBE_NO_SIDE_EFFECT",
+      "fail_policy": "FAIL_CLOSED",
+      "mutation_allowed": false,
+      "phase_id": "CDR-VP-P04",
+      "phase_name": "Runtime contract smoke validation",
+      "productive_operation_allowed": false,
+      "required_outputs_future": [
+        "safe_preview_contract_result",
+        "unsafe_preview_block_result",
+        "productive_flags_false_result"
+      ],
+      "runtime_execution_allowed": false
+    },
+    {
+      "execution_type": "CONTRACT_UNIT_VALIDATION",
+      "fail_policy": "FAIL_CLOSED",
+      "mutation_allowed": false,
+      "phase_id": "CDR-VP-P05",
+      "phase_name": "Runtime request and decision validation",
+      "productive_operation_allowed": false,
+      "required_outputs_future": [
+        "request_validation_cases",
+        "decision_validation_cases",
+        "output_hard_false_cases"
+      ],
+      "runtime_execution_allowed": false
+    },
+    {
+      "execution_type": "NEGATIVE_CONTRACT_VALIDATION",
+      "fail_policy": "FAIL_CLOSED",
+      "mutation_allowed": false,
+      "phase_id": "CDR-VP-P06",
+      "phase_name": "Negative cases validation",
+      "productive_operation_allowed": false,
+      "required_outputs_future": [
+        "negative_case_results",
+        "negative_case_summary"
+      ],
+      "runtime_execution_allowed": false
+    },
+    {
+      "execution_type": "NO_TOUCH_AUDIT",
+      "fail_policy": "FAIL_CLOSED",
+      "mutation_allowed": false,
+      "phase_id": "CDR-VP-P07",
+      "phase_name": "No-touch and no-mutation validation",
+      "productive_operation_allowed": false,
+      "required_outputs_future": [
+        "protected_roots_before_after",
+        "source_test_hash_before_after",
+        "queue_publication_no_touch_result"
+      ],
+      "runtime_execution_allowed": false
+    },
+    {
+      "execution_type": "EVIDENCE_OUTPUT_DEFINITION",
+      "fail_policy": "FAIL_CLOSED",
+      "mutation_allowed": false,
+      "phase_id": "CDR-VP-P08",
+      "phase_name": "Validation evidence sealing",
+      "productive_operation_allowed": false,
+      "required_outputs_future": [
+        "validation_report",
+        "validation_test_report",
+        "validation_security_report",
+        "validation_no_touch_report",
+        "validation_manifest",
+        "validation_seal",
+        "validation_summary"
+      ],
+      "runtime_execution_allowed": false
+    }
+  ],
+  "gates": {
+    "CDR-VP-G01_ROOT_EXISTS": true,
+    "CDR-VP-G02_PYTHON_OK": true,
+    "CDR-VP-G03_BRANCH_MAIN": true,
+    "CDR-VP-G04_REPO_CLEAN_PRE_VALIDATION_PLAN": true,
+    "CDR-VP-G05_HEAD_SYNCED_PRE_VALIDATION_PLAN": true,
+    "CDR-VP-G06_VALIDATION_MAP_COMMIT_SUBJECT_OK": true,
+    "CDR-VP-G07_VALIDATION_MAP_SEAL_PRESENT": true,
+    "CDR-VP-G08_VALIDATION_MAP_MANIFEST_PRESENT": true,
+    "CDR-VP-G09_VALIDATION_MAP_REPORTS_PRESENT": true,
+    "CDR-VP-G10_VALIDATION_MAP_SEAL_HASH_OK": true,
+    "CDR-VP-G11_VALIDATION_MAP_STATUS_OK": true,
+    "CDR-VP-G12_VALIDATION_PLAN_ALLOWED": true,
+    "CDR-VP-G13_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "CDR-VP-G14_VALIDATION_MAP_DOMAIN_COUNT_OK": true,
+    "CDR-VP-G15_VALIDATION_MAP_GATE_COUNT_OK": true,
+    "CDR-VP-G16_VALIDATION_MAP_NEGATIVE_CASE_COUNT_OK": true,
+    "CDR-VP-G17_VALIDATION_PHASES_DEFINED": true,
+    "CDR-VP-G18_EXECUTION_MATRIX_DEFINED": true,
+    "CDR-VP-G19_EVIDENCE_PLAN_DEFINED": true,
+    "CDR-VP-G20_SECURITY_PLAN_DEFINED": true,
+    "CDR-VP-G21_NO_TOUCH_PLAN_DEFINED": true,
+    "CDR-VP-G22_VALIDATION_ALLOWED_NEXT_ONLY": true,
+    "CDR-VP-G23_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "CDR-VP-G24_VALIDATION_PLAN_REPORTS_WRITTEN": false,
+    "CDR-VP-G25_VALIDATION_PLAN_MANIFEST_WRITTEN": false,
+    "CDR-VP-G26_VALIDATION_PLAN_SEAL_WRITTEN": false,
+    "CDR-VP-G27_OUTPUT_SCOPE_EXACT": false,
+    "CDR-VP-G28_JSON_CANONICAL": false,
+    "CDR-VP-G29_MANIFEST_COMPLETE": false,
+    "CDR-VP-G30_SEAL_VALID": false,
+    "CDR-VP-G31_NO_TOUCH_PROTECTED_ROOTS": false,
+    "CDR-VP-G32_COMMIT_ALLOWLIST_EXACT": false,
+    "CDR-VP-G33_COMMIT_CREATED": false,
+    "CDR-VP-G34_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "6535f5aa2c260e96f623f3eb52c55ff9ff3245c1",
+    "python": "Python 3.12.10",
+    "remote": "6535f5aa2c260e96f623f3eb52c55ff9ff3245c1",
+    "subject": "Define validation map Content Draft Runtime Governance Core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION",
+  "permissions": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "gate_closure_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "validation_allowed_next": true,
+    "validation_execution_performed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_DEFINED",
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN",
+  "validation_plan_status": "VALIDATION_PLAN_DEFINED"
+}
