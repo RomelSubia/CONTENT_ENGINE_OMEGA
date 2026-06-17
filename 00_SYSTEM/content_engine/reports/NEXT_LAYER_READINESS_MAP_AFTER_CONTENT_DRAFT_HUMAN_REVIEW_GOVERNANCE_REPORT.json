@@ -1,0 +1,244 @@
+{
+  "blocked_operations": {
+    "argos_bridge_build_performed": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "capa9_started": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "finalization_started": false,
+    "manual_current_mutation_performed": false,
+    "n8n_started": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "reports_brain_write_performed": false,
+    "runtime_execution_started": false,
+    "status": "PASS",
+    "webhook_started": false
+  },
+  "closed_component": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+  "closed_component_status": "GATE_CLOSED_VALIDATED",
+  "consumed_gate_closure": {
+    "evidence_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_EVIDENCE_REPORT.json",
+    "evidence_sha256": "ba785c76bf524bdd84e603e1c85166bbff68a6494cf2947f245fccd8b96ce8d1",
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_MANIFEST.json",
+    "manifest_sha256": "2ec49ed96c66711871f6004fe8a7de6ac4a95ab51cdc9bc45e5998c3a0f28abe",
+    "next_step_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_NEXT_STEP_REPORT.json",
+    "next_step_sha256": "ba785c76bf524bdd84e603e1c85166bbff68a6494cf2947f245fccd8b96ce8d1",
+    "no_touch_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_NO_TOUCH_REPORT.json",
+    "no_touch_sha256": "4d6d7ca6f957a5d52030c64bef0242fa2419a6dcf5c58420a530394c2d3b962a",
+    "report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_REPORT.json",
+    "report_sha256": "7af07335d7782cf2996ab737d43b8225305de8c650a9ff92b36423313671f40f",
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+    "seal_sha256": "d8d27262b2e6b2b883e83ded51793cc278d95db51ae94d57606f95afd76a9d29",
+    "security_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SECURITY_REPORT.json",
+    "security_sha256": "ba785c76bf524bdd84e603e1c85166bbff68a6494cf2947f245fccd8b96ce8d1"
+  },
+  "dependencies": {
+    "dependency_map": {
+      "consumed_closed_layer": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+      "content_finalization_allowed_now": false,
+      "finalization_layer_allowed_action": "BLUEPRINT_ONLY",
+      "implementation_allowed_now": false,
+      "required_before_finalization_blueprint": [
+        "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE = GATE_CLOSED_VALIDATED",
+        "CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE = GATE_CLOSED_VALIDATED",
+        "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE = GATE_CLOSED_VALIDATED"
+      ],
+      "required_closed_status": "GATE_CLOSED_VALIDATED",
+      "runtime_execution_allowed_now": false,
+      "validation_allowed_now": false
+    },
+    "status": "PASS"
+  },
+  "gates": {
+    "NLRM-HR-G01_ROOT_EXISTS": true,
+    "NLRM-HR-G02_PYTHON_OK": true,
+    "NLRM-HR-G03_BRANCH_MAIN": true,
+    "NLRM-HR-G04_REPO_CLEAN_PRE_MAP": true,
+    "NLRM-HR-G05_HEAD_SYNCED_PRE_MAP": true,
+    "NLRM-HR-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "NLRM-HR-G07_GATE_CLOSURE_SEAL_PRESENT": true,
+    "NLRM-HR-G08_GATE_CLOSURE_MANIFEST_PRESENT": true,
+    "NLRM-HR-G09_GATE_CLOSURE_REPORTS_PRESENT": true,
+    "NLRM-HR-G10_GATE_CLOSURE_SEAL_HASH_OK": true,
+    "NLRM-HR-G11_GATE_CLOSURE_STATUS_VALID": true,
+    "NLRM-HR-G12_GATE_CLOSURE_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "NLRM-HR-G13_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "NLRM-HR-G14_SOURCE_TEST_FINGERPRINTED": true,
+    "NLRM-HR-G15_ROUTE_ORDER_VALID": true,
+    "NLRM-HR-G16_SELECTED_NEXT_LAYER_VALID": true,
+    "NLRM-HR-G17_SELECTED_ACTION_BLUEPRINT_ONLY": true,
+    "NLRM-HR-G18_DEPENDENCY_MAP_DEFINED": true,
+    "NLRM-HR-G19_SECURITY_BLOCKS_DEFINED": true,
+    "NLRM-HR-G20_NO_TOUCH_MAP_DEFINED": true,
+    "NLRM-HR-G21_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "NLRM-HR-G22_NEXT_SAFE_STEP_DEFINED": true,
+    "NLRM-HR-G23_REPORTS_WRITTEN": false,
+    "NLRM-HR-G24_MANIFEST_WRITTEN": false,
+    "NLRM-HR-G25_SEAL_WRITTEN": false,
+    "NLRM-HR-G26_OUTPUT_SCOPE_EXACT": false,
+    "NLRM-HR-G27_JSON_CANONICAL": false,
+    "NLRM-HR-G28_MANIFEST_COMPLETE": false,
+    "NLRM-HR-G29_SEAL_VALID": false,
+    "NLRM-HR-G30_NO_TOUCH_PROTECTED_ROOTS": false,
+    "NLRM-HR-G31_NO_SOURCE_TEST_MUTATION": false,
+    "NLRM-HR-G32_COMMIT_ALLOWLIST_EXACT": false,
+    "NLRM-HR-G33_COMMIT_CREATED": false,
+    "NLRM-HR-G34_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "e843a683c2e4cf0de13ca2e181cafd724103e333",
+    "python": "Python 3.12.10",
+    "remote": "e843a683c2e4cf0de13ca2e181cafd724103e333",
+    "subject": "Close gate Content Draft Human Review Governance Core"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_BLUEPRINT",
+  "next_step": {
+    "automation_allowed_now": false,
+    "blueprint_allowed_next": true,
+    "closed_component": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+    "closed_component_status": "GATE_CLOSED_VALIDATED",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_BLUEPRINT",
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "readiness_status": "NEXT_LAYER_READINESS_MAP_DEFINED",
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_DEFINED",
+    "selected_action": "BLUEPRINT_ONLY",
+    "selected_next_layer": "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE"
+  },
+  "no_touch": {
+    "protected_root_mutation_allowed": false,
+    "protected_roots": [
+      "00_SYSTEM/brain",
+      "00_SYSTEM/reports/brain",
+      "00_SYSTEM/manual/current",
+      "00_SYSTEM/manual/historical",
+      "00_SYSTEM/manual/manifest",
+      "00_SYSTEM/manual/registry",
+      "07_DATA/queue",
+      "07_DATA/metrics",
+      "08_ASSETS",
+      "09_PUBLICATION",
+      "14_EXPORTS",
+      "13_BACKUPS",
+      "12_LOGS/runtime",
+      "n8n",
+      "workflows",
+      "publication"
+    ],
+    "reports_only_scope_for_this_step": true,
+    "source_test_mutation_allowed": false,
+    "source_test_prefixes": [
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/",
+      "tests/content_engine/test_draft_human_review_governance_"
+    ],
+    "status": "PASS"
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "readiness_status": "NEXT_LAYER_READINESS_MAP_DEFINED",
+  "result": "PASS",
+  "route": {
+    "closed_component": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+    "closed_component_status": "GATE_CLOSED_VALIDATED",
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_BLUEPRINT",
+    "ordered_route": [
+      {
+        "layer": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+        "status": "GATE_CLOSED_VALIDATED"
+      },
+      {
+        "layer": "CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE",
+        "status": "GATE_CLOSED_VALIDATED"
+      },
+      {
+        "layer": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+        "status": "GATE_CLOSED_VALIDATED"
+      },
+      {
+        "layer": "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE",
+        "status": "SELECTED_NEXT_BLUEPRINT_ONLY"
+      },
+      {
+        "layer": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+        "status": "BLOCKED_PENDING_FINALIZATION_GATE_CLOSURE"
+      },
+      {
+        "layer": "CONTENT_PUBLICATION_GOVERNANCE_CORE",
+        "status": "BLOCKED_PENDING_QUEUE_GATE_CLOSURE"
+      },
+      {
+        "layer": "CONTENT_AUTOMATION_GOVERNANCE_CORE",
+        "status": "BLOCKED_PENDING_PUBLICATION_GATE_CLOSURE"
+      }
+    ],
+    "selected_action": "BLUEPRINT_ONLY",
+    "selected_next_layer": "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE",
+    "status": "PASS"
+  },
+  "sealed_status": "NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_DEFINED",
+  "security": {
+    "allowed_next_action_only": "CONTENT_ENGINE_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_BLUEPRINT",
+    "security_blocks": {
+      "argos_bridge_build_performed": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "publishing_started": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "webhook_started": false
+    },
+    "status": "PASS"
+  },
+  "selected_action": "BLUEPRINT_ONLY",
+  "selected_next_layer": "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE",
+  "source_test_before": {
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/__init__.py": "5887c79a7f91503a7670f2758f4efde18e1893ae39b568ea723d7967c300fdb0",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/evidence.py": "9b22755b1fc0ecb7ee9a4c5f843927f9ca67bbe3d5ae66dea518681c60c98048",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/models.py": "485ecd3c34094268d6dda6a8a133a4bd47a0a70057fbdfd68d00d83f072633a1",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/policy.py": "4391c13cd15891bc9bd9b505a1ab75b90ed928ce062d7da3e1f5a2dccb884f1c",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/result.py": "8467707b7a7b2c76723b1dcfca7cd3f97c540ae7a0e1ffc73927f0eca03199fc",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/review_record.py": "c126ec00ab8fc095429030563fd351fbbccb1b0f80ef28a953aee5a51ab1e4f1",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/state_machine.py": "c5712f0e7cc357691aca1124197088d486dc1d77e7339329ac6a8d1bf638e0cb",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/validator.py": "18984f413c945d1880e2a8fdd19e7a5bfd28ca01a10a9c67ff435c15e9f080e7",
+    "tests/content_engine/test_draft_human_review_governance_contract.py": "e89788e52ea381c64c11db58a9718bb95d477e8504936b4e4f97cade0176b3c4",
+    "tests/content_engine/test_draft_human_review_governance_decision_policy.py": "f1ec4d60d65bdf0fc8460d71d87138abfec15a80825dafa8b7de734c204f4e7c",
+    "tests/content_engine/test_draft_human_review_governance_evidence_policy.py": "70bc61b3a326f591a23c267cd54a1af89487690d0cccc37c8a9136b9bc79b8d7",
+    "tests/content_engine/test_draft_human_review_governance_negative_cases.py": "89a9b1eee74c5d7106a480ecc475ee6fb1b5b9cebaeda4259dee2ea524f04a84",
+    "tests/content_engine/test_draft_human_review_governance_no_touch.py": "b555d82a914355e56036ef09733ef775badf5e51dc752bfc96568176f14ffaa5",
+    "tests/content_engine/test_draft_human_review_governance_state_machine.py": "b8fbe5005872879761b313fc1780e2ae8cdcf2db8054ad9d603bfbc710e3409b"
+  },
+  "step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE",
+  "summary": "Next layer readiness map after Human Review Governance defined."
+}
