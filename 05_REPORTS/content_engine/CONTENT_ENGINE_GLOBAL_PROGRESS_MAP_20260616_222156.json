@@ -1,0 +1,2207 @@
+{
+  "automation_started": false,
+  "commit_created": false,
+  "components": [
+    {
+      "artifact_count": 118,
+      "component": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+      "latest_next_steps": [
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP",
+        "CONTENT_ENGINE_CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT",
+        "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE"
+      ],
+      "phase": "GATE_CLOSED_VALIDATED",
+      "progress": "COMPLETO",
+      "sample_artifacts": [
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_NO_TOUCH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SECURITY_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_CHAIN_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_DECISION_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_NO_TOUCH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SECURITY_REPORT.json"
+      ]
+    },
+    {
+      "artifact_count": 108,
+      "component": "CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE",
+      "latest_next_steps": [
+        "CONTENT_ENGINE_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_BLUEPRINT",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP",
+        "CONTENT_ENGINE_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN",
+        "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE"
+      ],
+      "phase": "GATE_CLOSED_VALIDATED",
+      "progress": "COMPLETO",
+      "sample_artifacts": [
+        "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_TEST_HASH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CANDIDATES_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_DEPENDENCIES_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_NEXT_STEP_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_NO_TOUCH_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SECURITY_REPORT.json",
+        "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SELECTION_REPORT.json"
+      ]
+    },
+    {
+      "artifact_count": 0,
+      "component": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+      "latest_next_steps": [],
+      "phase": "NOT_STARTED_OR_NOT_FOUND",
+      "progress": "PENDIENTE",
+      "sample_artifacts": []
+    },
+    {
+      "artifact_count": 0,
+      "component": "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE",
+      "latest_next_steps": [],
+      "phase": "NOT_STARTED_OR_NOT_FOUND",
+      "progress": "PENDIENTE",
+      "sample_artifacts": []
+    },
+    {
+      "artifact_count": 0,
+      "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+      "latest_next_steps": [],
+      "phase": "NOT_STARTED_OR_NOT_FOUND",
+      "progress": "PENDIENTE",
+      "sample_artifacts": []
+    },
+    {
+      "artifact_count": 0,
+      "component": "CONTENT_PUBLICATION_GOVERNANCE_CORE",
+      "latest_next_steps": [],
+      "phase": "NOT_STARTED_OR_NOT_FOUND",
+      "progress": "PENDIENTE",
+      "sample_artifacts": []
+    },
+    {
+      "artifact_count": 0,
+      "component": "CONTENT_AUTOMATION_GOVERNANCE_CORE",
+      "latest_next_steps": [],
+      "phase": "NOT_STARTED_OR_NOT_FOUND",
+      "progress": "PENDIENTE",
+      "sample_artifacts": []
+    }
+  ],
+  "content_generation_started": false,
+  "done_count": 2,
+  "draft_creation_started": false,
+  "generated_at": "20260616_222156",
+  "global_block_status": {
+    "global_interpretation": "BLOCKED_SAFE",
+    "productive_flags_found": [
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_next",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_next",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_next",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_next",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_next",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_next",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_MANIFEST.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_QUEUE_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_QUEUE_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "runtime_execution_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "draft_creation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "automation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "manual_current_mutation_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "reports_brain_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "argos_bridge_build_allowed_now",
+        "path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_BOUNDARY_MAP.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_DEPENDENCY_MAP.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_NEXT_LAYER_CANDIDATE.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_NO_TOUCH_REPORT.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_REPORT.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_STATE_AUDIT.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_READINESS_MAP.json",
+        "value": false
+      },
+      {
+        "flag": "content_generation_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_READINESS_REPORT.json",
+        "value": false
+      },
+      {
+        "flag": "queue_write_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_READINESS_REPORT.json",
+        "value": false
+      },
+      {
+        "flag": "publishing_allowed_now",
+        "path": "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_READINESS_REPORT.json",
+        "value": false
+      }
+    ],
+    "productive_flags_opened": [],
+    "productive_path_open": false
+  },
+  "global_route": [
+    "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+    "CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE",
+    "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+    "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE",
+    "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "CONTENT_PUBLICATION_GOVERNANCE_CORE",
+    "CONTENT_AUTOMATION_GOVERNANCE_CORE"
+  ],
+  "last_readiness_map": {
+    "artifact_type": "NEXT_LAYER_READINESS_MAP",
+    "component": "CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE",
+    "decision": null,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_BLUEPRINT",
+    "path": "00_SYSTEM/content_engine/reports/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SELECTION_REPORT.json",
+    "productive_open_flags": {},
+    "sealed_status": "NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_DEFINED",
+    "selected_action": "BLUEPRINT_ONLY",
+    "selected_next_layer": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+    "status": "NEXT_LAYER_READINESS_MAP_DEFINED"
+  },
+  "mode": "READ_ONLY_GLOBAL_PROGRESS_MAP",
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_BLUEPRINT",
+  "pending_count": 5,
+  "publishing_started": false,
+  "push_performed": false,
+  "queue_write_performed": false,
+  "repo": {
+    "branch": "main",
+    "dirty_count": 0,
+    "dirty_entries": [],
+    "head": "8ed5313ad4d2c1e04eb3e67f5f3d43a87fcdcc7c",
+    "repo_clean": true,
+    "root": "D:\\CONTENT_ENGINE_OMEGA",
+    "subject": "Define next layer readiness map after Content Draft Safe Preview Governance"
+  },
+  "result": "PASS",
+  "runtime_execution_started": false,
+  "selected_action": "BLUEPRINT_ONLY",
+  "selected_next_layer": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+  "sources_scanned": {
+    "manifest_dir": "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\content_engine\\manifests",
+    "manifest_json_count": 128,
+    "manual_candidate_dirs": [
+      "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\manual\\current",
+      "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\manual\\manifest",
+      "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\manual\\registry",
+      "D:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine"
+    ],
+    "manual_files_count": 68,
+    "report_json_count": 546,
+    "reports_dir": "D:\\CONTENT_ENGINE_OMEGA\\00_SYSTEM\\content_engine\\reports",
+    "unreadable_json": [],
+    "unreadable_json_count": 0
+  },
+  "step": "CONTENT_ENGINE_GLOBAL_PROGRESS_MAP_FROM_INTEGRATED_MANUAL"
+}
