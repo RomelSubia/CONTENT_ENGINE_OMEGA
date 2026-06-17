@@ -1,0 +1,279 @@
+{
+  "acceptance": {
+    "acceptance_criteria_passed": [
+      "validation plan seal consumed with correct hash",
+      "all source modules compile",
+      "selected pytest suite passes",
+      "contract validation passes",
+      "decision policy validation passes",
+      "state machine validation passes",
+      "evidence validation passes",
+      "negative cases validation passes",
+      "security no-touch validation passes",
+      "runtime execution remains blocked",
+      "draft creation remains blocked",
+      "content generation remains blocked",
+      "finalization remains blocked",
+      "queue write remains blocked",
+      "publishing and automation remain blocked",
+      "manual current remains untouched",
+      "brain and reports-brain remain untouched",
+      "ARGOS bridge build remains blocked"
+    ],
+    "status": "PASS"
+  },
+  "blocked_operations": {
+    "argos_bridge_build_performed": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "capa9_started": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "finalization_started": false,
+    "manual_current_mutation_performed": false,
+    "n8n_started": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "reports_brain_write_performed": false,
+    "runtime_execution_started": false,
+    "status": "PASS",
+    "webhook_started": false
+  },
+  "canonical_json": true,
+  "compile_report": {
+    "compiled_count": 8,
+    "compiled_modules": [
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/models.py",
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/policy.py",
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/state_machine.py",
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/evidence.py",
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/validator.py",
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/review_record.py",
+      "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/result.py"
+    ],
+    "status": "PASS"
+  },
+  "component": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+  "consumed_validation_plan": {
+    "acceptance_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_ACCEPTANCE_REPORT.json",
+    "acceptance_sha256": "a0637e42fa299f60d81a562c3ef92811043b44d133c8d061760c9b55b0925b8b",
+    "execution_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_EXECUTION_REPORT.json",
+    "execution_sha256": "a0637e42fa299f60d81a562c3ef92811043b44d133c8d061760c9b55b0925b8b",
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_MANIFEST.json",
+    "manifest_sha256": "f5a03f0aef810cf5fa9b1ee0700bc72400a33460a4a90cc5cbdfcf7e11cb328d",
+    "negative_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_NEGATIVE_CASES_REPORT.json",
+    "negative_sha256": "a0637e42fa299f60d81a562c3ef92811043b44d133c8d061760c9b55b0925b8b",
+    "next_step_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_NEXT_STEP_REPORT.json",
+    "next_step_sha256": "a0637e42fa299f60d81a562c3ef92811043b44d133c8d061760c9b55b0925b8b",
+    "no_touch_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_NO_TOUCH_REPORT.json",
+    "no_touch_sha256": "a0637e42fa299f60d81a562c3ef92811043b44d133c8d061760c9b55b0925b8b",
+    "report_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_REPORT.json",
+    "report_sha256": "8f31570d14c08434958fa8fc9184a2a0d9c49d510f053ece38c65c834ce99185",
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+    "seal_sha256": "738871a95a480c41ec5ba359d4f887954dddebeee7cf525459fdd63868991cea",
+    "security_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SECURITY_REPORT.json",
+    "security_sha256": "a0637e42fa299f60d81a562c3ef92811043b44d133c8d061760c9b55b0925b8b",
+    "test_selection_path": "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_TEST_SELECTION_REPORT.json",
+    "test_selection_sha256": "a0637e42fa299f60d81a562c3ef92811043b44d133c8d061760c9b55b0925b8b"
+  },
+  "domain_validation": {
+    "contract_validation": {
+      "assertions": [
+        "valid approval is plan-only",
+        "productive operation flags remain false",
+        "missing reviewer identity fails closed"
+      ],
+      "covered_by": "test_draft_human_review_governance_contract.py",
+      "status": "PASS"
+    },
+    "decision_policy_validation": {
+      "assertions": [
+        "allowed decision list is limited",
+        "publication/queue/automation approvals forbidden",
+        "unknown decision fails closed"
+      ],
+      "covered_by": "test_draft_human_review_governance_decision_policy.py",
+      "status": "PASS"
+    },
+    "evidence_validation": {
+      "assertions": [
+        "tampered hash fails closed",
+        "invalid hash format fails closed",
+        "stale preview fails closed"
+      ],
+      "covered_by": "test_draft_human_review_governance_evidence_policy.py",
+      "status": "PASS"
+    },
+    "negative_cases_validation": {
+      "assertions": [
+        "all required missing fields fail closed",
+        "all forbidden decisions fail closed"
+      ],
+      "covered_by": "test_draft_human_review_governance_negative_cases.py",
+      "status": "PASS"
+    },
+    "pytest_output_contains_failures": false,
+    "security_no_touch_validation": {
+      "assertions": [
+        "review never opens finalization",
+        "review never opens queue write",
+        "review never opens publishing/automation",
+        "review never opens runtime/draft/content generation"
+      ],
+      "covered_by": "test_draft_human_review_governance_no_touch.py",
+      "status": "PASS"
+    },
+    "state_machine_validation": {
+      "assertions": [
+        "allowed transition works",
+        "forbidden transition fails closed",
+        "decision state mapping works"
+      ],
+      "covered_by": "test_draft_human_review_governance_state_machine.py",
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "gates": {
+    "HR-VAL-G01_ROOT_EXISTS": true,
+    "HR-VAL-G02_PYTHON_OK": true,
+    "HR-VAL-G03_BRANCH_MAIN": true,
+    "HR-VAL-G04_REPO_CLEAN_PRE_VALIDATION": true,
+    "HR-VAL-G05_HEAD_SYNCED_PRE_VALIDATION": true,
+    "HR-VAL-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "HR-VAL-G07_VALIDATION_PLAN_SEAL_PRESENT": true,
+    "HR-VAL-G08_VALIDATION_PLAN_MANIFEST_PRESENT": true,
+    "HR-VAL-G09_VALIDATION_PLAN_REPORTS_PRESENT": true,
+    "HR-VAL-G10_VALIDATION_PLAN_SEAL_HASH_OK": true,
+    "HR-VAL-G11_VALIDATION_PLAN_STATUS_VALID": true,
+    "HR-VAL-G12_VALIDATION_PLAN_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "HR-VAL-G13_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "HR-VAL-G14_SOURCE_TEST_FINGERPRINTED": true,
+    "HR-VAL-G15_SOURCE_MODULES_PRESENT": true,
+    "HR-VAL-G16_SELECTED_TESTS_PRESENT": true,
+    "HR-VAL-G17_SOURCE_COMPILE_PASS": true,
+    "HR-VAL-G18_SELECTED_PYTEST_PASS": true,
+    "HR-VAL-G19_CONTRACT_VALIDATION_PASS": true,
+    "HR-VAL-G20_DECISION_POLICY_VALIDATION_PASS": true,
+    "HR-VAL-G21_STATE_MACHINE_VALIDATION_PASS": true,
+    "HR-VAL-G22_EVIDENCE_VALIDATION_PASS": true,
+    "HR-VAL-G23_NEGATIVE_CASES_VALIDATION_PASS": true,
+    "HR-VAL-G24_SECURITY_NO_TOUCH_VALIDATION_PASS": true,
+    "HR-VAL-G25_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "HR-VAL-G26_NEXT_SAFE_STEP_DEFINED": true,
+    "HR-VAL-G27_REPORTS_WRITTEN": true,
+    "HR-VAL-G28_MANIFEST_WRITTEN": false,
+    "HR-VAL-G29_SEAL_WRITTEN": false,
+    "HR-VAL-G30_OUTPUT_SCOPE_EXACT": false,
+    "HR-VAL-G31_JSON_CANONICAL": false,
+    "HR-VAL-G32_MANIFEST_COMPLETE": false,
+    "HR-VAL-G33_SEAL_VALID": false,
+    "HR-VAL-G34_NO_TOUCH_PROTECTED_ROOTS": false,
+    "HR-VAL-G35_NO_SOURCE_TEST_MUTATION": false,
+    "HR-VAL-G36_COMMIT_ALLOWLIST_EXACT": false,
+    "HR-VAL-G37_COMMIT_CREATED": false,
+    "HR-VAL-G38_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "9fd713a85b0687390abf148bbd84593917066f4b",
+    "python": "Python 3.12.10",
+    "remote": "9fd713a85b0687390abf148bbd84593917066f4b",
+    "subject": "Define Content Draft Human Review Governance Core validation plan"
+  },
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_ACCEPTANCE_REPORT.json": "c77f07607e7db5d37c2b6ae8436006de78097415c62eb94bf82959caf90cbf80",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_COMPILE_REPORT.json": "c77f07607e7db5d37c2b6ae8436006de78097415c62eb94bf82959caf90cbf80",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_DOMAINS_REPORT.json": "c77f07607e7db5d37c2b6ae8436006de78097415c62eb94bf82959caf90cbf80",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_NEXT_STEP_REPORT.json": "c77f07607e7db5d37c2b6ae8436006de78097415c62eb94bf82959caf90cbf80",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_NO_TOUCH_REPORT.json": "bf2ee6c4a3ccc2576f6ee71862daa0440dc6afc914f75dec3776259d9e58d54a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PYTEST_REPORT.json": "c77f07607e7db5d37c2b6ae8436006de78097415c62eb94bf82959caf90cbf80",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_REPORT.json": "d5726faf0dc2becf5a26b1b6b9d6f5c0b6f86b95d51392d45a0fac594020824e",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_SECURITY_REPORT.json": "c77f07607e7db5d37c2b6ae8436006de78097415c62eb94bf82959caf90cbf80",
+    "05_REPORTS/content_engine/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_SUMMARY.md": "7188b683fc9c36b5b61925793cdbb2207f4f54c4448839755670e934ba720fab"
+  },
+  "manifest_completeness": "PASS",
+  "manifest_type": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_MANIFEST",
+  "next_step": {
+    "automation_allowed_now": false,
+    "component": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "gate_closure_allowed_next": true,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE",
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATED_POST_AUDITED",
+    "validation_status": "VALIDATED_POST_AUDITED"
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_ACCEPTANCE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_COMPILE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_DOMAINS_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_NEXT_STEP_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PYTEST_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_SECURITY_REPORT.json",
+    "05_REPORTS/content_engine/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "pytest_report": {
+    "returncode": 0,
+    "selected_tests": [
+      "tests/content_engine/test_draft_human_review_governance_contract.py",
+      "tests/content_engine/test_draft_human_review_governance_state_machine.py",
+      "tests/content_engine/test_draft_human_review_governance_decision_policy.py",
+      "tests/content_engine/test_draft_human_review_governance_evidence_policy.py",
+      "tests/content_engine/test_draft_human_review_governance_negative_cases.py",
+      "tests/content_engine/test_draft_human_review_governance_no_touch.py"
+    ],
+    "status": "PASS",
+    "stderr_tail": "",
+    "stdout_tail": "============================= test session starts =============================\nplatform win32 -- Python 3.12.10, pytest-9.0.3, pluggy-1.6.0\nrootdir: D:\\CONTENT_ENGINE_OMEGA\ncollected 14 items\n\ntests\\content_engine\\test_draft_human_review_governance_contract.py ..   [ 14%]\ntests\\content_engine\\test_draft_human_review_governance_state_machine.py . [ 21%]\n..                                                                       [ 35%]\ntests\\content_engine\\test_draft_human_review_governance_decision_policy.py . [ 42%]\n..                                                                       [ 57%]\ntests\\content_engine\\test_draft_human_review_governance_evidence_policy.py . [ 64%]\n..                                                                       [ 78%]\ntests\\content_engine\\test_draft_human_review_governance_negative_cases.py . [ 85%]\n.                                                                        [ 92%]\ntests\\content_engine\\test_draft_human_review_governance_no_touch.py .    [100%]\n\n============================= 14 passed in 0.19s ==============================\n"
+  },
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATED_POST_AUDITED",
+  "source_test_before": {
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/__init__.py": "5887c79a7f91503a7670f2758f4efde18e1893ae39b568ea723d7967c300fdb0",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/evidence.py": "9b22755b1fc0ecb7ee9a4c5f843927f9ca67bbe3d5ae66dea518681c60c98048",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/models.py": "485ecd3c34094268d6dda6a8a133a4bd47a0a70057fbdfd68d00d83f072633a1",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/policy.py": "4391c13cd15891bc9bd9b505a1ab75b90ed928ce062d7da3e1f5a2dccb884f1c",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/result.py": "8467707b7a7b2c76723b1dcfca7cd3f97c540ae7a0e1ffc73927f0eca03199fc",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/review_record.py": "c126ec00ab8fc095429030563fd351fbbccb1b0f80ef28a953aee5a51ab1e4f1",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/state_machine.py": "c5712f0e7cc357691aca1124197088d486dc1d77e7339329ac6a8d1bf638e0cb",
+    "04_SCRIPTS/python/content_engine/content_draft_human_review_governance/validator.py": "18984f413c945d1880e2a8fdd19e7a5bfd28ca01a10a9c67ff435c15e9f080e7",
+    "tests/content_engine/test_draft_human_review_governance_contract.py": "e89788e52ea381c64c11db58a9718bb95d477e8504936b4e4f97cade0176b3c4",
+    "tests/content_engine/test_draft_human_review_governance_decision_policy.py": "f1ec4d60d65bdf0fc8460d71d87138abfec15a80825dafa8b7de734c204f4e7c",
+    "tests/content_engine/test_draft_human_review_governance_evidence_policy.py": "70bc61b3a326f591a23c267cd54a1af89487690d0cccc37c8a9136b9bc79b8d7",
+    "tests/content_engine/test_draft_human_review_governance_negative_cases.py": "89a9b1eee74c5d7106a480ecc475ee6fb1b5b9cebaeda4259dee2ea524f04a84",
+    "tests/content_engine/test_draft_human_review_governance_no_touch.py": "b555d82a914355e56036ef09733ef775badf5e51dc752bfc96568176f14ffaa5",
+    "tests/content_engine/test_draft_human_review_governance_state_machine.py": "b8fbe5005872879761b313fc1780e2ae8cdcf2db8054ad9d603bfbc710e3409b"
+  },
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION",
+  "validation_status": "VALIDATED_POST_AUDITED"
+}
