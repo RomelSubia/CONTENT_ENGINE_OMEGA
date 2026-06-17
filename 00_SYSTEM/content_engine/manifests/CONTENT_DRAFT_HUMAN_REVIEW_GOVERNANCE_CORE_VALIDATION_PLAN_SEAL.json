@@ -1,0 +1,23 @@
+{
+  "argos_bridge_build_allowed_now": false,
+  "automation_allowed_now": false,
+  "brain_write_allowed_now": false,
+  "component": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+  "content_generation_allowed_now": false,
+  "decision": "VALIDATION_PLAN_DEFINED_FOR_VALIDATION_ONLY",
+  "draft_creation_allowed_now": false,
+  "finalization_allowed_now": false,
+  "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_MANIFEST.json",
+  "manifest_sha256": "f5a03f0aef810cf5fa9b1ee0700bc72400a33460a4a90cc5cbdfcf7e11cb328d",
+  "manual_current_mutation_allowed_now": false,
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "publishing_allowed_now": false,
+  "queue_write_allowed_now": false,
+  "reports_brain_write_allowed_now": false,
+  "runtime_execution_allowed_now": false,
+  "sealed_status": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_DEFINED",
+  "validation_allowed_next": true,
+  "validation_execution_allowed_now": false,
+  "validation_plan_status": "VALIDATION_PLAN_DEFINED"
+}
