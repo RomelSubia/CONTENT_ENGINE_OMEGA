@@ -1,0 +1,725 @@
+{
+  "acceptance_matrix": {
+    "acceptance": [
+      "All planned source files written only during automatic block build.",
+      "All planned tests written only during automatic block build.",
+      "Package compiles with compileall.",
+      "Pytest passes for all queue governance tests.",
+      "Allowed plan-only queue governance decision succeeds.",
+      "Forbidden QUEUE_WRITE_NOW fails closed.",
+      "Forbidden CREATE_QUEUE_ITEM_NOW fails closed.",
+      "Forbidden UPDATE_QUEUE_ITEM_NOW fails closed.",
+      "Missing finalization evidence fails closed.",
+      "Invalid sha256 fails closed.",
+      "Queue write flag remains false.",
+      "Queue item created flag remains false.",
+      "Queue item updated flag remains false.",
+      "Publishing and automation flags remain false.",
+      "No protected roots mutate outside allowlist.",
+      "Manifest/seal produced and valid.",
+      "Commit/push and repo clean/synced."
+    ],
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "status": "PASS"
+  },
+  "blocked_operations": {
+    "argos_bridge_build_performed": false,
+    "automatic_block_build_started": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "capa9_started": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "finalization_started": false,
+    "implementation_started": false,
+    "manual_current_mutation_performed": false,
+    "n8n_started": false,
+    "publishing_started": false,
+    "queue_item_created": false,
+    "queue_item_updated": false,
+    "queue_write_performed": false,
+    "reports_brain_write_performed": false,
+    "runtime_execution_started": false,
+    "source_files_written": false,
+    "status": "PASS",
+    "test_files_written": false,
+    "webhook_started": false
+  },
+  "build_permission": {
+    "automatic_block_build_allowed_next": true,
+    "automation_allowed_next_step": false,
+    "automation_allowed_now": false,
+    "compile_allowed_next_step_only": true,
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "implementation_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+    "publishing_allowed_next_step": false,
+    "publishing_allowed_now": false,
+    "pytest_allowed_next_step_only": true,
+    "queue_item_creation_allowed_next_step": false,
+    "queue_item_creation_allowed_now": false,
+    "queue_write_allowed_next_step": false,
+    "queue_write_allowed_now": false,
+    "source_files_allowed_next_step_only": true,
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_next_step_only": true,
+    "test_files_allowed_now": false
+  },
+  "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+  "consumed_final_approval": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+    "manifest_sha256": "2d1f16a2f025e0fc284e5b84799d6f6aff735a672fe951b4d5686c0e2b285dfa",
+    "report_hashes": {
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_DECISION_REPORT.json": "7895e5cb8a93942bbcb0c50c0295700c03bfd2be5cf18cdcb46a7ead01dfd57c",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_EVIDENCE_REPORT.json": "7895e5cb8a93942bbcb0c50c0295700c03bfd2be5cf18cdcb46a7ead01dfd57c",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_NEXT_STEP_REPORT.json": "7895e5cb8a93942bbcb0c50c0295700c03bfd2be5cf18cdcb46a7ead01dfd57c",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_NO_TOUCH_REPORT.json": "7895e5cb8a93942bbcb0c50c0295700c03bfd2be5cf18cdcb46a7ead01dfd57c",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_REPORT.json": "172ea033ec9b4ad5ceb91fb5ebd25bba732161370c292a2acac76368edd105a6",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SECURITY_REPORT.json": "7895e5cb8a93942bbcb0c50c0295700c03bfd2be5cf18cdcb46a7ead01dfd57c"
+    },
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+    "seal_sha256": "0abeee4eeac33be2665f30dedf2ded03687c4ee4656fddcc6ce64f07bf8af786"
+  },
+  "contract_plan": {
+    "allowed_decisions": [
+      "PREPARE_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+      "REQUEST_REVISION_BEFORE_QUEUE",
+      "REJECT_QUEUE_READINESS",
+      "HOLD_QUEUE_READINESS",
+      "ESCALATE_QUEUE_REVIEW"
+    ],
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "forbidden_decisions": [
+      "QUEUE_WRITE_NOW",
+      "CREATE_QUEUE_ITEM_NOW",
+      "UPDATE_QUEUE_ITEM_NOW",
+      "PUBLISH_NOW",
+      "AUTOMATE_NOW",
+      "SEND_TO_N8N",
+      "TRIGGER_WEBHOOK",
+      "TRIGGER_CAPA9",
+      "MUTATE_MANUAL_CURRENT",
+      "WRITE_BRAIN",
+      "WRITE_REPORTS_BRAIN",
+      "BUILD_ARGOS_BRIDGE"
+    ],
+    "hash_fields": [
+      "finalization_result_sha256",
+      "draft_sha256",
+      "human_review_sha256",
+      "safe_preview_sha256"
+    ],
+    "required_evidence_fields": [
+      "finalization_result_reference",
+      "finalization_result_sha256",
+      "finalization_manifest_reference",
+      "draft_reference",
+      "draft_sha256",
+      "human_review_reference",
+      "human_review_sha256",
+      "safe_preview_reference",
+      "safe_preview_sha256"
+    ],
+    "required_outputs": [
+      "request_id",
+      "queue_governance_status",
+      "queue_governance_record_reference",
+      "queue_write_readiness_reference",
+      "next_allowed_step_for_queue_write_governance_only",
+      "blocked_operation_flags"
+    ],
+    "required_request_fields": [
+      "request_id",
+      "operator_identity",
+      "policy_version",
+      "timestamp",
+      "intent",
+      "evidence",
+      "decision"
+    ],
+    "status": "PASS"
+  },
+  "evidence_validation_plan": {
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "errors": [
+      "MISSING_QUEUE_GOVERNANCE_EVIDENCE",
+      "INVALID_SHA256"
+    ],
+    "required_evidence_fields": [
+      "finalization_result_reference",
+      "finalization_result_sha256",
+      "finalization_manifest_reference",
+      "draft_reference",
+      "draft_sha256",
+      "human_review_reference",
+      "human_review_sha256",
+      "safe_preview_reference",
+      "safe_preview_sha256"
+    ],
+    "sha256_fields": [
+      "finalization_result_sha256",
+      "draft_sha256",
+      "human_review_sha256",
+      "safe_preview_sha256"
+    ],
+    "status": "PASS",
+    "validator_errors": [
+      "MISSING_QUEUE_GOVERNANCE_REQUEST_FIELDS",
+      "FORBIDDEN_QUEUE_GOVERNANCE_DECISION"
+    ]
+  },
+  "file_plan": {
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "planned_package_root": "04_SCRIPTS/python/content_engine/content_draft_queue_governance",
+    "planned_source_files": [
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/models.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/policy.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/state_machine.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/evidence.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/validator.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/queue_record.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/result.py"
+    ],
+    "planned_test_files": [
+      "tests/content_engine/test_draft_queue_governance_models.py",
+      "tests/content_engine/test_draft_queue_governance_policy.py",
+      "tests/content_engine/test_draft_queue_governance_state_machine.py",
+      "tests/content_engine/test_draft_queue_governance_evidence.py",
+      "tests/content_engine/test_draft_queue_governance_validator.py",
+      "tests/content_engine/test_draft_queue_governance_negative_cases.py"
+    ],
+    "planned_test_root": "tests/content_engine",
+    "source_file_count": 8,
+    "status": "PASS",
+    "test_file_count": 6,
+    "write_allowed_next_step_only": true,
+    "write_now": false
+  },
+  "gates": {
+    "QGIP-G01_ROOT_EXISTS": true,
+    "QGIP-G02_PYTHON_OK": true,
+    "QGIP-G03_BRANCH_MAIN": true,
+    "QGIP-G04_REPO_CLEAN_PRE_PLAN": true,
+    "QGIP-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "QGIP-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "QGIP-G07_FINAL_APPROVAL_SEAL_PRESENT": true,
+    "QGIP-G08_FINAL_APPROVAL_MANIFEST_PRESENT": true,
+    "QGIP-G09_FINAL_APPROVAL_REPORTS_PRESENT": true,
+    "QGIP-G10_FINAL_APPROVAL_SEAL_HASH_OK": true,
+    "QGIP-G11_FINAL_APPROVAL_STATUS_VALID": true,
+    "QGIP-G12_FINAL_APPROVAL_DECISION_VALID": true,
+    "QGIP-G13_FINAL_APPROVAL_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "QGIP-G14_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "QGIP-G15_IMPLEMENTATION_SCOPE_DEFINED": true,
+    "QGIP-G16_FILE_PLAN_DEFINED": true,
+    "QGIP-G17_SOURCE_PLAN_DEFINED": true,
+    "QGIP-G18_TEST_PLAN_DEFINED": true,
+    "QGIP-G19_CONTRACT_PLAN_DEFINED": true,
+    "QGIP-G20_STATE_MACHINE_PLAN_DEFINED": true,
+    "QGIP-G21_EVIDENCE_VALIDATION_PLAN_DEFINED": true,
+    "QGIP-G22_QUEUE_RECORD_RESULT_PLAN_DEFINED": true,
+    "QGIP-G23_ACCEPTANCE_MATRIX_DEFINED": true,
+    "QGIP-G24_NEGATIVE_CASES_DEFINED": true,
+    "QGIP-G25_SECURITY_PLAN_DEFINED": true,
+    "QGIP-G26_NO_TOUCH_PLAN_DEFINED": true,
+    "QGIP-G27_AUTOMATIC_BLOCK_BUILD_ALLOWED_NEXT_ONLY": true,
+    "QGIP-G28_NO_IMPLEMENTATION_ALLOWED_NOW": true,
+    "QGIP-G29_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "QGIP-G30_NEXT_SAFE_STEP_DEFINED": true,
+    "QGIP-G31_REPORTS_WRITTEN": false,
+    "QGIP-G32_MANIFEST_WRITTEN": false,
+    "QGIP-G33_SEAL_WRITTEN": false,
+    "QGIP-G34_OUTPUT_SCOPE_EXACT": false,
+    "QGIP-G35_JSON_CANONICAL": false,
+    "QGIP-G36_MANIFEST_COMPLETE": false,
+    "QGIP-G37_SEAL_VALID": false,
+    "QGIP-G38_NO_TOUCH_PROTECTED_ROOTS": false,
+    "QGIP-G39_COMMIT_ALLOWLIST_EXACT": false,
+    "QGIP-G40_COMMIT_CREATED": false,
+    "QGIP-G41_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "f293064202bd6e8446a809b492d09b4bb9299286",
+    "previous_commit_subject": "Approve Content Draft Queue Governance Core implementation plan",
+    "python": "Python 3.12.10",
+    "remote": "f293064202bd6e8446a809b492d09b4bb9299286"
+  },
+  "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+  "implementation_scope": {
+    "allowed_next_step_only": [
+      "Automatic block build may write allowlisted source files",
+      "Automatic block build may write allowlisted test files",
+      "Automatic block build may run compile checks",
+      "Automatic block build may run pytest checks",
+      "Automatic block build may commit/push build artifacts if gates pass"
+    ],
+    "allowed_now": [
+      "Define implementation plan",
+      "Define file plan",
+      "Define source module plan",
+      "Define test plan",
+      "Define acceptance matrix",
+      "Define negative cases",
+      "Define security/no-touch plan",
+      "Write implementation-plan reports",
+      "Write manifest/seal",
+      "Commit/push allowlisted implementation-plan artifacts"
+    ],
+    "blocked_now": [
+      "Implementation now",
+      "Source file writing now",
+      "Test file writing now",
+      "Runtime execution",
+      "Draft creation",
+      "Content generation",
+      "Finalization real",
+      "Queue write",
+      "Queue item creation",
+      "Queue item update",
+      "Publishing",
+      "Automation",
+      "n8n/webhook/CAPA9",
+      "Manual current mutation",
+      "Brain/reports-brain mutation",
+      "ARGOS bridge build"
+    ],
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "implementation_allowed_now": false,
+    "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+    "scope_decision": "PLAN_ONLY_FOR_AUTOMATIC_BLOCK_BUILD",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "negative_cases": {
+    "cases": [
+      {
+        "case": "Missing finalization_result_reference",
+        "expected": "MISSING_QUEUE_GOVERNANCE_EVIDENCE"
+      },
+      {
+        "case": "Invalid finalization_result_sha256",
+        "expected": "INVALID_SHA256"
+      },
+      {
+        "case": "Forbidden decision QUEUE_WRITE_NOW",
+        "expected": "FORBIDDEN_QUEUE_GOVERNANCE_DECISION"
+      },
+      {
+        "case": "Forbidden decision CREATE_QUEUE_ITEM_NOW",
+        "expected": "FORBIDDEN_QUEUE_GOVERNANCE_DECISION"
+      },
+      {
+        "case": "Forbidden decision UPDATE_QUEUE_ITEM_NOW",
+        "expected": "FORBIDDEN_QUEUE_GOVERNANCE_DECISION"
+      },
+      {
+        "case": "Forbidden publishing attempt",
+        "expected": "FORBIDDEN_QUEUE_GOVERNANCE_DECISION"
+      },
+      {
+        "case": "Invalid state transition",
+        "expected": "INVALID_QUEUE_GOVERNANCE_TRANSITION"
+      },
+      {
+        "case": "Attempt to mutate queue root during governance record build",
+        "expected": "FAIL_CLOSED_NO_TOUCH"
+      }
+    ],
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "status": "PASS"
+  },
+  "next_step": {
+    "automatic_block_build_allowed_next": true,
+    "automation_allowed_now": false,
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_allowed_now": false,
+    "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+    "publishing_allowed_now": false,
+    "queue_item_creation_allowed_now": false,
+    "queue_item_update_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_DEFINED",
+    "source_files_allowed_next_step_only": true,
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_next_step_only": true,
+    "test_files_allowed_now": false
+  },
+  "no_touch_plan": {
+    "allowed_output_scope_now": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_ACCEPTANCE_MATRIX_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_CONTRACT_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_FILE_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEGATIVE_CASES_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEXT_STEP_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SECURITY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SOURCE_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_TEST_PLAN_REPORT.json",
+      "05_REPORTS/content_engine/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SUMMARY.md"
+    ],
+    "argos_bridge_allowed_now": false,
+    "brain_root_allowed_now": false,
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "manual_root_allowed_now": false,
+    "planned_source_scope_next_step_only": [
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/models.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/policy.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/state_machine.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/evidence.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/validator.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/queue_record.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_governance/result.py"
+    ],
+    "planned_test_scope_next_step_only": [
+      "tests/content_engine/test_draft_queue_governance_models.py",
+      "tests/content_engine/test_draft_queue_governance_policy.py",
+      "tests/content_engine/test_draft_queue_governance_state_machine.py",
+      "tests/content_engine/test_draft_queue_governance_evidence.py",
+      "tests/content_engine/test_draft_queue_governance_validator.py",
+      "tests/content_engine/test_draft_queue_governance_negative_cases.py"
+    ],
+    "protected_before": {
+      "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+      "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+      "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+      "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+      "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+      "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+      "07_DATA/metrics": "MISSING",
+      "07_DATA/queue": "MISSING",
+      "08_ASSETS": "MISSING",
+      "09_PUBLICATION": "MISSING",
+      "12_LOGS/runtime": "MISSING",
+      "13_BACKUPS": "MISSING",
+      "14_EXPORTS": "MISSING",
+      "n8n": "MISSING",
+      "publication": "MISSING",
+      "workflows": "MISSING"
+    },
+    "protected_roots": [
+      "00_SYSTEM/brain",
+      "00_SYSTEM/reports/brain",
+      "00_SYSTEM/manual/current",
+      "00_SYSTEM/manual/historical",
+      "00_SYSTEM/manual/manifest",
+      "00_SYSTEM/manual/registry",
+      "07_DATA/queue",
+      "07_DATA/metrics",
+      "08_ASSETS",
+      "09_PUBLICATION",
+      "14_EXPORTS",
+      "13_BACKUPS",
+      "12_LOGS/runtime",
+      "n8n",
+      "workflows",
+      "publication"
+    ],
+    "publication_root_allowed_now": false,
+    "queue_root_allowed_next_step": false,
+    "queue_root_allowed_now": false,
+    "reports_brain_root_allowed_now": false,
+    "status": "PASS"
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "queue_record_result_plan": {
+    "automation_started": false,
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "publishing_started": false,
+    "queue_item_created": false,
+    "queue_item_updated": false,
+    "queue_record_builder": {
+      "behavior": [
+        "Validate request",
+        "Validate evidence",
+        "Validate policy",
+        "Advance fail-closed state machine",
+        "Build plan-only queue governance result",
+        "Never write 07_DATA/queue",
+        "Never create queue item",
+        "Never update queue item",
+        "Never publish",
+        "Never automate"
+      ],
+      "function": "build_queue_governance_record(request)",
+      "planned_references": {
+        "queue_governance_record_reference": "queue-governance-ready://{request_id}",
+        "queue_write_readiness_reference": "queue-write-governance-plan-only://{request_id}"
+      }
+    },
+    "queue_write_performed": false,
+    "result_model": {
+      "class": "QueueGovernanceResult",
+      "required_fields": [
+        "request_id",
+        "queue_governance_status",
+        "queue_governance_record_reference",
+        "queue_governance_record_sha256",
+        "queue_write_readiness_reference",
+        "next_allowed_step_for_queue_write_governance_only",
+        "blocked_operation_flags"
+      ],
+      "required_method": "assert_no_productive_side_effects()"
+    },
+    "status": "PASS"
+  },
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_DEFINED",
+  "security_plan": {
+    "allowed_next_step_only": {
+      "automatic_block_build_allowed_next": true,
+      "compile_allowed_in_next_step_only": true,
+      "pytest_allowed_in_next_step_only": true,
+      "source_files_allowed_in_next_step_only": true,
+      "test_files_allowed_in_next_step_only": true
+    },
+    "blocked_now": {
+      "argos_bridge_build_performed": false,
+      "automatic_block_build_started": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "implementation_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "publishing_started": false,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "source_files_written": false,
+      "test_files_written": false,
+      "webhook_started": false
+    },
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "security_mode": "FAIL_CLOSED_IMPLEMENTATION_PLAN_ONLY",
+    "status": "PASS",
+    "still_blocked_next_step": {
+      "argos_bridge": true,
+      "automation": true,
+      "brain": true,
+      "content_generation": true,
+      "draft_creation": true,
+      "finalization_real": true,
+      "manual_current": true,
+      "publishing": true,
+      "queue_item_creation": true,
+      "queue_item_update": true,
+      "queue_write": true,
+      "reports_brain": true,
+      "runtime_execution": true
+    }
+  },
+  "source_plan": {
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "modules": [
+      {
+        "path": "04_SCRIPTS/python/content_engine/content_draft_queue_governance/__init__.py",
+        "purpose": "Expose package symbols safely without side effects.",
+        "write_now": false
+      },
+      {
+        "path": "04_SCRIPTS/python/content_engine/content_draft_queue_governance/models.py",
+        "purpose": "Define QueueGovernanceStatus, QueueGovernanceDecision, QueueGovernanceEvidence and QueueGovernanceRequest.",
+        "required_decisions": [
+          "PREPARE_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+          "REQUEST_REVISION_BEFORE_QUEUE",
+          "REJECT_QUEUE_READINESS",
+          "HOLD_QUEUE_READINESS",
+          "ESCALATE_QUEUE_REVIEW"
+        ],
+        "required_statuses": [
+          "READY_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+          "REQUEST_REVISION_BEFORE_QUEUE",
+          "REJECTED",
+          "HOLD",
+          "ESCALATED"
+        ],
+        "write_now": false
+      },
+      {
+        "must_forbid": [
+          "QUEUE_WRITE_NOW",
+          "CREATE_QUEUE_ITEM_NOW",
+          "UPDATE_QUEUE_ITEM_NOW",
+          "PUBLISH_NOW",
+          "AUTOMATE_NOW",
+          "SEND_TO_N8N",
+          "TRIGGER_WEBHOOK",
+          "TRIGGER_CAPA9",
+          "MUTATE_MANUAL_CURRENT",
+          "WRITE_BRAIN",
+          "WRITE_REPORTS_BRAIN",
+          "BUILD_ARGOS_BRIDGE"
+        ],
+        "path": "04_SCRIPTS/python/content_engine/content_draft_queue_governance/policy.py",
+        "purpose": "Enforce allowed queue governance decisions and block productive/queue/publishing/automation decisions.",
+        "write_now": false
+      },
+      {
+        "path": "04_SCRIPTS/python/content_engine/content_draft_queue_governance/state_machine.py",
+        "planned_states": [
+          "RECEIVED",
+          "FINALIZATION_EVIDENCE_VALIDATED",
+          "QUEUE_POLICY_VALIDATED",
+          "QUEUE_RECORD_PREPARED",
+          "READY_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+          "FAILED_CLOSED"
+        ],
+        "purpose": "Provide fail-closed queue governance state transitions.",
+        "write_now": false
+      },
+      {
+        "path": "04_SCRIPTS/python/content_engine/content_draft_queue_governance/evidence.py",
+        "purpose": "Validate required evidence and sha256 fields.",
+        "required_fields": [
+          "finalization_result_reference",
+          "finalization_result_sha256",
+          "finalization_manifest_reference",
+          "draft_reference",
+          "draft_sha256",
+          "human_review_reference",
+          "human_review_sha256",
+          "safe_preview_reference",
+          "safe_preview_sha256"
+        ],
+        "write_now": false
+      },
+      {
+        "path": "04_SCRIPTS/python/content_engine/content_draft_queue_governance/validator.py",
+        "purpose": "Validate queue governance request structure, evidence and policy.",
+        "write_now": false
+      },
+      {
+        "must_never_do": [
+          "Write 07_DATA/queue",
+          "Create queue item",
+          "Update queue item",
+          "Publish",
+          "Automate",
+          "Trigger n8n/webhook/CAPA9"
+        ],
+        "path": "04_SCRIPTS/python/content_engine/content_draft_queue_governance/queue_record.py",
+        "purpose": "Build plan-only queue governance records without writing queue.",
+        "write_now": false
+      },
+      {
+        "path": "04_SCRIPTS/python/content_engine/content_draft_queue_governance/result.py",
+        "purpose": "Represent queue governance result and assert no productive side effects.",
+        "write_now": false
+      }
+    ],
+    "source_files_allowed_next_step_only": true,
+    "source_files_allowed_now": false,
+    "status": "PASS"
+  },
+  "state_machine_plan": {
+    "allowed_transitions": [
+      [
+        "RECEIVED",
+        "FINALIZATION_EVIDENCE_VALIDATED"
+      ],
+      [
+        "FINALIZATION_EVIDENCE_VALIDATED",
+        "QUEUE_POLICY_VALIDATED"
+      ],
+      [
+        "QUEUE_POLICY_VALIDATED",
+        "QUEUE_RECORD_PREPARED"
+      ],
+      [
+        "QUEUE_RECORD_PREPARED",
+        "READY_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY"
+      ]
+    ],
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "fail_closed_required": true,
+    "invalid_transition_error": "INVALID_QUEUE_GOVERNANCE_TRANSITION",
+    "states": [
+      "RECEIVED",
+      "FINALIZATION_EVIDENCE_VALIDATED",
+      "QUEUE_POLICY_VALIDATED",
+      "QUEUE_RECORD_PREPARED",
+      "READY_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+      "FAILED_CLOSED"
+    ],
+    "status": "PASS"
+  },
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+  "summary": "Content Draft Queue Governance Core implementation plan defined.",
+  "test_plan": {
+    "compile_required_next_step": true,
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "pytest_required_next_step": true,
+    "status": "PASS",
+    "test_files_allowed_next_step_only": true,
+    "test_files_allowed_now": false,
+    "tests": [
+      {
+        "path": "tests/content_engine/test_draft_queue_governance_models.py",
+        "purpose": "Validate request/evidence model construction.",
+        "write_now": false
+      },
+      {
+        "path": "tests/content_engine/test_draft_queue_governance_policy.py",
+        "purpose": "Validate allowed plan-only decisions and forbidden queue/publishing/automation decisions.",
+        "write_now": false
+      },
+      {
+        "path": "tests/content_engine/test_draft_queue_governance_state_machine.py",
+        "purpose": "Validate allowed state transitions and fail-closed invalid transitions.",
+        "write_now": false
+      },
+      {
+        "path": "tests/content_engine/test_draft_queue_governance_evidence.py",
+        "purpose": "Validate required evidence and malformed sha256 rejection.",
+        "write_now": false
+      },
+      {
+        "path": "tests/content_engine/test_draft_queue_governance_validator.py",
+        "purpose": "Validate request validation and queue record plan-only output.",
+        "write_now": false
+      },
+      {
+        "path": "tests/content_engine/test_draft_queue_governance_negative_cases.py",
+        "purpose": "Validate fail-closed behavior for missing evidence and forbidden queue write decisions.",
+        "write_now": false
+      }
+    ]
+  }
+}
