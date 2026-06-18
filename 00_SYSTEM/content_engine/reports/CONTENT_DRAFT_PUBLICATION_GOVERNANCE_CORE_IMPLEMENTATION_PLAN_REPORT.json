@@ -1,0 +1,560 @@
+{
+  "acceptance_plan": {
+    "all_criteria_defined": true,
+    "criteria": [
+      {
+        "criterion": "Final approval consumed and hash-validated",
+        "required": true
+      },
+      {
+        "criterion": "Exact source plan defined",
+        "required": true
+      },
+      {
+        "criterion": "Exact test plan defined",
+        "required": true
+      },
+      {
+        "criterion": "Policy fail-closed plan defined",
+        "required": true
+      },
+      {
+        "criterion": "State model fail-closed plan defined",
+        "required": true
+      },
+      {
+        "criterion": "Evidence strict plan defined",
+        "required": true
+      },
+      {
+        "criterion": "Plan-only publication intent/result defined",
+        "required": true
+      },
+      {
+        "criterion": "Validator/audit plan defined",
+        "required": true
+      },
+      {
+        "criterion": "Publication remains blocked",
+        "required": true
+      },
+      {
+        "criterion": "Automation/n8n/webhook/CAPA9 remain blocked",
+        "required": true
+      },
+      {
+        "criterion": "Queue write and queue item mutation remain blocked",
+        "required": true
+      },
+      {
+        "criterion": "Automatic block build is next safe step only",
+        "required": true
+      }
+    ],
+    "status": "PASS"
+  },
+  "component": "CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE",
+  "consumed_final_approval": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+    "manifest_sha256": "637caa607e7cbee441ad9462c228cb537765942c1823fbd64e96dc8845e932fd",
+    "report_hashes": {
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_ACCEPTANCE_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_CONSUMPTION_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_EVIDENCE_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_NEXT_STEP_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_NO_TOUCH_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_POLICY_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_PUBLICATION_CONTROL_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_REPORT.json": "51e8f407e4c6f88b360dc85b9fafc5b7dec7b24bffee32a353cd4767c8855e8e",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SCOPE_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SECURITY_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_STATE_MODEL_REPORT.json": "38e4cd02f0e00bc211dc7ae43d5fe8d57e8f8bf931766bca40fa346d2c60a629"
+    },
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+    "seal_sha256": "8ff085113ee69efeb9be9d59b489a7450deb6e468966903e3f655a3a653396e3"
+  },
+  "evidence_plan": {
+    "hash_algorithm": "sha256",
+    "hash_mismatch_behavior": "FAIL_CLOSED",
+    "missing_evidence_behavior": "FAIL_CLOSED",
+    "missing_human_review_behavior": "FAIL_CLOSED",
+    "required_fields": [
+      "queue_write_governance_gate_close_reference",
+      "queue_write_governance_gate_close_sha256",
+      "publication_readiness_map_reference",
+      "publication_readiness_map_sha256",
+      "safe_preview_reference",
+      "safe_preview_sha256",
+      "human_review_reference",
+      "human_review_sha256",
+      "finalization_reference",
+      "finalization_sha256"
+    ],
+    "stale_evidence_behavior": "FAIL_CLOSED",
+    "status": "PASS",
+    "unsafe_preview_behavior": "FAIL_CLOSED"
+  },
+  "gates": {
+    "PGCIP-G01_ROOT_EXISTS": true,
+    "PGCIP-G02_PYTHON_OK": true,
+    "PGCIP-G03_BRANCH_MAIN": true,
+    "PGCIP-G04_REPO_CLEAN_PRE_PLAN": true,
+    "PGCIP-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "PGCIP-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "PGCIP-G07_FINAL_APPROVAL_SEAL_PRESENT": true,
+    "PGCIP-G08_FINAL_APPROVAL_MANIFEST_PRESENT": true,
+    "PGCIP-G09_FINAL_APPROVAL_REPORTS_PRESENT": true,
+    "PGCIP-G10_FINAL_APPROVAL_SEAL_HASH_OK": true,
+    "PGCIP-G11_FINAL_APPROVAL_STATUS_VALID": true,
+    "PGCIP-G12_FINAL_APPROVAL_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "PGCIP-G13_FINAL_APPROVAL_TRUE_FLAGS_VALID": true,
+    "PGCIP-G14_FINAL_APPROVAL_SECURITY_FLAGS_VALID": true,
+    "PGCIP-G15_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "PGCIP-G16_IMPLEMENTATION_SCOPE_DEFINED": true,
+    "PGCIP-G17_SOURCE_FILE_PLAN_DEFINED": true,
+    "PGCIP-G18_TEST_FILE_PLAN_DEFINED": true,
+    "PGCIP-G19_MODELS_PLAN_DEFINED": true,
+    "PGCIP-G20_POLICY_PLAN_DEFINED": true,
+    "PGCIP-G21_STATE_MODEL_PLAN_DEFINED": true,
+    "PGCIP-G22_EVIDENCE_PLAN_DEFINED": true,
+    "PGCIP-G23_PUBLICATION_INTENT_RESULT_PLAN_DEFINED": true,
+    "PGCIP-G24_VALIDATOR_AUDIT_PLAN_DEFINED": true,
+    "PGCIP-G25_SECURITY_PLAN_DEFINED": true,
+    "PGCIP-G26_ACCEPTANCE_PLAN_DEFINED": true,
+    "PGCIP-G27_NO_TOUCH_PLAN_DEFINED": true,
+    "PGCIP-G28_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "PGCIP-G29_AUTOMATIC_BLOCK_BUILD_ALLOWED_NEXT_ONLY": true,
+    "PGCIP-G30_REPORTS_WRITTEN": false,
+    "PGCIP-G31_MANIFEST_WRITTEN": false,
+    "PGCIP-G32_SEAL_WRITTEN": false,
+    "PGCIP-G33_OUTPUT_SCOPE_EXACT": false,
+    "PGCIP-G34_JSON_CANONICAL": false,
+    "PGCIP-G35_MANIFEST_COMPLETE": false,
+    "PGCIP-G36_SEAL_VALID": false,
+    "PGCIP-G37_NO_TOUCH_PROTECTED_ROOTS": false,
+    "PGCIP-G38_COMMIT_ALLOWLIST_EXACT": false,
+    "PGCIP-G39_COMMIT_CREATED": false,
+    "PGCIP-G40_PUSH_SYNC": false,
+    "PGCIP-G41_REPO_CLEAN_SYNCED_FINAL": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "5f17d86052c4f83b7708c3fd3b7e83d058b64aa7",
+    "previous_commit_subject": "Review final approval for Content Draft Publication Governance Core",
+    "python": "Python 3.12.10",
+    "remote": "5f17d86052c4f83b7708c3fd3b7e83d058b64aa7"
+  },
+  "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+  "implementation_scope_plan": {
+    "allowed_in_next_automatic_block_build_only": [
+      "write exact planned source files",
+      "write exact planned test files",
+      "compile planned source/test files",
+      "run pytest for planned tests",
+      "write build reports/manifests/seals",
+      "commit and push exact build scope"
+    ],
+    "automatic_block_build_allowed_next": true,
+    "blocked_in_this_step": [
+      "implementation",
+      "source file writing",
+      "test file writing",
+      "runtime execution",
+      "draft creation",
+      "content generation",
+      "finalization real",
+      "queue write",
+      "queue item creation/update",
+      "publishing/posting/scheduling",
+      "automation/n8n/webhook/CAPA9",
+      "manual/brain/reports-brain mutation",
+      "ARGOS bridge build"
+    ],
+    "component": "CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE",
+    "implementation_allowed_now": false,
+    "plan_result": "IMPLEMENTATION_SCOPE_DEFINED",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "models_plan": {
+    "default_mode": "FAIL_CLOSED_PLAN_ONLY",
+    "planned_constants": [
+      "COMPONENT",
+      "REQUIRED_UPSTREAM_STATUS",
+      "READY_STATUS",
+      "FAILED_STATUS",
+      "ALLOWED_DECISIONS",
+      "FORBIDDEN_DECISIONS"
+    ],
+    "planned_dataclasses": [
+      "PublicationGovernanceEvidence",
+      "PublicationGovernanceRequest",
+      "PublicationGovernanceResult",
+      "PublicationIntent",
+      "PublicationAuditRecord"
+    ],
+    "required_false_flags": [
+      "publication_performed",
+      "posting_performed",
+      "publication_scheduled",
+      "publication_channel_mutated",
+      "automation_started",
+      "n8n_started",
+      "webhook_started",
+      "capa9_started",
+      "queue_write_performed",
+      "queue_item_created",
+      "queue_item_updated"
+    ],
+    "status": "PASS"
+  },
+  "next_step": {
+    "argos_bridge_build_allowed_now": false,
+    "automatic_block_build_allowed_next": true,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "component": "CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_allowed_now": false,
+    "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+    "manual_current_mutation_allowed_now": false,
+    "n8n_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+    "posting_allowed_now": false,
+    "publication_scheduling_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_item_creation_allowed_now": false,
+    "queue_item_update_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_DEFINED",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "no_touch_plan": {
+    "allowed_output_scope": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_CONSUMPTION_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_EVIDENCE_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEXT_STEP_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_POLICY_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SECURITY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SOURCE_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_STATE_MODEL_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_TEST_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_VALIDATOR_PLAN_REPORT.json",
+      "05_REPORTS/content_engine/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SUMMARY.md"
+    ],
+    "argos_bridge_build_allowed_now": false,
+    "automation_root_mutation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "future_source_files": [
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/models.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/policy.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/state_machine.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/evidence.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/publication_intent.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/publication_result.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/validator.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/audit.py"
+    ],
+    "future_test_files": [
+      "tests/content_engine/test_draft_publication_governance_models.py",
+      "tests/content_engine/test_draft_publication_governance_policy.py",
+      "tests/content_engine/test_draft_publication_governance_state_machine.py",
+      "tests/content_engine/test_draft_publication_governance_evidence.py",
+      "tests/content_engine/test_draft_publication_governance_validator.py",
+      "tests/content_engine/test_draft_publication_governance_publication_intent.py",
+      "tests/content_engine/test_draft_publication_governance_publication_result.py",
+      "tests/content_engine/test_draft_publication_governance_negative_cases.py"
+    ],
+    "manual_current_mutation_allowed_now": false,
+    "protected_before": {
+      "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+      "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+      "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+      "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+      "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+      "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+      "07_DATA/metrics": "MISSING",
+      "07_DATA/queue": "MISSING",
+      "08_ASSETS": "MISSING",
+      "09_PUBLICATION": "MISSING",
+      "12_LOGS/runtime": "MISSING",
+      "13_BACKUPS": "MISSING",
+      "14_EXPORTS": "MISSING",
+      "n8n": "MISSING",
+      "publication": "MISSING",
+      "workflows": "MISSING"
+    },
+    "protected_roots": [
+      "00_SYSTEM/brain",
+      "00_SYSTEM/reports/brain",
+      "00_SYSTEM/manual/current",
+      "00_SYSTEM/manual/historical",
+      "00_SYSTEM/manual/manifest",
+      "00_SYSTEM/manual/registry",
+      "07_DATA/queue",
+      "07_DATA/metrics",
+      "08_ASSETS",
+      "09_PUBLICATION",
+      "14_EXPORTS",
+      "13_BACKUPS",
+      "12_LOGS/runtime",
+      "n8n",
+      "workflows",
+      "publication"
+    ],
+    "publication_root_mutation_allowed_now": false,
+    "queue_root_mutation_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "status": "PASS"
+  },
+  "policy_plan": {
+    "allowed_decisions": [
+      "AUTHORIZE_PUBLICATION_GOVERNANCE_PLAN_ONLY",
+      "REQUEST_REVISION_BEFORE_PUBLICATION",
+      "REJECT_PUBLICATION_READINESS",
+      "HOLD_PUBLICATION_READINESS",
+      "ESCALATE_PUBLICATION_REVIEW"
+    ],
+    "forbidden_decision_error": "FORBIDDEN_PUBLICATION_GOVERNANCE_DECISION",
+    "forbidden_decisions": [
+      "PUBLISH_NOW",
+      "POST_NOW",
+      "SCHEDULE_PUBLICATION_NOW",
+      "UPDATE_PUBLICATION_CHANNEL_NOW",
+      "TRIGGER_N8N_NOW",
+      "TRIGGER_WEBHOOK_NOW",
+      "TRIGGER_CAPA9_NOW",
+      "AUTOMATE_NOW",
+      "WRITE_QUEUE_NOW",
+      "CREATE_QUEUE_ITEM_NOW",
+      "UPDATE_QUEUE_ITEM_NOW",
+      "GENERATE_CONTENT_NOW",
+      "FINALIZE_CONTENT_NOW",
+      "MUTATE_MANUAL_CURRENT_NOW",
+      "WRITE_BRAIN_NOW",
+      "WRITE_REPORTS_BRAIN_NOW",
+      "BUILD_ARGOS_BRIDGE_NOW"
+    ],
+    "missing_decision_error": "MISSING_PUBLICATION_GOVERNANCE_DECISION",
+    "policy_functions": [
+      "validate_decision",
+      "is_forbidden_operation",
+      "blocked_operation_flags"
+    ],
+    "status": "PASS",
+    "unknown_decision_behavior": "FAIL_CLOSED"
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "publication_intent_result_plan": {
+    "plan_only_required": true,
+    "publication_intent_builder": "build_plan_only_publication_intent",
+    "publication_result_builder": "build_plan_only_result",
+    "required_false_side_effects": [
+      "publication_performed",
+      "posting_performed",
+      "publication_scheduled",
+      "publication_channel_mutated",
+      "automation_started",
+      "n8n_started",
+      "webhook_started",
+      "capa9_started",
+      "queue_write_performed",
+      "queue_item_created",
+      "queue_item_updated",
+      "runtime_execution_started"
+    ],
+    "required_result_status": "READY_FOR_PUBLICATION_EXECUTION_GOVERNANCE_PLAN_ONLY",
+    "status": "PASS"
+  },
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_DEFINED",
+  "security_plan": {
+    "automatic_block_build_must_preserve_productive_blocks": true,
+    "blocked_operations": {
+      "argos_bridge_build_performed": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "implementation_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "posting_started": false,
+      "publication_channel_mutation_started": false,
+      "publication_scheduling_started": false,
+      "publishing_started": false,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "source_files_written": false,
+      "test_files_written": false,
+      "webhook_started": false
+    },
+    "security_model": "FAIL_CLOSED_PLAN_ONLY",
+    "status": "PASS"
+  },
+  "source_file_plan": {
+    "module_contracts": {
+      "__init__.py": "Export stable public API for publication governance plan-only validation.",
+      "audit.py": "Serialize audit records and expose blocked operation flags.",
+      "evidence.py": "Evidence validation for upstream governance references and hashes.",
+      "models.py": "Dataclasses/constants for request, evidence, result, statuses, decisions and blocked flags.",
+      "policy.py": "Allowlist/denylist decision validation and blocked-operation flags.",
+      "publication_intent.py": "Build non-mutating publication intent in plan-only mode.",
+      "publication_result.py": "Build result object with all publication/automation/queue side effects false.",
+      "state_machine.py": "Fail-closed state transition validation.",
+      "validator.py": "Orchestrate policy, evidence, state machine and plan-only result."
+    },
+    "package": "content_engine.content_draft_publication_governance",
+    "source_files_allowed_next_automatic_block_build": true,
+    "source_files_allowed_now": false,
+    "source_files_to_create_in_next_step_only": [
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/models.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/policy.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/state_machine.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/evidence.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/publication_intent.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/publication_result.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/validator.py",
+      "04_SCRIPTS/python/content_engine/content_draft_publication_governance/audit.py"
+    ],
+    "status": "PASS"
+  },
+  "state_model_plan": {
+    "allowed_transitions": [
+      [
+        "RECEIVED",
+        "PUBLICATION_GOVERNANCE_EVIDENCE_VALIDATED"
+      ],
+      [
+        "PUBLICATION_GOVERNANCE_EVIDENCE_VALIDATED",
+        "PUBLICATION_POLICY_VALIDATED"
+      ],
+      [
+        "PUBLICATION_POLICY_VALIDATED",
+        "PUBLICATION_INTENT_PREPARED"
+      ],
+      [
+        "PUBLICATION_INTENT_PREPARED",
+        "READY_FOR_PUBLICATION_EXECUTION_GOVERNANCE_PLAN_ONLY"
+      ]
+    ],
+    "forbidden_states": [
+      "PUBLISHED",
+      "POSTED",
+      "SCHEDULED_FOR_PUBLICATION",
+      "PUBLICATION_CHANNEL_UPDATED",
+      "N8N_TRIGGERED",
+      "WEBHOOK_TRIGGERED",
+      "CAPA9_TRIGGERED",
+      "QUEUE_WRITTEN",
+      "QUEUE_ITEM_CREATED",
+      "QUEUE_ITEM_UPDATED"
+    ],
+    "illegal_transition_behavior": "FAIL_CLOSED",
+    "states": [
+      "RECEIVED",
+      "PUBLICATION_GOVERNANCE_EVIDENCE_VALIDATED",
+      "PUBLICATION_POLICY_VALIDATED",
+      "PUBLICATION_INTENT_PREPARED",
+      "READY_FOR_PUBLICATION_EXECUTION_GOVERNANCE_PLAN_ONLY",
+      "FAILED_CLOSED"
+    ],
+    "status": "PASS"
+  },
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+  "summary": "Content Draft Publication Governance Core implementation plan defined.",
+  "test_file_plan": {
+    "status": "PASS",
+    "test_contracts": {
+      "evidence": "Validate missing/stale/hash-mismatch evidence fails closed.",
+      "models": "Validate constants, defaults and side-effect false flags.",
+      "negative_cases": "Validate productive decisions fail closed.",
+      "policy": "Validate allowed/forbidden decisions and fail-closed unknown decisions.",
+      "publication_intent": "Validate no publish/post/schedule/channel mutation intent.",
+      "publication_result": "Validate all side-effect booleans remain false.",
+      "state_machine": "Validate allowed transitions and forbidden productive terminal states.",
+      "validator": "Validate full request orchestration returns plan-only readiness."
+    },
+    "test_files_allowed_next_automatic_block_build": true,
+    "test_files_allowed_now": false,
+    "test_files_to_create_in_next_step_only": [
+      "tests/content_engine/test_draft_publication_governance_models.py",
+      "tests/content_engine/test_draft_publication_governance_policy.py",
+      "tests/content_engine/test_draft_publication_governance_state_machine.py",
+      "tests/content_engine/test_draft_publication_governance_evidence.py",
+      "tests/content_engine/test_draft_publication_governance_validator.py",
+      "tests/content_engine/test_draft_publication_governance_publication_intent.py",
+      "tests/content_engine/test_draft_publication_governance_publication_result.py",
+      "tests/content_engine/test_draft_publication_governance_negative_cases.py"
+    ]
+  },
+  "validator_audit_plan": {
+    "audit_entrypoint": "serialize_audit_record",
+    "audit_must_record": [
+      "request_id",
+      "operator_identity",
+      "decision",
+      "status",
+      "errors",
+      "blocked_operation_flags"
+    ],
+    "negative_cases_required": [
+      "missing idempotency key",
+      "missing target publication channel",
+      "missing evidence",
+      "hash mismatch",
+      "forbidden publish decision",
+      "forbidden schedule decision",
+      "forbidden automation decision",
+      "forbidden queue write decision"
+    ],
+    "status": "PASS",
+    "validator_entrypoint": "validate_publication_governance_request",
+    "validator_sequence": [
+      "validate evidence",
+      "validate decision policy",
+      "validate state transitions",
+      "build plan-only publication intent",
+      "build plan-only result",
+      "assert all productive side effects false"
+    ]
+  }
+}
