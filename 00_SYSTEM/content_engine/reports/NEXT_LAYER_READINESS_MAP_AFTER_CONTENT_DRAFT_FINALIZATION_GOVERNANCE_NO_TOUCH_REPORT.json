@@ -1,0 +1,322 @@
+{
+  "candidates": [
+    {
+      "allowed_action": "BLUEPRINT_ONLY",
+      "blocked_actions": [
+        "IMPLEMENTATION_NOW",
+        "QUEUE_WRITE_NOW",
+        "PUBLISH_NOW",
+        "AUTOMATE_NOW"
+      ],
+      "candidate_type": "direct_successor",
+      "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+      "readiness": "READY_FOR_BLUEPRINT_ONLY",
+      "reason": "Finalization Governance ended with queue-governance readiness references, but queue write remains blocked. The next safe layer is queue governance blueprint.",
+      "score": 100
+    },
+    {
+      "allowed_action": "NONE_NOW",
+      "blocked_actions": [
+        "BLUEPRINT_NOW",
+        "IMPLEMENTATION_NOW",
+        "QUEUE_WRITE_NOW",
+        "PUBLISH_NOW",
+        "AUTOMATE_NOW"
+      ],
+      "candidate_type": "downstream_candidate",
+      "component": "CONTENT_DRAFT_PUBLICATION_QUEUE_GOVERNANCE_CORE",
+      "readiness": "BLOCKED_UNTIL_QUEUE_GOVERNANCE_EXISTS",
+      "reason": "Publication queue governance depends on queue governance being explicitly designed first.",
+      "score": 70
+    },
+    {
+      "allowed_action": "NONE_NOW",
+      "blocked_actions": [
+        "IMPLEMENTATION_NOW",
+        "QUEUE_WRITE_NOW",
+        "PUBLISH_NOW",
+        "AUTOMATE_NOW"
+      ],
+      "candidate_type": "bridge_candidate",
+      "component": "CONTENT_FINALIZATION_TO_QUEUE_READINESS_MAP",
+      "readiness": "ABSORBED_BY_CURRENT_READINESS_MAP_DECISION",
+      "reason": "This readiness map already performs the finalization-to-queue decision gate without enabling queue write.",
+      "score": 60
+    },
+    {
+      "allowed_action": "NONE_NOW",
+      "blocked_actions": [
+        "BLUEPRINT_NOW",
+        "IMPLEMENTATION_NOW",
+        "PUBLISH_NOW",
+        "AUTOMATE_NOW"
+      ],
+      "candidate_type": "future_candidate",
+      "component": "CONTENT_DRAFT_PUBLISHING_GOVERNANCE_CORE",
+      "readiness": "BLOCKED_UNTIL_QUEUE_GOVERNANCE_AND_PUBLICATION_QUEUE_GOVERNANCE",
+      "reason": "Publishing governance is too far downstream because queue governance does not exist yet.",
+      "score": 30
+    },
+    {
+      "allowed_action": "NONE_NOW",
+      "blocked_actions": [
+        "BLUEPRINT_NOW",
+        "IMPLEMENTATION_NOW",
+        "PUBLISH_NOW",
+        "AUTOMATE_NOW",
+        "N8N_NOW",
+        "WEBHOOK_NOW",
+        "CAPA9_NOW"
+      ],
+      "candidate_type": "future_candidate",
+      "component": "CONTENT_DRAFT_AUTOMATION_GOVERNANCE_CORE",
+      "readiness": "BLOCKED_UNTIL_QUEUE_AND_PUBLISHING_GOVERNANCE",
+      "reason": "Automation is explicitly blocked and must remain downstream from queue and publishing governance.",
+      "score": 10
+    }
+  ],
+  "compile_report": {
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": ""
+  },
+  "consumed_finalization_gate_close": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+    "manifest_sha256": "3d9ae7652688a326216e653d4b7418eb52e806445fd45862d198946cbd55b8bf",
+    "report_hashes": {
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_COMPILE_REPORT.json": "09f299d500c9ccaab1a10c8f916f65307368bb49ba703a46cc5595faf3564b37",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_EVIDENCE_REPORT.json": "09f299d500c9ccaab1a10c8f916f65307368bb49ba703a46cc5595faf3564b37",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_NEXT_STEP_REPORT.json": "09f299d500c9ccaab1a10c8f916f65307368bb49ba703a46cc5595faf3564b37",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_NO_TOUCH_REPORT.json": "09f299d500c9ccaab1a10c8f916f65307368bb49ba703a46cc5595faf3564b37",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_PYTEST_REPORT.json": "09f299d500c9ccaab1a10c8f916f65307368bb49ba703a46cc5595faf3564b37",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_REPORT.json": "f7aaddd9dc4e09cedf87725ab666ff44924d9c76e7af598469a5b6bd84d40287",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SECURITY_REPORT.json": "09f299d500c9ccaab1a10c8f916f65307368bb49ba703a46cc5595faf3564b37"
+    },
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+    "seal_sha256": "55904695b4f81a2e238601c3cd2f10c1e7c9e74018a79dda06a19b215347fb75"
+  },
+  "controlled_recovery": {
+    "argos_bridge_build_performed": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "finalization_started": false,
+    "implementation_started": false,
+    "manual_current_mutation_performed": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "recovery_reason": "MANIFEST_SELECTED_COMPONENT_INVALID",
+    "recovery_type": "SCHEMA_ALIGNMENT_ONLY",
+    "reports_brain_write_performed": false,
+    "runtime_execution_started": false,
+    "source_files_written": false,
+    "status": "PASS",
+    "test_files_written": false,
+    "top_level_manifest_fields_added": [
+      "selected_next_component",
+      "selected_action",
+      "next_safe_step"
+    ]
+  },
+  "decision": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "content_generation_allowed_now": false,
+    "decision": "APPROVED_FOR_NEXT_COMPONENT_BLUEPRINT_ONLY",
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "readiness_status": "NEXT_LAYER_READINESS_MAP_DEFINED",
+    "reports_brain_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "selected_action": "BLUEPRINT_ONLY",
+    "selected_next_component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "selected_next_step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "finalization_source_hashes": {
+    "04_SCRIPTS/python/content_engine/content_draft_finalization_governance/__init__.py": "3c21c35c6ef0838aac6602f8571593dfd32b335a3a98fe02b095f3c646a59da0",
+    "04_SCRIPTS/python/content_engine/content_draft_finalization_governance/evidence.py": "6854d769b881a4572fe5ad1832def9f546d3973846a12afa2c02774066d260b6",
+    "04_SCRIPTS/python/content_engine/content_draft_finalization_governance/finalization_record.py": "5c563546956634e54c10247f4d8f5091bd9931522f79cdcefc7b37a86dd53d46",
+    "04_SCRIPTS/python/content_engine/content_draft_finalization_governance/models.py": "a8d93c1a8cd815318384c678d0bfcb731aea41d2b3c8d5261b8c5eac943f9458",
+    "04_SCRIPTS/python/content_engine/content_draft_finalization_governance/policy.py": "9f9a556b5eae2933af7d2dc4fe010360cf4608cd1444b1912a1bc9d45d35b765",
+    "04_SCRIPTS/python/content_engine/content_draft_finalization_governance/result.py": "9b58612c545932a9398cdfccf984bb5b05d761c12ddceeb4d041f1347cd8899a",
+    "04_SCRIPTS/python/content_engine/content_draft_finalization_governance/state_machine.py": "ac3694280bd55c98d2459f41c4bf881e91ab786c41a4517c69fbf88758b2757d",
+    "04_SCRIPTS/python/content_engine/content_draft_finalization_governance/validator.py": "89c03db5171e3b2d5433cd686dd41b2fb231bd20c2addd2d0adf1b488d225ef8"
+  },
+  "finalization_test_hashes": {
+    "tests/content_engine/test_draft_finalization_governance_evidence.py": "92b46afa4c7b5a2f3e16314785540131823717d83aedba74c598766633dbac0d",
+    "tests/content_engine/test_draft_finalization_governance_models.py": "82d0d15b36cfc7cc6f87f0e8bae001a5f15c11854536a12a660e31dd834b8edb",
+    "tests/content_engine/test_draft_finalization_governance_negative_cases.py": "8f68620b0916ebe417126801fb6edc85e91b965dddbf8e97a880406f072b100c",
+    "tests/content_engine/test_draft_finalization_governance_policy.py": "fdddb8d15018d905a7b1c360c3c7c470a2c8c76dea1f6bb5adb6ade3c7c1dea7",
+    "tests/content_engine/test_draft_finalization_governance_state_machine.py": "f37b39b0a5fbec2ba8129b575f0c7d7bfb363b2cf752c0e75f65a3334f30c1b0",
+    "tests/content_engine/test_draft_finalization_governance_validator.py": "1aa0db9440a2e8307607efc9a14e0b3584cded243b2a3fc4d247d8c819d23229"
+  },
+  "gates": {
+    "NLR-FG-G01_ROOT_EXISTS": true,
+    "NLR-FG-G02_PYTHON_OK": true,
+    "NLR-FG-G03_BRANCH_MAIN": true,
+    "NLR-FG-G04_REPO_CLEAN_PRE_MAP": true,
+    "NLR-FG-G05_HEAD_SYNCED_PRE_MAP": true,
+    "NLR-FG-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "NLR-FG-G07_FINALIZATION_GATE_CLOSE_SEAL_PRESENT": true,
+    "NLR-FG-G08_FINALIZATION_GATE_CLOSE_MANIFEST_PRESENT": true,
+    "NLR-FG-G09_FINALIZATION_GATE_CLOSE_REPORTS_PRESENT": true,
+    "NLR-FG-G10_FINALIZATION_SEAL_HASH_OK": true,
+    "NLR-FG-G11_FINALIZATION_STATUS_VALID": true,
+    "NLR-FG-G12_PREVIOUS_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "NLR-FG-G13_FINALIZATION_SOURCE_FILES_PRESENT": true,
+    "NLR-FG-G14_FINALIZATION_TEST_FILES_PRESENT": true,
+    "NLR-FG-G15_FINALIZATION_COMPILE_RECHECK_PASS": true,
+    "NLR-FG-G16_FINALIZATION_PYTEST_RECHECK_PASS": true,
+    "NLR-FG-G17_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "NLR-FG-G18_LINEAGE_DEFINED": true,
+    "NLR-FG-G19_CANDIDATES_DEFINED": true,
+    "NLR-FG-G20_CANDIDATES_SCORED": true,
+    "NLR-FG-G21_QUEUE_GOVERNANCE_SELECTED": true,
+    "NLR-FG-G22_SELECTED_ACTION_BLUEPRINT_ONLY": true,
+    "NLR-FG-G23_NO_IMPLEMENTATION_ALLOWED": true,
+    "NLR-FG-G24_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "NLR-FG-G25_SECURITY_POLICY_DEFINED": true,
+    "NLR-FG-G26_NEXT_SAFE_STEP_DEFINED": true,
+    "NLR-FG-G27_REPORTS_WRITTEN": true,
+    "NLR-FG-G28_MANIFEST_WRITTEN": true,
+    "NLR-FG-G29_SEAL_WRITTEN": true,
+    "NLR-FG-G30_OUTPUT_SCOPE_EXACT": true,
+    "NLR-FG-G31_JSON_CANONICAL": true,
+    "NLR-FG-G32_MANIFEST_COMPLETE": true,
+    "NLR-FG-G33_SEAL_VALID": true,
+    "NLR-FG-G34_NO_TOUCH_PROTECTED_ROOTS": true,
+    "NLR-FG-G35_COMMIT_ALLOWLIST_EXACT": true,
+    "NLR-FG-G36_COMMIT_CREATED": true,
+    "NLR-FG-G37_PUSH_SYNC": true
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "731982c85bfc275905d8da27f8630e5c6298845e",
+    "previous_commit_subject": "Gate close Content Draft Finalization Governance Core",
+    "python": "Python 3.12.10",
+    "remote": "731982c85bfc275905d8da27f8630e5c6298845e"
+  },
+  "lineage": {
+    "closed_components": [
+      {
+        "component": "CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE",
+        "role": "Runtime governance predecessor",
+        "state": "GATE_CLOSED_VALIDATED"
+      },
+      {
+        "component": "CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE",
+        "role": "Safe preview governance predecessor",
+        "state": "GATE_CLOSED_VALIDATED"
+      },
+      {
+        "component": "CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE",
+        "role": "Human review governance predecessor",
+        "state": "GATE_CLOSED_VALIDATED"
+      },
+      {
+        "component": "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE",
+        "role": "Immediate predecessor consumed by this readiness map",
+        "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+        "seal_sha256": "55904695b4f81a2e238601c3cd2f10c1e7c9e74018a79dda06a19b215347fb75",
+        "state": "GATE_CLOSED_VALIDATED"
+      }
+    ],
+    "immediate_predecessor": "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE",
+    "immediate_predecessor_state": "GATE_CLOSED_VALIDATED",
+    "lineage_decision": "VALID_FOR_NEXT_LAYER_READINESS_MAPPING_ONLY",
+    "status": "PASS"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT",
+  "next_step": {
+    "automation_allowed_now": false,
+    "blueprint_allowed_next": true,
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT",
+    "publishing_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "readiness_status": "NEXT_LAYER_READINESS_MAP_DEFINED",
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_DEFINED",
+    "selected_action": "BLUEPRINT_ONLY",
+    "selected_next_component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "previous_component": "CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE",
+  "previous_component_status": "GATE_CLOSED_VALIDATED",
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_after_pending": "validated_after_outputs_before_commit",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "protected_root_mutation_detected": false,
+  "pytest_report": {
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "...........                                                              [100%]\n11 passed in 0.23s\n",
+    "targets": [
+      "tests/content_engine/test_draft_finalization_governance_models.py",
+      "tests/content_engine/test_draft_finalization_governance_policy.py",
+      "tests/content_engine/test_draft_finalization_governance_state_machine.py",
+      "tests/content_engine/test_draft_finalization_governance_evidence.py",
+      "tests/content_engine/test_draft_finalization_governance_validator.py",
+      "tests/content_engine/test_draft_finalization_governance_negative_cases.py"
+    ]
+  },
+  "readiness_status": "NEXT_LAYER_READINESS_MAP_DEFINED",
+  "result": "PASS",
+  "sealed_status": "NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_DEFINED",
+  "security": {
+    "argos_bridge_build_performed": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "capa9_started": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "finalization_started": false,
+    "implementation_started": false,
+    "manual_current_mutation_performed": false,
+    "n8n_started": false,
+    "publishing_started": false,
+    "queue_write_performed": false,
+    "reports_brain_write_performed": false,
+    "runtime_execution_started": false,
+    "source_files_written": false,
+    "status": "PASS",
+    "test_files_written": false,
+    "webhook_started": false
+  },
+  "selected_action": "BLUEPRINT_ONLY",
+  "selected_next_component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+  "step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_FINALIZATION_GOVERNANCE"
+}
