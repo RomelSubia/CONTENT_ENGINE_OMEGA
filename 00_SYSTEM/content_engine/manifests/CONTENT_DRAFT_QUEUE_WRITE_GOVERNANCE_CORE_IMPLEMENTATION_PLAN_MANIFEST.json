@@ -1,0 +1,571 @@
+{
+  "acceptance_matrix": {
+    "acceptance_criteria": [
+      {
+        "criterion": "source files created only during automatic block build",
+        "required": true
+      },
+      {
+        "criterion": "test files created only during automatic block build",
+        "required": true
+      },
+      {
+        "criterion": "no direct queue write code path",
+        "required": true
+      },
+      {
+        "criterion": "all forbidden decisions fail closed",
+        "required": true
+      },
+      {
+        "criterion": "idempotency key required",
+        "required": true
+      },
+      {
+        "criterion": "compileall passes",
+        "required": true
+      },
+      {
+        "criterion": "pytest passes",
+        "required": true
+      },
+      {
+        "criterion": "protected roots unchanged",
+        "required": true
+      }
+    ],
+    "all_criteria_required": true,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "status": "PASS"
+  },
+  "architecture": {
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "modules": {
+      "__init__.py": "safe exports only",
+      "audit.py": "audit serialization and no productive side-effect markers",
+      "evidence.py": "upstream hash/reference/evidence validation helpers",
+      "models.py": "immutable request/evidence/decision/result models",
+      "policy.py": "fail-closed decision and forbidden operation policy",
+      "state_machine.py": "non-productive governance state transitions",
+      "validator.py": "contract + policy + evidence validator",
+      "write_intent.py": "plan-only queue-write intent object",
+      "write_result.py": "plan-only queue-write governance result object"
+    },
+    "package": "content_engine.content_draft_queue_write_governance",
+    "productive_side_effects_allowed": false,
+    "queue_write_allowed": false,
+    "status": "PASS"
+  },
+  "blocked_operations": {
+    "blocked_operations": {
+      "argos_bridge_build_performed": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "implementation_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "publishing_started": false,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "source_files_written": false,
+      "test_files_written": false,
+      "webhook_started": false
+    },
+    "status": "PASS"
+  },
+  "canonical_json": true,
+  "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+  "consumed_final_approval": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+    "manifest_sha256": "a4f92bfd1a0381225ca9962e134e01ea8e7c211db3d974858340d59f1c97824a",
+    "report_hashes": {
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_ACCEPTANCE_REPORT.json": "40e9e7a4f8a9005c3aa3682b3254935eb2b144d7b2e821c6083da75b97138709",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_CONTRACT_REPORT.json": "03f230a4f49b2384c187e0a3f30761797d4a3f901d22799e41f79a86987e3a15",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_DECISION_REPORT.json": "03f230a4f49b2384c187e0a3f30761797d4a3f901d22799e41f79a86987e3a15",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_NEXT_STEP_REPORT.json": "03f230a4f49b2384c187e0a3f30761797d4a3f901d22799e41f79a86987e3a15",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_NO_TOUCH_REPORT.json": "03f230a4f49b2384c187e0a3f30761797d4a3f901d22799e41f79a86987e3a15",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_POLICY_REPORT.json": "03f230a4f49b2384c187e0a3f30761797d4a3f901d22799e41f79a86987e3a15",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_REPORT.json": "81dc66e60d7c16afbc18d2355692086a122b90e8b5c0db1abcd39c8251efabf7",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_RISK_REPORT.json": "03f230a4f49b2384c187e0a3f30761797d4a3f901d22799e41f79a86987e3a15",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SECURITY_REPORT.json": "03f230a4f49b2384c187e0a3f30761797d4a3f901d22799e41f79a86987e3a15"
+    },
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+    "seal_sha256": "38176670a1698461ca984737af4a0be6a63613576772e2b262ac254e856f41f7"
+  },
+  "contract": {
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "dataclasses_or_equivalent": [
+      "QueueWriteGovernanceEvidence",
+      "QueueWriteGovernanceRequest",
+      "QueueWriteIntent",
+      "QueueWriteGovernanceDecision",
+      "QueueWriteGovernanceResult"
+    ],
+    "required_evidence_fields": [
+      "queue_governance_reference",
+      "queue_governance_sha256",
+      "queue_governance_status",
+      "queue_governance_manifest_reference",
+      "source_draft_reference",
+      "source_draft_sha256",
+      "finalization_reference",
+      "finalization_sha256"
+    ],
+    "required_request_fields": [
+      "request_id",
+      "operator_identity",
+      "policy_version",
+      "timestamp",
+      "queue_governance_reference",
+      "queue_governance_sha256",
+      "queue_governance_status",
+      "target_queue",
+      "write_intent",
+      "idempotency_key",
+      "decision"
+    ],
+    "required_result_flags": [
+      "queue_write_performed_false",
+      "queue_item_created_false",
+      "queue_item_updated_false",
+      "target_queue_mutated_false",
+      "result_is_plan_only_true"
+    ],
+    "status": "PASS"
+  },
+  "evidence": {
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "failure_mode": "FAILED_CLOSED",
+    "must_validate": [
+      "queue_governance_reference present",
+      "queue_governance_sha256 valid sha256",
+      "queue_governance_status exact",
+      "source_draft_sha256 valid sha256",
+      "finalization_sha256 valid sha256",
+      "idempotency_key present",
+      "target_queue present"
+    ],
+    "required_upstream_status": "READY_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+    "sha256_regex": "^[a-fA-F0-9]{64}$",
+    "status": "PASS"
+  },
+  "file_plan": {
+    "automatic_block_build_allowed_next": true,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+    "source_file_write_allowed_now": false,
+    "source_files_planned": [
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/models.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/policy.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/state_machine.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/evidence.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/validator.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_intent.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_result.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/audit.py"
+    ],
+    "status": "PASS",
+    "test_file_write_allowed_now": false,
+    "test_files_planned": [
+      "tests/content_engine/test_draft_queue_write_governance_models.py",
+      "tests/content_engine/test_draft_queue_write_governance_policy.py",
+      "tests/content_engine/test_draft_queue_write_governance_state_machine.py",
+      "tests/content_engine/test_draft_queue_write_governance_evidence.py",
+      "tests/content_engine/test_draft_queue_write_governance_validator.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_intent.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_result.py",
+      "tests/content_engine/test_draft_queue_write_governance_negative_cases.py"
+    ]
+  },
+  "gates": {
+    "QGWIP-G01_ROOT_EXISTS": true,
+    "QGWIP-G02_PYTHON_OK": true,
+    "QGWIP-G03_BRANCH_MAIN": true,
+    "QGWIP-G04_REPO_CLEAN_PRE_PLAN": true,
+    "QGWIP-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "QGWIP-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "QGWIP-G07_FINAL_APPROVAL_SEAL_PRESENT": true,
+    "QGWIP-G08_FINAL_APPROVAL_MANIFEST_PRESENT": true,
+    "QGWIP-G09_FINAL_APPROVAL_REPORTS_PRESENT": true,
+    "QGWIP-G10_FINAL_APPROVAL_SEAL_HASH_OK": true,
+    "QGWIP-G11_FINAL_APPROVAL_STATUS_VALID": true,
+    "QGWIP-G12_FINAL_APPROVAL_DECISION_VALID": true,
+    "QGWIP-G13_FINAL_APPROVAL_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "QGWIP-G14_FINAL_APPROVAL_SECURITY_FLAGS_VALID": true,
+    "QGWIP-G15_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "QGWIP-G16_FILE_PLAN_DEFINED": true,
+    "QGWIP-G17_ARCHITECTURE_PLAN_DEFINED": true,
+    "QGWIP-G18_CONTRACT_PLAN_DEFINED": true,
+    "QGWIP-G19_POLICY_PLAN_DEFINED": true,
+    "QGWIP-G20_STATE_MODEL_PLAN_DEFINED": true,
+    "QGWIP-G21_EVIDENCE_PLAN_DEFINED": true,
+    "QGWIP-G22_QUEUE_WRITE_CONTROL_PLAN_DEFINED": true,
+    "QGWIP-G23_TEST_PLAN_DEFINED": true,
+    "QGWIP-G24_ACCEPTANCE_MATRIX_DEFINED": true,
+    "QGWIP-G25_NEGATIVE_CASES_PLAN_DEFINED": true,
+    "QGWIP-G26_SECURITY_PLAN_DEFINED": true,
+    "QGWIP-G27_NO_TOUCH_PLAN_DEFINED": true,
+    "QGWIP-G28_NO_IMPLEMENTATION_ALLOWED": true,
+    "QGWIP-G29_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "QGWIP-G30_NEXT_SAFE_STEP_DEFINED": true,
+    "QGWIP-G31_REPORTS_WRITTEN": true,
+    "QGWIP-G32_MANIFEST_WRITTEN": false,
+    "QGWIP-G33_SEAL_WRITTEN": false,
+    "QGWIP-G34_OUTPUT_SCOPE_EXACT": false,
+    "QGWIP-G35_JSON_CANONICAL": false,
+    "QGWIP-G36_MANIFEST_COMPLETE": false,
+    "QGWIP-G37_SEAL_VALID": false,
+    "QGWIP-G38_NO_TOUCH_PROTECTED_ROOTS": false,
+    "QGWIP-G39_COMMIT_ALLOWLIST_EXACT": false,
+    "QGWIP-G40_COMMIT_CREATED": false,
+    "QGWIP-G41_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "2e5a0c025b65c1ad14516eae93e59f2abd49c279",
+    "previous_commit_subject": "Approve Content Draft Queue Write Governance Core implementation plan",
+    "python": "Python 3.12.10",
+    "remote": "2e5a0c025b65c1ad14516eae93e59f2abd49c279"
+  },
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_ACCEPTANCE_MATRIX_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_ARCHITECTURE_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_CONTRACT_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_EVIDENCE_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_FILE_PLAN_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEGATIVE_CASES_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEXT_STEP_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NO_TOUCH_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_POLICY_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_QUEUE_WRITE_CONTROL_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_REPORT.json": "4635c931d15e1f3141a2efa1fb66774295f0195d4ee771f3b2d404fbb0129998",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SECURITY_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_STATE_MODEL_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_TEST_PLAN_REPORT.json": "ef9f29c65d4d8ede6ecbb8eecce1d713e6054ce5e51c351f3a8fc297860eecea",
+    "05_REPORTS/content_engine/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SUMMARY.md": "871ffdcd8a0dfade7ead9494817857999243376cc02b899028a5ba78015be572"
+  },
+  "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+  "manifest_completeness": "PASS",
+  "manifest_type": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST",
+  "negative_cases": {
+    "all_negative_cases_must_fail_closed": true,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "planned_negative_cases": [
+      "FORBIDDEN_DECISION_WRITE_QUEUE_NOW",
+      "FORBIDDEN_DECISION_CREATE_QUEUE_ITEM_NOW",
+      "FORBIDDEN_DECISION_UPDATE_QUEUE_ITEM_NOW",
+      "FORBIDDEN_DECISION_PUBLISH_NOW",
+      "FORBIDDEN_DECISION_AUTOMATE_NOW",
+      "FORBIDDEN_DECISION_TRIGGER_N8N_NOW",
+      "MISSING_IDEMPOTENCY_KEY",
+      "MISSING_TARGET_QUEUE",
+      "INVALID_QUEUE_GOVERNANCE_SHA256",
+      "INVALID_SOURCE_DRAFT_SHA256",
+      "INVALID_FINALIZATION_SHA256",
+      "UPSTREAM_QUEUE_GOVERNANCE_STATUS_INVALID",
+      "INVALID_STATE_TRANSITION",
+      "ATTEMPTED_QUEUE_ROOT_MUTATION"
+    ],
+    "status": "PASS"
+  },
+  "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+  "next_step": {
+    "automatic_block_build_allowed_next": true,
+    "automation_allowed_now": false,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_allowed_now": false,
+    "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+    "publishing_allowed_now": false,
+    "queue_item_creation_allowed_now": false,
+    "queue_item_update_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_DEFINED",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "no_touch": {
+    "allowed_output_scope": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_ACCEPTANCE_MATRIX_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_ARCHITECTURE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_CONTRACT_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_EVIDENCE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_FILE_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEGATIVE_CASES_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEXT_STEP_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_POLICY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_QUEUE_WRITE_CONTROL_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SECURITY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_STATE_MODEL_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_TEST_PLAN_REPORT.json",
+      "05_REPORTS/content_engine/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SUMMARY.md"
+    ],
+    "argos_bridge_allowed_now": false,
+    "automation_root_allowed_now": false,
+    "brain_root_allowed_now": false,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "manual_root_allowed_now": false,
+    "protected_before": {
+      "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+      "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+      "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+      "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+      "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+      "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+      "07_DATA/metrics": "MISSING",
+      "07_DATA/queue": "MISSING",
+      "08_ASSETS": "MISSING",
+      "09_PUBLICATION": "MISSING",
+      "12_LOGS/runtime": "MISSING",
+      "13_BACKUPS": "MISSING",
+      "14_EXPORTS": "MISSING",
+      "n8n": "MISSING",
+      "publication": "MISSING",
+      "workflows": "MISSING"
+    },
+    "protected_roots": [
+      "00_SYSTEM/brain",
+      "00_SYSTEM/reports/brain",
+      "00_SYSTEM/manual/current",
+      "00_SYSTEM/manual/historical",
+      "00_SYSTEM/manual/manifest",
+      "00_SYSTEM/manual/registry",
+      "07_DATA/queue",
+      "07_DATA/metrics",
+      "08_ASSETS",
+      "09_PUBLICATION",
+      "14_EXPORTS",
+      "13_BACKUPS",
+      "12_LOGS/runtime",
+      "n8n",
+      "workflows",
+      "publication"
+    ],
+    "publication_root_allowed_now": false,
+    "queue_root_allowed_now": false,
+    "reports_brain_root_allowed_now": false,
+    "status": "PASS"
+  },
+  "policy": {
+    "allowed_decisions": [
+      "AUTHORIZE_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+      "REQUEST_REVISION_BEFORE_QUEUE_WRITE",
+      "REJECT_QUEUE_WRITE_READINESS",
+      "HOLD_QUEUE_WRITE_READINESS",
+      "ESCALATE_QUEUE_WRITE_REVIEW"
+    ],
+    "automation_allowed": false,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "forbidden_decisions": [
+      "WRITE_QUEUE_NOW",
+      "CREATE_QUEUE_ITEM_NOW",
+      "UPDATE_QUEUE_ITEM_NOW",
+      "PUBLISH_NOW",
+      "AUTOMATE_NOW",
+      "TRIGGER_N8N_NOW",
+      "TRIGGER_WEBHOOK_NOW",
+      "TRIGGER_CAPA9_NOW",
+      "MUTATE_MANUAL_CURRENT_NOW",
+      "WRITE_BRAIN_NOW",
+      "WRITE_REPORTS_BRAIN_NOW",
+      "BUILD_ARGOS_BRIDGE_NOW"
+    ],
+    "publishing_allowed": false,
+    "queue_item_mutation_allowed": false,
+    "queue_root_write_allowed": false,
+    "status": "PASS",
+    "validation_mode": "fail_closed"
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_ACCEPTANCE_MATRIX_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_ARCHITECTURE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_CONTRACT_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_EVIDENCE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_FILE_PLAN_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEGATIVE_CASES_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NEXT_STEP_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_POLICY_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_QUEUE_WRITE_CONTROL_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SECURITY_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_STATE_MODEL_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_TEST_PLAN_REPORT.json",
+    "05_REPORTS/content_engine/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "queue_write_control": {
+    "blocked_roots": [
+      "07_DATA/queue",
+      "09_PUBLICATION",
+      "n8n",
+      "workflows",
+      "publication"
+    ],
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "hard_false_flags": [
+      "queue_write_performed",
+      "queue_item_created",
+      "queue_item_updated",
+      "target_queue_mutated",
+      "publishing_started",
+      "automation_started"
+    ],
+    "required_result": {
+      "next_allowed_step_for_queue_write_execution_governance_only": true,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "result_is_plan_only": true
+    },
+    "status": "PASS"
+  },
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_DEFINED",
+  "security": {
+    "automatic_block_build_allowed_next": true,
+    "blocked_operations": {
+      "argos_bridge_build_performed": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "implementation_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "publishing_started": false,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "source_files_written": false,
+      "test_files_written": false,
+      "webhook_started": false
+    },
+    "commit_allowlist_required": true,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "dirty_aware": true,
+    "implementation_allowed_now": false,
+    "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+    "output_scope_exact_required": true,
+    "security_mode": "IMPLEMENTATION_PLAN_ONLY_FAIL_CLOSED",
+    "status": "PASS"
+  },
+  "source_file_plan": [
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/__init__.py",
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/models.py",
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/policy.py",
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/state_machine.py",
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/evidence.py",
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/validator.py",
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_intent.py",
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_result.py",
+    "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/audit.py"
+  ],
+  "state_model": {
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "forbidden_states": [
+      "QUEUE_WRITTEN",
+      "QUEUE_ITEM_CREATED",
+      "QUEUE_ITEM_UPDATED",
+      "PUBLISHED",
+      "AUTOMATED"
+    ],
+    "productive_states_present": false,
+    "states": [
+      "RECEIVED",
+      "QUEUE_GOVERNANCE_EVIDENCE_VALIDATED",
+      "QUEUE_WRITE_POLICY_VALIDATED",
+      "QUEUE_WRITE_INTENT_PREPARED",
+      "READY_FOR_QUEUE_WRITE_EXECUTION_GOVERNANCE_PLAN_ONLY",
+      "FAILED_CLOSED"
+    ],
+    "status": "PASS",
+    "transition_validation": "strict_ordered_fail_closed"
+  },
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+  "test_file_plan": [
+    "tests/content_engine/test_draft_queue_write_governance_models.py",
+    "tests/content_engine/test_draft_queue_write_governance_policy.py",
+    "tests/content_engine/test_draft_queue_write_governance_state_machine.py",
+    "tests/content_engine/test_draft_queue_write_governance_evidence.py",
+    "tests/content_engine/test_draft_queue_write_governance_validator.py",
+    "tests/content_engine/test_draft_queue_write_governance_write_intent.py",
+    "tests/content_engine/test_draft_queue_write_governance_write_result.py",
+    "tests/content_engine/test_draft_queue_write_governance_negative_cases.py"
+  ],
+  "test_plan": {
+    "compile_required": true,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "negative_tests": [
+      "missing idempotency_key fails closed",
+      "missing target_queue fails closed",
+      "invalid sha256 fails closed",
+      "wrong upstream status fails closed",
+      "WRITE_QUEUE_NOW forbidden",
+      "CREATE_QUEUE_ITEM_NOW forbidden",
+      "UPDATE_QUEUE_ITEM_NOW forbidden",
+      "PUBLISH_NOW forbidden",
+      "AUTOMATE_NOW forbidden"
+    ],
+    "positive_tests": [
+      "valid request produces plan-only governance result",
+      "valid evidence reaches READY_FOR_QUEUE_WRITE_EXECUTION_GOVERNANCE_PLAN_ONLY",
+      "allowed decisions are accepted",
+      "result flags always block actual queue mutation"
+    ],
+    "pytest_required": true,
+    "status": "PASS",
+    "test_files_planned": [
+      "tests/content_engine/test_draft_queue_write_governance_models.py",
+      "tests/content_engine/test_draft_queue_write_governance_policy.py",
+      "tests/content_engine/test_draft_queue_write_governance_state_machine.py",
+      "tests/content_engine/test_draft_queue_write_governance_evidence.py",
+      "tests/content_engine/test_draft_queue_write_governance_validator.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_intent.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_result.py",
+      "tests/content_engine/test_draft_queue_write_governance_negative_cases.py"
+    ]
+  }
+}
