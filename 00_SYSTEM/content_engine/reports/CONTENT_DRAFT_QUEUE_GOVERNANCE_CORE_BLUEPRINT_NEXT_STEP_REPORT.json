@@ -1,0 +1,433 @@
+{
+  "architecture": {
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "future_output_concept": {
+      "automation_started": false,
+      "publishing_started": false,
+      "queue_governance_record_reference": "queue-governance-ready://{request_id}",
+      "queue_write_performed": false,
+      "queue_write_readiness_reference": "queue-write-governance-plan-only://{request_id}"
+    },
+    "implementation_allowed_now": false,
+    "planned_modules": [
+      {
+        "name": "models.py",
+        "planned_role": "Define queue governance statuses, decisions, evidence and request models.",
+        "write_now": false
+      },
+      {
+        "name": "policy.py",
+        "planned_role": "Define allowed queue-governance decisions and blocked productive actions.",
+        "write_now": false
+      },
+      {
+        "name": "state_machine.py",
+        "planned_role": "Define fail-closed queue governance transition model.",
+        "write_now": false
+      },
+      {
+        "name": "evidence.py",
+        "planned_role": "Validate finalization evidence required before queue governance readiness.",
+        "write_now": false
+      },
+      {
+        "name": "validator.py",
+        "planned_role": "Validate queue governance request payloads.",
+        "write_now": false
+      },
+      {
+        "name": "queue_record.py",
+        "planned_role": "Build plan-only queue governance records without writing queue.",
+        "write_now": false
+      },
+      {
+        "name": "result.py",
+        "planned_role": "Represent safe queue governance outputs and blocked side-effect flags.",
+        "write_now": false
+      }
+    ],
+    "planned_state_model": [
+      "RECEIVED",
+      "FINALIZATION_EVIDENCE_VALIDATED",
+      "QUEUE_POLICY_VALIDATED",
+      "QUEUE_RECORD_PREPARED",
+      "READY_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+      "FAILED_CLOSED"
+    ],
+    "purpose": "Define governance for moving finalized draft artifacts toward a controlled queue-governance layer without performing queue writes.",
+    "queue_write_allowed_now": false,
+    "scope": {
+      "allowed": [
+        "Define queue-governance blueprint",
+        "Define queue intake validation boundaries",
+        "Define queue eligibility contract",
+        "Define evidence binding requirements",
+        "Define idempotency and duplicate-prevention requirements",
+        "Define fail-closed queue governance state model",
+        "Define future implementation file plan at blueprint level only"
+      ],
+      "blocked": [
+        "Implementation now",
+        "Source writing now",
+        "Test writing now",
+        "Queue item creation now",
+        "Queue item mutation now",
+        "Queue write now",
+        "Publishing now",
+        "Automation now",
+        "n8n/webhook/CAPA9 now",
+        "Manual current mutation",
+        "Brain/reports-brain mutation",
+        "ARGOS bridge build"
+      ]
+    },
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "blocked_operations": {
+    "argos_bridge_build_performed": false,
+    "automation_started": false,
+    "brain_write_performed": false,
+    "capa9_started": false,
+    "content_generation_started": false,
+    "draft_creation_started": false,
+    "finalization_started": false,
+    "implementation_started": false,
+    "manual_current_mutation_performed": false,
+    "n8n_started": false,
+    "publishing_started": false,
+    "queue_item_created": false,
+    "queue_item_updated": false,
+    "queue_write_performed": false,
+    "reports_brain_write_performed": false,
+    "runtime_execution_started": false,
+    "source_files_written": false,
+    "status": "PASS",
+    "test_files_written": false,
+    "webhook_started": false
+  },
+  "blueprint_status": "BLUEPRINT_DEFINED",
+  "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+  "consumed_readiness_map": {
+    "decision_report_sha256": "d2b9bb19880be0a8e07acada2558f523eba6fdb5a16b33226aff2a13b34c3a8c",
+    "manifest_path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_MANIFEST.json",
+    "manifest_sha256": "9752f93a7988a377814063b35be9875486b36095557b3a0fbab998b68be8d61c",
+    "next_step_report_sha256": "d2b9bb19880be0a8e07acada2558f523eba6fdb5a16b33226aff2a13b34c3a8c",
+    "report_sha256": "5891ed06e2608f47edb15bf221cce8c1d8842028a1ff2d57b89a501073880bec",
+    "seal_path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_SEAL.json",
+    "seal_sha256": "90755d574112e687985926a5555a9d8161a334c09062ad6d94010875ee64cdfc",
+    "step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_FINALIZATION_GOVERNANCE"
+  },
+  "contract": {
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "contract_type": "QUEUE_GOVERNANCE_BLUEPRINT_CONTRACT",
+    "forbidden_decisions": [
+      "QUEUE_WRITE_NOW",
+      "CREATE_QUEUE_ITEM_NOW",
+      "UPDATE_QUEUE_ITEM_NOW",
+      "PUBLISH_NOW",
+      "AUTOMATE_NOW",
+      "SEND_TO_N8N",
+      "TRIGGER_WEBHOOK",
+      "TRIGGER_CAPA9",
+      "MUTATE_MANUAL_CURRENT",
+      "WRITE_BRAIN",
+      "WRITE_REPORTS_BRAIN",
+      "BUILD_ARGOS_BRIDGE"
+    ],
+    "non_goals": [
+      "No queue write",
+      "No queue item creation",
+      "No queue item update",
+      "No publishing",
+      "No automation",
+      "No runtime execution"
+    ],
+    "planned_outputs_for_future_implementation": [
+      "queue_governance_status",
+      "queue_governance_record_reference",
+      "queue_write_readiness_reference",
+      "blocked_operation_flags",
+      "next_allowed_step_for_queue_write_governance_only"
+    ],
+    "required_future_decisions": [
+      "PREPARE_FOR_QUEUE_WRITE_GOVERNANCE_PLAN_ONLY",
+      "REQUEST_REVISION_BEFORE_QUEUE",
+      "REJECT_QUEUE_READINESS",
+      "HOLD_QUEUE_READINESS",
+      "ESCALATE_QUEUE_REVIEW"
+    ],
+    "required_inputs_for_future_implementation": [
+      "request_id",
+      "operator_identity",
+      "policy_version",
+      "timestamp",
+      "intent",
+      "finalization_result_reference",
+      "finalization_result_sha256",
+      "finalization_manifest_reference",
+      "draft_reference",
+      "draft_sha256",
+      "human_review_reference",
+      "human_review_sha256",
+      "safe_preview_reference",
+      "safe_preview_sha256"
+    ],
+    "status": "PASS"
+  },
+  "gates": {
+    "QGB-G01_ROOT_EXISTS": true,
+    "QGB-G02_PYTHON_OK": true,
+    "QGB-G03_BRANCH_MAIN": true,
+    "QGB-G04_REPO_CLEAN_PRE_BLUEPRINT": true,
+    "QGB-G05_HEAD_SYNCED_PRE_BLUEPRINT": true,
+    "QGB-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "QGB-G07_READINESS_SEAL_PRESENT": true,
+    "QGB-G08_READINESS_MANIFEST_PRESENT": true,
+    "QGB-G09_READINESS_REPORTS_PRESENT": true,
+    "QGB-G10_READINESS_SEAL_HASH_OK": true,
+    "QGB-G11_READINESS_STATUS_VALID": true,
+    "QGB-G12_READINESS_SELECTED_COMPONENT_VALID": true,
+    "QGB-G13_READINESS_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "QGB-G14_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "QGB-G15_ARCHITECTURE_DEFINED": true,
+    "QGB-G16_CONTRACT_DEFINED": true,
+    "QGB-G17_POLICY_DEFINED": true,
+    "QGB-G18_RISK_MAP_DEFINED": true,
+    "QGB-G19_SECURITY_BLOCKS_DEFINED": true,
+    "QGB-G20_NO_TOUCH_DEFINED": true,
+    "QGB-G21_NO_IMPLEMENTATION_ALLOWED": true,
+    "QGB-G22_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "QGB-G23_NEXT_SAFE_STEP_DEFINED": true,
+    "QGB-G24_REPORTS_WRITTEN": false,
+    "QGB-G25_MANIFEST_WRITTEN": false,
+    "QGB-G26_SEAL_WRITTEN": false,
+    "QGB-G27_OUTPUT_SCOPE_EXACT": false,
+    "QGB-G28_JSON_CANONICAL": false,
+    "QGB-G29_MANIFEST_COMPLETE": false,
+    "QGB-G30_SEAL_VALID": false,
+    "QGB-G31_NO_TOUCH_PROTECTED_ROOTS": false,
+    "QGB-G32_COMMIT_ALLOWLIST_EXACT": false,
+    "QGB-G33_COMMIT_CREATED": false,
+    "QGB-G34_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "2428526af93ed3579338fad3b8e70dfd5db781ef",
+    "previous_commit_subject": "Define next layer readiness map after Content Draft Finalization Governance",
+    "python": "Python 3.12.10",
+    "remote": "2428526af93ed3579338fad3b8e70dfd5db781ef"
+  },
+  "next_step": {
+    "automation_allowed_now": false,
+    "blueprint_status": "BLUEPRINT_DEFINED",
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_REVIEW_HARDENING",
+    "publishing_allowed_now": false,
+    "queue_item_creation_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "review_hardening_allowed_next": true,
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_DEFINED",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "no_touch": {
+    "allowed_output_scope": [
+      "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+      "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_ARCHITECTURE_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_CONTRACT_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_NEXT_STEP_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_NO_TOUCH_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_POLICY_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_RISK_REPORT.json",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_SECURITY_REPORT.json",
+      "05_REPORTS/content_engine/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_SUMMARY.md"
+    ],
+    "argos_bridge_allowed": false,
+    "brain_root_allowed": false,
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "manual_root_allowed": false,
+    "protected_before": {
+      "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+      "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+      "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+      "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+      "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+      "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+      "07_DATA/metrics": "MISSING",
+      "07_DATA/queue": "MISSING",
+      "08_ASSETS": "MISSING",
+      "09_PUBLICATION": "MISSING",
+      "12_LOGS/runtime": "MISSING",
+      "13_BACKUPS": "MISSING",
+      "14_EXPORTS": "MISSING",
+      "n8n": "MISSING",
+      "publication": "MISSING",
+      "workflows": "MISSING"
+    },
+    "protected_roots": [
+      "00_SYSTEM/brain",
+      "00_SYSTEM/reports/brain",
+      "00_SYSTEM/manual/current",
+      "00_SYSTEM/manual/historical",
+      "00_SYSTEM/manual/manifest",
+      "00_SYSTEM/manual/registry",
+      "07_DATA/queue",
+      "07_DATA/metrics",
+      "08_ASSETS",
+      "09_PUBLICATION",
+      "14_EXPORTS",
+      "13_BACKUPS",
+      "12_LOGS/runtime",
+      "n8n",
+      "workflows",
+      "publication"
+    ],
+    "publication_root_allowed": false,
+    "queue_root_allowed": false,
+    "source_files_allowed": false,
+    "status": "PASS",
+    "test_files_allowed": false
+  },
+  "policy": {
+    "allowed_now": [
+      "Blueprint definition",
+      "Blueprint report writing",
+      "Blueprint manifest writing",
+      "Blueprint seal writing",
+      "Commit/push allowlisted blueprint artifacts"
+    ],
+    "blocked_now": {
+      "argos_bridge_build_performed": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "implementation_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "publishing_started": false,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "source_files_written": false,
+      "test_files_written": false,
+      "webhook_started": false
+    },
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "future_policy_requirements": [
+      "Every future queue governance request must bind to finalization governance evidence.",
+      "Every future queue governance request must be idempotent by request_id and artifact hash.",
+      "Every future queue governance result must assert no productive side effects.",
+      "Any request attempting queue write, publishing or automation must fail closed.",
+      "No queue data directory may be mutated before a dedicated queue-write governance layer allows it."
+    ],
+    "policy_mode": "FAIL_CLOSED_BLUEPRINT_ONLY",
+    "policy_name": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_POLICY",
+    "status": "PASS"
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "result": "PASS",
+  "risk_map": {
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "implementation_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "risk_decision": "ACCEPTABLE_FOR_BLUEPRINT_ONLY",
+    "risks": [
+      {
+        "control": "Queue write remains blocked; blueprint only.",
+        "risk": "Premature queue write",
+        "severity": "CRITICAL"
+      },
+      {
+        "control": "Future implementation must enforce idempotency by request_id and finalization artifact hash.",
+        "risk": "Queue item duplication",
+        "severity": "HIGH"
+      },
+      {
+        "control": "Publishing remains explicitly blocked and downstream.",
+        "risk": "Publishing bypass through queue readiness",
+        "severity": "CRITICAL"
+      },
+      {
+        "control": "Automation, n8n, webhook and CAPA9 remain explicitly blocked.",
+        "risk": "Automation bypass through queue readiness",
+        "severity": "CRITICAL"
+      },
+      {
+        "control": "Future queue governance must bind to finalization result, manifest and hash evidence.",
+        "risk": "Weak lineage between finalization and queue governance",
+        "severity": "HIGH"
+      },
+      {
+        "control": "No-touch roots are fingerprinted and validated.",
+        "risk": "Manual/brain mutation during queue governance planning",
+        "severity": "HIGH"
+      }
+    ],
+    "status": "PASS"
+  },
+  "sealed_status": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_DEFINED",
+  "security": {
+    "blocked_operations": {
+      "argos_bridge_build_performed": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "implementation_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "publishing_started": false,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "source_files_written": false,
+      "test_files_written": false,
+      "webhook_started": false
+    },
+    "commit_push_required": true,
+    "component": "CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE",
+    "dirty_aware_required": true,
+    "fail_closed_required": true,
+    "manifest_seal_required": true,
+    "security_decision": "SECURE_FOR_BLUEPRINT_ONLY",
+    "status": "PASS"
+  },
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT"
+}
