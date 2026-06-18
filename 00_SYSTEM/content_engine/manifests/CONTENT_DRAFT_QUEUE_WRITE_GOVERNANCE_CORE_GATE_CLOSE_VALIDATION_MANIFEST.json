@@ -1,0 +1,347 @@
+{
+  "acceptance_matrix": {
+    "all_criteria_pass": true,
+    "criteria": [
+      {
+        "criterion": "post build audit consumed",
+        "pass": true
+      },
+      {
+        "criterion": "source files present and validated",
+        "pass": true
+      },
+      {
+        "criterion": "test files present and validated",
+        "pass": true
+      },
+      {
+        "criterion": "compile recheck pass",
+        "pass": true
+      },
+      {
+        "criterion": "pytest recheck pass",
+        "pass": true
+      },
+      {
+        "criterion": "policy fail-closed validated",
+        "pass": true
+      },
+      {
+        "criterion": "queue write remains blocked",
+        "pass": true
+      },
+      {
+        "criterion": "queue item creation/update remain blocked",
+        "pass": true
+      },
+      {
+        "criterion": "publishing/automation remain blocked",
+        "pass": true
+      },
+      {
+        "criterion": "next layer readiness map only is allowed next",
+        "pass": true
+      }
+    ],
+    "status": "PASS"
+  },
+  "canonical_json": true,
+  "compile_report": {
+    "compile_method": "python_compile_builtin_no_pyc",
+    "compiled_files": [
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/models.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/policy.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/state_machine.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/evidence.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/validator.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_intent.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_result.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/audit.py",
+      "tests/content_engine/test_draft_queue_write_governance_models.py",
+      "tests/content_engine/test_draft_queue_write_governance_policy.py",
+      "tests/content_engine/test_draft_queue_write_governance_state_machine.py",
+      "tests/content_engine/test_draft_queue_write_governance_evidence.py",
+      "tests/content_engine/test_draft_queue_write_governance_validator.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_intent.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_result.py",
+      "tests/content_engine/test_draft_queue_write_governance_negative_cases.py"
+    ],
+    "status": "PASS"
+  },
+  "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+  "consumed_post_build_audit": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+    "manifest_sha256": "3497850c2e5891d04e869f8fa12dcbc0295802948c84fcfd1297be851cee600d",
+    "report_hashes": {
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_COMPILE_REPORT.json": "5f532bda14ca2ff6ba592f4caeb798d3e6762b71d61874f2eca0e91da2de6706",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_NEXT_STEP_REPORT.json": "5f532bda14ca2ff6ba592f4caeb798d3e6762b71d61874f2eca0e91da2de6706",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_NO_TOUCH_REPORT.json": "a07e697017791db82e705f2e045864d9dd9e76b8d3af75a781add445245739f5",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_POLICY_REPORT.json": "5f532bda14ca2ff6ba592f4caeb798d3e6762b71d61874f2eca0e91da2de6706",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_PYTEST_REPORT.json": "5f532bda14ca2ff6ba592f4caeb798d3e6762b71d61874f2eca0e91da2de6706",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_REPORT.json": "65d6b00e15b1feb9fd0ada48bf9e5b1c0f6132850b82fc798e517e665768e73e",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_SECURITY_REPORT.json": "5f532bda14ca2ff6ba592f4caeb798d3e6762b71d61874f2eca0e91da2de6706",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_SOURCE_REPORT.json": "5f532bda14ca2ff6ba592f4caeb798d3e6762b71d61874f2eca0e91da2de6706",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_TEST_REPORT.json": "5f532bda14ca2ff6ba592f4caeb798d3e6762b71d61874f2eca0e91da2de6706"
+    },
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+    "seal_sha256": "331d9b33f31660792b3604b3bb92f3816c3b88f1caaca000fd5deb7a979dd8c6"
+  },
+  "gate_close_status": "GATE_CLOSED_VALIDATED",
+  "gates": {
+    "QGWGCV-G01_ROOT_EXISTS": true,
+    "QGWGCV-G02_PYTHON_OK": true,
+    "QGWGCV-G03_BRANCH_MAIN": true,
+    "QGWGCV-G04_REPO_CLEAN_PRE_GATE_CLOSE": true,
+    "QGWGCV-G05_HEAD_SYNCED_PRE_GATE_CLOSE": true,
+    "QGWGCV-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "QGWGCV-G07_POST_AUDIT_SEAL_PRESENT": true,
+    "QGWGCV-G08_POST_AUDIT_MANIFEST_PRESENT": true,
+    "QGWGCV-G09_POST_AUDIT_REPORTS_PRESENT": true,
+    "QGWGCV-G10_POST_AUDIT_SEAL_HASH_OK": true,
+    "QGWGCV-G11_POST_AUDIT_STATUS_VALID": true,
+    "QGWGCV-G12_POST_AUDIT_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "QGWGCV-G13_POST_AUDIT_TRUE_FLAGS_VALID": true,
+    "QGWGCV-G14_POST_AUDIT_SECURITY_FLAGS_VALID": true,
+    "QGWGCV-G15_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "QGWGCV-G16_SOURCE_FILES_PRESENT": true,
+    "QGWGCV-G17_TEST_FILES_PRESENT": true,
+    "QGWGCV-G18_SOURCE_GATE_CLOSE_VALIDATION_PASS": true,
+    "QGWGCV-G19_TEST_GATE_CLOSE_VALIDATION_PASS": true,
+    "QGWGCV-G20_COMPILE_RECHECK_PASS": true,
+    "QGWGCV-G21_PYTEST_RECHECK_PASS": true,
+    "QGWGCV-G22_POLICY_GATE_CLOSE_VALIDATION_PASS": true,
+    "QGWGCV-G23_QUEUE_WRITE_BLOCKS_VALIDATED": true,
+    "QGWGCV-G24_NEGATIVE_CASES_VALIDATED": true,
+    "QGWGCV-G25_ACCEPTANCE_MATRIX_VALIDATED": true,
+    "QGWGCV-G26_SECURITY_GATE_CLOSE_VALIDATION_PASS": true,
+    "QGWGCV-G27_NO_RUNTIME_EXECUTION": true,
+    "QGWGCV-G28_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "QGWGCV-G29_NEXT_LAYER_READINESS_MAP_ALLOWED_NEXT": true,
+    "QGWGCV-G30_NEXT_SAFE_STEP_DEFINED": true,
+    "QGWGCV-G31_REPORTS_WRITTEN": true,
+    "QGWGCV-G32_MANIFEST_WRITTEN": false,
+    "QGWGCV-G33_SEAL_WRITTEN": false,
+    "QGWGCV-G34_OUTPUT_SCOPE_EXACT": false,
+    "QGWGCV-G35_JSON_CANONICAL": false,
+    "QGWGCV-G36_MANIFEST_COMPLETE": false,
+    "QGWGCV-G37_SEAL_VALID": false,
+    "QGWGCV-G38_NO_TOUCH_PROTECTED_ROOTS": false,
+    "QGWGCV-G39_COMMIT_ALLOWLIST_EXACT": false,
+    "QGWGCV-G40_COMMIT_CREATED": false,
+    "QGWGCV-G41_PUSH_SYNC": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "3dd6066c2eb6c6825780e2e0472409b80507b839",
+    "previous_commit_subject": "Audit Content Draft Queue Write Governance Core post build",
+    "python": "Python 3.12.10",
+    "remote": "3dd6066c2eb6c6825780e2e0472409b80507b839"
+  },
+  "hash_algorithm": "sha256",
+  "hashed_artifacts": {
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_ACCEPTANCE_REPORT.json": "0ac13d7e0cb289d38acfdf871d833a1a7e520c26c1a1392068da9ac74ddd220a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_COMPILE_REPORT.json": "0ac13d7e0cb289d38acfdf871d833a1a7e520c26c1a1392068da9ac74ddd220a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_NEXT_STEP_REPORT.json": "0ac13d7e0cb289d38acfdf871d833a1a7e520c26c1a1392068da9ac74ddd220a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_NO_TOUCH_REPORT.json": "c6f0aa973c245b3c4b0fc3a13cc449c7c9ac373364d4c23960395808424d2cba",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_POLICY_REPORT.json": "0ac13d7e0cb289d38acfdf871d833a1a7e520c26c1a1392068da9ac74ddd220a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_PYTEST_REPORT.json": "0ac13d7e0cb289d38acfdf871d833a1a7e520c26c1a1392068da9ac74ddd220a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_REPORT.json": "62b4e0e5a3bd852dfba37434a183bdeeb9ad10a4c7a6076b4a3c45ff0bbddc17",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SECURITY_REPORT.json": "0ac13d7e0cb289d38acfdf871d833a1a7e520c26c1a1392068da9ac74ddd220a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SOURCE_REPORT.json": "0ac13d7e0cb289d38acfdf871d833a1a7e520c26c1a1392068da9ac74ddd220a",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_TEST_REPORT.json": "0ac13d7e0cb289d38acfdf871d833a1a7e520c26c1a1392068da9ac74ddd220a",
+    "05_REPORTS/content_engine/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SUMMARY.md": "97a80a6f9826fd08ccfbfb465449148fed48ad6b2f0ed2ecef111b025e98b7e8"
+  },
+  "manifest_completeness": "PASS",
+  "manifest_type": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST",
+  "next_safe_step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE",
+  "next_step": {
+    "automation_allowed_now": false,
+    "component": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "gate_close_status": "GATE_CLOSED_VALIDATED",
+    "implementation_allowed_now": false,
+    "next_layer_readiness_map_allowed_next": true,
+    "next_safe_step": "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE",
+    "publishing_allowed_now": false,
+    "queue_item_creation_allowed_now": false,
+    "queue_item_update_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSED_VALIDATED",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "policy_validation": {
+    "blocked_operation_flags": {
+      "argos_bridge_build_performed": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "publishing_started": false,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "webhook_started": false
+    },
+    "forbidden_decisions_validated": [
+      "WRITE_QUEUE_NOW",
+      "CREATE_QUEUE_ITEM_NOW",
+      "UPDATE_QUEUE_ITEM_NOW",
+      "PUBLISH_NOW",
+      "AUTOMATE_NOW",
+      "TRIGGER_N8N_NOW",
+      "TRIGGER_WEBHOOK_NOW",
+      "TRIGGER_CAPA9_NOW",
+      "MUTATE_MANUAL_CURRENT_NOW",
+      "WRITE_BRAIN_NOW",
+      "WRITE_REPORTS_BRAIN_NOW",
+      "BUILD_ARGOS_BRIDGE_NOW"
+    ],
+    "forbidden_request_failed_closed_verified": true,
+    "status": "PASS",
+    "valid_request_plan_only_verified": true
+  },
+  "produced_artifacts": [
+    "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+    "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_ACCEPTANCE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_COMPILE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_NEXT_STEP_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_NO_TOUCH_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_POLICY_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_PYTEST_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SECURITY_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SOURCE_REPORT.json",
+    "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_TEST_REPORT.json",
+    "05_REPORTS/content_engine/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SUMMARY.md"
+  ],
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "pytest_report": {
+    "pytest_command": [
+      "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "tests/content_engine/test_draft_queue_write_governance_models.py",
+      "tests/content_engine/test_draft_queue_write_governance_policy.py",
+      "tests/content_engine/test_draft_queue_write_governance_state_machine.py",
+      "tests/content_engine/test_draft_queue_write_governance_evidence.py",
+      "tests/content_engine/test_draft_queue_write_governance_validator.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_intent.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_result.py",
+      "tests/content_engine/test_draft_queue_write_governance_negative_cases.py"
+    ],
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "...........................                                              [100%]\n27 passed in 0.30s\n"
+  },
+  "result": "PASS",
+  "sealed_status": "CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSED_VALIDATED",
+  "security_validation": {
+    "blocked_operations": {
+      "argos_bridge_build_performed": false,
+      "automation_started": false,
+      "brain_write_performed": false,
+      "capa9_started": false,
+      "content_generation_started": false,
+      "draft_creation_started": false,
+      "finalization_started": false,
+      "manual_current_mutation_performed": false,
+      "n8n_started": false,
+      "publishing_started": false,
+      "queue_item_created": false,
+      "queue_item_updated": false,
+      "queue_write_performed": false,
+      "reports_brain_write_performed": false,
+      "runtime_execution_started": false,
+      "source_files_written": false,
+      "test_files_written": false,
+      "webhook_started": false
+    },
+    "status": "PASS"
+  },
+  "source_validation": {
+    "source_files": [
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/__init__.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/models.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/policy.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/state_machine.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/evidence.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/validator.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_intent.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_result.py",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/audit.py"
+    ],
+    "source_gate_close_validation": "PASS",
+    "source_hashes": {
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/__init__.py": "1c407908b6682f434b9ccc5ea9fccf61f758c38d1a925819d5f20fa7b6c45c67",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/audit.py": "b4b1cf80abc3cd7873e0a7ce46d4559396b9652f6a745e299149f5afd70b366f",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/evidence.py": "a41994987d244170732d3f4143cc1fa901e68db3926b8779b3e5c61b040f027f",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/models.py": "73717c936671279f17f6c9904c66c5181fc4483cb408ab82ab5d389f8540c21d",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/policy.py": "9a6c007acf2231d734c2a8b170c4c68b07c7c99e5861301ab15f1a1a265fff75",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/state_machine.py": "adf3e39497e895881e3ae4f0a23e008f0d23d03b59febf1d08aa0189f2fa4620",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/validator.py": "073f8eabde57ab01c77c8f82ccfe182800ec66122cf71b4baf2ce249b515999b",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_intent.py": "ea94c8f71e06efbd1353999489cad8b8ef14b4971baa148d669a75ce23fb3665",
+      "04_SCRIPTS/python/content_engine/content_draft_queue_write_governance/write_result.py": "d328952a029b021ca976849c8eee31abba6a976d9d2bd19a4a798f13b237b833"
+    },
+    "status": "PASS"
+  },
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION",
+  "test_validation": {
+    "status": "PASS",
+    "test_files": [
+      "tests/content_engine/test_draft_queue_write_governance_models.py",
+      "tests/content_engine/test_draft_queue_write_governance_policy.py",
+      "tests/content_engine/test_draft_queue_write_governance_state_machine.py",
+      "tests/content_engine/test_draft_queue_write_governance_evidence.py",
+      "tests/content_engine/test_draft_queue_write_governance_validator.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_intent.py",
+      "tests/content_engine/test_draft_queue_write_governance_write_result.py",
+      "tests/content_engine/test_draft_queue_write_governance_negative_cases.py"
+    ],
+    "test_gate_close_validation": "PASS",
+    "test_hashes": {
+      "tests/content_engine/test_draft_queue_write_governance_evidence.py": "0f3fc25d7c4f5a4fea7105ad611f34f6130dba06fe943c896f3af02fadaa73ef",
+      "tests/content_engine/test_draft_queue_write_governance_models.py": "dcfabb7b2dacabf8d1997f98c965337e580aed46bab222bb1d34bd27fc8dbd42",
+      "tests/content_engine/test_draft_queue_write_governance_negative_cases.py": "cbd552551b139c6e04ecf4666c64248ed5fbf5f1601f86315ad046318f27befc",
+      "tests/content_engine/test_draft_queue_write_governance_policy.py": "282f1a2d1e454534eab7f7c12cbbacf86a095683a605ede42befa877b37510a0",
+      "tests/content_engine/test_draft_queue_write_governance_state_machine.py": "8516195d7f733a8c6269f29a8bacf4fa402d8bd964d9c5decb74764363072c9f",
+      "tests/content_engine/test_draft_queue_write_governance_validator.py": "68af44893d6a07a250f172a173ae7cd0e704cd6cf9abd8dc504573ef4e147343",
+      "tests/content_engine/test_draft_queue_write_governance_write_intent.py": "f49f293fcf0813c4c07694e122abaf04fdefc00a64caff571b94fb32deb2d432",
+      "tests/content_engine/test_draft_queue_write_governance_write_result.py": "d9a079858f544b1331dfe94469949974822ddcf98aef1cd4e094c372624001de"
+    }
+  }
+}
