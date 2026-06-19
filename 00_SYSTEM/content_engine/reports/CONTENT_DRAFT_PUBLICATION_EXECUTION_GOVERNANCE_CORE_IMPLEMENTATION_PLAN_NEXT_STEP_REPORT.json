@@ -1,0 +1,385 @@
+{
+  "acceptance_criteria": {
+    "accepted_for_next_step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+    "automatic_block_build_allowed_next": true,
+    "criteria": {
+      "automatic_block_build_allowed_next": true,
+      "automation_n8n_webhook_capa9_allowed_now_false": true,
+      "build_allowed_now_false": true,
+      "final_approval_consumed": true,
+      "implementation_plan_defined": true,
+      "manual_brain_argos_mutation_allowed_now_false": true,
+      "posting_allowed_now_false": true,
+      "publication_channel_mutation_allowed_now_false": true,
+      "publication_scheduling_allowed_now_false": true,
+      "publishing_allowed_now_false": true,
+      "queue_item_mutation_allowed_now_false": true,
+      "queue_write_allowed_now_false": true,
+      "runtime_execution_allowed_now_false": true,
+      "source_allowlist_exact": [
+        "04_SCRIPTS/python/content_engine/governance/content_draft_publication_execution_governance_core.py"
+      ],
+      "source_files_written_now_false": true,
+      "test_allowlist_exact": [
+        "tests/content_engine/governance/test_content_draft_publication_execution_governance_core.py"
+      ],
+      "test_files_written_now_false": true
+    },
+    "status": "PASS"
+  },
+  "component": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE",
+  "consumed_final_approval": {
+    "final_approval_review_status": "FINAL_APPROVAL_REVIEWED",
+    "manifest_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+    "manifest_sha256": "865163d4364069a9fbc8b59c0f777b9ae31d1b34b253270d5f75a71d953f6717",
+    "report_hashes": {
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_ACCEPTANCE_REPORT.json": "fbf5d54429808230b77fef941d0a44b92e69fc1984a920e156ba65828be61078",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_CONSUMPTION_REPORT.json": "fbf5d54429808230b77fef941d0a44b92e69fc1984a920e156ba65828be61078",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_DECISION_REPORT.json": "fbf5d54429808230b77fef941d0a44b92e69fc1984a920e156ba65828be61078",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_NEXT_STEP_REPORT.json": "fbf5d54429808230b77fef941d0a44b92e69fc1984a920e156ba65828be61078",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_NO_TOUCH_REPORT.json": "5aab722981289224e8855498b6f77e507d016cccd96987db1f197c7190a8eb4f",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_POLICY_BOUNDARY_REPORT.json": "fbf5d54429808230b77fef941d0a44b92e69fc1984a920e156ba65828be61078",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_RECHECK_REPORT.json": "fbf5d54429808230b77fef941d0a44b92e69fc1984a920e156ba65828be61078",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_REPORT.json": "ee53be96f2d4ff3544342cbd1ecc458c331630a5e54c69b1f089d47fd888b755",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_RISK_REPORT.json": "fbf5d54429808230b77fef941d0a44b92e69fc1984a920e156ba65828be61078",
+      "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SECURITY_REPORT.json": "fbf5d54429808230b77fef941d0a44b92e69fc1984a920e156ba65828be61078"
+    },
+    "seal_path": "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+    "seal_sha256": "9cd73010ce4ae4b1153365e6fcd5d309650871af882f03b2788d2302a26d5133",
+    "sealed_status": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEWED"
+  },
+  "gates": {
+    "PEGIP-G01_ROOT_EXISTS": true,
+    "PEGIP-G02_PYTHON_OK": true,
+    "PEGIP-G03_BRANCH_MAIN": true,
+    "PEGIP-G04_REPO_CLEAN_PRE_PLAN": true,
+    "PEGIP-G05_HEAD_SYNCED_PRE_PLAN": true,
+    "PEGIP-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "PEGIP-G07_FINAL_APPROVAL_SEAL_PRESENT": true,
+    "PEGIP-G08_FINAL_APPROVAL_MANIFEST_PRESENT": true,
+    "PEGIP-G09_FINAL_APPROVAL_REPORTS_PRESENT": true,
+    "PEGIP-G10_FINAL_APPROVAL_SEAL_HASH_OK": true,
+    "PEGIP-G11_FINAL_APPROVAL_STATUS_VALID": true,
+    "PEGIP-G12_FINAL_APPROVAL_NEXT_STEP_MATCHES_THIS_STEP": true,
+    "PEGIP-G13_FINAL_APPROVAL_FLAGS_VALID": true,
+    "PEGIP-G14_FINAL_APPROVAL_PRODUCTIVE_BLOCKS_VALID": true,
+    "PEGIP-G15_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "PEGIP-G16_FINAL_APPROVAL_CONSUMED": true,
+    "PEGIP-G17_IMPLEMENTATION_PLAN_DEFINED": true,
+    "PEGIP-G18_SOURCE_ALLOWLIST_DEFINED": true,
+    "PEGIP-G19_TEST_ALLOWLIST_DEFINED": true,
+    "PEGIP-G20_CONTRACT_DEFINED": true,
+    "PEGIP-G21_POLICY_BOUNDARY_DEFINED": true,
+    "PEGIP-G22_SECURITY_PLAN_DEFINED": true,
+    "PEGIP-G23_RISK_PLAN_DEFINED": true,
+    "PEGIP-G24_ACCEPTANCE_CRITERIA_DEFINED": true,
+    "PEGIP-G25_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "PEGIP-G26_NEXT_STEP_DEFINED": true,
+    "PEGIP-G27_REPORTS_WRITTEN": false,
+    "PEGIP-G28_MANIFEST_WRITTEN": false,
+    "PEGIP-G29_SEAL_WRITTEN": false,
+    "PEGIP-G30_OUTPUT_SCOPE_EXACT": false,
+    "PEGIP-G31_JSON_CANONICAL": false,
+    "PEGIP-G32_MANIFEST_COMPLETE": false,
+    "PEGIP-G33_SEAL_VALID": false,
+    "PEGIP-G34_NO_TOUCH_PROTECTED_ROOTS": false,
+    "PEGIP-G35_COMMIT_ALLOWLIST_EXACT": false,
+    "PEGIP-G36_COMMIT_CREATED": false,
+    "PEGIP-G37_PUSH_SYNC": false,
+    "PEGIP-G38_REPO_CLEAN_SYNCED_FINAL": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "0a5db62cf45b1bc185a1efb34c700092341f6252",
+    "previous_commit_subject": "Review final approval for Content Draft Publication Execution Governance Core",
+    "python": "Python 3.12.10",
+    "remote": "0a5db62cf45b1bc185a1efb34c700092341f6252"
+  },
+  "implementation_contract": {
+    "blocked_decision": "BLOCKED_PUBLICATION_EXECUTION_GOVERNANCE_FAIL_CLOSED",
+    "input_contract": {
+      "default_behavior_when_missing": "BLOCKED_FAIL_CLOSED",
+      "optional_fields": [
+        "notes",
+        "risk_context",
+        "channel_candidate"
+      ],
+      "required_fields": [
+        "request_id",
+        "draft_id",
+        "queue_item_id",
+        "publication_governance_seal",
+        "operator_authorization_status",
+        "channel_policy_status",
+        "dry_run_required"
+      ]
+    },
+    "output_contract": {
+      "must_be_json_serializable": true,
+      "must_default_to_blocked": true,
+      "required_fields": [
+        "component",
+        "status",
+        "decision",
+        "publication_execution_allowed_now",
+        "publishing_allowed_now",
+        "posting_allowed_now",
+        "publication_scheduling_allowed_now",
+        "publication_channel_mutation_allowed_now",
+        "runtime_execution_allowed_now",
+        "queue_write_allowed_now",
+        "automation_allowed_now",
+        "n8n_allowed_now",
+        "webhook_allowed_now",
+        "capa9_allowed_now",
+        "reasons"
+      ]
+    },
+    "status": "PASS"
+  },
+  "implementation_plan": {
+    "component": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE",
+    "decision": "IMPLEMENTATION_PLAN_DEFINED_FOR_AUTOMATIC_BLOCK_BUILD_ONLY",
+    "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+    "implementation_strategy": [
+      "Create a pure governance module with no side effects.",
+      "Expose deterministic validation of publication execution requests.",
+      "Return a fail-closed blocked result by default.",
+      "Require explicit evidence inputs before future execution can ever be considered.",
+      "Never publish, post, schedule, mutate channels, write queue, trigger automation, n8n, webhook or CAPA9.",
+      "Expose all safety flags explicitly as false."
+    ],
+    "not_performed_now": [
+      "source file writing",
+      "test file writing",
+      "automatic block build",
+      "runtime execution",
+      "queue write",
+      "queue item creation/update",
+      "publishing",
+      "posting",
+      "publication scheduling",
+      "publication channel mutation",
+      "automation",
+      "n8n",
+      "webhook",
+      "CAPA9"
+    ],
+    "plan_scope": "DEFINE_EXACT_SOURCE_TEST_ALLOWLIST_AND_CONTRACT_ONLY",
+    "planned_build_step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+    "status": "PASS"
+  },
+  "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+  "next_step": {
+    "argos_bridge_build_allowed_now": false,
+    "automatic_block_build_allowed_next": true,
+    "automation_allowed_now": false,
+    "brain_write_allowed_now": false,
+    "build_allowed_now": false,
+    "capa9_allowed_now": false,
+    "component": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_plan_status": "IMPLEMENTATION_PLAN_DEFINED",
+    "manual_current_mutation_allowed_now": false,
+    "n8n_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+    "planned_source_files_for_next_build_only": [
+      "04_SCRIPTS/python/content_engine/governance/content_draft_publication_execution_governance_core.py"
+    ],
+    "planned_test_files_for_next_build_only": [
+      "tests/content_engine/governance/test_content_draft_publication_execution_governance_core.py"
+    ],
+    "posting_allowed_now": false,
+    "publication_channel_mutation_allowed_now": false,
+    "publication_scheduling_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_item_creation_allowed_now": false,
+    "queue_item_update_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_DEFINED",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "policy_boundary": {
+    "allowed_next_only": [
+      "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD"
+    ],
+    "automatic_block_build_allowed_next": true,
+    "blocked_flags": {
+      "argos_bridge_build_allowed_now": false,
+      "automation_allowed_now": false,
+      "brain_write_allowed_now": false,
+      "build_allowed_now": false,
+      "capa9_allowed_now": false,
+      "content_generation_allowed_now": false,
+      "draft_creation_allowed_now": false,
+      "finalization_allowed_now": false,
+      "manual_current_mutation_allowed_now": false,
+      "n8n_allowed_now": false,
+      "posting_allowed_now": false,
+      "publication_channel_mutation_allowed_now": false,
+      "publication_scheduling_allowed_now": false,
+      "publishing_allowed_now": false,
+      "queue_item_creation_allowed_now": false,
+      "queue_item_update_allowed_now": false,
+      "queue_write_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "runtime_execution_allowed_now": false,
+      "source_files_allowed_now": false,
+      "test_files_allowed_now": false,
+      "webhook_allowed_now": false
+    },
+    "boundary": "IMPLEMENTATION_PLAN_ONLY",
+    "build_allowed_now": false,
+    "planned_source_files_for_next_build_only": [
+      "04_SCRIPTS/python/content_engine/governance/content_draft_publication_execution_governance_core.py"
+    ],
+    "planned_test_files_for_next_build_only": [
+      "tests/content_engine/governance/test_content_draft_publication_execution_governance_core.py"
+    ],
+    "productive_operations_allowed_now": false,
+    "publication_execution_allowed_now": false,
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "result": "PASS",
+  "risk_plan": {
+    "known_debt_not_in_scope": [
+      "BOM U+FEFF legacy debt.",
+      "Legacy g_learning pytest path debt."
+    ],
+    "risk_plan_status": "DEFINED_FOR_NEXT_BUILD",
+    "risks": [
+      {
+        "control": "Next build must implement pure governance logic only; tests must assert no execution flags.",
+        "id": "PEGIP-RISK-001",
+        "risk": "Implementation code accidentally performs publication execution.",
+        "severity": "critical"
+      },
+      {
+        "control": "Automatic build must enforce exact source/test output scope.",
+        "id": "PEGIP-RISK-002",
+        "risk": "Source/test allowlist expands beyond approved paths.",
+        "severity": "high"
+      },
+      {
+        "control": "Default result must be BLOCKED_FAIL_CLOSED.",
+        "id": "PEGIP-RISK-003",
+        "risk": "Fail-open behavior when evidence is incomplete.",
+        "severity": "critical"
+      },
+      {
+        "control": "All such flags must remain false and tests must assert false.",
+        "id": "PEGIP-RISK-004",
+        "risk": "Automation, queue write or publication channel mutation enabled too early.",
+        "severity": "critical"
+      }
+    ],
+    "status": "PASS"
+  },
+  "sealed_status": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_DEFINED",
+  "security_plan": {
+    "explicit_block_requirements": {
+      "automation_allowed_now": false,
+      "capa9_allowed_now": false,
+      "n8n_allowed_now": false,
+      "posting_allowed_now": false,
+      "publication_channel_mutation_allowed_now": false,
+      "publication_scheduling_allowed_now": false,
+      "publishing_allowed_now": false,
+      "queue_write_allowed_now": false,
+      "runtime_execution_allowed_now": false,
+      "webhook_allowed_now": false
+    },
+    "security_model": "FAIL_CLOSED_PUBLICATION_EXECUTION_GOVERNANCE",
+    "security_requirements_for_next_build": [
+      "Module must not perform file writes.",
+      "Module must not perform network calls.",
+      "Module must not publish, post or schedule.",
+      "Module must not mutate publication channels.",
+      "Module must not write queue or mutate queue items.",
+      "Module must not trigger automation/n8n/webhook/CAPA9.",
+      "Module must expose all productive permissions as false.",
+      "Module must default to blocked when evidence is missing or ambiguous.",
+      "Tests must assert blocked defaults."
+    ],
+    "status": "PASS"
+  },
+  "source_allowlist": {
+    "source_contract": {
+      "module": "content_draft_publication_execution_governance_core",
+      "planned_symbols": [
+        "PublicationExecutionGovernanceInput",
+        "PublicationExecutionGovernanceResult",
+        "ContentDraftPublicationExecutionGovernanceCore",
+        "evaluate_publication_execution_governance"
+      ],
+      "required_behavior": [
+        "pure deterministic logic",
+        "no file writes",
+        "no network calls",
+        "no queue mutation",
+        "no runtime publication",
+        "fail-closed defaults",
+        "explicit false productive-operation flags",
+        "canonical serializable result"
+      ]
+    },
+    "source_files_allowed_in_next_build_only": [
+      "04_SCRIPTS/python/content_engine/governance/content_draft_publication_execution_governance_core.py"
+    ],
+    "source_files_allowed_now": false,
+    "source_files_written_now": false,
+    "status": "PASS"
+  },
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+  "test_allowlist": {
+    "status": "PASS",
+    "test_contract": {
+      "required_tests": [
+        "default result is fail-closed",
+        "publishing_allowed_now is false",
+        "posting_allowed_now is false",
+        "publication_scheduling_allowed_now is false",
+        "publication_channel_mutation_allowed_now is false",
+        "runtime_execution_allowed_now is false",
+        "queue_write_allowed_now is false",
+        "automation/n8n/webhook/CAPA9 flags are false",
+        "source/test writing flags are false",
+        "result is JSON serializable",
+        "safe evidence can be consumed without side effects"
+      ]
+    },
+    "test_files_allowed_in_next_build_only": [
+      "tests/content_engine/governance/test_content_draft_publication_execution_governance_core.py"
+    ],
+    "test_files_allowed_now": false,
+    "test_files_written_now": false
+  }
+}
