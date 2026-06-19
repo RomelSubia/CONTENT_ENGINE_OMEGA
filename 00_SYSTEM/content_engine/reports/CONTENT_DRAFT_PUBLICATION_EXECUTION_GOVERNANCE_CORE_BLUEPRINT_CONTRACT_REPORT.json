@@ -1,0 +1,329 @@
+{
+  "acceptance_criteria": {
+    "acceptance_criteria_for_review_hardening": [
+      "Blueprint must remain plan-only.",
+      "publishing_allowed_now must be explicit false.",
+      "posting_allowed_now must be explicit false.",
+      "publication_scheduling_allowed_now must be explicit false.",
+      "publication_channel_mutation_allowed_now must be explicit false.",
+      "runtime_execution_allowed_now must be explicit false.",
+      "queue_write_allowed_now must be explicit false.",
+      "queue item creation/update must be explicit false.",
+      "automation/n8n/webhook/CAPA9 must be explicit false.",
+      "manual/brain/reports-brain/ARGOS mutation must be explicit false.",
+      "next step must be review hardening only."
+    ],
+    "minimum_required_next_step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_REVIEW_HARDENING",
+    "status": "PASS"
+  },
+  "blueprint_status": "BLUEPRINT_DEFINED",
+  "component": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE",
+  "consumed_readiness_map": {
+    "manifest_path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_GOVERNANCE_MANIFEST.json",
+    "manifest_sha256": "75c53b267f1f55bfdaf526410a08e546553e95ff99b1da6efb441165f09fc661",
+    "publishing_allowed_now_missing_or_ambiguous": true,
+    "readiness_map": "NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_GOVERNANCE",
+    "seal_path": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_GOVERNANCE_SEAL.json",
+    "seal_sha256": "5a50b4d544762a8e61de542a0d27014a89cf5a4fa6ff17b20c3de35510ab7f40",
+    "sealed_status": "NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_GOVERNANCE_DEFINED",
+    "status": "NEXT_LAYER_READINESS_MAP_DEFINED"
+  },
+  "contract": {
+    "future_component_contract": {
+      "must_expose_explicit_block_flags": true,
+      "must_include_automation_triggered_false": true,
+      "must_include_channel_mutation_performed_false": true,
+      "must_include_publication_execution_performed_false": true,
+      "must_include_publishing_allowed_now_false": true,
+      "must_return_plan_only_or_blocked_result": true,
+      "must_validate_execution_request_without_executing": true
+    },
+    "future_output_contract": {
+      "automation_allowed_now": false,
+      "build_allowed_now": false,
+      "component_status_after_this_step": "BLUEPRINT_DEFINED",
+      "execution_allowed_now": false,
+      "implementation_allowed_now": false,
+      "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_REVIEW_HARDENING",
+      "publication_allowed_now": false,
+      "review_hardening_allowed_next": true,
+      "sealed_status_after_this_step": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BLUEPRINT_DEFINED"
+    },
+    "input_contract": {
+      "required_next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BLUEPRINT",
+      "required_previous_seal": "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_GOVERNANCE_SEAL.json",
+      "required_previous_status": "NEXT_LAYER_READINESS_MAP_DEFINED",
+      "required_selected_component": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE",
+      "requires_productive_operations_blocked": true,
+      "requires_repo_clean_synced": true
+    },
+    "status": "PASS"
+  },
+  "gates": {
+    "PEGCB-G01_ROOT_EXISTS": true,
+    "PEGCB-G02_PYTHON_OK": true,
+    "PEGCB-G03_BRANCH_MAIN": true,
+    "PEGCB-G04_REPO_CLEAN_PRE_BLUEPRINT": true,
+    "PEGCB-G05_HEAD_SYNCED_PRE_BLUEPRINT": true,
+    "PEGCB-G06_PREVIOUS_COMMIT_SUBJECT_OK": true,
+    "PEGCB-G07_READINESS_MAP_SEAL_PRESENT": true,
+    "PEGCB-G08_READINESS_MAP_MANIFEST_PRESENT": true,
+    "PEGCB-G09_READINESS_MAP_SEAL_HASH_OK": true,
+    "PEGCB-G10_READINESS_MAP_STATUS_VALID": true,
+    "PEGCB-G11_SELECTED_COMPONENT_VALID": true,
+    "PEGCB-G12_NEXT_STEP_MATCHES_THIS_BLUEPRINT": true,
+    "PEGCB-G13_TRIAGE_WARNING_CONSUMED": true,
+    "PEGCB-G14_PROTECTED_ROOTS_FINGERPRINTED": true,
+    "PEGCB-G15_BLUEPRINT_OBJECTIVES_DEFINED": true,
+    "PEGCB-G16_BLUEPRINT_SCOPE_DEFINED": true,
+    "PEGCB-G17_BLUEPRINT_CONTRACT_DEFINED": true,
+    "PEGCB-G18_POLICY_BOUNDARY_DEFINED": true,
+    "PEGCB-G19_SECURITY_HARDENING_DEFINED": true,
+    "PEGCB-G20_RISK_MODEL_DEFINED": true,
+    "PEGCB-G21_ACCEPTANCE_CRITERIA_DEFINED": true,
+    "PEGCB-G22_PRODUCTIVE_OPERATIONS_BLOCKED": true,
+    "PEGCB-G23_NEXT_STEP_DEFINED": true,
+    "PEGCB-G24_REPORTS_WRITTEN": false,
+    "PEGCB-G25_MANIFEST_WRITTEN": false,
+    "PEGCB-G26_SEAL_WRITTEN": false,
+    "PEGCB-G27_OUTPUT_SCOPE_EXACT": false,
+    "PEGCB-G28_JSON_CANONICAL": false,
+    "PEGCB-G29_MANIFEST_COMPLETE": false,
+    "PEGCB-G30_SEAL_VALID": false,
+    "PEGCB-G31_NO_TOUCH_PROTECTED_ROOTS": false,
+    "PEGCB-G32_COMMIT_ALLOWLIST_EXACT": false,
+    "PEGCB-G33_COMMIT_CREATED": false,
+    "PEGCB-G34_PUSH_SYNC": false,
+    "PEGCB-G35_REPO_CLEAN_SYNCED_FINAL": false
+  },
+  "git_context": {
+    "branch": "main",
+    "head": "a5d5bb53c91009e07852ba4047fc4501541298b3",
+    "previous_commit_subject": "Map next layer after Content Draft Publication Governance",
+    "python": "Python 3.12.10",
+    "remote": "a5d5bb53c91009e07852ba4047fc4501541298b3"
+  },
+  "next_step": {
+    "argos_bridge_build_allowed_now": false,
+    "automation_allowed_now": false,
+    "blueprint_status": "BLUEPRINT_DEFINED",
+    "brain_write_allowed_now": false,
+    "capa9_allowed_now": false,
+    "component": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE",
+    "content_generation_allowed_now": false,
+    "draft_creation_allowed_now": false,
+    "finalization_allowed_now": false,
+    "implementation_allowed_now": false,
+    "manual_current_mutation_allowed_now": false,
+    "n8n_allowed_now": false,
+    "next_safe_step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_REVIEW_HARDENING",
+    "posting_allowed_now": false,
+    "publication_channel_mutation_allowed_now": false,
+    "publication_scheduling_allowed_now": false,
+    "publishing_allowed_now": false,
+    "queue_item_creation_allowed_now": false,
+    "queue_item_update_allowed_now": false,
+    "queue_write_allowed_now": false,
+    "reports_brain_write_allowed_now": false,
+    "review_hardening_allowed_next": true,
+    "runtime_execution_allowed_now": false,
+    "sealed_status": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BLUEPRINT_DEFINED",
+    "source_files_allowed_now": false,
+    "status": "PASS",
+    "test_files_allowed_now": false,
+    "webhook_allowed_now": false
+  },
+  "objectives": {
+    "blueprint_status": "BLUEPRINT_DEFINED",
+    "component": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE",
+    "non_objectives": [
+      "Do not publish.",
+      "Do not post.",
+      "Do not schedule publication.",
+      "Do not mutate publication channels.",
+      "Do not write queue.",
+      "Do not create or update queue items.",
+      "Do not trigger automation, n8n, webhook or CAPA9.",
+      "Do not build ARGOS bridge.",
+      "Do not write source or test files in this blueprint step."
+    ],
+    "objectives": [
+      "Define publication execution as a governed plan/validation boundary, not as real execution.",
+      "Require prior Publication Governance Core gate close evidence.",
+      "Require explicit human/operator authorization model for any future execution layer.",
+      "Block publication, posting, scheduling, channel mutation, runtime, queue write, queue item mutation, automation, n8n, webhook and CAPA9.",
+      "Harden publishing_allowed_now as explicitly false.",
+      "Define acceptance criteria before any implementation plan can be allowed."
+    ],
+    "primary_objective": "Define fail-closed governance for publication execution without performing publication execution.",
+    "status": "PASS"
+  },
+  "policy_boundary": {
+    "allowed_next_only": [
+      "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_REVIEW_HARDENING"
+    ],
+    "blocked_flags": {
+      "argos_bridge_build_allowed_now": false,
+      "automation_allowed_now": false,
+      "brain_write_allowed_now": false,
+      "capa9_allowed_now": false,
+      "content_generation_allowed_now": false,
+      "draft_creation_allowed_now": false,
+      "finalization_allowed_now": false,
+      "implementation_allowed_now": false,
+      "manual_current_mutation_allowed_now": false,
+      "n8n_allowed_now": false,
+      "posting_allowed_now": false,
+      "publication_channel_mutation_allowed_now": false,
+      "publication_scheduling_allowed_now": false,
+      "publishing_allowed_now": false,
+      "queue_item_creation_allowed_now": false,
+      "queue_item_update_allowed_now": false,
+      "queue_write_allowed_now": false,
+      "reports_brain_write_allowed_now": false,
+      "runtime_execution_allowed_now": false,
+      "source_files_allowed_now": false,
+      "test_files_allowed_now": false,
+      "webhook_allowed_now": false
+    },
+    "blueprint_allowed_now": true,
+    "boundary": "PUBLICATION_EXECUTION_GOVERNANCE_BLUEPRINT_ONLY",
+    "productive_operations_allowed_now": false,
+    "publication_execution_allowed_now": false,
+    "review_hardening_allowed_next": true,
+    "status": "PASS"
+  },
+  "project": "CONTENT_ENGINE_OMEGA",
+  "protected_before": {
+    "00_SYSTEM/brain": "5bdf9ecf5f1204db45b80b758f8601cb08401f71663832e08cbd582811bc483b",
+    "00_SYSTEM/manual/current": "97dd1391e26bbdfe3bf75678debabc6eec3bcfa017d6554dad872bbe3fd06a82",
+    "00_SYSTEM/manual/historical": "b1e0fa8651b661aa7c318e794edd66c7ee6e3976dab7080c4feb84101cdb8f43",
+    "00_SYSTEM/manual/manifest": "c57ab88e7723ef8f34d94574dd95ebd3bdf7416af5f5f5655b5f59d611affe13",
+    "00_SYSTEM/manual/registry": "ab62fbcdd5a57220e10ce507360fd5aebd7aa7d44efaf2d05f1ce1b38913accd",
+    "00_SYSTEM/reports/brain": "8ea12165c5b4f0f58534b29a1bad5a7d39be19cb74d5deb3655032d97e98b3a2",
+    "07_DATA/metrics": "MISSING",
+    "07_DATA/queue": "MISSING",
+    "08_ASSETS": "MISSING",
+    "09_PUBLICATION": "MISSING",
+    "12_LOGS/runtime": "MISSING",
+    "13_BACKUPS": "MISSING",
+    "14_EXPORTS": "MISSING",
+    "n8n": "MISSING",
+    "publication": "MISSING",
+    "workflows": "MISSING"
+  },
+  "result": "PASS",
+  "risk_model": {
+    "overall_blueprint_risk_after_controls": "controlled_for_review_hardening",
+    "risks": [
+      {
+        "id": "PEG-RISK-001",
+        "mitigation": "Blueprint explicitly states no publication execution, no posting, no scheduling, no channel mutation.",
+        "risk": "Blueprint accidentally interpreted as permission to execute publication.",
+        "severity": "critical"
+      },
+      {
+        "id": "PEG-RISK-002",
+        "mitigation": "Blueprint hardens publishing_allowed_now=false.",
+        "risk": "Ambiguous publishing_allowed_now inherited from readiness map.",
+        "severity": "medium"
+      },
+      {
+        "id": "PEG-RISK-003",
+        "mitigation": "Automation, n8n, webhook and CAPA9 remain blocked.",
+        "risk": "Automation triggered before execution governance closure.",
+        "severity": "critical"
+      },
+      {
+        "id": "PEG-RISK-004",
+        "mitigation": "Queue write and queue item create/update remain blocked.",
+        "risk": "Queue write or queue item mutation before execution governance closure.",
+        "severity": "critical"
+      },
+      {
+        "id": "PEG-RISK-005",
+        "mitigation": "BOM and legacy pytest debt tracked separately; not allowed to weaken current governance gates.",
+        "risk": "Legacy technical debt confused with current component failure.",
+        "severity": "medium"
+      }
+    ],
+    "status": "PASS"
+  },
+  "scope": {
+    "allowed_in_this_step": [
+      "consume readiness map seal",
+      "define blueprint reports",
+      "define policy boundary",
+      "define risk model",
+      "define security hardening",
+      "define acceptance criteria",
+      "write blueprint reports/manifests/seal only",
+      "commit/push blueprint artifacts only"
+    ],
+    "not_allowed_in_this_step": [
+      "source file writing",
+      "test file writing",
+      "runtime execution",
+      "draft creation",
+      "content generation",
+      "finalization real",
+      "queue write",
+      "queue item creation",
+      "queue item update",
+      "publishing",
+      "posting",
+      "publication scheduling",
+      "publication channel mutation",
+      "automation",
+      "n8n",
+      "webhook",
+      "CAPA9",
+      "manual current mutation",
+      "brain write",
+      "reports-brain write",
+      "ARGOS bridge build"
+    ],
+    "scope_type": "BLUEPRINT_ONLY",
+    "status": "PASS"
+  },
+  "sealed_status": "CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BLUEPRINT_DEFINED",
+  "security_hardening": {
+    "hardening_items": [
+      {
+        "enforced_in_blueprint": true,
+        "id": "PEG-HARDEN-001",
+        "name": "Explicit publishing block",
+        "reason": "Latest readiness map had publishing_allowed_now missing/ambiguous.",
+        "requirement": "publishing_allowed_now must be explicitly false in this blueprint and future layers."
+      },
+      {
+        "enforced_in_blueprint": true,
+        "id": "PEG-HARDEN-002",
+        "name": "Execution remains plan-only",
+        "requirement": "Publication execution governance must validate future execution paths without performing execution."
+      },
+      {
+        "enforced_in_blueprint": true,
+        "id": "PEG-HARDEN-003",
+        "name": "No automation",
+        "requirement": "n8n, webhook, CAPA9 and automation remain blocked."
+      },
+      {
+        "enforced_in_blueprint": true,
+        "id": "PEG-HARDEN-004",
+        "name": "No queue mutation",
+        "requirement": "Queue write and queue item mutation remain blocked."
+      },
+      {
+        "enforced_in_blueprint": true,
+        "id": "PEG-HARDEN-005",
+        "name": "No channel mutation",
+        "requirement": "Publication channel mutation remains blocked."
+      }
+    ],
+    "publishing_allowed_now_hardened_to_false": true,
+    "status": "PASS",
+    "triage_warning_consumed": true
+  },
+  "step": "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BLUEPRINT"
+}
