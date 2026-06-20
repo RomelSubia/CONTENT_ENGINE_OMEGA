@@ -1,0 +1,36 @@
+{
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "phase":  "POST_BUILD_AUDIT",
+    "status":  "POST_BUILD_AUDITED",
+    "generated_at_utc":  "2026-06-20T05:13:25.0978020Z",
+    "consumed_build":  {
+                           "build_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_MANIFEST.json",
+                           "build_manifest_sha256":  "ec845ec20feb8263490cfca98389baa672045b3a725774b4b3b18e5d51832bb7",
+                           "build_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_SEAL.json",
+                           "build_seal_status":  "BUILD_SEALED"
+                       },
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "expected_build_outputs_present":  true,
+                  "build_report_status_valid":  true,
+                  "security_report_status_valid":  true,
+                  "acceptance_report_status_valid":  true,
+                  "no_touch_report_status_valid":  true,
+                  "build_manifest_status_valid":  true,
+                  "build_seal_status_valid":  true,
+                  "build_seal_manifest_hash_valid":  true,
+                  "build_manifest_hashes_match":  true,
+                  "build_manifest_output_scope_valid":  true,
+                  "compile_recheck_pass":  true,
+                  "pytest_recheck_pass":  true,
+                  "source_not_mutated":  true,
+                  "test_not_mutated":  true,
+                  "protected_roots_no_touch":  true,
+                  "productive_operations_blocked":  true
+              },
+    "hash_mismatches":  [
+
+                        ],
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION"
+}

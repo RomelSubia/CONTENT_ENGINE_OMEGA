@@ -1,0 +1,14 @@
+{
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "phase":  "POST_BUILD_AUDIT",
+    "status":  "POST_BUILD_AUDITED",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+    "manifest_sha256":  "98daa82c288ba0f9a865d508e8c5f42cf0f913b9be2aae5fe6ea679e3fa10f28",
+    "gates_passed":  true,
+    "source_files_written":  false,
+    "test_files_written":  false,
+    "productive_operations_blocked":  true,
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION",
+    "generated_at_utc":  "2026-06-20T05:13:25.1195523Z"
+}
