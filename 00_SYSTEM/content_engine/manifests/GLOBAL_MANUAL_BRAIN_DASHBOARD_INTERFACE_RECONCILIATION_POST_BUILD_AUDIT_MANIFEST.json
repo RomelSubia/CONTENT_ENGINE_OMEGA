@@ -1,0 +1,26 @@
+{
+    "step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+    "phase":  "POST_BUILD_AUDIT",
+    "status":  "POST_BUILD_AUDIT_MANIFEST_VALIDATED",
+    "generated_at_utc":  "2026-06-20T08:40:53.3720873Z",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_SEAL.json",
+                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_SUMMARY.md"
+                     ],
+    "consumed":  {
+                     "build_report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_REPORT.json",
+                     "build_manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                     "build_seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                     "build_summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SUMMARY.md",
+                     "build_manifest_sha256":  "0e0c366658deb98c19564693a94c4de109be08a1b7ec667ec04036d035dea836"
+                 },
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_REPORT.json":  "1670106f6da001da95627595fb7a79bd0e22d0d7472c37218dc1233f8d94cf21",
+                        "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_SUMMARY.md":  "0ad2a2cf62aceb4c73a961586cffbfa88d41d269fd2e27318bfb48aacb80619c",
+                        "04_SCRIPTS/python/content_engine/governance/global_manual_brain_dashboard_interface_reconciliation.py":  "5be0cfebb0f0bbeae6c5ddcf701e64e12cf52cec4491c07058a539761ed8955d",
+                        "tests/content_engine/governance/test_global_manual_brain_dashboard_interface_reconciliation.py":  "78e4ab03ab616828103871f69db784fe383d51817b97c4510e8642df9caa085b"
+                    }
+}

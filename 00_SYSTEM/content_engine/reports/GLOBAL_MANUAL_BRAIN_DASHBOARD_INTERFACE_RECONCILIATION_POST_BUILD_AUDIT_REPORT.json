@@ -1,0 +1,70 @@
+{
+    "step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+    "phase":  "POST_BUILD_AUDIT",
+    "status":  "POST_BUILD_AUDITED",
+    "classification":  "BUILD_EVIDENCE_RECHECKED_SOURCE_TEST_STABLE",
+    "generated_at_utc":  "2026-06-20T08:40:53.3498807Z",
+    "consumed":  {
+                     "build_report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_REPORT.json",
+                     "build_manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                     "build_seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                     "build_summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SUMMARY.md",
+                     "build_report_sha256":  "0103d566769b8ecfc978e4cd699d47345815ef49a3903b7d6a901dd4c3ce4905",
+                     "build_manifest_sha256":  "0e0c366658deb98c19564693a94c4de109be08a1b7ec667ec04036d035dea836",
+                     "build_summary_sha256":  "c078e92f9391b3c242d677c833a1baffa7e6c9a7626b311473b102a92709d453"
+                 },
+    "source":  {
+                   "path":  "04_SCRIPTS/python/content_engine/governance/global_manual_brain_dashboard_interface_reconciliation.py",
+                   "sha256":  "5be0cfebb0f0bbeae6c5ddcf701e64e12cf52cec4491c07058a539761ed8955d",
+                   "hash_matches_build_manifest":  true,
+                   "hash_matches_build_seal":  true
+               },
+    "test":  {
+                 "path":  "tests/content_engine/governance/test_global_manual_brain_dashboard_interface_reconciliation.py",
+                 "sha256":  "78e4ab03ab616828103871f69db784fe383d51817b97c4510e8642df9caa085b",
+                 "hash_matches_build_manifest":  true,
+                 "hash_matches_build_seal":  true
+             },
+    "validations":  {
+                        "python_exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
+                        "compile_recheck":  {
+                                                "exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
+                                                "args":  "-m py_compile D:\\CONTENT_ENGINE_OMEGA\\04_SCRIPTS\\python\\content_engine\\governance\\global_manual_brain_dashboard_interface_reconciliation.py",
+                                                "code":  0,
+                                                "text":  ""
+                                            },
+                        "pytest_recheck":  {
+                                               "exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
+                                               "args":  "-m pytest D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_global_manual_brain_dashboard_interface_reconciliation.py -q",
+                                               "code":  0,
+                                               "text":  ".............                                                            [100%]\r\n13 passed in 0.08s"
+                                           },
+                        "static_security_recheck":  {
+                                                        "pass":  true,
+                                                        "scanned_files":  [
+                                                                              "04_SCRIPTS/python/content_engine/governance/global_manual_brain_dashboard_interface_reconciliation.py"
+                                                                          ],
+                                                        "forbidden_tokens_count":  20
+                                                    },
+                        "protected_roots_no_touch":  true,
+                        "productive_operations_blocked":  true
+                    },
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "build_evidence_consumed":  true,
+                  "source_hash_matches_manifest":  true,
+                  "test_hash_matches_manifest":  true,
+                  "source_hash_matches_seal":  true,
+                  "test_hash_matches_seal":  true,
+                  "compile_recheck_pass":  true,
+                  "pytest_recheck_pass":  true,
+                  "security_recheck_pass":  true,
+                  "protected_roots_no_touch":  true,
+                  "productive_operations_blocked":  true,
+                  "runtime_performed":  false,
+                  "manual_brain_argos_queue_publication_automation_blocked":  true,
+                  "output_scope_exact_pending":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION"
+}
