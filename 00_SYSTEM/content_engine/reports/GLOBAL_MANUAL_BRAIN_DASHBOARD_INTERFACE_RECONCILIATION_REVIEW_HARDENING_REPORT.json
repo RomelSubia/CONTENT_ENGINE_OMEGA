@@ -1,0 +1,244 @@
+{
+    "step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+    "phase":  "REVIEW_HARDENING",
+    "status":  "REVIEW_HARDENING_DEFINED",
+    "classification":  "RECONCILIATION_BLUEPRINT_HARDENED_DESIGN_ONLY",
+    "generated_at_utc":  "2026-06-20T07:33:00.9325580Z",
+    "consumed":  {
+                     "blueprint_report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_REPORT.json",
+                     "blueprint_manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_MANIFEST.json",
+                     "blueprint_seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_SEAL.json",
+                     "blueprint_summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_SUMMARY.md",
+                     "blueprint_report_sha256":  "914d21cfa98e6160912e67bbc1e7eaf123ba404e63639961e5188769d09cc038",
+                     "blueprint_manifest_sha256":  "dcee515f9242cc7a2725df9960d0d6d9bc24af741a137917a3d9feab2aceddb9",
+                     "blueprint_summary_sha256":  "18c0058aa895eba76f182b865e65d18262e2f9855d5f689ddf787364065fde36"
+                 },
+    "objective":  "Harden Manual, Brain, Dashboard and Interface/HUD reconciliation before any build, runtime or visualization expansion.",
+    "hardening_principle":  "TRUTH_OBJECTS_FIRST_UI_SECOND",
+    "evidence_hierarchy":  {
+                               "priority_order":  [
+                                                      "valid_seal",
+                                                      "valid_manifest",
+                                                      "associated_report",
+                                                      "summary",
+                                                      "manual_current",
+                                                      "brain_current",
+                                                      "dashboard_evidence",
+                                                      "interface_candidate_evidence",
+                                                      "git_state",
+                                                      "explicit_inference"
+                                                  ],
+                               "rule":  "Lower-priority evidence cannot override higher-priority evidence. Inference cannot override evidence. UI cannot override truth objects.",
+                               "conflict_resolution":  "When two sources conflict, choose CONFLICT and fail-closed until reconciled."
+                           },
+    "truth_object_contract":  {
+                                  "required_fields":  [
+                                                          "truth_object_id",
+                                                          "layer",
+                                                          "subject",
+                                                          "current_state",
+                                                          "truth_state",
+                                                          "confidence",
+                                                          "evidence_refs",
+                                                          "evidence_hashes",
+                                                          "source_priority",
+                                                          "generated_at_utc",
+                                                          "staleness_state",
+                                                          "conflict_state",
+                                                          "display_allowed",
+                                                          "next_safe_step"
+                                                      ],
+                                  "allowed_truth_states":  [
+                                                               "VERIFIED_TRUE",
+                                                               "VERIFIED_FALSE",
+                                                               "PARTIAL",
+                                                               "UNKNOWN",
+                                                               "CONFLICT",
+                                                               "STALE",
+                                                               "SUPERSEDED",
+                                                               "HISTORICAL"
+                                                           ],
+                                  "allowed_confidence_states":  [
+                                                                    "HIGH_CONFIDENCE",
+                                                                    "MEDIUM_CONFIDENCE",
+                                                                    "LOW_CONFIDENCE",
+                                                                    "UNKNOWN",
+                                                                    "CONFLICT"
+                                                                ],
+                                  "display_allowed_rule":  "display_allowed may be true only when truth_state is VERIFIED_TRUE or PARTIAL with explicit partial labeling."
+                              },
+    "layer_boundaries":  {
+                             "manual":  "Defines expected structure/rules; cannot prove runtime completion by itself.",
+                             "brain":  "Defines interpretation/decision/risk state; cannot mutate manual or dashboard truth directly.",
+                             "dashboard":  "Displays reconciled truth; cannot claim completion directly from raw evidence.",
+                             "interface_hud":  "User-facing layer; consumes only truth objects and dashboard-approved display contracts.",
+                             "evidence":  "Records facts; does not decide UI display."
+                         },
+    "hardened_rules":  {
+                           "missing_evidence":  "UNKNOWN",
+                           "partial_evidence":  "PARTIAL_WITH_LABEL",
+                           "conflicting_evidence":  "CONFLICT_FAIL_CLOSED",
+                           "stale_evidence":  "STALE_BLOCK_CURRENT_CLAIM",
+                           "historical_evidence":  "HISTORICAL_NOT_CURRENT",
+                           "manual_expected_brain_missing":  "MISSING_COMPREHENSION",
+                           "brain_knows_manual_missing":  "UNMANAGED_KNOWLEDGE",
+                           "dashboard_claim_without_truth_object":  "DISPLAY_BLOCKED",
+                           "interface_claim_without_dashboard_contract":  "UI_BLOCKED",
+                           "repo_dirty":  "ADVANCE_BLOCKED",
+                           "next_safe_step_missing":  "ADVANCE_BLOCKED",
+                           "seal_manifest_mismatch":  "CONFLICT_FAIL_CLOSED",
+                           "report_without_seal":  "PARTIAL_OR_UNKNOWN"
+                       },
+    "dashboard_visualization_gate":  {
+                                         "may_render":  [
+                                                            "truth_object_exists",
+                                                            "truth_object_has_evidence_refs",
+                                                            "truth_object_has_allowed_truth_state",
+                                                            "truth_object_is_current_or_labeled_historical",
+                                                            "display_allowed_evaluated",
+                                                            "conflicts_resolved_or_visible_as_conflict"
+                                                        ],
+                                         "must_not_render_as_complete_when":  [
+                                                                                  "truth_state_unknown",
+                                                                                  "truth_state_conflict",
+                                                                                  "evidence_missing",
+                                                                                  "state_historical_only",
+                                                                                  "manual_only_without_evidence",
+                                                                                  "brain_inference_only_without_evidence"
+                                                                              ]
+                                     },
+    "interface_hud_gate":  {
+                               "may_display":  [
+                                                   "dashboard_truth_contract_exists",
+                                                   "truth_object_consumed",
+                                                   "state_label_visible",
+                                                   "risk_label_visible",
+                                                   "next_safe_step_visible",
+                                                   "productive_status_visible"
+                                               ],
+                               "must_block":  [
+                                                  "no_truth_object",
+                                                  "dashboard_contract_missing",
+                                                  "conflict_hidden",
+                                                  "partial_state_unlabeled",
+                                                  "runtime_status_unknown",
+                                                  "productive_capability_misrepresented"
+                                              ]
+                           },
+    "capability_matrix_hardening":  {
+                                        "capability_statuses":  [
+                                                                    "NOT_PRESENT",
+                                                                    "PLANNED",
+                                                                    "BLUEPRINT_DEFINED",
+                                                                    "REVIEW_HARDENED",
+                                                                    "FINAL_APPROVED",
+                                                                    "IMPLEMENTED",
+                                                                    "POST_BUILD_AUDITED",
+                                                                    "GATE_CLOSED",
+                                                                    "READINESS_DEFINED",
+                                                                    "RUNTIME_VALIDATED",
+                                                                    "PRODUCTIVE_ENABLED",
+                                                                    "BLOCKED"
+                                                                ],
+                                        "rule":  "A capability cannot inherit a stronger status from a parent layer unless its own evidence supports that status.",
+                                        "dashboard_status_rule":  "Dashboard governance closed does not equal interface runtime complete.",
+                                        "manual_status_rule":  "Manual integrated does not equal implementation complete.",
+                                        "brain_status_rule":  "Brain candidate present does not equal full autonomous decision capability."
+                                    },
+    "risk_matrix_hardening":  {
+                                  "required_risk_fields":  [
+                                                               "risk_id",
+                                                               "layer",
+                                                               "description",
+                                                               "severity",
+                                                               "trigger",
+                                                               "evidence",
+                                                               "mitigation",
+                                                               "owner_layer",
+                                                               "blocking_status"
+                                                           ],
+                                  "severity":  [
+                                                   "LOW",
+                                                   "MEDIUM",
+                                                   "HIGH",
+                                                   "CRITICAL"
+                                               ],
+                                  "blocking_rule":  "HIGH or CRITICAL unresolved risk blocks advance unless explicitly accepted by a later governed gate."
+                              },
+    "acceptance_gates_for_future_reconciliation":  [
+                                                       "repo_clean_synced_precheck",
+                                                       "blueprint_consumed_and_hash_validated",
+                                                       "manual_layer_truth_objects_defined",
+                                                       "brain_layer_truth_objects_defined",
+                                                       "dashboard_layer_truth_objects_defined",
+                                                       "interface_hud_truth_objects_defined",
+                                                       "evidence_hierarchy_enforced",
+                                                       "truth_object_contract_validated",
+                                                       "historical_current_separated",
+                                                       "conflict_policy_enforced",
+                                                       "visualization_gate_enforced",
+                                                       "interface_gate_enforced",
+                                                       "capability_matrix_generated",
+                                                       "risk_matrix_generated",
+                                                       "protected_roots_no_touch",
+                                                       "productive_operations_blocked",
+                                                       "output_scope_exact",
+                                                       "manifest_seal_valid",
+                                                       "commit_push",
+                                                       "repo_clean_synced_final"
+                                                   ],
+    "failure_modes":  [
+                          "manual_brain_conflict",
+                          "dashboard_truth_mismatch",
+                          "interface_claim_without_truth",
+                          "historical_current_confusion",
+                          "missing_evidence",
+                          "stale_evidence",
+                          "seal_manifest_hash_mismatch",
+                          "dirty_repo",
+                          "unexpected_output_scope",
+                          "protected_root_mutation",
+                          "productive_operation_attempted"
+                      ],
+    "still_blocked":  [
+                          "source_file_write",
+                          "test_file_write",
+                          "automatic_block_build",
+                          "runtime_execution",
+                          "manual_mutation",
+                          "brain_mutation",
+                          "dashboard_runtime_mutation",
+                          "interface_runtime_mutation",
+                          "queue_mutation",
+                          "publication_mutation",
+                          "automation_trigger",
+                          "publishing",
+                          "scheduling",
+                          "ARGOS_mutation"
+                      ],
+    "gates":  {
+                  "blueprint_consumed":  true,
+                  "blueprint_hashes_validated":  true,
+                  "review_hardening_defined":  true,
+                  "truth_object_contract_defined":  true,
+                  "evidence_hierarchy_defined":  true,
+                  "layer_boundaries_defined":  true,
+                  "visualization_gate_defined":  true,
+                  "interface_hud_gate_defined":  true,
+                  "capability_matrix_hardening_defined":  true,
+                  "risk_matrix_hardening_defined":  true,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "build_performed":  false,
+                  "runtime_performed":  false,
+                  "productive_operations_blocked":  true,
+                  "manual_mutation_blocked":  true,
+                  "brain_mutation_blocked":  true,
+                  "dashboard_runtime_mutation_blocked":  true,
+                  "interface_runtime_mutation_blocked":  true,
+                  "argos_mutation_blocked":  true,
+                  "queue_publication_automation_blocked":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW"
+}

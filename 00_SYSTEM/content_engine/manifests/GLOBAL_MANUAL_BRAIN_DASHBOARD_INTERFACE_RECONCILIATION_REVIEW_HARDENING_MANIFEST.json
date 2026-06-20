@@ -1,0 +1,24 @@
+{
+    "step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+    "phase":  "REVIEW_HARDENING",
+    "status":  "REVIEW_HARDENING_MANIFEST_VALIDATED",
+    "generated_at_utc":  "2026-06-20T07:33:00.9527878Z",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_SEAL.json",
+                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_SUMMARY.md"
+                     ],
+    "consumed":  {
+                     "blueprint_report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_REPORT.json",
+                     "blueprint_manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_MANIFEST.json",
+                     "blueprint_seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_SEAL.json",
+                     "blueprint_summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_SUMMARY.md",
+                     "blueprint_manifest_sha256":  "dcee515f9242cc7a2725df9960d0d6d9bc24af741a137917a3d9feab2aceddb9"
+                 },
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_REPORT.json":  "287a83e03a416c2226f37a4ecbd767a53deb39d54848e2642b2ae2e770543f08",
+                        "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_SUMMARY.md":  "27565bb59b66310b8ec9f916468e7e3a84a7d27b126ab4c693e49067be50551a"
+                    }
+}
