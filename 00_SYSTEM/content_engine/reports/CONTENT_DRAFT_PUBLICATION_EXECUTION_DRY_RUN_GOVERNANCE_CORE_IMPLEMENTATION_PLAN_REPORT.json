@@ -1,0 +1,206 @@
+{
+    "step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+    "component":  "CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE",
+    "phase":  "IMPLEMENTATION_PLAN",
+    "status":  "IMPLEMENTATION_PLAN_DEFINED",
+    "classification":  "PLAN_ONLY_APPROVED_FOR_AUTOMATIC_BLOCK_BUILD",
+    "generated_at_utc":  "2026-06-20T06:06:46.6833848Z",
+    "consumed":  {
+                     "final_approval_report":  "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_REPORT.json",
+                     "final_approval_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                     "final_approval_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                     "final_approval_manifest_sha256":  "dd76753a75d5ccb2e1bd6f0fe9c8b13d36ee186b56176d975b10b34957ef0855"
+                 },
+    "future_build_allowlist":  {
+                                   "source_files":  [
+                                                        "04_SCRIPTS/python/content_engine/governance/content_draft_publication_execution_dry_run_governance_core.py"
+                                                    ],
+                                   "test_files":  [
+                                                      "tests/content_engine/governance/test_content_draft_publication_execution_dry_run_governance_core.py"
+                                                  ],
+                                   "report_outputs":  [
+                                                          "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BUILD_REPORT.json"
+                                                      ],
+                                   "manifest_outputs":  [
+                                                            "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BUILD_MANIFEST.json",
+                                                            "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BUILD_SEAL.json"
+                                                        ],
+                                   "summary_outputs":  [
+                                                           "05_REPORTS/content_engine/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BUILD_SUMMARY.md"
+                                                       ]
+                               },
+    "implementation_design":  {
+                                  "purpose":  "Implement governed publication execution dry-run validation as a non-mutating governance capability.",
+                                  "future_source_contract":  {
+                                                                 "module_path":  "04_SCRIPTS/python/content_engine/governance/content_draft_publication_execution_dry_run_governance_core.py",
+                                                                 "required_public_api":  [
+                                                                                             "class PublicationExecutionDryRunGovernanceCore",
+                                                                                             "def build_dry_run_context",
+                                                                                             "def validate_dry_run_inputs",
+                                                                                             "def classify_dry_run_evidence",
+                                                                                             "def simulate_publication_execution_non_mutating",
+                                                                                             "def generate_dry_run_report",
+                                                                                             "def generate_dry_run_manifest",
+                                                                                             "def generate_dry_run_seal",
+                                                                                             "def render_dry_run_summary"
+                                                                                         ],
+                                                                 "required_data_contracts":  [
+                                                                                                 "DryRunInput",
+                                                                                                 "DryRunContext",
+                                                                                                 "DryRunGateResult",
+                                                                                                 "DryRunRisk",
+                                                                                                 "DryRunDecision",
+                                                                                                 "DryRunEvidenceBundle"
+                                                                                             ]
+                                                             },
+                                  "future_test_contract":  {
+                                                               "test_path":  "tests/content_engine/governance/test_content_draft_publication_execution_dry_run_governance_core.py",
+                                                               "required_test_categories":  [
+                                                                                                "test_inputs_are_synthetic_or_read_only",
+                                                                                                "test_no_queue_write",
+                                                                                                "test_no_publication_state_write",
+                                                                                                "test_no_publishing",
+                                                                                                "test_no_scheduling",
+                                                                                                "test_no_automation_trigger",
+                                                                                                "test_no_manual_brain_argos_mutation",
+                                                                                                "test_missing_evidence_fails_closed",
+                                                                                                "test_conflicting_evidence_fails_closed",
+                                                                                                "test_manifest_seal_after_all_gates",
+                                                                                                "test_dashboard_readable_output_contract",
+                                                                                                "test_repo_dirty_state_blocks_runtime_decision"
+                                                                                            ]
+                                                           },
+                                  "future_dry_run_runtime_outputs":  [
+                                                                         "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_DRY_RUN_REPORT.json",
+                                                                         "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_DRY_RUN_MANIFEST.json",
+                                                                         "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_DRY_RUN_SEAL.json",
+                                                                         "05_REPORTS/content_engine/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_DRY_RUN_SUMMARY.md"
+                                                                     ],
+                                  "future_runtime_temp_bundle":  [
+                                                                     "DRY_RUN_CONTEXT.json",
+                                                                     "DRY_RUN_RISK_REGISTER.json",
+                                                                     "DRY_RUN_DECISION_ADVISOR.md",
+                                                                     "DRY_RUN_AUDIT_TRAIL.csv"
+                                                                 ],
+                                  "required_future_build_gates":  [
+                                                                      "repo_clean_synced_precheck",
+                                                                      "implementation_plan_consumed",
+                                                                      "source_allowlist_exact",
+                                                                      "test_allowlist_exact",
+                                                                      "source_files_written_only_in_allowlist",
+                                                                      "test_files_written_only_in_allowlist",
+                                                                      "compile_pass",
+                                                                      "pytest_pass",
+                                                                      "protected_roots_no_touch",
+                                                                      "productive_operations_blocked",
+                                                                      "queue_publication_automation_manual_brain_argos_blocked",
+                                                                      "manifest_seal_valid",
+                                                                      "output_scope_exact",
+                                                                      "commit_push",
+                                                                      "repo_clean_synced_final"
+                                                                  ],
+                                  "required_future_dry_run_gates":  [
+                                                                        "repo_clean_synced_precheck",
+                                                                        "prior_publication_execution_governance_evidence_present",
+                                                                        "dry_run_inputs_classified",
+                                                                        "dry_run_inputs_non_mutating",
+                                                                        "dry_run_only_flag_true",
+                                                                        "no_queue_write",
+                                                                        "no_publication_state_write",
+                                                                        "no_publishing",
+                                                                        "no_scheduling",
+                                                                        "no_automation_trigger",
+                                                                        "no_manual_mutation",
+                                                                        "no_brain_mutation",
+                                                                        "no_argos_mutation",
+                                                                        "risk_register_generated",
+                                                                        "decision_advisor_generated",
+                                                                        "manifest_seal_after_all_gates",
+                                                                        "repo_clean_synced_final"
+                                                                    ],
+                                  "failure_policy":  {
+                                                         "default":  "FAIL_CLOSED_NO_ADVANCE",
+                                                         "dirty_repo":  "BLOCK_AND_DO_NOT_WRITE_EVIDENCE",
+                                                         "missing_prior_evidence":  "MISSING_EVIDENCE_FAIL_CLOSED",
+                                                         "real_publication_attempt":  "POLICY_VIOLATION_FAIL_CLOSED",
+                                                         "queue_or_publication_write_attempt":  "POLICY_VIOLATION_FAIL_CLOSED",
+                                                         "automation_trigger_attempt":  "POLICY_VIOLATION_FAIL_CLOSED",
+                                                         "manifest_or_seal_mismatch":  "INVALID_EVIDENCE_FAIL_CLOSED"
+                                                     },
+                                  "observability_contract":  {
+                                                                 "dashboard_readable":  true,
+                                                                 "required_fields":  [
+                                                                                         "step",
+                                                                                         "component",
+                                                                                         "phase",
+                                                                                         "status",
+                                                                                         "dry_run_only",
+                                                                                         "publishing_performed",
+                                                                                         "scheduling_performed",
+                                                                                         "queue_write_performed",
+                                                                                         "publication_write_performed",
+                                                                                         "automation_performed",
+                                                                                         "manual_mutation_performed",
+                                                                                         "brain_mutation_performed",
+                                                                                         "argos_mutation_performed",
+                                                                                         "risk_register",
+                                                                                         "decision_advisor",
+                                                                                         "next_safe_step"
+                                                                                     ]
+                                                             }
+                              },
+    "blocked_in_this_step":  [
+                                 "source_file_write",
+                                 "test_file_write",
+                                 "automatic_block_build",
+                                 "runtime_dry_run_execution",
+                                 "queue_write",
+                                 "publication_state_write",
+                                 "publishing",
+                                 "scheduling",
+                                 "automation_trigger",
+                                 "webhook_trigger",
+                                 "n8n_trigger",
+                                 "CAPA9_mutation",
+                                 "manual_mutation",
+                                 "brain_mutation",
+                                 "ARGOS_mutation"
+                             ],
+    "lifecycle":  {
+                      "current_status":  "IMPLEMENTATION_PLAN_DEFINED",
+                      "current_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+                      "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD",
+                      "blocked_steps":  [
+                                            "POST_BUILD_AUDIT",
+                                            "GATE_CLOSE_VALIDATION",
+                                            "READINESS_MAP",
+                                            "DRY_RUN_EXECUTION",
+                                            "PUBLICATION_EXECUTION",
+                                            "QUEUE_WRITE",
+                                            "PUBLISHING",
+                                            "SCHEDULING",
+                                            "AUTOMATION"
+                                        ]
+                  },
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "final_approval_consumed":  true,
+                  "final_approval_manifest_hash_valid":  true,
+                  "final_approval_next_safe_step_valid":  true,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "implementation_performed":  false,
+                  "build_performed":  false,
+                  "dry_run_executed":  false,
+                  "productive_operations_blocked":  true,
+                  "queue_write_blocked":  true,
+                  "publication_write_blocked":  true,
+                  "publishing_blocked":  true,
+                  "scheduling_blocked":  true,
+                  "automation_blocked":  true,
+                  "manual_mutation_blocked":  true,
+                  "brain_mutation_blocked":  true,
+                  "argos_mutation_blocked":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD"
+}
