@@ -1,0 +1,108 @@
+{
+    "step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT",
+    "component":  "CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE",
+    "phase":  "BLUEPRINT",
+    "status":  "BLUEPRINT_DEFINED",
+    "generated_at_utc":  "2026-06-20T05:23:07.1938525Z",
+    "consumed":  {
+                     "dashboard_governance_core_readiness_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_SEAL.json",
+                     "dashboard_governance_core_readiness_status":  "READINESS_MAP_DEFINED",
+                     "dashboard_governance_core_next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT",
+                     "dashboard_governance_core_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_MANIFEST.json",
+                     "dashboard_governance_core_manifest_sha256":  "444523c61dedb952f687531fbc3cd1a2d15b35b92a09496f3852a9d2cbd0ae19"
+                 },
+    "blueprint":  {
+                      "purpose":  "Define a governed publication execution dry-run core that can later simulate publication execution without publishing, scheduling, mutating queue/publication state, or touching automation/manual/brain/ARGOS.",
+                      "initial_phase":  "BLUEPRINT",
+                      "target_component":  "CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE",
+                      "execution_policy":  "NO_RUNTIME_EXECUTION_IN_BLUEPRINT",
+                      "dry_run_intent":  "Future governed dry-run will validate publication execution readiness using synthetic/non-mutating evidence only.",
+                      "strict_blocks":  [
+                                            "NO_REAL_PUBLISHING",
+                                            "NO_REAL_POSTING",
+                                            "NO_REAL_SCHEDULING",
+                                            "NO_QUEUE_WRITE",
+                                            "NO_PUBLICATION_STATE_MUTATION",
+                                            "NO_AUTOMATION_TRIGGER",
+                                            "NO_WEBHOOK_TRIGGER",
+                                            "NO_N8N_TRIGGER",
+                                            "NO_CAPA9_MUTATION",
+                                            "NO_MANUAL_MUTATION",
+                                            "NO_BRAIN_MUTATION",
+                                            "NO_ARGOS_MUTATION",
+                                            "NO_SOURCE_WRITE_IN_BLUEPRINT",
+                                            "NO_TEST_WRITE_IN_BLUEPRINT"
+                                        ],
+                      "allowed_future_dry_run_inputs":  [
+                                                            "closed_publication_execution_governance_evidence",
+                                                            "readiness_map_evidence",
+                                                            "publication_execution_policy_matrix",
+                                                            "synthetic_draft_reference",
+                                                            "synthetic_channel_profile",
+                                                            "synthetic_publication_plan",
+                                                            "non_mutating_validation_context"
+                                                        ],
+                      "future_output_contract":  [
+                                                     "dry_run_report",
+                                                     "dry_run_manifest",
+                                                     "dry_run_seal",
+                                                     "dry_run_summary"
+                                                 ],
+                      "future_validation_gates":  [
+                                                      "repo_clean_synced_precheck",
+                                                      "required_prior_evidence_present",
+                                                      "dry_run_inputs_synthetic_or_read_only",
+                                                      "no_queue_write",
+                                                      "no_publication_state_write",
+                                                      "no_publishing",
+                                                      "no_scheduling",
+                                                      "no_automation_trigger",
+                                                      "no_manual_mutation",
+                                                      "no_brain_mutation",
+                                                      "no_argos_mutation",
+                                                      "output_scope_exact",
+                                                      "manifest_seal_valid",
+                                                      "repo_clean_synced_final"
+                                                  ],
+                      "failure_policy":  "FAIL_CLOSED_NO_ADVANCE",
+                      "evidence_policy":  "No manifest/seal may be treated as valid if any gate fails.",
+                      "dashboard_observability_requirement":  "Future dry-run evidence must be readable by the master observability truth audit decision dashboard."
+                  },
+    "lifecycle":  {
+                      "current_status":  "BLUEPRINT_DEFINED",
+                      "current_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT",
+                      "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING",
+                      "blocked_steps":  [
+                                            "IMPLEMENTATION_PLAN",
+                                            "AUTOMATIC_BLOCK_BUILD",
+                                            "POST_BUILD_AUDIT",
+                                            "GATE_CLOSE_VALIDATION",
+                                            "READINESS_MAP",
+                                            "DRY_RUN_EXECUTION",
+                                            "PUBLICATION_EXECUTION",
+                                            "QUEUE_WRITE",
+                                            "PUBLISHING",
+                                            "SCHEDULING",
+                                            "AUTOMATION"
+                                        ]
+                  },
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "dashboard_readiness_consumed":  true,
+                  "dashboard_readiness_next_safe_step_valid":  true,
+                  "dashboard_readiness_manifest_hash_valid":  true,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "dry_run_executed":  false,
+                  "productive_operations_blocked":  true,
+                  "queue_write_blocked":  true,
+                  "publication_write_blocked":  true,
+                  "publishing_blocked":  true,
+                  "scheduling_blocked":  true,
+                  "automation_blocked":  true,
+                  "manual_mutation_blocked":  true,
+                  "brain_mutation_blocked":  true,
+                  "argos_mutation_blocked":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING"
+}

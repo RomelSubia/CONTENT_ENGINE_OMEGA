@@ -1,0 +1,15 @@
+{
+    "step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT",
+    "component":  "CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE",
+    "phase":  "BLUEPRINT",
+    "status":  "BLUEPRINT_DEFINED",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+    "manifest_sha256":  "dea9b6370794945f12b4a6ab413fb7f4d2a67b297994189b17b57c185db3d352",
+    "gates_passed":  true,
+    "source_files_written":  false,
+    "test_files_written":  false,
+    "dry_run_executed":  false,
+    "productive_operations_blocked":  true,
+    "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING",
+    "generated_at_utc":  "2026-06-20T05:23:07.2208879Z"
+}
