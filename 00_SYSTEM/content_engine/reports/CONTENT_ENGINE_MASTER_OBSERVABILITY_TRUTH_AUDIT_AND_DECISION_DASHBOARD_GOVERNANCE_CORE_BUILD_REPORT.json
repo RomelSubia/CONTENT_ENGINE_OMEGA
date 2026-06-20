@@ -1,0 +1,21 @@
+{
+    "step":  "RETRY_WITH_ATOMIC_SCRIPT_AFTER_PROTOCOL_FIX_V3",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "phase":  "AUTOMATIC_BLOCK_BUILD",
+    "status":  "BUILD_VALIDATED_BEFORE_MANIFEST_SEAL",
+    "source_written":  "04_SCRIPTS/python/content_engine/governance/master_observability_truth_audit_decision_dashboard.py",
+    "test_written":  "tests/content_engine/governance/test_master_observability_truth_audit_decision_dashboard.py",
+    "compile":  {
+                    "label":  "AST compile source/test",
+                    "code":  0,
+                    "text":  "AST_COMPILE_PASS",
+                    "command":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe C:\\Users\\romel\\AppData\\Local\\Temp\\CONTENT_ENGINE_OMEGA_RETRY_ATOMIC_BUILD_V3_RERUN_20260620_000148\\compile_check.py D:\\CONTENT_ENGINE_OMEGA\\04_SCRIPTS\\python\\content_engine\\governance\\master_observability_truth_audit_decision_dashboard.py D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_master_observability_truth_audit_decision_dashboard.py"
+                },
+    "pytest":  {
+                   "label":  "pytest allowlisted test",
+                   "code":  0,
+                   "text":  "........                                                                 [100%]\r\n8 passed in 0.07s",
+                   "command":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe -m pytest D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_master_observability_truth_audit_decision_dashboard.py -q -p no:cacheprovider --basetemp C:\\Users\\romel\\AppData\\Local\\Temp\\CONTENT_ENGINE_OMEGA_RETRY_ATOMIC_BUILD_V3_RERUN_20260620_000148\\pytest_basetemp"
+               },
+    "generated_at_utc":  "2026-06-20T05:01:50.2029442Z"
+}
