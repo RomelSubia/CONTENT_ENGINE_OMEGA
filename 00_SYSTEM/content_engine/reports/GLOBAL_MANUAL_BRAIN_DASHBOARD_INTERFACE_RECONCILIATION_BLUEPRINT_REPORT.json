@@ -1,0 +1,131 @@
+{
+    "step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+    "phase":  "BLUEPRINT",
+    "status":  "BLUEPRINT_DEFINED",
+    "classification":  "DESIGN_ONLY_RECONCILIATION_BLUEPRINT",
+    "generated_at_utc":  "2026-06-20T07:06:29.8726249Z",
+    "consumed":  {
+                     "global_system_intelligence_audit_v2_temp_path":  "C:/Users/romel/AppData/Local/Temp/CONTENT_ENGINE_OMEGA_GLOBAL_SYSTEM_INTELLIGENCE_AUDIT_V2_20260620_014924/GLOBAL_SYSTEM_INTELLIGENCE_CAPABILITY_INTERFACE_AUDIT_READ_ONLY_V2.json",
+                     "global_system_intelligence_audit_v2_sha256":  "12f4b7a8a995be5c883ffb204e338386b9d6727e524610ab1a6bcc034ec99a8b",
+                     "audit_status":  "GLOBAL_SYSTEM_INTELLIGENCE_CAPABILITY_INTERFACE_AUDITED_READ_ONLY_V2",
+                     "audit_mode":  "READ_ONLY_TEMP_ONLY_NULL_SAFE",
+                     "repo_health":  "CLEAN_SYNCED",
+                     "dashboard_governance":  "CLOSED_OR_READINESS_CONFIRMED",
+                     "dry_run_governance":  "IMPLEMENTATION_PLAN_DEFINED",
+                     "current_known_safe_next_from_last_core":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD"
+                 },
+    "purpose":  {
+                    "objective":  "Define a governed reconciliation layer that separates Manual, Brain, Dashboard and Interface/HUD truth before any further visualization or build expansion.",
+                    "reason":  "The system has confirmed manual, brain, dashboard and interface candidates. Reconciliation is required so dashboard/interface never displays partial, stale, historical or inferred information as current truth.",
+                    "governing_principle":  "TRUTH_BEFORE_VISUALIZATION"
+                },
+    "reconciliation_scope":  {
+                                 "manual_layer":  "Defines normative expected behavior, structure, rules and intended system knowledge.",
+                                 "brain_layer":  "Defines operational interpretation, decision state, risk understanding, next-safe-step reasoning and fail-closed governance.",
+                                 "dashboard_layer":  "Defines observability, truth, audit and decision visualization governance.",
+                                 "interface_hud_layer":  "Defines future user-facing surface for viewing truth objects, progress, risks, state and next safe step.",
+                                 "evidence_layer":  "Reports, manifests, seals, summaries, git state and audit outputs."
+                             },
+    "truth_model":  {
+                        "allowed_truth_states":  [
+                                                     "VERIFIED_TRUE",
+                                                     "VERIFIED_FALSE",
+                                                     "PARTIAL",
+                                                     "UNKNOWN",
+                                                     "CONFLICT",
+                                                     "STALE",
+                                                     "SUPERSEDED",
+                                                     "HISTORICAL"
+                                                 ],
+                        "forbidden_behavior":  [
+                                                   "dashboard_displays_unreconciled_evidence",
+                                                   "interface_displays_partial_as_complete",
+                                                   "historical_state_treated_as_current",
+                                                   "manual_assumption_treated_as_runtime_truth",
+                                                   "brain_inference_treated_as_verified_truth",
+                                                   "missing_evidence_treated_as_pass",
+                                                   "conflict_treated_as_pass"
+                                               ]
+                    },
+    "reconciliation_rules":  {
+                                 "no_evidence":  "UNKNOWN",
+                                 "evidence_partial":  "PARTIAL",
+                                 "evidence_conflict":  "CONFLICT",
+                                 "historical_not_current":  "HISTORICAL_OR_SUPERSEDED",
+                                 "manual_expected_brain_missing":  "MISSING_COMPREHENSION",
+                                 "brain_understands_manual_missing":  "UNMANAGED_KNOWLEDGE",
+                                 "dashboard_claim_without_truth_object":  "BLOCK_VISUALIZATION",
+                                 "interface_claim_without_truth_object":  "BLOCK_UI_DISPLAY",
+                                 "seal_manifest_report_disagreement":  "CONFLICT_FAIL_CLOSED",
+                                 "dirty_repo":  "BLOCK_ADVANCE"
+                             },
+    "required_future_artifacts":  {
+                                      "reconciliation_report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_RECONCILIATION_REPORT.json",
+                                      "reconciliation_manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_RECONCILIATION_MANIFEST.json",
+                                      "reconciliation_seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_RECONCILIATION_SEAL.json",
+                                      "reconciliation_summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_RECONCILIATION_SUMMARY.md",
+                                      "truth_objects":  [
+                                                            "GLOBAL_TRUTH_OBJECTS.json",
+                                                            "MANUAL_TRUTH_MATRIX.json",
+                                                            "BRAIN_TRUTH_MATRIX.json",
+                                                            "DASHBOARD_TRUTH_MATRIX.json",
+                                                            "INTERFACE_HUD_TRUTH_MATRIX.json",
+                                                            "CONFLICT_MATRIX.csv",
+                                                            "CAPABILITY_MATRIX.csv",
+                                                            "RISK_MATRIX.csv"
+                                                        ]
+                                  },
+    "required_future_gates":  [
+                                  "repo_clean_synced_precheck",
+                                  "audit_v2_consumed",
+                                  "manual_layer_detected",
+                                  "brain_layer_detected",
+                                  "dashboard_layer_detected",
+                                  "interface_layer_detected",
+                                  "truth_states_normalized",
+                                  "historical_current_separated",
+                                  "conflict_policy_defined",
+                                  "dashboard_consumes_truth_objects_only",
+                                  "interface_consumes_truth_objects_only",
+                                  "protected_roots_no_touch",
+                                  "productive_operations_blocked",
+                                  "manifest_seal_valid",
+                                  "output_scope_exact",
+                                  "commit_push",
+                                  "repo_clean_synced_final"
+                              ],
+    "blocked_in_this_step":  [
+                                 "source_file_write",
+                                 "test_file_write",
+                                 "automatic_block_build",
+                                 "runtime_execution",
+                                 "manual_mutation",
+                                 "brain_mutation",
+                                 "dashboard_runtime_mutation",
+                                 "interface_runtime_mutation",
+                                 "queue_mutation",
+                                 "publication_mutation",
+                                 "automation_trigger",
+                                 "publishing",
+                                 "scheduling",
+                                 "ARGOS_mutation"
+                             ],
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "audit_v2_consumed":  true,
+                  "audit_v2_pass":  true,
+                  "audit_v2_read_only_temp_only":  true,
+                  "manual_brain_dashboard_interface_reconciliation_defined":  true,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "build_performed":  false,
+                  "runtime_performed":  false,
+                  "productive_operations_blocked":  true,
+                  "manual_mutation_blocked":  true,
+                  "brain_mutation_blocked":  true,
+                  "argos_mutation_blocked":  true,
+                  "queue_publication_automation_blocked":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING"
+}
