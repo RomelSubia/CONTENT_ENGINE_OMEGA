@@ -1,0 +1,165 @@
+{
+    "step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING",
+    "component":  "CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE",
+    "phase":  "REVIEW_HARDENING",
+    "status":  "REVIEW_HARDENING_DEFINED",
+    "generated_at_utc":  "2026-06-20T05:32:45.0869263Z",
+    "consumed":  {
+                     "blueprint_report":  "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_REPORT.json",
+                     "blueprint_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                     "blueprint_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                     "blueprint_manifest_sha256":  "dea9b6370794945f12b4a6ab413fb7f4d2a67b297994189b17b57c185db3d352"
+                 },
+    "hardening":  {
+                      "scope_decision":  "DESIGN_ONLY_NO_RUNTIME",
+                      "dry_run_definition":  "A dry-run is a non-mutating validation pass that proves publication execution logic can be evaluated without publishing, scheduling, queue mutation, publication state mutation, automation triggers, or external channel mutation.",
+                      "dry_run_must_not_be_confused_with":  [
+                                                                "real_publication",
+                                                                "real_scheduling",
+                                                                "queue_write",
+                                                                "publication_state_write",
+                                                                "channel_mutation",
+                                                                "automation_execution",
+                                                                "manual_approval",
+                                                                "content_generation"
+                                                            ],
+                      "required_truth_model":  {
+                                                   "evidence_hierarchy":  [
+                                                                              "valid_prior_seal",
+                                                                              "valid_prior_manifest",
+                                                                              "associated_report",
+                                                                              "summary",
+                                                                              "repo_head_and_sync",
+                                                                              "explicit_inference_marked_as_inference"
+                                                                          ],
+                                                   "partial_evidence_policy":  "Partial evidence must never be promoted to complete publication readiness.",
+                                                   "conflict_policy":  "Any conflict between dry-run report, manifest, seal, repo state, or prior gate evidence blocks advance.",
+                                                   "confidence_required_for_advance":  "HIGH_CONFIDENCE_OR_VALIDATED_TRUE"
+                                               },
+                      "hardening_rules":  [
+                                              "Dry-run inputs must be synthetic, read-only, or prior-governance evidence.",
+                                              "No external API, webhook, n8n, CAPA9, scheduler, queue, publication channel, or social platform mutation is allowed.",
+                                              "Any attempted productive side effect must classify as POLICY_VIOLATION and fail closed.",
+                                              "Dry-run output must clearly say DRY_RUN_ONLY and must not be presented as real execution.",
+                                              "Manifest and seal must only be written after every dry-run gate passes.",
+                                              "If dry-run detects missing prior publication execution evidence, it must stop with MISSING_EVIDENCE.",
+                                              "If dry-run detects real channel credentials, real endpoint mutation, queue mutation, or scheduling mutation attempt, it must stop with POLICY_VIOLATION.",
+                                              "If repo is dirty before or after, dry-run evidence is invalid until regenerated.",
+                                              "Dashboard observability must be able to consume dry-run state, risk, blocks, and next safe step."
+                                          ],
+                      "risk_register":  [
+                                            {
+                                                "id":  "DRY_RUN_RISK_001",
+                                                "risk":  "Dry-run confused with real publication execution",
+                                                "severity":  "CRITICAL",
+                                                "control":  "All outputs must mark dry_run_only=true and publishing_performed=false."
+                                            },
+                                            {
+                                                "id":  "DRY_RUN_RISK_002",
+                                                "risk":  "Queue or publication state mutation during dry-run",
+                                                "severity":  "CRITICAL",
+                                                "control":  "Queue/publication writes are forbidden and audited as policy violations."
+                                            },
+                                            {
+                                                "id":  "DRY_RUN_RISK_003",
+                                                "risk":  "Automation/webhook/n8n/CAPA9 trigger",
+                                                "severity":  "CRITICAL",
+                                                "control":  "Automation trigger surfaces remain blocked."
+                                            },
+                                            {
+                                                "id":  "DRY_RUN_RISK_004",
+                                                "risk":  "Synthetic input treated as real approved content",
+                                                "severity":  "HIGH",
+                                                "control":  "Synthetic input flag and source classification required."
+                                            },
+                                            {
+                                                "id":  "DRY_RUN_RISK_005",
+                                                "risk":  "Partial evidence promoted to publication readiness",
+                                                "severity":  "HIGH",
+                                                "control":  "Evidence sufficiency gates required before readiness decisions."
+                                            }
+                                        ],
+                      "failure_modes":  [
+                                            "MISSING_PRIOR_EVIDENCE",
+                                            "STALE_PRIOR_EVIDENCE",
+                                            "DIRTY_REPO_BLOCKED",
+                                            "UNSYNCED_REPO_BLOCKED",
+                                            "REAL_PUBLICATION_ATTEMPT_BLOCKED",
+                                            "QUEUE_WRITE_ATTEMPT_BLOCKED",
+                                            "PUBLICATION_STATE_WRITE_ATTEMPT_BLOCKED",
+                                            "SCHEDULING_ATTEMPT_BLOCKED",
+                                            "AUTOMATION_TRIGGER_ATTEMPT_BLOCKED",
+                                            "OUTPUT_SCOPE_VIOLATION",
+                                            "MANIFEST_SEAL_INVALID",
+                                            "CONFLICTING_EVIDENCE"
+                                        ],
+                      "required_future_acceptance_gates":  [
+                                                               "repo_clean_synced_precheck",
+                                                               "prior_publication_execution_governance_evidence_present",
+                                                               "dry_run_inputs_classified",
+                                                               "dry_run_inputs_non_mutating",
+                                                               "queue_write_false",
+                                                               "publication_state_write_false",
+                                                               "publishing_false",
+                                                               "scheduling_false",
+                                                               "automation_false",
+                                                               "manual_mutation_false",
+                                                               "brain_mutation_false",
+                                                               "argos_mutation_false",
+                                                               "dry_run_only_flag_true",
+                                                               "risk_register_generated",
+                                                               "decision_advisor_generated",
+                                                               "manifest_seal_after_gates",
+                                                               "repo_clean_synced_final"
+                                                           ],
+                      "forbidden_future_operations":  [
+                                                          "publish_post_schedule",
+                                                          "queue_write",
+                                                          "publication_state_mutation",
+                                                          "external_channel_mutation",
+                                                          "automation_trigger",
+                                                          "webhook_trigger",
+                                                          "n8n_trigger",
+                                                          "CAPA9_mutation",
+                                                          "manual_mutation",
+                                                          "brain_mutation",
+                                                          "ARGOS_mutation"
+                                                      ]
+                  },
+    "lifecycle":  {
+                      "current_status":  "REVIEW_HARDENING_DEFINED",
+                      "current_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING",
+                      "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW",
+                      "blocked_steps":  [
+                                            "IMPLEMENTATION_PLAN",
+                                            "AUTOMATIC_BLOCK_BUILD",
+                                            "POST_BUILD_AUDIT",
+                                            "GATE_CLOSE_VALIDATION",
+                                            "READINESS_MAP",
+                                            "DRY_RUN_EXECUTION",
+                                            "PUBLICATION_EXECUTION",
+                                            "QUEUE_WRITE",
+                                            "PUBLISHING",
+                                            "SCHEDULING",
+                                            "AUTOMATION"
+                                        ]
+                  },
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "blueprint_consumed":  true,
+                  "blueprint_manifest_hash_valid":  true,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "dry_run_executed":  false,
+                  "productive_operations_blocked":  true,
+                  "queue_write_blocked":  true,
+                  "publication_write_blocked":  true,
+                  "publishing_blocked":  true,
+                  "scheduling_blocked":  true,
+                  "automation_blocked":  true,
+                  "manual_mutation_blocked":  true,
+                  "brain_mutation_blocked":  true,
+                  "argos_mutation_blocked":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW"
+}
