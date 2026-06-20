@@ -1,0 +1,92 @@
+{
+    "step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW",
+    "component":  "CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE",
+    "phase":  "FINAL_APPROVAL_REVIEW",
+    "status":  "FINAL_APPROVAL_REVIEWED",
+    "classification":  "DESIGN_APPROVED_FOR_IMPLEMENTATION_PLAN_ONLY",
+    "generated_at_utc":  "2026-06-20T05:55:35.7226313Z",
+    "consumed":  {
+                     "blueprint_report":  "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_REPORT.json",
+                     "blueprint_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                     "blueprint_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                     "blueprint_manifest_sha256":  "dea9b6370794945f12b4a6ab413fb7f4d2a67b297994189b17b57c185db3d352",
+                     "review_hardening_report":  "00_SYSTEM/content_engine/reports/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING_REPORT.json",
+                     "review_hardening_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                     "review_hardening_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                     "review_hardening_manifest_sha256":  "b69eb1ad7be25dd48d66832746a6574c92a0e153df35c3dc2f288c9b22fe922a"
+                 },
+    "approval_decision":  {
+                              "approved":  true,
+                              "approved_scope":  "IMPLEMENTATION_PLAN_ONLY",
+                              "implementation_plan_allowed_next":  true,
+                              "source_write_allowed":  false,
+                              "test_write_allowed":  false,
+                              "build_allowed":  false,
+                              "runtime_dry_run_allowed":  false,
+                              "queue_write_allowed":  false,
+                              "publication_write_allowed":  false,
+                              "publishing_allowed":  false,
+                              "scheduling_allowed":  false,
+                              "automation_allowed":  false,
+                              "manual_mutation_allowed":  false,
+                              "brain_mutation_allowed":  false,
+                              "argos_mutation_allowed":  false
+                          },
+    "approval_conditions":  [
+                                "Implementation plan must remain design-only.",
+                                "Implementation plan may define future source/test allowlist but may not write source/test.",
+                                "Implementation plan may define future dry-run output contract but may not execute dry-run.",
+                                "Future build must be a separate governed AUTOMATIC_BLOCK_BUILD step.",
+                                "Future dry-run execution must be separate from build and must remain non-mutating.",
+                                "Any real queue/publication/publishing/scheduling/automation mutation remains blocked.",
+                                "All future evidence must be dashboard-readable and truth-lock compatible."
+                            ],
+    "rejection_conditions":  [
+                                 "Any attempt to publish, post, schedule, or mutate queue/publication state.",
+                                 "Any automation/webhook/n8n/CAPA9 trigger attempt.",
+                                 "Any source/test write before explicit implementation plan approval.",
+                                 "Any dirty or unsynced repo state.",
+                                 "Any partial evidence promoted to complete truth.",
+                                 "Any missing or conflicting prior evidence."
+                             ],
+    "lifecycle":  {
+                      "current_status":  "FINAL_APPROVAL_REVIEWED",
+                      "current_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW",
+                      "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_IMPLEMENTATION_PLAN",
+                      "blocked_steps":  [
+                                            "AUTOMATIC_BLOCK_BUILD",
+                                            "POST_BUILD_AUDIT",
+                                            "GATE_CLOSE_VALIDATION",
+                                            "READINESS_MAP",
+                                            "DRY_RUN_EXECUTION",
+                                            "PUBLICATION_EXECUTION",
+                                            "QUEUE_WRITE",
+                                            "PUBLISHING",
+                                            "SCHEDULING",
+                                            "AUTOMATION"
+                                        ]
+                  },
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "blueprint_consumed":  true,
+                  "review_hardening_consumed":  true,
+                  "blueprint_manifest_hash_valid":  true,
+                  "review_manifest_hash_valid":  true,
+                  "review_next_safe_step_valid":  true,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "dry_run_executed":  false,
+                  "implementation_performed":  false,
+                  "build_performed":  false,
+                  "productive_operations_blocked":  true,
+                  "queue_write_blocked":  true,
+                  "publication_write_blocked":  true,
+                  "publishing_blocked":  true,
+                  "scheduling_blocked":  true,
+                  "automation_blocked":  true,
+                  "manual_mutation_blocked":  true,
+                  "brain_mutation_blocked":  true,
+                  "argos_mutation_blocked":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_IMPLEMENTATION_PLAN"
+}
