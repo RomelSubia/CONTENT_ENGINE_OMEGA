@@ -1,0 +1,201 @@
+{
+    "step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+    "phase":  "IMPLEMENTATION_PLAN",
+    "status":  "IMPLEMENTATION_PLAN_DEFINED",
+    "classification":  "PLAN_ONLY_APPROVED_FOR_AUTOMATIC_BLOCK_BUILD",
+    "generated_at_utc":  "2026-06-20T08:02:19.6732707Z",
+    "consumed":  {
+                     "final_approval_report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_REPORT.json",
+                     "final_approval_manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                     "final_approval_seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_SEAL.json",
+                     "final_approval_summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_SUMMARY.md",
+                     "final_approval_report_sha256":  "740a86d2494ae7c1e9b07c9228e47903a3c68fbb518cdddbb20832bd9df90b42",
+                     "final_approval_manifest_sha256":  "ff10dc470a484111e0d08bad45c7d150390b719139f86968096f1bcba2a62144",
+                     "final_approval_summary_sha256":  "2d46a8109b631a535854ca6839a546cf5e71b37148fcc499af30ff05914b71cb"
+                 },
+    "future_build_allowlist":  {
+                                   "source_files":  [
+                                                        "04_SCRIPTS/python/content_engine/governance/global_manual_brain_dashboard_interface_reconciliation.py"
+                                                    ],
+                                   "test_files":  [
+                                                      "tests/content_engine/governance/test_global_manual_brain_dashboard_interface_reconciliation.py"
+                                                  ],
+                                   "report_files":  [
+                                                        "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_REPORT.json",
+                                                        "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_REPORT.json",
+                                                        "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION_REPORT.json"
+                                                    ],
+                                   "manifest_files":  [
+                                                          "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                          "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_MANIFEST.json",
+                                                          "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION_MANIFEST.json"
+                                                      ],
+                                   "summary_files":  [
+                                                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SUMMARY.md",
+                                                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_SUMMARY.md",
+                                                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION_SUMMARY.md"
+                                                     ]
+                               },
+    "implementation_contract":  {
+                                    "module_name":  "global_manual_brain_dashboard_interface_reconciliation",
+                                    "required_public_api":  [
+                                                                "build_truth_object",
+                                                                "reconcile_layer_state",
+                                                                "reconcile_global_state",
+                                                                "build_capability_matrix",
+                                                                "build_risk_matrix",
+                                                                "build_dashboard_display_contract",
+                                                                "build_interface_hud_display_contract",
+                                                                "validate_truth_object_contract",
+                                                                "validate_no_productive_operations"
+                                                            ],
+                                    "required_outputs_from_module":  [
+                                                                         "global_truth_objects",
+                                                                         "manual_truth_matrix",
+                                                                         "brain_truth_matrix",
+                                                                         "dashboard_truth_matrix",
+                                                                         "interface_hud_truth_matrix",
+                                                                         "conflict_matrix",
+                                                                         "capability_matrix",
+                                                                         "risk_matrix",
+                                                                         "dashboard_display_contract",
+                                                                         "interface_hud_display_contract"
+                                                                     ],
+                                    "truth_object_required_fields":  [
+                                                                         "truth_object_id",
+                                                                         "layer",
+                                                                         "subject",
+                                                                         "current_state",
+                                                                         "truth_state",
+                                                                         "confidence",
+                                                                         "evidence_refs",
+                                                                         "evidence_hashes",
+                                                                         "source_priority",
+                                                                         "generated_at_utc",
+                                                                         "staleness_state",
+                                                                         "conflict_state",
+                                                                         "display_allowed",
+                                                                         "next_safe_step"
+                                                                     ],
+                                    "allowed_truth_states":  [
+                                                                 "VERIFIED_TRUE",
+                                                                 "VERIFIED_FALSE",
+                                                                 "PARTIAL",
+                                                                 "UNKNOWN",
+                                                                 "CONFLICT",
+                                                                 "STALE",
+                                                                 "SUPERSEDED",
+                                                                 "HISTORICAL"
+                                                             ]
+                                },
+    "test_contract":  {
+                          "minimum_required_tests":  [
+                                                         "test_truth_object_requires_all_fields",
+                                                         "test_missing_evidence_maps_to_unknown",
+                                                         "test_conflicting_evidence_maps_to_conflict_fail_closed",
+                                                         "test_historical_state_does_not_become_current",
+                                                         "test_manual_expected_without_evidence_is_not_complete",
+                                                         "test_brain_inference_does_not_override_evidence",
+                                                         "test_dashboard_requires_truth_object",
+                                                         "test_interface_requires_dashboard_truth_contract",
+                                                         "test_capability_cannot_inherit_stronger_parent_state",
+                                                         "test_high_or_critical_risk_blocks_advance",
+                                                         "test_no_productive_operations_are_performed",
+                                                         "test_no_manual_brain_argos_queue_publication_automation_mutation"
+                                                     ],
+                          "pytest_target":  "tests/content_engine/governance/test_global_manual_brain_dashboard_interface_reconciliation.py"
+                      },
+    "future_automatic_block_build_gates":  [
+                                               "repo_clean_synced_precheck",
+                                               "implementation_plan_consumed",
+                                               "source_allowlist_exact",
+                                               "test_allowlist_exact",
+                                               "source_file_written",
+                                               "test_file_written",
+                                               "python_compile_pass",
+                                               "pytest_pass",
+                                               "security_static_checks_pass",
+                                               "no_productive_operations",
+                                               "no_manual_mutation",
+                                               "no_brain_mutation",
+                                               "no_dashboard_runtime_mutation",
+                                               "no_interface_runtime_mutation",
+                                               "no_argos_mutation",
+                                               "no_queue_publication_automation",
+                                               "output_scope_exact",
+                                               "manifest_seal_valid",
+                                               "commit_push",
+                                               "repo_clean_synced_final"
+                                           ],
+    "future_post_build_audit_gates":  [
+                                          "implementation_plan_consumed",
+                                          "build_evidence_consumed",
+                                          "source_hash_matches_manifest",
+                                          "test_hash_matches_manifest",
+                                          "compile_recheck_pass",
+                                          "pytest_recheck_pass",
+                                          "security_recheck_pass",
+                                          "no_touch_recheck_pass",
+                                          "productive_operations_blocked",
+                                          "output_scope_exact",
+                                          "manifest_seal_valid",
+                                          "commit_push",
+                                          "repo_clean_synced_final"
+                                      ],
+    "future_gate_close_validation_gates":  [
+                                               "post_build_audit_consumed",
+                                               "source_and_tests_stable",
+                                               "compile_recheck_pass",
+                                               "pytest_recheck_pass",
+                                               "truth_contract_validated",
+                                               "dashboard_contract_validated",
+                                               "interface_contract_validated",
+                                               "risk_and_capability_contracts_validated",
+                                               "productive_operations_blocked",
+                                               "manual_brain_argos_queue_publication_automation_blocked",
+                                               "gate_close_manifest_seal_valid",
+                                               "commit_push",
+                                               "repo_clean_synced_final"
+                                           ],
+    "still_blocked_in_this_step":  [
+                                       "source_file_write",
+                                       "test_file_write",
+                                       "automatic_block_build",
+                                       "runtime_execution",
+                                       "manual_mutation",
+                                       "brain_mutation",
+                                       "dashboard_runtime_mutation",
+                                       "interface_runtime_mutation",
+                                       "queue_mutation",
+                                       "publication_mutation",
+                                       "automation_trigger",
+                                       "publishing",
+                                       "scheduling",
+                                       "ARGOS_mutation"
+                                   ],
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "final_approval_consumed":  true,
+                  "final_approval_hashes_validated":  true,
+                  "source_allowlist_defined":  true,
+                  "test_allowlist_defined":  true,
+                  "implementation_contract_defined":  true,
+                  "test_contract_defined":  true,
+                  "future_build_gates_defined":  true,
+                  "future_post_build_audit_gates_defined":  true,
+                  "future_gate_close_validation_gates_defined":  true,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "build_performed":  false,
+                  "runtime_performed":  false,
+                  "productive_operations_blocked":  true,
+                  "manual_mutation_blocked":  true,
+                  "brain_mutation_blocked":  true,
+                  "dashboard_runtime_mutation_blocked":  true,
+                  "interface_runtime_mutation_blocked":  true,
+                  "argos_mutation_blocked":  true,
+                  "queue_publication_automation_blocked":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD"
+}

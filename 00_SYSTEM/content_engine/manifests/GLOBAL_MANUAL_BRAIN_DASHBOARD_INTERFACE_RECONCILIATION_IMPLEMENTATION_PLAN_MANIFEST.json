@@ -1,0 +1,24 @@
+{
+    "step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+    "phase":  "IMPLEMENTATION_PLAN",
+    "status":  "IMPLEMENTATION_PLAN_MANIFEST_VALIDATED",
+    "generated_at_utc":  "2026-06-20T08:02:19.7101374Z",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_SEAL.json",
+                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_SUMMARY.md"
+                     ],
+    "consumed":  {
+                     "final_approval_report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_REPORT.json",
+                     "final_approval_manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                     "final_approval_seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_SEAL.json",
+                     "final_approval_summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_SUMMARY.md",
+                     "final_approval_manifest_sha256":  "ff10dc470a484111e0d08bad45c7d150390b719139f86968096f1bcba2a62144"
+                 },
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_REPORT.json":  "edc9021f22dffb3bd68367c526fef1775529f53500dae02ca52e91ba69414ec8",
+                        "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_SUMMARY.md":  "eec80fa960a31adeffbd19299ce04c9735e2b84a3dc092eab9d8cdd105766ba2"
+                    }
+}
