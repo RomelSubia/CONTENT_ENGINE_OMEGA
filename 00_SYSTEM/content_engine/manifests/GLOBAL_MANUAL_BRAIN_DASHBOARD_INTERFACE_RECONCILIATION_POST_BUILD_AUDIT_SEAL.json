@@ -3,10 +3,11 @@
     "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
     "phase":  "POST_BUILD_AUDIT",
     "status":  "POST_BUILD_AUDITED",
-    "classification":  "BUILD_EVIDENCE_RECHECKED_SOURCE_TEST_STABLE",
+    "classification":  "CURRENT_BUILD_RESEAL_CONSUMED_SOURCE_TEST_STABLE_SYSTEM_STABILIZATION",
     "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_MANIFEST.json",
-    "manifest_sha256":  "7ef0ce9a7ac7cc5820d3839191c80e8eee4d78d961fed4d3bbc006f060d18eb0",
+    "manifest_sha256":  "531f4f622e524b16a3c98996ced34605b8244d15f9a0910a9b5eedc18f3c2763",
     "gates_passed":  true,
+    "current_build_reseal_consumed":  true,
     "build_evidence_consumed":  true,
     "source_hash_matches_manifest":  true,
     "test_hash_matches_manifest":  true,
@@ -29,6 +30,8 @@
     "queue_mutation_performed":  false,
     "publication_mutation_performed":  false,
     "automation_performed":  false,
+    "publishing_performed":  false,
+    "scheduling_performed":  false,
     "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION",
-    "generated_at_utc":  "2026-06-20T08:40:53.3817368Z"
+    "generated_at_utc":  "2026-06-23T03:46:10.8935071Z"
 }

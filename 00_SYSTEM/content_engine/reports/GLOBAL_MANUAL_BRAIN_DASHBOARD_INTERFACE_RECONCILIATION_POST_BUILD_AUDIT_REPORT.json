@@ -3,40 +3,46 @@
     "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
     "phase":  "POST_BUILD_AUDIT",
     "status":  "POST_BUILD_AUDITED",
-    "classification":  "BUILD_EVIDENCE_RECHECKED_SOURCE_TEST_STABLE",
-    "generated_at_utc":  "2026-06-20T08:40:53.3498807Z",
+    "classification":  "CURRENT_BUILD_RESEAL_CONSUMED_SOURCE_TEST_STABLE_SYSTEM_STABILIZATION",
+    "generated_at_utc":  "2026-06-23T03:46:10.8577726Z",
     "consumed":  {
                      "build_report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_REPORT.json",
                      "build_manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
                      "build_seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SEAL.json",
                      "build_summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SUMMARY.md",
-                     "build_report_sha256":  "0103d566769b8ecfc978e4cd699d47345815ef49a3903b7d6a901dd4c3ce4905",
-                     "build_manifest_sha256":  "0e0c366658deb98c19564693a94c4de109be08a1b7ec667ec04036d035dea836",
-                     "build_summary_sha256":  "c078e92f9391b3c242d677c833a1baffa7e6c9a7626b311473b102a92709d453"
+                     "build_report_sha256":  "fb58287567024074d3993f868a01cc95590e2903825388511aea7437b2bf652c",
+                     "build_manifest_sha256":  "ac20ec07fe5ac329b1f887d1d68247916bc3ba406ac6beb0a00ec48f14f95164",
+                     "build_summary_sha256":  "32e0e706980a7425102ede02aac7af8be29e3ecde2bed8fc7f0236969e990b95"
                  },
     "source":  {
                    "path":  "04_SCRIPTS/python/content_engine/governance/global_manual_brain_dashboard_interface_reconciliation.py",
-                   "sha256":  "5be0cfebb0f0bbeae6c5ddcf701e64e12cf52cec4491c07058a539761ed8955d",
+                   "sha256":  "ac60a5ed6cccee73d76df2c6c60286259aa443c360554627856908725a711a1e",
                    "hash_matches_build_manifest":  true,
                    "hash_matches_build_seal":  true
                },
     "test":  {
                  "path":  "tests/content_engine/governance/test_global_manual_brain_dashboard_interface_reconciliation.py",
-                 "sha256":  "78e4ab03ab616828103871f69db784fe383d51817b97c4510e8642df9caa085b",
+                 "sha256":  "24788acaadd44b71caa6b91dec1fc82913e86c5ac44857b7de84e000bda9483f",
                  "hash_matches_build_manifest":  true,
                  "hash_matches_build_seal":  true
              },
     "validations":  {
+                        "repo_precheck":  {
+                                              "branch":  "main",
+                                              "head":  "86ad28288511fa59ecb465cca870c225f7f14c50",
+                                              "upstream":  "86ad28288511fa59ecb465cca870c225f7f14c50",
+                                              "dirty_count":  0
+                                          },
                         "python_exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
                         "compile_recheck":  {
                                                 "exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
-                                                "args":  "-m py_compile D:\\CONTENT_ENGINE_OMEGA\\04_SCRIPTS\\python\\content_engine\\governance\\global_manual_brain_dashboard_interface_reconciliation.py",
+                                                "args":  "-B -c import pathlib,sys; p=pathlib.Path(sys.argv[1]); compile(p.read_text(encoding=\u0027utf-8\u0027), str(p), \u0027exec\u0027) D:\\CONTENT_ENGINE_OMEGA\\04_SCRIPTS\\python\\content_engine\\governance\\global_manual_brain_dashboard_interface_reconciliation.py",
                                                 "code":  0,
                                                 "text":  ""
                                             },
                         "pytest_recheck":  {
                                                "exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
-                                               "args":  "-m pytest D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_global_manual_brain_dashboard_interface_reconciliation.py -q",
+                                               "args":  "-B -m pytest D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_global_manual_brain_dashboard_interface_reconciliation.py -q -p no:cacheprovider --basetemp C:\\Users\\romel\\AppData\\Local\\Temp\\CONTENT_ENGINE_OMEGA_RECONCILIATION_POST_BUILD_AUDIT_STABILIZATION_20260622_224608\\pytest_tmp",
                                                "code":  0,
                                                "text":  ".............                                                            [100%]\r\n13 passed in 0.08s"
                                            },
@@ -47,11 +53,15 @@
                                                                           ],
                                                         "forbidden_tokens_count":  20
                                                     },
+                        "transient_cleanup":  [
+
+                                              ],
                         "protected_roots_no_touch":  true,
                         "productive_operations_blocked":  true
                     },
     "gates":  {
                   "repo_precheck_clean_synced":  true,
+                  "current_build_reseal_consumed":  true,
                   "build_evidence_consumed":  true,
                   "source_hash_matches_manifest":  true,
                   "test_hash_matches_manifest":  true,
@@ -63,8 +73,7 @@
                   "protected_roots_no_touch":  true,
                   "productive_operations_blocked":  true,
                   "runtime_performed":  false,
-                  "manual_brain_argos_queue_publication_automation_blocked":  true,
-                  "output_scope_exact_pending":  true
+                  "manual_brain_argos_queue_publication_automation_blocked":  true
               },
     "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION"
 }
