@@ -3,11 +3,11 @@
     "component":  "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
     "status":  "NEXT_LAYER_READINESS_MAP_CREATED",
     "classification":  "POST_RECONCILIATION_NON_PRODUCTIVE_READINESS_MAP",
-    "generated_at_utc":  "2026-06-23T05:36:34.8343229Z",
+    "generated_at_utc":  "2026-06-23T05:37:23.7483740Z",
     "repo_precheck":  {
                           "branch":  "main",
-                          "head":  "031d0f1f6193e97712fe0253d66b25fb6a137373",
-                          "upstream":  "031d0f1f6193e97712fe0253d66b25fb6a137373",
+                          "head":  "d4fdd5077c4dde37e7f396110755edb780e63534",
+                          "upstream":  "d4fdd5077c4dde37e7f396110755edb780e63534",
                           "dirty_count":  0
                       },
     "foundation":  {
@@ -55,11 +55,11 @@
                                                   }
                  },
     "inventory":  {
-                      "total_manifests":  131,
-                      "modern_hash_manifests":  16,
+                      "total_manifests":  132,
+                      "modern_hash_manifests":  17,
                       "legacy_manifests":  115,
-                      "total_seals":  131,
-                      "modern_seal_chains":  16,
+                      "total_seals":  132,
+                      "modern_seal_chains":  17,
                       "legacy_seals":  115
                   },
     "integrity":  {

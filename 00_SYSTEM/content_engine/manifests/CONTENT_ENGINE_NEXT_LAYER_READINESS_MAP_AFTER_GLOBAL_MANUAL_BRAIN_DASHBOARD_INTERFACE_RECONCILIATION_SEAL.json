@@ -4,7 +4,7 @@
     "status":  "NEXT_LAYER_READINESS_MAP_CREATED",
     "classification":  "POST_RECONCILIATION_NON_PRODUCTIVE_READINESS_MAP",
     "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_MANIFEST.json",
-    "manifest_sha256":  "babe4015a2759eec15a776342d995405ad70abacd5db49c4f90c9746b01a0e0c",
+    "manifest_sha256":  "6b15fe7414b48572ea4e9b3441bda137e56ca2e2378af48f7f3488ef8ab8c946",
     "gates_passed":  true,
     "repo_clean_synced":  true,
     "modern_integrity_clean":  true,
@@ -21,5 +21,5 @@
     "publishing_performed":  false,
     "scheduling_performed":  false,
     "next_safe_step":  "CONTENT_ENGINE_GOVERNED_NEXT_LAYER_SELECTION_DECISION_AFTER_RECONCILIATION_READINESS_MAP",
-    "generated_at_utc":  "2026-06-23T05:36:34.8805945Z"
+    "generated_at_utc":  "2026-06-23T05:37:23.7999503Z"
 }
