@@ -1,38 +1,24 @@
 {
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD",
+    "reseal_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_RESEAL_AFTER_HASH_DRIFT",
     "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
-    "step":  "RETRY_WITH_ATOMIC_SCRIPT_AFTER_PROTOCOL_FIX_V3",
-    "phase":  "AUTOMATIC_BLOCK_BUILD",
-    "status":  "BUILD_MANIFEST_VALIDATED",
-    "generated_at_utc":  "2026-06-20T05:01:50.2966494Z",
+    "phase":  "BUILD",
+    "status":  "BUILD_MANIFEST_RESEALED_AFTER_HASH_DRIFT",
+    "generated_at_utc":  "2026-06-23T04:00:39.8746492Z",
     "output_scope":  [
-                         "04_SCRIPTS/python/content_engine/governance/master_observability_truth_audit_decision_dashboard.py",
-                         "tests/content_engine/governance/test_master_observability_truth_audit_decision_dashboard.py",
                          "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_REPORT.json",
-                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_SECURITY_REPORT.json",
-                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_ACCEPTANCE_REPORT.json",
-                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NO_TOUCH_REPORT.json",
-                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NEXT_STEP_REPORT.json",
                          "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_MANIFEST.json",
                          "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_SEAL.json",
                          "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_SUMMARY.md"
                      ],
     "file_hashes":  {
-                        "04_SCRIPTS/python/content_engine/governance/master_observability_truth_audit_decision_dashboard.py":  "470862f510cce1b01e1101ce0c6065e1ac4115a7f61edcaa80585da09e85aeb1",
-                        "tests/content_engine/governance/test_master_observability_truth_audit_decision_dashboard.py":  "67fdf1c61f1e38e43918f998231fbf5edfd9b16c21985be5c380a600a75d07d1",
-                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_REPORT.json":  "ac5fd07c0640535ab2503df5410fe3b7eabe0d7fa199609d5ba07cb73cdae322",
+                        "04_SCRIPTS/python/content_engine/governance/master_observability_truth_audit_decision_dashboard.py":  "b100771545da261497a39ed5fa8007bfbd2edc0bcca6e4387bf57f804f59c556",
+                        "tests/content_engine/governance/test_master_observability_truth_audit_decision_dashboard.py":  "62cdba18ecb3261c86534384b8ad7cbd4f5456b29af3d7baf8f68f153aabdce9",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_REPORT.json":  "bcf8399352e9b23b9c0db8258043f0544a27436bf2b9d0a6617fd2167b699022",
                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_SECURITY_REPORT.json":  "ae432690d8541e552e4f56fd60853b2f19bc56ccfed4b7631af77f00acac5c34",
                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_ACCEPTANCE_REPORT.json":  "2c031272930727ae7dc9f17fccaca1b7fedbb422fe522f916afd530cf9681010",
                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NO_TOUCH_REPORT.json":  "d78948a322c1008b92ece4980fdae5cda9f2d93babb1254017633808433bb4ae",
-                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NEXT_STEP_REPORT.json":  "fd3b500b6066598fa2b7ddf4f8e08ab21e1b41614b19f9e61a8f93b55fe15fcb"
-                    },
-    "gates":  {
-                  "source_written":  true,
-                  "test_written":  true,
-                  "compile_pass":  true,
-                  "pytest_pass":  true,
-                  "security_pass":  true,
-                  "no_touch_pass":  true,
-                  "productive_block_pass":  true,
-                  "manifest_generated_after_gates":  true
-              }
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NEXT_STEP_REPORT.json":  "fd3b500b6066598fa2b7ddf4f8e08ab21e1b41614b19f9e61a8f93b55fe15fcb",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_SUMMARY.md":  "a0df09966e69981e7e58e4aabcbc732df32bbf98038d5c2b0fe67bdbd38bca12"
+                    }
 }

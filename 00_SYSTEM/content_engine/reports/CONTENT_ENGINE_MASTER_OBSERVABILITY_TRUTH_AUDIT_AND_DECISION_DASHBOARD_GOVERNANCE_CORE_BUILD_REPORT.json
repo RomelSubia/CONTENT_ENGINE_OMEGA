@@ -1,21 +1,69 @@
 {
-    "step":  "RETRY_WITH_ATOMIC_SCRIPT_AFTER_PROTOCOL_FIX_V3",
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD",
+    "reseal_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_RESEAL_AFTER_HASH_DRIFT",
     "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
-    "phase":  "AUTOMATIC_BLOCK_BUILD",
-    "status":  "BUILD_VALIDATED_BEFORE_MANIFEST_SEAL",
-    "source_written":  "04_SCRIPTS/python/content_engine/governance/master_observability_truth_audit_decision_dashboard.py",
-    "test_written":  "tests/content_engine/governance/test_master_observability_truth_audit_decision_dashboard.py",
-    "compile":  {
-                    "label":  "AST compile source/test",
-                    "code":  0,
-                    "text":  "AST_COMPILE_PASS",
-                    "command":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe C:\\Users\\romel\\AppData\\Local\\Temp\\CONTENT_ENGINE_OMEGA_RETRY_ATOMIC_BUILD_V3_RERUN_20260620_000148\\compile_check.py D:\\CONTENT_ENGINE_OMEGA\\04_SCRIPTS\\python\\content_engine\\governance\\master_observability_truth_audit_decision_dashboard.py D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_master_observability_truth_audit_decision_dashboard.py"
-                },
-    "pytest":  {
-                   "label":  "pytest allowlisted test",
-                   "code":  0,
-                   "text":  "........                                                                 [100%]\r\n8 passed in 0.07s",
-                   "command":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe -m pytest D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_master_observability_truth_audit_decision_dashboard.py -q -p no:cacheprovider --basetemp C:\\Users\\romel\\AppData\\Local\\Temp\\CONTENT_ENGINE_OMEGA_RETRY_ATOMIC_BUILD_V3_RERUN_20260620_000148\\pytest_basetemp"
+    "phase":  "BUILD",
+    "status":  "BUILD_EVIDENCE_RESEALED_AFTER_HASH_DRIFT",
+    "classification":  "SOURCE_TEST_CURRENT_HASHES_REVALIDATED_AND_RESEALED",
+    "generated_at_utc":  "2026-06-23T04:00:39.8469716Z",
+    "drift_resolution":  {
+                             "source_test_current_hashes_accepted_after_revalidation":  true,
+                             "source_rewritten":  false,
+                             "test_rewritten":  false,
+                             "reason":  "Current committed source/test differed from previous build manifest. Current source/test were revalidated and build evidence was resealed."
+                         },
+    "source":  {
+                   "path":  "04_SCRIPTS/python/content_engine/governance/master_observability_truth_audit_decision_dashboard.py",
+                   "sha256":  "b100771545da261497a39ed5fa8007bfbd2edc0bcca6e4387bf57f804f59c556"
                },
-    "generated_at_utc":  "2026-06-20T05:01:50.2029442Z"
+    "test":  {
+                 "path":  "tests/content_engine/governance/test_master_observability_truth_audit_decision_dashboard.py",
+                 "sha256":  "62cdba18ecb3261c86534384b8ad7cbd4f5456b29af3d7baf8f68f153aabdce9"
+             },
+    "validations":  {
+                        "repo_precheck":  {
+                                              "branch":  "main",
+                                              "head":  "1f8b39c2bfb1cc8a9a2bff2a0ef9a529a29abc83",
+                                              "upstream":  "1f8b39c2bfb1cc8a9a2bff2a0ef9a529a29abc83",
+                                              "dirty_count":  0
+                                          },
+                        "python_exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
+                        "compile_recheck":  {
+                                                "exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
+                                                "args":  "-B -c import pathlib,sys; p=pathlib.Path(sys.argv[1]); compile(p.read_text(encoding=\u0027utf-8\u0027), str(p), \u0027exec\u0027) D:\\CONTENT_ENGINE_OMEGA\\04_SCRIPTS\\python\\content_engine\\governance\\master_observability_truth_audit_decision_dashboard.py",
+                                                "code":  0,
+                                                "text":  ""
+                                            },
+                        "pytest_recheck":  {
+                                               "exe":  "D:\\CONTENT_ENGINE_OMEGA\\.venv\\Scripts\\python.exe",
+                                               "args":  "-B -m pytest D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_master_observability_truth_audit_decision_dashboard.py -q -p no:cacheprovider --basetemp C:\\Users\\romel\\AppData\\Local\\Temp\\CONTENT_ENGINE_OMEGA_MASTER_OBSERVABILITY_BUILD_RESEAL_20260622_230037\\pytest_tmp",
+                                               "code":  0,
+                                               "text":  "........                                                                 [100%]\r\n8 passed in 0.05s"
+                                           },
+                        "static_security_recheck":  {
+                                                        "pass":  true,
+                                                        "scanned_files":  [
+                                                                              "04_SCRIPTS/python/content_engine/governance/master_observability_truth_audit_decision_dashboard.py"
+                                                                          ],
+                                                        "forbidden_tokens_count":  14
+                                                    },
+                        "transient_cleanup":  [
+
+                                              ],
+                        "productive_operations_blocked":  true
+                    },
+    "gates":  {
+                  "repo_precheck_clean_synced":  true,
+                  "source_hash_resealed":  true,
+                  "test_hash_resealed":  true,
+                  "source_rewritten":  false,
+                  "test_rewritten":  false,
+                  "compile_recheck_pass":  true,
+                  "pytest_recheck_pass":  true,
+                  "security_recheck_pass":  true,
+                  "productive_operations_blocked":  true,
+                  "runtime_performed":  false,
+                  "manual_brain_argos_queue_publication_automation_blocked":  true
+              },
+    "next_safe_step":  "RERUN_GLOBAL_INTEGRITY_CONFIRMATION_AFTER_MASTER_OBSERVABILITY_RESEAL"
 }
