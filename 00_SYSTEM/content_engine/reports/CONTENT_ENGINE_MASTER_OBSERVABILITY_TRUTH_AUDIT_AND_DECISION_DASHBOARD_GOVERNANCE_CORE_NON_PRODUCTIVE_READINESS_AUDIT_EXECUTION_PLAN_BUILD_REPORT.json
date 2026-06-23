@@ -1,0 +1,229 @@
+{
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_BUILD_BUILD",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_BUILD",
+    "status":  "NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_BUILT",
+    "classification":  "GOVERNED_NON_PRODUCTIVE_AUDIT_EXECUTION_PLAN_ONLY",
+    "generated_at_utc":  "2026-06-23T08:00:18.5839913Z",
+    "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "validated_previous_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_VALIDATION",
+    "purpose":  "Build the exact non-productive execution plan for a future readiness audit without executing dashboard runtime or productive actions.",
+    "foundation":  {
+                       "repo_clean_synced":  true,
+                       "execution_plan_validation_seal_chain_valid":  true,
+                       "audit_plan_seal_chain_valid":  true,
+                       "post_repair_confirmation_seal_chain_valid":  true,
+                       "readiness_review_seal_chain_valid":  true,
+                       "selection_decision_seal_chain_valid":  true,
+                       "readiness_map_seal_chain_valid":  true,
+                       "modern_integrity_clean":  true,
+                       "previous_validation_ready_to_build":  true
+                   },
+    "non_productive_execution_plan":  {
+                                          "execution_mode":  "READ_ONLY_EVIDENCE_AUDIT_PLAN_ONLY",
+                                          "audit_execution_performed_now":  false,
+                                          "dashboard_runtime_performed_now":  false,
+                                          "phases":  [
+                                                         {
+                                                             "phase":  0,
+                                                             "id":  "PRECHECK_GATE",
+                                                             "objective":  "Confirm repository, integrity, evidence, and seal-chain readiness before any future dry run.",
+                                                             "allowed_operations":  [
+                                                                                        "read_git_branch",
+                                                                                        "read_git_head",
+                                                                                        "read_git_upstream",
+                                                                                        "read_git_status",
+                                                                                        "scan_modern_manifest_integrity",
+                                                                                        "verify_required_evidence_exists"
+                                                                                    ],
+                                                             "blocked_operations":  [
+                                                                                        "source_mutation",
+                                                                                        "test_mutation",
+                                                                                        "legacy_evidence_rewrite",
+                                                                                        "dashboard_runtime",
+                                                                                        "productive_runtime"
+                                                                                    ],
+                                                             "pass_condition":  "repo_clean_synced_and_modern_integrity_clean",
+                                                             "fail_condition":  "any_dirty_repo_or_integrity_issue_or_missing_evidence"
+                                                         },
+                                                         {
+                                                             "phase":  1,
+                                                             "id":  "OBSERVABILITY_EVIDENCE_INVENTORY",
+                                                             "objective":  "Read only existing reports, manifests, seals, and summaries needed for future audit visibility.",
+                                                             "allowed_operations":  [
+                                                                                        "read_report_metadata",
+                                                                                        "read_manifest_metadata",
+                                                                                        "read_seal_metadata",
+                                                                                        "summarize_evidence_inventory"
+                                                                                    ],
+                                                             "blocked_operations":  [
+                                                                                        "execute_dashboard",
+                                                                                        "generate_live_metrics",
+                                                                                        "connect_runtime_sources",
+                                                                                        "trigger_automation"
+                                                                                    ],
+                                                             "pass_condition":  "inventory_constructed_from_existing_evidence_only",
+                                                             "fail_condition":  "any_live_runtime_or_unknown_source_required"
+                                                         },
+                                                         {
+                                                             "phase":  2,
+                                                             "id":  "TRUTH_SOURCE_PRECEDENCE_AUDIT",
+                                                             "objective":  "Validate truth hierarchy for reports, manifests, seals, summaries, and git state.",
+                                                             "allowed_operations":  [
+                                                                                        "compare_report_to_manifest",
+                                                                                        "verify_seal_points_to_manifest",
+                                                                                        "verify_manifest_hashes",
+                                                                                        "compare_head_to_upstream",
+                                                                                        "detect_conflicting_evidence"
+                                                                                    ],
+                                                             "blocked_operations":  [
+                                                                                        "auto_repair",
+                                                                                        "silent_rewrite",
+                                                                                        "best_effort_progression"
+                                                                                    ],
+                                                             "pass_condition":  "truth_sources_consistent_or_fail_closed",
+                                                             "fail_condition":  "conflict_without_explicit_repair_gate"
+                                                         },
+                                                         {
+                                                             "phase":  3,
+                                                             "id":  "DECISION_DASHBOARD_CONTRACT_MAPPING",
+                                                             "objective":  "Define what a future dashboard may display as read-only status without becoming a runtime controller.",
+                                                             "allowed_operations":  [
+                                                                                        "map_read_only_status_tiles",
+                                                                                        "map_integrity_tiles",
+                                                                                        "map_evidence_inventory_tiles",
+                                                                                        "map_fail_closed_alerts",
+                                                                                        "map_next_safe_step_tile"
+                                                                                    ],
+                                                             "blocked_operations":  [
+                                                                                        "dashboard_button_actions",
+                                                                                        "automation_trigger",
+                                                                                        "queue_processing",
+                                                                                        "publication_trigger",
+                                                                                        "argos_runtime_control"
+                                                                                    ],
+                                                             "pass_condition":  "dashboard_contract_remains_read_only",
+                                                             "fail_condition":  "any_control_or_runtime_action_detected"
+                                                         },
+                                                         {
+                                                             "phase":  4,
+                                                             "id":  "FAIL_CLOSED_BOUNDARY_AUDIT",
+                                                             "objective":  "Confirm every uncertainty blocks progression until diagnostic or explicit repair is created.",
+                                                             "allowed_operations":  [
+                                                                                        "define_stop_conditions",
+                                                                                        "define_failure_labels",
+                                                                                        "define_cleanup_scope",
+                                                                                        "define_recommended_next_step_rules"
+                                                                                    ],
+                                                             "blocked_operations":  [
+                                                                                        "partial_success_commit",
+                                                                                        "ignore_missing_evidence",
+                                                                                        "continue_after_mismatch"
+                                                                                    ],
+                                                             "pass_condition":  "all_failure_modes_stop_and_review",
+                                                             "fail_condition":  "any_unhandled_failure_path"
+                                                         },
+                                                         {
+                                                             "phase":  5,
+                                                             "id":  "FUTURE_DRY_RUN_CONTRACT_PREPARATION",
+                                                             "objective":  "Prepare the next step contract for a non-productive dry run without running the audit yet.",
+                                                             "allowed_operations":  [
+                                                                                        "define_dry_run_inputs",
+                                                                                        "define_dry_run_outputs",
+                                                                                        "define_dry_run_gates",
+                                                                                        "define_dry_run_no_runtime_policy"
+                                                                                    ],
+                                                             "blocked_operations":  [
+                                                                                        "execute_audit",
+                                                                                        "execute_dashboard_runtime",
+                                                                                        "mutate_runtime_state",
+                                                                                        "publish_or_queue_results"
+                                                                                    ],
+                                                             "pass_condition":  "dry_run_contract_can_be_built_safely",
+                                                             "fail_condition":  "dry_run_requires_productive_runtime"
+                                                         }
+                                                     ],
+                                          "required_future_dry_run_inputs":  [
+                                                                                 "execution_plan_report",
+                                                                                 "execution_plan_manifest",
+                                                                                 "execution_plan_seal",
+                                                                                 "execution_plan_summary",
+                                                                                 "audit_plan_report",
+                                                                                 "execution_plan_validation_report",
+                                                                                 "post_repair_confirmation_report",
+                                                                                 "readiness_review_report",
+                                                                                 "selection_decision_report",
+                                                                                 "readiness_map_report"
+                                                                             ],
+                                          "required_future_dry_run_outputs":  [
+                                                                                  "dry_run_contract_report",
+                                                                                  "dry_run_contract_manifest",
+                                                                                  "dry_run_contract_seal",
+                                                                                  "dry_run_contract_summary"
+                                                                              ],
+                                          "global_stop_conditions":  [
+                                                                         "repo_dirty",
+                                                                         "head_not_equal_upstream",
+                                                                         "modern_integrity_not_clean",
+                                                                         "required_evidence_missing",
+                                                                         "seal_chain_invalid",
+                                                                         "manifest_hash_mismatch",
+                                                                         "self_hash_or_own_seal_hash_detected",
+                                                                         "runtime_action_requested",
+                                                                         "productive_operation_requested",
+                                                                         "dashboard_control_action_detected",
+                                                                         "automation_publication_queue_or_argos_detected"
+                                                                     ]
+                                      },
+    "blocked_actions":  {
+                            "audit_execution_now":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "automation_enabled":  false,
+                            "publication_enabled":  false,
+                            "queue_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "productive_runtime_enabled":  false,
+                            "source_mutation_allowed":  false,
+                            "test_mutation_allowed":  false,
+                            "legacy_rewrite_allowed":  false
+                        },
+    "evidence":  {
+                     "execution_plan_validation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_VALIDATION_REPORT.json",
+                     "audit_plan_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PLAN_AFTER_REVIEW_REPORT.json",
+                     "post_repair_confirmation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_POST_REPAIR_CONFIRMATION_REPORT.json",
+                     "readiness_review_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_REPORT.json",
+                     "selection_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_GOVERNED_NEXT_LAYER_SELECTION_DECISION_AFTER_RECONCILIATION_READINESS_MAP_REPORT.json",
+                     "readiness_map_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REPORT.json"
+                 },
+    "inventory":  {
+                      "total_manifests":  138,
+                      "modern_hash_manifests":  23,
+                      "legacy_manifests":  115,
+                      "total_seals":  138,
+                      "modern_seal_chains":  23,
+                      "legacy_seals":  115
+                  },
+    "integrity":  {
+                      "modern_integrity_clean":  true,
+                      "modern_manifest_mismatches":  0,
+                      "modern_manifest_missing_files":  0,
+                      "unreadable_manifests":  0,
+                      "modern_seal_mismatches":  0,
+                      "modern_seal_missing_manifests":  0,
+                      "unreadable_seals":  0
+                  },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "modern_integrity_clean":  true,
+                  "validation_ready_to_build":  true,
+                  "non_productive_only":  true,
+                  "audit_execution_performed":  false,
+                  "productive_operations_blocked":  true,
+                  "runtime_performed":  false,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false
+              },
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_CONTRACT_AFTER_EXECUTION_PLAN_BUILD"
+}
