@@ -1,0 +1,169 @@
+{
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PLAN_AFTER_REVIEW_V3_BUILD",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PLAN_AFTER_REVIEW",
+    "status":  "NON_PRODUCTIVE_READINESS_AUDIT_PLAN_CREATED",
+    "classification":  "GOVERNED_NON_PRODUCTIVE_AUDIT_PLAN_ONLY",
+    "generated_at_utc":  "2026-06-23T07:04:44.1454765Z",
+    "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "purpose":  "Define the governed non-productive audit plan for the master observability, truth audit, and decision dashboard governance core.",
+    "foundation":  {
+                       "repo_clean_synced":  true,
+                       "post_repair_confirmation_valid":  true,
+                       "post_repair_confirmation_seal_chain_valid":  true,
+                       "readiness_review_seal_chain_valid":  true,
+                       "exact_repair_seal_chain_valid":  true,
+                       "selection_decision_seal_chain_valid":  true,
+                       "readiness_map_seal_chain_valid":  true,
+                       "modern_integrity_clean":  true,
+                       "circular_hash_entries_absent":  true,
+                       "confirmation_used_review_manifest_no_self_hash":  true,
+                       "confirmation_used_review_manifest_no_own_seal_hash":  true
+                   },
+    "audit_plan":  {
+                       "scope":  [
+                                     "inventory_existing_observability_evidence",
+                                     "verify_truth_source_contracts",
+                                     "map_decision_dashboard_inputs_without_runtime",
+                                     "define_read_only_metrics_and_audit_dimensions",
+                                     "confirm_fail_closed_governance_rules",
+                                     "confirm_blocked_productive_actions",
+                                     "define_evidence_outputs_for_future_audit_execution_plan"
+                                 ],
+                       "audit_dimensions":  [
+                                                {
+                                                    "id":  "OBSERVABILITY_EVIDENCE_INVENTORY",
+                                                    "objective":  "Identify existing evidence sources usable by a future dashboard without executing productive runtime.",
+                                                    "allowed":  [
+                                                                    "read_evidence_metadata",
+                                                                    "read_reports",
+                                                                    "read_manifests",
+                                                                    "read_seals",
+                                                                    "summarize_inventory"
+                                                                ],
+                                                    "blocked":  [
+                                                                    "runtime_dashboard_execution",
+                                                                    "data_mutation",
+                                                                    "queue_execution",
+                                                                    "publication"
+                                                                ]
+                                                },
+                                                {
+                                                    "id":  "TRUTH_AUDIT_CONTRACT",
+                                                    "objective":  "Define truth-source precedence for reports, manifests, seals, summaries, and git state.",
+                                                    "allowed":  [
+                                                                    "define_precedence_rules",
+                                                                    "define_validation_gates",
+                                                                    "define_conflict_handling"
+                                                                ],
+                                                    "blocked":  [
+                                                                    "rewrite_legacy_evidence",
+                                                                    "auto_correct_without_explicit_repair_gate"
+                                                                ]
+                                                },
+                                                {
+                                                    "id":  "DECISION_DASHBOARD_CONTRACT",
+                                                    "objective":  "Define what a future decision dashboard may display without becoming a runtime controller.",
+                                                    "allowed":  [
+                                                                    "define_read_only_tiles",
+                                                                    "define_status_views",
+                                                                    "define_alert_categories"
+                                                                ],
+                                                    "blocked":  [
+                                                                    "button_actions",
+                                                                    "automation_triggering",
+                                                                    "publication_triggering",
+                                                                    "argos_runtime_control"
+                                                                ]
+                                                },
+                                                {
+                                                    "id":  "FAIL_CLOSED_POLICY",
+                                                    "objective":  "Ensure any mismatch, dirty repo, missing evidence, or unclear scope blocks progression.",
+                                                    "allowed":  [
+                                                                    "fail_closed",
+                                                                    "stop_and_review",
+                                                                    "exact_repair_only_after_diagnostic"
+                                                                ],
+                                                    "blocked":  [
+                                                                    "best_effort_commit",
+                                                                    "partial_progression",
+                                                                    "silent_repair"
+                                                                ]
+                                                },
+                                                {
+                                                    "id":  "NON_PRODUCTIVE_EXECUTION_BOUNDARY",
+                                                    "objective":  "Confirm future audit execution remains non-productive and evidence-only.",
+                                                    "allowed":  [
+                                                                    "audit_plan_generation",
+                                                                    "read_only_validation",
+                                                                    "evidence_creation"
+                                                                ],
+                                                    "blocked":  [
+                                                                    "dashboard_runtime_enabled",
+                                                                    "automation_enabled",
+                                                                    "publication_enabled",
+                                                                    "queue_enabled",
+                                                                    "argos_runtime_enabled"
+                                                                ]
+                                                }
+                                            ],
+                       "future_validation_gates":  [
+                                                       "repo_clean_synced_before_execution_plan",
+                                                       "modern_integrity_clean_before_execution_plan",
+                                                       "post_repair_confirmation_valid",
+                                                       "selection_decision_valid",
+                                                       "readiness_map_valid",
+                                                       "productive_runtime_blocked",
+                                                       "expected_output_scope_exact",
+                                                       "no_self_or_own_seal_file_hashes",
+                                                       "repo_clean_synced_after_commit"
+                                                   ]
+                   },
+    "blocked_actions":  {
+                            "dashboard_runtime_enabled":  false,
+                            "automation_enabled":  false,
+                            "publication_enabled":  false,
+                            "queue_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "productive_runtime_enabled":  false,
+                            "source_mutation_allowed":  false,
+                            "test_mutation_allowed":  false,
+                            "legacy_rewrite_allowed":  false
+                        },
+    "evidence":  {
+                     "post_repair_confirmation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_POST_REPAIR_CONFIRMATION_REPORT.json",
+                     "readiness_review_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_REPORT.json",
+                     "repair_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_SELECTED_LAYER_READINESS_REVIEW_EXACT_MODERN_INTEGRITY_REPAIR_REPORT.json",
+                     "selection_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_GOVERNED_NEXT_LAYER_SELECTION_DECISION_AFTER_RECONCILIATION_READINESS_MAP_REPORT.json",
+                     "readiness_map_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REPORT.json"
+                 },
+    "inventory":  {
+                      "total_manifests":  136,
+                      "modern_hash_manifests":  21,
+                      "legacy_manifests":  115,
+                      "total_seals":  136,
+                      "modern_seal_chains":  21,
+                      "legacy_seals":  115
+                  },
+    "integrity":  {
+                      "modern_integrity_clean":  true,
+                      "modern_manifest_mismatches":  0,
+                      "modern_manifest_missing_files":  0,
+                      "unreadable_manifests":  0,
+                      "modern_seal_mismatches":  0,
+                      "modern_seal_missing_manifests":  0,
+                      "unreadable_seals":  0
+                  },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "modern_integrity_clean":  true,
+                  "non_productive_only":  true,
+                  "productive_operations_blocked":  true,
+                  "runtime_performed":  false,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false
+              },
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_VALIDATION"
+}
