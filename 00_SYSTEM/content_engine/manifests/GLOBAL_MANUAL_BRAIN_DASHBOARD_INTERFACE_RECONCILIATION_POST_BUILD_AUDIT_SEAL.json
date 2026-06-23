@@ -5,7 +5,7 @@
     "status":  "POST_BUILD_AUDITED",
     "classification":  "CURRENT_BUILD_RESEAL_CONSUMED_SOURCE_TEST_STABLE_SYSTEM_STABILIZATION",
     "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_MANIFEST.json",
-    "manifest_sha256":  "531f4f622e524b16a3c98996ced34605b8244d15f9a0910a9b5eedc18f3c2763",
+    "manifest_sha256":  "d09b35ab8c3c632b91e5a6fad6ee5714dafb6ba5994e0280726f3cf28b905d33",
     "gates_passed":  true,
     "current_build_reseal_consumed":  true,
     "build_evidence_consumed":  true,
@@ -33,5 +33,7 @@
     "publishing_performed":  false,
     "scheduling_performed":  false,
     "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION",
-    "generated_at_utc":  "2026-06-23T03:46:10.8935071Z"
+    "generated_at_utc":  "2026-06-23T04:42:16.5905991Z",
+    "repair_step":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_MODERN_EVIDENCE_BLOCKER_REPAIR_BEFORE_HISTORICAL_NORMALIZATION",
+    "repair_reason":  "Post-build audit seal resealed after post-build audit manifest repair."
 }

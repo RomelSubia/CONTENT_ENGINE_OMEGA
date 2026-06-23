@@ -6,7 +6,7 @@
     "status":  "AUTOMATIC_BLOCK_BUILD_COMPLETED",
     "classification":  "BUILD_EVIDENCE_RESEALED_AFTER_SOURCE_TEST_HASH_DRIFT_FIXED_OUTPUT_SCOPE",
     "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
-    "manifest_sha256":  "ac20ec07fe5ac329b1f887d1d68247916bc3ba406ac6beb0a00ec48f14f95164",
+    "manifest_sha256":  "6ad75c1c63157fcbd821068a0f123d8d623d8d9918091e2e1d75122b2e2a4cf0",
     "gates_passed":  true,
     "source_sha256":  "ac60a5ed6cccee73d76df2c6c60286259aa443c360554627856908725a711a1e",
     "test_sha256":  "24788acaadd44b71caa6b91dec1fc82913e86c5ac44857b7de84e000bda9483f",
@@ -28,5 +28,7 @@
     "publication_mutation_performed":  false,
     "automation_performed":  false,
     "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT",
-    "generated_at_utc":  "2026-06-23T03:05:30.5037828Z"
+    "generated_at_utc":  "2026-06-23T04:42:16.5547587Z",
+    "repair_step":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_MODERN_EVIDENCE_BLOCKER_REPAIR_BEFORE_HISTORICAL_NORMALIZATION",
+    "repair_reason":  "Build manifest hash drift detected before historical evidence normalization."
 }
