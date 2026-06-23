@@ -1,0 +1,38 @@
+{
+    "step":  "CONTENT_ENGINE_SELECTED_LAYER_READINESS_REVIEW_EXACT_MODERN_INTEGRITY_REPAIR_BUILD",
+    "component":  "CONTENT_ENGINE_SELECTED_LAYER_READINESS_REVIEW_EXACT_MODERN_INTEGRITY_REPAIR",
+    "status":  "SELECTED_LAYER_READINESS_REVIEW_EXACT_MODERN_INTEGRITY_REPAIRED",
+    "generated_at_utc":  "2026-06-23T06:21:25.0565358Z",
+    "repaired_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_MANIFEST.json",
+    "repaired_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_SEAL.json",
+    "issue":  "MANIFEST_CONTAINED_CIRCULAR_FILE_HASHES_FOR_SELF_AND_OWN_SEAL",
+    "repair_action":  "REMOVED_CIRCULAR_FILE_HASH_ENTRIES_AND_REFRESHED_SEAL_MANIFEST_SHA256",
+    "pre_repair_integrity":  {
+                                 "modern_integrity_clean":  false,
+                                 "modern_manifest_mismatches":  2,
+                                 "modern_manifest_missing_files":  0,
+                                 "unreadable_manifests":  0,
+                                 "modern_seal_mismatches":  0,
+                                 "modern_seal_missing_manifests":  0,
+                                 "unreadable_seals":  0
+                             },
+    "repaired_hashes":  {
+                            "repaired_manifest_sha256":  "078c1f9404242af7480761b433e48326ed155b6380cf970f356e819eb55124f3",
+                            "repaired_seal_sha256":  "1a99be346abcf7a6491e36ef50b13130731ae49630d22abde2acde58fa0f860c"
+                        },
+    "safety":  {
+                   "source_files_written":  false,
+                   "test_files_written":  false,
+                   "legacy_evidence_rewritten":  false,
+                   "legacy_evidence_moved":  false,
+                   "legacy_evidence_deleted":  false,
+                   "runtime_performed":  false,
+                   "productive_runtime_performed":  false,
+                   "dashboard_runtime_enabled":  false,
+                   "automation_enabled":  false,
+                   "publication_enabled":  false,
+                   "queue_enabled":  false,
+                   "argos_runtime_enabled":  false
+               },
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION"
+}

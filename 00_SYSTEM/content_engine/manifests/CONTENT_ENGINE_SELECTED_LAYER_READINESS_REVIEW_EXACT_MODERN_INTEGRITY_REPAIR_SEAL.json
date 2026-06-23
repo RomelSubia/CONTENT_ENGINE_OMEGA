@@ -1,0 +1,21 @@
+{
+    "step":  "CONTENT_ENGINE_SELECTED_LAYER_READINESS_REVIEW_EXACT_MODERN_INTEGRITY_REPAIR_BUILD",
+    "component":  "CONTENT_ENGINE_SELECTED_LAYER_READINESS_REVIEW_EXACT_MODERN_INTEGRITY_REPAIR",
+    "status":  "SELECTED_LAYER_READINESS_REVIEW_EXACT_MODERN_INTEGRITY_REPAIRED",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_SELECTED_LAYER_READINESS_REVIEW_EXACT_MODERN_INTEGRITY_REPAIR_MANIFEST.json",
+    "manifest_sha256":  "941c76f3727e4552571d2522b5254a22cb21c67c5cfa009e8fd9a15eb70d42ff",
+    "repaired_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_MANIFEST.json",
+    "repaired_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_SEAL.json",
+    "repair_validated":  true,
+    "gates_passed":  true,
+    "source_files_written":  false,
+    "test_files_written":  false,
+    "legacy_evidence_rewritten":  false,
+    "legacy_evidence_moved":  false,
+    "legacy_evidence_deleted":  false,
+    "runtime_performed":  false,
+    "productive_runtime_performed":  false,
+    "productive_operations_blocked":  true,
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION",
+    "generated_at_utc":  "2026-06-23T06:21:25.0918787Z"
+}
