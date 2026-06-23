@@ -1,0 +1,56 @@
+{
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_POST_REPAIR_CONFIRMATION_BUILD",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_POST_REPAIR_CONFIRMATION",
+    "status":  "READINESS_REVIEW_POST_REPAIR_CONFIRMED",
+    "classification":  "NON_PRODUCTIVE_POST_REPAIR_CONFIRMATION",
+    "generated_at_utc":  "2026-06-23T06:27:29.3795091Z",
+    "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "confirmed_review_component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION",
+    "confirmation":  {
+                         "modern_integrity_clean":  true,
+                         "review_manifest_no_self_hash":  true,
+                         "review_manifest_no_own_seal_hash":  true,
+                         "review_seal_chain_valid":  true,
+                         "repair_seal_chain_valid":  true,
+                         "selection_seal_chain_valid":  true,
+                         "productive_runtime_allowed":  false,
+                         "productive_operations_blocked":  true
+                     },
+    "inventory":  {
+                      "total_manifests":  135,
+                      "modern_hash_manifests":  20,
+                      "legacy_manifests":  115,
+                      "total_seals":  135,
+                      "modern_seal_chains":  20,
+                      "legacy_seals":  115
+                  },
+    "integrity":  {
+                      "modern_integrity_clean":  true,
+                      "modern_manifest_mismatches":  0,
+                      "modern_manifest_missing_files":  0,
+                      "unreadable_manifests":  0,
+                      "modern_seal_mismatches":  0,
+                      "modern_seal_missing_manifests":  0,
+                      "unreadable_seals":  0
+                  },
+    "blocked_actions":  {
+                            "dashboard_runtime_enabled":  false,
+                            "automation_enabled":  false,
+                            "publication_enabled":  false,
+                            "queue_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "productive_runtime_enabled":  false
+                        },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "repaired_review_confirmed":  true,
+                  "modern_integrity_clean":  true,
+                  "circular_hash_entries_absent":  true,
+                  "runtime_performed":  false,
+                  "productive_operations_blocked":  true,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false
+              },
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PLAN_AFTER_REVIEW"
+}
