@@ -3,14 +3,14 @@
     "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION",
     "status":  "SELECTED_LAYER_READINESS_REVIEW_COMPLETED",
     "classification":  "NON_PRODUCTIVE_READINESS_REVIEW_ONLY",
-    "generated_at_utc":  "2026-06-23T05:49:47.5943497Z",
+    "generated_at_utc":  "2026-06-23T05:53:00.1072633Z",
     "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
     "readiness_conclusion":  "READY_FOR_NON_PRODUCTIVE_READINESS_AUDIT_PLAN",
     "readiness_reason":  "Selected layer decision is valid, foundation is clean, and productive runtime remains blocked. The next step should be an audit plan only.",
     "repo_precheck":  {
                           "branch":  "main",
-                          "head":  "0e4adea2a1caf08dee743d5e452d07c9dae9237d",
-                          "upstream":  "0e4adea2a1caf08dee743d5e452d07c9dae9237d",
+                          "head":  "43a200482268116a8a1e0decdd36e7358a367828",
+                          "upstream":  "43a200482268116a8a1e0decdd36e7358a367828",
                           "dirty_count":  0
                       },
     "foundation":  {
@@ -34,37 +34,41 @@
                                                               "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NO_TOUCH_REPORT.json",
                                                               "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT_REPORT.json",
                                                               "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_REPORT.json",
+                                                              "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_REPORT.json",
                                                               "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_SECURITY_REPORT.json"
                                                           ],
                                               "manifests":  [
                                                                 "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_MANIFEST.json",
                                                                 "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
                                                                 "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
-                                                                "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_MANIFEST.json"
+                                                                "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_MANIFEST.json",
+                                                                "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_MANIFEST.json"
                                                             ],
                                               "seals":  [
                                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_SEAL.json",
                                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
                                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
-                                                            "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_SEAL.json"
+                                                            "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_SEAL.json",
+                                                            "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_SEAL.json"
                                                         ],
                                               "summaries":  [
                                                                 "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_SUMMARY.md",
                                                                 "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SUMMARY.md",
                                                                 "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT_SUMMARY.md",
-                                                                "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_SUMMARY.md"
+                                                                "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_SUMMARY.md",
+                                                                "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_SUMMARY.md"
                                                             ],
-                                              "report_count":  8,
-                                              "manifest_count":  4,
-                                              "seal_count":  4,
-                                              "summary_count":  4
+                                              "report_count":  9,
+                                              "manifest_count":  5,
+                                              "seal_count":  5,
+                                              "summary_count":  5
                                           },
     "inventory":  {
-                      "total_manifests":  133,
-                      "modern_hash_manifests":  18,
+                      "total_manifests":  134,
+                      "modern_hash_manifests":  19,
                       "legacy_manifests":  115,
-                      "total_seals":  133,
-                      "modern_seal_chains":  18,
+                      "total_seals":  134,
+                      "modern_seal_chains":  19,
                       "legacy_seals":  115
                   },
     "integrity":  {

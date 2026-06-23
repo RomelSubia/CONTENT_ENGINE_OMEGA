@@ -6,7 +6,7 @@
     "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
     "readiness_conclusion":  "READY_FOR_NON_PRODUCTIVE_READINESS_AUDIT_PLAN",
     "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_MANIFEST.json",
-    "manifest_sha256":  "d577a6a9d52e377f1f59f101f2eaabedf8a48635d55e56c67f226d5f2245dd68",
+    "manifest_sha256":  "2fb0a9d0c9c1f9ff699d34ac8b5f115cb56247cd08cf102fbd4d878b38941d27",
     "gates_passed":  true,
     "selected_layer_decision_valid":  true,
     "modern_integrity_clean":  true,
@@ -22,5 +22,5 @@
     "legacy_evidence_moved":  false,
     "legacy_evidence_deleted":  false,
     "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PLAN_AFTER_REVIEW",
-    "generated_at_utc":  "2026-06-23T05:49:47.6843281Z"
+    "generated_at_utc":  "2026-06-23T05:53:00.1822122Z"
 }
