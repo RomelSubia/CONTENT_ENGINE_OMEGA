@@ -1,0 +1,97 @@
+{
+    "step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION_BUILD",
+    "component":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION",
+    "status":  "GATE_CLOSE_VALIDATED",
+    "classification":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSED",
+    "generated_at_utc":  "2026-06-23T05:00:25.4731551Z",
+    "repo_precheck":  {
+                          "branch":  "main",
+                          "head":  "c0badf24a852074f4fa32dd6c144329ed8516147",
+                          "upstream":  "c0badf24a852074f4fa32dd6c144329ed8516147",
+                          "dirty_count":  0
+                      },
+    "evidence":  {
+                     "reconciliation_required_evidence":  [
+                                                              "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_REPORT.json",
+                                                              "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_MANIFEST.json",
+                                                              "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_SEAL.json",
+                                                              "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_SUMMARY.md",
+                                                              "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                              "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SEAL.json"
+                                                          ],
+                     "normalization_required_evidence":  [
+                                                             "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFICATION_REPORT.json",
+                                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFICATION_MANIFEST.json",
+                                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFICATION_SEAL.json",
+                                                             "05_REPORTS/content_engine/CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFICATION_SUMMARY.md"
+                                                         ]
+                 },
+    "inventory":  {
+                      "total_manifests":  130,
+                      "modern_hash_manifests":  15,
+                      "legacy_manifests":  115,
+                      "total_seals":  130,
+                      "modern_seal_chains":  15,
+                      "legacy_seals":  115
+                  },
+    "integrity":  {
+                      "modern_integrity_clean":  true,
+                      "modern_manifest_mismatches":  0,
+                      "modern_manifest_missing_files":  0,
+                      "unreadable_manifests":  0,
+                      "modern_seal_mismatches":  0,
+                      "modern_seal_missing_manifests":  0,
+                      "unreadable_seals":  0,
+                      "historical_normalization_seal_chain_valid":  true
+                  },
+    "source_test_recheck":  {
+                                "referenced_files":  [
+                                                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                                                         "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_REPORT.json",
+                                                         "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_REPORT.json",
+                                                         "04_SCRIPTS/python/content_engine/governance/global_manual_brain_dashboard_interface_reconciliation.py",
+                                                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SUMMARY.md",
+                                                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_SUMMARY.md",
+                                                         "tests/content_engine/governance/test_global_manual_brain_dashboard_interface_reconciliation.py"
+                                                     ],
+                                "source_candidates":  [
+                                                          "04_SCRIPTS/python/content_engine/governance/global_manual_brain_dashboard_interface_reconciliation.py"
+                                                      ],
+                                "test_candidates":  [
+                                                        "tests/content_engine/governance/test_global_manual_brain_dashboard_interface_reconciliation.py"
+                                                    ],
+                                "compile_results":  [
+                                                        {
+                                                            "label":  "py_compile 04_SCRIPTS/python/content_engine/governance/global_manual_brain_dashboard_interface_reconciliation.py",
+                                                            "code":  0,
+                                                            "text":  "",
+                                                            "args":  "-m py_compile D:\\CONTENT_ENGINE_OMEGA\\04_SCRIPTS\\python\\content_engine\\governance\\global_manual_brain_dashboard_interface_reconciliation.py"
+                                                        }
+                                                    ],
+                                "pytest_results":  [
+                                                       {
+                                                           "label":  "pytest tests/content_engine/governance/test_global_manual_brain_dashboard_interface_reconciliation.py",
+                                                           "code":  0,
+                                                           "text":  ".............                                                            [100%]\r\n13 passed in 0.12s",
+                                                           "args":  "-m pytest D:\\CONTENT_ENGINE_OMEGA\\tests\\content_engine\\governance\\test_global_manual_brain_dashboard_interface_reconciliation.py -q"
+                                                       }
+                                                   ],
+                                "compile_count":  1,
+                                "pytest_count":  1
+                            },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "modern_integrity_clean":  true,
+                  "historical_normalization_valid":  true,
+                  "reconciliation_required_evidence_present":  true,
+                  "source_compile_recheck_passed":  true,
+                  "pytest_recheck_passed":  true,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false,
+                  "runtime_performed":  false,
+                  "productive_operations_blocked":  true
+              },
+    "next_safe_step":  "CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION"
+}
