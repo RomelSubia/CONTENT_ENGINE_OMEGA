@@ -1,0 +1,1438 @@
+{
+    "step":  "CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFICATION_BUILD",
+    "component":  "CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFICATION",
+    "status":  "HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFIED",
+    "classification":  "LEGACY_AND_MODERN_EVIDENCE_SEPARATED_WITHOUT_REWRITING_HISTORY",
+    "generated_at_utc":  "2026-06-23T04:49:04.1659550Z",
+    "repo_precheck":  {
+                          "branch":  "main",
+                          "head":  "313027029d70791070545ffdd4b893683df04a1b",
+                          "upstream":  "313027029d70791070545ffdd4b893683df04a1b",
+                          "dirty_count":  0
+                      },
+    "pre_cleanup":  [
+
+                    ],
+    "scan_scope":  {
+                       "root":  "00_SYSTEM/content_engine",
+                       "manifest_pattern":  "*MANIFEST.json",
+                       "seal_pattern":  "*SEAL.json",
+                       "note":  "Scan classifies existing evidence and does not rewrite, move, or delete legacy records."
+                   },
+    "inventory":  {
+                      "total_manifests_scanned":  129,
+                      "total_seals_scanned":  129,
+                      "modern_hash_manifests":  14,
+                      "legacy_manifests_no_file_hashes":  115,
+                      "unreadable_manifests":  0,
+                      "modern_seal_chains":  14,
+                      "legacy_seals_no_manifest_chain":  115,
+                      "unreadable_seals":  0
+                  },
+    "integrity":  {
+                      "modern_integrity_clean":  true,
+                      "modern_manifest_mismatches":  0,
+                      "modern_manifest_missing_files":  0,
+                      "modern_seal_mismatches":  0,
+                      "modern_seal_missing_manifests":  0
+                  },
+    "policy":  {
+                   "policy_name":  "CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_POLICY_V2_2",
+                   "principle":  "Separate historical evidence from modern governed evidence without rewriting, moving, or deleting historical records.",
+                   "authority_model":  {
+                                           "modern_hash_manifests":  "Current integrity authority for declared file hashes.",
+                                           "modern_seal_chains":  "Current integrity authority for seal-to-manifest chains.",
+                                           "legacy_manifests":  "Historical context only; not used for current hash-integrity gates.",
+                                           "legacy_seals":  "Historical context only; not used for current seal-chain gates."
+                                       },
+                   "classes":  {
+                                   "MODERN_HASH_MANIFEST":  "Manifest declares file_hashes and each declared file hash is validated.",
+                                   "LEGACY_MANIFEST_NO_FILE_HASHES":  "Manifest does not declare file_hashes. It is retained as historical evidence and excluded from modern hash-integrity gates.",
+                                   "MODERN_SEAL_CHAIN":  "Seal declares manifest and manifest_sha256, and the manifest hash chain is validated.",
+                                   "LEGACY_SEAL_NO_MANIFEST_CHAIN":  "Seal does not declare manifest plus manifest_sha256. It is retained as historical evidence and excluded from modern seal-chain gates.",
+                                   "UNREADABLE_OR_BROKEN_EVIDENCE":  "Evidence that cannot be read, references missing files, or has broken hash/chain validation. This blocks normalization."
+                               },
+                   "governance_rules":  [
+                                            "Do not rewrite legacy evidence in-place.",
+                                            "Do not delete historical evidence.",
+                                            "Do not move historical evidence without a separate migration gate.",
+                                            "Use modern hash manifests and modern seal chains as the current integrity authority.",
+                                            "Treat legacy evidence as historical context, not as current integrity authority.",
+                                            "Any future migration from legacy to modern format requires a separate approved workflow."
+                                        ]
+               },
+    "classifications":  {
+                            "modern_hash_manifests":  [
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  8,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  1,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  1,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  1,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  1,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  1,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  1,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  1,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  2,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  2,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  2,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  2,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  8,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          },
+                                                          {
+                                                              "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                              "classification":  "MODERN_HASH_MANIFEST",
+                                                              "checked_files":  4,
+                                                              "mismatches":  0,
+                                                              "missing_files":  0
+                                                          }
+                                                      ],
+                            "legacy_manifests_no_file_hashes":  [
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_CORE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_CORE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_QUEUE_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_MAP_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_QUEUE_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BUILD_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    },
+                                                                    {
+                                                                        "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_MANIFEST.json",
+                                                                        "classification":  "LEGACY_MANIFEST_NO_FILE_HASHES",
+                                                                        "reason":  "Manifest does not declare file_hashes. Retained as historical/legacy evidence, not used for modern hash-integrity gates."
+                                                                    }
+                                                                ],
+                            "unreadable_manifests":  [
+
+                                                     ],
+                            "modern_seal_chains":  [
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_BUILD_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_POST_BUILD_AUDIT_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_MAP_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_BLUEPRINT_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_REVIEW_HARDENING_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_DRY_RUN_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       },
+                                                       {
+                                                           "path":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                                                           "classification":  "MODERN_SEAL_CHAIN",
+                                                           "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD_MANIFEST.json",
+                                                           "chain_valid":  true,
+                                                           "issue":  null
+                                                       }
+                                                   ],
+                            "legacy_seals_no_manifest_chain":  [
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_CORE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_CONSTRUCTION_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_CORE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_STRATEGY_FOUNDATION_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_CORE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_PROMPT_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_AFTER_PROMPT_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_CORE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_QUEUE_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_QUEUE_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_CORE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_GENERATION_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_AFTER_CONTENT_GENERATION_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/MULTIDOMAIN_MONETIZATION_ARGOS_ALIGNMENT_NOTE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_FINAL_HARDENING_ANNEX_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_MAP_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFTING_GOVERNANCE_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFTING_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_RUNTIME_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_RUNTIME_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_SAFE_PREVIEW_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_MAP_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_CORE_GATE_CLOSURE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_HUMAN_REVIEW_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_FINALIZATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_FINALIZATION_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_QUEUE_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_AUTOMATIC_BLOCK_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_QUEUE_WRITE_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BLUEPRINT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_REVIEW_HARDENING_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_FINAL_APPROVAL_REVIEW_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_IMPLEMENTATION_PLAN_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_BUILD_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_POST_BUILD_AUDIT_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_CORE_GATE_CLOSE_VALIDATION_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   },
+                                                                   {
+                                                                       "path":  "00_SYSTEM/content_engine/manifests/NEXT_LAYER_READINESS_MAP_AFTER_CONTENT_DRAFT_PUBLICATION_EXECUTION_GOVERNANCE_SEAL.json",
+                                                                       "classification":  "LEGACY_SEAL_NO_MANIFEST_CHAIN",
+                                                                       "reason":  "Seal does not declare manifest plus manifest_sha256. Retained as historical/legacy evidence, not used for modern seal-chain gates."
+                                                                   }
+                                                               ],
+                            "unreadable_seals":  [
+
+                                                 ]
+                        },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "modern_hash_manifests_clean":  true,
+                  "modern_seal_chains_clean":  true,
+                  "legacy_evidence_classified":  true,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false,
+                  "runtime_performed":  false,
+                  "productive_operations_blocked":  true
+              },
+    "next_safe_step":  "RERUN_GLOBAL_INTEGRITY_CONFIRMATION_AFTER_HISTORICAL_EVIDENCE_NORMALIZATION"
+}
