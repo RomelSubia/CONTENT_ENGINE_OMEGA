@@ -1,0 +1,191 @@
+{
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_EXECUTION_AFTER_CONTRACT_VALIDATION_BUILD_V2",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_EXECUTION_AFTER_CONTRACT_VALIDATION",
+    "status":  "NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_EXECUTED",
+    "classification":  "GOVERNED_NON_PRODUCTIVE_DRY_RUN_RESULT_ONLY",
+    "generated_at_utc":  "2026-06-23T08:34:52.5240507Z",
+    "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "validated_previous_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_CONTRACT_VALIDATION",
+    "execution_mode":  "NON_PRODUCTIVE_READ_ONLY_EVIDENCE_DRY_RUN",
+    "wrapper":  "GIT_C_ROOT_SAFE_WRAPPER_V2",
+    "foundation":  {
+                       "repo_clean_synced":  true,
+                       "contract_validation_seal_chain_valid":  true,
+                       "dry_run_contract_seal_chain_valid":  true,
+                       "execution_plan_build_seal_chain_valid":  true,
+                       "execution_plan_validation_seal_chain_valid":  true,
+                       "audit_plan_seal_chain_valid":  true,
+                       "post_repair_confirmation_seal_chain_valid":  true,
+                       "readiness_review_seal_chain_valid":  true,
+                       "selection_decision_seal_chain_valid":  true,
+                       "readiness_map_seal_chain_valid":  true,
+                       "modern_integrity_clean":  true,
+                       "contract_validation_next_step_confirmed":  true
+                   },
+    "dry_run_result":  {
+                           "dry_run_execution_performed":  true,
+                           "non_productive_audit_simulation_performed":  true,
+                           "real_audit_runtime_performed":  false,
+                           "dashboard_runtime_performed":  false,
+                           "productive_runtime_performed":  false,
+                           "phases_total":  6,
+                           "phases_passed":  6,
+                           "phases_failed":  0,
+                           "overall_result":  "PASS",
+                           "simulated_phases":  [
+                                                    {
+                                                        "phase":  0,
+                                                        "id":  "DRY_RUN_PRECHECK",
+                                                        "pass":  true,
+                                                        "checks":  {
+                                                                       "repo_clean_synced":  true,
+                                                                       "head_equals_upstream":  true,
+                                                                       "branch":  "main",
+                                                                       "head":  "a3607a64fbb41895de8b150aed94d537a45a135b",
+                                                                       "upstream":  "a3607a64fbb41895de8b150aed94d537a45a135b",
+                                                                       "modern_integrity_clean":  true,
+                                                                       "required_evidence_present":  true,
+                                                                       "required_seal_chains_valid":  true
+                                                                   }
+                                                    },
+                                                    {
+                                                        "phase":  1,
+                                                        "id":  "DRY_RUN_EVIDENCE_INVENTORY",
+                                                        "pass":  true,
+                                                        "checks":  {
+                                                                       "total_manifests":  141,
+                                                                       "modern_hash_manifests":  26,
+                                                                       "legacy_manifests":  115,
+                                                                       "total_seals":  141,
+                                                                       "modern_seal_chains":  26,
+                                                                       "legacy_seals":  115,
+                                                                       "required_evidence_count":  36
+                                                                   }
+                                                    },
+                                                    {
+                                                        "phase":  2,
+                                                        "id":  "DRY_RUN_TRUTH_AUDIT_SIMULATION",
+                                                        "pass":  true,
+                                                        "checks":  {
+                                                                       "manifest_hash_mismatches":  0,
+                                                                       "manifest_missing_files":  0,
+                                                                       "seal_mismatches":  0,
+                                                                       "seal_missing_manifests":  0,
+                                                                       "contract_validation_chain_valid":  true,
+                                                                       "dry_run_contract_chain_valid":  true,
+                                                                       "execution_plan_build_chain_valid":  true,
+                                                                       "audit_plan_chain_valid":  true
+                                                                   }
+                                                    },
+                                                    {
+                                                        "phase":  3,
+                                                        "id":  "DRY_RUN_DASHBOARD_CONTRACT_SIMULATION",
+                                                        "pass":  true,
+                                                        "checks":  {
+                                                                       "read_only_status_tile_contract":  true,
+                                                                       "integrity_tile_contract":  true,
+                                                                       "evidence_inventory_tile_contract":  true,
+                                                                       "fail_closed_alert_tile_contract":  true,
+                                                                       "next_safe_step_tile_contract":  true,
+                                                                       "control_action_detected":  false,
+                                                                       "runtime_action_detected":  false,
+                                                                       "automation_trigger_detected":  false,
+                                                                       "queue_trigger_detected":  false,
+                                                                       "publication_trigger_detected":  false,
+                                                                       "argos_runtime_control_detected":  false
+                                                                   }
+                                                    },
+                                                    {
+                                                        "phase":  4,
+                                                        "id":  "DRY_RUN_FAIL_CLOSED_SIMULATION",
+                                                        "pass":  true,
+                                                        "checks":  {
+                                                                       "dirty_repo_stop_defined":  true,
+                                                                       "missing_evidence_stop_defined":  true,
+                                                                       "integrity_mismatch_stop_defined":  true,
+                                                                       "runtime_request_stop_defined":  true,
+                                                                       "productive_operation_stop_defined":  true,
+                                                                       "unexpected_dirty_scope_stop_defined":  true,
+                                                                       "silent_repair_path_detected":  false,
+                                                                       "partial_success_path_detected":  false
+                                                                   }
+                                                    },
+                                                    {
+                                                        "phase":  5,
+                                                        "id":  "DRY_RUN_RESULT_EVIDENCE_CONTRACT",
+                                                        "pass":  true,
+                                                        "checks":  {
+                                                                       "result_report_required":  true,
+                                                                       "result_manifest_required":  true,
+                                                                       "result_seal_required":  true,
+                                                                       "result_summary_required":  true,
+                                                                       "manifest_excludes_self_hash":  true,
+                                                                       "manifest_excludes_own_seal_hash":  true,
+                                                                       "post_dry_run_integrity_required":  true,
+                                                                       "repo_clean_after_commit_required":  true
+                                                                   }
+                                                    }
+                                                ]
+                       },
+    "blocked_actions":  {
+                            "dashboard_runtime_enabled":  false,
+                            "automation_enabled":  false,
+                            "publication_enabled":  false,
+                            "queue_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "productive_runtime_enabled":  false,
+                            "source_mutation_allowed":  false,
+                            "test_mutation_allowed":  false,
+                            "legacy_rewrite_allowed":  false,
+                            "legacy_move_allowed":  false,
+                            "legacy_delete_allowed":  false,
+                            "external_notifications_allowed":  false,
+                            "live_runtime_sources_allowed":  false,
+                            "control_actions_allowed":  false
+                        },
+    "evidence":  {
+                     "contract_validation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_CONTRACT_VALIDATION_REPORT.json",
+                     "dry_run_contract_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_CONTRACT_AFTER_EXECUTION_PLAN_BUILD_REPORT.json",
+                     "execution_plan_build_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_BUILD_REPORT.json",
+                     "execution_plan_validation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_VALIDATION_REPORT.json",
+                     "audit_plan_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PLAN_AFTER_REVIEW_REPORT.json",
+                     "post_repair_confirmation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_POST_REPAIR_CONFIRMATION_REPORT.json",
+                     "readiness_review_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_REPORT.json",
+                     "selection_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_GOVERNED_NEXT_LAYER_SELECTION_DECISION_AFTER_RECONCILIATION_READINESS_MAP_REPORT.json",
+                     "readiness_map_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REPORT.json"
+                 },
+    "inventory":  {
+                      "total_manifests":  141,
+                      "modern_hash_manifests":  26,
+                      "legacy_manifests":  115,
+                      "total_seals":  141,
+                      "modern_seal_chains":  26,
+                      "legacy_seals":  115
+                  },
+    "integrity":  {
+                      "modern_integrity_clean":  true,
+                      "modern_manifest_mismatches":  0,
+                      "modern_manifest_missing_files":  0,
+                      "unreadable_manifests":  0,
+                      "modern_seal_mismatches":  0,
+                      "modern_seal_missing_manifests":  0,
+                      "unreadable_seals":  0
+                  },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "modern_integrity_clean":  true,
+                  "dry_run_contract_validation_valid":  true,
+                  "non_productive_only":  true,
+                  "dry_run_execution_performed":  true,
+                  "non_productive_audit_simulation_performed":  true,
+                  "real_audit_runtime_performed":  false,
+                  "productive_operations_blocked":  true,
+                  "runtime_performed":  false,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false
+              },
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_RESULT_REVIEW_AFTER_EXECUTION"
+}
