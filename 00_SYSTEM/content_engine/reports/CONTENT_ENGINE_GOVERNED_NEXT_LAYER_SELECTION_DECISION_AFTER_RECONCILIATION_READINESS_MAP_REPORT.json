@@ -1,0 +1,76 @@
+{
+    "step":  "CONTENT_ENGINE_GOVERNED_NEXT_LAYER_SELECTION_DECISION_AFTER_RECONCILIATION_READINESS_MAP_BUILD",
+    "component":  "CONTENT_ENGINE_GOVERNED_NEXT_LAYER_SELECTION_DECISION_AFTER_RECONCILIATION_READINESS_MAP",
+    "status":  "GOVERNED_NEXT_LAYER_SELECTION_DECISION_CREATED",
+    "classification":  "EXACTLY_ONE_NEXT_LAYER_SELECTED_FOR_NON_PRODUCTIVE_READINESS_REVIEW",
+    "generated_at_utc":  "2026-06-23T05:45:20.1083384Z",
+    "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "selection_decision":  "SELECTED_FOR_NON_PRODUCTIVE_READINESS_REVIEW",
+    "selected_candidate_from_readiness_map":  {
+                                                  "layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+                                                  "readiness":  "READY_FOR_READINESS_REVIEW",
+                                                  "reason":  "Existing governance and observability evidence can be reviewed as a candidate next maturity layer, but should not be assumed selected until governed selection.",
+                                                  "allowed_next_action":  "Run a readiness review only, not productive runtime.",
+                                                  "productive_runtime_allowed":  false,
+                                                  "requires_user_authorization":  true
+                                              },
+    "decision_basis":  {
+                           "readiness_map_valid":  true,
+                           "readiness_map_productive_runtime_allowed":  false,
+                           "readiness_map_requires_user_authorization":  true,
+                           "selected_layer_readiness":  "READY_FOR_READINESS_REVIEW",
+                           "selected_layer_productive_runtime_allowed":  false,
+                           "selected_layer_requires_user_authorization":  true,
+                           "modern_integrity_clean":  true,
+                           "gate_close_seal_chain_valid":  true,
+                           "normalization_seal_chain_valid":  true,
+                           "readiness_map_seal_chain_valid":  true
+                       },
+    "explicit_blocks":  {
+                            "automation_layer_selected":  false,
+                            "publication_layer_selected":  false,
+                            "queue_layer_selected":  false,
+                            "argos_runtime_extension_selected":  false,
+                            "productive_runtime_allowed":  false,
+                            "productive_operations_blocked":  true
+                        },
+    "evidence":  {
+                     "readiness_map_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REPORT.json",
+                     "readiness_map_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_MANIFEST.json",
+                     "readiness_map_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_SEAL.json",
+                     "gate_close_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                     "gate_close_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION_SEAL.json",
+                     "normalization_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFICATION_MANIFEST.json",
+                     "normalization_seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_HISTORICAL_EVIDENCE_NORMALIZATION_CLASSIFICATION_SEAL.json"
+                 },
+    "inventory":  {
+                      "total_manifests":  132,
+                      "modern_hash_manifests":  17,
+                      "legacy_manifests":  115,
+                      "total_seals":  132,
+                      "modern_seal_chains":  17,
+                      "legacy_seals":  115
+                  },
+    "integrity":  {
+                      "modern_manifest_mismatches":  0,
+                      "modern_manifest_missing_files":  0,
+                      "unreadable_manifests":  0,
+                      "modern_seal_mismatches":  0,
+                      "modern_seal_missing_manifests":  0,
+                      "unreadable_seals":  0,
+                      "modern_integrity_clean":  true
+                  },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "readiness_map_valid":  true,
+                  "exactly_one_layer_selected":  true,
+                  "selected_layer_ready_for_readiness_review":  true,
+                  "productive_runtime_allowed":  false,
+                  "productive_operations_blocked":  true,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false,
+                  "runtime_performed":  false
+              },
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION"
+}
