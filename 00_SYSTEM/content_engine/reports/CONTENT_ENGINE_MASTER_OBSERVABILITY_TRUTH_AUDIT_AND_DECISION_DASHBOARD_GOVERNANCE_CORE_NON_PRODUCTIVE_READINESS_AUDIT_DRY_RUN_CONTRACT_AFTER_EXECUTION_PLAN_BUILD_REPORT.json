@@ -1,0 +1,268 @@
+{
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_CONTRACT_AFTER_EXECUTION_PLAN_BUILD_BUILD",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_CONTRACT_AFTER_EXECUTION_PLAN_BUILD",
+    "status":  "NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_CONTRACT_BUILT",
+    "classification":  "GOVERNED_NON_PRODUCTIVE_DRY_RUN_CONTRACT_ONLY",
+    "generated_at_utc":  "2026-06-23T08:06:35.6828281Z",
+    "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "validated_previous_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_BUILD",
+    "purpose":  "Build the contract for a future non-productive dry run without executing the audit, dashboard runtime, automation, queue, publication, ARGOS, or productive runtime.",
+    "foundation":  {
+                       "repo_clean_synced":  true,
+                       "execution_plan_build_seal_chain_valid":  true,
+                       "execution_plan_validation_seal_chain_valid":  true,
+                       "audit_plan_seal_chain_valid":  true,
+                       "post_repair_confirmation_seal_chain_valid":  true,
+                       "readiness_review_seal_chain_valid":  true,
+                       "selection_decision_seal_chain_valid":  true,
+                       "readiness_map_seal_chain_valid":  true,
+                       "modern_integrity_clean":  true,
+                       "execution_plan_next_step_confirmed":  true,
+                       "execution_plan_audit_execution_not_performed":  true
+                   },
+    "dry_run_contract":  {
+                             "contract_mode":  "NON_PRODUCTIVE_DRY_RUN_CONTRACT_ONLY",
+                             "dry_run_execution_performed_now":  false,
+                             "audit_execution_performed_now":  false,
+                             "dashboard_runtime_performed_now":  false,
+                             "contract_objective":  "Define how a future dry run will simulate audit checks using existing evidence only, without touching runtime systems or productive state.",
+                             "allowed_future_dry_run_operations":  [
+                                                                       "read_existing_reports",
+                                                                       "read_existing_manifests",
+                                                                       "read_existing_seals",
+                                                                       "read_existing_summaries",
+                                                                       "scan_modern_integrity",
+                                                                       "verify_seal_chains",
+                                                                       "simulate_truth_source_precedence_checks",
+                                                                       "simulate_dashboard_read_only_tile_mapping",
+                                                                       "simulate_fail_closed_stop_conditions",
+                                                                       "write_dry_run_result_evidence_only"
+                                                                   ],
+                             "blocked_future_dry_run_operations":  [
+                                                                       "execute_dashboard_runtime",
+                                                                       "trigger_automation",
+                                                                       "publish_results",
+                                                                       "process_queue",
+                                                                       "activate_argos_runtime",
+                                                                       "execute_productive_runtime",
+                                                                       "mutate_source_files",
+                                                                       "mutate_test_files",
+                                                                       "rewrite_legacy_evidence",
+                                                                       "move_legacy_evidence",
+                                                                       "delete_legacy_evidence",
+                                                                       "connect_live_runtime_sources",
+                                                                       "send_external_notifications",
+                                                                       "perform_control_actions"
+                                                                   ],
+                             "required_future_dry_run_inputs":  [
+                                                                    "dry_run_contract_report",
+                                                                    "dry_run_contract_manifest",
+                                                                    "dry_run_contract_seal",
+                                                                    "dry_run_contract_summary",
+                                                                    "execution_plan_build_report",
+                                                                    "execution_plan_build_manifest",
+                                                                    "execution_plan_build_seal",
+                                                                    "execution_plan_validation_report",
+                                                                    "audit_plan_report",
+                                                                    "post_repair_confirmation_report",
+                                                                    "readiness_review_report",
+                                                                    "selection_decision_report",
+                                                                    "readiness_map_report"
+                                                                ],
+                             "required_future_dry_run_outputs":  [
+                                                                     "dry_run_result_report",
+                                                                     "dry_run_result_manifest",
+                                                                     "dry_run_result_seal",
+                                                                     "dry_run_result_summary"
+                                                                 ],
+                             "dry_run_phases":  [
+                                                    {
+                                                        "phase":  0,
+                                                        "id":  "DRY_RUN_PRECHECK",
+                                                        "objective":  "Confirm the future dry run starts from a clean/synced repo and clean modern integrity.",
+                                                        "simulated_checks":  [
+                                                                                 "repo_clean_synced",
+                                                                                 "head_equals_upstream",
+                                                                                 "modern_integrity_clean",
+                                                                                 "required_evidence_present",
+                                                                                 "required_seal_chains_valid"
+                                                                             ],
+                                                        "stop_on":  [
+                                                                        "dirty_repo",
+                                                                        "head_not_equal_upstream",
+                                                                        "modern_integrity_not_clean",
+                                                                        "missing_evidence",
+                                                                        "invalid_seal_chain"
+                                                                    ]
+                                                    },
+                                                    {
+                                                        "phase":  1,
+                                                        "id":  "DRY_RUN_EVIDENCE_INVENTORY",
+                                                        "objective":  "Simulate inventory of all evidence required for observability/truth audit/dashboard decision support.",
+                                                        "simulated_checks":  [
+                                                                                 "count_reports",
+                                                                                 "count_manifests",
+                                                                                 "count_seals",
+                                                                                 "classify_modern_vs_legacy",
+                                                                                 "list_required_evidence"
+                                                                             ],
+                                                        "stop_on":  [
+                                                                        "unreadable_report",
+                                                                        "unreadable_manifest",
+                                                                        "unreadable_seal",
+                                                                        "unknown_required_evidence"
+                                                                    ]
+                                                    },
+                                                    {
+                                                        "phase":  2,
+                                                        "id":  "DRY_RUN_TRUTH_AUDIT_SIMULATION",
+                                                        "objective":  "Simulate truth-source precedence validation from existing evidence only.",
+                                                        "simulated_checks":  [
+                                                                                 "report_to_manifest_reference",
+                                                                                 "manifest_file_hashes",
+                                                                                 "seal_to_manifest_hash",
+                                                                                 "git_head_to_upstream",
+                                                                                 "conflict_detection"
+                                                                             ],
+                                                        "stop_on":  [
+                                                                        "manifest_hash_mismatch",
+                                                                        "seal_manifest_hash_mismatch",
+                                                                        "truth_source_conflict",
+                                                                        "missing_authoritative_source"
+                                                                    ]
+                                                    },
+                                                    {
+                                                        "phase":  3,
+                                                        "id":  "DRY_RUN_DASHBOARD_CONTRACT_SIMULATION",
+                                                        "objective":  "Simulate what a future read-only decision dashboard may display without enabling runtime actions.",
+                                                        "simulated_checks":  [
+                                                                                 "read_only_status_tile_contract",
+                                                                                 "integrity_tile_contract",
+                                                                                 "evidence_inventory_tile_contract",
+                                                                                 "fail_closed_alert_tile_contract",
+                                                                                 "next_safe_step_tile_contract"
+                                                                             ],
+                                                        "stop_on":  [
+                                                                        "control_action_detected",
+                                                                        "automation_trigger_detected",
+                                                                        "queue_trigger_detected",
+                                                                        "publication_trigger_detected",
+                                                                        "argos_runtime_control_detected"
+                                                                    ]
+                                                    },
+                                                    {
+                                                        "phase":  4,
+                                                        "id":  "DRY_RUN_FAIL_CLOSED_SIMULATION",
+                                                        "objective":  "Simulate failure handling and confirm every unsafe/unclear condition stops progression.",
+                                                        "simulated_checks":  [
+                                                                                 "dirty_repo_stop",
+                                                                                 "missing_evidence_stop",
+                                                                                 "integrity_mismatch_stop",
+                                                                                 "runtime_request_stop",
+                                                                                 "productive_operation_stop",
+                                                                                 "unexpected_dirty_scope_stop"
+                                                                             ],
+                                                        "stop_on":  [
+                                                                        "any_failure_mode_without_stop_and_review",
+                                                                        "partial_success_path",
+                                                                        "silent_repair_path"
+                                                                    ]
+                                                    },
+                                                    {
+                                                        "phase":  5,
+                                                        "id":  "DRY_RUN_RESULT_EVIDENCE_CONTRACT",
+                                                        "objective":  "Define what the future dry run result evidence must contain.",
+                                                        "simulated_checks":  [
+                                                                                 "result_status",
+                                                                                 "result_pass_boolean",
+                                                                                 "simulated_phase_results",
+                                                                                 "blocked_actions_confirmation",
+                                                                                 "modern_integrity_after_dry_run",
+                                                                                 "repo_clean_after_commit"
+                                                                             ],
+                                                        "stop_on":  [
+                                                                        "missing_result_report_contract",
+                                                                        "manifest_includes_self_hash",
+                                                                        "manifest_includes_own_seal_hash",
+                                                                        "post_dry_run_integrity_not_clean"
+                                                                    ]
+                                                    }
+                                                ],
+                             "global_stop_conditions":  [
+                                                            "repo_dirty",
+                                                            "head_not_equal_upstream",
+                                                            "modern_integrity_not_clean",
+                                                            "required_evidence_missing",
+                                                            "required_evidence_unreadable",
+                                                            "seal_chain_invalid",
+                                                            "manifest_hash_mismatch",
+                                                            "self_hash_detected",
+                                                            "own_seal_hash_detected",
+                                                            "runtime_action_requested",
+                                                            "productive_operation_requested",
+                                                            "dashboard_control_action_detected",
+                                                            "automation_publication_queue_or_argos_detected",
+                                                            "unexpected_dirty_scope",
+                                                            "unexpected_staged_scope",
+                                                            "commit_failure",
+                                                            "push_failure"
+                                                        ]
+                         },
+    "blocked_actions":  {
+                            "dry_run_execution_now":  false,
+                            "audit_execution_now":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "automation_enabled":  false,
+                            "publication_enabled":  false,
+                            "queue_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "productive_runtime_enabled":  false,
+                            "source_mutation_allowed":  false,
+                            "test_mutation_allowed":  false,
+                            "legacy_rewrite_allowed":  false,
+                            "legacy_move_allowed":  false,
+                            "legacy_delete_allowed":  false
+                        },
+    "evidence":  {
+                     "execution_plan_build_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_BUILD_REPORT.json",
+                     "execution_plan_validation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_EXECUTION_PLAN_VALIDATION_REPORT.json",
+                     "audit_plan_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PLAN_AFTER_REVIEW_REPORT.json",
+                     "post_repair_confirmation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_POST_REPAIR_CONFIRMATION_REPORT.json",
+                     "readiness_review_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_READINESS_REVIEW_AFTER_GOVERNED_SELECTION_REPORT.json",
+                     "selection_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_GOVERNED_NEXT_LAYER_SELECTION_DECISION_AFTER_RECONCILIATION_READINESS_MAP_REPORT.json",
+                     "readiness_map_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_NEXT_LAYER_READINESS_MAP_AFTER_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REPORT.json"
+                 },
+    "inventory":  {
+                      "total_manifests":  139,
+                      "modern_hash_manifests":  24,
+                      "legacy_manifests":  115,
+                      "total_seals":  139,
+                      "modern_seal_chains":  24,
+                      "legacy_seals":  115
+                  },
+    "integrity":  {
+                      "modern_integrity_clean":  true,
+                      "modern_manifest_mismatches":  0,
+                      "modern_manifest_missing_files":  0,
+                      "unreadable_manifests":  0,
+                      "modern_seal_mismatches":  0,
+                      "modern_seal_missing_manifests":  0,
+                      "unreadable_seals":  0
+                  },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "modern_integrity_clean":  true,
+                  "execution_plan_build_valid":  true,
+                  "non_productive_only":  true,
+                  "dry_run_execution_performed":  false,
+                  "audit_execution_performed":  false,
+                  "productive_operations_blocked":  true,
+                  "runtime_performed":  false,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false
+              },
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_DRY_RUN_CONTRACT_VALIDATION"
+}
