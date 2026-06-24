@@ -1,0 +1,178 @@
+{
+    "step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED_AFTER_GATE_CLOSE_VALIDATION_BUILD_V1",
+    "component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED_AFTER_GATE_CLOSE_VALIDATION",
+    "status":  "NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED",
+    "classification":  "GOVERNED_NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSE_ONLY",
+    "generated_at_utc":  "2026-06-24T03:57:33.1610920Z",
+    "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "consumed_previous_component":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION_AFTER_COMPLETION_DECISION_GATE",
+    "phase_close":  {
+                        "gate_close_validation_consumed":  true,
+                        "gate_close_validation_status":  "NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATED",
+                        "gate_close_validation_classification":  "GOVERNED_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION_ONLY",
+                        "completion_decision_gate_result":  "GO",
+                        "completion_decision_status":  "READY_FOR_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION",
+                        "completion_decision":  "NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CAN_CLOSE",
+                        "previous_audit_overall_result":  "PASS",
+                        "previous_result_review_overall_result":  "PASS",
+                        "completion_gate_overall_result":  "PASS",
+                        "gate_close_overall_result":  "PASS",
+                        "gate_close_validated":  true,
+                        "phase_closure_authorized":  true,
+                        "phase_closed":  true,
+                        "phase_close_status":  "NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED",
+                        "closed_checks_total":  10,
+                        "closed_checks_passed":  10,
+                        "closed_checks_failed":  0,
+                        "closed_overall_result":  "PASS",
+                        "closed_checks":  [
+                                              {
+                                                  "id":  "PHASE_CLOSED_PRECHECK_REPO_CLEAN_SYNCED",
+                                                  "pass":  true,
+                                                  "finding":  "Repo is clean, on main, and HEAD equals upstream before phase close declaration.",
+                                                  "evidence":  {
+                                                                   "branch":  "main",
+                                                                   "head":  "40ac8b2ea9665c5c5021af822c2315349799373e",
+                                                                   "upstream":  "40ac8b2ea9665c5c5021af822c2315349799373e",
+                                                                   "dirty_count":  0
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_GATE_CLOSE_ARTIFACTS_PRESENT",
+                                                  "pass":  true,
+                                                  "finding":  "Gate close validation report, manifest, seal, and summary are present.",
+                                                  "evidence":  {
+                                                                   "required_evidence_count":  4,
+                                                                   "required_evidence":  [
+                                                                                             "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION_AFTER_COMPLETION_DECISION_GATE_REPORT.json",
+                                                                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION_AFTER_COMPLETION_DECISION_GATE_MANIFEST.json",
+                                                                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION_AFTER_COMPLETION_DECISION_GATE_SEAL.json",
+                                                                                             "05_REPORTS/content_engine/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION_AFTER_COMPLETION_DECISION_GATE_SUMMARY.md"
+                                                                                         ]
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_GATE_CLOSE_STATUS_VALID",
+                                                  "pass":  true,
+                                                  "finding":  "Gate close validation status and classification are valid.",
+                                                  "evidence":  {
+                                                                   "status":  "NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATED",
+                                                                   "classification":  "GOVERNED_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION_ONLY",
+                                                                   "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED_AFTER_GATE_CLOSE_VALIDATION"
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_COMPLETION_DECISION_GATE_GO",
+                                                  "pass":  true,
+                                                  "finding":  "Completion decision gate was consumed and result was GO.",
+                                                  "evidence":  {
+                                                                   "completion_decision_gate_consumed":  true,
+                                                                   "completion_decision_gate_result":  "GO",
+                                                                   "completion_decision_status":  "READY_FOR_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION",
+                                                                   "completion_decision":  "NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CAN_CLOSE"
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_PRIOR_RESULTS_PASS",
+                                                  "pass":  true,
+                                                  "finding":  "Previous audit, result review, completion gate, and gate close validation all passed.",
+                                                  "evidence":  {
+                                                                   "previous_audit_overall_result":  "PASS",
+                                                                   "previous_result_review_overall_result":  "PASS",
+                                                                   "completion_gate_overall_result":  "PASS",
+                                                                   "gate_close_overall_result":  "PASS"
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_CLOSURE_AUTHORIZED",
+                                                  "pass":  true,
+                                                  "finding":  "Gate close was validated and phase closure was authorized.",
+                                                  "evidence":  {
+                                                                   "gate_close_validated":  true,
+                                                                   "phase_closure_authorized":  true,
+                                                                   "phase_close_status":  "NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED"
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_GATE_CLOSE_CHECKS_PASS",
+                                                  "pass":  true,
+                                                  "finding":  "Gate close checks passed.",
+                                                  "evidence":  {
+                                                                   "gate_close_checks_total":  9,
+                                                                   "gate_close_checks_passed":  9,
+                                                                   "gate_close_checks_failed":  0,
+                                                                   "gate_close_overall_result":  "PASS"
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_GATE_CLOSE_SEAL_VALID",
+                                                  "pass":  true,
+                                                  "finding":  "Gate close validation seal points to its manifest and manifest hash matches.",
+                                                  "evidence":  {
+                                                                   "seal_manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_NON_PRODUCTIVE_READINESS_AUDIT_GATE_CLOSE_VALIDATION_AFTER_COMPLETION_DECISION_GATE_MANIFEST.json",
+                                                                   "seal_manifest_hash":  "f725b1d1fd52bffcb3ad0abbbc94228291fed34de92e42724e1d0236a711bba9",
+                                                                   "actual_manifest_hash":  "f725b1d1fd52bffcb3ad0abbbc94228291fed34de92e42724e1d0236a711bba9"
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_NO_RUNTIME_OR_PRODUCTIVE_ACTIONS",
+                                                  "pass":  true,
+                                                  "finding":  "Phase close declaration does not execute runtime, dashboard, automation, publication, queue, ARGOS, or productive actions.",
+                                                  "evidence":  {
+                                                                   "new_audit_execution_performed":  false,
+                                                                   "dashboard_runtime_enabled":  false,
+                                                                   "automation_enabled":  false,
+                                                                   "publication_enabled":  false,
+                                                                   "queue_enabled":  false,
+                                                                   "argos_runtime_enabled":  false,
+                                                                   "productive_runtime_performed":  false
+                                                               }
+                                              },
+                                              {
+                                                  "id":  "PHASE_CLOSED_NEXT_SAFE_STEP_DECLARED",
+                                                  "pass":  true,
+                                                  "finding":  "Next safe step is declared as awaiting the next authorized governed scope.",
+                                                  "evidence":  {
+                                                                   "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_AFTER_NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED"
+                                                               }
+                                              }
+                                          ]
+                    },
+    "blocked_actions":  {
+                            "new_audit_execution_allowed":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "automation_enabled":  false,
+                            "publication_enabled":  false,
+                            "queue_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "productive_runtime_enabled":  false,
+                            "source_mutation_allowed":  false,
+                            "test_mutation_allowed":  false,
+                            "legacy_rewrite_allowed":  false,
+                            "legacy_move_allowed":  false,
+                            "legacy_delete_allowed":  false,
+                            "control_actions_allowed":  false
+                        },
+    "gates":  {
+                  "repo_clean_synced":  true,
+                  "gate_close_validation_consumed":  true,
+                  "gate_close_validation_pass":  true,
+                  "completion_decision_gate_go":  true,
+                  "previous_audit_result_pass":  true,
+                  "previous_result_review_pass":  true,
+                  "completion_gate_pass":  true,
+                  "gate_close_pass":  true,
+                  "phase_closure_authorized":  true,
+                  "phase_closed":  true,
+                  "non_productive_only":  true,
+                  "productive_operations_blocked":  true,
+                  "runtime_performed":  false,
+                  "source_files_written":  false,
+                  "test_files_written":  false,
+                  "legacy_evidence_rewritten":  false,
+                  "legacy_evidence_moved":  false,
+                  "legacy_evidence_deleted":  false
+              },
+    "next_safe_step":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_AFTER_NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED"
+}
