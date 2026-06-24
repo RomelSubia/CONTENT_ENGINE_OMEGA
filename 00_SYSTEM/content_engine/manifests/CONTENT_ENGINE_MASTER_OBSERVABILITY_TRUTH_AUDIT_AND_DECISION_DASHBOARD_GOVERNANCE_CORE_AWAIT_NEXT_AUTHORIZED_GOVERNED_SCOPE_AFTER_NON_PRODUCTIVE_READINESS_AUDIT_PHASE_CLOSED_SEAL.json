@@ -4,7 +4,7 @@
     "status":  "AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE",
     "classification":  "GOVERNED_AWAIT_STATE_AFTER_NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED",
     "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_AFTER_NON_PRODUCTIVE_READINESS_AUDIT_PHASE_CLOSED_MANIFEST.json",
-    "manifest_sha256":  "b11d18a3461217df6cba4719aae638551124f953247168ff44e813e3bb07b828",
+    "manifest_sha256":  "ec4d823a869293509e11d8830d852b05336c56be24295c3c76f6f516305295ca",
     "selected_layer":  "CONTENT_ENGINE_MASTER_OBSERVABILITY_TRUTH_AUDIT_AND_DECISION_DASHBOARD_GOVERNANCE_CORE",
     "circular_hash_prevention":  true,
     "phase_closed_evidence_consumed":  true,
@@ -37,5 +37,5 @@
     "legacy_evidence_deleted":  false,
     "gates_passed":  true,
     "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_NEXT_GOVERNED_SCOPE",
-    "generated_at_utc":  "2026-06-24T04:26:12.5340845Z"
+    "generated_at_utc":  "2026-06-24T05:34:35.3898991Z"
 }
