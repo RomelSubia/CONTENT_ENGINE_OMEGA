@@ -1,0 +1,17 @@
+{
+    "generated_at_utc":  "2026-07-02T05:06:51.6685005Z",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE",
+    "status":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_CLOSED",
+    "build":  "V2",
+    "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_MANIFEST.json",
+    "manifest_sha256":  "47894dff9580087af819815c4b53bb06f7f186e9b65d37e9ab4dc5b93e129457",
+    "sealed":  true,
+    "seal_policy":  {
+                        "close_gate_only":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true,
+                        "await_next_authorized_governed_scope":  true
+                    }
+}

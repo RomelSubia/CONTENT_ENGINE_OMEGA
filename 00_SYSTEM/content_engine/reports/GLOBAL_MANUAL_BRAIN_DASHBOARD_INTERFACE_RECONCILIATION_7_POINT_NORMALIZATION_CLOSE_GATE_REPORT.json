@@ -1,0 +1,138 @@
+{
+    "generated_at_utc":  "2026-07-02T05:06:51.6312346Z",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE",
+    "build":  "V2",
+    "pass":  true,
+    "status":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_CLOSED",
+    "classification":  "GOVERNED_DOCUMENTARY_7_POINT_NORMALIZATION_CLOSE_GATE_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "eb230ced2befb84a1ddc258cd641bb46232428c8",
+                     "upstream":  "eb230ced2befb84a1ddc258cd641bb46232428c8",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_post_execution_audit":  {
+                                          "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_POST_EXECUTION_AUDIT",
+                                          "status":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_POST_EXECUTION_AUDIT_PASSED",
+                                          "build":  "V1",
+                                          "report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_POST_EXECUTION_AUDIT_REPORT.json",
+                                          "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_POST_EXECUTION_AUDIT_MANIFEST.json",
+                                          "seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_POST_EXECUTION_AUDIT_SEAL.json",
+                                          "summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_POST_EXECUTION_AUDIT_SUMMARY.md",
+                                          "report_hash_matches_manifest":  true,
+                                          "summary_hash_matches_manifest":  true,
+                                          "seal_manifest_sha256_valid":  true
+                                      },
+    "closed_normalization":  {
+                                 "seven_points_total":  7,
+                                 "seven_points_normalized":  7,
+                                 "complete_after_documentary_normalization":  true,
+                                 "close_gate_pass":  true,
+                                 "close_gate_status":  "CLOSED",
+                                 "closed_point_ids":  [
+                                                          "01_main_screen",
+                                                          "02_panel_map",
+                                                          "03_button_list",
+                                                          "04_clickable_or_pressable_buttons",
+                                                          "05_authorized_actions",
+                                                          "06_blocked_actions",
+                                                          "07_user_argos_hud_flow"
+                                                      ],
+                                 "closed_gap_point_ids":  [
+                                                              "02_panel_map",
+                                                              "03_button_list",
+                                                              "04_clickable_or_pressable_buttons",
+                                                              "05_authorized_actions"
+                                                          ]
+                             },
+    "runtime_close_state":  {
+                                "dashboard_runtime_performed":  false,
+                                "argos_runtime_performed":  false,
+                                "button_runtime_performed":  false,
+                                "productive_runtime_performed":  false,
+                                "future_scope_runtime_performed":  false,
+                                "all_runtime_blocked":  true
+                            },
+    "safety_close_state":  {
+                               "safety_preserved":  true,
+                               "dashboard_runtime_blocked":  true,
+                               "argos_runtime_blocked":  true,
+                               "button_runtime_blocked":  true,
+                               "productive_actions_blocked":  true
+                           },
+    "close_gate":  {
+                       "gate_type":  "documentary_7_point_normalization_close_gate",
+                       "close_pass":  true,
+                       "checks_total":  10,
+                       "checks_passed":  10,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before close gate."
+                                      },
+                                      {
+                                          "id":  "post_execution_audit_consumed",
+                                          "pass":  true,
+                                          "detail":  "Passed post-execution audit report, manifest, seal and summary consumed."
+                                      },
+                                      {
+                                          "id":  "post_execution_audit_identity_valid",
+                                          "pass":  true,
+                                          "detail":  "Audit component, status, build, pass and classification are valid."
+                                      },
+                                      {
+                                          "id":  "post_execution_audit_manifest_valid",
+                                          "pass":  true,
+                                          "detail":  "Audit manifest identity is valid and hashes audit report/summary correctly."
+                                      },
+                                      {
+                                          "id":  "post_execution_audit_seal_valid",
+                                          "pass":  true,
+                                          "detail":  "Audit seal references manifest and manifest hash matches."
+                                      },
+                                      {
+                                          "id":  "seven_points_closed",
+                                          "pass":  true,
+                                          "detail":  "All seven dashboard/HUD points are normalized, audited and closed."
+                                      },
+                                      {
+                                          "id":  "four_gap_points_closed",
+                                          "pass":  true,
+                                          "detail":  "Panel map, button list, clickable buttons and authorized actions are closed."
+                                      },
+                                      {
+                                          "id":  "runtime_blocks_closed",
+                                          "pass":  true,
+                                          "detail":  "Dashboard runtime, ARGOS runtime, button runtime and productive runtime remained false."
+                                      },
+                                      {
+                                          "id":  "safety_preserved",
+                                          "pass":  true,
+                                          "detail":  "Safety blocks remained true throughout the normalization cycle."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Close gate output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE"
+}
