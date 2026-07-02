@@ -1,0 +1,15 @@
+{
+    "generated_at_utc":  "2026-07-02T04:12:26.1690441Z",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE",
+    "status":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE_PASSED",
+    "build":  "V4",
+    "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE_MANIFEST.json",
+    "manifest_sha256":  "8585f6ec65be8500b26f8ac269f05007f785f102eab44d289b082c5f666caa92",
+    "sealed":  true,
+    "seal_policy":  {
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_productive_runtime":  true,
+                        "no_future_scope_execution":  true
+                    }
+}

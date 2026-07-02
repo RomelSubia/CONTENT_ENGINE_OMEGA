@@ -1,0 +1,538 @@
+{
+    "generated_at_utc":  "2026-07-02T04:12:26.1245823Z",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE",
+    "build":  "V4",
+    "pass":  true,
+    "status":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE_PASSED",
+    "classification":  "GOVERNED_DOCUMENTARY_NORMALIZATION_READINESS_GATE_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "e079e27fbe7f2e9c0ba1bfbaf34f8064b2701ec5",
+                     "upstream":  "e079e27fbe7f2e9c0ba1bfbaf34f8064b2701ec5",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "source_files":  [
+                         {
+                             "path":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_REPORT.json",
+                             "exists":  true,
+                             "file_type":  "json",
+                             "status":  "BLUEPRINT_DEFINED",
+                             "classification":  "DESIGN_ONLY_RECONCILIATION_BLUEPRINT",
+                             "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+                             "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING",
+                             "root_keys":  [
+                                               "step",
+                                               "component",
+                                               "phase",
+                                               "status",
+                                               "classification",
+                                               "generated_at_utc",
+                                               "consumed",
+                                               "purpose",
+                                               "reconciliation_scope",
+                                               "truth_model",
+                                               "reconciliation_rules",
+                                               "required_future_artifacts",
+                                               "required_future_gates",
+                                               "blocked_in_this_step",
+                                               "gates",
+                                               "next_safe_step"
+                                           ],
+                             "sha256":  "914d21cfa98e6160912e67bbc1e7eaf123ba404e63639961e5188769d09cc038"
+                         },
+                         {
+                             "path":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_REPORT.json",
+                             "exists":  true,
+                             "file_type":  "json",
+                             "status":  "REVIEW_HARDENING_DEFINED",
+                             "classification":  "RECONCILIATION_BLUEPRINT_HARDENED_DESIGN_ONLY",
+                             "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+                             "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW",
+                             "root_keys":  [
+                                               "step",
+                                               "component",
+                                               "phase",
+                                               "status",
+                                               "classification",
+                                               "generated_at_utc",
+                                               "consumed",
+                                               "objective",
+                                               "hardening_principle",
+                                               "evidence_hierarchy",
+                                               "truth_object_contract",
+                                               "layer_boundaries",
+                                               "hardened_rules",
+                                               "dashboard_visualization_gate",
+                                               "interface_hud_gate",
+                                               "capability_matrix_hardening",
+                                               "risk_matrix_hardening",
+                                               "acceptance_gates_for_future_reconciliation",
+                                               "failure_modes",
+                                               "still_blocked",
+                                               "gates",
+                                               "next_safe_step"
+                                           ],
+                             "sha256":  "287a83e03a416c2226f37a4ecbd767a53deb39d54848e2642b2ae2e770543f08"
+                         },
+                         {
+                             "path":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_REPORT.json",
+                             "exists":  true,
+                             "file_type":  "json",
+                             "status":  "IMPLEMENTATION_PLAN_DEFINED",
+                             "classification":  "PLAN_ONLY_APPROVED_FOR_AUTOMATIC_BLOCK_BUILD",
+                             "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+                             "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_AUTOMATIC_BLOCK_BUILD",
+                             "root_keys":  [
+                                               "step",
+                                               "component",
+                                               "phase",
+                                               "status",
+                                               "classification",
+                                               "generated_at_utc",
+                                               "consumed",
+                                               "future_build_allowlist",
+                                               "implementation_contract",
+                                               "test_contract",
+                                               "future_automatic_block_build_gates",
+                                               "future_post_build_audit_gates",
+                                               "future_gate_close_validation_gates",
+                                               "still_blocked_in_this_step",
+                                               "gates",
+                                               "next_safe_step"
+                                           ],
+                             "sha256":  "edc9021f22dffb3bd68367c526fef1775529f53500dae02ca52e91ba69414ec8"
+                         },
+                         {
+                             "path":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_FINAL_APPROVAL_REVIEW_REPORT.json",
+                             "exists":  true,
+                             "file_type":  "json",
+                             "status":  "FINAL_APPROVAL_REVIEWED",
+                             "classification":  "RECONCILIATION_DESIGN_APPROVED_FOR_IMPLEMENTATION_PLAN_ONLY",
+                             "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+                             "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN",
+                             "root_keys":  [
+                                               "step",
+                                               "component",
+                                               "phase",
+                                               "status",
+                                               "classification",
+                                               "generated_at_utc",
+                                               "consumed",
+                                               "approval_decision",
+                                               "approved_design_scope",
+                                               "approval_gates",
+                                               "next_safe_step"
+                                           ],
+                             "sha256":  "740a86d2494ae7c1e9b07c9228e47903a3c68fbb518cdddbb20832bd9df90b42"
+                         },
+                         {
+                             "path":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_POST_BUILD_AUDIT_REPORT.json",
+                             "exists":  true,
+                             "file_type":  "json",
+                             "status":  "POST_BUILD_AUDITED",
+                             "classification":  "CURRENT_BUILD_RESEAL_CONSUMED_SOURCE_TEST_STABLE_SYSTEM_STABILIZATION",
+                             "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION",
+                             "next_safe_step":  "CONTENT_ENGINE_GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_GATE_CLOSE_VALIDATION",
+                             "root_keys":  [
+                                               "step",
+                                               "component",
+                                               "phase",
+                                               "status",
+                                               "classification",
+                                               "generated_at_utc",
+                                               "consumed",
+                                               "source",
+                                               "test",
+                                               "validations",
+                                               "gates",
+                                               "next_safe_step"
+                                           ],
+                             "sha256":  "ba3879fe8e482475d21798d5415293279724e9f0c53177e0b273898d5ca0c98f"
+                         },
+                         {
+                             "path":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_BLUEPRINT_SUMMARY.md",
+                             "exists":  true,
+                             "file_type":  "text",
+                             "status":  "",
+                             "classification":  "",
+                             "component":  "",
+                             "next_safe_step":  "",
+                             "root_keys":  [
+
+                                           ],
+                             "sha256":  "18c0058aa895eba76f182b865e65d18262e2f9855d5f689ddf787364065fde36"
+                         },
+                         {
+                             "path":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_REVIEW_HARDENING_SUMMARY.md",
+                             "exists":  true,
+                             "file_type":  "text",
+                             "status":  "",
+                             "classification":  "",
+                             "component":  "",
+                             "next_safe_step":  "",
+                             "root_keys":  [
+
+                                           ],
+                             "sha256":  "27565bb59b66310b8ec9f916468e7e3a84a7d27b126ab4c693e49067be50551a"
+                         },
+                         {
+                             "path":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_IMPLEMENTATION_PLAN_SUMMARY.md",
+                             "exists":  true,
+                             "file_type":  "text",
+                             "status":  "",
+                             "classification":  "",
+                             "component":  "",
+                             "next_safe_step":  "",
+                             "root_keys":  [
+
+                                           ],
+                             "sha256":  "eec80fa960a31adeffbd19299ce04c9735e2b84a3dc092eab9d8cdd105766ba2"
+                         }
+                     ],
+    "seven_point_gap_report":  [
+                                   {
+                                       "id":  "01_main_screen",
+                                       "label":  "Pantalla principal / main screen",
+                                       "expected_content":  "Definir la pantalla principal o interfaz base donde se presenta el dashboard/HUD.",
+                                       "present":  true,
+                                       "total_hits":  274,
+                                       "matched_terms":  [
+                                                             {
+                                                                 "term":  "dashboard",
+                                                                 "count":  132
+                                                             },
+                                                             {
+                                                                 "term":  "interface",
+                                                                 "count":  129
+                                                             },
+                                                             {
+                                                                 "term":  "visual",
+                                                                 "count":  13
+                                                             }
+                                                         ],
+                                       "gap":  false,
+                                       "recommendation":  "Preserve and cite this evidence during normalization."
+                                   },
+                                   {
+                                       "id":  "02_panel_map",
+                                       "label":  "Mapa de paneles",
+                                       "expected_content":  "Definir secciones/paneles del dashboard o HUD y su propósito.",
+                                       "present":  false,
+                                       "total_hits":  0,
+                                       "matched_terms":  [
+
+                                                         ],
+                                       "gap":  true,
+                                       "recommendation":  "Normalize this point in a future documentary execution scope before any dashboard/HUD runtime."
+                                   },
+                                   {
+                                       "id":  "03_button_list",
+                                       "label":  "Lista de botones",
+                                       "expected_content":  "Definir botones o controles visibles disponibles en la interfaz.",
+                                       "present":  false,
+                                       "total_hits":  0,
+                                       "matched_terms":  [
+
+                                                         ],
+                                       "gap":  true,
+                                       "recommendation":  "Normalize this point in a future documentary execution scope before any dashboard/HUD runtime."
+                                   },
+                                   {
+                                       "id":  "04_clickable_or_pressable_buttons",
+                                       "label":  "Botones pulsables / clickable actions",
+                                       "expected_content":  "Distinguir qué botones/acciones son pulsables, ejecutables o solo informativos.",
+                                       "present":  false,
+                                       "total_hits":  0,
+                                       "matched_terms":  [
+
+                                                         ],
+                                       "gap":  true,
+                                       "recommendation":  "Normalize this point in a future documentary execution scope before any dashboard/HUD runtime."
+                                   },
+                                   {
+                                       "id":  "05_authorized_actions",
+                                       "label":  "Acciones con autorización",
+                                       "expected_content":  "Definir acciones que requieren autorización humana antes de ejecutarse.",
+                                       "present":  false,
+                                       "total_hits":  0,
+                                       "matched_terms":  [
+
+                                                         ],
+                                       "gap":  true,
+                                       "recommendation":  "Normalize this point in a future documentary execution scope before any dashboard/HUD runtime."
+                                   },
+                                   {
+                                       "id":  "06_blocked_actions",
+                                       "label":  "Acciones bloqueadas",
+                                       "expected_content":  "Definir acciones bloqueadas, no productivas, peligrosas o fuera de alcance.",
+                                       "present":  true,
+                                       "total_hits":  45,
+                                       "matched_terms":  [
+                                                             {
+                                                                 "term":  "blocked",
+                                                                 "count":  45
+                                                             }
+                                                         ],
+                                       "gap":  false,
+                                       "recommendation":  "Preserve and cite this evidence during normalization."
+                                   },
+                                   {
+                                       "id":  "07_user_argos_hud_flow",
+                                       "label":  "Flujo usuario ARGOS HUD",
+                                       "expected_content":  "Definir cómo se relacionan usuario, ARGOS, HUD/interfaz y decisión/flujo.",
+                                       "present":  true,
+                                       "total_hits":  168,
+                                       "matched_terms":  [
+                                                             {
+                                                                 "term":  "user",
+                                                                 "count":  5
+                                                             },
+                                                             {
+                                                                 "term":  "ARGOS",
+                                                                 "count":  16
+                                                             },
+                                                             {
+                                                                 "term":  "HUD",
+                                                                 "count":  18
+                                                             },
+                                                             {
+                                                                 "term":  "interface",
+                                                                 "count":  129
+                                                             }
+                                                         ],
+                                       "gap":  false,
+                                       "recommendation":  "Preserve and cite this evidence during normalization."
+                                   }
+                               ],
+    "present_points":  [
+                           {
+                               "id":  "01_main_screen",
+                               "label":  "Pantalla principal / main screen",
+                               "expected_content":  "Definir la pantalla principal o interfaz base donde se presenta el dashboard/HUD.",
+                               "present":  true,
+                               "total_hits":  274,
+                               "matched_terms":  [
+                                                     {
+                                                         "term":  "dashboard",
+                                                         "count":  132
+                                                     },
+                                                     {
+                                                         "term":  "interface",
+                                                         "count":  129
+                                                     },
+                                                     {
+                                                         "term":  "visual",
+                                                         "count":  13
+                                                     }
+                                                 ],
+                               "gap":  false,
+                               "recommendation":  "Preserve and cite this evidence during normalization."
+                           },
+                           {
+                               "id":  "06_blocked_actions",
+                               "label":  "Acciones bloqueadas",
+                               "expected_content":  "Definir acciones bloqueadas, no productivas, peligrosas o fuera de alcance.",
+                               "present":  true,
+                               "total_hits":  45,
+                               "matched_terms":  [
+                                                     {
+                                                         "term":  "blocked",
+                                                         "count":  45
+                                                     }
+                                                 ],
+                               "gap":  false,
+                               "recommendation":  "Preserve and cite this evidence during normalization."
+                           },
+                           {
+                               "id":  "07_user_argos_hud_flow",
+                               "label":  "Flujo usuario ARGOS HUD",
+                               "expected_content":  "Definir cómo se relacionan usuario, ARGOS, HUD/interfaz y decisión/flujo.",
+                               "present":  true,
+                               "total_hits":  168,
+                               "matched_terms":  [
+                                                     {
+                                                         "term":  "user",
+                                                         "count":  5
+                                                     },
+                                                     {
+                                                         "term":  "ARGOS",
+                                                         "count":  16
+                                                     },
+                                                     {
+                                                         "term":  "HUD",
+                                                         "count":  18
+                                                     },
+                                                     {
+                                                         "term":  "interface",
+                                                         "count":  129
+                                                     }
+                                                 ],
+                               "gap":  false,
+                               "recommendation":  "Preserve and cite this evidence during normalization."
+                           }
+                       ],
+    "missing_points":  [
+                           {
+                               "id":  "02_panel_map",
+                               "label":  "Mapa de paneles",
+                               "expected_content":  "Definir secciones/paneles del dashboard o HUD y su propósito.",
+                               "present":  false,
+                               "total_hits":  0,
+                               "matched_terms":  [
+
+                                                 ],
+                               "gap":  true,
+                               "recommendation":  "Normalize this point in a future documentary execution scope before any dashboard/HUD runtime."
+                           },
+                           {
+                               "id":  "03_button_list",
+                               "label":  "Lista de botones",
+                               "expected_content":  "Definir botones o controles visibles disponibles en la interfaz.",
+                               "present":  false,
+                               "total_hits":  0,
+                               "matched_terms":  [
+
+                                                 ],
+                               "gap":  true,
+                               "recommendation":  "Normalize this point in a future documentary execution scope before any dashboard/HUD runtime."
+                           },
+                           {
+                               "id":  "04_clickable_or_pressable_buttons",
+                               "label":  "Botones pulsables / clickable actions",
+                               "expected_content":  "Distinguir qué botones/acciones son pulsables, ejecutables o solo informativos.",
+                               "present":  false,
+                               "total_hits":  0,
+                               "matched_terms":  [
+
+                                                 ],
+                               "gap":  true,
+                               "recommendation":  "Normalize this point in a future documentary execution scope before any dashboard/HUD runtime."
+                           },
+                           {
+                               "id":  "05_authorized_actions",
+                               "label":  "Acciones con autorización",
+                               "expected_content":  "Definir acciones que requieren autorización humana antes de ejecutarse.",
+                               "present":  false,
+                               "total_hits":  0,
+                               "matched_terms":  [
+
+                                                 ],
+                               "gap":  true,
+                               "recommendation":  "Normalize this point in a future documentary execution scope before any dashboard/HUD runtime."
+                           }
+                       ],
+    "readiness_gate":  {
+                           "readiness_status":  "READY_FOR_GOVERNED_DOCUMENTARY_NORMALIZATION",
+                           "readiness_pass":  true,
+                           "checks_total":  10,
+                           "checks_passed":  10,
+                           "checks_failed":  0,
+                           "checks":  [
+                                          {
+                                              "id":  "repo_clean_synced_precheck",
+                                              "pass":  true,
+                                              "detail":  "Repo clean and synced before official readiness gate."
+                                          },
+                                          {
+                                              "id":  "target_evidence_files_present",
+                                              "pass":  true,
+                                              "detail":  "All eight dashboard/interface reconciliation source files are present."
+                                          },
+                                          {
+                                              "id":  "dashboard_evidence_present",
+                                              "pass":  true,
+                                              "detail":  "Dashboard evidence exists."
+                                          },
+                                          {
+                                              "id":  "argos_hud_evidence_present",
+                                              "pass":  true,
+                                              "detail":  "ARGOS and HUD evidence exist."
+                                          },
+                                          {
+                                              "id":  "present_points_confirmed",
+                                              "pass":  true,
+                                              "detail":  "Three points are currently evidenced: main screen, blocked actions, user-ARGOS-HUD flow."
+                                          },
+                                          {
+                                              "id":  "missing_points_confirmed",
+                                              "pass":  true,
+                                              "detail":  "Four points require normalization: panel map, button list, clickable buttons, authorized actions."
+                                          },
+                                          {
+                                              "id":  "runtime_blocked",
+                                              "pass":  true,
+                                              "detail":  "Dashboard runtime, ARGOS runtime, and productive actions remain blocked."
+                                          },
+                                          {
+                                              "id":  "normalization_not_executed",
+                                              "pass":  true,
+                                              "detail":  "This gate registers readiness only; it does not normalize the missing points."
+                                          },
+                                          {
+                                              "id":  "future_scope_authorization_required",
+                                              "pass":  true,
+                                              "detail":  "Future normalization execution requires separate human authorization."
+                                          },
+                                          {
+                                              "id":  "official_output_scope_exact",
+                                              "pass":  true,
+                                              "detail":  "Expected official output scope is exactly report, manifest, seal, summary."
+                                          }
+                                      ],
+                           "seven_points_total":  7,
+                           "seven_points_present":  3,
+                           "seven_points_missing":  4,
+                           "seven_points_complete":  false,
+                           "present_point_ids":  [
+                                                     "01_main_screen",
+                                                     "06_blocked_actions",
+                                                     "07_user_argos_hud_flow"
+                                                 ],
+                           "missing_point_ids":  [
+                                                     "02_panel_map",
+                                                     "03_button_list",
+                                                     "04_clickable_or_pressable_buttons",
+                                                     "05_authorized_actions"
+                                                 ],
+                           "normalization_targets":  [
+                                                         "02_panel_map",
+                                                         "03_button_list",
+                                                         "04_clickable_or_pressable_buttons",
+                                                         "05_authorized_actions"
+                                                     ],
+                           "next_recommended_scope":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_EXECUTION_AFTER_READINESS_GATE",
+                           "requires_human_authorization_for_next_scope":  true,
+                           "dashboard_runtime_enabled":  false,
+                           "argos_runtime_enabled":  false,
+                           "productive_runtime_enabled":  false
+                       },
+    "safety":  {
+                   "official_repo_writes_performed":  true,
+                   "official_evidence_artifacts_written":  true,
+                   "commit_required":  true,
+                   "push_required":  true,
+                   "dashboard_runtime_performed":  false,
+                   "argos_runtime_performed":  false,
+                   "productive_runtime_performed":  false,
+                   "future_scope_execution_performed":  false,
+                   "dashboard_runtime_blocked":  true,
+                   "argos_runtime_blocked":  true,
+                   "productive_actions_blocked":  true
+               },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_READINESS_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_EXECUTION_AFTER_READINESS_GATE"
+}
