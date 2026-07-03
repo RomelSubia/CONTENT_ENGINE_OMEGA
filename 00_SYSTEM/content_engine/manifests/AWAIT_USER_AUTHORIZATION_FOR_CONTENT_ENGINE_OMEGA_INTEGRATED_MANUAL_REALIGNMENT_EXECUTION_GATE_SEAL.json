@@ -1,0 +1,26 @@
+{
+    "generated_at_utc":  "2026-07-03T07:41:46.3067502Z",
+    "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_AUTHORIZED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+    "manifest_sha256":  "9738c17953c8fc5da19927310f990acccd60af0f6286f3d4f80ecba80549ee3a",
+    "sealed":  true,
+    "seal_policy":  {
+                        "execution_gate_authorization_record_only":  true,
+                        "execution_gate_authorized":  true,
+                        "manual_realignment_execution_authorized_for_next_gate":  true,
+                        "manual_update_authorized_for_next_gate":  true,
+                        "manual_realignment_execution_performed_now":  false,
+                        "manual_update_performed_now":  false,
+                        "manual_file_mutation_performed_now":  false,
+                        "no_source_mutation":  true,
+                        "no_interface_build":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true,
+                        "ready_to_run_execution_gate":  true,
+                        "next_safe_step_is_execution_gate":  true
+                    }
+}

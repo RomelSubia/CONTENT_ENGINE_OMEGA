@@ -1,0 +1,176 @@
+{
+    "generated_at_utc":  "2026-07-03T07:41:46.2569137Z",
+    "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_AUTHORIZED",
+    "classification":  "GOVERNED_USER_AUTHORIZATION_RECORD_FOR_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "7744f925741bb0f2d1f72027e883f4e568cadf64",
+                     "upstream":  "7744f925741bb0f2d1f72027e883f4e568cadf64",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_readiness_close_gate":  {
+                                          "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_CLOSE_GATE",
+                                          "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_CLOSE_GATE_CLOSED",
+                                          "build":  "V1",
+                                          "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_CLOSE_GATE_REPORT.json",
+                                          "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_CLOSE_GATE_MANIFEST.json",
+                                          "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_CLOSE_GATE_SEAL.json",
+                                          "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_CLOSE_GATE_SUMMARY.md",
+                                          "validation":  {
+                                                             "label":  "PREVIOUS_READINESS_CLOSE_GATE",
+                                                             "manifest_valid":  true,
+                                                             "seal_valid":  true,
+                                                             "report_hash_matches_manifest":  true,
+                                                             "summary_hash_matches_manifest":  true,
+                                                             "seal_manifest_sha256_valid":  true
+                                                         },
+                                          "close_pass":  true,
+                                          "checks_failed":  0
+                                      },
+    "authorization_decision":  {
+                                   "user_authorization_recorded":  true,
+                                   "authorized_next_scope":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+                                   "execution_gate_authorized":  true,
+                                   "manual_realignment_execution_authorized_for_next_gate":  true,
+                                   "manual_update_authorized_for_next_gate":  true,
+                                   "new_manual_version_creation_authorized_for_next_gate_only_if_declared_by_execution_gate":  true,
+                                   "manual_realignment_execution_performed_now":  false,
+                                   "manual_update_performed_now":  false,
+                                   "manual_file_mutation_performed_now":  false,
+                                   "source_mutation_authorized":  false,
+                                   "runtime_authorized":  false,
+                                   "interface_build_authorized":  false,
+                                   "argos_runtime_authorized":  false,
+                                   "productive_actions_authorized":  false,
+                                   "ready_to_run_execution_gate":  true,
+                                   "ready_to_execute_manual_realignment_inside_this_authorization_step":  false,
+                                   "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE"
+                               },
+    "manual_inventory_authorization_context":  {
+                                                   "current_manual_tracked_files":  2,
+                                                   "historical_manual_tracked_files":  2,
+                                                   "manual_manifest_tracked_files":  1,
+                                                   "manual_registry_tracked_files":  2,
+                                                   "all_manual_tracked_files":  7,
+                                                   "manual_git_blob_inventory_entries":  7,
+                                                   "inventory_read_only_in_this_step":  true,
+                                                   "mutation_allowed_in_this_step":  false
+                                               },
+    "authorization_gate":  {
+                               "gate_type":  "await_user_authorization_for_integrated_manual_realignment_execution_gate",
+                               "authorization_pass":  true,
+                               "checks_total":  13,
+                               "checks_passed":  13,
+                               "checks_failed":  0,
+                               "checks":  [
+                                              {
+                                                  "id":  "repo_clean_synced_precheck",
+                                                  "pass":  true,
+                                                  "detail":  "Repo clean and synced before execution gate authorization."
+                                              },
+                                              {
+                                                  "id":  "readiness_close_gate_consumed",
+                                                  "pass":  true,
+                                                  "detail":  "Readiness close gate consumed."
+                                              },
+                                              {
+                                                  "id":  "readiness_close_gate_manifest_and_seal_valid",
+                                                  "pass":  true,
+                                                  "detail":  "Readiness close gate manifest and seal are valid."
+                                              },
+                                              {
+                                                  "id":  "readiness_lifecycle_completed",
+                                                  "pass":  true,
+                                                  "detail":  "Readiness lifecycle is completed."
+                                              },
+                                              {
+                                                  "id":  "manual_inventory_available_for_execution_gate",
+                                                  "pass":  true,
+                                                  "detail":  "Manual inventory counts and Git blob inventory are available for the next gate."
+                                              },
+                                              {
+                                                  "id":  "rollback_requirements_were_validated",
+                                                  "pass":  true,
+                                                  "detail":  "Rollback requirements were validated by the readiness close gate."
+                                              },
+                                              {
+                                                  "id":  "future_execution_boundaries_were_validated",
+                                                  "pass":  true,
+                                                  "detail":  "Future execution boundaries were validated by the readiness close gate."
+                                              },
+                                              {
+                                                  "id":  "user_authorization_recorded_for_execution_gate_only",
+                                                  "pass":  true,
+                                                  "detail":  "User authorization is recorded for the governed execution gate only."
+                                              },
+                                              {
+                                                  "id":  "authorization_step_does_not_modify_manual",
+                                                  "pass":  true,
+                                                  "detail":  "This authorization step does not mutate manual files."
+                                              },
+                                              {
+                                                  "id":  "authorization_step_does_not_execute_realignment",
+                                                  "pass":  true,
+                                                  "detail":  "This authorization step does not perform manual realignment."
+                                              },
+                                              {
+                                                  "id":  "source_runtime_interface_argos_productive_blocked",
+                                                  "pass":  true,
+                                                  "detail":  "Source mutation, runtime, interface build, ARGOS runtime and productive actions remain blocked."
+                                              },
+                                              {
+                                                  "id":  "next_step_is_execution_gate",
+                                                  "pass":  true,
+                                                  "detail":  "Next safe step is the governed manual realignment execution gate."
+                                              },
+                                              {
+                                                  "id":  "official_output_scope_exact",
+                                                  "pass":  true,
+                                                  "detail":  "Execution gate authorization output scope is exactly report, manifest, seal and summary."
+                                              }
+                                          ]
+                           },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "manual_update_performed":  false,
+                         "no_manual_update_performed_now":  true,
+                         "no_manual_file_mutation_performed_now":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE"
+}
