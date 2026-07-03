@@ -1,0 +1,44 @@
+{
+    "generated_at_utc":  "2026-07-03T23:44:26.6554046Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_DEFINED",
+    "build":  "V1",
+    "classification":  "GOVERNED_BLUEPRINT_ONLY_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_REPORT.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_BLUEPRINT.md",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SUMMARY.md"
+                     ],
+    "consumed_previous_gate_artifacts":  [
+                                             "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_REPORT.json",
+                                             "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_MANIFEST.json",
+                                             "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SEAL.json",
+                                             "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SUMMARY.md"
+                                         ],
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_REPORT.json":  "0b369b2b134614b91b794e1ce223bfd6428d311bf58e87d0ce984a4ffca8ebd7",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_BLUEPRINT.md":  "5886acce3034b4e7c07576f5394d718a786fcea3e53e4ba3d04b603347c534c6",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SUMMARY.md":  "47d468441a1c55a28ad466a581b216960d72ec610ccd300995c9da5ee9678c74",
+                        "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_REPORT.json":  "8767596f5646c78b986226ce237942c2dd0571d0089826b71ebd466b5173d61f",
+                        "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_MANIFEST.json":  "86685fe0981b522a468adcfd4ad4dc2e67b8efd99ac1a0c2c85f93d16e9a30cd",
+                        "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SEAL.json":  "de1f0258228975587315c6d88dee0a326a095e0694180c6532fb413faa27158d",
+                        "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SUMMARY.md":  "cda7a30a78d33ccbb934ddd853abf827048fc9c5ae1e74adf8c001a7bdc43d9d"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "blueprint_only":  true,
+                            "no_manual_mutation":  true,
+                            "no_source_mutation":  true,
+                            "no_runtime":  true,
+                            "no_dashboard_runtime":  true,
+                            "no_argos_runtime":  true,
+                            "no_interface_build":  true,
+                            "no_button_runtime":  true,
+                            "no_productive_actions":  true,
+                            "ready_for_post_build_audit":  true,
+                            "ready_for_runtime":  false
+                        }
+}
