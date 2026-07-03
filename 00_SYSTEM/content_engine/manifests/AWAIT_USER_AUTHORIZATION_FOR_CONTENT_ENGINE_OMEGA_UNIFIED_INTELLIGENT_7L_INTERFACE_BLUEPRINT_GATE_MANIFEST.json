@@ -1,0 +1,46 @@
+{
+    "generated_at_utc":  "2026-07-03T23:35:54.1267074Z",
+    "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_AUTHORIZED",
+    "build":  "V1_FIX1",
+    "classification":  "GOVERNED_USER_AUTHORIZATION_RECORD_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_FIX1",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SUMMARY.md"
+                     ],
+    "consumed_previous_gate_artifacts":  [
+                                             "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_REPORT.json",
+                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_MANIFEST.json",
+                                             "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SEAL.json",
+                                             "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SUMMARY.md"
+                                         ],
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_REPORT.json":  "8767596f5646c78b986226ce237942c2dd0571d0089826b71ebd466b5173d61f",
+                        "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SUMMARY.md":  "cda7a30a78d33ccbb934ddd853abf827048fc9c5ae1e74adf8c001a7bdc43d9d",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_REPORT.json":  "f617864dc4cae24cd38f3640f38e07dd90e8129e29c13c715ace6c4d37911300",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_MANIFEST.json":  "628459157256cd0b810ba574b63e3d0ab3d574d726ef323937985f41e0934eff",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SEAL.json":  "193f0b3c09251ed4c7069c6351e4098ab83a8e7b96002c2b15a637ad225a5834",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SUMMARY.md":  "7863f14150e0aabcf66e2916c8576429fd956a94822b5748b10268637125bf6a"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "authorization_only":  true,
+                            "fix1_schema_tolerance":  true,
+                            "selected_scope_authorized_to_open":  true,
+                            "authorized_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+                            "authorized_next_track":  "unified_intelligent_7L_interface_blueprint_only",
+                            "no_manual_mutation":  true,
+                            "no_source_mutation":  true,
+                            "no_runtime":  true,
+                            "no_dashboard_runtime":  true,
+                            "no_argos_runtime":  true,
+                            "no_interface_build":  true,
+                            "no_button_runtime":  true,
+                            "no_productive_actions":  true,
+                            "blueprint_gate_requires_separate_execution":  true,
+                            "ready_for_runtime":  false
+                        }
+}
