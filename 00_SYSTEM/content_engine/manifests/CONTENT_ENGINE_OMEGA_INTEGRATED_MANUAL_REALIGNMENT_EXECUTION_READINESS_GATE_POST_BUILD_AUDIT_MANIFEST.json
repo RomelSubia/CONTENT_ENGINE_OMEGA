@@ -1,0 +1,46 @@
+{
+    "generated_at_utc":  "2026-07-03T07:01:42.8759984Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDITED",
+    "build":  "V1",
+    "classification":  "GOVERNED_DOCUMENTARY_POST_BUILD_AUDIT_FOR_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_ONLY",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_SUMMARY.md"
+                     ],
+    "consumed_readiness_gate_artifacts":  [
+                                              "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_REPORT.json",
+                                              "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_MANIFEST.json",
+                                              "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SEAL.json",
+                                              "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SUMMARY.md"
+                                          ],
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_REPORT.json":  "b03f55c19245514d13e4184c7a4d241833819e4757e5455591e5eba0dc99acf5",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_SUMMARY.md":  "f83a8283f7ebe08b8ae4e1871b29872aa3171f77f38827a35d29122d86026723",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_REPORT.json":  "808d989ad84474840c906cf101e77b7f1af661545013927a9b599f71615883f6",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_MANIFEST.json":  "a24316239f4c88fab076ec9df213808bfc7ffc9c91f13afc3a4f7b7c10cac4a3",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SEAL.json":  "fa5dbe52af06f08c653d4152c6e81af516d080636bd30e9b383cb0ddc352be21",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SUMMARY.md":  "88a20eb98f0da6ddf7964525ef46aca48800c080911d263c76c573cda793e5e3"
+                    },
+    "manual_inventory_audited_read_only":  {
+                                               "current_manual_tracked_files":  2,
+                                               "historical_manual_tracked_files":  2,
+                                               "manual_manifest_tracked_files":  1,
+                                               "manual_registry_tracked_files":  2,
+                                               "all_manual_tracked_files":  7,
+                                               "manual_git_blob_inventory_entries":  7,
+                                               "inventory_read_only":  true,
+                                               "mutation_allowed_now":  false
+                                           },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "post_build_audit_only":  true,
+                            "manual_inventory_audited_read_only":  true,
+                            "no_manual_update":  true,
+                            "no_manual_file_mutation":  true,
+                            "no_source_mutation":  true
+                        }
+}

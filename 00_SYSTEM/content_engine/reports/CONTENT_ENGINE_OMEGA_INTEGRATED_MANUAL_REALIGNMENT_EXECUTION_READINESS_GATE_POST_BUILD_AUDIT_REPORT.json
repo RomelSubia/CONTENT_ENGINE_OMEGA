@@ -1,0 +1,198 @@
+{
+    "generated_at_utc":  "2026-07-03T07:01:42.8501933Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDITED",
+    "classification":  "GOVERNED_DOCUMENTARY_POST_BUILD_AUDIT_FOR_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "ee4aab70d49e3b0b4fcad034854755b3f59b7393",
+                     "upstream":  "ee4aab70d49e3b0b4fcad034854755b3f59b7393",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_readiness_gate":  {
+                                    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE",
+                                    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_READY",
+                                    "build":  "V1",
+                                    "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_REPORT.json",
+                                    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_MANIFEST.json",
+                                    "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SEAL.json",
+                                    "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SUMMARY.md",
+                                    "validation":  {
+                                                       "label":  "PREVIOUS_READINESS_GATE",
+                                                       "manifest_valid":  true,
+                                                       "seal_valid":  true,
+                                                       "report_hash_matches_manifest":  true,
+                                                       "summary_hash_matches_manifest":  true,
+                                                       "seal_manifest_sha256_valid":  true
+                                                   },
+                                    "readiness_pass":  true,
+                                    "checks_failed":  0
+                                },
+    "audit_decision":  {
+                           "readiness_post_build_audit_passed":  true,
+                           "readiness_gate_audited":  true,
+                           "readiness_gate_ready":  true,
+                           "readiness_plan_defined":  true,
+                           "manual_roots_verified":  true,
+                           "manual_current_files_available":  true,
+                           "manual_inventory_read_only_valid":  true,
+                           "manual_inventory_git_blob_ids_valid":  true,
+                           "exact_future_manual_review_scope_declared":  true,
+                           "rollback_requirements_valid":  true,
+                           "future_execution_boundaries_valid":  true,
+                           "manifest_policy_valid":  true,
+                           "seal_policy_valid":  true,
+                           "manual_realignment_execution_authorized":  false,
+                           "manual_update_authorized":  false,
+                           "new_manual_version_creation_authorized":  false,
+                           "source_mutation_authorized":  false,
+                           "runtime_authorized":  false,
+                           "interface_build_authorized":  false,
+                           "argos_runtime_authorized":  false,
+                           "productive_actions_authorized":  false,
+                           "ready_for_readiness_close_gate":  true,
+                           "ready_to_execute_manual_realignment":  false,
+                           "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_CLOSE_GATE"
+                       },
+    "manual_inventory_audited":  {
+                                     "current_manual_tracked_files":  2,
+                                     "historical_manual_tracked_files":  2,
+                                     "manual_manifest_tracked_files":  1,
+                                     "manual_registry_tracked_files":  2,
+                                     "all_manual_tracked_files":  7,
+                                     "manual_git_blob_inventory_entries":  7,
+                                     "inventory_read_only":  true,
+                                     "mutation_allowed_now":  false
+                                 },
+    "audit_gate":  {
+                       "gate_type":  "integrated_manual_realignment_execution_readiness_gate_post_build_audit",
+                       "audit_pass":  true,
+                       "checks_total":  16,
+                       "checks_passed":  16,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before readiness post-build audit."
+                                      },
+                                      {
+                                          "id":  "readiness_gate_artifacts_exist",
+                                          "pass":  true,
+                                          "detail":  "Readiness report, manifest, seal and summary exist."
+                                      },
+                                      {
+                                          "id":  "readiness_report_identity_valid",
+                                          "pass":  true,
+                                          "detail":  "Readiness component, status, build, pass, classification and next safe step are valid."
+                                      },
+                                      {
+                                          "id":  "readiness_manifest_and_seal_valid",
+                                          "pass":  true,
+                                          "detail":  "Readiness manifest hashes and seal manifest hash are valid."
+                                      },
+                                      {
+                                          "id":  "readiness_decision_valid",
+                                          "pass":  true,
+                                          "detail":  "Readiness decision confirms readiness only, not execution."
+                                      },
+                                      {
+                                          "id":  "manual_inventory_read_only_valid",
+                                          "pass":  true,
+                                          "detail":  "Manual inventory paths and Git blob IDs are present and read-only."
+                                      },
+                                      {
+                                          "id":  "manual_roots_verified",
+                                          "pass":  true,
+                                          "detail":  "Manual current, historical, manifest and registry roots are represented."
+                                      },
+                                      {
+                                          "id":  "future_review_scope_declared",
+                                          "pass":  true,
+                                          "detail":  "Future manual review scope was declared without mutation."
+                                      },
+                                      {
+                                          "id":  "rollback_requirements_valid",
+                                          "pass":  true,
+                                          "detail":  "Rollback/backout requirements are complete for future execution."
+                                      },
+                                      {
+                                          "id":  "future_boundaries_valid",
+                                          "pass":  true,
+                                          "detail":  "Allowed later, forbidden now and required-before-execution boundaries are complete."
+                                      },
+                                      {
+                                          "id":  "manifest_policy_valid",
+                                          "pass":  true,
+                                          "detail":  "Readiness manifest policy confirms read-only inventory and no manual/source mutation."
+                                      },
+                                      {
+                                          "id":  "seal_policy_valid",
+                                          "pass":  true,
+                                          "detail":  "Readiness seal policy confirms no manual update, no runtime, no ARGOS and no productive actions."
+                                      },
+                                      {
+                                          "id":  "runtime_state_blocked",
+                                          "pass":  true,
+                                          "detail":  "Dashboard, ARGOS, buttons, productive and future scope runtime remain blocked."
+                                      },
+                                      {
+                                          "id":  "safety_state_no_touch",
+                                          "pass":  true,
+                                          "detail":  "Manual, source, interface and productive actions remain untouched."
+                                      },
+                                      {
+                                          "id":  "manual_realignment_execution_not_authorized",
+                                          "pass":  true,
+                                          "detail":  "Manual realignment execution remains unauthorized."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Post-build audit output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "manual_update_performed":  false,
+                         "no_manual_update":  true,
+                         "no_manual_file_mutation":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT_SUMMARY.md"
+                     ],
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_CLOSE_GATE"
+}
