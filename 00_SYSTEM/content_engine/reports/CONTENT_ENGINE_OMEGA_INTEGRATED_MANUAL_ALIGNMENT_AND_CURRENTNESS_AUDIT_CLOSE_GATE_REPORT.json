@@ -1,0 +1,152 @@
+{
+    "generated_at_utc":  "2026-07-03T04:27:40.9911896Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_CLOSED",
+    "classification":  "GOVERNED_DOCUMENTARY_CLOSE_GATE_FOR_INTEGRATED_MANUAL_ALIGNMENT_AUDIT_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "017f36b8eb8b250112513df0d3871382d44c5d78",
+                     "upstream":  "017f36b8eb8b250112513df0d3871382d44c5d78",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_integrated_manual_alignment_audit":  {
+                                                       "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE",
+                                                       "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_COMPLETED",
+                                                       "build":  "V1",
+                                                       "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_REPORT.json",
+                                                       "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_MANIFEST.json",
+                                                       "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SEAL.json",
+                                                       "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SUMMARY.md",
+                                                       "report_hash_matches_manifest":  true,
+                                                       "summary_hash_matches_manifest":  true,
+                                                       "seal_manifest_sha256_valid":  true,
+                                                       "audit_pass":  true,
+                                                       "checks_failed":  0
+                                                   },
+    "close_decision":  {
+                           "close_gate_closed":  true,
+                           "previous_audit_status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_COMPLETED",
+                           "manual_integrated_exists":  true,
+                           "manual_structure_present":  true,
+                           "manual_aligned_with_current_content_engine_truth":  false,
+                           "manual_fully_updated_with_recent_work":  false,
+                           "contradictions_found_in_current_manual":  false,
+                           "can_manual_remain_central_source_of_truth_without_realignment":  false,
+                           "manual_needs_governed_realignment":  true,
+                           "create_new_manual_version_now":  false,
+                           "realignment_blueprint_authorized_now":  false,
+                           "realignment_blueprint_required_next":  true,
+                           "recommended_realignment_scope":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE",
+                           "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE"
+                       },
+    "close_gate":  {
+                       "gate_type":  "integrated_manual_alignment_and_currentness_audit_close_gate",
+                       "close_pass":  true,
+                       "checks_total":  11,
+                       "checks_passed":  11,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before close gate."
+                                      },
+                                      {
+                                          "id":  "previous_audit_consumed",
+                                          "pass":  true,
+                                          "detail":  "Integrated manual alignment/currentness audit consumed."
+                                      },
+                                      {
+                                          "id":  "previous_audit_manifest_validated",
+                                          "pass":  true,
+                                          "detail":  "Previous audit report and summary hashes match audit manifest."
+                                      },
+                                      {
+                                          "id":  "previous_audit_seal_validated",
+                                          "pass":  true,
+                                          "detail":  "Previous audit seal validates its manifest hash."
+                                      },
+                                      {
+                                          "id":  "manual_structure_preserved",
+                                          "pass":  true,
+                                          "detail":  "Manual exists and structure is present; no manual modification performed."
+                                      },
+                                      {
+                                          "id":  "manual_realignment_required_confirmed",
+                                          "pass":  true,
+                                          "detail":  "Manual needs governed realignment and is not fully updated."
+                                      },
+                                      {
+                                          "id":  "new_manual_version_not_authorized",
+                                          "pass":  true,
+                                          "detail":  "New manual version is not authorized at close gate."
+                                      },
+                                      {
+                                          "id":  "runtime_remained_blocked",
+                                          "pass":  true,
+                                          "detail":  "Dashboard, ARGOS, button, productive and future scope runtime remained false."
+                                      },
+                                      {
+                                          "id":  "manual_source_interface_productive_no_touch",
+                                          "pass":  true,
+                                          "detail":  "Manual, source, interface and productive actions remained blocked."
+                                      },
+                                      {
+                                          "id":  "next_safe_step_registered",
+                                          "pass":  true,
+                                          "detail":  "Next safe step is await authorization for realignment blueprint gate."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "no_manual_update":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "authorization_state":  {
+                                "manual_realignment_blueprint_selected":  true,
+                                "manual_realignment_blueprint_authorized":  false,
+                                "manual_realignment_blueprint_executed":  false,
+                                "awaiting_user_authorization":  true
+                            },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE"
+}

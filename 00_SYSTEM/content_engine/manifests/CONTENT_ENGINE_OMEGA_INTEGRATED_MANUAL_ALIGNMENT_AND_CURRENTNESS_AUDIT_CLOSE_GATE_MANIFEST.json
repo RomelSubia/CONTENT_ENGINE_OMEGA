@@ -1,0 +1,33 @@
+{
+    "generated_at_utc":  "2026-07-03T04:27:41.0202153Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_CLOSED",
+    "build":  "V1",
+    "classification":  "GOVERNED_DOCUMENTARY_CLOSE_GATE_FOR_INTEGRATED_MANUAL_ALIGNMENT_AUDIT_ONLY",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_SUMMARY.md"
+                     ],
+    "consumed_integrated_manual_alignment_audit":  [
+                                                       "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_REPORT.json",
+                                                       "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_MANIFEST.json",
+                                                       "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SEAL.json",
+                                                       "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SUMMARY.md"
+                                                   ],
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_REPORT.json":  "62314d254f128dd3a27f45fc4b5334001c033a040e9201733ac900ad9df96595",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_CLOSE_GATE_SUMMARY.md":  "7b535cc9eb8fb0c6cdeb102fc5f8e4ff9bc5548ceb76870f2eb5aae377fda336",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_REPORT.json":  "aab537252a1ef464680c30acfa5bf117231bee50fbf81cf238929d5c5aff9cb4",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_MANIFEST.json":  "73ec87042eaa732241a8d8f35c9415b9ad04aadf9086173be36862e49a2b0ff8",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SEAL.json":  "31e729cc1a870b761e7e6e2c9de7d52950734b486b5d1f04025065406cfe45cb",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SUMMARY.md":  "71c5ecf80342722fd4cd0484048cd9f607c274b3b7810f2befa72faf4bebed53"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "no_manual_update":  true,
+                            "no_source_mutation":  true
+                        }
+}
