@@ -1,0 +1,21 @@
+{
+    "generated_at_utc":  "2026-07-03T05:03:20.6223497Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_DEFINED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE_MANIFEST.json",
+    "manifest_sha256":  "2c3faa8cdd4ec9d58fa56e835c73f44ffe639279cd0cba4d472cb276668fd192",
+    "sealed":  true,
+    "seal_policy":  {
+                        "integrated_manual_realignment_blueprint_only":  true,
+                        "no_manual_update":  true,
+                        "no_manual_file_mutation":  true,
+                        "no_source_mutation":  true,
+                        "no_interface_build":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true,
+                        "no_new_manual_version_creation":  true
+                    }
+}
