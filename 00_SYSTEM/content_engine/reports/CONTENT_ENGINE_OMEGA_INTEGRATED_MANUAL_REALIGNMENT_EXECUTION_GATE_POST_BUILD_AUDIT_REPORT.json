@@ -1,0 +1,204 @@
+{
+    "generated_at_utc":  "2026-07-03T08:30:26.0865881Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_POST_BUILD_AUDIT",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_POST_BUILD_AUDITED",
+    "classification":  "GOVERNED_DOCUMENTARY_POST_BUILD_AUDIT_FOR_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "de6da9fad90146b1375dff0fa9f60f336e4a3ed2",
+                     "upstream":  "de6da9fad90146b1375dff0fa9f60f336e4a3ed2",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_execution_gate":  {
+                                    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+                                    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_EXECUTED",
+                                    "build":  "V1",
+                                    "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json",
+                                    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+                                    "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SEAL.json",
+                                    "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md",
+                                    "validation":  {
+                                                       "label":  "PREVIOUS_EXECUTION_GATE",
+                                                       "manifest_valid":  true,
+                                                       "seal_valid":  true,
+                                                       "report_hash_matches_manifest":  true,
+                                                       "summary_hash_matches_manifest":  true,
+                                                       "seal_manifest_sha256_valid":  true
+                                                   },
+                                    "execution_pass":  true,
+                                    "checks_failed":  0
+                                },
+    "audit_decision":  {
+                           "execution_post_build_audit_passed":  true,
+                           "execution_gate_audited":  true,
+                           "manual_realignment_execution_performed":  true,
+                           "manual_update_performed":  true,
+                           "manual_update_type":  "controlled_documentary_manual_addendum",
+                           "manual_mutation_limited_to_declared_paths":  true,
+                           "manual_current_addendum_valid":  true,
+                           "manual_rollback_valid":  true,
+                           "manual_manifest_valid":  true,
+                           "manual_registry_valid":  true,
+                           "previous_execution_hashes_valid":  true,
+                           "rollback_inventory_valid":  true,
+                           "source_mutation_performed":  false,
+                           "runtime_performed":  false,
+                           "dashboard_runtime_performed":  false,
+                           "argos_runtime_performed":  false,
+                           "interface_build_performed":  false,
+                           "button_runtime_performed":  false,
+                           "productive_actions_performed":  false,
+                           "manual_modified_during_audit":  false,
+                           "ready_for_execution_close_gate":  true,
+                           "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE"
+                       },
+    "manual_outputs_audited":  {
+                                   "current_addendum":  "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md",
+                                   "rollback":  "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json",
+                                   "manual_manifest":  "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json",
+                                   "manual_registry":  "00_SYSTEM/manual/registry/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_REGISTRY.json",
+                                   "declared_manual_mutation_paths":  [
+                                                                          "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md",
+                                                                          "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json",
+                                                                          "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json",
+                                                                          "00_SYSTEM/manual/registry/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_REGISTRY.json"
+                                                                      ],
+                                   "sha256":  {
+                                                  "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md":  "990d5a2968398538728731d73c907bb30f1d58a681bfe5bf6fd944357c448bce",
+                                                  "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json":  "1ca4ba936817a40f0457a56f7058212b7181e4e417c7ed4600847df954df6245",
+                                                  "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json":  "0637831266151be79c095848f412520983b5f0c49718668cd2e83be811f05505",
+                                                  "00_SYSTEM/manual/registry/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_REGISTRY.json":  "8d9fff196349ab4c121a043bf58069d80fda0dec7946af1691c96ba1e1510fb2"
+                                              }
+                               },
+    "audit_gate":  {
+                       "gate_type":  "integrated_manual_realignment_execution_gate_post_build_audit",
+                       "audit_pass":  true,
+                       "checks_total":  16,
+                       "checks_passed":  16,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before execution post-build audit."
+                                      },
+                                      {
+                                          "id":  "previous_execution_artifacts_exist_and_tracked",
+                                          "pass":  true,
+                                          "detail":  "Previous execution manual and evidence artifacts exist and are tracked."
+                                      },
+                                      {
+                                          "id":  "previous_execution_identity_valid",
+                                          "pass":  true,
+                                          "detail":  "Previous execution component, status, build, pass, classification and next step are valid."
+                                      },
+                                      {
+                                          "id":  "previous_execution_manifest_and_seal_valid",
+                                          "pass":  true,
+                                          "detail":  "Previous execution manifest and seal are valid."
+                                      },
+                                      {
+                                          "id":  "previous_execution_file_hashes_valid",
+                                          "pass":  true,
+                                          "detail":  "Previous execution hashes for manual outputs, report and summary are valid."
+                                      },
+                                      {
+                                          "id":  "execution_decision_valid",
+                                          "pass":  true,
+                                          "detail":  "Execution decision confirms controlled documentary manual realignment."
+                                      },
+                                      {
+                                          "id":  "declared_manual_mutation_paths_exact",
+                                          "pass":  true,
+                                          "detail":  "Declared manual mutation paths match exact expected manual outputs."
+                                      },
+                                      {
+                                          "id":  "manual_addendum_exists_and_tracked",
+                                          "pass":  true,
+                                          "detail":  "Manual current addendum exists and is tracked."
+                                      },
+                                      {
+                                          "id":  "rollback_exists_and_valid",
+                                          "pass":  true,
+                                          "detail":  "Rollback exists and includes pre-execution manual inventory."
+                                      },
+                                      {
+                                          "id":  "manual_manifest_valid",
+                                          "pass":  true,
+                                          "detail":  "Manual manifest confirms controlled documentary addendum and no runtime/source mutation."
+                                      },
+                                      {
+                                          "id":  "manual_registry_valid",
+                                          "pass":  true,
+                                          "detail":  "Manual registry confirms manual-only scope and blocked runtime/source/interface/productive actions."
+                                      },
+                                      {
+                                          "id":  "runtime_state_blocked",
+                                          "pass":  true,
+                                          "detail":  "Dashboard, ARGOS, buttons, productive and future runtime remain blocked."
+                                      },
+                                      {
+                                          "id":  "safety_state_valid",
+                                          "pass":  true,
+                                          "detail":  "Manual mutation was limited to declared paths; source/interface/productive actions were not performed."
+                                      },
+                                      {
+                                          "id":  "manual_not_modified_during_audit",
+                                          "pass":  true,
+                                          "detail":  "No manual dirty paths exist during this audit step."
+                                      },
+                                      {
+                                          "id":  "next_step_is_execution_close_gate",
+                                          "pass":  true,
+                                          "detail":  "Next safe step is execution gate close gate."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Post-build audit output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified_during_audit":  false,
+                         "manual_update_performed_during_audit":  false,
+                         "manual_file_mutation_performed_during_audit":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "no_manual_mutation_in_audit":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_POST_BUILD_AUDIT_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_POST_BUILD_AUDIT_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_POST_BUILD_AUDIT_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_POST_BUILD_AUDIT_SUMMARY.md"
+                     ],
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE"
+}
