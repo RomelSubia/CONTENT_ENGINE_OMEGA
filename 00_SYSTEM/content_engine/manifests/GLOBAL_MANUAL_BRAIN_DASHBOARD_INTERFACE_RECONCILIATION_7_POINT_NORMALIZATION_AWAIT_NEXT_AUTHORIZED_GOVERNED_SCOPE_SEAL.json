@@ -1,0 +1,19 @@
+{
+    "generated_at_utc":  "2026-07-03T02:44:21.4778774Z",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE",
+    "status":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_REGISTERED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_MANIFEST.json",
+    "manifest_sha256":  "07c5cc37b798c77fb6cf664bc1e8f781d0366b70336ccc732555c41f55b63f84",
+    "sealed":  true,
+    "seal_policy":  {
+                        "await_state_only":  true,
+                        "no_next_governed_scope_selected":  true,
+                        "no_next_governed_scope_authorized":  true,
+                        "no_next_governed_scope_executed":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true
+                    }
+}

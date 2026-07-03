@@ -1,0 +1,140 @@
+{
+    "generated_at_utc":  "2026-07-03T02:44:21.4131668Z",
+    "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_REGISTERED",
+    "classification":  "GOVERNED_DOCUMENTARY_AWAIT_NEXT_AUTHORIZED_SCOPE_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "6bc4f29573cd5f8ce6338944dc20028e28de53d3",
+                     "upstream":  "6bc4f29573cd5f8ce6338944dc20028e28de53d3",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_close_gate":  {
+                                "component":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE",
+                                "status":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_CLOSED",
+                                "build":  "V2",
+                                "report":  "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_REPORT.json",
+                                "manifest":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_MANIFEST.json",
+                                "seal":  "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_SEAL.json",
+                                "summary":  "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_SUMMARY.md",
+                                "report_hash_matches_manifest":  true,
+                                "summary_hash_matches_manifest":  true,
+                                "seal_manifest_sha256_valid":  true
+                            },
+    "closed_cycle_state":  {
+                               "seven_points_total":  7,
+                               "seven_points_normalized":  7,
+                               "complete_after_documentary_normalization":  true,
+                               "close_gate_status":  "CLOSED",
+                               "closed_point_ids":  [
+                                                        "01_main_screen",
+                                                        "02_panel_map",
+                                                        "03_button_list",
+                                                        "04_clickable_or_pressable_buttons",
+                                                        "05_authorized_actions",
+                                                        "06_blocked_actions",
+                                                        "07_user_argos_hud_flow"
+                                                    ]
+                           },
+    "await_state":  {
+                        "await_registered":  true,
+                        "awaiting_next_authorized_governed_scope":  true,
+                        "next_governed_scope_selected":  false,
+                        "next_governed_scope_authorized":  false,
+                        "next_governed_scope_executed":  false,
+                        "requires_human_authorization":  true,
+                        "authorization_phrase_required":  "autorizo \u003cscope exacto\u003e"
+                    },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "dashboard_runtime_blocked":  true,
+                         "argos_runtime_blocked":  true,
+                         "button_runtime_blocked":  true,
+                         "productive_actions_blocked":  true
+                     },
+    "await_gate":  {
+                       "gate_type":  "await_next_authorized_governed_scope",
+                       "await_pass":  true,
+                       "checks_total":  10,
+                       "checks_passed":  10,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before await state registration."
+                                      },
+                                      {
+                                          "id":  "close_gate_consumed",
+                                          "pass":  true,
+                                          "detail":  "Closed 7-point normalization gate report, manifest, seal and summary consumed."
+                                      },
+                                      {
+                                          "id":  "close_gate_identity_valid",
+                                          "pass":  true,
+                                          "detail":  "Close gate component, status, build, pass and classification are valid."
+                                      },
+                                      {
+                                          "id":  "close_gate_manifest_valid",
+                                          "pass":  true,
+                                          "detail":  "Close gate manifest identity is valid and hashes close report/summary correctly."
+                                      },
+                                      {
+                                          "id":  "close_gate_seal_valid",
+                                          "pass":  true,
+                                          "detail":  "Close gate seal references manifest and manifest hash matches."
+                                      },
+                                      {
+                                          "id":  "seven_points_closed_confirmed",
+                                          "pass":  true,
+                                          "detail":  "All seven dashboard/HUD points were closed before entering await state."
+                                      },
+                                      {
+                                          "id":  "runtime_remains_blocked",
+                                          "pass":  true,
+                                          "detail":  "Dashboard, ARGOS, button, productive and future scope runtime remained false."
+                                      },
+                                      {
+                                          "id":  "no_future_scope_selected",
+                                          "pass":  true,
+                                          "detail":  "No next governed scope has been selected in this await registration."
+                                      },
+                                      {
+                                          "id":  "no_future_scope_authorized",
+                                          "pass":  true,
+                                          "detail":  "No next governed scope has been authorized in this await registration."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Await state output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_SEAL.json",
+                         "05_REPORTS/content_engine/GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_NEXT_GOVERNED_SCOPE_SELECTION"
+}
