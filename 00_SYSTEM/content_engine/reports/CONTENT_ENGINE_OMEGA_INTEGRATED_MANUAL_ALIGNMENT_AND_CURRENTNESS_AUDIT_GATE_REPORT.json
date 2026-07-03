@@ -1,0 +1,610 @@
+{
+    "generated_at_utc":  "2026-07-03T04:04:35.5284995Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_COMPLETED",
+    "classification":  "GOVERNED_READ_ONLY_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "277d2d19150e235b87a5570b4986e72414e40eb6",
+                     "upstream":  "277d2d19150e235b87a5570b4986e72414e40eb6",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_max_level_diagnostic":  {
+                                          "component":  "CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE",
+                                          "status":  "CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_DIAGNOSTIC_COMPLETED",
+                                          "build":  "V1",
+                                          "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_REPORT.json",
+                                          "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_MANIFEST.json",
+                                          "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_SEAL.json",
+                                          "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_SUMMARY.md",
+                                          "report_hash_matches_manifest":  true,
+                                          "summary_hash_matches_manifest":  true,
+                                          "seal_manifest_sha256_valid":  true,
+                                          "recommended_decision":  "PROCEED_TO_UNIFIED_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_ONLY",
+                                          "recommended_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_CONTROL_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_GATE",
+                                          "ready_for_unified_interface_7l_architecture_blueprint":  true,
+                                          "ready_for_unified_interface_7l_runtime_implementation":  false,
+                                          "ready_for_productive_buttons":  false,
+                                          "ready_for_argos_runtime_connection":  false,
+                                          "ready_for_source_code_mutation":  false
+                                      },
+    "audit_authorization_context":  {
+                                        "user_intent":  "Audit whether the Integrated Manual is aligned and updated with the current truth of CONTENT ENGINE and ARGOS before any manual update or unified interface work.",
+                                        "audit_selected_by_user":  true,
+                                        "manual_update_authorized":  false,
+                                        "source_mutation_authorized":  false,
+                                        "runtime_authorized":  false,
+                                        "interface_build_authorized":  false,
+                                        "argos_runtime_authorized":  false,
+                                        "productive_actions_authorized":  false
+                                    },
+    "inventory":  {
+                      "tracked_files_total":  2995,
+                      "manual_files_total":  6,
+                      "manual_current_files":  2,
+                      "manual_historical_files":  1,
+                      "manual_manifest_files":  1,
+                      "manual_registry_files":  2,
+                      "manual_json_files":  3,
+                      "manual_text_readable_files":  6,
+                      "manual_current_text_readable_files":  2,
+                      "manual_read_error_count":  0,
+                      "manual_read_error_sample":  [
+
+                                                   ],
+                      "manual_unreadable_or_empty_count":  0,
+                      "manual_unreadable_or_empty_sample":  [
+
+                                                            ],
+                      "manual_current_file_sample":  [
+                                                         "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_v9_EJECUTABLE_REAL.docx",
+                                                         "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md"
+                                                     ],
+                      "manual_historical_file_sample":  [
+                                                            "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md"
+                                                        ],
+                      "manual_manifest_file_sample":  [
+                                                          "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json"
+                                                      ],
+                      "manual_registry_file_sample":  [
+                                                          "00_SYSTEM/manual/registry/MANUAL_CURRENT_INDEX.json",
+                                                          "00_SYSTEM/manual/registry/MANUAL_VERSION_HISTORY.json"
+                                                      ]
+                  },
+    "manual_json_validity":  {
+                                 "total_json_files":  3,
+                                 "valid_json_files":  3,
+                                 "invalid_json_files":  0,
+                                 "invalid_json_sample":  [
+
+                                                         ],
+                                 "validity_percent":  100
+                             },
+    "manual_manifest_integrity":  {
+                                      "manual_manifest_files":  1,
+                                      "parse_errors":  0,
+                                      "parse_error_sample":  [
+
+                                                             ],
+                                      "manifests_with_file_hashes":  0,
+                                      "hash_reference_count":  0,
+                                      "hash_reference_matched":  0,
+                                      "hash_target_missing_count":  0,
+                                      "hash_target_missing_sample":  [
+
+                                                                     ],
+                                      "hash_mismatch_count":  0,
+                                      "hash_mismatch_sample":  [
+
+                                                               ],
+                                      "hash_match_percent":  100
+                                  },
+    "recent_truth_coverage_current_manual":  {
+                                                 "total_terms":  13,
+                                                 "covered_terms":  0,
+                                                 "missing_terms":  13,
+                                                 "coverage_percent":  0,
+                                                 "details":  [
+                                                                 {
+                                                                     "term":  "CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_DIAGNOSTIC_COMPLETED",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_CLOSED",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_REGISTERED",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "CONTENT_ENGINE_OMEGA_UNIFIED_CONTROL_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_GATE",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "PROCEED_TO_UNIFIED_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_ONLY",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "unified interface 7L",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "interfaz unificada",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "7-point normalization",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "normalización 7/7",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "await next authorized governed scope",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "runtime implementation: False",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "productive buttons: False",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 },
+                                                                 {
+                                                                     "term":  "ARGOS runtime connection: False",
+                                                                     "hits":  0,
+                                                                     "covered":  false
+                                                                 }
+                                                             ],
+                                                 "missing_terms_list":  [
+                                                                            "CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_DIAGNOSTIC_COMPLETED",
+                                                                            "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_CLOSED",
+                                                                            "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_REGISTERED",
+                                                                            "CONTENT_ENGINE_OMEGA_UNIFIED_CONTROL_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_GATE",
+                                                                            "PROCEED_TO_UNIFIED_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_ONLY",
+                                                                            "unified interface 7L",
+                                                                            "interfaz unificada",
+                                                                            "7-point normalization",
+                                                                            "normalización 7/7",
+                                                                            "await next authorized governed scope",
+                                                                            "runtime implementation: False",
+                                                                            "productive buttons: False",
+                                                                            "ARGOS runtime connection: False"
+                                                                        ]
+                                             },
+    "recent_truth_coverage_all_manual_scope":  {
+                                                   "total_terms":  13,
+                                                   "covered_terms":  0,
+                                                   "missing_terms":  13,
+                                                   "coverage_percent":  0,
+                                                   "details":  [
+                                                                   {
+                                                                       "term":  "CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_DIAGNOSTIC_COMPLETED",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_CLOSED",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_REGISTERED",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "CONTENT_ENGINE_OMEGA_UNIFIED_CONTROL_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_GATE",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "PROCEED_TO_UNIFIED_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_ONLY",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "unified interface 7L",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "interfaz unificada",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "7-point normalization",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "normalización 7/7",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "await next authorized governed scope",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "runtime implementation: False",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "productive buttons: False",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   },
+                                                                   {
+                                                                       "term":  "ARGOS runtime connection: False",
+                                                                       "hits":  0,
+                                                                       "covered":  false
+                                                                   }
+                                                               ],
+                                                   "missing_terms_list":  [
+                                                                              "CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_DIAGNOSTIC_COMPLETED",
+                                                                              "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_CLOSED",
+                                                                              "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_REGISTERED",
+                                                                              "CONTENT_ENGINE_OMEGA_UNIFIED_CONTROL_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_GATE",
+                                                                              "PROCEED_TO_UNIFIED_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_ONLY",
+                                                                              "unified interface 7L",
+                                                                              "interfaz unificada",
+                                                                              "7-point normalization",
+                                                                              "normalización 7/7",
+                                                                              "await next authorized governed scope",
+                                                                              "runtime implementation: False",
+                                                                              "productive buttons: False",
+                                                                              "ARGOS runtime connection: False"
+                                                                          ]
+                                               },
+    "core_manual_area_coverage_current_manual":  {
+                                                     "total_terms":  22,
+                                                     "covered_terms":  7,
+                                                     "missing_terms":  15,
+                                                     "coverage_percent":  31.82,
+                                                     "details":  [
+                                                                     {
+                                                                         "term":  "CONTENT ENGINE",
+                                                                         "hits":  8,
+                                                                         "covered":  true
+                                                                     },
+                                                                     {
+                                                                         "term":  "ARGOS",
+                                                                         "hits":  2,
+                                                                         "covered":  true
+                                                                     },
+                                                                     {
+                                                                         "term":  "manual",
+                                                                         "hits":  10,
+                                                                         "covered":  true
+                                                                     },
+                                                                     {
+                                                                         "term":  "evidence",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "manifest",
+                                                                         "hits":  2,
+                                                                         "covered":  true
+                                                                     },
+                                                                     {
+                                                                         "term":  "seal",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "gate",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "scope",
+                                                                         "hits":  1,
+                                                                         "covered":  true
+                                                                     },
+                                                                     {
+                                                                         "term":  "authorization",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "authorized",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "blocked",
+                                                                         "hits":  14,
+                                                                         "covered":  true
+                                                                     },
+                                                                     {
+                                                                         "term":  "runtime",
+                                                                         "hits":  6,
+                                                                         "covered":  true
+                                                                     },
+                                                                     {
+                                                                         "term":  "productive",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "dashboard",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "HUD",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "interface",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "interfaz",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "7L",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "next_safe_step",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "fail_closed",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "readiness",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     },
+                                                                     {
+                                                                         "term":  "blueprint",
+                                                                         "hits":  0,
+                                                                         "covered":  false
+                                                                     }
+                                                                 ],
+                                                     "missing_terms_list":  [
+                                                                                "evidence",
+                                                                                "seal",
+                                                                                "gate",
+                                                                                "authorization",
+                                                                                "authorized",
+                                                                                "productive",
+                                                                                "dashboard",
+                                                                                "HUD",
+                                                                                "interface",
+                                                                                "interfaz",
+                                                                                "7L",
+                                                                                "next_safe_step",
+                                                                                "fail_closed",
+                                                                                "readiness",
+                                                                                "blueprint"
+                                                                            ]
+                                                 },
+    "contradiction_scan_current_manual":  {
+                                              "contradiction_count":  0,
+                                              "contradictions_found":  false,
+                                              "hits":  [
+
+                                                       ]
+                                          },
+    "contradiction_scan_all_manual_scope":  {
+                                                "contradiction_count":  0,
+                                                "contradictions_found":  false,
+                                                "hits":  [
+
+                                                         ]
+                                            },
+    "historical_manual_risk_sample":  [
+                                          {
+                                              "file":  "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md",
+                                              "risk":  "Historical manual content must not be treated as current truth without explicit promotion or reconciliation."
+                                          }
+                                      ],
+    "missing_current_truth_terms":  [
+                                        "CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_DIAGNOSTIC_COMPLETED",
+                                        "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_CLOSE_GATE_CLOSED",
+                                        "GLOBAL_MANUAL_BRAIN_DASHBOARD_INTERFACE_RECONCILIATION_7_POINT_NORMALIZATION_AWAIT_NEXT_AUTHORIZED_GOVERNED_SCOPE_REGISTERED",
+                                        "CONTENT_ENGINE_OMEGA_UNIFIED_CONTROL_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_GATE",
+                                        "PROCEED_TO_UNIFIED_INTERFACE_7L_ARCHITECTURE_BLUEPRINT_ONLY",
+                                        "unified interface 7L",
+                                        "interfaz unificada",
+                                        "7-point normalization",
+                                        "normalización 7/7",
+                                        "await next authorized governed scope",
+                                        "runtime implementation: False",
+                                        "productive buttons: False",
+                                        "ARGOS runtime connection: False"
+                                    ],
+    "manual_scores":  {
+                          "structure":  {
+                                            "score":  100,
+                                            "level":  "MAXIMUM",
+                                            "interpretation":  "Presence of manual current, historical, manifest and registry roots."
+                                        },
+                          "current_truth_coverage":  {
+                                                         "score":  0,
+                                                         "level":  "LOW",
+                                                         "interpretation":  "Coverage of recent current-state truth terms inside current manual text."
+                                                     },
+                          "all_manual_truth_coverage":  {
+                                                            "score":  0,
+                                                            "level":  "LOW",
+                                                            "interpretation":  "Coverage of recent current-state truth terms across all manual scope."
+                                                        },
+                          "core_area_coverage":  {
+                                                     "score":  31.82,
+                                                     "level":  "LOW",
+                                                     "interpretation":  "Coverage of core system areas in current manual."
+                                                 },
+                          "json_validity":  {
+                                                "score":  100,
+                                                "level":  "MAXIMUM",
+                                                "interpretation":  "Manual JSON validity."
+                                            },
+                          "manifest_integrity":  {
+                                                     "score":  100,
+                                                     "level":  "MAXIMUM",
+                                                     "interpretation":  "Manual manifest hash reference integrity."
+                                                 },
+                          "alignment":  {
+                                            "score":  59.77,
+                                            "level":  "LOW_MEDIUM",
+                                            "interpretation":  "Overall alignment of current manual with current system truth."
+                                        },
+                          "currentness":  {
+                                              "score":  14.77,
+                                              "level":  "LOW",
+                                              "interpretation":  "How updated the current manual appears against recent work."
+                                          },
+                          "central_source_of_truth_readiness":  {
+                                                                    "score":  60.35,
+                                                                    "level":  "MEDIUM",
+                                                                    "interpretation":  "Whether the manual can safely remain the central truth source without realignment."
+                                                                }
+                      },
+    "audit_decision":  {
+                           "manual_integrated_exists":  true,
+                           "manual_structure_present":  true,
+                           "manual_aligned_with_current_content_engine_truth":  false,
+                           "manual_fully_updated_with_recent_work":  false,
+                           "contradictions_found_in_current_manual":  false,
+                           "contradictions_found_anywhere_in_manual_scope":  false,
+                           "can_manual_remain_central_source_of_truth_without_realignment":  false,
+                           "manual_needs_governed_realignment":  true,
+                           "recommended_create_new_manual_version_now":  false,
+                           "recommended_first_step":  "CREATE_MANUAL_REALIGNMENT_BLUEPRINT_BEFORE_UPDATING_CURRENT_MANUAL",
+                           "recommended_next_scope":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE",
+                           "relationship_to_unified_interface_7l":  "Manual must become the reconciled source-of-truth layer feeding the future unified intelligent 7L control interface; interface runtime remains blocked until manual truth, evidence map, authorization model and visual state model are reconciled.",
+                           "safe_next_step":  "REVIEW_INTEGRATED_MANUAL_ALIGNMENT_AUDIT_AND_DECIDE_MANUAL_REALIGNMENT_BLUEPRINT"
+                       },
+    "audit_gate":  {
+                       "gate_type":  "integrated_manual_alignment_and_currentness_audit",
+                       "audit_pass":  true,
+                       "checks_total":  11,
+                       "checks_passed":  11,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before manual alignment audit."
+                                      },
+                                      {
+                                          "id":  "previous_max_level_diagnostic_consumed",
+                                          "pass":  true,
+                                          "detail":  "Previous max-level maturity diagnostic consumed and validated."
+                                      },
+                                      {
+                                          "id":  "runtime_remained_blocked",
+                                          "pass":  true,
+                                          "detail":  "Dashboard, ARGOS, button, productive and future scope runtime remained false."
+                                      },
+                                      {
+                                          "id":  "manual_scope_inventoried",
+                                          "pass":  true,
+                                          "detail":  "Manual current, historical, manifest and registry files inventoried."
+                                      },
+                                      {
+                                          "id":  "manual_read_only_scan_completed",
+                                          "pass":  true,
+                                          "detail":  "Manual readable artifacts scanned without modifying manual files."
+                                      },
+                                      {
+                                          "id":  "manual_current_truth_coverage_completed",
+                                          "pass":  true,
+                                          "detail":  "Current manual coverage against recent governed truth terms completed."
+                                      },
+                                      {
+                                          "id":  "manual_contradiction_scan_completed",
+                                          "pass":  true,
+                                          "detail":  "Manual contradiction scan completed."
+                                      },
+                                      {
+                                          "id":  "manual_alignment_decision_generated",
+                                          "pass":  true,
+                                          "detail":  "Manual alignment/currentness/source-of-truth decision generated."
+                                      },
+                                      {
+                                          "id":  "manual_not_modified",
+                                          "pass":  true,
+                                          "detail":  "Manual current, historical, manifest and registry roots were not modified."
+                                      },
+                                      {
+                                          "id":  "source_not_modified",
+                                          "pass":  true,
+                                          "detail":  "No source code mutation performed."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_not_modified":  true,
+                         "source_not_modified":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "REVIEW_INTEGRATED_MANUAL_ALIGNMENT_AUDIT_AND_DECIDE_MANUAL_REALIGNMENT_BLUEPRINT"
+}

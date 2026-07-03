@@ -1,0 +1,47 @@
+{
+    "generated_at_utc":  "2026-07-03T04:04:35.5732078Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_COMPLETED",
+    "build":  "V1",
+    "classification":  "GOVERNED_READ_ONLY_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_ONLY",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SUMMARY.md"
+                     ],
+    "consumed_max_level_diagnostic":  [
+                                          "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_REPORT.json",
+                                          "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_MANIFEST.json",
+                                          "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_SEAL.json",
+                                          "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_SUMMARY.md"
+                                      ],
+    "manual_scope_sample_hashed":  [
+                                       "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_v9_EJECUTABLE_REAL.docx",
+                                       "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md",
+                                       "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md",
+                                       "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json",
+                                       "00_SYSTEM/manual/registry/MANUAL_CURRENT_INDEX.json",
+                                       "00_SYSTEM/manual/registry/MANUAL_VERSION_HISTORY.json"
+                                   ],
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_REPORT.json":  "aab537252a1ef464680c30acfa5bf117231bee50fbf81cf238929d5c5aff9cb4",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_SUMMARY.md":  "71c5ecf80342722fd4cd0484048cd9f607c274b3b7810f2befa72faf4bebed53",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_REPORT.json":  "df0c769edd1f30c510fff4723dfa8a7073fcdda32bdc21864d5f8f12539bf691",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_MANIFEST.json":  "88bf8ca4e332d32ec1ed25d6d0053fb1ec1d25276f2695f480705a18241ee833",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_SEAL.json":  "19f750ea4e37eb073f4a84a18957ca8869ad62a36e81ca701dfe6f1828f7dabe",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_MAX_LEVEL_MATURITY_STABILITY_SECURITY_AND_UNIFIED_INTERFACE_READINESS_DIAGNOSTIC_AFTER_AWAIT_STATE_SUMMARY.md":  "de81ff9e3a6ab3543dad2867770f74d9ec6637dec3b030809f2956967a59c496",
+                        "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_v9_EJECUTABLE_REAL.docx":  "0099ddd48305270db6298810eec80d719934dbc81032afe0d9de08eaa6d48280",
+                        "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md":  "21768bfea8b8229dc5c5997e8128f6a454c9dd9f32f635335224e1b42231e945",
+                        "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md":  "3f95d14b0d96468c45120d022592fc67ab7842c902ef456b492bd8dbe5eca934",
+                        "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json":  "b6df0908d477f0528ce52772f764cf7c69bf0a617d76db98efb1b337c5709986",
+                        "00_SYSTEM/manual/registry/MANUAL_CURRENT_INDEX.json":  "95631f03fde17f608f7d591cdaf40ab4750f27b3c5531355623be29c13e30ef0",
+                        "00_SYSTEM/manual/registry/MANUAL_VERSION_HISTORY.json":  "43517984ab2a424fb4b16ccb955a4c2f8098e3a3337613d58e744a7e1ef37001"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "manual_not_modified":  true,
+                            "source_not_modified":  true
+                        }
+}

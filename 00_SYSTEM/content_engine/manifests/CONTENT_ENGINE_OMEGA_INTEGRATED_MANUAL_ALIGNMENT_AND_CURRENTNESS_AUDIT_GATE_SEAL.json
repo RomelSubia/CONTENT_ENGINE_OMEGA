@@ -1,0 +1,19 @@
+{
+    "generated_at_utc":  "2026-07-03T04:04:35.5815952Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_COMPLETED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_ALIGNMENT_AND_CURRENTNESS_AUDIT_GATE_MANIFEST.json",
+    "manifest_sha256":  "73ec87042eaa732241a8d8f35c9415b9ad04aadf9086173be36862e49a2b0ff8",
+    "sealed":  true,
+    "seal_policy":  {
+                        "integrated_manual_alignment_audit_only":  true,
+                        "no_manual_update":  true,
+                        "no_source_mutation":  true,
+                        "no_interface_build":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true
+                    }
+}
