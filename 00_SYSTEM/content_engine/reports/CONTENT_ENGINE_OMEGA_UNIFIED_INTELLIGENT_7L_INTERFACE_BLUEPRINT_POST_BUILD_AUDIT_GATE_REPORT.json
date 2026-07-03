@@ -1,0 +1,297 @@
+{
+    "generated_at_utc":  "2026-07-03T23:52:50.0266825Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_POST_BUILD_AUDIT_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_POST_BUILD_AUDITED",
+    "classification":  "GOVERNED_POST_BUILD_AUDIT_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "6a4efc77711e8ee87a6b3d42fd75dfaabaf92a45",
+                     "upstream":  "6a4efc77711e8ee87a6b3d42fd75dfaabaf92a45",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_previous_gate":  {
+                                   "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+                                   "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_DEFINED",
+                                   "build":  "V1",
+                                   "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_REPORT.json",
+                                   "blueprint":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_BLUEPRINT.md",
+                                   "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_MANIFEST.json",
+                                   "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SEAL.json",
+                                   "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SUMMARY.md",
+                                   "validation":  {
+                                                      "label":  "PREVIOUS_7L_BLUEPRINT_GATE",
+                                                      "manifest_valid":  true,
+                                                      "seal_valid":  true,
+                                                      "file_hashes_valid":  true,
+                                                      "hashed_files_count":  3,
+                                                      "hashed_files":  [
+                                                                           {
+                                                                               "path":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_REPORT.json",
+                                                                               "hash_matches_manifest":  true,
+                                                                               "sha256":  "0b369b2b134614b91b794e1ce223bfd6428d311bf58e87d0ce984a4ffca8ebd7"
+                                                                           },
+                                                                           {
+                                                                               "path":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_BLUEPRINT.md",
+                                                                               "hash_matches_manifest":  true,
+                                                                               "sha256":  "5886acce3034b4e7c07576f5394d718a786fcea3e53e4ba3d04b603347c534c6"
+                                                                           },
+                                                                           {
+                                                                               "path":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_SUMMARY.md",
+                                                                               "hash_matches_manifest":  true,
+                                                                               "sha256":  "47d468441a1c55a28ad466a581b216960d72ec610ccd300995c9da5ee9678c74"
+                                                                           }
+                                                                       ],
+                                                      "seal_manifest_sha256_valid":  true
+                                                  }
+                               },
+    "audit_decision":  {
+                           "post_build_audit_completed":  true,
+                           "post_build_audit_passed":  true,
+                           "blueprint_gate_consumed":  true,
+                           "blueprint_artifacts_present":  true,
+                           "blueprint_artifacts_tracked":  true,
+                           "previous_manifest_valid":  true,
+                           "previous_seal_valid":  true,
+                           "previous_manifest_hashes_match":  true,
+                           "blueprint_report_valid":  true,
+                           "blueprint_markdown_valid":  true,
+                           "blueprint_model_valid":  true,
+                           "layer_count":  7,
+                           "panel_count":  7,
+                           "blueprint_track":  "unified_intelligent_7L_interface_blueprint_only",
+                           "manual_update_authorized":  false,
+                           "manual_update_performed":  false,
+                           "manual_file_mutation_authorized":  false,
+                           "manual_file_mutation_performed":  false,
+                           "source_mutation_authorized":  false,
+                           "source_mutation_performed":  false,
+                           "runtime_authorized":  false,
+                           "runtime_performed":  false,
+                           "dashboard_runtime_authorized":  false,
+                           "dashboard_runtime_performed":  false,
+                           "argos_runtime_authorized":  false,
+                           "argos_runtime_performed":  false,
+                           "interface_build_authorized":  false,
+                           "interface_build_performed":  false,
+                           "button_runtime_authorized":  false,
+                           "button_runtime_performed":  false,
+                           "productive_actions_authorized":  false,
+                           "productive_actions_performed":  false,
+                           "safety_preserved":  true,
+                           "ready_for_close_validation":  true,
+                           "ready_for_runtime":  false,
+                           "ready_for_interface_build":  false,
+                           "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_CLOSE_VALIDATION"
+                       },
+    "blueprint_content_audit":  {
+                                    "required_sections_present":  true,
+                                    "layer_tokens":  [
+                                                         {
+                                                             "token":  "L1",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "L2",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "L3",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "L4",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "L5",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "L6",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "L7",
+                                                             "present":  true
+                                                         }
+                                                     ],
+                                    "panel_tokens":  [
+                                                         {
+                                                             "token":  "P1",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "P2",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "P3",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "P4",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "P5",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "P6",
+                                                             "present":  true
+                                                         },
+                                                         {
+                                                             "token":  "P7",
+                                                             "present":  true
+                                                         }
+                                                     ],
+                                    "blocked_action_tokens":  [
+                                                                  {
+                                                                      "token":  "manual_update",
+                                                                      "present":  true
+                                                                  },
+                                                                  {
+                                                                      "token":  "source_code_mutation",
+                                                                      "present":  true
+                                                                  },
+                                                                  {
+                                                                      "token":  "runtime_execution",
+                                                                      "present":  true
+                                                                  },
+                                                                  {
+                                                                      "token":  "dashboard_runtime",
+                                                                      "present":  true
+                                                                  },
+                                                                  {
+                                                                      "token":  "argos_runtime",
+                                                                      "present":  true
+                                                                  },
+                                                                  {
+                                                                      "token":  "interface_build",
+                                                                      "present":  true
+                                                                  },
+                                                                  {
+                                                                      "token":  "live_button_execution",
+                                                                      "present":  true
+                                                                  },
+                                                                  {
+                                                                      "token":  "productive_os_action",
+                                                                      "present":  true
+                                                                  }
+                                                              ]
+                                },
+    "audit_gate":  {
+                       "gate_type":  "post_build_audit",
+                       "audit_pass":  true,
+                       "checks_total":  11,
+                       "checks_passed":  11,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before post-build audit."
+                                      },
+                                      {
+                                          "id":  "previous_blueprint_gate_consumed",
+                                          "pass":  true,
+                                          "detail":  "Previous 7L blueprint gate consumed."
+                                      },
+                                      {
+                                          "id":  "previous_artifacts_present_and_tracked",
+                                          "pass":  true,
+                                          "detail":  "Previous report, blueprint, manifest, seal and summary are present and tracked."
+                                      },
+                                      {
+                                          "id":  "previous_manifest_and_seal_valid",
+                                          "pass":  true,
+                                          "detail":  "Previous manifest hashes and seal are valid."
+                                      },
+                                      {
+                                          "id":  "previous_report_status_valid",
+                                          "pass":  true,
+                                          "detail":  "Previous report has expected component, status, build, pass and next safe step."
+                                      },
+                                      {
+                                          "id":  "blueprint_decision_valid",
+                                          "pass":  true,
+                                          "detail":  "Blueprint decision confirms blueprint-only 7L interface definition."
+                                      },
+                                      {
+                                          "id":  "blueprint_model_counts_valid",
+                                          "pass":  true,
+                                          "detail":  "Blueprint model contains seven layers and seven panels."
+                                      },
+                                      {
+                                          "id":  "blueprint_markdown_content_valid",
+                                          "pass":  true,
+                                          "detail":  "Blueprint markdown includes required sections, layer tokens, panel tokens and blocked action tokens."
+                                      },
+                                      {
+                                          "id":  "safety_invariants_preserved",
+                                          "pass":  true,
+                                          "detail":  "Manual/source/runtime/interface/ARGOS/button/productive operations remain blocked."
+                                      },
+                                      {
+                                          "id":  "next_safe_step_is_close_validation",
+                                          "pass":  true,
+                                          "detail":  "Next safe step is blueprint gate close validation."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Post-build audit output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "manual_update_performed":  false,
+                         "manual_file_mutation_performed":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "no_manual_mutation":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "session_state":  {
+                          "post_build_audit_completed":  true,
+                          "post_build_audit_passed":  true,
+                          "safe_to_proceed_to_close_validation":  true,
+                          "ready_for_runtime":  false,
+                          "ready_for_interface_build":  false,
+                          "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_CLOSE_VALIDATION"
+                      },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_POST_BUILD_AUDIT_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_POST_BUILD_AUDIT_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_POST_BUILD_AUDIT_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_POST_BUILD_AUDIT_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE_CLOSE_VALIDATION"
+}
