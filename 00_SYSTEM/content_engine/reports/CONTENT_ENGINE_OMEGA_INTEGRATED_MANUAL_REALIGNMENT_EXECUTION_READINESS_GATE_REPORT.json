@@ -1,0 +1,340 @@
+{
+    "generated_at_utc":  "2026-07-03T06:32:16.2029060Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_READY",
+    "classification":  "GOVERNED_DOCUMENTARY_EXECUTION_READINESS_GATE_FOR_INTEGRATED_MANUAL_REALIGNMENT_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "b8cf2d9cea12485dece1212d497a69264316b5ed",
+                     "upstream":  "b8cf2d9cea12485dece1212d497a69264316b5ed",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_execution_readiness_authorization":  {
+                                                       "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE",
+                                                       "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_AUTHORIZED",
+                                                       "build":  "V1",
+                                                       "report":  "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_REPORT.json",
+                                                       "manifest":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_MANIFEST.json",
+                                                       "seal":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SEAL.json",
+                                                       "summary":  "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SUMMARY.md",
+                                                       "validation":  {
+                                                                          "label":  "PREVIOUS_EXECUTION_READINESS_AUTHORIZATION",
+                                                                          "manifest_valid":  true,
+                                                                          "seal_valid":  true,
+                                                                          "report_hash_matches_manifest":  true,
+                                                                          "summary_hash_matches_manifest":  true,
+                                                                          "seal_manifest_sha256_valid":  true
+                                                                      },
+                                                       "authorization_pass":  true,
+                                                       "checks_failed":  0
+                                                   },
+    "readiness_decision":  {
+                               "execution_readiness_gate_ready":  true,
+                               "readiness_plan_defined":  true,
+                               "manual_roots_verified":  true,
+                               "manual_current_files_available":  true,
+                               "exact_future_manual_review_scope_declared":  true,
+                               "rollback_requirements_defined":  true,
+                               "manual_inventory_git_blob_ids_recorded_read_only":  true,
+                               "manual_realignment_execution_authorized":  false,
+                               "manual_update_authorized":  false,
+                               "new_manual_version_creation_authorized":  false,
+                               "source_mutation_authorized":  false,
+                               "runtime_authorized":  false,
+                               "interface_build_authorized":  false,
+                               "argos_runtime_authorized":  false,
+                               "productive_actions_authorized":  false,
+                               "ready_for_readiness_post_build_audit":  true,
+                               "ready_to_execute_manual_realignment":  false,
+                               "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT"
+                           },
+    "readiness_plan":  {
+                           "readiness_scope":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE",
+                           "readiness_version":  "V1",
+                           "readiness_authorized_by_user":  true,
+                           "manual_realignment_execution_authorized":  false,
+                           "manual_update_authorized":  false,
+                           "source_mutation_authorized":  false,
+                           "runtime_authorized":  false,
+                           "interface_build_authorized":  false,
+                           "argos_runtime_authorized":  false,
+                           "productive_actions_authorized":  false,
+                           "manual_roots_verified":  [
+                                                         {
+                                                             "root":  "00_SYSTEM/manual/current/",
+                                                             "exists":  true,
+                                                             "mutation_allowed_now":  false
+                                                         },
+                                                         {
+                                                             "root":  "00_SYSTEM/manual/historical/",
+                                                             "exists":  true,
+                                                             "mutation_allowed_now":  false
+                                                         },
+                                                         {
+                                                             "root":  "00_SYSTEM/manual/manifest/",
+                                                             "exists":  true,
+                                                             "mutation_allowed_now":  false
+                                                         },
+                                                         {
+                                                             "root":  "00_SYSTEM/manual/registry/",
+                                                             "exists":  true,
+                                                             "mutation_allowed_now":  false
+                                                         }
+                                                     ],
+                           "exact_future_manual_review_scope":  {
+                                                                    "current_manual_files_to_review_for_future_realignment":  [
+                                                                                                                                  "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_v9_EJECUTABLE_REAL.docx",
+                                                                                                                                  "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md"
+                                                                                                                              ],
+                                                                    "historical_manual_files_preserve_only":  [
+                                                                                                                  "00_SYSTEM/manual/historical/CONTEN ENGINE MANUAL MAESTRO ÚNICO DE CREACIÓN v8 — ULTRA HARDENED.docx",
+                                                                                                                  "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md"
+                                                                                                              ],
+                                                                    "manual_manifest_files_to_review_for_future_governed_update":  [
+                                                                                                                                       "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json"
+                                                                                                                                   ],
+                                                                    "manual_registry_files_to_review_for_future_governed_update":  [
+                                                                                                                                       "00_SYSTEM/manual/registry/MANUAL_CURRENT_INDEX.json",
+                                                                                                                                       "00_SYSTEM/manual/registry/MANUAL_VERSION_HISTORY.json"
+                                                                                                                                   ],
+                                                                    "all_tracked_manual_files_inventory":  [
+                                                                                                               "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_v9_EJECUTABLE_REAL.docx",
+                                                                                                               "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md",
+                                                                                                               "00_SYSTEM/manual/historical/CONTEN ENGINE MANUAL MAESTRO ÚNICO DE CREACIÓN v8 — ULTRA HARDENED.docx",
+                                                                                                               "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md",
+                                                                                                               "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json",
+                                                                                                               "00_SYSTEM/manual/registry/MANUAL_CURRENT_INDEX.json",
+                                                                                                               "00_SYSTEM/manual/registry/MANUAL_VERSION_HISTORY.json"
+                                                                                                           ],
+                                                                    "all_tracked_manual_git_blob_inventory_read_only":  [
+                                                                                                                            {
+                                                                                                                                "mode":  "100644",
+                                                                                                                                "git_blob_id":  "ed656f159104809a0c29568888832ee87ff8c7e6",
+                                                                                                                                "stage":  "0",
+                                                                                                                                "path":  "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_v9_EJECUTABLE_REAL.docx",
+                                                                                                                                "root":  "00_SYSTEM/manual/current/",
+                                                                                                                                "inventory_only":  true,
+                                                                                                                                "mutation_allowed_now":  false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "mode":  "100644",
+                                                                                                                                "git_blob_id":  "e83e38657911b6c187c94c7e0de3e3b918cb11a1",
+                                                                                                                                "stage":  "0",
+                                                                                                                                "path":  "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md",
+                                                                                                                                "root":  "00_SYSTEM/manual/current/",
+                                                                                                                                "inventory_only":  true,
+                                                                                                                                "mutation_allowed_now":  false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "mode":  "100644",
+                                                                                                                                "git_blob_id":  "c2e35b267a8867354a3dbf1b56f392030985adaa",
+                                                                                                                                "stage":  "0",
+                                                                                                                                "path":  "00_SYSTEM/manual/historical/CONTEN ENGINE MANUAL MAESTRO ÚNICO DE CREACIÓN v8 — ULTRA HARDENED.docx",
+                                                                                                                                "root":  "00_SYSTEM/manual/historical/",
+                                                                                                                                "inventory_only":  true,
+                                                                                                                                "mutation_allowed_now":  false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "mode":  "100644",
+                                                                                                                                "git_blob_id":  "6bba62c51e758f84b9742fc588702e37e7413a05",
+                                                                                                                                "stage":  "0",
+                                                                                                                                "path":  "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md",
+                                                                                                                                "root":  "00_SYSTEM/manual/historical/",
+                                                                                                                                "inventory_only":  true,
+                                                                                                                                "mutation_allowed_now":  false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "mode":  "100644",
+                                                                                                                                "git_blob_id":  "53585b9da078632d60bc01c9c208df3fc56d942d",
+                                                                                                                                "stage":  "0",
+                                                                                                                                "path":  "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json",
+                                                                                                                                "root":  "00_SYSTEM/manual/manifest/",
+                                                                                                                                "inventory_only":  true,
+                                                                                                                                "mutation_allowed_now":  false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "mode":  "100644",
+                                                                                                                                "git_blob_id":  "c2ee34fafc3ae9074571a15dc02d6b8dc11f219a",
+                                                                                                                                "stage":  "0",
+                                                                                                                                "path":  "00_SYSTEM/manual/registry/MANUAL_CURRENT_INDEX.json",
+                                                                                                                                "root":  "00_SYSTEM/manual/registry/",
+                                                                                                                                "inventory_only":  true,
+                                                                                                                                "mutation_allowed_now":  false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "mode":  "100644",
+                                                                                                                                "git_blob_id":  "65e688036248bdda5f31075d408220cb903a4549",
+                                                                                                                                "stage":  "0",
+                                                                                                                                "path":  "00_SYSTEM/manual/registry/MANUAL_VERSION_HISTORY.json",
+                                                                                                                                "root":  "00_SYSTEM/manual/registry/",
+                                                                                                                                "inventory_only":  true,
+                                                                                                                                "mutation_allowed_now":  false
+                                                                                                                            }
+                                                                                                                        ]
+                                                                },
+                           "future_execution_boundaries":  {
+                                                               "allowed_later_only_after_explicit_execution_authorization":  [
+                                                                                                                                 "Update current manual content to align with current CONTENT ENGINE truth.",
+                                                                                                                                 "Update manual manifest only if exact paths are declared in a future execution gate.",
+                                                                                                                                 "Update manual registry only if exact paths are declared in a future execution gate.",
+                                                                                                                                 "Create a new manual version only if a future gate explicitly authorizes it."
+                                                                                                                             ],
+                                                               "forbidden_in_this_readiness_gate":  [
+                                                                                                        "Manual file mutation.",
+                                                                                                        "Source code mutation.",
+                                                                                                        "Runtime execution.",
+                                                                                                        "Dashboard runtime.",
+                                                                                                        "ARGOS runtime.",
+                                                                                                        "Button execution.",
+                                                                                                        "Interface build.",
+                                                                                                        "Productive actions.",
+                                                                                                        "Silent deletion of historical manual content.",
+                                                                                                        "Untracked manual output creation."
+                                                                                                    ],
+                                                               "required_before_future_execution":  [
+                                                                                                        "Readiness gate post-build audit must pass.",
+                                                                                                        "Readiness gate close gate must close cleanly.",
+                                                                                                        "User must explicitly authorize manual realignment execution.",
+                                                                                                        "Future execution gate must declare exact target files before mutation.",
+                                                                                                        "Future execution gate must declare rollback/backout strategy.",
+                                                                                                        "Future execution gate must preserve historical files from overwrite.",
+                                                                                                        "Future execution gate must maintain no source/runtime/interface/ARGOS/productive mutation.",
+                                                                                                        "Future execution must generate report, manifest, seal and summary.",
+                                                                                                        "Repo must be clean and synced before and after.",
+                                                                                                        "Manual must be audited after any future update."
+                                                                                                    ]
+                                                           },
+                           "rollback_and_backout_requirements_for_future_execution":  {
+                                                                                          "rollback_required_before_manual_mutation":  true,
+                                                                                          "rollback_must_capture_pre_update_git_blob_ids":  true,
+                                                                                          "rollback_must_capture_exact_target_paths":  true,
+                                                                                          "rollback_must_preserve_historical_files":  true,
+                                                                                          "rollback_must_be_documentary_and_auditable":  true,
+                                                                                          "rollback_not_executed_now":  true
+                                                                                      },
+                           "production_readiness_interpretation":  {
+                                                                       "readiness_gate_ready":  true,
+                                                                       "ready_for_manual_realignment_execution":  false,
+                                                                       "ready_for_runtime":  false,
+                                                                       "ready_for_argos_runtime":  false,
+                                                                       "ready_for_unified_interface_build":  false,
+                                                                       "reason":  "This gate confirms the system can prepare a governed manual realignment execution path, but does not authorize or perform the execution."
+                                                                   }
+                       },
+    "readiness_gate":  {
+                           "gate_type":  "integrated_manual_realignment_execution_readiness_gate",
+                           "readiness_pass":  true,
+                           "checks_total":  13,
+                           "checks_passed":  13,
+                           "checks_failed":  0,
+                           "checks":  [
+                                          {
+                                              "id":  "repo_clean_synced_precheck",
+                                              "pass":  true,
+                                              "detail":  "Repo clean and synced before readiness gate."
+                                          },
+                                          {
+                                              "id":  "authorization_consumed",
+                                              "pass":  true,
+                                              "detail":  "User authorization for execution readiness gate consumed."
+                                          },
+                                          {
+                                              "id":  "authorization_manifest_and_seal_validated",
+                                              "pass":  true,
+                                              "detail":  "Authorization manifest and seal validated."
+                                          },
+                                          {
+                                              "id":  "manual_roots_exist",
+                                              "pass":  true,
+                                              "detail":  "Manual current, historical, manifest and registry roots exist."
+                                          },
+                                          {
+                                              "id":  "manual_current_inventory_available",
+                                              "pass":  true,
+                                              "detail":  "Current manual tracked files are available for future review."
+                                          },
+                                          {
+                                              "id":  "manual_inventory_git_blob_ids_recorded_read_only",
+                                              "pass":  true,
+                                              "detail":  "Manual inventory recorded using Git blob IDs without mutating manual files."
+                                          },
+                                          {
+                                              "id":  "exact_future_review_scope_declared",
+                                              "pass":  true,
+                                              "detail":  "Future manual review scope inventory was declared without mutation."
+                                          },
+                                          {
+                                              "id":  "rollback_requirements_defined",
+                                              "pass":  true,
+                                              "detail":  "Rollback/backout requirements for future execution were defined."
+                                          },
+                                          {
+                                              "id":  "manual_execution_not_authorized",
+                                              "pass":  true,
+                                              "detail":  "Manual realignment execution remains unauthorized."
+                                          },
+                                          {
+                                              "id":  "manual_update_not_performed",
+                                              "pass":  true,
+                                              "detail":  "Manual files were not modified."
+                                          },
+                                          {
+                                              "id":  "source_runtime_interface_argos_productive_blocked",
+                                              "pass":  true,
+                                              "detail":  "Source, runtime, interface, ARGOS and productive actions remain blocked."
+                                          },
+                                          {
+                                              "id":  "next_step_is_readiness_post_build_audit",
+                                              "pass":  true,
+                                              "detail":  "Next safe step is readiness post-build audit."
+                                          },
+                                          {
+                                              "id":  "official_output_scope_exact",
+                                              "pass":  true,
+                                              "detail":  "Readiness gate output scope is exactly report, manifest, seal and summary."
+                                          }
+                                      ]
+                       },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "manual_update_performed":  false,
+                         "no_manual_update":  true,
+                         "no_manual_file_mutation":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_POST_BUILD_AUDIT"
+}
