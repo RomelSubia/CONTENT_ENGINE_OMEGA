@@ -1,0 +1,41 @@
+{
+    "generated_at_utc":  "2026-07-03T22:34:29.4099673Z",
+    "component":  "AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION",
+    "status":  "CONTENT_ENGINE_OMEGA_NEXT_SESSION_CONTINUATION_AUTHORIZED",
+    "build":  "V1",
+    "classification":  "GOVERNED_USER_AUTHORIZATION_RECORD_FOR_NEXT_SESSION_CONTENT_ENGINE_OMEGA_CONTINUATION",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SEAL.json",
+                         "05_REPORTS/content_engine/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SUMMARY.md"
+                     ],
+    "consumed_previous_close_gate_artifacts":  [
+                                                   "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_REPORT.json",
+                                                   "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_MANIFEST.json",
+                                                   "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_SEAL.json",
+                                                   "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_SUMMARY.md"
+                                               ],
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_REPORT.json":  "5d070d87da9cc1bc453c25f614036604c813647eca0f58f12773f830c0634496",
+                        "05_REPORTS/content_engine/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SUMMARY.md":  "4731776d8313c1a0197f75dd9f28891988a484fda6174daa35520437ffd27609",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_REPORT.json":  "57277f9bb848970e7aee14e30b7ba3f539ba76315e0139e9502153c0d06ec7c1",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_MANIFEST.json":  "0b978eb9f95fd8a25e93462622ad5b9706c87ef79f345c3db4d35dbf58861b1b",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_SEAL.json":  "c376b41d53891fc0ba96e84c3b81fa67246aaacd0992c9e5fc888b98fd12735f",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_SUMMARY.md":  "d8cd75ef3f09f52179109133218f0334e1ba36931c81bbf6d90d15281f78c0e0"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "authorization_only":  true,
+                            "next_session_continuation_authorized":  true,
+                            "previous_execution_lifecycle_completed":  true,
+                            "no_manual_mutation":  true,
+                            "no_source_mutation":  true,
+                            "no_runtime":  true,
+                            "no_interface_build":  true,
+                            "no_argos_runtime":  true,
+                            "no_productive_actions":  true,
+                            "next_scope_requires_separate_gate":  true
+                        }
+}
