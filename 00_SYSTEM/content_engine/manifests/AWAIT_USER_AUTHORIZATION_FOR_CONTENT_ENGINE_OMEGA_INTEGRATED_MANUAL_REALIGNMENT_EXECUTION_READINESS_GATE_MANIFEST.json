@@ -1,0 +1,35 @@
+{
+    "generated_at_utc":  "2026-07-03T05:55:58.2306449Z",
+    "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_AUTHORIZED",
+    "build":  "V1",
+    "classification":  "GOVERNED_USER_AUTHORIZATION_RECORD_FOR_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_ONLY",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SUMMARY.md"
+                     ],
+    "consumed_blueprint_close_gate_artifacts":  [
+                                                    "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_REPORT.json",
+                                                    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_MANIFEST.json",
+                                                    "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_SEAL.json",
+                                                    "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_SUMMARY.md"
+                                                ],
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_REPORT.json":  "b05e89731dd1dfc15487ec44a662a94e36e04ff13e6efe1db9e56bd89fd48a81",
+                        "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE_SUMMARY.md":  "ef93f751b8675a90647fe0de11d05ecfdcee4d8a3a4bc54fdbf6ff33580ce029",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_REPORT.json":  "96e2fdded92ce55a47285a5a1777f1954cd3ea668d24dfdfecad22310bfdb84f",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_MANIFEST.json":  "bb95918f508448156711f3c2019812c883197873dceb281b6042fdb9b02df44c",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_SEAL.json":  "f9e1ddd2e023a8280c9886107a533b347ca1f017cbb14aa90e7167387c87c032",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_SUMMARY.md":  "91236548b58c4bd4a80c328b7c4935125ac11fce4f50136cf0fab65adb8335b5"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "authorizes_readiness_gate_only":  true,
+                            "no_manual_update":  true,
+                            "no_manual_file_mutation":  true,
+                            "no_source_mutation":  true
+                        }
+}
