@@ -1,0 +1,24 @@
+{
+    "generated_at_utc":  "2026-07-03T09:00:42.2635242Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_CLOSED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_CLOSE_GATE_MANIFEST.json",
+    "manifest_sha256":  "0b978eb9f95fd8a25e93462622ad5b9706c87ef79f345c3db4d35dbf58861b1b",
+    "sealed":  true,
+    "seal_policy":  {
+                        "execution_close_gate_only":  true,
+                        "fix_1_applied":  true,
+                        "execution_lifecycle_completed":  true,
+                        "manual_realignment_execution_closed":  true,
+                        "no_manual_mutation_in_close_gate":  true,
+                        "no_source_mutation":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_interface_build":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true,
+                        "session_pause_recommended":  true,
+                        "ready_for_next_session":  true
+                    }
+}
