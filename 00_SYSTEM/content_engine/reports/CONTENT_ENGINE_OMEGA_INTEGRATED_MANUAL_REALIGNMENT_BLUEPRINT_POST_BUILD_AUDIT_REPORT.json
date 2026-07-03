@@ -1,0 +1,165 @@
+{
+    "generated_at_utc":  "2026-07-03T05:19:52.3814222Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDITED",
+    "classification":  "GOVERNED_DOCUMENTARY_POST_BUILD_AUDIT_FOR_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "5ffa2b20edf8819b36e204275e9065028098d754",
+                     "upstream":  "5ffa2b20edf8819b36e204275e9065028098d754",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_blueprint":  {
+                               "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE",
+                               "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_DEFINED",
+                               "build":  "V1",
+                               "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE_REPORT.json",
+                               "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE_MANIFEST.json",
+                               "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE_SEAL.json",
+                               "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_GATE_SUMMARY.md",
+                               "validation":  {
+                                                  "label":  "PREVIOUS_BLUEPRINT",
+                                                  "manifest_valid":  true,
+                                                  "seal_valid":  true,
+                                                  "report_hash_matches_manifest":  true,
+                                                  "summary_hash_matches_manifest":  true,
+                                                  "seal_manifest_sha256_valid":  true
+                                              }
+                           },
+    "audit_decision":  {
+                           "blueprint_post_build_audit_passed":  true,
+                           "blueprint_at_maximum_review_level":  true,
+                           "ten_requested_points_present":  true,
+                           "manual_roots_protected":  true,
+                           "manual_update_authorized":  false,
+                           "new_manual_version_created":  false,
+                           "source_mutation_authorized":  false,
+                           "runtime_authorized":  false,
+                           "interface_build_authorized":  false,
+                           "argos_runtime_authorized":  false,
+                           "productive_actions_authorized":  false,
+                           "ready_for_blueprint_close_gate":  true,
+                           "ready_for_manual_realignment_execution":  false
+                       },
+    "audit_gate":  {
+                       "gate_type":  "integrated_manual_realignment_blueprint_post_build_audit",
+                       "audit_pass":  true,
+                       "checks_total":  14,
+                       "checks_passed":  14,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before post-build audit."
+                                      },
+                                      {
+                                          "id":  "blueprint_artifacts_exist",
+                                          "pass":  true,
+                                          "detail":  "Blueprint report, manifest, seal and summary exist."
+                                      },
+                                      {
+                                          "id":  "blueprint_report_identity_valid",
+                                          "pass":  true,
+                                          "detail":  "Blueprint component, status, build, pass, classification and next safe step are valid."
+                                      },
+                                      {
+                                          "id":  "blueprint_manifest_and_seal_valid",
+                                          "pass":  true,
+                                          "detail":  "Blueprint manifest hashes and seal manifest hash are valid."
+                                      },
+                                      {
+                                          "id":  "blueprint_gate_pass_valid",
+                                          "pass":  true,
+                                          "detail":  "Blueprint gate passed with zero failed checks."
+                                      },
+                                      {
+                                          "id":  "ten_requested_answers_present",
+                                          "pass":  true,
+                                          "detail":  "All 10 requested blueprint answer groups are present and non-empty."
+                                      },
+                                      {
+                                          "id":  "manual_roots_protected",
+                                          "pass":  true,
+                                          "detail":  "Blueprint explicitly protects current, historical, manifest and registry manual roots."
+                                      },
+                                      {
+                                          "id":  "future_manual_ordering_complete",
+                                          "pass":  true,
+                                          "detail":  "Future manual ordering contains at least 10 proposed sections."
+                                      },
+                                      {
+                                          "id":  "manual_update_criteria_complete",
+                                          "pass":  true,
+                                          "detail":  "Criteria before real manual update contain at least 10 requirements."
+                                      },
+                                      {
+                                          "id":  "unified_interface_7l_boundary_defined",
+                                          "pass":  true,
+                                          "detail":  "Blueprint defines what the future unified 7L interface must not do and can later do after readiness."
+                                      },
+                                      {
+                                          "id":  "no_manual_source_runtime_interface_argos_productive_authorization",
+                                          "pass":  true,
+                                          "detail":  "Blueprint does not authorize manual update, source mutation, runtime, interface build, ARGOS runtime or productive actions."
+                                      },
+                                      {
+                                          "id":  "runtime_state_blocked",
+                                          "pass":  true,
+                                          "detail":  "Dashboard, ARGOS, buttons, productive and future scope runtime remain blocked."
+                                      },
+                                      {
+                                          "id":  "safety_state_no_touch",
+                                          "pass":  true,
+                                          "detail":  "Manual, source, interface and productive actions remain untouched."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Post-build audit output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "manual_update_performed":  false,
+                         "no_manual_update":  true,
+                         "no_manual_file_mutation":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_SUMMARY.md"
+                     ],
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE"
+}

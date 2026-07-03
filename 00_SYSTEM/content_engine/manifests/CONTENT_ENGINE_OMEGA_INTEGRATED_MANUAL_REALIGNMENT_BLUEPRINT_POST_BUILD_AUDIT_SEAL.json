@@ -1,0 +1,23 @@
+{
+    "generated_at_utc":  "2026-07-03T05:19:52.4240335Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDITED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_MANIFEST.json",
+    "manifest_sha256":  "124548cf9e26c446818e6c59cf1c538c4925b21ef7f265593213562f423c32af",
+    "sealed":  true,
+    "seal_policy":  {
+                        "integrated_manual_realignment_blueprint_post_build_audit_only":  true,
+                        "blueprint_at_maximum_review_level":  true,
+                        "no_manual_update":  true,
+                        "no_manual_file_mutation":  true,
+                        "no_source_mutation":  true,
+                        "no_interface_build":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true,
+                        "ready_for_blueprint_close_gate":  true,
+                        "ready_for_manual_realignment_execution":  false
+                    }
+}
