@@ -1,0 +1,42 @@
+{
+    "generated_at_utc":  "2026-07-03T22:49:59.2009210Z",
+    "component":  "CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTED",
+    "build":  "V1",
+    "classification":  "GOVERNED_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_FOR_CONTENT_ENGINE_OMEGA",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SUMMARY.md"
+                     ],
+    "consumed_next_session_authorization_artifacts":  [
+                                                          "00_SYSTEM/content_engine/reports/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_REPORT.json",
+                                                          "00_SYSTEM/content_engine/manifests/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_MANIFEST.json",
+                                                          "00_SYSTEM/content_engine/manifests/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SEAL.json",
+                                                          "05_REPORTS/content_engine/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SUMMARY.md"
+                                                      ],
+    "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+    "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_REPORT.json":  "f617864dc4cae24cd38f3640f38e07dd90e8129e29c13c715ace6c4d37911300",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SUMMARY.md":  "7863f14150e0aabcf66e2916c8576429fd956a94822b5748b10268637125bf6a",
+                        "00_SYSTEM/content_engine/reports/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_REPORT.json":  "5d070d87da9cc1bc453c25f614036604c813647eca0f58f12773f830c0634496",
+                        "00_SYSTEM/content_engine/manifests/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_MANIFEST.json":  "f699867d470d3bfdadbac1b17cf45bb06a53ed53a1c4e8ed1eb737c77d60e8dc",
+                        "00_SYSTEM/content_engine/manifests/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SEAL.json":  "7ce2a39e607c64b741289213626aa40bdeca184a3bfff4b42055317d8b9b10bb",
+                        "05_REPORTS/content_engine/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SUMMARY.md":  "4731776d8313c1a0197f75dd9f28891988a484fda6174daa35520437ffd27609"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "reentry_scope_selection_only":  true,
+                            "selected_scope_requires_user_authorization":  true,
+                            "no_manual_mutation":  true,
+                            "no_source_mutation":  true,
+                            "no_runtime":  true,
+                            "no_interface_build":  true,
+                            "no_argos_runtime":  true,
+                            "no_productive_actions":  true,
+                            "ready_for_selected_scope_authorization":  true
+                        }
+}

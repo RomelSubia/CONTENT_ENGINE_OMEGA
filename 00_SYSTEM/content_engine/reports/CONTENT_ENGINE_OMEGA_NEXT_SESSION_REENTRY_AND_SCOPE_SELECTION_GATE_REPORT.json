@@ -1,0 +1,164 @@
+{
+    "generated_at_utc":  "2026-07-03T22:49:59.1714648Z",
+    "component":  "CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTED",
+    "classification":  "GOVERNED_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_FOR_CONTENT_ENGINE_OMEGA",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "fd8c63d05b7037adca5c8a685cb90067a83f8e91",
+                     "upstream":  "fd8c63d05b7037adca5c8a685cb90067a83f8e91",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_next_session_authorization":  {
+                                                "component":  "AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION",
+                                                "status":  "CONTENT_ENGINE_OMEGA_NEXT_SESSION_CONTINUATION_AUTHORIZED",
+                                                "build":  "V1",
+                                                "report":  "00_SYSTEM/content_engine/reports/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_REPORT.json",
+                                                "manifest":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_MANIFEST.json",
+                                                "seal":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SEAL.json",
+                                                "summary":  "05_REPORTS/content_engine/AWAIT_USER_NEXT_SESSION_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_CONTINUATION_SUMMARY.md",
+                                                "validation":  {
+                                                                   "label":  "PREVIOUS_NEXT_SESSION_AUTHORIZATION",
+                                                                   "manifest_valid":  true,
+                                                                   "seal_valid":  true,
+                                                                   "report_hash_matches_manifest":  true,
+                                                                   "summary_hash_matches_manifest":  true,
+                                                                   "seal_manifest_sha256_valid":  true
+                                                               },
+                                                "authorization_pass":  true,
+                                                "checks_failed":  0
+                                            },
+    "scope_decision":  {
+                           "reentry_scope_selection_completed":  true,
+                           "next_session_authorization_consumed":  true,
+                           "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+                           "selected_next_track":  "unified_intelligent_7L_interface_blueprint_only",
+                           "next_scope_requires_user_authorization":  true,
+                           "authorized_next_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+                           "manual_realignment_lifecycle_closed":  true,
+                           "manual_available_as_governed_dependency":  true,
+                           "manual_update_authorized_now":  false,
+                           "manual_update_performed_now":  false,
+                           "manual_file_mutation_performed_now":  false,
+                           "source_mutation_authorized":  false,
+                           "source_mutation_performed":  false,
+                           "runtime_authorized":  false,
+                           "runtime_performed":  false,
+                           "dashboard_runtime_authorized":  false,
+                           "dashboard_runtime_performed":  false,
+                           "argos_runtime_authorized":  false,
+                           "argos_runtime_performed":  false,
+                           "interface_build_authorized":  false,
+                           "interface_build_performed":  false,
+                           "button_runtime_authorized":  false,
+                           "button_runtime_performed":  false,
+                           "productive_actions_authorized":  false,
+                           "productive_actions_performed":  false,
+                           "ready_for_selected_scope_authorization":  true,
+                           "ready_to_build_or_execute_any_runtime":  false,
+                           "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE"
+                       },
+    "scope_selection_gate":  {
+                                 "gate_type":  "next_session_reentry_and_scope_selection",
+                                 "selection_pass":  true,
+                                 "checks_total":  9,
+                                 "checks_passed":  9,
+                                 "checks_failed":  0,
+                                 "checks":  [
+                                                {
+                                                    "id":  "repo_clean_synced_precheck",
+                                                    "pass":  true,
+                                                    "detail":  "Repo clean and synced before reentry scope selection."
+                                                },
+                                                {
+                                                    "id":  "next_session_authorization_consumed",
+                                                    "pass":  true,
+                                                    "detail":  "Next session continuation authorization consumed."
+                                                },
+                                                {
+                                                    "id":  "next_session_authorization_manifest_and_seal_valid",
+                                                    "pass":  true,
+                                                    "detail":  "Next session authorization manifest and seal are valid."
+                                                },
+                                                {
+                                                    "id":  "previous_session_reentry_safe",
+                                                    "pass":  true,
+                                                    "detail":  "Previous authorization confirms safe reentry."
+                                                },
+                                                {
+                                                    "id":  "selected_scope_declared",
+                                                    "pass":  true,
+                                                    "detail":  "Selected next scope is the unified intelligent 7L interface blueprint gate."
+                                                },
+                                                {
+                                                    "id":  "selected_scope_requires_separate_authorization",
+                                                    "pass":  true,
+                                                    "detail":  "Selected next scope requires separate user authorization before opening."
+                                                },
+                                                {
+                                                    "id":  "manual_source_runtime_interface_argos_productive_remain_blocked",
+                                                    "pass":  true,
+                                                    "detail":  "Manual, source, runtime, interface, ARGOS and productive actions remain blocked."
+                                                },
+                                                {
+                                                    "id":  "blueprint_only_track_selected",
+                                                    "pass":  true,
+                                                    "detail":  "Only blueprint track selected; no source/runtime/interface build opened."
+                                                },
+                                                {
+                                                    "id":  "official_output_scope_exact",
+                                                    "pass":  true,
+                                                    "detail":  "Scope selection output scope is exactly report, manifest, seal and summary."
+                                                }
+                                            ]
+                             },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "manual_update_performed":  false,
+                         "manual_file_mutation_performed":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "no_manual_mutation":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "session_state":  {
+                          "reentry_completed":  true,
+                          "scope_selected":  true,
+                          "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+                          "selected_next_scope_requires_authorization":  true,
+                          "recommended_next_authorization_gate":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE"
+                      },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE"
+}

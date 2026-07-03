@@ -1,0 +1,24 @@
+{
+    "generated_at_utc":  "2026-07-03T22:49:59.2100624Z",
+    "component":  "CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_NEXT_SESSION_REENTRY_AND_SCOPE_SELECTION_GATE_MANIFEST.json",
+    "manifest_sha256":  "628459157256cd0b810ba574b63e3d0ab3d574d726ef323937985f41e0934eff",
+    "sealed":  true,
+    "seal_policy":  {
+                        "reentry_scope_selection_only":  true,
+                        "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+                        "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BLUEPRINT_GATE",
+                        "selected_scope_requires_user_authorization":  true,
+                        "no_manual_mutation":  true,
+                        "no_source_mutation":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_interface_build":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true,
+                        "ready_for_selected_scope_authorization":  true,
+                        "ready_for_runtime":  false
+                    }
+}
