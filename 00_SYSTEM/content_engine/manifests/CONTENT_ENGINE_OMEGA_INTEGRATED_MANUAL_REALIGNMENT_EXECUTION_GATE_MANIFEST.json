@@ -1,0 +1,59 @@
+{
+    "generated_at_utc":  "2026-07-03T07:59:21.3038780Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_EXECUTED",
+    "build":  "V1",
+    "classification":  "GOVERNED_DOCUMENTARY_MANUAL_REALIGNMENT_EXECUTION_GATE",
+    "output_scope":  [
+                         "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md",
+                         "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json",
+                         "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json",
+                         "00_SYSTEM/manual/registry/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_REGISTRY.json",
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md"
+                     ],
+    "declared_manual_mutation_paths":  [
+                                           "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md",
+                                           "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json",
+                                           "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json",
+                                           "00_SYSTEM/manual/registry/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_REGISTRY.json"
+                                       ],
+    "evidence_output_paths":  [
+                                  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json",
+                                  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+                                  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SEAL.json",
+                                  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md"
+                              ],
+    "consumed_execution_gate_authorization_artifacts":  [
+                                                            "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json",
+                                                            "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+                                                            "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SEAL.json",
+                                                            "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md"
+                                                        ],
+    "file_hashes":  {
+                        "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md":  "990d5a2968398538728731d73c907bb30f1d58a681bfe5bf6fd944357c448bce",
+                        "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json":  "1ca4ba936817a40f0457a56f7058212b7181e4e417c7ed4600847df954df6245",
+                        "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json":  "0637831266151be79c095848f412520983b5f0c49718668cd2e83be811f05505",
+                        "00_SYSTEM/manual/registry/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_REGISTRY.json":  "8d9fff196349ab4c121a043bf58069d80fda0dec7946af1691c96ba1e1510fb2",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json":  "b212e3af10f8689b2d58c7a95f44e81136264320f799f479de0b8fbbfbc4189a",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md":  "6e6e8279822dc61ab84e6cf0ddd3dfdcbcdc3f2b681cf01985d5b5cf2100dd02",
+                        "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json":  "c39b3151a5b9fe3cbb9074d7c919dd8252482c6d463efd2bf3d4139c13979736",
+                        "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json":  "9738c17953c8fc5da19927310f990acccd60af0f6286f3d4f80ecba80549ee3a",
+                        "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SEAL.json":  "1463c755f945430094f83f938abcfb196cdc41b7887fe5bba5c3a9dbab017308",
+                        "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md":  "91e09e3f9d5ba8c214af3ee70ce5a4a396e20fbc370f60012e2afaa638f6463c"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "manual_realignment_execution_performed":  true,
+                            "manual_mutation_limited_to_declared_paths":  true,
+                            "rollback_created":  true,
+                            "no_source_mutation":  true,
+                            "no_runtime":  true,
+                            "no_interface_build":  true,
+                            "no_argos_runtime":  true,
+                            "no_productive_actions":  true
+                        }
+}

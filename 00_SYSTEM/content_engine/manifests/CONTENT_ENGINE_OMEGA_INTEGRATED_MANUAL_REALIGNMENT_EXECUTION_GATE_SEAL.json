@@ -1,0 +1,23 @@
+{
+    "generated_at_utc":  "2026-07-03T07:59:21.3158118Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_EXECUTED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+    "manifest_sha256":  "9b5d7c77a78f2180ead773bdcda905369acbdbc37a207ac24e1b765d6ce959bc",
+    "sealed":  true,
+    "seal_policy":  {
+                        "manual_realignment_execution_gate":  true,
+                        "manual_realignment_execution_performed":  true,
+                        "manual_update_performed":  true,
+                        "manual_mutation_limited_to_declared_paths":  true,
+                        "rollback_created":  true,
+                        "no_source_mutation":  true,
+                        "no_dashboard_runtime":  true,
+                        "no_argos_runtime":  true,
+                        "no_interface_build":  true,
+                        "no_button_runtime":  true,
+                        "no_productive_runtime":  true,
+                        "ready_for_execution_post_build_audit":  true
+                    }
+}

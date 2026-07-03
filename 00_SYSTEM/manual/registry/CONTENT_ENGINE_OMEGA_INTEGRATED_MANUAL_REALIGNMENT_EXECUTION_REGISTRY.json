@@ -1,0 +1,33 @@
+{
+    "generated_at_utc":  "2026-07-03T07:59:21.2476752Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_EXECUTED",
+    "build":  "V1",
+    "registry_event":  "integrated_manual_realignment_execution",
+    "registered_current_manual_addendum":  "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md",
+    "registered_rollback":  "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json",
+    "registered_manual_manifest":  "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json",
+    "declared_manual_mutation_paths":  [
+                                           "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md",
+                                           "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json",
+                                           "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json",
+                                           "00_SYSTEM/manual/registry/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_REGISTRY.json"
+                                       ],
+    "evidence_output_paths":  [
+                                  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json",
+                                  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+                                  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SEAL.json",
+                                  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md"
+                              ],
+    "execution_limits":  {
+                             "manual_scope_only":  true,
+                             "source_mutation":  false,
+                             "runtime":  false,
+                             "dashboard_runtime":  false,
+                             "argos_runtime":  false,
+                             "interface_build":  false,
+                             "button_runtime":  false,
+                             "productive_actions":  false
+                         },
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_POST_BUILD_AUDIT"
+}

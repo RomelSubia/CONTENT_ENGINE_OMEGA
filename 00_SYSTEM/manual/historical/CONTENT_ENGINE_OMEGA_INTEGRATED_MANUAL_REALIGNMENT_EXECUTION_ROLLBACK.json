@@ -1,0 +1,85 @@
+{
+    "generated_at_utc":  "2026-07-03T07:59:21.2184278Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE",
+    "rollback_type":  "pre_manual_realignment_execution_snapshot",
+    "pre_execution_head":  "40e8727e6a8d24b9e90ceb834bdd4e0bfc5eae76",
+    "manual_entries_before_execution":  [
+                                            {
+                                                "mode":  "100644",
+                                                "git_blob_id":  "ed656f159104809a0c29568888832ee87ff8c7e6",
+                                                "stage":  "0",
+                                                "path":  "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_v9_EJECUTABLE_REAL.docx",
+                                                "root":  "00_SYSTEM/manual/current/",
+                                                "inventory_only":  true,
+                                                "mutation_allowed_now":  false
+                                            },
+                                            {
+                                                "mode":  "100644",
+                                                "git_blob_id":  "e83e38657911b6c187c94c7e0de3e3b918cb11a1",
+                                                "stage":  "0",
+                                                "path":  "00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md",
+                                                "root":  "00_SYSTEM/manual/current/",
+                                                "inventory_only":  true,
+                                                "mutation_allowed_now":  false
+                                            },
+                                            {
+                                                "mode":  "100644",
+                                                "git_blob_id":  "c2e35b267a8867354a3dbf1b56f392030985adaa",
+                                                "stage":  "0",
+                                                "path":  "00_SYSTEM/manual/historical/CONTEN ENGINE MANUAL MAESTRO ÚNICO DE CREACIÓN v8 — ULTRA HARDENED.docx",
+                                                "root":  "00_SYSTEM/manual/historical/",
+                                                "inventory_only":  true,
+                                                "mutation_allowed_now":  false
+                                            },
+                                            {
+                                                "mode":  "100644",
+                                                "git_blob_id":  "6bba62c51e758f84b9742fc588702e37e7413a05",
+                                                "stage":  "0",
+                                                "path":  "00_SYSTEM/manual/historical/MANUAL_MAESTRO_UNICO_v8_ULTRA_HARDENED.md",
+                                                "root":  "00_SYSTEM/manual/historical/",
+                                                "inventory_only":  true,
+                                                "mutation_allowed_now":  false
+                                            },
+                                            {
+                                                "mode":  "100644",
+                                                "git_blob_id":  "53585b9da078632d60bc01c9c208df3fc56d942d",
+                                                "stage":  "0",
+                                                "path":  "00_SYSTEM/manual/manifest/MANUAL_SOURCE_MANIFEST.json",
+                                                "root":  "00_SYSTEM/manual/manifest/",
+                                                "inventory_only":  true,
+                                                "mutation_allowed_now":  false
+                                            },
+                                            {
+                                                "mode":  "100644",
+                                                "git_blob_id":  "c2ee34fafc3ae9074571a15dc02d6b8dc11f219a",
+                                                "stage":  "0",
+                                                "path":  "00_SYSTEM/manual/registry/MANUAL_CURRENT_INDEX.json",
+                                                "root":  "00_SYSTEM/manual/registry/",
+                                                "inventory_only":  true,
+                                                "mutation_allowed_now":  false
+                                            },
+                                            {
+                                                "mode":  "100644",
+                                                "git_blob_id":  "65e688036248bdda5f31075d408220cb903a4549",
+                                                "stage":  "0",
+                                                "path":  "00_SYSTEM/manual/registry/MANUAL_VERSION_HISTORY.json",
+                                                "root":  "00_SYSTEM/manual/registry/",
+                                                "inventory_only":  true,
+                                                "mutation_allowed_now":  false
+                                            }
+                                        ],
+    "declared_manual_mutation_paths":  [
+                                           "00_SYSTEM/manual/current/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ADDENDUM.md",
+                                           "00_SYSTEM/manual/historical/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_ROLLBACK.json",
+                                           "00_SYSTEM/manual/manifest/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_MANUAL_MANIFEST.json",
+                                           "00_SYSTEM/manual/registry/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_REGISTRY.json"
+                                       ],
+    "evidence_output_paths":  [
+                                  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_REPORT.json",
+                                  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_MANIFEST.json",
+                                  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SEAL.json",
+                                  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_GATE_SUMMARY.md"
+                              ],
+    "rollback_instruction":  "To rollback this documentary manual realignment, revert commit produced by this gate or restore declared manual mutation paths to the pre-execution Git blob IDs recorded here.",
+    "source_runtime_interface_argos_productive_excluded":  true
+}
