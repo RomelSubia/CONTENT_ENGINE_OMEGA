@@ -1,0 +1,158 @@
+{
+    "generated_at_utc":  "2026-07-03T05:34:50.8872492Z",
+    "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_CLOSED",
+    "classification":  "GOVERNED_DOCUMENTARY_CLOSE_GATE_FOR_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_ONLY",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "bf42f2acf7c46ed4a33d3bb086b70c5b42258867",
+                     "upstream":  "bf42f2acf7c46ed4a33d3bb086b70c5b42258867",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_blueprint_post_build_audit":  {
+                                                "component":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT",
+                                                "status":  "CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDITED",
+                                                "build":  "V1",
+                                                "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_REPORT.json",
+                                                "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_MANIFEST.json",
+                                                "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_SEAL.json",
+                                                "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_POST_BUILD_AUDIT_SUMMARY.md",
+                                                "validation":  {
+                                                                   "label":  "PREVIOUS_BLUEPRINT_POST_BUILD_AUDIT",
+                                                                   "manifest_valid":  true,
+                                                                   "seal_valid":  true,
+                                                                   "report_hash_matches_manifest":  true,
+                                                                   "summary_hash_matches_manifest":  true,
+                                                                   "seal_manifest_sha256_valid":  true
+                                                               },
+                                                "audit_pass":  true,
+                                                "checks_failed":  0
+                                            },
+    "close_decision":  {
+                           "blueprint_close_gate_closed":  true,
+                           "blueprint_lifecycle_completed":  true,
+                           "blueprint_post_build_audit_passed":  true,
+                           "blueprint_reviewed_at_maximum_level":  true,
+                           "ten_requested_points_present":  true,
+                           "manual_roots_protected":  true,
+                           "manual_update_authorized":  false,
+                           "new_manual_version_created":  false,
+                           "manual_realignment_execution_authorized":  false,
+                           "source_mutation_authorized":  false,
+                           "runtime_authorized":  false,
+                           "interface_build_authorized":  false,
+                           "argos_runtime_authorized":  false,
+                           "productive_actions_authorized":  false,
+                           "ready_for_manual_realignment_execution":  false,
+                           "awaiting_user_authorization_for_execution_readiness_gate":  true,
+                           "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE"
+                       },
+    "close_gate":  {
+                       "gate_type":  "integrated_manual_realignment_blueprint_close_gate",
+                       "close_pass":  true,
+                       "checks_total":  10,
+                       "checks_passed":  10,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before blueprint close gate."
+                                      },
+                                      {
+                                          "id":  "post_build_audit_consumed",
+                                          "pass":  true,
+                                          "detail":  "Blueprint post-build audit consumed."
+                                      },
+                                      {
+                                          "id":  "post_build_audit_manifest_and_seal_validated",
+                                          "pass":  true,
+                                          "detail":  "Post-build audit manifest and seal validated."
+                                      },
+                                      {
+                                          "id":  "blueprint_reviewed_at_maximum_level",
+                                          "pass":  true,
+                                          "detail":  "Blueprint was reviewed at maximum level."
+                                      },
+                                      {
+                                          "id":  "ten_requested_points_validated",
+                                          "pass":  true,
+                                          "detail":  "The 10 requested blueprint points are present."
+                                      },
+                                      {
+                                          "id":  "manual_roots_protected",
+                                          "pass":  true,
+                                          "detail":  "Manual current, historical, manifest and registry roots are protected."
+                                      },
+                                      {
+                                          "id":  "manual_realignment_execution_not_authorized",
+                                          "pass":  true,
+                                          "detail":  "Manual realignment execution is not authorized at close gate."
+                                      },
+                                      {
+                                          "id":  "manual_source_runtime_interface_argos_productive_blocked",
+                                          "pass":  true,
+                                          "detail":  "Manual update, source mutation, runtime, interface build, ARGOS runtime and productive actions remain blocked."
+                                      },
+                                      {
+                                          "id":  "ready_for_close_not_execution",
+                                          "pass":  true,
+                                          "detail":  "Previous audit is ready for blueprint close gate but not for manual realignment execution."
+                                      },
+                                      {
+                                          "id":  "official_output_scope_exact",
+                                          "pass":  true,
+                                          "detail":  "Close gate output scope is exactly report, manifest, seal and summary."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "source_modified":  false,
+                         "interface_built":  false,
+                         "productive_actions_performed":  false,
+                         "manual_update_performed":  false,
+                         "no_manual_update":  true,
+                         "no_manual_file_mutation":  true,
+                         "no_source_mutation":  true,
+                         "no_interface_build":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "authorization_state":  {
+                                "blueprint_closed":  true,
+                                "manual_realignment_execution_readiness_gate_authorized":  false,
+                                "manual_realignment_execution_authorized":  false,
+                                "manual_realignment_execution_performed":  false,
+                                "awaiting_user_authorization":  true
+                            },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_BLUEPRINT_CLOSE_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_INTEGRATED_MANUAL_REALIGNMENT_EXECUTION_READINESS_GATE"
+}
