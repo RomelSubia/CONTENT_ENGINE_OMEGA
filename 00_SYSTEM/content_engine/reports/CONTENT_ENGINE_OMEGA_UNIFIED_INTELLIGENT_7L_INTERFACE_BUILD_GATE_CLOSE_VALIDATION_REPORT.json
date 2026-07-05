@@ -1,0 +1,441 @@
+{
+    "generated_at_utc":  "2026-07-05T05:52:54.8804070Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_CLOSE_VALIDATION",
+    "build":  "V1_FIX1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_CLOSED_VALIDATED",
+    "classification":  "GOVERNED_CLOSE_VALIDATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_BUILD",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "bd53cd7ce2cf2238abee14d510016b8b4a621e79",
+                     "upstream":  "bd53cd7ce2cf2238abee14d510016b8b4a621e79",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_previous_audit_gate":  {
+                                         "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE",
+                                         "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDITED",
+                                         "build":  "V1_FIX1",
+                                         "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE_REPORT.json",
+                                         "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE_MANIFEST.json",
+                                         "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE_SEAL.json",
+                                         "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE_SUMMARY.md",
+                                         "validation":  {
+                                                            "label":  "PREVIOUS_INTERFACE_BUILD_POST_AUDIT_GATE",
+                                                            "manifest_valid":  true,
+                                                            "seal_valid":  true,
+                                                            "all_manifest_hashes_match":  true,
+                                                            "required_hashes_present":  true,
+                                                            "hashed_files_count":  36,
+                                                            "hashed_files":  [
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE_REPORT.json",
+                                                                                     "sha256":  "996065bd323a899401e382200f0b6c9f0c7bd2ac68653b5a65dcc60d21f4a6ed",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE_SUMMARY.md",
+                                                                                     "sha256":  "8e7ee57d13b124ad32dde73d565df5c3b0dd50c331f88ea8b5893e00a1a8581a",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_REPORT.json",
+                                                                                     "sha256":  "37895858592d25dab7eef65b6160b2af9ddec4b925fbee67cede2bb6e86ff2cc",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_MANIFEST.json",
+                                                                                     "sha256":  "adc2b596d8e55fad1839b61d1aad8c0caeb635541d959919bd9ba0a36c3966eb",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_SEAL.json",
+                                                                                     "sha256":  "ed7d95a77c1a6577e19a72e0ff415bb17b8831eccc71e1922a94619d2cb2f887",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_SUMMARY.md",
+                                                                                     "sha256":  "123ad85acb0b4fc052c4178a2296014b73b64be8dd902959bcfe2ca4e75c25bc",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface_build/7l_interface_build_contract.json",
+                                                                                     "sha256":  "fe93950c4191689af1f1dfb4e8fee84bd341bd8a08d02886e695376e3d84cf60",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface_build/panel_layout_build.json",
+                                                                                     "sha256":  "0adb792aa5f9151ee1e59f7322b555b79b0bc08784017f63294d1c8bb1acdcbd",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface_build/button_surface_build.json",
+                                                                                     "sha256":  "0e278e977827e78be1f376ad48c94f98fdc1b60fb16a2eb4b3b8d292d672b694",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface_build/authorization_flow_build.json",
+                                                                                     "sha256":  "a13d4903fc3d2db590c693d6c861c7d9696e5135387fac0f4a02a181449e5b2b",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface_build/blocked_action_surface_build.json",
+                                                                                     "sha256":  "4e471d12bb4603ba88cae231906d0386305f9e44962e99ea8dc1532c61b1f735",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface_build/interface_state_binding_build.json",
+                                                                                     "sha256":  "6ce26ab59fb0913301447f0a815caccd4712a2a9317c0e42955143d7403ae6bb",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface_build/evidence_audit_surface_build.json",
+                                                                                     "sha256":  "617f45b0b0a3108412ab7dc147aee2014e2aef1e39d5e9fb89eec9dd7d22266e",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface/7l_interface_contract.json",
+                                                                                     "sha256":  "b9ae5db17a563a426b001b99f6b18304547e135b9d5ba8a465d8737f83ed1064",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface/panel_registry.json",
+                                                                                     "sha256":  "b1ce1542558e551862e322c7901ce231fb23f33d1941bbc2597ccfe03d912d8e",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface/button_class_registry.json",
+                                                                                     "sha256":  "4a70fe17d9c3f6eac81a76bd0339064e3eaed26f4c60012d2da6cb40050b1b07",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface/authorization_policy_contract.json",
+                                                                                     "sha256":  "295cacf39cf79d1cf33ea2f1e85ee8b730da33e94421cc2f66d4953e47d9deb3",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface/blocked_action_policy_contract.json",
+                                                                                     "sha256":  "e6b8c31d9b71b8c1732833177844a3f3f56d0f77fcd3ec63eb75b70aaba3ee17",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface/interface_state_schema.json",
+                                                                                     "sha256":  "395489f6b097f391b9216a788edf738201d76e0d94440cef0caceb7c116d6854",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/interface/evidence_audit_contract.json",
+                                                                                     "sha256":  "f3f4792c27cd39f98f3fdb3e87f75d5ed919aa8b119557d19b5cfc450687fe59",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_REPORT.json",
+                                                                                     "sha256":  "ac64a69fad4e8da3b5883bbd7391895d717573b32d365ae6035e0f204977d747",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_MANIFEST.json",
+                                                                                     "sha256":  "1d7070f2f0237d657c71bd1ef867b4c9c9b3228310de2f9423acf77e2199ab18",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_SEAL.json",
+                                                                                     "sha256":  "c28594dcd270b6bb4dc0fcd7711176605c07a428b3e57058fb426df10f322f60",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_SUMMARY.md",
+                                                                                     "sha256":  "6f8d38569df19548e6031372e5eb77c15557216f56364790b99ec53296ca75a2",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_CLOSE_VALIDATION_REPORT.json",
+                                                                                     "sha256":  "326ecf1f482acdfc6bd37f5e90c699edf5580ab47ccb916ed53cd36dc1ce9e9a",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                                                                                     "sha256":  "63246a6432a03baf9ac266a0180de7ba69e10e38afb9dd31fbc32c2404dbbb28",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_CLOSE_VALIDATION_SEAL.json",
+                                                                                     "sha256":  "8a294bac3a72f460c572d843330086cd6e5418a346e183fabbd9fc407ee2a243",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_CLOSE_VALIDATION_SUMMARY.md",
+                                                                                     "sha256":  "555259060a4a371eefbddc1bbf9426808438302c6a7e3868605c5cb0553a94bc",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_REPORT.json",
+                                                                                     "sha256":  "78a7b91f11286b19ea695d2f308ca55ee01068568a3a32fb3ae1f5d46c69d0de",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_MANIFEST.json",
+                                                                                     "sha256":  "3afccf7817924e8b0d2bec1520e1f5d739cfd0b062c987467ea014b3c34cbb56",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_SEAL.json",
+                                                                                     "sha256":  "df1a59a90250f019e5302dd06d23b485d217cba96ccc1056c31184339d079a92",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_SUMMARY.md",
+                                                                                     "sha256":  "2da2ad2e0d51d515da078e99d6eb98f82cd5e02765ae52d12bfd707b59801d09",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_POST_BUILD_AUDIT_GATE_REPORT.json",
+                                                                                     "sha256":  "5fbf967625f39b47f69a9797dee485957587b4d31006506d31abd5370fad52ec",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_POST_BUILD_AUDIT_GATE_MANIFEST.json",
+                                                                                     "sha256":  "c717dc818e1428365870cdee0ec2585041123102bbe41b52112d90b7b5cd4ed5",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_POST_BUILD_AUDIT_GATE_SEAL.json",
+                                                                                     "sha256":  "2c7794643bf179529ce95057c5196f6cc078c55ccc3c7e78f64e99e59cd59c50",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 },
+                                                                                 {
+                                                                                     "path":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_POST_BUILD_AUDIT_GATE_SUMMARY.md",
+                                                                                     "sha256":  "8f0700f0641e43715bffc17f1c0af1a3c720a6e3c0d17a43e3f6af183438a83c",
+                                                                                     "hash_matches_manifest":  true
+                                                                                 }
+                                                                             ],
+                                                            "seal_manifest_sha256_valid":  true
+                                                        }
+                                     },
+    "closed_static_interface_build_artifacts":  [
+                                                    "00_SYSTEM/content_engine/interface_build/7l_interface_build_contract.json",
+                                                    "00_SYSTEM/content_engine/interface_build/panel_layout_build.json",
+                                                    "00_SYSTEM/content_engine/interface_build/button_surface_build.json",
+                                                    "00_SYSTEM/content_engine/interface_build/authorization_flow_build.json",
+                                                    "00_SYSTEM/content_engine/interface_build/blocked_action_surface_build.json",
+                                                    "00_SYSTEM/content_engine/interface_build/interface_state_binding_build.json",
+                                                    "00_SYSTEM/content_engine/interface_build/evidence_audit_surface_build.json"
+                                                ],
+    "source_contract_dependency":  {
+                                       "source_contract_artifact_count":  7,
+                                       "source_contracts_available_as_governed_dependency":  true,
+                                       "source_contract_artifacts":  [
+                                                                         "00_SYSTEM/content_engine/interface/7l_interface_contract.json",
+                                                                         "00_SYSTEM/content_engine/interface/panel_registry.json",
+                                                                         "00_SYSTEM/content_engine/interface/button_class_registry.json",
+                                                                         "00_SYSTEM/content_engine/interface/authorization_policy_contract.json",
+                                                                         "00_SYSTEM/content_engine/interface/blocked_action_policy_contract.json",
+                                                                         "00_SYSTEM/content_engine/interface/interface_state_schema.json",
+                                                                         "00_SYSTEM/content_engine/interface/evidence_audit_contract.json"
+                                                                     ]
+                                   },
+    "close_decision":  {
+                           "interface_build_close_validation_completed":  true,
+                           "interface_build_close_validation_passed":  true,
+                           "previous_interface_build_post_build_audit_consumed":  true,
+                           "previous_interface_build_post_build_audit_pass_confirmed":  true,
+                           "interface_build_lifecycle_closed":  true,
+                           "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                           "closed_build_track":  "unified_intelligent_7L_interface_build_only_closed_validated",
+                           "previous_build":  "V1_FIX1",
+                           "fix1_build_closed_validated":  true,
+                           "previous_audit_manifest_valid":  true,
+                           "previous_audit_seal_valid":  true,
+                           "previous_audit_manifest_hashes_match":  true,
+                           "source_implementation_lifecycle_closed":  true,
+                           "source_contracts_available_as_governed_dependency":  true,
+                           "source_contract_artifact_count":  7,
+                           "static_interface_build_artifacts_available_as_governed_dependency":  true,
+                           "static_interface_build_artifact_count":  7,
+                           "static_interface_build_artifacts_present":  true,
+                           "static_interface_build_artifacts_valid_json":  true,
+                           "static_interface_build_headers_valid":  true,
+                           "interface_layer_count":  7,
+                           "panel_count":  7,
+                           "button_class_count":  7,
+                           "authorization_flow_build_valid":  true,
+                           "blocked_action_surface_build_valid":  true,
+                           "state_binding_build_valid":  true,
+                           "evidence_audit_surface_build_valid":  true,
+                           "interface_build_performed_by_build_gate":  true,
+                           "static_interface_build_performed_by_build_gate":  true,
+                           "live_interface_build_performed_by_build_gate":  false,
+                           "live_interface_runtime_performed_by_build_gate":  false,
+                           "build_artifacts_rewritten_in_this_close_validation":  false,
+                           "source_mutation_performed_in_this_close_validation":  false,
+                           "source_contracts_rewritten_in_this_close_validation":  false,
+                           "manual_update_performed":  false,
+                           "manual_file_mutation_performed":  false,
+                           "runtime_authorized":  false,
+                           "runtime_performed":  false,
+                           "dashboard_runtime_authorized":  false,
+                           "dashboard_runtime_performed":  false,
+                           "argos_runtime_authorized":  false,
+                           "argos_runtime_performed":  false,
+                           "button_runtime_authorized":  false,
+                           "button_runtime_performed":  false,
+                           "button_execution_performed":  false,
+                           "productive_actions_authorized":  false,
+                           "productive_actions_performed":  false,
+                           "safety_preserved":  true,
+                           "ready_for_interface_runtime_authorization":  true,
+                           "ready_for_live_interface_runtime":  false,
+                           "ready_for_argos_runtime":  false,
+                           "ready_for_productive_runtime":  false,
+                           "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_GATE"
+                       },
+    "close_gate":  {
+                       "gate_type":  "interface_build_close_validation",
+                       "close_validation_pass":  true,
+                       "checks_total":  16,
+                       "checks_passed":  16,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before interface build close validation."
+                                      },
+                                      {
+                                          "id":  "previous_interface_build_post_audit_consumed",
+                                          "pass":  true,
+                                          "detail":  "Previous interface build post-build audit gate consumed."
+                                      },
+                                      {
+                                          "id":  "previous_interface_build_post_audit_pass_confirmed",
+                                          "pass":  true,
+                                          "detail":  "Previous interface build post-build audit PASS confirmed."
+                                      },
+                                      {
+                                          "id":  "previous_audit_manifest_valid",
+                                          "pass":  true,
+                                          "detail":  "Previous audit manifest valid."
+                                      },
+                                      {
+                                          "id":  "previous_audit_seal_valid",
+                                          "pass":  true,
+                                          "detail":  "Previous audit seal valid."
+                                      },
+                                      {
+                                          "id":  "previous_audit_manifest_hashes_match",
+                                          "pass":  true,
+                                          "detail":  "Previous audit manifest hashes match current files."
+                                      },
+                                      {
+                                          "id":  "static_interface_build_lifecycle_ready_to_close",
+                                          "pass":  true,
+                                          "detail":  "Static interface build lifecycle ready to close."
+                                      },
+                                      {
+                                          "id":  "seven_static_build_artifacts_valid",
+                                          "pass":  true,
+                                          "detail":  "Seven static interface build artifacts valid."
+                                      },
+                                      {
+                                          "id":  "seven_source_contracts_available",
+                                          "pass":  true,
+                                          "detail":  "Seven source contracts available as governed dependency."
+                                      },
+                                      {
+                                          "id":  "layers_panels_buttons_valid",
+                                          "pass":  true,
+                                          "detail":  "Seven layers, seven panels and seven button classes validated."
+                                      },
+                                      {
+                                          "id":  "authorization_and_blocked_surfaces_valid",
+                                          "pass":  true,
+                                          "detail":  "Authorization flow and blocked action surfaces valid."
+                                      },
+                                      {
+                                          "id":  "state_and_evidence_surfaces_valid",
+                                          "pass":  true,
+                                          "detail":  "State binding and evidence audit surfaces valid."
+                                      },
+                                      {
+                                          "id":  "no_build_artifact_rewrite_in_close_validation",
+                                          "pass":  true,
+                                          "detail":  "Close validation did not rewrite build artifacts."
+                                      },
+                                      {
+                                          "id":  "no_source_contract_rewrite_in_close_validation",
+                                          "pass":  true,
+                                          "detail":  "Close validation did not rewrite source contracts."
+                                      },
+                                      {
+                                          "id":  "no_runtime_or_productive_actions",
+                                          "pass":  true,
+                                          "detail":  "Runtime, ARGOS, dashboard, buttons and productive actions remain blocked."
+                                      },
+                                      {
+                                          "id":  "next_safe_step_runtime_authorization",
+                                          "pass":  true,
+                                          "detail":  "Next safe step is separate runtime gate authorization."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "live_interface_runtime_performed":  false,
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "button_execution_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "manual_update_performed":  false,
+                         "manual_file_mutation_performed":  false,
+                         "source_modified_in_this_close_validation":  false,
+                         "source_contracts_rewritten_in_this_close_validation":  false,
+                         "build_artifacts_rewritten_in_this_close_validation":  false,
+                         "interface_build_performed_by_build_gate":  true,
+                         "static_interface_build_performed_by_build_gate":  true,
+                         "live_interface_build_performed":  false,
+                         "live_interface_runtime_performed":  false,
+                         "runtime_performed":  false,
+                         "productive_actions_performed":  false,
+                         "no_manual_mutation":  true,
+                         "no_source_mutation":  true,
+                         "no_build_artifact_rewrite":  true,
+                         "no_live_interface_runtime":  true,
+                         "no_runtime":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "session_state":  {
+                          "interface_build_lifecycle_closed":  true,
+                          "interface_build_close_validation_completed":  true,
+                          "interface_build_close_validation_passed":  true,
+                          "static_interface_build_artifacts_available_as_governed_dependency":  true,
+                          "safe_to_request_interface_runtime_authorization":  true,
+                          "ready_for_live_interface_runtime":  false,
+                          "ready_for_argos_runtime":  false,
+                          "ready_for_productive_runtime":  false,
+                          "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_GATE"
+                      },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_CLOSE_VALIDATION_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_CLOSE_VALIDATION_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_CLOSE_VALIDATION_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_CLOSE_VALIDATION_SUMMARY.md"
+                     ],
+    "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_GATE"
+}
