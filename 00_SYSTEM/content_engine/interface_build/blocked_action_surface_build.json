@@ -1,0 +1,65 @@
+{
+    "build_header":  {
+                         "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+                         "build":  "V1_FIX1",
+                         "status":  "STATIC_INTERFACE_BUILD_ARTIFACT_CREATED",
+                         "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                         "static_build_only":  true,
+                         "live_interface_enabled":  false,
+                         "runtime_enabled":  false,
+                         "dashboard_runtime_enabled":  false,
+                         "argos_runtime_enabled":  false,
+                         "button_runtime_enabled":  false,
+                         "button_execution_enabled":  false,
+                         "productive_actions_enabled":  false,
+                         "source_mutation_enabled":  false,
+                         "manual_mutation_enabled":  false,
+                         "fail_closed":  true
+                     },
+    "surface_id":  "CONTENT_ENGINE_OMEGA_7L_BLOCKED_ACTION_SURFACE_STATIC_BUILD",
+    "blocked_action_count":  7,
+    "blocked_actions":  [
+                            {
+                                "id":  "BA1",
+                                "name":  "RuntimeExecution",
+                                "visible_static":  true,
+                                "blocked":  true
+                            },
+                            {
+                                "id":  "BA2",
+                                "name":  "ARGOSRuntime",
+                                "visible_static":  true,
+                                "blocked":  true
+                            },
+                            {
+                                "id":  "BA3",
+                                "name":  "DashboardRuntime",
+                                "visible_static":  true,
+                                "blocked":  true
+                            },
+                            {
+                                "id":  "BA4",
+                                "name":  "LiveButtonExecution",
+                                "visible_static":  true,
+                                "blocked":  true
+                            },
+                            {
+                                "id":  "BA5",
+                                "name":  "ProductiveExternalAction",
+                                "visible_static":  true,
+                                "blocked":  true
+                            },
+                            {
+                                "id":  "BA6",
+                                "name":  "ManualMutation",
+                                "visible_static":  true,
+                                "blocked":  true
+                            },
+                            {
+                                "id":  "BA7",
+                                "name":  "CredentialOrPaymentUse",
+                                "visible_static":  true,
+                                "blocked":  true
+                            }
+                        ]
+}

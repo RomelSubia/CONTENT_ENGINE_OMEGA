@@ -1,0 +1,100 @@
+{
+    "build_header":  {
+                         "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+                         "build":  "V1_FIX1",
+                         "status":  "STATIC_INTERFACE_BUILD_ARTIFACT_CREATED",
+                         "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                         "static_build_only":  true,
+                         "live_interface_enabled":  false,
+                         "runtime_enabled":  false,
+                         "dashboard_runtime_enabled":  false,
+                         "argos_runtime_enabled":  false,
+                         "button_runtime_enabled":  false,
+                         "button_execution_enabled":  false,
+                         "productive_actions_enabled":  false,
+                         "source_mutation_enabled":  false,
+                         "manual_mutation_enabled":  false,
+                         "fail_closed":  true
+                     },
+    "build_id":  "CONTENT_ENGINE_OMEGA_7L_INTERFACE_STATIC_BUILD",
+    "build_version":  "1.0.0",
+    "source_contract_dependency_count":  7,
+    "source_contract_dependencies":  [
+                                         "00_SYSTEM/content_engine/interface/7l_interface_contract.json",
+                                         "00_SYSTEM/content_engine/interface/panel_registry.json",
+                                         "00_SYSTEM/content_engine/interface/button_class_registry.json",
+                                         "00_SYSTEM/content_engine/interface/authorization_policy_contract.json",
+                                         "00_SYSTEM/content_engine/interface/blocked_action_policy_contract.json",
+                                         "00_SYSTEM/content_engine/interface/interface_state_schema.json",
+                                         "00_SYSTEM/content_engine/interface/evidence_audit_contract.json"
+                                     ],
+    "static_build_artifact_count":  7,
+    "static_build_artifacts":  [
+                                   "00_SYSTEM/content_engine/interface_build/7l_interface_build_contract.json",
+                                   "00_SYSTEM/content_engine/interface_build/panel_layout_build.json",
+                                   "00_SYSTEM/content_engine/interface_build/button_surface_build.json",
+                                   "00_SYSTEM/content_engine/interface_build/authorization_flow_build.json",
+                                   "00_SYSTEM/content_engine/interface_build/blocked_action_surface_build.json",
+                                   "00_SYSTEM/content_engine/interface_build/interface_state_binding_build.json",
+                                   "00_SYSTEM/content_engine/interface_build/evidence_audit_surface_build.json"
+                               ],
+    "build_layers":  [
+                         {
+                             "id":  "L1",
+                             "surface":  "User Intent Intake",
+                             "panel":  "P1",
+                             "static_render_enabled":  true,
+                             "runtime_enabled":  false
+                         },
+                         {
+                             "id":  "L2",
+                             "surface":  "Scope Resolution",
+                             "panel":  "P2",
+                             "static_render_enabled":  true,
+                             "runtime_enabled":  false
+                         },
+                         {
+                             "id":  "L3",
+                             "surface":  "Authorization Policy",
+                             "panel":  "P4",
+                             "static_render_enabled":  true,
+                             "runtime_enabled":  false
+                         },
+                         {
+                             "id":  "L4",
+                             "surface":  "Panel Orchestration",
+                             "panel":  "P2",
+                             "static_render_enabled":  true,
+                             "runtime_enabled":  false
+                         },
+                         {
+                             "id":  "L5",
+                             "surface":  "Button Class Control",
+                             "panel":  "P3",
+                             "static_render_enabled":  true,
+                             "runtime_enabled":  false
+                         },
+                         {
+                             "id":  "L6",
+                             "surface":  "Evidence and Audit",
+                             "panel":  "P6",
+                             "static_render_enabled":  true,
+                             "runtime_enabled":  false
+                         },
+                         {
+                             "id":  "L7",
+                             "surface":  "Session Closure and Next Step",
+                             "panel":  "P7",
+                             "static_render_enabled":  true,
+                             "runtime_enabled":  false
+                         }
+                     ],
+    "global_runtime_boundaries":  {
+                                      "live_window_created":  false,
+                                      "event_loop_started":  false,
+                                      "button_click_handlers_enabled":  false,
+                                      "argos_adapter_enabled":  false,
+                                      "dashboard_runtime_enabled":  false,
+                                      "productive_action_bridge_enabled":  false
+                                  }
+}

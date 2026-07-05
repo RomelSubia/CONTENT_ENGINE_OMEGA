@@ -1,0 +1,65 @@
+{
+    "build_header":  {
+                         "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+                         "build":  "V1_FIX1",
+                         "status":  "STATIC_INTERFACE_BUILD_ARTIFACT_CREATED",
+                         "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                         "static_build_only":  true,
+                         "live_interface_enabled":  false,
+                         "runtime_enabled":  false,
+                         "dashboard_runtime_enabled":  false,
+                         "argos_runtime_enabled":  false,
+                         "button_runtime_enabled":  false,
+                         "button_execution_enabled":  false,
+                         "productive_actions_enabled":  false,
+                         "source_mutation_enabled":  false,
+                         "manual_mutation_enabled":  false,
+                         "fail_closed":  true
+                     },
+    "surface_id":  "CONTENT_ENGINE_OMEGA_7L_BUTTON_SURFACE_STATIC_BUILD",
+    "button_class_count":  7,
+    "button_classes":  [
+                           {
+                               "class_id":  "BC1",
+                               "label":  "Read Only Status",
+                               "visible_static":  true,
+                               "execution_enabled":  false
+                           },
+                           {
+                               "class_id":  "BC2",
+                               "label":  "Navigate Panel",
+                               "visible_static":  true,
+                               "execution_enabled":  false
+                           },
+                           {
+                               "class_id":  "BC3",
+                               "label":  "Request Authorization",
+                               "visible_static":  true,
+                               "execution_enabled":  false
+                           },
+                           {
+                               "class_id":  "BC4",
+                               "label":  "Show Blocked Reason",
+                               "visible_static":  true,
+                               "execution_enabled":  false
+                           },
+                           {
+                               "class_id":  "BC5",
+                               "label":  "Open Evidence Reference",
+                               "visible_static":  true,
+                               "execution_enabled":  false
+                           },
+                           {
+                               "class_id":  "BC6",
+                               "label":  "Dry Preview Only",
+                               "visible_static":  true,
+                               "execution_enabled":  false
+                           },
+                           {
+                               "class_id":  "BC7",
+                               "label":  "Session Close Indicator",
+                               "visible_static":  true,
+                               "execution_enabled":  false
+                           }
+                       ]
+}

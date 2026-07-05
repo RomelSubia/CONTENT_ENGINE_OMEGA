@@ -1,0 +1,63 @@
+{
+    "build_header":  {
+                         "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+                         "build":  "V1_FIX1",
+                         "status":  "STATIC_INTERFACE_BUILD_ARTIFACT_CREATED",
+                         "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                         "static_build_only":  true,
+                         "live_interface_enabled":  false,
+                         "runtime_enabled":  false,
+                         "dashboard_runtime_enabled":  false,
+                         "argos_runtime_enabled":  false,
+                         "button_runtime_enabled":  false,
+                         "button_execution_enabled":  false,
+                         "productive_actions_enabled":  false,
+                         "source_mutation_enabled":  false,
+                         "manual_mutation_enabled":  false,
+                         "fail_closed":  true
+                     },
+    "binding_id":  "CONTENT_ENGINE_OMEGA_7L_INTERFACE_STATE_BINDING_STATIC_BUILD",
+    "state_binding_count":  8,
+    "bindings":  [
+                     {
+                         "name":  "component",
+                         "source":  "gate_state",
+                         "readonly":  true
+                     },
+                     {
+                         "name":  "status",
+                         "source":  "gate_state",
+                         "readonly":  true
+                     },
+                     {
+                         "name":  "build",
+                         "source":  "gate_state",
+                         "readonly":  true
+                     },
+                     {
+                         "name":  "pass",
+                         "source":  "gate_state",
+                         "readonly":  true
+                     },
+                     {
+                         "name":  "static_interface_build_artifacts_created",
+                         "source":  "build_decision",
+                         "readonly":  true
+                     },
+                     {
+                         "name":  "runtime_enabled",
+                         "source":  "runtime_state",
+                         "readonly":  true
+                     },
+                     {
+                         "name":  "live_interface_enabled",
+                         "source":  "safety_state",
+                         "readonly":  true
+                     },
+                     {
+                         "name":  "next_safe_step",
+                         "source":  "session_state",
+                         "readonly":  true
+                     }
+                 ]
+}

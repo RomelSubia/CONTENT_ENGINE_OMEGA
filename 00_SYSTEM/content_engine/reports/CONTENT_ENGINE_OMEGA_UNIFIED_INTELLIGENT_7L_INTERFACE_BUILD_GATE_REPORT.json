@@ -1,0 +1,239 @@
+{
+    "generated_at_utc":  "2026-07-05T05:24:24.0602497Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+    "build":  "V1_FIX1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILT",
+    "classification":  "GOVERNED_STATIC_INTERFACE_BUILD_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FIX1",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "1592f41468b43e4c83dfdee0adcdf4f18c5fbe1a",
+                     "upstream":  "1592f41468b43e4c83dfdee0adcdf4f18c5fbe1a",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "fix1_context":  {
+                         "previous_attempt_failed_safe":  true,
+                         "previous_attempt_committed":  false,
+                         "previous_attempt_dirty_after_failure":  false,
+                         "failure_reason":  "BUILD_CONTRACT_LAYERS_COUNT_MISMATCH expected=7 actual=0",
+                         "fix_applied":  "JsonProp and Get-ObjectPropertyValueByExactName now support System.Collections.IDictionary before PSObject property traversal."
+                     },
+    "consumed_previous_authorization_gate":  {
+                                                 "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+                                                 "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_AUTHORIZED",
+                                                 "build":  "V1",
+                                                 "report":  "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_REPORT.json",
+                                                 "manifest":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_MANIFEST.json",
+                                                 "seal":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_SEAL.json",
+                                                 "summary":  "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_SUMMARY.md"
+                                             },
+    "source_contract_dependency":  {
+                                       "source_close_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_CLOSE_VALIDATION",
+                                       "source_close_status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE_CLOSED_VALIDATED",
+                                       "source_contract_artifact_count":  7,
+                                       "source_contract_artifacts":  [
+                                                                         "00_SYSTEM/content_engine/interface/7l_interface_contract.json",
+                                                                         "00_SYSTEM/content_engine/interface/panel_registry.json",
+                                                                         "00_SYSTEM/content_engine/interface/button_class_registry.json",
+                                                                         "00_SYSTEM/content_engine/interface/authorization_policy_contract.json",
+                                                                         "00_SYSTEM/content_engine/interface/blocked_action_policy_contract.json",
+                                                                         "00_SYSTEM/content_engine/interface/interface_state_schema.json",
+                                                                         "00_SYSTEM/content_engine/interface/evidence_audit_contract.json"
+                                                                     ]
+                                   },
+    "build_decision":  {
+                           "interface_build_completed":  true,
+                           "interface_build_passed":  true,
+                           "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                           "fix1_applied":  true,
+                           "fix1_reason":  "ORDERED_DICTIONARY_PROPERTY_ACCESS_FOR_IN_MEMORY_VALIDATION",
+                           "previous_failed_attempt_classification":  "BUILD_CONTRACT_LAYERS_COUNT_MISMATCH_EXPECTED_7_ACTUAL_0",
+                           "previous_interface_build_authorization_consumed":  true,
+                           "source_implementation_lifecycle_closed":  true,
+                           "source_contracts_available_as_governed_dependency":  true,
+                           "source_contract_artifact_count":  7,
+                           "source_contracts_consumed":  true,
+                           "static_interface_build_artifacts_created":  true,
+                           "static_interface_build_artifact_count":  7,
+                           "static_interface_build_artifacts":  [
+                                                                    "00_SYSTEM/content_engine/interface_build/7l_interface_build_contract.json",
+                                                                    "00_SYSTEM/content_engine/interface_build/panel_layout_build.json",
+                                                                    "00_SYSTEM/content_engine/interface_build/button_surface_build.json",
+                                                                    "00_SYSTEM/content_engine/interface_build/authorization_flow_build.json",
+                                                                    "00_SYSTEM/content_engine/interface_build/blocked_action_surface_build.json",
+                                                                    "00_SYSTEM/content_engine/interface_build/interface_state_binding_build.json",
+                                                                    "00_SYSTEM/content_engine/interface_build/evidence_audit_surface_build.json"
+                                                                ],
+                           "interface_build_performed":  true,
+                           "static_interface_build_performed":  true,
+                           "live_interface_build_performed":  false,
+                           "live_interface_runtime_performed":  false,
+                           "interface_layer_count":  7,
+                           "panel_count":  7,
+                           "button_class_count":  7,
+                           "authorization_flow_build_created":  true,
+                           "blocked_action_surface_build_created":  true,
+                           "state_binding_build_created":  true,
+                           "evidence_audit_surface_build_created":  true,
+                           "source_mutation_performed":  false,
+                           "source_contracts_rewritten":  false,
+                           "manual_update_performed":  false,
+                           "manual_file_mutation_performed":  false,
+                           "runtime_authorized":  false,
+                           "runtime_performed":  false,
+                           "dashboard_runtime_authorized":  false,
+                           "dashboard_runtime_performed":  false,
+                           "argos_runtime_authorized":  false,
+                           "argos_runtime_performed":  false,
+                           "button_runtime_authorized":  false,
+                           "button_runtime_performed":  false,
+                           "button_execution_performed":  false,
+                           "productive_actions_authorized":  false,
+                           "productive_actions_performed":  false,
+                           "safety_preserved":  true,
+                           "ready_for_interface_build_post_build_audit":  true,
+                           "ready_for_live_interface_runtime":  false,
+                           "ready_for_argos_runtime":  false,
+                           "ready_for_productive_runtime":  false,
+                           "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE"
+                       },
+    "build_gate":  {
+                       "gate_type":  "static_interface_build_fix1",
+                       "build_pass":  true,
+                       "checks_total":  13,
+                       "checks_passed":  13,
+                       "checks_failed":  0,
+                       "checks":  [
+                                      {
+                                          "id":  "repo_clean_synced_precheck",
+                                          "pass":  true,
+                                          "detail":  "Repo clean and synced before interface build FIX1."
+                                      },
+                                      {
+                                          "id":  "fix1_ordered_dictionary_property_access",
+                                          "pass":  true,
+                                          "detail":  "JsonProp and exact-name helpers support IDictionary and OrderedDictionary."
+                                      },
+                                      {
+                                          "id":  "interface_build_authorization_consumed",
+                                          "pass":  true,
+                                          "detail":  "Interface build authorization gate consumed."
+                                      },
+                                      {
+                                          "id":  "source_lifecycle_closed",
+                                          "pass":  true,
+                                          "detail":  "Source lifecycle closed and available as dependency."
+                                      },
+                                      {
+                                          "id":  "seven_source_contracts_consumed",
+                                          "pass":  true,
+                                          "detail":  "Seven source contracts consumed."
+                                      },
+                                      {
+                                          "id":  "seven_static_build_artifacts_created",
+                                          "pass":  true,
+                                          "detail":  "Seven static interface build artifacts created."
+                                      },
+                                      {
+                                          "id":  "static_build_json_valid",
+                                          "pass":  true,
+                                          "detail":  "Static build artifacts valid JSON."
+                                      },
+                                      {
+                                          "id":  "seven_layers_panels_buttons_valid",
+                                          "pass":  true,
+                                          "detail":  "Seven layers, panels and button classes validated."
+                                      },
+                                      {
+                                          "id":  "no_live_interface_runtime",
+                                          "pass":  true,
+                                          "detail":  "No live interface runtime executed."
+                                      },
+                                      {
+                                          "id":  "runtime_argos_dashboard_buttons_productive_blocked",
+                                          "pass":  true,
+                                          "detail":  "Runtime, ARGOS, dashboard, buttons and productive actions remain blocked."
+                                      },
+                                      {
+                                          "id":  "source_contracts_not_rewritten",
+                                          "pass":  true,
+                                          "detail":  "Source contracts were not rewritten."
+                                      },
+                                      {
+                                          "id":  "manual_roots_untouched",
+                                          "pass":  true,
+                                          "detail":  "Manual roots untouched."
+                                      },
+                                      {
+                                          "id":  "next_safe_step_post_build_audit",
+                                          "pass":  true,
+                                          "detail":  "Next safe step is interface build post-build audit."
+                                      }
+                                  ]
+                   },
+    "runtime_state":  {
+                          "live_interface_runtime_performed":  false,
+                          "dashboard_runtime_performed":  false,
+                          "argos_runtime_performed":  false,
+                          "button_runtime_performed":  false,
+                          "button_execution_performed":  false,
+                          "productive_runtime_performed":  false,
+                          "future_scope_runtime_performed":  false,
+                          "all_runtime_blocked":  true
+                      },
+    "safety_state":  {
+                         "safety_preserved":  true,
+                         "manual_modified":  false,
+                         "manual_update_performed":  false,
+                         "manual_file_mutation_performed":  false,
+                         "source_modified":  false,
+                         "source_contracts_rewritten":  false,
+                         "static_interface_build_artifacts_created":  true,
+                         "interface_build_performed":  true,
+                         "static_interface_build_performed":  true,
+                         "live_interface_build_performed":  false,
+                         "live_interface_runtime_performed":  false,
+                         "runtime_performed":  false,
+                         "productive_actions_performed":  false,
+                         "no_manual_mutation":  true,
+                         "no_source_mutation":  true,
+                         "no_live_interface_runtime":  true,
+                         "no_runtime":  true,
+                         "no_dashboard_runtime":  true,
+                         "no_argos_runtime":  true,
+                         "no_button_runtime":  true,
+                         "no_productive_runtime":  true
+                     },
+    "session_state":  {
+                          "interface_build_completed":  true,
+                          "static_interface_build_artifacts_available_as_governed_dependency":  true,
+                          "safe_to_proceed_to_interface_build_post_build_audit":  true,
+                          "ready_for_live_interface_runtime":  false,
+                          "ready_for_argos_runtime":  false,
+                          "ready_for_productive_runtime":  false,
+                          "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE"
+                      },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/interface_build/7l_interface_build_contract.json",
+                         "00_SYSTEM/content_engine/interface_build/panel_layout_build.json",
+                         "00_SYSTEM/content_engine/interface_build/button_surface_build.json",
+                         "00_SYSTEM/content_engine/interface_build/authorization_flow_build.json",
+                         "00_SYSTEM/content_engine/interface_build/blocked_action_surface_build.json",
+                         "00_SYSTEM/content_engine/interface_build/interface_state_binding_build.json",
+                         "00_SYSTEM/content_engine/interface_build/evidence_audit_surface_build.json",
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_POST_BUILD_AUDIT_GATE"
+}

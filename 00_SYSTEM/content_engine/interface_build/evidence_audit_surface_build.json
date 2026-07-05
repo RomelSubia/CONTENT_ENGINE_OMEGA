@@ -1,0 +1,32 @@
+{
+    "build_header":  {
+                         "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+                         "build":  "V1_FIX1",
+                         "status":  "STATIC_INTERFACE_BUILD_ARTIFACT_CREATED",
+                         "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                         "static_build_only":  true,
+                         "live_interface_enabled":  false,
+                         "runtime_enabled":  false,
+                         "dashboard_runtime_enabled":  false,
+                         "argos_runtime_enabled":  false,
+                         "button_runtime_enabled":  false,
+                         "button_execution_enabled":  false,
+                         "productive_actions_enabled":  false,
+                         "source_mutation_enabled":  false,
+                         "manual_mutation_enabled":  false,
+                         "fail_closed":  true
+                     },
+    "surface_id":  "CONTENT_ENGINE_OMEGA_7L_EVIDENCE_AUDIT_SURFACE_STATIC_BUILD",
+    "evidence_surface_count":  9,
+    "evidence_surfaces":  [
+                              "report_json_reference",
+                              "manifest_json_reference",
+                              "seal_json_reference",
+                              "summary_markdown_reference",
+                              "source_contract_hashes",
+                              "build_artifact_hashes",
+                              "dependency_artifacts",
+                              "dirty_scope_exact",
+                              "post_commit_clean_synced"
+                          ]
+}

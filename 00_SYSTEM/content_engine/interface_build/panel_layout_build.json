@@ -1,0 +1,72 @@
+{
+    "build_header":  {
+                         "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+                         "build":  "V1_FIX1",
+                         "status":  "STATIC_INTERFACE_BUILD_ARTIFACT_CREATED",
+                         "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                         "static_build_only":  true,
+                         "live_interface_enabled":  false,
+                         "runtime_enabled":  false,
+                         "dashboard_runtime_enabled":  false,
+                         "argos_runtime_enabled":  false,
+                         "button_runtime_enabled":  false,
+                         "button_execution_enabled":  false,
+                         "productive_actions_enabled":  false,
+                         "source_mutation_enabled":  false,
+                         "manual_mutation_enabled":  false,
+                         "fail_closed":  true
+                     },
+    "layout_id":  "CONTENT_ENGINE_OMEGA_7L_PANEL_LAYOUT_STATIC_BUILD",
+    "panel_count":  7,
+    "panels":  [
+                   {
+                       "panel_id":  "P1",
+                       "title":  "Main Interface",
+                       "layer":  "L1",
+                       "static_slot":  "main",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P2",
+                       "title":  "Panel Map",
+                       "layer":  "L2",
+                       "static_slot":  "map",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P3",
+                       "title":  "Button Registry",
+                       "layer":  "L5",
+                       "static_slot":  "buttons",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P4",
+                       "title":  "Authorization Queue",
+                       "layer":  "L3",
+                       "static_slot":  "authorization",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P5",
+                       "title":  "Blocked Actions",
+                       "layer":  "L3",
+                       "static_slot":  "blocked",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P6",
+                       "title":  "Evidence Stream",
+                       "layer":  "L6",
+                       "static_slot":  "evidence",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P7",
+                       "title":  "Session State",
+                       "layer":  "L7",
+                       "static_slot":  "session",
+                       "runtime_enabled":  false
+                   }
+               ]
+}

@@ -1,0 +1,37 @@
+{
+    "build_header":  {
+                         "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_BUILD_GATE",
+                         "build":  "V1_FIX1",
+                         "status":  "STATIC_INTERFACE_BUILD_ARTIFACT_CREATED",
+                         "interface_build_track":  "unified_intelligent_7L_interface_build_only",
+                         "static_build_only":  true,
+                         "live_interface_enabled":  false,
+                         "runtime_enabled":  false,
+                         "dashboard_runtime_enabled":  false,
+                         "argos_runtime_enabled":  false,
+                         "button_runtime_enabled":  false,
+                         "button_execution_enabled":  false,
+                         "productive_actions_enabled":  false,
+                         "source_mutation_enabled":  false,
+                         "manual_mutation_enabled":  false,
+                         "fail_closed":  true
+                     },
+    "flow_id":  "CONTENT_ENGINE_OMEGA_7L_AUTHORIZATION_FLOW_STATIC_BUILD",
+    "default_policy":  "FAIL_CLOSED",
+    "visible_authorization_states":  [
+                                         "authorization_required",
+                                         "authorization_pending",
+                                         "authorization_recorded",
+                                         "gate_authorized_to_open",
+                                         "execution_not_started"
+                                     ],
+    "current_gate_authorizations":  {
+                                        "static_interface_build_artifacts":  true,
+                                        "live_interface_build":  false,
+                                        "runtime_execution":  false,
+                                        "argos_runtime":  false,
+                                        "dashboard_runtime":  false,
+                                        "button_runtime":  false,
+                                        "productive_actions":  false
+                                    }
+}
