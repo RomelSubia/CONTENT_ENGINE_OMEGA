@@ -1,0 +1,75 @@
+{
+    "contract_header":  {
+                            "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE",
+                            "build":  "V1",
+                            "status":  "SOURCE_CONTRACT_ARTIFACT_IMPLEMENTED",
+                            "source_implementation_track":  "unified_intelligent_7L_interface_source_implementation_only",
+                            "source_contract_only":  true,
+                            "runtime_enabled":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "interface_live_build_enabled":  false,
+                            "button_runtime_enabled":  false,
+                            "productive_actions_enabled":  false,
+                            "manual_mutation_enabled":  false,
+                            "fail_closed":  true
+                        },
+    "schema_id":  "CONTENT_ENGINE_OMEGA_7L_INTERFACE_STATE_SCHEMA",
+    "state_fields":  [
+                         {
+                             "name":  "component",
+                             "type":  "string",
+                             "required":  true
+                         },
+                         {
+                             "name":  "status",
+                             "type":  "string",
+                             "required":  true
+                         },
+                         {
+                             "name":  "build",
+                             "type":  "string",
+                             "required":  true
+                         },
+                         {
+                             "name":  "pass",
+                             "type":  "boolean",
+                             "required":  true
+                         },
+                         {
+                             "name":  "source_contracts_created",
+                             "type":  "boolean",
+                             "required":  true
+                         },
+                         {
+                             "name":  "runtime_enabled",
+                             "type":  "boolean",
+                             "required":  true
+                         },
+                         {
+                             "name":  "interface_live_build_enabled",
+                             "type":  "boolean",
+                             "required":  true
+                         },
+                         {
+                             "name":  "next_safe_step",
+                             "type":  "string",
+                             "required":  true
+                         }
+                     ],
+    "valid_lifecycle_states":  [
+                                   "BLUEPRINT_DEFINED",
+                                   "READINESS_DEFINED",
+                                   "IMPLEMENTATION_PLAN_DEFINED",
+                                   "SOURCE_IMPLEMENTATION_AUTHORIZED",
+                                   "SOURCE_CONTRACTS_IMPLEMENTED",
+                                   "SOURCE_IMPLEMENTATION_POST_BUILD_AUDITED",
+                                   "SOURCE_IMPLEMENTATION_CLOSED_VALIDATED"
+                               ],
+    "invalid_current_state_transitions":  [
+                                              "direct_runtime_execution",
+                                              "direct_argos_execution",
+                                              "direct_interface_live_build",
+                                              "direct_productive_action"
+                                          ]
+}

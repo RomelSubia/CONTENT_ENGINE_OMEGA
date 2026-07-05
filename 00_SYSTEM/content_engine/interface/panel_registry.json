@@ -1,0 +1,63 @@
+{
+    "contract_header":  {
+                            "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE",
+                            "build":  "V1",
+                            "status":  "SOURCE_CONTRACT_ARTIFACT_IMPLEMENTED",
+                            "source_implementation_track":  "unified_intelligent_7L_interface_source_implementation_only",
+                            "source_contract_only":  true,
+                            "runtime_enabled":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "interface_live_build_enabled":  false,
+                            "button_runtime_enabled":  false,
+                            "productive_actions_enabled":  false,
+                            "manual_mutation_enabled":  false,
+                            "fail_closed":  true
+                        },
+    "registry_id":  "CONTENT_ENGINE_OMEGA_7L_PANEL_REGISTRY",
+    "panel_count":  7,
+    "panels":  [
+                   {
+                       "panel_id":  "P1",
+                       "title":  "Main Interface",
+                       "allowed_behavior":  "Display current governed interface state only.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P2",
+                       "title":  "Panel Map",
+                       "allowed_behavior":  "Display P1-P7 mapping and relationships.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P3",
+                       "title":  "Button Registry",
+                       "allowed_behavior":  "Display planned button classes without enabling click execution.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P4",
+                       "title":  "Authorization Queue",
+                       "allowed_behavior":  "Display authorization-required states.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P5",
+                       "title":  "Blocked Actions",
+                       "allowed_behavior":  "Display blocked classes and fail-closed reasons.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P6",
+                       "title":  "Evidence Stream",
+                       "allowed_behavior":  "Display report, manifest, seal and hash references.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "panel_id":  "P7",
+                       "title":  "Session State",
+                       "allowed_behavior":  "Display next safe step and closure state.",
+                       "runtime_enabled":  false
+                   }
+               ]
+}

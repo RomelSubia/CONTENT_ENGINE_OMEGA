@@ -1,0 +1,56 @@
+{
+    "contract_header":  {
+                            "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE",
+                            "build":  "V1",
+                            "status":  "SOURCE_CONTRACT_ARTIFACT_IMPLEMENTED",
+                            "source_implementation_track":  "unified_intelligent_7L_interface_source_implementation_only",
+                            "source_contract_only":  true,
+                            "runtime_enabled":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "interface_live_build_enabled":  false,
+                            "button_runtime_enabled":  false,
+                            "productive_actions_enabled":  false,
+                            "manual_mutation_enabled":  false,
+                            "fail_closed":  true
+                        },
+    "policy_id":  "CONTENT_ENGINE_OMEGA_7L_BLOCKED_ACTION_POLICY_CONTRACT",
+    "blocked_by_default":  true,
+    "blocked_action_classes":  [
+                                   {
+                                       "id":  "BA1",
+                                       "name":  "RuntimeExecution",
+                                       "reason":  "No runtime authorized in source implementation gate."
+                                   },
+                                   {
+                                       "id":  "BA2",
+                                       "name":  "ARGOSRuntime",
+                                       "reason":  "ARGOS runtime is outside this source contract gate."
+                                   },
+                                   {
+                                       "id":  "BA3",
+                                       "name":  "DashboardRuntime",
+                                       "reason":  "Dashboard execution is not authorized."
+                                   },
+                                   {
+                                       "id":  "BA4",
+                                       "name":  "LiveButtonExecution",
+                                       "reason":  "Buttons are contract-defined only, not live."
+                                   },
+                                   {
+                                       "id":  "BA5",
+                                       "name":  "ProductiveExternalAction",
+                                       "reason":  "No external side effects are authorized."
+                                   },
+                                   {
+                                       "id":  "BA6",
+                                       "name":  "ManualMutation",
+                                       "reason":  "Manual roots remain blocked."
+                                   },
+                                   {
+                                       "id":  "BA7",
+                                       "name":  "CredentialOrPaymentUse",
+                                       "reason":  "Credential, payment, banking, billing or legal actions remain blocked."
+                                   }
+                               ]
+}

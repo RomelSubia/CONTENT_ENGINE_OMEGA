@@ -1,0 +1,79 @@
+{
+    "contract_header":  {
+                            "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE",
+                            "build":  "V1",
+                            "status":  "SOURCE_CONTRACT_ARTIFACT_IMPLEMENTED",
+                            "source_implementation_track":  "unified_intelligent_7L_interface_source_implementation_only",
+                            "source_contract_only":  true,
+                            "runtime_enabled":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "interface_live_build_enabled":  false,
+                            "button_runtime_enabled":  false,
+                            "productive_actions_enabled":  false,
+                            "manual_mutation_enabled":  false,
+                            "fail_closed":  true
+                        },
+    "registry_id":  "CONTENT_ENGINE_OMEGA_7L_BUTTON_CLASS_REGISTRY",
+    "button_class_count":  7,
+    "button_classes":  [
+                           {
+                               "class_id":  "BC1",
+                               "name":  "ReadOnlyStatus",
+                               "allowed_now":  true,
+                               "execution_enabled":  false,
+                               "requires_future_runtime_gate":  true
+                           },
+                           {
+                               "class_id":  "BC2",
+                               "name":  "NavigatePanel",
+                               "allowed_now":  true,
+                               "execution_enabled":  false,
+                               "requires_future_runtime_gate":  true
+                           },
+                           {
+                               "class_id":  "BC3",
+                               "name":  "RequestAuthorization",
+                               "allowed_now":  true,
+                               "execution_enabled":  false,
+                               "requires_future_runtime_gate":  true
+                           },
+                           {
+                               "class_id":  "BC4",
+                               "name":  "ShowBlockedReason",
+                               "allowed_now":  true,
+                               "execution_enabled":  false,
+                               "requires_future_runtime_gate":  true
+                           },
+                           {
+                               "class_id":  "BC5",
+                               "name":  "OpenEvidenceReference",
+                               "allowed_now":  true,
+                               "execution_enabled":  false,
+                               "requires_future_runtime_gate":  true
+                           },
+                           {
+                               "class_id":  "BC6",
+                               "name":  "DryPreviewOnly",
+                               "allowed_now":  true,
+                               "execution_enabled":  false,
+                               "requires_future_runtime_gate":  true
+                           },
+                           {
+                               "class_id":  "BC7",
+                               "name":  "SessionCloseIndicator",
+                               "allowed_now":  true,
+                               "execution_enabled":  false,
+                               "requires_future_runtime_gate":  true
+                           }
+                       ],
+    "forbidden_button_behaviors":  [
+                                       "direct_os_action",
+                                       "credential_use",
+                                       "payment_or_billing_action",
+                                       "legal_or_tax_action",
+                                       "social_network_action",
+                                       "productive_external_side_effect",
+                                       "argos_runtime_execution"
+                                   ]
+}

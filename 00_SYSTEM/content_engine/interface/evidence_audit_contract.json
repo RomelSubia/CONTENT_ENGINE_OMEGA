@@ -1,0 +1,46 @@
+{
+    "contract_header":  {
+                            "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE",
+                            "build":  "V1",
+                            "status":  "SOURCE_CONTRACT_ARTIFACT_IMPLEMENTED",
+                            "source_implementation_track":  "unified_intelligent_7L_interface_source_implementation_only",
+                            "source_contract_only":  true,
+                            "runtime_enabled":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "interface_live_build_enabled":  false,
+                            "button_runtime_enabled":  false,
+                            "productive_actions_enabled":  false,
+                            "manual_mutation_enabled":  false,
+                            "fail_closed":  true
+                        },
+    "contract_id":  "CONTENT_ENGINE_OMEGA_7L_EVIDENCE_AUDIT_CONTRACT",
+    "evidence_requirements":  [
+                                  "report_json",
+                                  "manifest_json",
+                                  "seal_json",
+                                  "summary_markdown",
+                                  "sha256_hashes",
+                                  "consumed_dependency_artifacts",
+                                  "dirty_scope_exact",
+                                  "staged_scope_exact",
+                                  "post_commit_repo_clean_synced"
+                              ],
+    "manifest_policy":  {
+                            "hashes_report":  true,
+                            "hashes_summary":  true,
+                            "hashes_source_contract_artifacts":  true,
+                            "hashes_consumed_dependencies":  true,
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false
+                        },
+    "fail_closed_conditions":  [
+                                   "missing_dependency",
+                                   "hash_mismatch",
+                                   "unexpected_dirty_path",
+                                   "manual_path_mutation",
+                                   "runtime_attempt",
+                                   "productive_action_attempt",
+                                   "source_artifact_path_mismatch"
+                               ]
+}

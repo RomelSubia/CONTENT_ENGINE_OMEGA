@@ -1,0 +1,117 @@
+{
+    "contract_header":  {
+                            "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE",
+                            "build":  "V1",
+                            "status":  "SOURCE_CONTRACT_ARTIFACT_IMPLEMENTED",
+                            "source_implementation_track":  "unified_intelligent_7L_interface_source_implementation_only",
+                            "source_contract_only":  true,
+                            "runtime_enabled":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "interface_live_build_enabled":  false,
+                            "button_runtime_enabled":  false,
+                            "productive_actions_enabled":  false,
+                            "manual_mutation_enabled":  false,
+                            "fail_closed":  true
+                        },
+    "contract_id":  "CONTENT_ENGINE_OMEGA_7L_INTERFACE_CONTRACT",
+    "contract_version":  "1.0.0",
+    "purpose":  "Define the governed seven-layer interface contract for Content Engine Omega without runtime execution.",
+    "layers":  [
+                   {
+                       "id":  "L1",
+                       "name":  "User Intent Intake",
+                       "purpose":  "Receive user request context for future interface flow.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "id":  "L2",
+                       "name":  "Scope Resolution",
+                       "purpose":  "Resolve selected scope, gate and track boundaries.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "id":  "L3",
+                       "name":  "Authorization Policy",
+                       "purpose":  "Represent authorization-required decisions fail-closed.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "id":  "L4",
+                       "name":  "Panel Orchestration",
+                       "purpose":  "Map seven panels and their non-live contract behavior.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "id":  "L5",
+                       "name":  "Button Class Control",
+                       "purpose":  "Define button classes without live action execution.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "id":  "L6",
+                       "name":  "Evidence and Audit",
+                       "purpose":  "Define evidence, manifest, seal and trace expectations.",
+                       "runtime_enabled":  false
+                   },
+                   {
+                       "id":  "L7",
+                       "name":  "Session Closure and Next Step",
+                       "purpose":  "Represent next safe step and session closure state.",
+                       "runtime_enabled":  false
+                   }
+               ],
+    "panels":  [
+                   {
+                       "id":  "P1",
+                       "name":  "Main Interface",
+                       "layer":  "L1",
+                       "live_enabled":  false
+                   },
+                   {
+                       "id":  "P2",
+                       "name":  "Panel Map",
+                       "layer":  "L2",
+                       "live_enabled":  false
+                   },
+                   {
+                       "id":  "P3",
+                       "name":  "Button Registry",
+                       "layer":  "L5",
+                       "live_enabled":  false
+                   },
+                   {
+                       "id":  "P4",
+                       "name":  "Authorization Queue",
+                       "layer":  "L3",
+                       "live_enabled":  false
+                   },
+                   {
+                       "id":  "P5",
+                       "name":  "Blocked Actions",
+                       "layer":  "L3",
+                       "live_enabled":  false
+                   },
+                   {
+                       "id":  "P6",
+                       "name":  "Evidence Stream",
+                       "layer":  "L6",
+                       "live_enabled":  false
+                   },
+                   {
+                       "id":  "P7",
+                       "name":  "Session State",
+                       "layer":  "L7",
+                       "live_enabled":  false
+                   }
+               ],
+    "global_boundaries":  {
+                              "no_runtime":  true,
+                              "no_argos_runtime":  true,
+                              "no_dashboard_runtime":  true,
+                              "no_live_buttons":  true,
+                              "no_productive_actions":  true,
+                              "no_credential_access":  true,
+                              "no_external_side_effects":  true
+                          }
+}

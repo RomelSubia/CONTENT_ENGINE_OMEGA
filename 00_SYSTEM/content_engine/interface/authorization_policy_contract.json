@@ -1,0 +1,43 @@
+{
+    "contract_header":  {
+                            "generated_by_component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_SOURCE_IMPLEMENTATION_GATE",
+                            "build":  "V1",
+                            "status":  "SOURCE_CONTRACT_ARTIFACT_IMPLEMENTED",
+                            "source_implementation_track":  "unified_intelligent_7L_interface_source_implementation_only",
+                            "source_contract_only":  true,
+                            "runtime_enabled":  false,
+                            "dashboard_runtime_enabled":  false,
+                            "argos_runtime_enabled":  false,
+                            "interface_live_build_enabled":  false,
+                            "button_runtime_enabled":  false,
+                            "productive_actions_enabled":  false,
+                            "manual_mutation_enabled":  false,
+                            "fail_closed":  true
+                        },
+    "policy_id":  "CONTENT_ENGINE_OMEGA_7L_AUTHORIZATION_POLICY_CONTRACT",
+    "default_policy":  "FAIL_CLOSED",
+    "authorization_required_for":  [
+                                       "source_mutation",
+                                       "runtime_execution",
+                                       "interface_live_build",
+                                       "argos_runtime",
+                                       "button_runtime",
+                                       "productive_action",
+                                       "manual_update"
+                                   ],
+    "current_gate_authorizations":  {
+                                        "source_contract_artifact_creation":  true,
+                                        "runtime_execution":  false,
+                                        "interface_live_build":  false,
+                                        "argos_runtime":  false,
+                                        "button_runtime":  false,
+                                        "productive_actions":  false,
+                                        "manual_update":  false
+                                    },
+    "required_future_authorizations":  [
+                                           "SOURCE_IMPLEMENTATION_POST_BUILD_AUDIT_GATE",
+                                           "SOURCE_IMPLEMENTATION_CLOSE_VALIDATION_GATE",
+                                           "AWAIT_USER_AUTHORIZATION_FOR_INTERFACE_BUILD_GATE",
+                                           "AWAIT_USER_AUTHORIZATION_FOR_RUNTIME_GATE"
+                                       ]
+}
