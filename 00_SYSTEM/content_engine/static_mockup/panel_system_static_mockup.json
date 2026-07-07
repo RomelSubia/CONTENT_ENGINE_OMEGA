@@ -1,0 +1,74 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "panel_system_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/panel_system_blueprint.json",
+    "panels":  [
+                   {
+                       "id":  "P1",
+                       "name":  "Main Interface",
+                       "layer":  "L1",
+                       "visual_ux_role":  "Panel surface placeholder for future static mockup.",
+                       "live_enabled":  false,
+                       "runtime_enabled":  false,
+                       "productive_actions_enabled":  false
+                   },
+                   {
+                       "id":  "P2",
+                       "name":  "Panel Map",
+                       "layer":  "L2",
+                       "visual_ux_role":  "Panel surface placeholder for future static mockup.",
+                       "live_enabled":  false,
+                       "runtime_enabled":  false,
+                       "productive_actions_enabled":  false
+                   },
+                   {
+                       "id":  "P3",
+                       "name":  "Button Registry",
+                       "layer":  "L5",
+                       "visual_ux_role":  "Panel surface placeholder for future static mockup.",
+                       "live_enabled":  false,
+                       "runtime_enabled":  false,
+                       "productive_actions_enabled":  false
+                   },
+                   {
+                       "id":  "P4",
+                       "name":  "Authorization Queue",
+                       "layer":  "L3",
+                       "visual_ux_role":  "Panel surface placeholder for future static mockup.",
+                       "live_enabled":  false,
+                       "runtime_enabled":  false,
+                       "productive_actions_enabled":  false
+                   },
+                   {
+                       "id":  "P5",
+                       "name":  "Blocked Actions",
+                       "layer":  "L3",
+                       "visual_ux_role":  "Panel surface placeholder for future static mockup.",
+                       "live_enabled":  false,
+                       "runtime_enabled":  false,
+                       "productive_actions_enabled":  false
+                   },
+                   {
+                       "id":  "P6",
+                       "name":  "Evidence Stream",
+                       "layer":  "L6",
+                       "visual_ux_role":  "Panel surface placeholder for future static mockup.",
+                       "live_enabled":  false,
+                       "runtime_enabled":  false,
+                       "productive_actions_enabled":  false
+                   },
+                   {
+                       "id":  "P7",
+                       "name":  "Session State",
+                       "layer":  "L7",
+                       "visual_ux_role":  "Panel surface placeholder for future static mockup.",
+                       "live_enabled":  false,
+                       "runtime_enabled":  false,
+                       "productive_actions_enabled":  false
+                   }
+               ],
+    "display_mode":  "static_panel_map",
+    "panel_execution_enabled":  false,
+    "argos_connection_enabled":  false
+}

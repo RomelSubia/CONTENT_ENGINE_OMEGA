@@ -1,0 +1,27 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "state_banner_safety_status_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/state_banner_safety_status_blueprint.json",
+    "banner":  {
+                   "gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+                   "build":  "V1",
+                   "state":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILT",
+                   "runtime":  "BLOCKED",
+                   "dashboard_runtime":  "BLOCKED",
+                   "live_buttons":  "DISABLED",
+                   "productive_actions":  "BLOCKED",
+                   "argos_external_sync_boundary":  "INACTIVE",
+                   "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_POST_BUILD_AUDIT_GATE"
+               },
+    "safety_status":  {
+                          "fail_closed":  true,
+                          "no_runtime":  true,
+                          "no_dashboard_runtime":  true,
+                          "no_live_buttons":  true,
+                          "no_productive_actions":  true,
+                          "no_argos_activation":  true,
+                          "no_argos_connection_attempt":  true,
+                          "no_cross_system_sync":  true
+                      }
+}

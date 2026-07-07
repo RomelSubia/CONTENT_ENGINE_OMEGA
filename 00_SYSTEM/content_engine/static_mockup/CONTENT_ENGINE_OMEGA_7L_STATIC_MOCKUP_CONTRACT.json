@@ -1,0 +1,41 @@
+{
+    "generated_at_utc":  "2026-07-07T04:26:19.4911895Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "build":  "V1",
+    "status":  "STATIC_MOCKUP_CONTRACT_BUILT",
+    "contract_id":  "CONTENT_ENGINE_OMEGA_7L_STATIC_MOCKUP_CONTRACT",
+    "source_blueprint_contract":  "00_SYSTEM/content_engine/visual_ux_blueprint/CONTENT_ENGINE_OMEGA_7L_VISUAL_UX_BLUEPRINT_CONTRACT.json",
+    "source_close_validation_report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_CLOSE_VALIDATION_REPORT.json",
+    "static_mockup_scope":  {
+                                "static_mockup_built":  true,
+                                "static_mockup_only":  true,
+                                "visual_reference_only":  true,
+                                "executable_ui":  false,
+                                "dashboard_runtime_enabled":  false,
+                                "live_interface_enabled":  false,
+                                "live_buttons_enabled":  false,
+                                "productive_actions_enabled":  false,
+                                "credential_access_enabled":  false,
+                                "external_side_effects_enabled":  false,
+                                "layer_count":  7,
+                                "panel_count":  7,
+                                "shell_region_count":  6,
+                                "button_class_count":  7,
+                                "blocked_category_count":  11,
+                                "evidence_section_count":  7,
+                                "static_mockup_artifact_count":  12
+                            },
+    "argos_external_sync_boundary_policy":  {
+                                                "argos_model":  "external_sync_boundary_only",
+                                                "status":  "INACTIVE",
+                                                "required_for_static_mockup":  false,
+                                                "required_for_content_engine_operation":  false,
+                                                "argos_internal_module_of_content_engine":  false,
+                                                "argos_runtime_inside_content_engine":  false,
+                                                "content_engine_depends_on_argos_to_operate":  false,
+                                                "connection_attempt_performed":  false,
+                                                "sync_activation_performed":  false,
+                                                "if_argos_unavailable":  "continue_without_sync"
+                                            },
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_POST_BUILD_AUDIT_GATE"
+}

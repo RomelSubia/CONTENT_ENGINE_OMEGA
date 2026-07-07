@@ -1,0 +1,29 @@
+{
+    "generated_at_utc":  "2026-07-07T04:26:19.6963172Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILT",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE_MANIFEST.json",
+    "manifest_sha256":  "ec73c1b05dd941ff9ff488c545bb2545adbeda85ae69ca0fcd5361c499c8a6cc",
+    "sealed":  true,
+    "seal_policy":  {
+                        "static_mockup_build_only":  true,
+                        "static_mockup_built":  true,
+                        "static_mockup_only":  true,
+                        "executable_ui":  false,
+                        "runtime_performed":  false,
+                        "dashboard_runtime_performed":  false,
+                        "live_buttons_enabled":  false,
+                        "productive_actions_performed":  false,
+                        "argos_external_sync_boundary_only":  true,
+                        "argos_sync_boundary_status":  "INACTIVE",
+                        "argos_activation_performed":  false,
+                        "argos_connection_attempt_performed":  false,
+                        "cross_system_sync_performed":  false,
+                        "manual_mutation_performed":  false,
+                        "source_mutation_performed":  false,
+                        "blueprint_mutation_performed":  false,
+                        "close_validation_mutation_performed":  false,
+                        "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_POST_BUILD_AUDIT_GATE"
+                    }
+}

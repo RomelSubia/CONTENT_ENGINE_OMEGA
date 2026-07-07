@@ -1,0 +1,54 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "button_taxonomy_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/button_taxonomy_blueprint.json",
+    "button_classes":  [
+                           {
+                               "id":  "B1",
+                               "name":  "Navigation Marker",
+                               "function":  "Visual navigation only.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B2",
+                               "name":  "Review Marker",
+                               "function":  "Visual review state only.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B3",
+                               "name":  "Authorization Request Marker",
+                               "function":  "Shows that future authorization is required; does not authorize.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B4",
+                               "name":  "Blocked Action Indicator",
+                               "function":  "Shows blocked action category.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B5",
+                               "name":  "Evidence View Marker",
+                               "function":  "Shows evidence surface target only.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B6",
+                               "name":  "ARGOS Sync Status Indicator",
+                               "function":  "Shows external sync boundary status only.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B7",
+                               "name":  "Next Step Marker",
+                               "function":  "Shows next safe gate only.",
+                               "execution_enabled":  false
+                           }
+                       ],
+    "display_mode":  "disabled_button_legend",
+    "all_buttons_disabled":  true,
+    "live_button_runtime_enabled":  false,
+    "productive_button_actions_enabled":  false
+}

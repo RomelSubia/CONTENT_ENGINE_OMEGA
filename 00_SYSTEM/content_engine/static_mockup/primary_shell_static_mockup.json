@@ -1,0 +1,53 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "primary_shell_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/primary_shell_blueprint.json",
+    "title":  "Content Engine Omega - 7L Static Interface Mockup",
+    "shell_regions":  [
+                          {
+                              "id":  "R1",
+                              "name":  "Global State Banner",
+                              "purpose":  "Show system state, repo state, manual state and safety boundary.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R2",
+                              "name":  "7L Map Area",
+                              "purpose":  "Show seven-layer interface map.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R3",
+                              "name":  "Panel Workspace",
+                              "purpose":  "Display selected panel content in static mockup.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R4",
+                              "name":  "Authorization Surface",
+                              "purpose":  "Show authorization-required states fail-closed.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R5",
+                              "name":  "Evidence History Surface",
+                              "purpose":  "Show reports, manifests, seals and continuity history.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R6",
+                              "name":  "ARGOS External Sync Boundary Indicator",
+                              "purpose":  "Show optional external sync status only.",
+                              "interactive":  false
+                          }
+                      ],
+    "layout_note":  "Static visual shell only. No live rendering, no runtime and no productive action.",
+    "static_visual_state":  {
+                                "repository_state":  "clean_synced_required",
+                                "manual_state":  "current_valid_reference_only",
+                                "runtime_state":  "blocked",
+                                "argos_sync_boundary_state":  "INACTIVE",
+                                "next_step_marker":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_POST_BUILD_AUDIT_GATE"
+                            }
+}

@@ -1,0 +1,21 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "non_runtime_boundary_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/non_runtime_boundary_blueprint.json",
+    "non_runtime_guards":  {
+                               "runtime_performed":  false,
+                               "dashboard_runtime_performed":  false,
+                               "live_interface_runtime_performed":  false,
+                               "button_runtime_performed":  false,
+                               "productive_actions_performed":  false,
+                               "external_side_effects_performed":  false,
+                               "credential_access_performed":  false,
+                               "argos_activation_performed":  false,
+                               "argos_connection_attempt_performed":  false,
+                               "argos_sync_activation_performed":  false,
+                               "cross_system_sync_performed":  false,
+                               "manual_mutation_performed":  false,
+                               "source_mutation_performed":  false
+                           }
+}

@@ -1,0 +1,16 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "authorization_surface_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/authorization_surface_blueprint.json",
+    "authorization_banner":  "Authorization markers are visual only. This mockup grants no authorization.",
+    "authorization_runtime_enabled":  false,
+    "current_authorizations":  {
+                                   "static_mockup_build_as_document_artifact":  true,
+                                   "runtime_authorized":  false,
+                                   "productive_actions_authorized":  false,
+                                   "argos_sync_authorized":  false,
+                                   "manual_mutation_authorized":  false,
+                                   "source_mutation_authorized":  false
+                               }
+}

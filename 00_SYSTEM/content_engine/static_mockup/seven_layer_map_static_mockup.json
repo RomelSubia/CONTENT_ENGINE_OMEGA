@@ -1,0 +1,67 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "seven_layer_map_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/seven_layer_map_blueprint.json",
+    "layers":  [
+                   {
+                       "id":  "L1",
+                       "name":  "User Intent Intake",
+                       "purpose":  "Receive user request context for future interface flow.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L2",
+                       "name":  "Scope Resolution",
+                       "purpose":  "Resolve selected scope, gate and track boundaries.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L3",
+                       "name":  "Authorization Policy",
+                       "purpose":  "Represent authorization-required decisions fail-closed.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L4",
+                       "name":  "Panel Orchestration",
+                       "purpose":  "Map seven panels and their non-live contract behavior.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L5",
+                       "name":  "Button Class Control",
+                       "purpose":  "Define button classes without live action execution.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L6",
+                       "name":  "Evidence and Audit",
+                       "purpose":  "Define evidence, manifest, seal and trace expectations.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L7",
+                       "name":  "Session Closure and Next Step",
+                       "purpose":  "Represent next safe step and session closure state.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   }
+               ],
+    "display_mode":  "static_read_only_layer_cards",
+    "clickable":  false,
+    "runtime_enabled":  false
+}

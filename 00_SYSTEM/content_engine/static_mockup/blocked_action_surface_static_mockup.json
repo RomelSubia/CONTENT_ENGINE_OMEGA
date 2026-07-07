@@ -1,0 +1,65 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "blocked_action_surface_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/blocked_action_surface_blueprint.json",
+    "blocked_categories":  [
+                               {
+                                   "id":  "BLK-1",
+                                   "name":  "Runtime Execution",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-2",
+                                   "name":  "Dashboard Runtime",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-3",
+                                   "name":  "Live Buttons",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-4",
+                                   "name":  "Productive Actions",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-5",
+                                   "name":  "Credential Access",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-6",
+                                   "name":  "External Side Effects",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-7",
+                                   "name":  "ARGOS Activation",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-8",
+                                   "name":  "ARGOS Connection Attempt",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-9",
+                                   "name":  "Cross-System Sync Activation",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-10",
+                                   "name":  "Manual Mutation",
+                                   "blocked":  true
+                               },
+                               {
+                                   "id":  "BLK-11",
+                                   "name":  "Source Mutation",
+                                   "blocked":  true
+                               }
+                           ],
+    "display_mode":  "static_blocked_action_table",
+    "all_blocked_actions_remain_blocked":  true
+}

@@ -1,0 +1,15 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "argos_external_sync_boundary_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/argos_external_sync_boundary_surface_blueprint.json",
+    "surface_title":  "ARGOS External Sync Boundary",
+    "status":  "INACTIVE",
+    "dependency":  "OPTIONAL_EXTERNAL_FUTURE_CONTRACT_BASED",
+    "display_text":  "ARGOS is shown only as an external optional sync boundary. Content Engine continues without sync.",
+    "content_engine_depends_on_argos":  false,
+    "required_for_static_mockup":  false,
+    "required_for_content_engine_operation":  false,
+    "connection_attempt_performed":  false,
+    "sync_activation_performed":  false
+}

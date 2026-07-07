@@ -1,0 +1,51 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE",
+    "artifact":  "evidence_history_surface_static_mockup",
+    "static_mockup_only":  true,
+    "source_blueprint":  "00_SYSTEM/content_engine/visual_ux_blueprint/evidence_history_surface_blueprint.json",
+    "evidence_sections":  [
+                              {
+                                  "id":  "EV-1",
+                                  "name":  "Current Gate Report",
+                                  "source":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE_REPORT.json"
+                              },
+                              {
+                                  "id":  "EV-2",
+                                  "name":  "Current Gate Manifest",
+                                  "source":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE_MANIFEST.json"
+                              },
+                              {
+                                  "id":  "EV-3",
+                                  "name":  "Current Gate Seal",
+                                  "source":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE_SEAL.json"
+                              },
+                              {
+                                  "id":  "EV-4",
+                                  "name":  "Visual/UX Realignment",
+                                  "source":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_REALIGNMENT_GATE_REPORT.json"
+                              },
+                              {
+                                  "id":  "EV-5",
+                                  "name":  "Manual Semantic Decision",
+                                  "source":  "00_SYSTEM/content_engine/reports/AWAIT_USER_DECISION_FOR_CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_DEEP_SEMANTIC_SYSTEM_ALIGNMENT_REVIEW_OUTCOME_REPORT.json"
+                              },
+                              {
+                                  "id":  "EV-6",
+                                  "name":  "ARGOS External Sync Boundary",
+                                  "source":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_ARGOS_EXTERNAL_SYNC_BOUNDARY_RECONCILIATION_GATE_NO_MUTATION_REPORT.json"
+                              },
+                              {
+                                  "id":  "EV-7",
+                                  "name":  "7L Interface Contract",
+                                  "source":  "00_SYSTEM/content_engine/interface/7l_interface_contract.json"
+                              }
+                          ],
+    "added_static_mockup_evidence":  [
+                                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE_REPORT.json",
+                                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE_MANIFEST.json",
+                                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE_SEAL.json",
+                                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_BUILD_GATE_SUMMARY.md"
+                                     ],
+    "evidence_runtime_fetch_enabled":  false,
+    "evidence_is_reference_only":  true
+}
