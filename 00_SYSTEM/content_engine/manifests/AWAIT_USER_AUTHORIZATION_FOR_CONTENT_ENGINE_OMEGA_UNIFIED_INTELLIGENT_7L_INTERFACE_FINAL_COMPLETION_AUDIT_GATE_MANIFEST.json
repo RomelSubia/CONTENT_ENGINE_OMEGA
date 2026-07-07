@@ -1,0 +1,59 @@
+{
+    "generated_at_utc":  "2026-07-07T07:50:18.6744501Z",
+    "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_AUTHORIZATION_AWAITING",
+    "build":  "V1",
+    "classification":  "GOVERNED_FINAL_COMPLETION_AUDIT_AUTHORIZATION_HOLD",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/authorizations/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_AUTHORIZATION_REQUEST.json",
+                         "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_SUMMARY.md"
+                     ],
+    "authorization_request_file":  "00_SYSTEM/content_engine/authorizations/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_AUTHORIZATION_REQUEST.json",
+    "consumed_scope_selection_files":  [
+                                           "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json",
+                                           "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json",
+                                           "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+                                           "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json",
+                                           "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md"
+                                       ],
+    "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_SCOPE",
+    "selected_next_track":  "unified_intelligent_7l_interface_final_completion_audit",
+    "requested_final_completion_audit_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/authorizations/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_AUTHORIZATION_REQUEST.json":  "9d89ac80265d8f1e2fc3b30c76da076e32dba86bbbe6be3dcd74837ab90ead45",
+                        "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_REPORT.json":  "2baec39a7eaa21fe58281d71133b8351929219533e7130fba54468e8543911a8",
+                        "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_SUMMARY.md":  "7e51c522a563ad2f813f863f75e259bb9aced8a90b555b3ff43d90a01149ee2d",
+                        "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json":  "38890856604a5092759ba3662fb5434f773ffb3eac73c87df6332d23ccfb0e2e",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json":  "e69866ba53662bd7e82334f043ac0ba576f33132c68aca4c81f4a1b20a6a7915",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json":  "8317845839612d941997dc1f69be9d26fb232933bfd668a7de07d560ae3f32df",
+                        "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json":  "6f41a2ce43d3dca34c0928393ccc58c39e9f75bab16a425dedaf1d20b3d2ca9c",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md":  "53bb40fd2852b4ad0f5f2b6bc729875616e69ced683b810e8bf79a7c7302c671"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "authorization_hold_only":  true,
+                            "selected_final_completion_audit_scope_consumed":  true,
+                            "explicit_user_authorization_received":  false,
+                            "final_completion_audit_authorized":  false,
+                            "final_completion_audit_started":  false,
+                            "final_completion_audit_gate_script_generated":  false,
+                            "final_completion_audit_gate_executed":  false,
+                            "final_completion_audit_completed":  false,
+                            "runtime_performed":  false,
+                            "productive_actions_performed":  false,
+                            "credential_access_performed":  false,
+                            "external_side_effects_performed":  false,
+                            "argos_external_sync_boundary_only":  true,
+                            "argos_sync_boundary_status":  "INACTIVE",
+                            "argos_activation_performed":  false,
+                            "argos_connection_attempt_performed":  false,
+                            "cross_system_sync_performed":  false,
+                            "manual_mutation_performed":  false,
+                            "source_mutation_performed":  false,
+                            "next_safe_step":  "AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE"
+                        }
+}

@@ -1,0 +1,218 @@
+{
+    "generated_at_utc":  "2026-07-07T07:50:18.6443818Z",
+    "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_AUTHORIZATION_AWAITING",
+    "classification":  "GOVERNED_FINAL_COMPLETION_AUDIT_AUTHORIZATION_HOLD",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "1af4bf88516ac1842bbed6d663257da551e82be1",
+                     "upstream":  "1af4bf88516ac1842bbed6d663257da551e82be1",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_scope_selection":  {
+                                     "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+                                     "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTED",
+                                     "build":  "V1",
+                                     "decision":  "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json",
+                                     "report":  "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json",
+                                     "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+                                     "seal":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json",
+                                     "summary":  "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md",
+                                     "seal_validation":  {
+                                                             "seal_json_valid":  true,
+                                                             "seal_manifest_path":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+                                                             "seal_manifest_sha256":  "8317845839612d941997dc1f69be9d26fb232933bfd668a7de07d560ae3f32df",
+                                                             "actual_manifest_sha256":  "8317845839612d941997dc1f69be9d26fb232933bfd668a7de07d560ae3f32df",
+                                                             "seal_manifest_hash_matches":  true
+                                                         },
+                                     "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_SCOPE",
+                                     "selected_next_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+                                     "selected_next_scope_requires_user_authorization":  true,
+                                     "selected_scope_executed_by_scope_selection_gate":  false,
+                                     "selected_gate_script_generated_by_scope_selection_gate":  false,
+                                     "selected_gate_executed_by_scope_selection_gate":  false
+                                 },
+    "authorization_hold":  {
+                               "authorization_request":  "00_SYSTEM/content_engine/authorizations/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_AUTHORIZATION_REQUEST.json",
+                               "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_SCOPE",
+                               "selected_next_track":  "unified_intelligent_7l_interface_final_completion_audit",
+                               "requested_final_completion_audit_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+                               "explicit_user_authorization_received":  false,
+                               "final_completion_audit_authorized":  false,
+                               "final_completion_audit_started":  false,
+                               "final_completion_audit_gate_script_generated":  false,
+                               "final_completion_audit_gate_executed":  false,
+                               "final_completion_audit_completed":  false,
+                               "this_gate_grants_final_audit_authorization":  false,
+                               "this_gate_records_wait_state_only":  true,
+                               "next_safe_step":  "AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE"
+                           },
+    "argos_boundary":  {
+                           "argos_external_sync_boundary_only":  true,
+                           "argos_sync_boundary_status":  "INACTIVE",
+                           "required_for_authorization_hold":  false,
+                           "required_for_content_engine_operation":  false,
+                           "argos_activation_performed":  false,
+                           "argos_connection_attempt_performed":  false,
+                           "argos_sync_activation_performed":  false,
+                           "cross_system_sync_performed":  false,
+                           "if_argos_unavailable":  "continue_without_sync"
+                       },
+    "integrity_state":  {
+                            "previous_scope_selection_hashes_before":  {
+                                                                           "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json":  "38890856604a5092759ba3662fb5434f773ffb3eac73c87df6332d23ccfb0e2e",
+                                                                           "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json":  "e69866ba53662bd7e82334f043ac0ba576f33132c68aca4c81f4a1b20a6a7915",
+                                                                           "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json":  "8317845839612d941997dc1f69be9d26fb232933bfd668a7de07d560ae3f32df",
+                                                                           "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json":  "6f41a2ce43d3dca34c0928393ccc58c39e9f75bab16a425dedaf1d20b3d2ca9c",
+                                                                           "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md":  "53bb40fd2852b4ad0f5f2b6bc729875616e69ced683b810e8bf79a7c7302c671"
+                                                                       },
+                            "previous_scope_selection_evidence_mutation_performed":  false,
+                            "manual_mutation_performed":  false,
+                            "interface_source_mutation_performed":  false,
+                            "blueprint_mutation_performed":  false,
+                            "static_mockup_mutation_performed":  false,
+                            "runtime_preview_artifact_mutation_performed":  false
+                        },
+    "runtime_and_safety_state":  {
+                                     "authorization_hold_only":  true,
+                                     "final_completion_audit_started":  false,
+                                     "final_completion_audit_performed":  false,
+                                     "final_completion_audit_gate_script_generated":  false,
+                                     "final_completion_audit_gate_executed":  false,
+                                     "final_completion_audit_completed":  false,
+                                     "runtime_preview_reexecution_performed":  false,
+                                     "runtime_performed":  false,
+                                     "dashboard_runtime_performed":  false,
+                                     "live_interface_runtime_performed":  false,
+                                     "button_runtime_performed":  false,
+                                     "productive_actions_performed":  false,
+                                     "credential_access_performed":  false,
+                                     "external_side_effects_performed":  false,
+                                     "argos_activation_performed":  false,
+                                     "argos_connection_attempt_performed":  false,
+                                     "argos_sync_activation_performed":  false,
+                                     "cross_system_sync_performed":  false,
+                                     "manual_mutation_performed":  false,
+                                     "source_mutation_performed":  false,
+                                     "fail_closed":  true
+                                 },
+    "final_audit_authorization_gate":  {
+                                           "gate_type":  "final_completion_audit_authorization_hold",
+                                           "pass":  true,
+                                           "checks_total":  16,
+                                           "checks_passed":  16,
+                                           "checks_failed":  0,
+                                           "checks":  [
+                                                          {
+                                                              "id":  "repo_clean_synced_precheck",
+                                                              "pass":  true,
+                                                              "detail":  "Repo clean and synced before final audit authorization hold."
+                                                          },
+                                                          {
+                                                              "id":  "scope_selection_consumed",
+                                                              "pass":  true,
+                                                              "detail":  "Next scope selection consumed and valid."
+                                                          },
+                                                          {
+                                                              "id":  "final_completion_audit_selected",
+                                                              "pass":  true,
+                                                              "detail":  "Final completion audit was selected as next scope."
+                                                          },
+                                                          {
+                                                              "id":  "authorization_request_written",
+                                                              "pass":  true,
+                                                              "detail":  "Authorization request artifact written."
+                                                          },
+                                                          {
+                                                              "id":  "wait_state_only",
+                                                              "pass":  true,
+                                                              "detail":  "Gate records wait state only."
+                                                          },
+                                                          {
+                                                              "id":  "explicit_authorization_not_yet_received",
+                                                              "pass":  true,
+                                                              "detail":  "Explicit user authorization has not yet been recorded."
+                                                          },
+                                                          {
+                                                              "id":  "final_audit_not_started",
+                                                              "pass":  true,
+                                                              "detail":  "Final completion audit has not started."
+                                                          },
+                                                          {
+                                                              "id":  "final_audit_script_not_generated",
+                                                              "pass":  true,
+                                                              "detail":  "Final audit script not generated by this gate."
+                                                          },
+                                                          {
+                                                              "id":  "final_audit_not_executed",
+                                                              "pass":  true,
+                                                              "detail":  "Final completion audit not executed by this gate."
+                                                          },
+                                                          {
+                                                              "id":  "no_runtime",
+                                                              "pass":  true,
+                                                              "detail":  "No runtime performed."
+                                                          },
+                                                          {
+                                                              "id":  "no_productive_actions",
+                                                              "pass":  true,
+                                                              "detail":  "No productive actions performed."
+                                                          },
+                                                          {
+                                                              "id":  "no_credentials",
+                                                              "pass":  true,
+                                                              "detail":  "No credential access performed."
+                                                          },
+                                                          {
+                                                              "id":  "argos_external_sync_boundary_only",
+                                                              "pass":  true,
+                                                              "detail":  "ARGOS remains external optional sync boundary only."
+                                                          },
+                                                          {
+                                                              "id":  "argos_inactive_not_required",
+                                                              "pass":  true,
+                                                              "detail":  "ARGOS inactive and not required."
+                                                          },
+                                                          {
+                                                              "id":  "scope_selection_evidence_not_mutated",
+                                                              "pass":  true,
+                                                              "detail":  "Previous scope selection evidence not mutated."
+                                                          },
+                                                          {
+                                                              "id":  "ready_for_explicit_final_audit_authorization",
+                                                              "pass":  true,
+                                                              "detail":  "Ready for explicit authorization before final completion audit gate."
+                                                          }
+                                                      ]
+                                       },
+    "session_state":  {
+                          "scope_selection_consumed":  true,
+                          "final_completion_audit_scope_selected":  true,
+                          "final_completion_audit_authorization_hold_recorded":  true,
+                          "explicit_user_authorization_received":  false,
+                          "final_completion_audit_not_started":  true,
+                          "final_completion_audit_not_executed":  true,
+                          "final_completion_audit_script_not_generated":  true,
+                          "argos_external_sync_boundary_language_enforced":  true,
+                          "next_safe_step":  "AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE"
+                      },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/authorizations/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_AUTHORIZATION_REQUEST.json",
+                         "00_SYSTEM/content_engine/reports/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE"
+}
