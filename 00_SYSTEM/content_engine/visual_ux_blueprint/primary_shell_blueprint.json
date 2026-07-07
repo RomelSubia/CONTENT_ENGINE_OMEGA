@@ -1,0 +1,52 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE",
+    "artifact":  "primary_shell_blueprint",
+    "blueprint_only":  true,
+    "purpose":  "Define the main Content Engine Omega visual shell for future static mockup.",
+    "shell_regions":  [
+                          {
+                              "id":  "R1",
+                              "name":  "Global State Banner",
+                              "purpose":  "Show system state, repo state, manual state and safety boundary.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R2",
+                              "name":  "7L Map Area",
+                              "purpose":  "Show seven-layer interface map.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R3",
+                              "name":  "Panel Workspace",
+                              "purpose":  "Display selected panel content in static mockup.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R4",
+                              "name":  "Authorization Surface",
+                              "purpose":  "Show authorization-required states fail-closed.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R5",
+                              "name":  "Evidence History Surface",
+                              "purpose":  "Show reports, manifests, seals and continuity history.",
+                              "interactive":  false
+                          },
+                          {
+                              "id":  "R6",
+                              "name":  "ARGOS External Sync Boundary Indicator",
+                              "purpose":  "Show optional external sync status only.",
+                              "interactive":  false
+                          }
+                      ],
+    "visual_constraints":  {
+                               "no_runtime":  true,
+                               "no_live_data_fetch":  true,
+                               "no_live_buttons":  true,
+                               "no_productive_actions":  true,
+                               "no_argos_activation":  true,
+                               "no_argos_connection_attempt":  true
+                           }
+}

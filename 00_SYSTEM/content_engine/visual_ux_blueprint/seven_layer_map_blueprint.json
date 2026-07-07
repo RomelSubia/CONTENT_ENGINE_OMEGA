@@ -1,0 +1,70 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE",
+    "artifact":  "seven_layer_map_blueprint",
+    "blueprint_only":  true,
+    "source_contract":  "00_SYSTEM/content_engine/interface/7l_interface_contract.json",
+    "layers":  [
+                   {
+                       "id":  "L1",
+                       "name":  "User Intent Intake",
+                       "purpose":  "Receive user request context for future interface flow.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L2",
+                       "name":  "Scope Resolution",
+                       "purpose":  "Resolve selected scope, gate and track boundaries.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L3",
+                       "name":  "Authorization Policy",
+                       "purpose":  "Represent authorization-required decisions fail-closed.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L4",
+                       "name":  "Panel Orchestration",
+                       "purpose":  "Map seven panels and their non-live contract behavior.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L5",
+                       "name":  "Button Class Control",
+                       "purpose":  "Define button classes without live action execution.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L6",
+                       "name":  "Evidence and Audit",
+                       "purpose":  "Define evidence, manifest, seal and trace expectations.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   },
+                   {
+                       "id":  "L7",
+                       "name":  "Session Closure and Next Step",
+                       "purpose":  "Represent next safe step and session closure state.",
+                       "visual_ux_role":  "Represent layer meaning, status and safe next action visually without runtime execution.",
+                       "runtime_enabled":  false,
+                       "interaction_mode":  "read_only_visual_blueprint"
+                   }
+               ],
+    "map_behavior":  {
+                         "default_view":  "read_only_layer_overview",
+                         "layer_selection_behavior":  "static_highlight_only_in_future_mockup",
+                         "runtime_enabled":  false,
+                         "state_mutation_enabled":  false
+                     }
+}

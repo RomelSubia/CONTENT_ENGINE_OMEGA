@@ -1,0 +1,15 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE",
+    "artifact":  "static_mockup_requirements_blueprint",
+    "blueprint_only":  true,
+    "static_mockup_not_built_by_this_gate":  true,
+    "next_mockup_track_requires_post_build_audit_first":  true,
+    "mockup_requirements":  [
+                                "Must consume this blueprint after post-build audit.",
+                                "Must remain static and non-runtime.",
+                                "Must not connect to ARGOS.",
+                                "Must show ARGOS only as external sync boundary indicator.",
+                                "Must not include live productive buttons.",
+                                "Must include evidence and blocked-action surfaces."
+                            ]
+}

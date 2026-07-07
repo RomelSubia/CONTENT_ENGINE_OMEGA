@@ -1,0 +1,53 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE",
+    "artifact":  "argos_external_sync_boundary_surface_blueprint",
+    "blueprint_only":  true,
+    "surface_title":  "ARGOS External Sync Boundary",
+    "status":  "INACTIVE",
+    "dependency":  "OPTIONAL_EXTERNAL_FUTURE_CONTRACT_BASED",
+    "content_engine_depends_on_argos":  false,
+    "argos_depends_on_content_engine":  false,
+    "required_for_content_engine_operation":  false,
+    "required_for_visual_ux_blueprint":  false,
+    "connection_attempt_performed":  false,
+    "sync_activation_performed":  false,
+    "display_states":  [
+                           {
+                               "id":  "ARGOS-SYNC-0",
+                               "label":  "INACTIVE",
+                               "meaning":  "No sync active or required.",
+                               "recommended_message":  "Continue without synchronization."
+                           },
+                           {
+                               "id":  "ARGOS-SYNC-1",
+                               "label":  "NOT_CONFIGURED",
+                               "meaning":  "No sync contract configured.",
+                               "recommended_message":  "Continue without synchronization."
+                           },
+                           {
+                               "id":  "ARGOS-SYNC-2",
+                               "label":  "UNAVAILABLE",
+                               "meaning":  "ARGOS sync unavailable.",
+                               "recommended_message":  "Review ARGOS directly or continue without sync."
+                           },
+                           {
+                               "id":  "ARGOS-SYNC-3",
+                               "label":  "AVAILABLE",
+                               "meaning":  "External sync may be available after future authorization.",
+                               "recommended_message":  "Await governed sync authorization."
+                           },
+                           {
+                               "id":  "ARGOS-SYNC-4",
+                               "label":  "SYNC_AUTHORIZED",
+                               "meaning":  "Future state only after explicit sync gate.",
+                               "recommended_message":  "Execute only under its own sync gate."
+                           }
+                       ],
+    "prohibited_modeling":  [
+                                "Do not show ARGOS as internal Content Engine module.",
+                                "Do not show ARGOS as Content Engine runtime.",
+                                "Do not show Content Engine activating ARGOS.",
+                                "Do not show Content Engine repairing ARGOS.",
+                                "Do not show ARGOS controlling Content Engine internals."
+                            ]
+}

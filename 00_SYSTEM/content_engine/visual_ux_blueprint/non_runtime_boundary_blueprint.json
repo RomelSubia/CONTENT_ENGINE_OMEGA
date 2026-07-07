@@ -1,0 +1,20 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE",
+    "artifact":  "non_runtime_boundary_blueprint",
+    "blueprint_only":  true,
+    "non_runtime_guards":  {
+                               "runtime_performed":  false,
+                               "dashboard_runtime_performed":  false,
+                               "live_interface_runtime_performed":  false,
+                               "button_runtime_performed":  false,
+                               "productive_actions_performed":  false,
+                               "external_side_effects_performed":  false,
+                               "credential_access_performed":  false,
+                               "argos_activation_performed":  false,
+                               "argos_connection_attempt_performed":  false,
+                               "argos_sync_activation_performed":  false,
+                               "cross_system_sync_performed":  false,
+                               "manual_mutation_performed":  false,
+                               "source_mutation_performed":  false
+                           }
+}

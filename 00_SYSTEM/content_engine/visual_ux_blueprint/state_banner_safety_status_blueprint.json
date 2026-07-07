@@ -1,0 +1,59 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE",
+    "artifact":  "state_banner_safety_status_blueprint",
+    "blueprint_only":  true,
+    "banner_fields":  [
+                          {
+                              "id":  "SB-1",
+                              "label":  "Gate",
+                              "value_source":  "current_component",
+                              "mutable":  false
+                          },
+                          {
+                              "id":  "SB-2",
+                              "label":  "Build",
+                              "value_source":  "current_build",
+                              "mutable":  false
+                          },
+                          {
+                              "id":  "SB-3",
+                              "label":  "Manual",
+                              "value_source":  "manual_current_valid",
+                              "mutable":  false
+                          },
+                          {
+                              "id":  "SB-4",
+                              "label":  "Repo",
+                              "value_source":  "repo_clean_synced",
+                              "mutable":  false
+                          },
+                          {
+                              "id":  "SB-5",
+                              "label":  "Runtime",
+                              "value_source":  "blocked",
+                              "mutable":  false
+                          },
+                          {
+                              "id":  "SB-6",
+                              "label":  "ARGOS Sync Boundary",
+                              "value_source":  "inactive_optional_external",
+                              "mutable":  false
+                          },
+                          {
+                              "id":  "SB-7",
+                              "label":  "Next Safe Step",
+                              "value_source":  "next_gate",
+                              "mutable":  false
+                          }
+                      ],
+    "safety_status":  {
+                          "fail_closed":  true,
+                          "no_runtime":  true,
+                          "no_dashboard_runtime":  true,
+                          "no_live_buttons":  true,
+                          "no_productive_actions":  true,
+                          "no_argos_activation":  true,
+                          "no_argos_connection_attempt":  true,
+                          "no_cross_system_sync":  true
+                      }
+}

@@ -1,0 +1,57 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_VISUAL_UX_BLUEPRINT_GATE",
+    "artifact":  "button_taxonomy_blueprint",
+    "blueprint_only":  true,
+    "button_classes":  [
+                           {
+                               "id":  "B1",
+                               "name":  "Navigation Marker",
+                               "function":  "Visual navigation only.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B2",
+                               "name":  "Review Marker",
+                               "function":  "Visual review state only.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B3",
+                               "name":  "Authorization Request Marker",
+                               "function":  "Shows that future authorization is required; does not authorize.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B4",
+                               "name":  "Blocked Action Indicator",
+                               "function":  "Shows blocked action category.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B5",
+                               "name":  "Evidence View Marker",
+                               "function":  "Shows evidence surface target only.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B6",
+                               "name":  "ARGOS Sync Status Indicator",
+                               "function":  "Shows external sync boundary status only.",
+                               "execution_enabled":  false
+                           },
+                           {
+                               "id":  "B7",
+                               "name":  "Next Step Marker",
+                               "function":  "Shows next safe gate only.",
+                               "execution_enabled":  false
+                           }
+                       ],
+    "prohibitions":  [
+                         "No button executes productive actions.",
+                         "No button triggers runtime.",
+                         "No button activates dashboard.",
+                         "No button connects to ARGOS.",
+                         "No button starts cross-system sync.",
+                         "No button bypasses gates."
+                     ]
+}
