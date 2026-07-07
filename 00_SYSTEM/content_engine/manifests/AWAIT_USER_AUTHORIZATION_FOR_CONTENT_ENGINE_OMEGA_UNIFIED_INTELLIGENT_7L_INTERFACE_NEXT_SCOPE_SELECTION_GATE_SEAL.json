@@ -1,0 +1,32 @@
+{
+    "generated_at_utc":  "2026-07-07T07:25:59.6198052Z",
+    "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_AUTHORIZATION_AWAITING",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+    "manifest_sha256":  "4e58425dfa26a586db4ec1ad3b2d8ff1f2ee027f7280ad87be3fa3573c863bf8",
+    "sealed":  true,
+    "seal_policy":  {
+                        "authorization_hold_only":  true,
+                        "runtime_preview_lifecycle_closed_validated":  true,
+                        "explicit_user_authorization_received":  false,
+                        "next_scope_selection_authorized":  false,
+                        "next_scope_selection_started":  false,
+                        "next_scope_selection_gate_executed":  false,
+                        "next_scope_selected":  false,
+                        "runtime_performed":  false,
+                        "productive_actions_performed":  false,
+                        "credential_access_performed":  false,
+                        "external_side_effects_performed":  false,
+                        "argos_external_sync_boundary_only":  true,
+                        "argos_sync_boundary_status":  "INACTIVE",
+                        "argos_activation_performed":  false,
+                        "argos_connection_attempt_performed":  false,
+                        "cross_system_sync_performed":  false,
+                        "manual_mutation_performed":  false,
+                        "source_mutation_performed":  false,
+                        "runtime_preview_artifact_mutation_performed":  false,
+                        "requested_next_scope_selection_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+                        "next_safe_step":  "AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE"
+                    }
+}
