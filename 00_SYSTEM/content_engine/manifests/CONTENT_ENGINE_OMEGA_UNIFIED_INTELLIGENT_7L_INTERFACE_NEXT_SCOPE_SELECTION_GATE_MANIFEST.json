@@ -1,0 +1,61 @@
+{
+    "generated_at_utc":  "2026-07-07T07:40:21.8756861Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTED",
+    "build":  "V1",
+    "classification":  "GOVERNED_7L_INTERFACE_NEXT_SCOPE_SELECTION",
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json",
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md"
+                     ],
+    "scope_selection_decision_file":  "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json",
+    "consumed_explicit_authorization_files":  [
+                                                  "00_SYSTEM/content_engine/authorizations/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_EXPLICIT_AUTHORIZATION_RECORD.json",
+                                                  "00_SYSTEM/content_engine/reports/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json",
+                                                  "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+                                                  "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json",
+                                                  "05_REPORTS/content_engine/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md"
+                                              ],
+    "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_SCOPE",
+    "selected_next_track":  "unified_intelligent_7l_interface_final_completion_audit",
+    "selected_next_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+    "file_hashes":  {
+                        "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json":  "38890856604a5092759ba3662fb5434f773ffb3eac73c87df6332d23ccfb0e2e",
+                        "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json":  "e69866ba53662bd7e82334f043ac0ba576f33132c68aca4c81f4a1b20a6a7915",
+                        "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md":  "53bb40fd2852b4ad0f5f2b6bc729875616e69ced683b810e8bf79a7c7302c671",
+                        "00_SYSTEM/content_engine/authorizations/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_EXPLICIT_AUTHORIZATION_RECORD.json":  "5a99eba9d551c88e75a100f50d33ffc4e5b6022e6165ad0cb01e1b2abc837513",
+                        "00_SYSTEM/content_engine/reports/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json":  "ef583c7e07522d7fa22b36ce86608a3ecbe8c7df439042091b8bf6f8ab88f50c",
+                        "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json":  "f08777223adfb1249598080e8cdf9157806c7c2258d53ece9c205fe0cc5164f0",
+                        "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json":  "cdc2e55d4bbb3ead282af4edff8f0e4a6c90453d8464038ae26faf60e90abeaa",
+                        "05_REPORTS/content_engine/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md":  "54a1337976774ad85ee2508b19eb45766a58038e608cd775bb360cb686fbe1e4"
+                    },
+    "manifest_policy":  {
+                            "hashes_self":  false,
+                            "hashes_own_seal":  false,
+                            "next_scope_selection_only":  true,
+                            "explicit_authorization_consumed":  true,
+                            "next_scope_selection_completed":  true,
+                            "next_scope_selected":  true,
+                            "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_SCOPE",
+                            "selected_next_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+                            "selected_scope_requires_user_authorization":  true,
+                            "selected_scope_executed_by_this_gate":  false,
+                            "selected_gate_script_generated_by_this_gate":  false,
+                            "selected_gate_executed_by_this_gate":  false,
+                            "runtime_performed":  false,
+                            "productive_actions_performed":  false,
+                            "credential_access_performed":  false,
+                            "external_side_effects_performed":  false,
+                            "argos_external_sync_boundary_only":  true,
+                            "argos_sync_boundary_status":  "INACTIVE",
+                            "argos_activation_performed":  false,
+                            "argos_connection_attempt_performed":  false,
+                            "cross_system_sync_performed":  false,
+                            "manual_mutation_performed":  false,
+                            "source_mutation_performed":  false,
+                            "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE"
+                        }
+}

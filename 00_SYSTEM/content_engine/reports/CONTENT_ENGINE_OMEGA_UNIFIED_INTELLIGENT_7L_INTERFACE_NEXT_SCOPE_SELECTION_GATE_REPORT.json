@@ -1,0 +1,201 @@
+{
+    "generated_at_utc":  "2026-07-07T07:40:21.8372964Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+    "build":  "V1",
+    "pass":  true,
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTED",
+    "classification":  "GOVERNED_7L_INTERFACE_NEXT_SCOPE_SELECTION",
+    "root":  "E:\\CONTENT_ENGINE_OMEGA",
+    "failures":  [
+
+                 ],
+    "repo_pre":  {
+                     "inside_work_tree":  "true",
+                     "branch":  "main",
+                     "head":  "5f432839be7bc8801ed14dfd197e14cf910b1890",
+                     "upstream":  "5f432839be7bc8801ed14dfd197e14cf910b1890",
+                     "head_equals_upstream":  true,
+                     "dirty_count":  0,
+                     "dirty_paths":  [
+
+                                     ]
+                 },
+    "consumed_explicit_authorization":  {
+                                            "component":  "AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+                                            "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_EXPLICIT_AUTHORIZATION_RECORDED",
+                                            "build":  "V1",
+                                            "authorization_record":  "00_SYSTEM/content_engine/authorizations/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_EXPLICIT_AUTHORIZATION_RECORD.json",
+                                            "report":  "00_SYSTEM/content_engine/reports/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json",
+                                            "manifest":  "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+                                            "seal":  "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json",
+                                            "summary":  "05_REPORTS/content_engine/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md",
+                                            "seal_validation":  {
+                                                                    "seal_json_valid":  true,
+                                                                    "seal_manifest_path":  "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+                                                                    "seal_manifest_sha256":  "f08777223adfb1249598080e8cdf9157806c7c2258d53ece9c205fe0cc5164f0",
+                                                                    "actual_manifest_sha256":  "f08777223adfb1249598080e8cdf9157806c7c2258d53ece9c205fe0cc5164f0",
+                                                                    "seal_manifest_hash_matches":  true
+                                                                },
+                                            "explicit_user_authorization_received":  true,
+                                            "next_scope_selection_gate_execution_authorized_for_this_gate":  true
+                                        },
+    "selected_next_scope":  {
+                                "decision_file":  "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json",
+                                "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_SCOPE",
+                                "selected_next_track":  "unified_intelligent_7l_interface_final_completion_audit",
+                                "selected_next_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+                                "selected_next_scope_requires_user_authorization":  true,
+                                "selected_scope_executed_by_this_gate":  false,
+                                "selected_gate_script_generated_by_this_gate":  false,
+                                "selected_gate_executed_by_this_gate":  false,
+                                "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE"
+                            },
+    "argos_boundary":  {
+                           "argos_external_sync_boundary_only":  true,
+                           "argos_sync_boundary_status":  "INACTIVE",
+                           "required_for_next_scope_selection":  false,
+                           "required_for_content_engine_operation":  false,
+                           "argos_activation_performed":  false,
+                           "argos_connection_attempt_performed":  false,
+                           "argos_sync_activation_performed":  false,
+                           "cross_system_sync_performed":  false,
+                           "if_argos_unavailable":  "continue_without_sync"
+                       },
+    "integrity_state":  {
+                            "previous_explicit_authorization_hashes_before":  {
+                                                                                  "00_SYSTEM/content_engine/authorizations/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_EXPLICIT_AUTHORIZATION_RECORD.json":  "5a99eba9d551c88e75a100f50d33ffc4e5b6022e6165ad0cb01e1b2abc837513",
+                                                                                  "00_SYSTEM/content_engine/reports/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json":  "ef583c7e07522d7fa22b36ce86608a3ecbe8c7df439042091b8bf6f8ab88f50c",
+                                                                                  "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json":  "f08777223adfb1249598080e8cdf9157806c7c2258d53ece9c205fe0cc5164f0",
+                                                                                  "00_SYSTEM/content_engine/manifests/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json":  "cdc2e55d4bbb3ead282af4edff8f0e4a6c90453d8464038ae26faf60e90abeaa",
+                                                                                  "05_REPORTS/content_engine/AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md":  "54a1337976774ad85ee2508b19eb45766a58038e608cd775bb360cb686fbe1e4"
+                                                                              },
+                            "previous_explicit_authorization_mutation_performed":  false,
+                            "manual_mutation_performed":  false,
+                            "interface_source_mutation_performed":  false,
+                            "blueprint_mutation_performed":  false,
+                            "static_mockup_mutation_performed":  false,
+                            "runtime_preview_artifact_mutation_performed":  false
+                        },
+    "runtime_and_safety_state":  {
+                                     "next_scope_selection_only":  true,
+                                     "next_scope_selection_started":  true,
+                                     "next_scope_selection_completed":  true,
+                                     "next_scope_selected":  true,
+                                     "selected_scope_executed_by_this_gate":  false,
+                                     "selected_gate_script_generated_by_this_gate":  false,
+                                     "selected_gate_executed_by_this_gate":  false,
+                                     "runtime_preview_reexecution_performed":  false,
+                                     "runtime_performed":  false,
+                                     "dashboard_runtime_performed":  false,
+                                     "live_interface_runtime_performed":  false,
+                                     "button_runtime_performed":  false,
+                                     "productive_actions_performed":  false,
+                                     "credential_access_performed":  false,
+                                     "external_side_effects_performed":  false,
+                                     "argos_activation_performed":  false,
+                                     "argos_connection_attempt_performed":  false,
+                                     "argos_sync_activation_performed":  false,
+                                     "cross_system_sync_performed":  false,
+                                     "manual_mutation_performed":  false,
+                                     "source_mutation_performed":  false,
+                                     "fail_closed":  true
+                                 },
+    "next_scope_selection_gate":  {
+                                      "gate_type":  "next_scope_selection",
+                                      "pass":  true,
+                                      "checks_total":  14,
+                                      "checks_passed":  14,
+                                      "checks_failed":  0,
+                                      "checks":  [
+                                                     {
+                                                         "id":  "repo_clean_synced_precheck",
+                                                         "pass":  true,
+                                                         "detail":  "Repo clean and synced before next scope selection."
+                                                     },
+                                                     {
+                                                         "id":  "explicit_authorization_consumed",
+                                                         "pass":  true,
+                                                         "detail":  "Explicit authorization consumed and valid."
+                                                     },
+                                                     {
+                                                         "id":  "next_scope_selection_authorized",
+                                                         "pass":  true,
+                                                         "detail":  "Next scope selection authorized by explicit authorization gate."
+                                                     },
+                                                     {
+                                                         "id":  "next_scope_selected",
+                                                         "pass":  true,
+                                                         "detail":  "Next governed scope selected."
+                                                     },
+                                                     {
+                                                         "id":  "selected_next_scope_requires_user_authorization",
+                                                         "pass":  true,
+                                                         "detail":  "Selected next scope requires separate user authorization before execution."
+                                                     },
+                                                     {
+                                                         "id":  "selected_scope_not_executed",
+                                                         "pass":  true,
+                                                         "detail":  "Selected scope not executed by this gate."
+                                                     },
+                                                     {
+                                                         "id":  "selected_gate_script_not_generated",
+                                                         "pass":  true,
+                                                         "detail":  "Selected gate script not generated by this gate."
+                                                     },
+                                                     {
+                                                         "id":  "runtime_not_performed",
+                                                         "pass":  true,
+                                                         "detail":  "No runtime performed."
+                                                     },
+                                                     {
+                                                         "id":  "no_productive_actions",
+                                                         "pass":  true,
+                                                         "detail":  "No productive actions performed."
+                                                     },
+                                                     {
+                                                         "id":  "no_credentials",
+                                                         "pass":  true,
+                                                         "detail":  "No credential access performed."
+                                                     },
+                                                     {
+                                                         "id":  "argos_external_sync_boundary_only",
+                                                         "pass":  true,
+                                                         "detail":  "ARGOS remains external optional sync boundary only."
+                                                     },
+                                                     {
+                                                         "id":  "argos_inactive_not_required",
+                                                         "pass":  true,
+                                                         "detail":  "ARGOS inactive and not required."
+                                                     },
+                                                     {
+                                                         "id":  "previous_authorization_evidence_not_mutated",
+                                                         "pass":  true,
+                                                         "detail":  "Previous explicit authorization evidence not mutated."
+                                                     },
+                                                     {
+                                                         "id":  "ready_for_selected_scope_authorization",
+                                                         "pass":  true,
+                                                         "detail":  "Ready for authorization hold before selected final completion audit gate."
+                                                     }
+                                                 ]
+                                  },
+    "session_state":  {
+                          "explicit_authorization_consumed":  true,
+                          "next_scope_selection_completed":  true,
+                          "next_scope_selected":  true,
+                          "selected_next_scope":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_SCOPE",
+                          "selected_next_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE",
+                          "selected_scope_execution_deferred":  true,
+                          "selected_scope_requires_user_authorization":  true,
+                          "argos_external_sync_boundary_language_enforced":  true,
+                          "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE"
+                      },
+    "output_scope":  [
+                         "00_SYSTEM/content_engine/scope_selection/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_DECISION.json",
+                         "00_SYSTEM/content_engine/reports/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_REPORT.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_MANIFEST.json",
+                         "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SEAL.json",
+                         "05_REPORTS/content_engine/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE_SUMMARY.md"
+                     ],
+    "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_FINAL_COMPLETION_AUDIT_GATE"
+}
