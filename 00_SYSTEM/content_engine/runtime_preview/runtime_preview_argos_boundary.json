@@ -1,0 +1,12 @@
+{
+    "generated_at_utc":  "2026-07-07T06:56:19.4649676Z",
+    "argos_external_sync_boundary_only":  true,
+    "argos_sync_boundary_status":  "INACTIVE",
+    "required_for_runtime_preview":  false,
+    "required_for_content_engine_operation":  false,
+    "argos_activation_performed":  false,
+    "argos_connection_attempt_performed":  false,
+    "argos_sync_activation_performed":  false,
+    "cross_system_sync_performed":  false,
+    "if_argos_unavailable":  "continue_without_sync"
+}

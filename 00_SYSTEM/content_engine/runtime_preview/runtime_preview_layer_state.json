@@ -1,0 +1,48 @@
+{
+    "generated_at_utc":  "2026-07-07T06:56:19.4649676Z",
+    "layers":  [
+                   {
+                       "id":  1,
+                       "name":  "primary_shell",
+                       "state":  "preview_visible",
+                       "productive_actions":  false
+                   },
+                   {
+                       "id":  2,
+                       "name":  "seven_layer_map",
+                       "state":  "preview_visible",
+                       "productive_actions":  false
+                   },
+                   {
+                       "id":  3,
+                       "name":  "panel_system",
+                       "state":  "preview_visible",
+                       "productive_actions":  false
+                   },
+                   {
+                       "id":  4,
+                       "name":  "button_taxonomy",
+                       "state":  "preview_visible",
+                       "productive_actions":  false
+                   },
+                   {
+                       "id":  5,
+                       "name":  "authorization_surface",
+                       "state":  "preview_visible",
+                       "productive_actions":  false
+                   },
+                   {
+                       "id":  6,
+                       "name":  "blocked_action_surface",
+                       "state":  "preview_visible",
+                       "productive_actions":  false
+                   },
+                   {
+                       "id":  7,
+                       "name":  "evidence_history_surface",
+                       "state":  "preview_visible",
+                       "productive_actions":  false
+                   }
+               ],
+    "layer_count":  7
+}

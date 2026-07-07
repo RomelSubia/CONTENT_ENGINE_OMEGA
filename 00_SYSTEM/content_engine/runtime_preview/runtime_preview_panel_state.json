@@ -1,0 +1,41 @@
+{
+    "generated_at_utc":  "2026-07-07T06:56:19.4649676Z",
+    "panels":  [
+                   {
+                       "id":  "main_screen",
+                       "state":  "preview_ready",
+                       "runtime_only":  true
+                   },
+                   {
+                       "id":  "panel_map",
+                       "state":  "preview_ready",
+                       "runtime_only":  true
+                   },
+                   {
+                       "id":  "button_list",
+                       "state":  "preview_ready",
+                       "runtime_only":  true
+                   },
+                   {
+                       "id":  "authorization_panel",
+                       "state":  "preview_ready",
+                       "runtime_only":  true
+                   },
+                   {
+                       "id":  "blocked_actions_panel",
+                       "state":  "preview_ready",
+                       "runtime_only":  true
+                   },
+                   {
+                       "id":  "evidence_panel",
+                       "state":  "preview_ready",
+                       "runtime_only":  true
+                   },
+                   {
+                       "id":  "argos_boundary_panel",
+                       "state":  "preview_ready",
+                       "runtime_only":  true
+                   }
+               ],
+    "panel_count":  7
+}

@@ -1,0 +1,19 @@
+{
+    "generated_at_utc":  "2026-07-07T06:56:19.4649676Z",
+    "runtime_preview_executed":  true,
+    "runtime_preview_safe_noop_only":  true,
+    "runtime_performed":  true,
+    "dashboard_runtime_preview_performed":  true,
+    "live_interface_preview_performed":  true,
+    "button_runtime_preview_performed":  true,
+    "productive_actions_performed":  false,
+    "credential_access_performed":  false,
+    "external_side_effects_performed":  false,
+    "argos_activation_performed":  false,
+    "argos_connection_attempt_performed":  false,
+    "argos_sync_activation_performed":  false,
+    "cross_system_sync_performed":  false,
+    "manual_mutation_performed":  false,
+    "source_mutation_performed":  false,
+    "fail_closed":  true
+}

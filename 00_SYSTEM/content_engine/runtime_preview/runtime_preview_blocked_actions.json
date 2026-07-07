@@ -1,0 +1,18 @@
+{
+    "generated_at_utc":  "2026-07-07T06:56:19.4649676Z",
+    "blocked_actions_enforced":  true,
+    "blocked_actions":  [
+                            "banking",
+                            "payments",
+                            "billing",
+                            "legal_documents",
+                            "credential_access",
+                            "social_network_actions",
+                            "external_argos_sync",
+                            "productive_file_mutation",
+                            "manual_mutation",
+                            "source_mutation"
+                        ],
+    "blocked_actions_triggered":  false,
+    "blocked_action_test_mode":  "declarative_preview_only"
+}

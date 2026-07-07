@@ -1,0 +1,11 @@
+{
+    "generated_at_utc":  "2026-07-07T06:56:19.4649676Z",
+    "explicit_authorization_consumed":  true,
+    "authorization_applies_to":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_PREVIEW_GATE",
+    "authorization_flow_previewed":  true,
+    "runtime_preview_authorized":  true,
+    "productive_actions_authorized":  false,
+    "credential_access_authorized":  false,
+    "external_sync_authorized":  false,
+    "argos_activation_authorized":  false
+}

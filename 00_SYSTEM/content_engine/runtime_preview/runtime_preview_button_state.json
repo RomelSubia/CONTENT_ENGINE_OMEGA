@@ -1,0 +1,57 @@
+{
+    "generated_at_utc":  "2026-07-07T06:56:19.4649676Z",
+    "buttons":  [
+                    {
+                        "id":  "diagnostic_preview",
+                        "visible":  true,
+                        "clickable_preview":  true,
+                        "productive_action":  false,
+                        "execution":  "noop"
+                    },
+                    {
+                        "id":  "folder_analysis_preview",
+                        "visible":  true,
+                        "clickable_preview":  true,
+                        "productive_action":  false,
+                        "execution":  "noop"
+                    },
+                    {
+                        "id":  "app_usage_preview",
+                        "visible":  true,
+                        "clickable_preview":  true,
+                        "productive_action":  false,
+                        "execution":  "noop"
+                    },
+                    {
+                        "id":  "authorization_preview",
+                        "visible":  true,
+                        "clickable_preview":  true,
+                        "productive_action":  false,
+                        "execution":  "noop"
+                    },
+                    {
+                        "id":  "blocked_action_preview",
+                        "visible":  true,
+                        "clickable_preview":  true,
+                        "productive_action":  false,
+                        "execution":  "blocked_noop"
+                    },
+                    {
+                        "id":  "evidence_history_preview",
+                        "visible":  true,
+                        "clickable_preview":  true,
+                        "productive_action":  false,
+                        "execution":  "noop"
+                    },
+                    {
+                        "id":  "argos_sync_preview",
+                        "visible":  true,
+                        "clickable_preview":  false,
+                        "productive_action":  false,
+                        "execution":  "disabled"
+                    }
+                ],
+    "live_productive_buttons_enabled":  false,
+    "button_runtime_performed":  true,
+    "button_productive_actions_performed":  false
+}
