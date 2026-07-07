@@ -1,0 +1,32 @@
+{
+    "generated_at_utc":  "2026-07-07T04:44:19.5919884Z",
+    "component":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_CLOSE_VALIDATION",
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_CLOSED_VALIDATED",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_STATIC_MOCKUP_CLOSE_VALIDATION_MANIFEST.json",
+    "manifest_sha256":  "d525d24865d269a9bc74868a8c5bef91d3b194ee867ea95b3f125a0d2916b32b",
+    "sealed":  true,
+    "seal_policy":  {
+                        "close_validation_only":  true,
+                        "static_mockup_lifecycle_closed_validated":  true,
+                        "static_mockup_build_consumed":  true,
+                        "static_mockup_post_build_audit_consumed":  true,
+                        "static_mockup_artifact_count":  12,
+                        "argos_external_sync_boundary_only":  true,
+                        "argos_sync_boundary_status":  "INACTIVE",
+                        "static_mockup_rewrite_performed":  false,
+                        "audit_rewrite_performed":  false,
+                        "runtime_performed":  false,
+                        "dashboard_runtime_performed":  false,
+                        "live_buttons_enabled":  false,
+                        "productive_actions_performed":  false,
+                        "argos_activation_performed":  false,
+                        "argos_connection_attempt_performed":  false,
+                        "cross_system_sync_performed":  false,
+                        "manual_mutation_performed":  false,
+                        "source_mutation_performed":  false,
+                        "static_mockup_mutation_performed":  false,
+                        "runtime_authorization_required_before_next_gate":  true,
+                        "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_PREVIEW_GATE"
+                    }
+}
