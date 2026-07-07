@@ -1,0 +1,36 @@
+{
+    "generated_at_utc":  "2026-07-07T07:35:10.0739195Z",
+    "component":  "AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+    "build":  "V1",
+    "status":  "EXPLICIT_USER_AUTHORIZATION_RECORDED",
+    "consumed_authorization_hold":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+    "requested_next_scope_selection_gate":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+    "next_safe_step":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_NEXT_SCOPE_SELECTION_GATE",
+    "authorization_state":  {
+                                "explicit_user_authorization_received":  true,
+                                "next_scope_selection_gate_generation_authorized":  true,
+                                "next_scope_selection_gate_execution_authorized_for_next_gate":  true,
+                                "next_scope_selection_started":  false,
+                                "next_scope_selection_gate_script_generated":  false,
+                                "next_scope_selection_gate_executed":  false,
+                                "next_scope_selected":  false,
+                                "runtime_preview_reexecution_authorized":  false,
+                                "runtime_authorized":  false,
+                                "productive_actions_authorized":  false,
+                                "credential_access_authorized":  false,
+                                "argos_activation_authorized":  false,
+                                "cross_system_sync_authorized":  false,
+                                "this_gate_selects_next_scope":  false,
+                                "this_gate_executes_next_scope_selection":  false,
+                                "this_gate_executes_runtime":  false
+                            },
+    "authorization_phrase":  "USER_REQUESTED_NEXT_SCOPE_SELECTION_GATE_AUTHORIZATION",
+    "boundary":  {
+                     "explicit_authorization_record_only":  true,
+                     "selection_performed_by_this_gate":  false,
+                     "runtime_performed_by_this_gate":  false,
+                     "argos_external_sync_boundary_only":  true,
+                     "argos_sync_boundary_status":  "INACTIVE",
+                     "if_argos_unavailable":  "continue_without_sync"
+                 }
+}
