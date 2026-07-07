@@ -1,0 +1,30 @@
+{
+    "generated_at_utc":  "2026-07-07T05:02:59.1670145Z",
+    "component":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_PREVIEW_GATE",
+    "status":  "CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_PREVIEW_AUTHORIZATION_AWAITING",
+    "build":  "V1",
+    "manifest":  "00_SYSTEM/content_engine/manifests/AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_PREVIEW_GATE_MANIFEST.json",
+    "manifest_sha256":  "d702c17eaa259ef3aaf7ba344e1eb9c0268c40cce61b21f8871a3642af4f5db4",
+    "sealed":  true,
+    "seal_policy":  {
+                        "authorization_hold_only":  true,
+                        "explicit_user_authorization_received":  false,
+                        "runtime_preview_authorized":  false,
+                        "runtime_preview_started":  false,
+                        "runtime_preview_gate_script_generated":  false,
+                        "runtime_preview_gate_executed":  false,
+                        "runtime_authorization_required_before_next_gate":  true,
+                        "argos_external_sync_boundary_only":  true,
+                        "argos_sync_boundary_status":  "INACTIVE",
+                        "runtime_performed":  false,
+                        "dashboard_runtime_performed":  false,
+                        "live_buttons_enabled":  false,
+                        "productive_actions_performed":  false,
+                        "argos_activation_performed":  false,
+                        "argos_connection_attempt_performed":  false,
+                        "cross_system_sync_performed":  false,
+                        "manual_mutation_performed":  false,
+                        "source_mutation_performed":  false,
+                        "next_safe_step":  "AWAIT_EXPLICIT_USER_AUTHORIZATION_BEFORE_CONTENT_ENGINE_OMEGA_UNIFIED_INTELLIGENT_7L_INTERFACE_RUNTIME_PREVIEW_GATE"
+                    }
+}
