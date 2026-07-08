@@ -1,0 +1,44 @@
+{
+    "generated_at_utc":  "2026-07-08T05:41:15.0657677Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_REDESIGN_GATE",
+    "status":  "HUD_USER_EXPERIENCE_FINAL_SPEC",
+    "intended_user":  "Romel",
+    "experience_goal":  "Romel should understand what the system is doing, why it matters, what earns money, what is blocked, what needs authorization and what the next safe move is.",
+    "ux_principles":  [
+                          "clarity before automation",
+                          "money and strategy visible",
+                          "evidence always reachable",
+                          "risk never hidden",
+                          "blocked actions explained",
+                          "next movement explicit",
+                          "no clutter without meaning",
+                          "premium command feeling"
+                      ],
+    "primary_user_flows":  [
+                               {
+                                   "flow":  "Morning command review",
+                                   "path":  "N1 -\u003e N2 -\u003e N3 -\u003e N7",
+                                   "result":  "Romel sees system state, strategic priority, pipeline and next safe move."
+                               },
+                               {
+                                   "flow":  "Content decision",
+                                   "path":  "N3 -\u003e N4 -\u003e N6 -\u003e N7",
+                                   "result":  "Romel sees content quality, audience fit, evidence and recommended next action."
+                               },
+                               {
+                                   "flow":  "Authorization decision",
+                                   "path":  "N7 -\u003e N5 -\u003e N6",
+                                   "result":  "Romel approves or blocks with risk, confidence and evidence."
+                               },
+                               {
+                                   "flow":  "Monetization review",
+                                   "path":  "N2 -\u003e N6 -\u003e N7",
+                                   "result":  "Romel sees which content/channel/domain deserves focus."
+                               },
+                               {
+                                   "flow":  "Safety review",
+                                   "path":  "N1 -\u003e N5 -\u003e N6",
+                                   "result":  "Romel sees blocks, risk, evidence, seals and boundaries."
+                               }
+                           ]
+}

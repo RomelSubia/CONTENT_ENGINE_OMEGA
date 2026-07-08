@@ -1,0 +1,47 @@
+{
+    "generated_at_utc":  "2026-07-08T05:41:15.0657677Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_REDESIGN_GATE",
+    "status":  "HUD_FUNCTIONAL_ARCHITECTURE_FINAL",
+    "functional_model":  {
+                             "source_of_truth":  "Read governed Content Engine states, reports, manifests, metrics, decisions and queues only through validated adapters in future build.",
+                             "action_model":  "No direct productive action from HUD without explicit authorization, risk classification, evidence and fail-closed validation.",
+                             "state_model":  [
+                                                 "NEW",
+                                                 "IDEA_VALIDATED",
+                                                 "SCRIPT_VALIDATED",
+                                                 "METADATA_VALIDATED",
+                                                 "AUDIO_VALIDATED",
+                                                 "VIDEO_VALIDATED",
+                                                 "PUBLISHED",
+                                                 "METRICS_UPDATED",
+                                                 "DECISION_RECORDED",
+                                                 "OPTIMIZED",
+                                                 "LEARNING_APPLIED",
+                                                 "SYSTEM_STATE_CONTROLLED"
+                                             ],
+                             "command_model":  "N7 recommends next movement; N5 validates authorization; N6 records evidence.",
+                             "autonomy_model":  "Controlled autonomy only; no silent execution.",
+                             "integration_model":  "ARGOS external status-only boundary; no dependency, no activation, no cross-system sync in this blueprint."
+                         },
+    "required_future_modules":  [
+                                    "state_reader_adapter",
+                                    "capability_map_adapter",
+                                    "pipeline_state_adapter",
+                                    "metrics_adapter",
+                                    "decision_adapter",
+                                    "learning_adapter",
+                                    "evidence_manifest_adapter",
+                                    "authorization_gate_adapter",
+                                    "risk_classifier_adapter",
+                                    "argos_external_status_boundary_adapter"
+                                ],
+    "functional_non_goals":  [
+                                 "No runtime in this gate",
+                                 "No app build in this gate",
+                                 "No publication",
+                                 "No credentials",
+                                 "No external automation",
+                                 "No ARGOS activation",
+                                 "No final completion audit of old route"
+                             ]
+}

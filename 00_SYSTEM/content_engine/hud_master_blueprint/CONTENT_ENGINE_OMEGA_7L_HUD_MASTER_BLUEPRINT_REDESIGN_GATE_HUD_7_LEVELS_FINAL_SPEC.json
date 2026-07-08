@@ -1,0 +1,150 @@
+{
+    "generated_at_utc":  "2026-07-08T05:41:15.0657677Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_REDESIGN_GATE",
+    "status":  "HUD_7_LEVELS_FINAL_SPEC",
+    "levels":  [
+                   {
+                       "id":  "N1_SYSTEM_CONSCIOUSNESS",
+                       "name":  "System Consciousness / Estado vivo",
+                       "final_role":  "Live system awareness layer.",
+                       "purpose":  "Expose health, safe mode, repository state, continuity, current phase, risk, sync, evidence state and active blocks.",
+                       "primary_question":  "Is Content Engine healthy, synchronized, controlled, evidenced and safe right now?",
+                       "visible_modules":  [
+                                               "System status",
+                                               "Repo clean/synced",
+                                               "Continuity",
+                                               "Safe mode",
+                                               "Current phase",
+                                               "Risk level",
+                                               "Blocked actions",
+                                               "Evidence freshness"
+                                           ],
+                       "design_requirement":  "Must feel alive and operational, never passive."
+                   },
+                   {
+                       "id":  "N2_STRATEGIC_MONETIZATION_BRAIN",
+                       "name":  "Strategic \u0026 Monetization Brain",
+                       "final_role":  "Business direction and money-alignment layer.",
+                       "purpose":  "Expose channels, domains, monetization paths, campaigns, offers, conversion strategy, launch priority and revenue alignment.",
+                       "primary_question":  "Are we creating and prioritizing content that can become income, authority, traffic or leads?",
+                       "visible_modules":  [
+                                               "Channel A money",
+                                               "Channel B curiosity",
+                                               "Channel C motivation",
+                                               "Channel D AI/tech/personal",
+                                               "Domain selector",
+                                               "Offer path",
+                                               "Revenue hypothesis",
+                                               "Priority scoring"
+                                           ],
+                       "design_requirement":  "Must connect every content decision to strategy, not vanity activity."
+                   },
+                   {
+                       "id":  "N3_CONTENT_PRODUCTION_PIPELINE",
+                       "name":  "Content Production Pipeline",
+                       "final_role":  "Creation and production flow layer.",
+                       "purpose":  "Expose content items across idea, script, metadata, audio, video, publication, metrics, decision, optimization and learning states.",
+                       "primary_question":  "Where is each content item and what is the next safe action?",
+                       "visible_modules":  [
+                                               "Ideas",
+                                               "Scripts",
+                                               "Metadata",
+                                               "Audio",
+                                               "Video",
+                                               "Publication state",
+                                               "Validation blockers",
+                                               "Next pipeline action"
+                                           ],
+                       "design_requirement":  "Must show real lifecycle state, not a simple task board."
+                   },
+                   {
+                       "id":  "N4_PSYCHOLOGICAL_MARKETING_CREATIVE_INTELLIGENCE",
+                       "name":  "Psychological Marketing \u0026 Creative Intelligence",
+                       "final_role":  "Audience, narrative, hook and conversion-intelligence layer.",
+                       "purpose":  "Expose audience, pain, desire, fear, trigger, hook, language, tone, narrative, CTA and ethical conversion boundaries.",
+                       "primary_question":  "Does this content connect emotionally, communicate clearly and stay ethical?",
+                       "visible_modules":  [
+                                               "Audience profile",
+                                               "Pain/desire/fear",
+                                               "Hook strength",
+                                               "Narrative angle",
+                                               "CTA fit",
+                                               "Tone",
+                                               "Ethical boundary",
+                                               "Creative variations"
+                                           ],
+                       "design_requirement":  "Must improve content quality without manipulation or unsafe persuasion."
+                   },
+                   {
+                       "id":  "N5_CONTROLLED_AUTONOMY_SECURITY",
+                       "name":  "Controlled Autonomy, Security \u0026 Authorization",
+                       "final_role":  "Action control and safety layer.",
+                       "purpose":  "Expose allowed actions, blocked actions, suggested actions, safe mode, risk, confidence, authorization requirements and external boundaries.",
+                       "primary_question":  "What may the system do, what is blocked, and what must Romel approve?",
+                       "visible_modules":  [
+                                               "Allowed actions",
+                                               "Blocked actions",
+                                               "Authorization queue",
+                                               "Risk classifier",
+                                               "Confidence score",
+                                               "Autonomy level",
+                                               "ARGOS boundary",
+                                               "Credential boundary"
+                                           ],
+                       "design_requirement":  "Must prevent unsafe execution and make every boundary visible."
+                   },
+                   {
+                       "id":  "N6_EVIDENCE_METRICS_DECISIONS_LEARNING",
+                       "name":  "Evidence, Metrics, Decisions \u0026 Learning",
+                       "final_role":  "Measurement, decision, optimization and memory layer.",
+                       "purpose":  "Expose metrics, decisions, optimization, learning, reports, manifests, seals, hashes, commits, errors and evidence trails.",
+                       "primary_question":  "What evidence supports each decision, learning and next move?",
+                       "visible_modules":  [
+                                               "Metrics",
+                                               "Performance scoring",
+                                               "Decision history",
+                                               "Optimization log",
+                                               "Learning log",
+                                               "Evidence manifest",
+                                               "Seal status",
+                                               "Error priority"
+                                           ],
+                       "design_requirement":  "Must make evidence understandable, not hidden in logs."
+                   },
+                   {
+                       "id":  "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT",
+                       "name":  "Executive Command \u0026 Next Movement",
+                       "final_role":  "Command, recommendation and next-step layer.",
+                       "purpose":  "Expose recommended next move, alternatives, risk, expected impact, pending decisions and closure criteria.",
+                       "primary_question":  "What should Romel do next, why, and under what authorization?",
+                       "visible_modules":  [
+                                               "Next safe step",
+                                               "Recommended action",
+                                               "Alternative actions",
+                                               "Expected impact",
+                                               "Risk note",
+                                               "Authorization phrase",
+                                               "Closure state",
+                                               "Scope selector"
+                                           ],
+                       "design_requirement":  "Must feel like executive command, not a generic button."
+                   }
+               ],
+    "level_contract":  {
+                           "every_level_must_show":  [
+                                                         "purpose",
+                                                         "current state",
+                                                         "evidence link",
+                                                         "risk if applicable",
+                                                         "next action if applicable"
+                                                     ],
+                           "every_level_must_avoid":  [
+                                                          "silent action",
+                                                          "unverified claim",
+                                                          "unbounded automation",
+                                                          "credential exposure",
+                                                          "ambiguous status"
+                                                      ],
+                           "cross_level_flow":  "N1 validates state, N2 sets strategy, N3 handles pipeline, N4 improves creative/psychology, N5 controls authorization, N6 proves decisions, N7 selects next movement."
+                       }
+}

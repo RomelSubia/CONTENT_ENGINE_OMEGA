@@ -1,0 +1,73 @@
+{
+    "generated_at_utc":  "2026-07-08T05:41:15.0657677Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_REDESIGN_GATE",
+    "status":  "HUD_SECURITY_AND_AUTHORIZATION_FINAL_SPEC",
+    "security_position":  "Fail-closed, authorization-first, no credentials, no silent execution, no ARGOS activation, no external sync without a later governed bridge.",
+    "mandatory_blocks":  [
+                             "credentials",
+                             "publication without authorization",
+                             "productive actions without authorization",
+                             "ARGOS activation",
+                             "cross-system sync",
+                             "runtime execution from blueprint gate",
+                             "old final completion audit",
+                             "unverified state claim",
+                             "manual/source mutation from blueprint gate"
+                         ],
+    "authorization_classes":  [
+                                  {
+                                      "class":  "VIEW_ONLY",
+                                      "allowed_without_extra_auth":  true,
+                                      "examples":  [
+                                                       "read reports",
+                                                       "show metrics",
+                                                       "show evidence"
+                                                   ]
+                                  },
+                                  {
+                                      "class":  "DESIGN_ONLY",
+                                      "allowed_without_runtime":  true,
+                                      "examples":  [
+                                                       "blueprint",
+                                                       "visual architecture",
+                                                       "acceptance criteria"
+                                                   ]
+                                  },
+                                  {
+                                      "class":  "CONTROLLED_ACTION",
+                                      "allowed_without_explicit_auth":  false,
+                                      "examples":  [
+                                                       "queue mutation",
+                                                       "publication",
+                                                       "automation trigger"
+                                                   ]
+                                  },
+                                  {
+                                      "class":  "EXTERNAL_SYSTEM",
+                                      "allowed_without_explicit_auth":  false,
+                                      "examples":  [
+                                                       "ARGOS bridge",
+                                                       "YouTube/TikTok publication",
+                                                       "browser/app control"
+                                                   ]
+                                  },
+                                  {
+                                      "class":  "CREDENTIAL_ACCESS",
+                                      "allowed":  false,
+                                      "examples":  [
+                                                       "tokens",
+                                                       "passwords",
+                                                       "secrets"
+                                                   ]
+                                  }
+                              ],
+    "evidence_requirements":  [
+                                  "report",
+                                  "manifest",
+                                  "seal",
+                                  "hashes",
+                                  "repo clean",
+                                  "upstream synced",
+                                  "dirty count 0"
+                              ]
+}

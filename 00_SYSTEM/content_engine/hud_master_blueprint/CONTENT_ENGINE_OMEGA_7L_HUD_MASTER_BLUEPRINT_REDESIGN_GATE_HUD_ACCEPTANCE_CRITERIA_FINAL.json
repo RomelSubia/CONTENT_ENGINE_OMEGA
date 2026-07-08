@@ -1,0 +1,58 @@
+{
+    "generated_at_utc":  "2026-07-08T05:41:15.0657677Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_REDESIGN_GATE",
+    "status":  "HUD_ACCEPTANCE_CRITERIA_FINAL",
+    "final_acceptance_required_before_build":  true,
+    "criteria":  [
+                     {
+                         "id":  "AC_FINAL_001",
+                         "criterion":  "HUD is explicitly an intelligent operational HUD, not a dashboard.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_002",
+                         "criterion":  "Seven operational levels are represented with purpose, modules and boundaries.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_003",
+                         "criterion":  "Content pipeline, monetization, marketing psychology and business domains are visible.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_004",
+                         "criterion":  "Evidence, metrics, decisions, optimization and learning are first-class surfaces.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_005",
+                         "criterion":  "Authorization, risk, confidence and blocked actions are always visible.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_006",
+                         "criterion":  "No runtime, no app build and no productive actions are performed by this blueprint gate.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_007",
+                         "criterion":  "ARGOS remains external-only, optional and non-invasive.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_008",
+                         "criterion":  "Old final completion audit remains frozen.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_009",
+                         "criterion":  "Final blueprint files only are registered; drafts are not registered.",
+                         "required":  true
+                     },
+                     {
+                         "id":  "AC_FINAL_010",
+                         "criterion":  "Repo ends clean, synced, committed and pushed.",
+                         "required":  true
+                     }
+                 ]
+}
