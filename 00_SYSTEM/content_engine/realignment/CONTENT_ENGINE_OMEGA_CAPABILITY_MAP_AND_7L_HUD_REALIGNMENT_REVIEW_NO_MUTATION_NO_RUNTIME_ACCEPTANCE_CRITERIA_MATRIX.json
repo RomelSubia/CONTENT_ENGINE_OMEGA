@@ -1,0 +1,345 @@
+{
+    "generated_at_utc":  "2026-07-08T04:27:42.4673546Z",
+    "component":  "CONTENT_ENGINE_OMEGA_CAPABILITY_MAP_AND_7L_HUD_REALIGNMENT_REVIEW_NO_MUTATION_NO_RUNTIME",
+    "build":  "V1",
+    "status":  "ACCEPTANCE_CRITERIA_MATRIX_DEFINED",
+    "matrix_purpose":  "Define mandatory criteria before any new HUD construction gate.",
+    "capability_to_hud_level_matrix":  [
+                                           {
+                                               "capability_id":  "CE_CAP_001_SYSTEM_IDENTITY_AND_OBJECTIVE",
+                                               "capability_name":  "System identity and monetizable content objective",
+                                               "category":  "objective",
+                                               "mapped_hud_levels":  [
+                                                                         "N1_SYSTEM_CONSCIOUSNESS",
+                                                                         "N2_STRATEGIC_MONETIZATION_BRAIN",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "Content Engine OMEGA is a governed digital system for content creation, measurement, optimization, learning, and monetization."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_002_GOVERNANCE_TRUST_CORE",
+                                               "capability_name":  "Governance, trust, validation, evidence, and fail-closed",
+                                               "category":  "governance_security",
+                                               "mapped_hud_levels":  [
+                                                                         "N1_SYSTEM_CONSCIOUSNESS",
+                                                                         "N5_CONTROLLED_AUTONOMY_SECURITY",
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must validate, register evidence, protect integrity, fail closed, and avoid silent or unsafe execution."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_003_REPO_CONTINUITY_SYNC_CONTROL",
+                                               "capability_name":  "Repo, continuity, synchronization, and state control",
+                                               "category":  "governance_security",
+                                               "mapped_hud_levels":  [
+                                                                         "N1_SYSTEM_CONSCIOUSNESS",
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "Local PC, local Git, remote Git, and continuity must remain synchronized and auditable before and after operations."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_004_CONTENT_PIPELINE_FULL_LIFECYCLE",
+                                               "capability_name":  "Full content pipeline lifecycle",
+                                               "category":  "content_creation",
+                                               "mapped_hud_levels":  [
+                                                                         "N3_CONTENT_PRODUCTION_PIPELINE",
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must move content through idea, script, metadata, audio, video, publication, metrics, decision, optimization, and learning."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_005_IDEA_SCRIPT_METADATA_ENGINES",
+                                               "capability_name":  "Idea, script, and metadata generation engines",
+                                               "category":  "content_creation",
+                                               "mapped_hud_levels":  [
+                                                                         "N3_CONTENT_PRODUCTION_PIPELINE",
+                                                                         "N4_PSYCHOLOGICAL_MARKETING_CREATIVE_INTELLIGENCE"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "Content Engine must create and validate ideas, scripts, titles, descriptions, tags, prompts, and metadata under channel strategy."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_006_AUDIO_VIDEO_PUBLICATION_ENGINES",
+                                               "capability_name":  "Audio, video, and publication engines",
+                                               "category":  "content_creation",
+                                               "mapped_hud_levels":  [
+                                                                         "N3_CONTENT_PRODUCTION_PIPELINE",
+                                                                         "N5_CONTROLLED_AUTONOMY_SECURITY",
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "Content Engine must govern audio/video generation and publication as controlled pipeline phases, distinguishing mock/manual/real states."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_007_CHANNEL_STRATEGY_A_B_C_D",
+                                               "capability_name":  "Multichannel strategy A/B/C/D",
+                                               "category":  "strategy_monetization",
+                                               "mapped_hud_levels":  [
+                                                                         "N2_STRATEGIC_MONETIZATION_BRAIN",
+                                                                         "N4_PSYCHOLOGICAL_MARKETING_CREATIVE_INTELLIGENCE",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must organize channels by role: money/conversion, curiosities/traffic, motivation/retention, AI-tech-personal/authority."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_008_MONETIZATION_AND_REVENUE_SYSTEMS",
+                                               "capability_name":  "Monetization and revenue generation systems",
+                                               "category":  "strategy_monetization",
+                                               "mapped_hud_levels":  [
+                                                                         "N2_STRATEGIC_MONETIZATION_BRAIN",
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must connect content production to revenue paths: affiliates, products, services, consulting, courses, traffic, leads, and business domains."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_009_MULTIDOMAIN_BUSINESS_SCOPE",
+                                               "capability_name":  "Multidomain business scope",
+                                               "category":  "strategy_monetization",
+                                               "mapped_hud_levels":  [
+                                                                         "N2_STRATEGIC_MONETIZATION_BRAIN",
+                                                                         "N3_CONTENT_PRODUCTION_PIPELINE",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "Content Engine may support multiple real domains and brands, including Finca San Mateo, cacao, Bravi, BramViss, rentals, digital channels, websites, products, services, and campaigns."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_010_PSYCHOLOGICAL_MARKETING",
+                                               "capability_name":  "Psychological marketing, audience, and creative intelligence",
+                                               "category":  "marketing_psychology",
+                                               "mapped_hud_levels":  [
+                                                                         "N4_PSYCHOLOGICAL_MARKETING_CREATIVE_INTELLIGENCE",
+                                                                         "N2_STRATEGIC_MONETIZATION_BRAIN",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must understand audiences, pain, desire, fear, emotional triggers, hooks, language, tone, narrative, and ethical conversion boundaries."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_011_METRICS_ENGINE",
+                                               "capability_name":  "Metrics and performance scoring",
+                                               "category":  "measurement_learning",
+                                               "mapped_hud_levels":  [
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING",
+                                                                         "N2_STRATEGIC_MONETIZATION_BRAIN",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must register and interpret metrics such as views, likes, comments, shares, performance scores, and content performance."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_012_DECISION_ENGINE",
+                                               "capability_name":  "Decision engine",
+                                               "category":  "measurement_learning",
+                                               "mapped_hud_levels":  [
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT",
+                                                                         "N5_CONTROLLED_AUTONOMY_SECURITY"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must classify results, record decisions, recommend actions with reasons, and block decisions without evidence."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_013_OPTIMIZATION_ENGINE",
+                                               "capability_name":  "Optimization engine",
+                                               "category":  "measurement_learning",
+                                               "mapped_hud_levels":  [
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT",
+                                                                         "N5_CONTROLLED_AUTONOMY_SECURITY"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must transform decisions into controlled optimization actions, variations, improvements, observations, blocks, or review requests."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_014_LEARNING_ENGINE",
+                                               "capability_name":  "Learning engine and knowledge base",
+                                               "category":  "measurement_learning",
+                                               "mapped_hud_levels":  [
+                                                                         "N6_EVIDENCE_METRICS_DECISIONS_LEARNING",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system must capture learning, update knowledge, record patterns, and prevent unsafe or incorrect learning."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_015_CONTROLLED_AUTONOMY",
+                                               "capability_name":  "Controlled autonomy",
+                                               "category":  "autonomy_operations",
+                                               "mapped_hud_levels":  [
+                                                                         "N5_CONTROLLED_AUTONOMY_SECURITY",
+                                                                         "N1_SYSTEM_CONSCIOUSNESS",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system may suggest or execute governed operations only inside limits, with safe mode, risk threshold, confidence, daily action limits, and human authorization."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_016_APPLICATION_OPERATION_BOUNDARY",
+                                               "capability_name":  "Controlled operation of related applications",
+                                               "category":  "autonomy_operations",
+                                               "mapped_hud_levels":  [
+                                                                         "N5_CONTROLLED_AUTONOMY_SECURITY",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The system may eventually operate related applications only when governed, authorized, bounded, evidenced, and aligned with content/marketing/monetization objectives."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_017_ARGOS_EXTERNAL_SYNC_BOUNDARY",
+                                               "capability_name":  "ARGOS external sync boundary",
+                                               "category":  "integration_boundary",
+                                               "mapped_hud_levels":  [
+                                                                         "N1_SYSTEM_CONSCIOUSNESS",
+                                                                         "N5_CONTROLLED_AUTONOMY_SECURITY",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "ARGOS must remain independent, complementary, optional, status/health-check oriented, non-invasive, and never an internal dependency for Content Engine operation."
+                                           },
+                                           {
+                                               "capability_id":  "CE_CAP_018_HONESTY_EXPLAINABILITY_AND_USER_TRUST",
+                                               "capability_name":  "Honesty, explainability, and user trust",
+                                               "category":  "interface_intelligence",
+                                               "mapped_hud_levels":  [
+                                                                         "N1_SYSTEM_CONSCIOUSNESS",
+                                                                         "N5_CONTROLLED_AUTONOMY_SECURITY",
+                                                                         "N7_EXECUTIVE_COMMAND_NEXT_MOVEMENT"
+                                                                     ],
+                                               "evidence_detected":  true,
+                                               "evidence_hit_count":  10,
+                                               "evidence_confidence":  "HIGH",
+                                               "production_requirement":  "The HUD must show what the system knows, does not know, recommends, blocks, requires, and why, without hiding uncertainty or risks."
+                                           }
+                                       ],
+    "acceptance_criteria":  [
+                                {
+                                    "id":  "AC_IDENTITY_001",
+                                    "group":  "identity",
+                                    "criterion":  "The interface is declared as intelligent operational HUD, not dashboard.",
+                                    "required_state":  "explicit_true",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_IDENTITY_002",
+                                    "group":  "identity",
+                                    "criterion":  "The HUD is declared as bridge between Romel and Content Engine operational brain.",
+                                    "required_state":  "explicit_true",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_CAPABILITY_001",
+                                    "group":  "capabilities",
+                                    "criterion":  "All official capability families are mapped to HUD levels.",
+                                    "required_state":  "complete_mapping_required",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_CAPABILITY_002",
+                                    "group":  "capabilities",
+                                    "criterion":  "Content creation, monetization, marketing psychology, governance, autonomy, metrics, decisions, optimization, learning, and ARGOS boundary are represented.",
+                                    "required_state":  "explicit_coverage_required",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_SECURITY_001",
+                                    "group":  "security",
+                                    "criterion":  "No runtime, no publication, no credentials, no ARGOS activation, no cross-system sync.",
+                                    "required_state":  "must_remain_false",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_SECURITY_002",
+                                    "group":  "security",
+                                    "criterion":  "Human authorization is mandatory before productive or external actions.",
+                                    "required_state":  "mandatory",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_HONESTY_001",
+                                    "group":  "honesty",
+                                    "criterion":  "HUD must show uncertainty, risk, blocked actions, evidence, and reasons.",
+                                    "required_state":  "explicit_true",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_PRODUCT_001",
+                                    "group":  "product",
+                                    "criterion":  "HUD must feel advanced, alive, dynamic, reliable, efficient, safe, and aligned with monetization.",
+                                    "required_state":  "design_acceptance_required",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_PRODUCTION_001",
+                                    "group":  "production_readiness",
+                                    "criterion":  "Defined capabilities must be separated from implemented capabilities before build.",
+                                    "required_state":  "required_before_build",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                },
+                                {
+                                    "id":  "AC_PRODUCTION_002",
+                                    "group":  "production_readiness",
+                                    "criterion":  "Previous static mockup cannot be treated as final interface.",
+                                    "required_state":  "frozen_as_historical_evidence_only",
+                                    "current_review_result":  "DEFINED_FOR_NEXT_GATE_VALIDATION",
+                                    "pass_now":  true
+                                }
+                            ],
+    "criteria_count":  10,
+    "all_criteria_defined":  true,
+    "ready_for_hud_build":  false,
+    "ready_for_hud_blueprint_redesign_authorization":  true,
+    "next_safe_step":  "AWAIT_USER_AUTHORIZATION_FOR_CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_REDESIGN_GATE"
+}
