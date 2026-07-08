@@ -1,0 +1,32 @@
+{
+    "generated_at_utc":  "2026-07-08T06:00:16.5840668Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_DESIGN_STUDIO_GATE",
+    "build":  "V1",
+    "status":  "PREMATURE_FINAL_RECLASSIFIED_AS_BASELINE_NOT_ACCEPTED",
+    "consumed_component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_REDESIGN_GATE",
+    "consumed_status":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_FINAL_REGISTERED_NO_RUNTIME",
+    "consumed_head_known":  "35af522cc841ba43ce9bc0f5661b8369ca0a29a2",
+    "decision":  "The previously registered final HUD master blueprint is not accepted as final product design because it was registered before a real Design Studio review with Romel.",
+    "history_policy":  {
+                           "delete_previous_commit":  false,
+                           "rewrite_history":  false,
+                           "modify_previous_artifacts":  false,
+                           "preserve_as_reference":  true,
+                           "treat_as_final":  false,
+                           "treat_as_accepted":  false,
+                           "treat_as_build_ready":  false,
+                           "new_classification":  "PREMATURE_FINAL_BASELINE_NOT_ACCEPTED"
+                       },
+    "blocks":  {
+                   "final_acceptance_blocked":  true,
+                   "build_scope_selection_blocked":  true,
+                   "runtime_blocked":  true,
+                   "hud_build_blocked":  true,
+                   "app_build_blocked":  true,
+                   "argos_activation_blocked":  true,
+                   "productive_actions_blocked":  true,
+                   "final_completion_audit_blocked":  true
+               },
+    "reason":  "Design must be worked through with product-level review, alternatives, visual direction, UX flow, interaction model, acceptance criteria and explicit user approval before final registration.",
+    "next_safe_step":  "AWAIT_USER_REVIEW_FOR_CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_DESIGN_STUDIO_OUTPUT_GATE"
+}

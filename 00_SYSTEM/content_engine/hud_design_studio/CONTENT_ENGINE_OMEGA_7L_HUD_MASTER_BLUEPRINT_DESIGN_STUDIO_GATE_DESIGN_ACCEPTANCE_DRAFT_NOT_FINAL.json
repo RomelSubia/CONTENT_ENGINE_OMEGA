@@ -1,0 +1,18 @@
+{
+    "generated_at_utc":  "2026-07-08T06:00:16.5840668Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_DESIGN_STUDIO_GATE",
+    "status":  "DESIGN_ACCEPTANCE_DRAFT_NOT_FINAL",
+    "purpose":  "Define what Romel must explicitly accept later before any final blueprint is registered.",
+    "acceptance_not_granted_now":  true,
+    "final_blueprint_not_registered_now":  true,
+    "future_acceptance_conditions":  [
+                                         "Romel confirms design direction",
+                                         "Romel confirms visual hierarchy",
+                                         "Romel confirms 7L operational flow",
+                                         "Romel confirms monetization positioning",
+                                         "Romel confirms security and authorization boundaries",
+                                         "Romel confirms first build scope after final blueprint",
+                                         "Romel explicitly authorizes final blueprint registration"
+                                     ],
+    "required_future_phrase_example":  "acepto el diseño maestro del HUD 7L y autorizo registrar la versión final del blueprint"
+}

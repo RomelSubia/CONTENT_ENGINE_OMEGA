@@ -1,0 +1,88 @@
+{
+    "generated_at_utc":  "2026-07-08T06:00:16.5840668Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_DESIGN_STUDIO_GATE",
+    "status":  "VISUAL_UX_EXPLORATION_BOARD_CREATED_NOT_FINAL",
+    "visual_direction":  {
+                             "style":  "premium operational AI command HUD",
+                             "mood":  [
+                                          "serious",
+                                          "clean",
+                                          "intelligent",
+                                          "controlled",
+                                          "high-trust",
+                                          "future-ready"
+                                      ],
+                             "density":  "high information density with strict hierarchy",
+                             "hierarchy":  [
+                                               "N1 system safety/state always first",
+                                               "N2 monetization and strategy visible near top",
+                                               "N3 content pipeline central",
+                                               "N4 psychological marketing as creative intelligence layer",
+                                               "N5 authorization/security persistent",
+                                               "N6 evidence and learning always reachable",
+                                               "N7 next movement as command decision surface"
+                                           ]
+                         },
+    "proposed_screen_regions":  [
+                                    {
+                                        "region":  "top_command_strip",
+                                        "content":  [
+                                                        "product name",
+                                                        "safe mode",
+                                                        "repo state",
+                                                        "runtime off",
+                                                        "ARGOS external only",
+                                                        "risk",
+                                                        "evidence seal"
+                                                    ]
+                                    },
+                                    {
+                                        "region":  "left_system_column",
+                                        "content":  [
+                                                        "N1 system consciousness",
+                                                        "N5 safety/autonomy",
+                                                        "blocked actions"
+                                                    ]
+                                    },
+                                    {
+                                        "region":  "center_pipeline_cortex",
+                                        "content":  [
+                                                        "N3 content pipeline",
+                                                        "active content states",
+                                                        "validation blockers",
+                                                        "next production moves"
+                                                    ]
+                                    },
+                                    {
+                                        "region":  "right_strategy_brain",
+                                        "content":  [
+                                                        "N2 monetization strategy",
+                                                        "N4 psychology/creative intelligence",
+                                                        "channel/domain priority"
+                                                    ]
+                                    },
+                                    {
+                                        "region":  "bottom_evidence_command",
+                                        "content":  [
+                                                        "N6 evidence/metrics/decisions/learning",
+                                                        "N7 executive command",
+                                                        "required authorization"
+                                                    ]
+                                    }
+                                ],
+    "interaction_principles":  [
+                                   "every action has reason",
+                                   "every recommendation has evidence",
+                                   "every risk is visible",
+                                   "every blocked action explains why",
+                                   "every productive action requires explicit authorization",
+                                   "every final decision needs Romel review"
+                               ],
+    "unresolved_questions_for_romel":  [
+                                           "Do you want the HUD to feel more like a command center, a strategy brain, or a hybrid cortex?",
+                                           "Should monetization be visually dominant or balanced with production state?",
+                                           "Should the first build be read-only interactive, static HTML, terminal-driven, or app-based later?",
+                                           "Which domains should appear first: Content channels, Finca, cacao, Bravi/BramViss, or all as selectable domains?",
+                                           "What level of visual intensity do you want: clean professional, cyber/HUD, or executive SaaS?"
+                                       ]
+}

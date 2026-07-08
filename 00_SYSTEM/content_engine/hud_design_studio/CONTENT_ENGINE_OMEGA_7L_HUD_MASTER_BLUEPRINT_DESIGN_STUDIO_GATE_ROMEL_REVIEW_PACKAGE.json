@@ -1,0 +1,44 @@
+{
+    "generated_at_utc":  "2026-07-08T06:00:16.5840668Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_DESIGN_STUDIO_GATE",
+    "status":  "ROMEL_REVIEW_PACKAGE_CREATED",
+    "review_required":  true,
+    "final_blueprint_approval_required":  true,
+    "current_recommendation":  "Review OPTION_D_HYBRID_OMEGA_CORTEX as candidate direction, not final.",
+    "review_questions":  [
+                             {
+                                 "id":  "RQ_001",
+                                 "question":  "¿Quieres que el HUD se vea más como centro de mando, cerebro estratégico o híbrido avanzado?",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "RQ_002",
+                                 "question":  "¿La monetización debe estar arriba como prioridad visual o integrada dentro de cada contenido?",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "RQ_003",
+                                 "question":  "¿Qué dominio debe aparecer primero: canales digitales, Finca, cacao, Bravi/BramViss o selector multidominio?",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "RQ_004",
+                                 "question":  "¿Prefieres estilo visual ejecutivo limpio, cyber HUD avanzado o mezcla premium sobria?",
+                                 "required":  true
+                             },
+                             {
+                                 "id":  "RQ_005",
+                                 "question":  "¿La primera construcción futura debe ser HTML estático interactivo, app local, panel Python, o solo especificación más detallada?",
+                                 "required":  true
+                             }
+                         ],
+    "prohibited_next_steps_until_review":  [
+                                               "final blueprint acceptance",
+                                               "build scope selection",
+                                               "runtime build",
+                                               "ARGOS bridge",
+                                               "productive actions",
+                                               "final completion audit"
+                                           ],
+    "allowed_next_step":  "AWAIT_USER_REVIEW_FOR_CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_DESIGN_STUDIO_OUTPUT_GATE"
+}

@@ -1,0 +1,42 @@
+{
+    "generated_at_utc":  "2026-07-08T06:00:16.5840668Z",
+    "component":  "CONTENT_ENGINE_OMEGA_7L_HUD_MASTER_BLUEPRINT_DESIGN_STUDIO_GATE",
+    "build":  "V1",
+    "status":  "DESIGN_STUDIO_BRIEF_OPENED",
+    "product":  "CONTENT_ENGINE_OMEGA_7L_INTELLIGENT_OPERATIONAL_HUD",
+    "design_studio_policy":  {
+                                 "final_version_registered":  false,
+                                 "drafts_registered_as_final":  false,
+                                 "design_options_created":  true,
+                                 "romel_review_required":  true,
+                                 "final_approval_required_before_final_blueprint":  true,
+                                 "build_scope_selection_allowed_now":  false,
+                                 "runtime_allowed_now":  false,
+                                 "argos_allowed_now":  false,
+                                 "productive_actions_allowed_now":  false
+                             },
+    "product_goal":  "Design a premium, living, intelligent operational HUD that lets Romel command Content Engine Omega across content, monetization, psychology, metrics, learning, evidence and controlled autonomy.",
+    "design_problem":  "The system needs a real product design before final blueprint registration; not a static dashboard, not a mockup-only panel map, not a generic admin view.",
+    "design_quality_bar":  [
+                               "must feel alive",
+                               "must feel executive",
+                               "must feel premium",
+                               "must feel safe",
+                               "must feel strategic",
+                               "must feel monetization-oriented",
+                               "must explain risks and uncertainty",
+                               "must guide Romel to the next safe movement",
+                               "must remain governed and fail-closed"
+                           ],
+    "non_goals":  [
+                      "no final blueprint registration in this gate",
+                      "no app build",
+                      "no runtime",
+                      "no ARGOS activation",
+                      "no credentials",
+                      "no publication",
+                      "no source mutation",
+                      "no manual mutation",
+                      "no productive action"
+                  ]
+}
