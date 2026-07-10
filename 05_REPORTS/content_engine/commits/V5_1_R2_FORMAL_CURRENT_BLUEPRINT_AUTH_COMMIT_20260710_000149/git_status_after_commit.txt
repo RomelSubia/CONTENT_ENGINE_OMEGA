@@ -1,0 +1,5 @@
+﻿ M 05_REPORTS/content_engine/commits/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149/auth_commit_documental_report.json
+ M 05_REPORTS/content_engine/commits/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149/auth_commit_documental_summary.md
+?? 05_REPORTS/content_engine/commits/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149/git_status_after_commit.txt
+?? 05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_20260709_222512/
+?? 05_REPORTS/content_engine/manual_reviews/

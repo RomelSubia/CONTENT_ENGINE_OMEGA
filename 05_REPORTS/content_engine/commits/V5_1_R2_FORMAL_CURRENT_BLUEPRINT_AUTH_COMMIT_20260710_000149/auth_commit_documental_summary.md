@@ -8,9 +8,19 @@ CONTENT_ENGINE_OMEGA_AUTH_COMMIT_DOCUMENTAL_LOCAL_V5_1_R2_FORMAL_CURRENT_BLUEPRI
 Timestamp:
 20260710_000149
 
-## Scope
+## Result
 
-Commit local documental only.
+Commit status:
+PASS_AUTH_COMMIT_DOCUMENTAL_LOCAL_V5_1_R2_FORMAL_CURRENT_CREATED_NO_PUSH
+
+Commit executed:
+True
+
+Commit hash:
+15fef2fc4704a441639fb4b74f23eb0670257c93
+
+Push executed:
+False
 
 ## Formal CURRENT blueprint
 
@@ -26,7 +36,7 @@ FORMAL_CURRENT_BLUEPRINT
 Manual status:
 CURRENT
 
-## Evidence included
+## Included evidence
 
 Documental package:
 E:\CONTENT_ENGINE_OMEGA\05_REPORTS\content_engine\blueprint_registration\V5_1_R2_DOCREG_20260709_221152
@@ -40,24 +50,22 @@ E:\CONTENT_ENGINE_OMEGA\05_REPORTS\content_engine\gates\V5_1_R2_FORMAL_CURRENT_B
 Commit evidence:
 E:\CONTENT_ENGINE_OMEGA\05_REPORTS\content_engine\commits\V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149
 
-## Commit message
-
-docs(content-engine): register V5.1-R2 formal current blueprint
-
-## Limits
-
-- No build
-- No runtime
-- No ARGOS
-- No productive actions
-- No credentials
-- No push
-
-## Pre-commit classification
+## Classification
 
 - AUTH-COMMIT: VALID
-- Push authorized: False
-- Build authorized: False
-- Runtime authorized: False
-- ARGOS authorized: False
-- Productive actions authorized: False
+- Commit executed: True
+- Push executed: False
+- Build executed: False
+- Runtime executed: False
+- ARGOS activated: False
+- Productive actions: False
+- Credentials accessed: False
+
+## Important note
+
+This summary/report was updated after the commit to include the final commit hash.
+If git status shows these final evidence files modified, they require a separate follow-up evidence commit or amend authorization.
+
+## Next safe step
+
+REVIEW_AUTH_COMMIT_AND_DECIDE_IF_SEPARATE_AUTH_PUSH_IS_REQUIRED

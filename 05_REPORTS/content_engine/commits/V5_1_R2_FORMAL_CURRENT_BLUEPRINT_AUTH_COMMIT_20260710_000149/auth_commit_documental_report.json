@@ -4,6 +4,7 @@
     "authorization":  {
                           "level":  "AUTH-COMMIT",
                           "valid":  true,
+                          "scope":  "local documental commit for V5.1-R2 formal CURRENT blueprint registration",
                           "push_allowed":  false,
                           "build_allowed":  false,
                           "runtime_allowed":  false,
@@ -11,70 +12,43 @@
                           "productive_actions_allowed":  false,
                           "credentials_allowed":  false
                       },
+    "result":  {
+                   "status":  "PASS_AUTH_COMMIT_DOCUMENTAL_LOCAL_V5_1_R2_FORMAL_CURRENT_CREATED_NO_PUSH",
+                   "commit_executed":  true,
+                   "commit_hash":  "15fef2fc4704a441639fb4b74f23eb0670257c93",
+                   "push_executed":  false,
+                   "build_executed":  false,
+                   "runtime_executed":  false,
+                   "argos_activated":  false,
+                   "productive_actions":  false,
+                   "credentials_accessed":  false
+               },
     "formal_current_blueprint":  {
                                      "path":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
                                      "sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC",
                                      "status":  "FORMAL_CURRENT_BLUEPRINT",
                                      "manual_status":  "CURRENT"
                                  },
-    "hashes":  {
-                   "formal_registration_sha256":  "40E5F633F683BCFBF75C5EB2E34E891EBAD2282064DAAD9B26089FA4EE8DD4A9",
-                   "current_status_sha256":  "14127EE591AB90F60FAAF568253A03041275AD7E4AF4A365C706EC03AADE7AAB",
-                   "commit_manifest_sha256":  "AB79238899321509DFB0E722820DA0DC8EB69E34F7370F7A83DA02AE5E63B9DE",
-                   "commit_seal_hash":  "E6AFF5FD12F6103523C42D5CE39A6B1CC499986F8406A421AC6BE2D457499BBC"
-               },
-    "git_before":  {
-                       "root":  "E:/CONTENT_ENGINE_OMEGA",
-                       "branch":  "main",
-                       "head_before":  "3fbc639df63c104bc682306bf144e41af416f6d5",
-                       "status_before_count":  6
-                   },
-    "staged":  {
-                   "file_count":  37,
-                   "files":  [
-                                 "00_BLUEPRINTS/content_engine/CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
-                                 "00_MANUAL/content_engine/CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_INDEX.md",
-                                 "00_MANUAL/content_engine/blueprints/CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_V5_1_R2_BLUEPRINT_INTEGRATION.md",
-                                 "00_MANUAL/content_engine/blueprints/CURRENT_BLUEPRINT_REFERENCE.md",
-                                 "00_MANUAL/content_engine/blueprints/CURRENT_BLUEPRINT_STATUS.json",
-                                 "00_MANUAL/content_engine/blueprints/FORMAL_CURRENT_BLUEPRINT_REGISTRATION.md",
-                                 "05_REPORTS/content_engine/blueprint_registration/V5_1_R2_DOCREG_20260709_221152/authorization_record.md",
-                                 "05_REPORTS/content_engine/blueprint_registration/V5_1_R2_DOCREG_20260709_221152/blueprint_registration_manifest.json",
-                                 "05_REPORTS/content_engine/blueprint_registration/V5_1_R2_DOCREG_20260709_221152/blueprint_registration_report.json",
-                                 "05_REPORTS/content_engine/blueprint_registration/V5_1_R2_DOCREG_20260709_221152/blueprint_registration_seal.json",
-                                 "05_REPORTS/content_engine/blueprint_registration/V5_1_R2_DOCREG_20260709_221152/blueprint_registration_summary.md",
-                                 "05_REPORTS/content_engine/blueprint_registration/V5_1_R2_DOCREG_20260709_221152/document_lifecycle_update.json",
-                                 "05_REPORTS/content_engine/blueprint_registration/V5_1_R2_DOCREG_20260709_221152/readiness_review_reference.md",
-                                 "05_REPORTS/content_engine/blueprint_registration/V5_1_R2_DOCREG_20260709_221152/single_source_of_truth_record.json",
-                                 "05_REPORTS/content_engine/commits/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149/auth_commit_documental_manifest.json",
-                                 "05_REPORTS/content_engine/commits/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149/auth_commit_documental_report.json",
-                                 "05_REPORTS/content_engine/commits/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149/auth_commit_documental_seal.json",
-                                 "05_REPORTS/content_engine/commits/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149/authorization_record.md",
-                                 "05_REPORTS/content_engine/commits/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149/git_status_before_commit.txt",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/authorization_record.md",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/formal_current_blueprint_gate_manifest.json",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/formal_current_blueprint_gate_report.json",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/formal_current_blueprint_gate_seal.json",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/formal_current_blueprint_gate_summary.md",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/formal_current_blueprint_lifecycle_update.json",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/formal_current_blueprint_single_source_of_truth_record.json",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/previous_CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_INDEX_20260709_234752.md.bak",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/previous_CURRENT_BLUEPRINT_REFERENCE_20260709_234752.md.bak",
-                                 "05_REPORTS/content_engine/gates/V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752/r2_safe_manifest_and_seal_verification.json",
-                                 "05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844/authorization_record.md",
-                                 "05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844/internal_manual_lifecycle_update.json",
-                                 "05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844/internal_manual_single_source_of_truth_record.json",
-                                 "05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844/manual_integration_manifest.json",
-                                 "05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844/manual_integration_report.json",
-                                 "05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844/manual_integration_seal.json",
-                                 "05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844/manual_integration_summary.md",
-                                 "05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844/previous_failed_partial_attempt_reference.md"
-                             ],
-                   "unauthorized_count":  0
-               },
-    "commit":  {
-                   "message":  "docs(content-engine): register V5.1-R2 formal current blueprint",
-                   "commit_executed":  "PENDING",
-                   "push_executed":  false
-               }
+    "evidence":  {
+                     "documental_package":  "05_REPORTS\\content_engine\\blueprint_registration\\V5_1_R2_DOCREG_20260709_221152",
+                     "r2_safe_integration":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844",
+                     "formal_current_gate":  "05_REPORTS\\content_engine\\gates\\V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752",
+                     "commit_evidence":  "05_REPORTS\\content_engine\\commits\\V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149",
+                     "commit_manifest":  "05_REPORTS\\content_engine\\commits\\V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149\\auth_commit_documental_manifest.json",
+                     "commit_seal":  "05_REPORTS\\content_engine\\commits\\V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149\\auth_commit_documental_seal.json"
+                 },
+    "git":  {
+                "root":  "E:/CONTENT_ENGINE_OMEGA",
+                "branch":  "main",
+                "head_before":  "3fbc639df63c104bc682306bf144e41af416f6d5",
+                "head_after":  "15fef2fc4704a441639fb4b74f23eb0670257c93",
+                "status_before_count":  6,
+                "status_after_count":  2,
+                "status_after":  [
+                                     "?? 05_REPORTS/content_engine/manual_integration/V5_1_R2_MANUAL_INTEGRATION_20260709_222512/",
+                                     "?? 05_REPORTS/content_engine/manual_reviews/"
+                                 ]
+            },
+    "note":  "This final report was updated after the commit and may appear as an unstaged working tree update unless a follow-up evidence amend is authorized.",
+    "next_safe_step":  "REVIEW_AUTH_COMMIT_AND_DECIDE_IF_SEPARATE_AUTH_PUSH_IS_REQUIRED"
 }
