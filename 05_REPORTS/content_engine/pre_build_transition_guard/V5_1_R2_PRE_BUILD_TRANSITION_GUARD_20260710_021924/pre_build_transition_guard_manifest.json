@@ -1,0 +1,38 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_PRE_BUILD_TRANSITION_GUARD_V5_1_R2",
+    "status":  "PASS_PRE_BUILD_TRANSITION_GUARD_V5_1_R2_CREATED_REVIEW_REQUIRED",
+    "timestamp":  "20260710_021924",
+    "manifest_scope":  "pre_build_transition_guard_documental_outputs",
+    "item_count":  5,
+    "items":  [
+                  {
+                      "path":  "05_REPORTS\\content_engine\\pre_build_transition_guard\\V5_1_R2_PRE_BUILD_TRANSITION_GUARD_20260710_021924\\authorization_record.md",
+                      "sha256":  "68758249228085F970A3C4534E60506931B0C62C54C40AD829529B0AA3673681"
+                  },
+                  {
+                      "path":  "00_MANUAL\\content_engine\\build_transition\\CONTENT_ENGINE_OMEGA_PRE_BUILD_TRANSITION_GUARD_V5_1_R2.md",
+                      "sha256":  "BCE9A94D14F4E9589EEB410B38290DE30948949F109057C6694668A978B3C4B1"
+                  },
+                  {
+                      "path":  "00_MANUAL\\content_engine\\build_transition\\CURRENT_PRE_BUILD_TRANSITION_GUARD_STATUS.json",
+                      "sha256":  "C86C52AFBF6FE1654B27A58A0205F28C80B06962B8A6BEFE12482D3E324E106C"
+                  },
+                  {
+                      "path":  "05_REPORTS\\content_engine\\pre_build_transition_guard\\V5_1_R2_PRE_BUILD_TRANSITION_GUARD_20260710_021924\\pre_build_transition_guard_report.json",
+                      "sha256":  "C3797AA46F0D1BF9D4594749C73D215031CF9022B3200CA745D205F24B432B85"
+                  },
+                  {
+                      "path":  "05_REPORTS\\content_engine\\pre_build_transition_guard\\V5_1_R2_PRE_BUILD_TRANSITION_GUARD_20260710_021924\\pre_build_transition_guard_summary.md",
+                      "sha256":  "8E7E21E9AA384662FE8C2C71978509AD3488BFD111A04C2B0793EB2D7F4DB6DB"
+                  }
+              ],
+    "hard_limits":  {
+                        "build_executed":  false,
+                        "runtime_executed":  false,
+                        "argos_activated":  false,
+                        "productive_actions":  false,
+                        "credentials_accessed":  false,
+                        "commit_executed":  false,
+                        "push_executed":  false
+                    }
+}
