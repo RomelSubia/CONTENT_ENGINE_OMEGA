@@ -1,0 +1,17 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_FINAL_BLUEPRINT_DOCUMENTAL_REGISTRATION_PACKAGE_V5_1_R2",
+    "timestamp":  "20260709_221152",
+    "seal_hash":  "28C876BE07F7A8290AD889C9A478715FF3E16CABA0A9179F0DFE5ED3FC7566D6",
+    "seal_basis":  "artifact_path_sha256_manifest_plus_execution_limits",
+    "manifest":  "05_REPORTS\\content_engine\\blueprint_registration\\V5_1_R2_DOCREG_20260709_221152\\blueprint_registration_manifest.json",
+    "manifest_sha256":  "BDD86623AE0634204FAB6D40A36AC542C57996B9B9A845B3F61D8D565FD5AF44",
+    "blueprint":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+    "blueprint_sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC",
+    "build_executed":  false,
+    "runtime_executed":  false,
+    "argos_activated":  false,
+    "productive_actions":  false,
+    "credentials_accessed":  false,
+    "commit_executed":  false,
+    "push_executed":  false
+}

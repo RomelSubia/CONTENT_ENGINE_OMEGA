@@ -1,0 +1,39 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_INTEGRATION_PACKAGE_V5_1_R2_R2_SAFE",
+    "timestamp":  "20260709_223844",
+    "action":  "INTERNAL_MANUAL_DOCUMENTATION_INTEGRATION_R2_SAFE",
+    "authorization":  "AUTH-DOCUMENT",
+    "previous_failed_partial_attempt":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_20260709_222512",
+    "integrated_blueprint":  {
+                                 "version":  "V5.1-R2",
+                                 "path":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+                                 "sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC",
+                                 "manual_status":  "CURRENT_BLUEPRINT_CANDIDATE_IN_MANUAL",
+                                 "formal_gate_status":  "NOT_EXECUTED"
+                             },
+    "prior_versions":  [
+                           {
+                               "version":  "V5",
+                               "manual_status":  "SUPERSEDED_OR_REFERENCE"
+                           },
+                           {
+                               "version":  "V5.1",
+                               "manual_status":  "SUPERSEDED_OR_REFERENCE"
+                           },
+                           {
+                               "version":  "V5.1-R1",
+                               "manual_status":  "SUPERSEDED_OR_REFERENCE"
+                           }
+                       ],
+    "limits":  {
+                   "build":  "BLOCKED",
+                   "runtime":  "BLOCKED",
+                   "argos":  "EXTERNAL_ONLY_BLOCKED",
+                   "productive_actions":  "BLOCKED",
+                   "credentials":  "BLOCKED",
+                   "commit":  "NOT_EXECUTED",
+                   "push":  "NOT_EXECUTED",
+                   "formal_gate":  "NOT_EXECUTED"
+               },
+    "next_safe_step":  "REVIEW_INTERNAL_MANUAL_INTEGRATION_AND_DECIDE_IF_AUTH_GATE_FOR_FORMAL_CURRENT_REGISTRATION_IS_REQUIRED"
+}

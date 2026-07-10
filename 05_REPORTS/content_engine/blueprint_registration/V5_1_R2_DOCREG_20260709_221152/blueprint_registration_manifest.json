@@ -1,0 +1,42 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_FINAL_BLUEPRINT_DOCUMENTAL_REGISTRATION_PACKAGE_V5_1_R2",
+    "timestamp":  "20260709_221152",
+    "manifest_scope":  "primary_documental_registration_package_artifacts",
+    "artifacts":  [
+                      {
+                          "path":  "05_REPORTS\\content_engine\\blueprint_registration\\V5_1_R2_DOCREG_20260709_221152\\authorization_record.md",
+                          "sha256":  "874B1D9BEAE24494C553094D8154FC4D943ECD75C5D41DE7D51E70B7A5652EB9"
+                      },
+                      {
+                          "path":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+                          "sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC"
+                      },
+                      {
+                          "path":  "05_REPORTS\\content_engine\\blueprint_registration\\V5_1_R2_DOCREG_20260709_221152\\blueprint_registration_report.json",
+                          "sha256":  "7B77CBC714383F240BD39D4334074030D143FE256D27E22ABBF74AA5AC3A18C8"
+                      },
+                      {
+                          "path":  "05_REPORTS\\content_engine\\blueprint_registration\\V5_1_R2_DOCREG_20260709_221152\\blueprint_registration_summary.md",
+                          "sha256":  "A97E5FCE9F5AFEFD2C0483520808850A6F7C0FEE9182F757438EFCD7B5703044"
+                      },
+                      {
+                          "path":  "05_REPORTS\\content_engine\\blueprint_registration\\V5_1_R2_DOCREG_20260709_221152\\document_lifecycle_update.json",
+                          "sha256":  "4FBE867563290550B2CCB426E52CB66567C4E044E762F3AD7F3297D610E13C5C"
+                      },
+                      {
+                          "path":  "05_REPORTS\\content_engine\\blueprint_registration\\V5_1_R2_DOCREG_20260709_221152\\single_source_of_truth_record.json",
+                          "sha256":  "F10A42ABDB1D96A70816F8592DF21FB3E36E6864C5476B3B892539FF2F13E76D"
+                      },
+                      {
+                          "path":  "05_REPORTS\\content_engine\\blueprint_registration\\V5_1_R2_DOCREG_20260709_221152\\readiness_review_reference.md",
+                          "sha256":  "3BB0B12C4C727CB09AD473B67E7E4A3ED30FA95DF47EF246CB4872B23BA60E56"
+                      }
+                  ],
+    "build_executed":  false,
+    "runtime_executed":  false,
+    "argos_activated":  false,
+    "productive_actions":  false,
+    "credentials_accessed":  false,
+    "commit_executed":  false,
+    "push_executed":  false
+}

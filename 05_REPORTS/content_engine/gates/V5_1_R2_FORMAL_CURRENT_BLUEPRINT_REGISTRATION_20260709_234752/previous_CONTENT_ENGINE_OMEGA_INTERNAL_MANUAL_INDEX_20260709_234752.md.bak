@@ -1,0 +1,58 @@
+﻿# CONTENT ENGINE Ω
+## INTERNAL MANUAL INDEX
+### Content Engine internal manual entrypoint — R2_SAFE
+
+---
+
+# 1. Current blueprint candidate
+
+CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md
+
+Path:
+
+00_BLUEPRINTS\content_engine\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md
+
+SHA256:
+
+BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC
+
+Status:
+
+CURRENT_BLUEPRINT_CANDIDATE_IN_MANUAL
+
+Formal gate status:
+
+NOT_EXECUTED
+
+---
+
+# 2. Manual integration record
+
+00_MANUAL\content_engine\blueprints\CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_V5_1_R2_BLUEPRINT_INTEGRATION.md
+
+# 3. Current blueprint reference
+
+00_MANUAL\content_engine\blueprints\CURRENT_BLUEPRINT_REFERENCE.md
+
+# 4. Latest documental package reference
+
+05_REPORTS\content_engine\blueprint_registration\V5_1_R2_DOCREG_20260709_221152
+
+# 5. Previous failed partial attempt reference
+
+05_REPORTS\content_engine\manual_integration\V5_1_R2_MANUAL_INTEGRATION_20260709_222512
+
+# 6. Execution limits
+
+- No build.
+- No runtime.
+- No ARGOS.
+- No productive actions.
+- No credentials.
+- No commit.
+- No push.
+- No formal gate executed in this integration.
+
+# 7. Next safe step
+
+REVIEW_INTERNAL_MANUAL_INTEGRATION_AND_DECIDE_IF_AUTH_GATE_FOR_FORMAL_CURRENT_REGISTRATION_IS_REQUIRED

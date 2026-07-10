@@ -1,0 +1,37 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_INTEGRATION_PACKAGE_V5_1_R2_R2_SAFE",
+    "timestamp":  "20260709_223844",
+    "rule":  "INTERNAL_MANUAL_PREFERS_V5_1_R2_BLUEPRINT_CANDIDATE_AFTER_AUTH_DOCUMENT_INTEGRATION_R2_SAFE",
+    "integrated_candidate":  {
+                                 "path":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+                                 "sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC",
+                                 "status":  "CURRENT_BLUEPRINT_CANDIDATE_IN_MANUAL",
+                                 "formal_current_by_gate":  false
+                             },
+    "manual_files":  {
+                         "manual_integration":  "00_MANUAL\\content_engine\\blueprints\\CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_V5_1_R2_BLUEPRINT_INTEGRATION.md",
+                         "current_blueprint_reference":  "00_MANUAL\\content_engine\\blueprints\\CURRENT_BLUEPRINT_REFERENCE.md",
+                         "manual_index":  "00_MANUAL\\content_engine\\CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_INDEX.md"
+                     },
+    "previous_failed_partial_attempt":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_20260709_222512",
+    "hierarchy":  [
+                      "Formal CURRENT blueprint after authorized gate",
+                      "Internal manual CURRENT_BLUEPRINT_CANDIDATE",
+                      "Final documental package",
+                      "Readiness review",
+                      "Validated technical report",
+                      "Manifest and seal",
+                      "Prior blueprints as reference",
+                      "Conversational note"
+                  ],
+    "enforcement":  {
+                        "build_allowed":  false,
+                        "runtime_allowed":  false,
+                        "argos_allowed":  false,
+                        "productive_actions_allowed":  false,
+                        "credentials_allowed":  false,
+                        "commit_executed":  false,
+                        "push_executed":  false,
+                        "formal_gate_executed":  false
+                    }
+}

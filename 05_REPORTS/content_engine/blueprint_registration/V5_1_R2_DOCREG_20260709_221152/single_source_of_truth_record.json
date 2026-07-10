@@ -1,0 +1,23 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_FINAL_BLUEPRINT_DOCUMENTAL_REGISTRATION_PACKAGE_V5_1_R2",
+    "timestamp":  "20260709_221152",
+    "rule":  "ONLY_ONE_BLUEPRINT_CAN_BE_CURRENT",
+    "proposed_current":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+    "current_status":  "PREPARED_AS_FUTURE_CURRENT_PENDING_REVIEW_OR_GATE",
+    "hierarchy":  [
+                      "Blueprint CURRENT",
+                      "Final documental gate if executed",
+                      "Validated technical report",
+                      "Manifest and seal",
+                      "Integrated addendum",
+                      "Non-integrated addendum",
+                      "Draft",
+                      "Conversational note"
+                  ],
+    "enforcement":  {
+                        "build_allowed":  false,
+                        "runtime_allowed":  false,
+                        "argos_allowed":  false,
+                        "productive_actions_allowed":  false
+                    }
+}

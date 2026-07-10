@@ -1,0 +1,40 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_AUTH_GATE_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_V5_1_R2",
+    "timestamp":  "20260709_234752",
+    "rule":  "V5_1_R2_IS_FORMAL_CURRENT_BLUEPRINT_AFTER_AUTH_GATE",
+    "formal_current_blueprint":  {
+                                     "version":  "V5.1-R2",
+                                     "path":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+                                     "sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC",
+                                     "status":  "FORMAL_CURRENT_BLUEPRINT",
+                                     "manual_status":  "CURRENT"
+                                 },
+    "manual_files":  {
+                         "formal_registration":  "00_MANUAL\\content_engine\\blueprints\\FORMAL_CURRENT_BLUEPRINT_REGISTRATION.md",
+                         "current_blueprint_reference":  "00_MANUAL\\content_engine\\blueprints\\CURRENT_BLUEPRINT_REFERENCE.md",
+                         "manual_index":  "00_MANUAL\\content_engine\\CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_INDEX.md",
+                         "current_blueprint_status":  "00_MANUAL\\content_engine\\blueprints\\CURRENT_BLUEPRINT_STATUS.json"
+                     },
+    "hierarchy":  [
+                      "Formal CURRENT blueprint after authorized gate",
+                      "Current blueprint status record",
+                      "Current blueprint reference",
+                      "Internal manual index",
+                      "Internal manual integration record",
+                      "Final documental package",
+                      "Readiness review",
+                      "Validated technical report",
+                      "Manifest and seal",
+                      "Prior blueprints as reference",
+                      "Conversational note"
+                  ],
+    "enforcement":  {
+                        "build_allowed":  false,
+                        "runtime_allowed":  false,
+                        "argos_allowed":  false,
+                        "productive_actions_allowed":  false,
+                        "credentials_allowed":  false,
+                        "commit_executed":  false,
+                        "push_executed":  false
+                    }
+}

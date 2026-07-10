@@ -1,0 +1,19 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_INTEGRATION_PACKAGE_V5_1_R2_R2_SAFE",
+    "timestamp":  "20260709_223844",
+    "seal_hash":  "56E6747382F7F8DF861A8048B8B16DCD45C66075DFDD913C69A67664714E5216",
+    "seal_basis":  "manual_integration_r2_safe_artifact_path_sha256_manifest_plus_execution_limits",
+    "manifest":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\manual_integration_manifest.json",
+    "manifest_sha256":  "DC7F1662D5DA36F497AB5C22D8EF61BD3BD85D12B66DC792E34D9454A5C860DF",
+    "integrated_blueprint":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+    "integrated_blueprint_sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC",
+    "previous_failed_partial_attempt":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_20260709_222512",
+    "build_executed":  false,
+    "runtime_executed":  false,
+    "argos_activated":  false,
+    "productive_actions":  false,
+    "credentials_accessed":  false,
+    "formal_gate_executed":  false,
+    "commit_executed":  false,
+    "push_executed":  false
+}

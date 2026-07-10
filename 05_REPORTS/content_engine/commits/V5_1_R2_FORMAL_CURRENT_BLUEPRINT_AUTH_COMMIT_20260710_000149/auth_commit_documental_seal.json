@@ -1,0 +1,16 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_AUTH_COMMIT_DOCUMENTAL_LOCAL_V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION",
+    "timestamp":  "20260710_000149",
+    "seal_hash":  "E6AFF5FD12F6103523C42D5CE39A6B1CC499986F8406A421AC6BE2D457499BBC",
+    "seal_basis":  "authorized_staged_files_sha256_plus_execution_limits",
+    "manifest":  "05_REPORTS\\content_engine\\commits\\V5_1_R2_FORMAL_CURRENT_BLUEPRINT_AUTH_COMMIT_20260710_000149\\auth_commit_documental_manifest.json",
+    "manifest_sha256":  "AB79238899321509DFB0E722820DA0DC8EB69E34F7370F7A83DA02AE5E63B9DE",
+    "formal_current_blueprint":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+    "formal_current_blueprint_sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC",
+    "build_executed":  false,
+    "runtime_executed":  false,
+    "argos_activated":  false,
+    "productive_actions":  false,
+    "credentials_accessed":  false,
+    "push_executed":  false
+}

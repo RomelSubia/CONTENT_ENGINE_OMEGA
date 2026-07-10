@@ -1,0 +1,53 @@
+﻿# CONTENT ENGINE Ω
+## CURRENT BLUEPRINT REFERENCE
+### Internal manual pointer — R2_SAFE
+
+Current integrated blueprint candidate:
+
+CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md
+
+Path:
+
+00_BLUEPRINTS\content_engine\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md
+
+SHA256:
+
+BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC
+
+Status:
+
+CURRENT_BLUEPRINT_CANDIDATE_IN_MANUAL
+
+Formal gate status:
+
+NOT_EXECUTED
+
+Build:
+
+BLOCKED
+
+Runtime:
+
+BLOCKED
+
+ARGOS:
+
+EXTERNAL_ONLY_BLOCKED
+
+Productive actions:
+
+BLOCKED
+
+Credentials:
+
+BLOCKED
+
+Prior versions:
+
+- V5: SUPERSEDED_OR_REFERENCE
+- V5.1: SUPERSEDED_OR_REFERENCE
+- V5.1-R1: SUPERSEDED_OR_REFERENCE
+
+Rule:
+
+Only a future authorized formal gate can promote this candidate to formally registered CURRENT blueprint.

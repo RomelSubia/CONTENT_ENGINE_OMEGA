@@ -1,0 +1,80 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_AUTH_GATE_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_V5_1_R2",
+    "timestamp":  "20260709_234752",
+    "r2_safe_package":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844",
+    "r2_safe_manifest":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\manual_integration_manifest.json",
+    "r2_safe_manifest_sha256":  "DC7F1662D5DA36F497AB5C22D8EF61BD3BD85D12B66DC792E34D9454A5C860DF",
+    "r2_safe_seal":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\manual_integration_seal.json",
+    "r2_safe_seal_file_sha256":  "FF7B8B4C3D189D2CE25FB6AE2D8E749971F2BEE0FB5D846160BAF6039D173F82",
+    "r2_safe_expected_seal_hash":  "56E6747382F7F8DF861A8048B8B16DCD45C66075DFDD913C69A67664714E5216",
+    "r2_safe_computed_seal_hash":  "56E6747382F7F8DF861A8048B8B16DCD45C66075DFDD913C69A67664714E5216",
+    "r2_safe_seal_match":  true,
+    "manifest_missing_count":  0,
+    "manifest_mismatch_count":  0,
+    "manifest_items":  [
+                           {
+                               "path":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\authorization_record.md",
+                               "expected_sha256":  "157F49A1BA4A3B6B896A38983A7A35CFEED6D8C86DE7481B023CEED54E004B9F",
+                               "actual_sha256":  "157F49A1BA4A3B6B896A38983A7A35CFEED6D8C86DE7481B023CEED54E004B9F",
+                               "exists":  true,
+                               "match":  true
+                           },
+                           {
+                               "path":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\previous_failed_partial_attempt_reference.md",
+                               "expected_sha256":  "3D08249985C862627EFC9C944EA1A6B70987BC759179520DB9A50A72B37094B5",
+                               "actual_sha256":  "3D08249985C862627EFC9C944EA1A6B70987BC759179520DB9A50A72B37094B5",
+                               "exists":  true,
+                               "match":  true
+                           },
+                           {
+                               "path":  "00_MANUAL\\content_engine\\blueprints\\CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_V5_1_R2_BLUEPRINT_INTEGRATION.md",
+                               "expected_sha256":  "626151D22AEFD666FA63FB266AABFE7EE50959632078458986C60CDBCD31B64E",
+                               "actual_sha256":  "626151D22AEFD666FA63FB266AABFE7EE50959632078458986C60CDBCD31B64E",
+                               "exists":  true,
+                               "match":  true
+                           },
+                           {
+                               "path":  "00_MANUAL\\content_engine\\blueprints\\CURRENT_BLUEPRINT_REFERENCE.md",
+                               "expected_sha256":  "48897672293A85B4806DD60E63FA0B8E06EDC3F7A677FEE97567D8D083AF7E72",
+                               "actual_sha256":  "48897672293A85B4806DD60E63FA0B8E06EDC3F7A677FEE97567D8D083AF7E72",
+                               "exists":  true,
+                               "match":  true
+                           },
+                           {
+                               "path":  "00_MANUAL\\content_engine\\CONTENT_ENGINE_OMEGA_INTERNAL_MANUAL_INDEX.md",
+                               "expected_sha256":  "15A25F52697D62B27D15D5F71BF1C59EBB6FC5BF48093F121778B60B6646384E",
+                               "actual_sha256":  "15A25F52697D62B27D15D5F71BF1C59EBB6FC5BF48093F121778B60B6646384E",
+                               "exists":  true,
+                               "match":  true
+                           },
+                           {
+                               "path":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\internal_manual_lifecycle_update.json",
+                               "expected_sha256":  "978443337DB4411C290E9A604C9DC1E4933CD00D1CBBACCB16D97F4ACCD8E207",
+                               "actual_sha256":  "978443337DB4411C290E9A604C9DC1E4933CD00D1CBBACCB16D97F4ACCD8E207",
+                               "exists":  true,
+                               "match":  true
+                           },
+                           {
+                               "path":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\internal_manual_single_source_of_truth_record.json",
+                               "expected_sha256":  "FBC18D8A28AB1DD217F5316801912B58FB77797E459DA6F644F92670D5D564CF",
+                               "actual_sha256":  "FBC18D8A28AB1DD217F5316801912B58FB77797E459DA6F644F92670D5D564CF",
+                               "exists":  true,
+                               "match":  true
+                           },
+                           {
+                               "path":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\manual_integration_report.json",
+                               "expected_sha256":  "218F6E55F88F0E117E1A76EE8880D319D697928F7EEAB4FEE9A39823D130B5AC",
+                               "actual_sha256":  "218F6E55F88F0E117E1A76EE8880D319D697928F7EEAB4FEE9A39823D130B5AC",
+                               "exists":  true,
+                               "match":  true
+                           },
+                           {
+                               "path":  "05_REPORTS\\content_engine\\manual_integration\\V5_1_R2_MANUAL_INTEGRATION_R2_SAFE_20260709_223844\\manual_integration_summary.md",
+                               "expected_sha256":  "CB1F78AB2C47C953F51D9F251A4DFDA5CC1B083FBFB4A13A659554E84397AF2D",
+                               "actual_sha256":  "CB1F78AB2C47C953F51D9F251A4DFDA5CC1B083FBFB4A13A659554E84397AF2D",
+                               "exists":  true,
+                               "match":  true
+                           }
+                       ],
+    "verification_status":  "PASS_R2_SAFE_MANIFEST_AND_SEAL_VERIFIED"
+}

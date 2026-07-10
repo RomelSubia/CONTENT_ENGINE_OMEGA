@@ -1,0 +1,6 @@
+﻿?? 00_BLUEPRINTS/
+?? 00_MANUAL/
+?? 05_REPORTS/content_engine/blueprint_registration/
+?? 05_REPORTS/content_engine/gates/
+?? 05_REPORTS/content_engine/manual_integration/
+?? 05_REPORTS/content_engine/manual_reviews/

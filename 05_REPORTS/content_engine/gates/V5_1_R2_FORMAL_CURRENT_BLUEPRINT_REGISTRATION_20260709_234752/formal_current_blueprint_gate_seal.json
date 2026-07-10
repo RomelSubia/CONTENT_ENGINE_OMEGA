@@ -1,0 +1,18 @@
+﻿{
+    "component":  "CONTENT_ENGINE_OMEGA_AUTH_GATE_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_V5_1_R2",
+    "timestamp":  "20260709_234752",
+    "seal_hash":  "FDA5433D930738BED79042BAD6CF3C58FDDD3BD6E53E9E5380C795C018B10F93",
+    "seal_basis":  "formal_current_blueprint_gate_artifact_path_sha256_manifest_plus_execution_limits",
+    "manifest":  "05_REPORTS\\content_engine\\gates\\V5_1_R2_FORMAL_CURRENT_BLUEPRINT_REGISTRATION_20260709_234752\\formal_current_blueprint_gate_manifest.json",
+    "manifest_sha256":  "89AEDCB7EEDA70F7CFA0FE4B86821022B2DFFD38961C294A719301149DEF02E2",
+    "formal_current_blueprint":  "00_BLUEPRINTS\\content_engine\\CONTENT_ENGINE_OMEGA_BLUEPRINT_V5_1_R2_FINAL.md",
+    "formal_current_blueprint_sha256":  "BB1327BFBEFE126632CEB7F079A9964EB0CD2987F1DA08399BF217066CFDDCCC",
+    "status":  "FORMAL_CURRENT_BLUEPRINT",
+    "build_executed":  false,
+    "runtime_executed":  false,
+    "argos_activated":  false,
+    "productive_actions":  false,
+    "credentials_accessed":  false,
+    "commit_executed":  false,
+    "push_executed":  false
+}
