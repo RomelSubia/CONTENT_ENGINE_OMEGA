@@ -1,0 +1,18 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_MVP1_READ_ONLY_HUD_TECHNICAL_PLAN_V5_1_R2",
+    "seal_status":  "TECHNICAL_PLAN_CREATED_REVIEW_REQUIRED",
+    "plan_sha256":  "A17D4E2317C043A5DB440D6180FD2125F078766E36847AB6DCB8C827F9E93621",
+    "status_sha256":  "5764D5588D086EE84EE223628C1800C807932E9BD94D41417145B41E25D53D02",
+    "report_sha256":  "87C02E0B7A2A28669DA207E61CDCAFF276E83D9ECFAAA7F0283634F25C590AE2",
+    "summary_sha256":  "B5C5CE73ECC86804753D82F73B7651D48B783C81BAF069A6C8E4B3A686C48D64",
+    "manifest_sha256":  "702E17C92B62E10333426D2126BEF2B4AE6AAEBC0271D3CA3C7025C3565B091D",
+    "build_executed":  false,
+    "runtime_executed":  false,
+    "argos_activated":  false,
+    "productive_actions_executed":  false,
+    "credentials_accessed":  false,
+    "commit_executed":  false,
+    "amend_executed":  false,
+    "push_executed":  false,
+    "next_safe_step":  "REVIEW_MVP1_READ_ONLY_HUD_TECHNICAL_PLAN_AND_DECIDE_IF_COMMIT_IS_REQUIRED"
+}
