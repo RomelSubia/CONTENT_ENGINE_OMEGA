@@ -1,0 +1,4 @@
+IMPORT_OK: content_engine_omega.mvp1_read_only_hud content_engine_omega.mvp1_read_only_hud
+IMPORT_OK: content_engine_omega.mvp1_read_only_hud.hud_model content_engine_omega.mvp1_read_only_hud.hud_model
+IMPORT_OK: content_engine_omega.mvp1_read_only_hud.state_reader content_engine_omega.mvp1_read_only_hud.state_reader
+IMPORT_OK: content_engine_omega.mvp1_read_only_hud.text_renderer content_engine_omega.mvp1_read_only_hud.text_renderer

@@ -1,0 +1,49 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_STATIC_VALIDATION_R4_MVP1_READ_ONLY_HUD_V5_1_R2",
+    "created_at_local":  "20260714_213212",
+    "source_head":  "0b2c33d98385c1fec809894034df118fd6a2f321",
+    "files":  [
+                  {
+                      "path":  "E:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine\\mvp1_read_only_hud_static_validation\\V5_1_R2_R4_STATIC_VALIDATION_20260714_213212\\authorization_record.md",
+                      "sha256":  "0E6F71B1CD973EEBA057BF21781CAE33B6AB04DCA8F28A9CE8EDEC5611AF438E"
+                  },
+                  {
+                      "path":  "E:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine\\mvp1_read_only_hud_static_validation\\V5_1_R2_R4_STATIC_VALIDATION_20260714_213212\\git_status_before.txt",
+                      "sha256":  "53C052904D1EC172FC360FF89D72A577FE8DB136AB602A27E39893E80A1A685D"
+                  },
+                  {
+                      "path":  "E:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine\\mvp1_read_only_hud_static_validation\\V5_1_R2_R4_STATIC_VALIDATION_20260714_213212\\python_compile_output.txt",
+                      "sha256":  "5BD61B4E868EE4E0B79DD65F8D242E3758B117E454D86D8144385EFD1FB052F8"
+                  },
+                  {
+                      "path":  "E:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine\\mvp1_read_only_hud_static_validation\\V5_1_R2_R4_STATIC_VALIDATION_20260714_213212\\python_import_output.txt",
+                      "sha256":  "E6A5B3D45655784D21FEDAFFD14C5432AFD260F5B222269CC45F5E7FAAAD7329"
+                  },
+                  {
+                      "path":  "E:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine\\mvp1_read_only_hud_static_validation\\V5_1_R2_R4_STATIC_VALIDATION_20260714_213212\\pytest_output.txt",
+                      "sha256":  "BF7FF17A998ED34C2A7491ACF8C9190611B477FA7350B2DA0C64899198B8FE09"
+                  },
+                  {
+                      "path":  "E:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine\\mvp1_read_only_hud_static_validation\\V5_1_R2_R4_STATIC_VALIDATION_20260714_213212\\git_status_after.txt",
+                      "sha256":  "5D4A010AAA7C9710872716CA53087257AC6B03EAAB5EA486F8C3EFB41104649C"
+                  },
+                  {
+                      "path":  "E:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine\\mvp1_read_only_hud_static_validation\\V5_1_R2_R4_STATIC_VALIDATION_20260714_213212\\static_validation_report.json",
+                      "sha256":  "0470F5098A4F830A4FEB02EB9EFD3E817D26FAA3C6DB597F74F160E2D607706D"
+                  },
+                  {
+                      "path":  "E:\\CONTENT_ENGINE_OMEGA\\05_REPORTS\\content_engine\\mvp1_read_only_hud_static_validation\\V5_1_R2_R4_STATIC_VALIDATION_20260714_213212\\static_validation_summary.md",
+                      "sha256":  "AB2FEAE57B45463DBC4E13A90E631CC6BA716E7AAE23E2225AAFF10D8BB3A7F1"
+                  }
+              ],
+    "hard_limits":  {
+                        "files_modified_intentionally":  false,
+                        "system_runtime_executed":  false,
+                        "argos_activated":  false,
+                        "productive_actions_executed":  false,
+                        "credentials_accessed":  false,
+                        "commit_executed":  false,
+                        "amend_executed":  false,
+                        "push_executed":  false
+                    }
+}

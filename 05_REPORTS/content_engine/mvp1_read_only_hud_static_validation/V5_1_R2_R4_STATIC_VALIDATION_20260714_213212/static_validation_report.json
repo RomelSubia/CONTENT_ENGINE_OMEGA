@@ -1,0 +1,40 @@
+{
+    "component":  "CONTENT_ENGINE_OMEGA_STATIC_VALIDATION_R4_MVP1_READ_ONLY_HUD_V5_1_R2",
+    "status":  "FAIL_STATIC_VALIDATION_R4_MVP1_READ_ONLY_HUD_REVIEW_REQUIRED_NO_RUNTIME_NO_ARGOS",
+    "created_at_local":  "20260714_213212",
+    "source_head_before":  "0b2c33d98385c1fec809894034df118fd6a2f321",
+    "source_head_after":  "0b2c33d98385c1fec809894034df118fd6a2f321",
+    "source_branch_before":  "main",
+    "source_branch_after":  "main",
+    "head_stable":  true,
+    "branch_stable":  true,
+    "source_files":  [
+                         "src\\content_engine_omega\\mvp1_read_only_hud\\__init__.py",
+                         "src\\content_engine_omega\\mvp1_read_only_hud\\hud_model.py",
+                         "src\\content_engine_omega\\mvp1_read_only_hud\\state_reader.py",
+                         "src\\content_engine_omega\\mvp1_read_only_hud\\text_renderer.py"
+                     ],
+    "test_files":  [
+                       "tests\\content_engine_omega\\mvp1_read_only_hud\\test_state_reader.py",
+                       "tests\\content_engine_omega\\mvp1_read_only_hud\\test_text_renderer.py"
+                   ],
+    "compile_exit_code":  0,
+    "compile_passed":  true,
+    "import_exit_code":  0,
+    "import_passed":  true,
+    "pytest_exit_code":  1,
+    "pytest_passed":  false,
+    "generated_cache_hits":  [
+
+                             ],
+    "static_validation_ok":  false,
+    "files_modified_intentionally":  false,
+    "system_runtime_executed":  false,
+    "argos_activated":  false,
+    "productive_actions_executed":  false,
+    "credentials_accessed":  false,
+    "commit_executed":  false,
+    "amend_executed":  false,
+    "push_executed":  false,
+    "next_safe_step":  "REVIEW_STATIC_VALIDATION_FAILURE_NO_RUNTIME_NO_ARGOS_NO_COMMIT"
+}

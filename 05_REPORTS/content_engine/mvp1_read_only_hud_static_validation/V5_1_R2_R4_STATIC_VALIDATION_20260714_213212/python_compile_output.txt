@@ -1,0 +1,17 @@
+COMPILE: src\content_engine_omega\mvp1_read_only_hud\__init__.py
+EXIT_CODE: 0
+
+COMPILE: src\content_engine_omega\mvp1_read_only_hud\hud_model.py
+EXIT_CODE: 0
+
+COMPILE: src\content_engine_omega\mvp1_read_only_hud\state_reader.py
+EXIT_CODE: 0
+
+COMPILE: src\content_engine_omega\mvp1_read_only_hud\text_renderer.py
+EXIT_CODE: 0
+
+COMPILE: tests\content_engine_omega\mvp1_read_only_hud\test_state_reader.py
+EXIT_CODE: 0
+
+COMPILE: tests\content_engine_omega\mvp1_read_only_hud\test_text_renderer.py
+EXIT_CODE: 0
