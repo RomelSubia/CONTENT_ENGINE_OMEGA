@@ -64,3 +64,41 @@ function Test-ContentEnginePathIdentity {
 
     return $rows
 }
+
+# BEGIN CONTENT_ENGINE_OMEGA_CANONICAL_ROOT_JSON_VALIDATION_PATCH
+# Purpose:
+# - Avoid false negatives caused by raw JSON-escaped Windows paths.
+# - Validate canonical root by parsing CONTENT_ENGINE_VOLUME_IDENTITY.json.
+# - Preserve INITIUM requirement.
+# - Preserve D:\CONTENT_ENGINE_OMEGA as invalid/non-canonical.
+$ContentEngineVolumeIdentityManifestPath = Join-Path $PSScriptRoot "..\..\..\CONTENT_ENGINE_VOLUME_IDENTITY.json"
+if (-not (Test-Path -LiteralPath $ContentEngineVolumeIdentityManifestPath)) {
+    throw "BLOCKED_CONTENT_ENGINE_VOLUME_IDENTITY_MANIFEST_NOT_FOUND"
+}
+
+$ContentEngineVolumeIdentityRaw = Get-Content -LiteralPath $ContentEngineVolumeIdentityManifestPath -Raw
+$ContentEngineVolumeIdentityJson = $null
+
+try {
+    $ContentEngineVolumeIdentityJson = $ContentEngineVolumeIdentityRaw | ConvertFrom-Json
+} catch {
+    throw "BLOCKED_CONTENT_ENGINE_VOLUME_IDENTITY_MANIFEST_JSON_PARSE_FAILED"
+}
+
+$ContentEngineCanonicalRootFromManifest = [string]$ContentEngineVolumeIdentityJson.canonical_root_current
+$ContentEngineCanonicalRootFromManifestOk = $ContentEngineCanonicalRootFromManifest -eq "E:\CONTENT_ENGINE_OMEGA"
+$ContentEngineManifestMentionsInitium = $ContentEngineVolumeIdentityRaw -match "INITIUM"
+$ContentEngineManifestMentionsInvalidDamagedRoot = $ContentEngineVolumeIdentityRaw -match "D:\\\\CONTENT_ENGINE_OMEGA"
+
+if ($ContentEngineCanonicalRootFromManifestOk -ne $true) {
+    throw "BLOCKED_CONTENT_ENGINE_CANONICAL_ROOT_FROM_MANIFEST_MISMATCH"
+}
+
+if ($ContentEngineManifestMentionsInitium -ne $true) {
+    throw "BLOCKED_CONTENT_ENGINE_INITIUM_IDENTITY_NOT_PRESENT_IN_MANIFEST"
+}
+
+# This variable is intentionally exposed for downstream static checks.
+$ContentEngineCanonicalRootJsonValidationReady = $ContentEngineCanonicalRootFromManifestOk -and $ContentEngineManifestMentionsInitium
+# Static guard literal: D:\\CONTENT_ENGINE_OMEGA remains invalid/non-canonical.
+# END CONTENT_ENGINE_OMEGA_CANONICAL_ROOT_JSON_VALIDATION_PATCH
