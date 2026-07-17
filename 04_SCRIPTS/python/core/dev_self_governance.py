@@ -1,6 +1,6 @@
-﻿import json, pathlib, datetime, subprocess, hashlib, sys
+import json, pathlib, datetime, subprocess, hashlib, sys
 
-ROOT = pathlib.Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = pathlib.Path(r"E:\CONTENT_ENGINE_OMEGA")
 C5 = ROOT / "00_SYSTEM/core/dev_self_governance"
 REPORTS = C5 / "reports"
 GLOBAL_REPORTS = ROOT / "00_SYSTEM/core/reports"
@@ -107,7 +107,7 @@ def detect_false_success():
     return false_success
 
 def main():
-    if str(ROOT) != r"D:\CONTENT_ENGINE_OMEGA":
+    if str(ROOT) != r"E:\CONTENT_ENGINE_OMEGA":
         raise RuntimeError("wrong_root")
     if "ARGOS" in str(ROOT).upper():
         raise RuntimeError("argos_scope")

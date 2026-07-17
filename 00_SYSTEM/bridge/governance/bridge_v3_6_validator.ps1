@@ -7,7 +7,7 @@ Set-StrictMode -Version Latest
 
 function Test-BridgeV36 {
     param(
-        [string]$RootPath = "D:\CONTENT_ENGINE_OMEGA",
+        [string]$RootPath = "E:\CONTENT_ENGINE_OMEGA",
         [AllowEmptyString()][string]$AuthorizationText = ""
     )
 

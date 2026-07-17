@@ -1,7 +1,7 @@
-﻿& {
+& {
 $ErrorActionPreference="Stop"
 Set-StrictMode -Version Latest
-$Root="D:\CONTENT_ENGINE_OMEGA"
+$Root="E:\CONTENT_ENGINE_OMEGA"
 Set-Location $Root
 if((Get-Location).Path -ne $Root){ throw "BLOCKED: wrong root" }
 if($Root -like "*ARGOS*"){ throw "BLOCKED: ARGOS scope" }

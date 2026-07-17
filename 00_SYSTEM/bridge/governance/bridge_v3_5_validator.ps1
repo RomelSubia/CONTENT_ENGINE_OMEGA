@@ -23,7 +23,7 @@ function Get-DirectoryFingerprintV35 {
 
 function Test-BridgeV35 {
     param(
-        [string]$RootPath = "D:\CONTENT_ENGINE_OMEGA",
+        [string]$RootPath = "E:\CONTENT_ENGINE_OMEGA",
         [hashtable]$InitialHashes = @{},
         [AllowEmptyString()][string]$SourceText = ""
     )

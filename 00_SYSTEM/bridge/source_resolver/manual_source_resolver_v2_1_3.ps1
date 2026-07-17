@@ -26,7 +26,7 @@ function Get-FileSha256LowerLocal {
 }
 
 function Test-ManualSourceOfTruthV213 {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $manualRel = "00_SYSTEM\manual\current\MANUAL_MASTER_CURRENT.md"
     $manifestRel = "00_SYSTEM\manual\manifest\MANUAL_SOURCE_MANIFEST.json"
@@ -109,7 +109,7 @@ function Test-ManualSourceOfTruthV213 {
 
     # [FAIL CLOSED], FAIL-CLOSED, BLOCK and LOCK are valid system governance terms.
     $noisePatterns = @(
-        "PS D:\CONTENT_ENGINE_OMEGA>",
+        "PS E:\CONTENT_ENGINE_OMEGA>",
         "User uploaded file",
         "Pasted text",
         "tool call",

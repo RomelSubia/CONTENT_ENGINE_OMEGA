@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 
-EXPECTED_ROOT = Path(r"D:\CONTENT_ENGINE_OMEGA")
+EXPECTED_ROOT = Path(r"E:\CONTENT_ENGINE_OMEGA")
 CORE_DIR = EXPECTED_ROOT / "00_SYSTEM" / "core"
 PYTHON_FILE = EXPECTED_ROOT / "04_SCRIPTS" / "python" / "core" / "validate_phase0.py"
 REQUIRED_JSON = [

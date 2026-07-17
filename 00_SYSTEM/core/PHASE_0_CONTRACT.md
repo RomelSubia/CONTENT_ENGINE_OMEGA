@@ -4,7 +4,7 @@
 This contract establishes the governance boundary for CONTENT_ENGINE_OMEGA before any operational core is built. The implementation is fail-closed and defaults to `DRY_RUN`.
 
 ## Mandatory Controls
-- Root scope is fixed to `D:\CONTENT_ENGINE_OMEGA`.
+- Root scope is fixed to `E:\CONTENT_ENGINE_OMEGA`.
 - Destructive actions are forbidden.
 - Direct delete is forbidden.
 - Quarantine is the only allowed removal path in future phases.

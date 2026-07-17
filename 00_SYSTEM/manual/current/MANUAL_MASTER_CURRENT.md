@@ -8,7 +8,7 @@
 
 ---
 CONTENT ENGINE ΩManual Maestro Unico de Creacion v9EJECUTABLE REAL - ULTRA HARDENED
-Ruta oficial: D:\CONTENT_ENGINE_OMEGA
+Ruta oficial: E:\CONTENT_ENGINE_OMEGA
 Regla absoluta: PC LOCAL = GIT LOCAL = GIT REMOTO = CONTINUIDAD
 Modo: validar primero, ejecutar despues, auditar siempre.
 PRE-0 - Informe Maestro del Sistema
@@ -22,7 +22,7 @@ Todo es auditable.
 Nada critico se ejecuta sin control.
 Limites
 No se mezcla con ARGOS.
-No opera fuera de D:\CONTENT_ENGINE_OMEGA.
+No opera fuera de E:\CONTENT_ENGINE_OMEGA.
 No acepta archivos sin clasificar.
 No ejecuta automatizaciones sin validacion previa.
 No publica ni monetiza sin trazabilidad.
@@ -70,9 +70,9 @@ FASE -0 - Base Trust Core Ejecutable Real
 Objetivo
 Crear desde cero la carpeta raiz maestra, estructura oficial, entorno Python, perfil PowerShell, Git local, Git remoto, registry, evidencia, cuarentena, continuidad, validadores y primer commit oficial.
 Comando base de arranque controlado
-$ErrorActionPreference = "Stop"Set-StrictMode -Version Latest$Root = "D:\CONTENT_ENGINE_OMEGA"if (!(Test-Path $Root)) { New-Item -ItemType Directory -Path $Root | Out-Null }Set-Location $Root$Dirs = @("00_SYSTEM","01_STRATEGY","02_GOVERNANCE","03_ENVIRONMENT","04_SCRIPTS","05_WORKFLOWS","06_PROMPTS","07_DATA","08_ASSETS","09_PUBLICATION","10_MONETIZATION","11_REPORTS","12_LOGS","13_BACKUPS","14_EXPORTS")foreach ($d in $Dirs) { New-Item -ItemType Directory -Force -Path $d | Out-Null }New-Item -ItemType File -Force -Path "README.md","VERSION.md","CHANGELOG.md","requirements.txt",".env.example" | Out-Null@'.venv/.env03_ENVIRONMENT/secrets/*.key*.pem__pycache__/*.pyc12_LOGS/**/*.log13_BACKUPS/**/*.zip'@ | Set-Content -Encoding UTF8 ".gitignore"python -m venv .venv.\.venv\Scripts\Activate.ps1git initgit branch -M main
+$ErrorActionPreference = "Stop"Set-StrictMode -Version Latest$Root = "E:\CONTENT_ENGINE_OMEGA"if (!(Test-Path $Root)) { New-Item -ItemType Directory -Path $Root | Out-Null }Set-Location $Root$Dirs = @("00_SYSTEM","01_STRATEGY","02_GOVERNANCE","03_ENVIRONMENT","04_SCRIPTS","05_WORKFLOWS","06_PROMPTS","07_DATA","08_ASSETS","09_PUBLICATION","10_MONETIZATION","11_REPORTS","12_LOGS","13_BACKUPS","14_EXPORTS")foreach ($d in $Dirs) { New-Item -ItemType Directory -Force -Path $d | Out-Null }New-Item -ItemType File -Force -Path "README.md","VERSION.md","CHANGELOG.md","requirements.txt",".env.example" | Out-Null@'.venv/.env03_ENVIRONMENT/secrets/*.key*.pem__pycache__/*.pyc12_LOGS/**/*.log13_BACKUPS/**/*.zip'@ | Set-Content -Encoding UTF8 ".gitignore"python -m venv .venv.\.venv\Scripts\Activate.ps1git initgit branch -M main
 Perfil PowerShell del proyecto
-@'$ErrorActionPreference = "Stop"$ExpectedRoot = "D:\CONTENT_ENGINE_OMEGA"if ((Get-Location).Path -ne $ExpectedRoot) { throw "[BLOCKED] Ruta incorrecta" }if (Test-Path ".\.venv\Scripts\Activate.ps1") { . ".\.venv\Scripts\Activate.ps1" }Write-Host "CONTENT ENGINE OMEGA ENV ACTIVE" -ForegroundColor Cyan'@ | Set-Content -Encoding UTF8 ".env_profile.ps1"
+@'$ErrorActionPreference = "Stop"$ExpectedRoot = "E:\CONTENT_ENGINE_OMEGA"if ((Get-Location).Path -ne $ExpectedRoot) { throw "[BLOCKED] Ruta incorrecta" }if (Test-Path ".\.venv\Scripts\Activate.ps1") { . ".\.venv\Scripts\Activate.ps1" }Write-Host "CONTENT ENGINE OMEGA ENV ACTIVE" -ForegroundColor Cyan'@ | Set-Content -Encoding UTF8 ".env_profile.ps1"
 Trust Registry inicial
 New-Item -ItemType Directory -Force -Path "00_SYSTEM\registry","00_SYSTEM\continuity","11_REPORTS\trust_core","13_BACKUPS\quarantine" | Out-Null'{}' | Set-Content -Encoding UTF8 "00_SYSTEM\registry\system_registry.json"'[]' | Set-Content -Encoding UTF8 "00_SYSTEM\registry\input_registry.json"'[]' | Set-Content -Encoding UTF8 "00_SYSTEM\registry\change_registry.json"'[]' | Set-Content -Encoding UTF8 "00_SYSTEM\registry\manual_version_registry.json"'[]' | Set-Content -Encoding UTF8 "13_BACKUPS\quarantine\manifest.json"
 Validaciones obligatorias
@@ -685,7 +685,7 @@ Sin auditoria final.
 Criterio de cierre
 La fase solo cierra cuando SYSTEM_STATE = VALID, existe evidencia, continuidad actualizada y Git queda limpio y sincronizado.
 Apendice A - Validador maestro de estructura
-$ErrorActionPreference = "Stop"$Root = "D:\CONTENT_ENGINE_OMEGA"$Required = @("00_SYSTEM","01_STRATEGY","02_GOVERNANCE","03_ENVIRONMENT","04_SCRIPTS","05_WORKFLOWS","06_PROMPTS","07_DATA","08_ASSETS","09_PUBLICATION","10_MONETIZATION","11_REPORTS","12_LOGS","13_BACKUPS","14_EXPORTS")Set-Location $Root$existing = Get-ChildItem -Directory -Force | Select-Object -ExpandProperty Name$missing = $Required | Where-Object { $_ -notin $existing }$extra = $existing | Where-Object { $_ -notin $Required -and $_ -ne ".git" }if ($missing.Count -gt 0) { throw "[BLOCKED] Missing dirs: $($missing -join ', ')" }if ($extra.Count -gt 0) { throw "[BLOCKED] Extra dirs: $($extra -join ', ')" }Write-Host "[VALID] Structure OK" -ForegroundColor Green
+$ErrorActionPreference = "Stop"$Root = "E:\CONTENT_ENGINE_OMEGA"$Required = @("00_SYSTEM","01_STRATEGY","02_GOVERNANCE","03_ENVIRONMENT","04_SCRIPTS","05_WORKFLOWS","06_PROMPTS","07_DATA","08_ASSETS","09_PUBLICATION","10_MONETIZATION","11_REPORTS","12_LOGS","13_BACKUPS","14_EXPORTS")Set-Location $Root$existing = Get-ChildItem -Directory -Force | Select-Object -ExpandProperty Name$missing = $Required | Where-Object { $_ -notin $existing }$extra = $existing | Where-Object { $_ -notin $Required -and $_ -ne ".git" }if ($missing.Count -gt 0) { throw "[BLOCKED] Missing dirs: $($missing -join ', ')" }if ($extra.Count -gt 0) { throw "[BLOCKED] Extra dirs: $($extra -join ', ')" }Write-Host "[VALID] Structure OK" -ForegroundColor Green
 Apendice B - Validador maestro de Git Sync
 $ErrorActionPreference = "Stop"if (!(Test-Path ".git")) { throw "[BLOCKED] No existe .git" }$status = git status --porcelainif ($status) { throw "[BLOCKED] Hay cambios sin commit" }$remote = git remote get-url origin 2>$nullif (!$remote) { throw "[BLOCKED] No hay remote origin" }git fetch origin$local = git rev-parse HEAD$upstream = git rev-parse @{u}if ($local -ne $upstream) { throw "[BLOCKED] Local y remoto no sincronizados" }Write-Host "[VALID] PC LOCAL = GIT LOCAL = GIT REMOTO" -ForegroundColor Green
 Cierre Global v9

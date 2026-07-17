@@ -25,7 +25,7 @@ function Get-FileSha256LowerV33 {
 }
 
 function Test-SourceIntegrityV33 {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $paths = @{
         rules = "00_SYSTEM\bridge\reports\MANUAL_RULES_REGISTRY_V3_2_6.json"
@@ -139,7 +139,7 @@ function Test-NoTouchV33 {
 
 function Test-BridgeV33 {
     param(
-        [string]$RootPath = "D:\CONTENT_ENGINE_OMEGA",
+        [string]$RootPath = "E:\CONTENT_ENGINE_OMEGA",
         [hashtable]$InitialHashes = @{}
     )
 

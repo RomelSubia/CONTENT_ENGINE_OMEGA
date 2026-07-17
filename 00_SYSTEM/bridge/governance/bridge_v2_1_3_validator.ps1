@@ -5,7 +5,7 @@ Set-StrictMode -Version Latest
 . "00_SYSTEM\bridge\brain_adapter\brain_read_only_check_v2_1_3.ps1"
 
 function Test-ManualBrainBridgeV213 {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $manual = Test-ManualSourceOfTruthV213 -RootPath $RootPath
     $brain = Test-BrainReadOnlyStatusV213 -RootPath $RootPath

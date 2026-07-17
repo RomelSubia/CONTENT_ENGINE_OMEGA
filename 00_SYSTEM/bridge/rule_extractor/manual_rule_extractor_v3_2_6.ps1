@@ -21,7 +21,7 @@ function Get-FileSha256LowerLocalV326 {
 }
 
 function Test-ManualIntegrityV326 {
-    param([string]$RootPath="D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath="E:\CONTENT_ENGINE_OMEGA")
 
     $manualRel="00_SYSTEM\manual\current\MANUAL_MASTER_CURRENT.md"
     $manifestRel="00_SYSTEM\manual\manifest\MANUAL_SOURCE_MANIFEST.json"
@@ -57,7 +57,7 @@ function Test-ManualContaminationV326 {
     param([AllowEmptyString()][string]$ManualText)
 
     $blockedNoise=@(
-        "PS D:\CONTENT_ENGINE_OMEGA>",
+        "PS E:\CONTENT_ENGINE_OMEGA>",
         "Presiona ENTER",
         "Copia esta salida completa",
         "Pasted text",
@@ -326,7 +326,7 @@ function Test-IsRuleCandidateV326 {
 
 function Build-ManualRulesRegistryV326 {
     param(
-        [string]$RootPath="D:\CONTENT_ENGINE_OMEGA",
+        [string]$RootPath="E:\CONTENT_ENGINE_OMEGA",
         [AllowEmptyString()][string]$SourceText="",
         [string]$SourceName="00_SYSTEM/manual/current/MANUAL_MASTER_CURRENT.md",
         [AllowEmptyString()][string]$SourceHash=""

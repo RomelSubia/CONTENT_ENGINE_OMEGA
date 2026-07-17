@@ -1,7 +1,7 @@
-﻿import sys
+import sys
 from pathlib import Path
 
-root = Path(r"D:\CONTENT_ENGINE_OMEGA\00_SYSTEM")
+root = Path(r"E:\CONTENT_ENGINE_OMEGA\00_SYSTEM")
 sys.path.insert(0, str(root))
 
 from core.g_learning.g_c import run_g_c

@@ -1,10 +1,10 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-$root = "D:\CONTENT_ENGINE_OMEGA"
+$root = "E:\CONTENT_ENGINE_OMEGA"
 $expected = [System.IO.Path]::GetFullPath($root)
 $current = [System.IO.Path]::GetFullPath((Get-Location).Path)
-$gitSafeArgs = @("-c", "safe.directory=D:/CONTENT_ENGINE_OMEGA")
+$gitSafeArgs = @("-c", "safe.directory=E:/CONTENT_ENGINE_OMEGA")
 
 if ($current -ne $expected) {
     Write-Output "BLOCKED: root validation failed"

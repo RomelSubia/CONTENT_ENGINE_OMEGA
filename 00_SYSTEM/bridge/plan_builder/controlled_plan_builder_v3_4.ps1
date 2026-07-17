@@ -245,7 +245,7 @@ function Get-RequestRiskV34 {
 function New-PlanRequestContractV34 {
     param(
         [Parameter(Mandatory=$true)][AllowEmptyString()][string]$SourceText,
-        [string]$RootPath = "D:\CONTENT_ENGINE_OMEGA"
+        [string]$RootPath = "E:\CONTENT_ENGINE_OMEGA"
     )
 
     $requestType = Get-RequestTypeV34 -Text $SourceText
@@ -396,7 +396,7 @@ function New-PlanStepV34 {
 }
 
 function Get-SourceContextV34 {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $paths = [ordered]@{
         manual = "00_SYSTEM\manual\current\MANUAL_MASTER_CURRENT.md"
@@ -471,7 +471,7 @@ function Get-MaxRiskScoreV34 {
 function New-ControlledPlanV34 {
     param(
         [Parameter(Mandatory=$true)]$Request,
-        [string]$RootPath = "D:\CONTENT_ENGINE_OMEGA"
+        [string]$RootPath = "E:\CONTENT_ENGINE_OMEGA"
     )
 
     $sourceContext = Get-SourceContextV34 -RootPath $RootPath

@@ -1,6 +1,6 @@
-﻿import json, hashlib, datetime, pathlib, sys
+import json, hashlib, datetime, pathlib, sys
 
-ROOT = pathlib.Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = pathlib.Path(r"E:\CONTENT_ENGINE_OMEGA")
 OUT = ROOT / "00_SYSTEM/core/decision"
 REPORT = OUT / "reports/PHASE_D_DECISION_REPORT.md"
 

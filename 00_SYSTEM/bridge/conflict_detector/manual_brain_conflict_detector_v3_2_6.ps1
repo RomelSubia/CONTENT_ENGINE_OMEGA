@@ -110,7 +110,7 @@ function Test-ProductionClaimEvidenceV326 {
 function Find-ManualBrainConflictsV326 {
     param(
         [Parameter(Mandatory=$true)]$RuleRegistry,
-        [string]$RootPath="D:\CONTENT_ENGINE_OMEGA"
+        [string]$RootPath="E:\CONTENT_ENGINE_OMEGA"
     )
 
     $conflicts=@()

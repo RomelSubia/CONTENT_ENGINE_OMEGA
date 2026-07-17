@@ -1,6 +1,6 @@
-﻿import json, pathlib, hashlib, datetime, subprocess, sys, time
+import json, pathlib, hashlib, datetime, subprocess, sys, time
 
-ROOT = pathlib.Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = pathlib.Path(r"E:\CONTENT_ENGINE_OMEGA")
 LOOP = ROOT / "00_SYSTEM/core/loop"
 REPORT = LOOP / "reports/PHASE_F_LOOP_REPORT.md"
 AUDIT = ROOT / "00_SYSTEM/core/reports/PHASE_F_AUDIT_REPORT.md"
@@ -74,7 +74,7 @@ def validate_base():
 def main():
     rules=load(LOOP / "LOOP_RULES.json")
 
-    if str(ROOT) != r"D:\CONTENT_ENGINE_OMEGA":
+    if str(ROOT) != r"E:\CONTENT_ENGINE_OMEGA":
         fail("wrong_root")
     if "ARGOS" in str(ROOT).upper():
         fail("argos_scope")

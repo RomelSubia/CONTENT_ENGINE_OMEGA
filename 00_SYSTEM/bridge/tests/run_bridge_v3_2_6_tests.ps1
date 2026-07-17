@@ -5,7 +5,7 @@ Set-StrictMode -Version Latest
 . "00_SYSTEM\bridge\conflict_detector\manual_brain_conflict_detector_v3_2_6.ps1"
 . "00_SYSTEM\bridge\governance\bridge_v3_2_6_validator.ps1"
 
-$Root="D:\CONTENT_ENGINE_OMEGA"
+$Root="E:\CONTENT_ENGINE_OMEGA"
 $FixtureRoot=Join-Path $Root "00_SYSTEM\bridge\tests\fixtures\v3_2_6"
 
 function Assert-Test {

@@ -32,7 +32,7 @@ function New-DeterministicIdV36 {
 }
 
 function Get-V36SourceBundle {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $sources = [ordered]@{
         gate_closure = "00_SYSTEM\bridge\reports\GATE_CLOSURE_REPORT_V3_5.json"
@@ -73,7 +73,7 @@ function Get-V36SourceBundle {
 }
 
 function New-HumanAuthorizationContractV36 {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $bundle = Get-V36SourceBundle -RootPath $RootPath
 

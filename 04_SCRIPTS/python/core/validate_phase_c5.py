@@ -1,6 +1,6 @@
 import json, pathlib, sys
 
-ROOT = pathlib.Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = pathlib.Path(r"E:\CONTENT_ENGINE_OMEGA")
 C5 = ROOT / "00_SYSTEM/core/dev_self_governance"
 
 def fail(m):

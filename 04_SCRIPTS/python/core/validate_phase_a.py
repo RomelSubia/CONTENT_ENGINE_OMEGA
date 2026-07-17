@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = Path(r"E:\CONTENT_ENGINE_OMEGA")
 RUNTIME_DIR = ROOT / "00_SYSTEM" / "core" / "runtime"
 LOG_DIR = ROOT / "00_SYSTEM" / "core" / "logs"
 

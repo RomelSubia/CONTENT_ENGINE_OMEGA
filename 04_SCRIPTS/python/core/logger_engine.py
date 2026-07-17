@@ -7,7 +7,7 @@ from typing import Any
 from state_manager import read_json, write_json_atomic
 
 
-ROOT = Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = Path(r"E:\CONTENT_ENGINE_OMEGA")
 LOG_PATH = ROOT / "00_SYSTEM" / "core" / "logs" / "RUNTIME_LOG.json"
 ARCHIVE_DIR = ROOT / "00_SYSTEM" / "core" / "logs" / "archive"
 MANIFEST_PATH = ROOT / "00_SYSTEM" / "core" / "logs" / "manifest.json"

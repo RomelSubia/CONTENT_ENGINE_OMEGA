@@ -56,7 +56,7 @@ function Test-AntiRegressionV326 {
 }
 
 function Test-BridgeV326 {
-    param([string]$RootPath="D:\CONTENT_ENGINE_OMEGA",[hashtable]$InitialHashes=@{})
+    param([string]$RootPath="E:\CONTENT_ENGINE_OMEGA",[hashtable]$InitialHashes=@{})
 
     $dryRun=$true
 

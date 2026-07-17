@@ -5,7 +5,7 @@ from pathlib import Path
 import zipfile
 
 
-ROOT = Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = Path(r"E:\CONTENT_ENGINE_OMEGA")
 CHANGE_DIR = ROOT / "00_SYSTEM" / "core" / "change_awareness"
 
 REQUIRED_JSON = [

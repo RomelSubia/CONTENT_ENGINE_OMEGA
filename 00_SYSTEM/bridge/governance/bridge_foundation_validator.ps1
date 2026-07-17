@@ -26,7 +26,7 @@ function Get-FileSha256LowerLocal {
 }
 
 function Test-BridgeFoundation {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $requiredJson = @(
         "00_SYSTEM\bridge\config\BRIDGE_POLICY.json",

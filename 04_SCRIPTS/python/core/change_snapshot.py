@@ -11,7 +11,7 @@ from typing import Any
 from state_manager import read_json, write_json_atomic
 
 
-ROOT = Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = Path(r"E:\CONTENT_ENGINE_OMEGA")
 CHANGE_DIR = ROOT / "00_SYSTEM" / "core" / "change_awareness"
 SNAPSHOT_DIR = CHANGE_DIR / "snapshots"
 PROBE_DIR = CHANGE_DIR / "probes"

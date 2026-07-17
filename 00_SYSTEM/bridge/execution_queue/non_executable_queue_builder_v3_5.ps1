@@ -6,7 +6,7 @@ Set-StrictMode -Version Latest
 function New-NonExecutableQueueV35 {
     param(
         [Parameter(Mandatory=$true)]$Packet,
-        [string]$RootPath = "D:\CONTENT_ENGINE_OMEGA"
+        [string]$RootPath = "E:\CONTENT_ENGINE_OMEGA"
     )
 
     $items = New-Object System.Collections.ArrayList
@@ -261,7 +261,7 @@ function Test-NoExecutionQueueAuditV35 {
 function Test-DriftGuardV35 {
     param(
         [Parameter(Mandatory=$true)]$Packet,
-        [string]$RootPath = "D:\CONTENT_ENGINE_OMEGA"
+        [string]$RootPath = "E:\CONTENT_ENGINE_OMEGA"
     )
 
     $planPath = Join-Path $RootPath "00_SYSTEM\bridge\reports\PLAN_BUILDER_REPORT_V3_4.json"

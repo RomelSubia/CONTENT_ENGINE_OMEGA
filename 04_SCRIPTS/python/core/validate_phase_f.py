@@ -1,6 +1,6 @@
-﻿import json, pathlib, sys
+import json, pathlib, sys
 
-ROOT=pathlib.Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT=pathlib.Path(r"E:\CONTENT_ENGINE_OMEGA")
 LOOP=ROOT/"00_SYSTEM/core/loop"
 
 def fail(m):

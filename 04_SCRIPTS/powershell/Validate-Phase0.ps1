@@ -1,7 +1,7 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-$root = "D:\CONTENT_ENGINE_OMEGA"
+$root = "E:\CONTENT_ENGINE_OMEGA"
 $expected = [System.IO.Path]::GetFullPath($root)
 $current = [System.IO.Path]::GetFullPath((Get-Location).Path)
 $bundledPython = "C:\Users\romel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"

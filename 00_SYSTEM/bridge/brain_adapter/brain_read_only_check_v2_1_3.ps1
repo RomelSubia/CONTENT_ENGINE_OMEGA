@@ -44,7 +44,7 @@ function Read-SafeTextFile {
 }
 
 function Test-BrainReadOnlyStatusV213 {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $brainRoot = Join-Path -Path $RootPath -ChildPath "00_SYSTEM\brain"
     $reportsRoot = Join-Path -Path $RootPath -ChildPath "00_SYSTEM\reports\brain"

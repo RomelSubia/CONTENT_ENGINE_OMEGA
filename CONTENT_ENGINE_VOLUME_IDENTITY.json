@@ -1,0 +1,38 @@
+{
+  "schema": "CONTENT_ENGINE_VOLUME_IDENTITY_V1",
+  "system": "CONTENT_ENGINE_OMEGA",
+  "volume_identity_name": "INITIUM",
+  "canonical_root_current": "E:\\CONTENT_ENGINE_OMEGA",
+  "canonical_root_policy": "VOLUME_IDENTITY_THEN_CANONICAL_ROOT",
+  "drive_letter_is_not_identity": true,
+  "invalid_canonical_roots": [
+    "D:\\CONTENT_ENGINE_OMEGA",
+    "D:/CONTENT_ENGINE_OMEGA"
+  ],
+  "required_sibling_roots": [
+    "E:\\ARGOS_BACKCUP"
+  ],
+  "forbidden_resolved_root_contains": [
+    "\\ARGOS_BACKCUP"
+  ],
+  "expected_git": {
+    "branch": "main",
+    "head_family": "9e86c36",
+    "upstream": "origin/main"
+  },
+  "activation_policy": {
+    "runtime_activation": "BLOCKED",
+    "external_interop": "BLOCKED",
+    "productive_actions": "BLOCKED",
+    "argos_activation": "BLOCKED",
+    "credentials_access": "BLOCKED"
+  },
+  "fail_closed": true,
+  "created_by_gate": "CONTENT_ENGINE_OMEGA_INITIUM_VOLUME_IDENTITY_HARDENING_RECOVERY_AND_COMPLETION_GATE_NO_RUNTIME_NO_ARGOS",
+  "notes": [
+    "Drive letter is not identity.",
+    "E:\\CONTENT_ENGINE_OMEGA is accepted only after INITIUM identity and repository checks pass.",
+    "D:\\CONTENT_ENGINE_OMEGA and D:/CONTENT_ENGINE_OMEGA are invalid canonical roots from INITIUM drive-letter drift damage.",
+    "Historical evidence may preserve D references only as non-canonical evidence."
+  ]
+}

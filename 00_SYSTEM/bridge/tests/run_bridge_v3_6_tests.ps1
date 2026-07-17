@@ -3,7 +3,7 @@ Set-StrictMode -Version Latest
 
 . "00_SYSTEM\bridge\governance\bridge_v3_6_validator.ps1"
 
-$Root = "D:\CONTENT_ENGINE_OMEGA"
+$Root = "E:\CONTENT_ENGINE_OMEGA"
 $script:TestTotal = 0
 $script:TestPassed = 0
 

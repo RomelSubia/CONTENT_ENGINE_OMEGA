@@ -12,7 +12,7 @@ from logger_engine import append_event
 from state_manager import read_json, write_json_atomic
 
 
-ROOT = Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT = Path(r"E:\CONTENT_ENGINE_OMEGA")
 RUNTIME_DIR = ROOT / "00_SYSTEM" / "core" / "runtime"
 SYSTEM_RUNTIME_PATH = RUNTIME_DIR / "SYSTEM_RUNTIME.json"
 EXECUTION_CONTEXT_PATH = RUNTIME_DIR / "EXECUTION_CONTEXT.json"

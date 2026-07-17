@@ -314,7 +314,7 @@ function Get-GlobalDecisionV35 {
     return "PASS_WITH_WARNINGS"
 }
 function Get-V35SourceBundle {
-    param([string]$RootPath = "D:\CONTENT_ENGINE_OMEGA")
+    param([string]$RootPath = "E:\CONTENT_ENGINE_OMEGA")
 
     $sources = [ordered]@{
         plan_builder = "00_SYSTEM\bridge\reports\PLAN_BUILDER_REPORT_V3_4.json"
@@ -358,7 +358,7 @@ function Get-V35SourceBundle {
 
 function New-HandoffPacketV35 {
     param(
-        [string]$RootPath = "D:\CONTENT_ENGINE_OMEGA",
+        [string]$RootPath = "E:\CONTENT_ENGINE_OMEGA",
         [AllowEmptyString()][string]$SourceText = "",
         [AllowEmptyString()][string]$SourceCommit = ""
     )

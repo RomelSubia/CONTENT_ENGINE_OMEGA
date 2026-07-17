@@ -1,6 +1,6 @@
-﻿import json, pathlib, sys, subprocess
+import json, pathlib, sys, subprocess
 
-ROOT=pathlib.Path(r"D:\CONTENT_ENGINE_OMEGA")
+ROOT=pathlib.Path(r"E:\CONTENT_ENGINE_OMEGA")
 C=ROOT/"00_SYSTEM/core/classification"
 
 def fail(m):
